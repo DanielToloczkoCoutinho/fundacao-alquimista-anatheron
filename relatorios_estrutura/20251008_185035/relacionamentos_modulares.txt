@@ -1,0 +1,2572 @@
+🌌 MAPA DE RELACIONAMENTOS - FUNDAÇÃO ALQUIMISTA
+==============================================
+
+🔗 DEPENDÊNCIAS CRÍTICAS:
+🧪 MÓDULO QUÂNTICO: quantum_channel.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: base_quantum_error.py
+   ➕ from abc import abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, QuantumRegister
+🧪 MÓDULO QUÂNTICO: quantum_state.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: quantumcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections import OrderedDict
+🧪 MÓDULO QUÂNTICO: quantum_error.py
+   ➕ from typing import Iterable
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, Reset
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: noise_transformation.py
+   ➕ from typing import Sequence, List, Union, Callable
+   ➕ from qiskit.circuit import Reset
+🧪 MÓDULO QUÂNTICO: estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: sampler.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: aer_densitymatrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: aer_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info.states import Statevector
+🧪 MÓDULO QUÂNTICO: noise_model.py
+   ➕ from typing import Optional
+   ➕ from warnings import warn, catch_warnings, filterwarnings
+🧪 MÓDULO QUÂNTICO: standard_errors.py
+   ➕ from qiskit.circuit import Reset
+   ➕ from qiskit.circuit.library.standard_gates import IGate, XGate, ZGate
+🧪 MÓDULO QUÂNTICO: readout_error.py
+   ➕ from numpy.linalg import norm
+   ➕ from qiskit.circuit import Instruction
+🧪 MÓDULO QUÂNTICO: pauli_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: base_quantum_error.py
+   ➕ from abc import abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, QuantumRegister
+🧪 MÓDULO QUÂNTICO: pauli_lindblad_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ from .readout_error import ReadoutError
+   ➕ from .quantum_error import QuantumError
+🧪 MÓDULO QUÂNTICO: quantum_error.py
+   ➕ from typing import Iterable
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, Reset
+🧪 MÓDULO QUÂNTICO: save_expectation_value.py
+   ➕ from numpy import allclose
+   ➕ from qiskit.quantum_info import Pauli, SparsePauliOp, Operator
+🧪 MÓDULO QUÂNTICO: set_stabilizer.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import StabilizerState, Clifford
+🧪 MÓDULO QUÂNTICO: set_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Statevector
+🧪 MÓDULO QUÂNTICO: set_superop.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import SuperOp
+🧪 MÓDULO QUÂNTICO: set_unitary.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: set_density_matrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import DensityMatrix
+🧪 MÓDULO QUÂNTICO: backend_utils.py
+   ➕ from math import log2
+   ➕ from types import SimpleNamespace
+🧪 MÓDULO QUÂNTICO: name_mapping.py
+   ➕ from qiskit.circuit import ControlledGate, Parameter
+   ➕ from qiskit.circuit.reset import Reset
+🧪 MÓDULO QUÂNTICO: aerbackend.py
+   ➕ from abc import ABC, abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, ParameterExpression, Delay
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ tried from index 0 onwards, and the first match is used.  The import ``qelib1.inc`` is treated
+   ➕     from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: parse.py
+   ➕ from typing import Iterable, Callable
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: transpiler.py
+   ➕ from time import time
+   ➕ from typing import List, Union, Dict, Callable, Any, Optional, TypeVar
+🧪 MÓDULO QUÂNTICO: statevector_sampler.py
+   ➕ from __future__ import annotations
+   ➕ from dataclasses import dataclass
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Instruction, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: observables_array.py
+   ➕ from __future__ import annotations
+   ➕ from copy import deepcopy
+🧪 MÓDULO QUÂNTICO: statevector_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕     from qiskit.primitives import StatevectorEstimator as Estimator
+   ➕     from qiskit.circuit.library import RealAmplitudes
+🧪 MÓDULO QUÂNTICO: backend_estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: base_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod, ABC
+🧪 MÓDULO QUÂNTICO: validation_v1.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from rustworkx import PyDiGraph
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: instructionset.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import MutableSequence
+🧪 MÓDULO QUÂNTICO: controlledgate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Union
+🧪 MÓDULO QUÂNTICO: gate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Iterator, Iterable
+🧪 MÓDULO QUÂNTICO: twirling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit._accelerate.twirling import twirl_circuit as twirl_rs
+🧪 MÓDULO QUÂNTICO: template_nct_9c_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7e_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_12.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_11.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_5_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_3_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: mcg_up_to_diagonal.py
+   ➕ from qiskit.circuit import Gate
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: gr.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕        from qiskit.circuit.library import GR
+🧪 MÓDULO QUÂNTICO: linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: uc.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: isometry.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.exceptions import CircuitError
+🧪 MÓDULO QUÂNTICO: unitary.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit import _numpy_compat
+🧪 MÓDULO QUÂNTICO: permutation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from qiskit.circuit.quantumcircuitdata import CircuitInstruction
+   ➕ from qiskit.circuit.library.standard_gates.x import XGate
+🧪 MÓDULO QUÂNTICO: diagonal.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: uc_pauli_rot.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: gms.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: xx_minus_yy.py
+   ➕ from __future__ import annotations
+   ➕ from cmath import exp
+🧪 MÓDULO QUÂNTICO: hamiltonian_gate.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: pauli_evolution.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: graph_state.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: initializer.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: state_preparation.py
+   ➕ from typing import Union, Optional
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit.circuit import QuantumCircuit
+   ➕    from qiskit.circuit.library import PauliEvolutionGate
+🧪 MÓDULO QUÂNTICO: two_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: evolved_operator_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: qaoa_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.parametervector import ParameterVector
+🧪 MÓDULO QUÂNTICO: n_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Mapping, Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: phase_estimation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit, QuantumRegister, Gate
+🧪 MÓDULO QUÂNTICO: qft.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, CircuitInstruction, Gate
+🧪 MÓDULO QUÂNTICO: hidden_linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ from .quantum_and import AND, AndGate
+   ➕ from .quantum_or import OR, OrGate
+🧪 MÓDULO QUÂNTICO: grover_operator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import List, Optional, Union
+🧪 MÓDULO QUÂNTICO: blueprintcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: builder.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Collection, Iterable, FrozenSet, Tuple, Union, Optional, Sequence
+🧪 MÓDULO QUÂNTICO: annotated_operation.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Union, List
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit import QuantumCircuit
+   ➕     from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: operation.py
+   ➕ from abc import ABC, abstractmethod
+   ➕            from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: annotation.py
+   ➕     from qiskit.circuit import annotation, QuantumCircuit, BoxOp
+   ➕     from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: quantumcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections import OrderedDict
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.random import (
+🧪 MÓDULO QUÂNTICO: quantum_state.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: statevector.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: stabilizerstate.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: densitymatrix.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: scalar_op.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: transformations.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: quantum_channel.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: ptm.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: kraus.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: stinespring.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: choi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: chi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: superop.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: double_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: anti_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from numpy.random import default_rng
+🧪 MÓDULO QUÂNTICO: base_operator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC
+🧪 MÓDULO QUÂNTICO: clifford.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: clifford_circuits.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Barrier, Delay, Gate
+🧪 MÓDULO QUÂNTICO: sparse_pauli_op.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING, List
+🧪 MÓDULO QUÂNTICO: pauli_list.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: base_pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: pauli_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.symplectic.pauli_list import PauliList
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError, MissingOptionalLibraryError
+🧪 MÓDULO QUÂNTICO: tolerances.py
+   ➕ from abc import ABCMeta
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: operator.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: dihedral.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: operator_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: distance.py
+   ➕ from __future__ import annotations
+   ➕             from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: postprocess.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕     from qiskit.quantum_info.states.statevector import Statevector
+🧪 MÓDULO QUÂNTICO: result.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: sampled_expval.py
+   ➕ from qiskit._accelerate.sampled_exp_val import sampled_expval_float, sampled_expval_complex
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: suzuki_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: product_formula.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: qdrift.py
+   ➕ from __future__ import annotations
+   ➕ from itertools import chain
+🧪 MÓDULO QUÂNTICO: matrix_synthesis.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from .evolution_synthesis import EvolutionSynthesis
+🧪 MÓDULO QUÂNTICO: lie_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: stabilizer_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: stabilizer_circuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: rv_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: vrg_modular_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: cdkm_ripple_carry_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: vbe_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Bit
+🧪 MÓDULO QUÂNTICO: hrs_cumulative_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: rg_qft_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_greedy.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_2s.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit.library.boolean_logic.quantum_or import OrGate
+🧪 MÓDULO QUÂNTICO: weighted_sum.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: qft_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation_lnn.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_bm.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_decompose_layers.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: clifford_decompose_ag.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_decompose_greedy.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_general.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_two_qubits.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_full.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import CNOTDihedral
+🧪 MÓDULO QUÂNTICO: multi_control_rotation_gates.py
+   ➕ from qiskit.circuit import QuantumCircuit, Gate
+   ➕ from qiskit.circuit.library.standard_gates.u3 import _generate_gray_code
+🧪 MÓDULO QUÂNTICO: mcx_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: approximate.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: aqc.py
+   ➕ from __future__ import annotations
+   ➕ from functools import partial
+🧪 MÓDULO QUÂNTICO: qsd.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Callable
+🧪 MÓDULO QUÂNTICO: solovay_kitaev.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Type, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: weyl.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: decomposer.py
+   ➕ from __future__ import annotations
+   ➕ from operator import itemgetter
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: one_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: state_visualization.py
+   ➕ from typing import List, Union
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit.visualization import plot_histogram
+   ➕    from qiskit.visualization import plot_histogram
+🧪 MÓDULO QUÂNTICO: default_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from math import pi, inf, isclose
+🧪 MÓDULO QUÂNTICO: clifford_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: solovay_kitaev_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.converters import circuit_to_dag
+🧪 MÓDULO QUÂNTICO: high_level_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: hls_plugins.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli_2q_evolution_commutation.py
+   ➕ from typing import Tuple
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: commuting_2q_gate_router.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: commutative_inverse_cancellation.py
+   ➕ from qiskit.circuit.commutation_library import SessionCommutationChecker as scc
+   ➕ from qiskit.circuit import CircuitError
+🧪 MÓDULO QUÂNTICO: collect_cliffords.py
+   ➕ from functools import partial
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: optimize_1q_decomposition.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: optimize_1q_gates.py
+   ➕ from itertools import groupby
+   ➕ from qiskit.transpiler.exceptions import TranspilerError
+🧪 MÓDULO QUÂNTICO: hoare_opt.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.circuit import QuantumRegister, ControlledGate, Gate
+🧪 MÓDULO QUÂNTICO: template_optimization.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.dagcircuit import DAGDependency
+🧪 MÓDULO QUÂNTICO: optimize_cliffords.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: dynamical_decoupling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Gate, ParameterExpression, Qubit
+🧪 MÓDULO QUÂNTICO: common.py
+   ➕ from typing import Optional
+   ➕ from qiskit.circuit.equivalence_library import SessionEquivalenceLibrary as sel
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: circuit_to_gate.py
+   ➕ from qiskit.circuit.annotated_operation import AnnotatedOperation
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: circuit_to_instruction.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕ from qiskit.circuit.instruction import Instruction
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: scalar_op.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: aer_densitymatrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_9c_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: standard_errors.py
+   ➕ from qiskit.circuit import Reset
+   ➕ from qiskit.circuit.library.standard_gates import IGate, XGate, ZGate
+🧪 MÓDULO QUÂNTICO: suzuki_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: readout_error.py
+   ➕ from numpy.linalg import norm
+   ➕ from qiskit.circuit import Instruction
+🧪 MÓDULO QUÂNTICO: aer_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info.states import Statevector
+🧪 MÓDULO QUÂNTICO: noise_model.py
+   ➕ from typing import Optional
+   ➕ from warnings import warn, catch_warnings, filterwarnings
+🧪 MÓDULO QUÂNTICO: template_nct_9c_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: noise_transformation.py
+   ➕ from typing import Sequence, List, Union, Callable
+   ➕ from qiskit.circuit import Reset
+🧪 MÓDULO QUÂNTICO: weyl.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: decomposer.py
+   ➕ from __future__ import annotations
+   ➕ from operator import itemgetter
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: circuit_to_gate.py
+   ➕ from qiskit.circuit.annotated_operation import AnnotatedOperation
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: mcg_up_to_diagonal.py
+   ➕ from qiskit.circuit import Gate
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_greedy.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: evolved_operator_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: clifford.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: template_nct_9c_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: transformations.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: set_stabilizer.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import StabilizerState, Clifford
+🧪 MÓDULO QUÂNTICO: commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: gr.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕        from qiskit.circuit.library import GR
+🧪 MÓDULO QUÂNTICO: linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: base_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod, ABC
+🧪 MÓDULO QUÂNTICO: template_nct_4a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: commutative_inverse_cancellation.py
+   ➕ from qiskit.circuit.commutation_library import SessionCommutationChecker as scc
+   ➕ from qiskit.circuit import CircuitError
+🧪 MÓDULO QUÂNTICO: statevector_sampler.py
+   ➕ from __future__ import annotations
+   ➕ from dataclasses import dataclass
+🧪 MÓDULO QUÂNTICO: qaoa_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.parametervector import ParameterVector
+🧪 MÓDULO QUÂNTICO: instructionset.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import MutableSequence
+🧪 MÓDULO QUÂNTICO: compare_2s.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit.library.boolean_logic.quantum_or import OrGate
+🧪 MÓDULO QUÂNTICO: pauli_2q_evolution_commutation.py
+   ➕ from typing import Tuple
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: pauli_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: controlledgate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Union
+🧪 MÓDULO QUÂNTICO: quantum_channel.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: template_nct_6c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Statevector
+🧪 MÓDULO QUÂNTICO: qft_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: base_quantum_error.py
+   ➕ from abc import abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, QuantumRegister
+🧪 MÓDULO QUÂNTICO: uc.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: gate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Iterator, Iterable
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_general.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: one_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: ptm.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: clifford_circuits.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Barrier, Delay, Gate
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: template_nct_6b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: default_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from math import pi, inf, isclose
+🧪 MÓDULO QUÂNTICO: template_nct_9d_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: observables_array.py
+   ➕ from __future__ import annotations
+   ➕ from copy import deepcopy
+🧪 MÓDULO QUÂNTICO: template_nct_4b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_superop.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import SuperOp
+🧪 MÓDULO QUÂNTICO: xx_minus_yy.py
+   ➕ from __future__ import annotations
+   ➕ from cmath import exp
+🧪 MÓDULO QUÂNTICO: rv_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: clifford_8_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: clifford_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: validation_v1.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: multi_control_rotation_gates.py
+   ➕ from qiskit.circuit import QuantumCircuit, Gate
+   ➕ from qiskit.circuit.library.standard_gates.u3 import _generate_gray_code
+🧪 MÓDULO QUÂNTICO: double_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: clifford_6_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hrs_cumulative_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: state_visualization.py
+   ➕ from typing import List, Union
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: qft.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, CircuitInstruction, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_6a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: stabilizer_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: template_nct_9c_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: postprocess.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕     from qiskit.quantum_info.states.statevector import Statevector
+🧪 MÓDULO QUÂNTICO: backend_utils.py
+   ➕ from math import log2
+   ➕ from types import SimpleNamespace
+🧪 MÓDULO QUÂNTICO: template_nct_6a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7e_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: clifford_2_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: clifford_8_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sparse_pauli_op.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING, List
+🧪 MÓDULO QUÂNTICO: template_nct_9c_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sampler.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: initializer.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: save_expectation_value.py
+   ➕ from numpy import allclose
+   ➕ from qiskit.quantum_info import Pauli, SparsePauliOp, Operator
+🧪 MÓDULO QUÂNTICO: permutation_lnn.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: quantum_state.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: template_nct_7b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: isometry.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.exceptions import CircuitError
+🧪 MÓDULO QUÂNTICO: template_nct_9c_12.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Type, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: kraus.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: pauli_list.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: template_nct_9d_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: solovay_kitaev.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_bm.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: product_formula.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: qdrift.py
+   ➕ from __future__ import annotations
+   ➕ from itertools import chain
+🧪 MÓDULO QUÂNTICO: vrg_modular_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: tolerances.py
+   ➕ from abc import ABCMeta
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: twirling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit._accelerate.twirling import twirl_circuit as twirl_rs
+🧪 MÓDULO QUÂNTICO: template_nct_9d_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: statevector.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: transpiler.py
+   ➕ from time import time
+   ➕ from typing import List, Union, Dict, Callable, Any, Optional, TypeVar
+🧪 MÓDULO QUÂNTICO: clifford_2_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: stinespring.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: n_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Mapping, Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: circuit_to_instruction.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕ from qiskit.circuit.instruction import Instruction
+🧪 MÓDULO QUÂNTICO: matrix_synthesis.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from .evolution_synthesis import EvolutionSynthesis
+🧪 MÓDULO QUÂNTICO: hamiltonian_gate.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: dihedral.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cdkm_ripple_carry_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: base_pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: solovay_kitaev_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.converters import circuit_to_dag
+🧪 MÓDULO QUÂNTICO: template_nct_9c_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: choi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: base_operator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC
+🧪 MÓDULO QUÂNTICO: pauli_evolution.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: unitary.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit import _numpy_compat
+🧪 MÓDULO QUÂNTICO: template_nct_5a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: collect_cliffords.py
+   ➕ from functools import partial
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: pauli_lindblad_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: high_level_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: builder.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Collection, Iterable, FrozenSet, Tuple, Union, Optional, Sequence
+🧪 MÓDULO QUÂNTICO: approximate.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: anti_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: rg_qft_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError, MissingOptionalLibraryError
+🧪 MÓDULO QUÂNTICO: stabilizerstate.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: clifford_4_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: graph_state.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: name_mapping.py
+   ➕ from qiskit.circuit import ControlledGate, Parameter
+   ➕ from qiskit.circuit.reset import Reset
+🧪 MÓDULO QUÂNTICO: template_nct_9c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: optimize_1q_decomposition.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: statevector_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: hls_plugins.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: densitymatrix.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: lie_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: mcx_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_two_qubits.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_5a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_unitary.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: template_nct_2a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_layers.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: state_preparation.py
+   ➕ from typing import Union, Optional
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: clifford_decompose_ag.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: stabilizer_circuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: optimize_1q_gates.py
+   ➕ from itertools import groupby
+   ➕ from qiskit.transpiler.exceptions import TranspilerError
+🧪 MÓDULO QUÂNTICO: annotated_operation.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Union, List
+🧪 MÓDULO QUÂNTICO: operator.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: chi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: set_density_matrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import DensityMatrix
+🧪 MÓDULO QUÂNTICO: clifford_4_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hoare_opt.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.circuit import QuantumRegister, ControlledGate, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_6a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: result.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_9a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: operation.py
+   ➕ from abc import ABC, abstractmethod
+   ➕            from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_optimization.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.dagcircuit import DAGDependency
+🧪 MÓDULO QUÂNTICO: backend_estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: clifford_5_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: aerbackend.py
+   ➕ from abc import ABC, abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, ParameterExpression, Delay
+🧪 MÓDULO QUÂNTICO: sampled_expval.py
+   ➕ from qiskit._accelerate.sampled_exp_val import sampled_expval_float, sampled_expval_complex
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: annotation.py
+   ➕     from qiskit.circuit import annotation, QuantumCircuit, BoxOp
+   ➕     from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: template_nct_7d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: phase_estimation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit, QuantumRegister, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_7a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: superop.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: template_nct_9c_11.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: qsd.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Callable
+🧪 MÓDULO QUÂNTICO: template_nct_9d_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: quantumcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections import OrderedDict
+🧪 MÓDULO QUÂNTICO: weighted_sum.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: parse.py
+   ➕ from typing import Iterable, Callable
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: clifford_6_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: diagonal.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: quantum_error.py
+   ➕ from typing import Iterable
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, Reset
+🧪 MÓDULO QUÂNTICO: aqc.py
+   ➕ from __future__ import annotations
+   ➕ from functools import partial
+🧪 MÓDULO QUÂNTICO: optimize_cliffords.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: clifford_8_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_3_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.symplectic.pauli_list import PauliList
+🧪 MÓDULO QUÂNTICO: template_nct_5a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hidden_linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_greedy.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: template_nct_4b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: vbe_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Bit
+🧪 MÓDULO QUÂNTICO: operator_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: clifford_4_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: grover_operator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import List, Optional, Union
+🧪 MÓDULO QUÂNTICO: template_nct_9c_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_full.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import CNOTDihedral
+🧪 MÓDULO QUÂNTICO: dynamical_decoupling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Gate, ParameterExpression, Qubit
+🧪 MÓDULO QUÂNTICO: commuting_2q_gate_router.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: uc_pauli_rot.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: permutation_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: blueprintcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: gms.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: scalar_op.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: aer_densitymatrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_9c_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: standard_errors.py
+   ➕ from qiskit.circuit import Reset
+   ➕ from qiskit.circuit.library.standard_gates import IGate, XGate, ZGate
+🧪 MÓDULO QUÂNTICO: suzuki_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: readout_error.py
+   ➕ from numpy.linalg import norm
+   ➕ from qiskit.circuit import Instruction
+🧪 MÓDULO QUÂNTICO: aer_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info.states import Statevector
+🧪 MÓDULO QUÂNTICO: noise_model.py
+   ➕ from typing import Optional
+   ➕ from warnings import warn, catch_warnings, filterwarnings
+🧪 MÓDULO QUÂNTICO: template_nct_9c_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: noise_transformation.py
+   ➕ from typing import Sequence, List, Union, Callable
+   ➕ from qiskit.circuit import Reset
+🧪 MÓDULO QUÂNTICO: weyl.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: decomposer.py
+   ➕ from __future__ import annotations
+   ➕ from operator import itemgetter
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: circuit_to_gate.py
+   ➕ from qiskit.circuit.annotated_operation import AnnotatedOperation
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: mcg_up_to_diagonal.py
+   ➕ from qiskit.circuit import Gate
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_greedy.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: evolved_operator_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: clifford.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: template_nct_9c_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: transformations.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: set_stabilizer.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import StabilizerState, Clifford
+🧪 MÓDULO QUÂNTICO: commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: gr.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕        from qiskit.circuit.library import GR
+🧪 MÓDULO QUÂNTICO: linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: base_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod, ABC
+🧪 MÓDULO QUÂNTICO: template_nct_4a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: commutative_inverse_cancellation.py
+   ➕ from qiskit.circuit.commutation_library import SessionCommutationChecker as scc
+   ➕ from qiskit.circuit import CircuitError
+🧪 MÓDULO QUÂNTICO: statevector_sampler.py
+   ➕ from __future__ import annotations
+   ➕ from dataclasses import dataclass
+🧪 MÓDULO QUÂNTICO: qaoa_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.parametervector import ParameterVector
+🧪 MÓDULO QUÂNTICO: instructionset.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import MutableSequence
+🧪 MÓDULO QUÂNTICO: compare_2s.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit.library.boolean_logic.quantum_or import OrGate
+🧪 MÓDULO QUÂNTICO: pauli_2q_evolution_commutation.py
+   ➕ from typing import Tuple
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: pauli_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: controlledgate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Union
+🧪 MÓDULO QUÂNTICO: quantum_channel.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: template_nct_6c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Statevector
+🧪 MÓDULO QUÂNTICO: qft_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: base_quantum_error.py
+   ➕ from abc import abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, QuantumRegister
+🧪 MÓDULO QUÂNTICO: uc.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: gate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Iterator, Iterable
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_general.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: one_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: ptm.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: clifford_circuits.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Barrier, Delay, Gate
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: template_nct_6b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: default_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from math import pi, inf, isclose
+🧪 MÓDULO QUÂNTICO: template_nct_9d_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: observables_array.py
+   ➕ from __future__ import annotations
+   ➕ from copy import deepcopy
+🧪 MÓDULO QUÂNTICO: template_nct_4b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_superop.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import SuperOp
+🧪 MÓDULO QUÂNTICO: xx_minus_yy.py
+   ➕ from __future__ import annotations
+   ➕ from cmath import exp
+🧪 MÓDULO QUÂNTICO: rv_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: clifford_8_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: clifford_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: validation_v1.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: multi_control_rotation_gates.py
+   ➕ from qiskit.circuit import QuantumCircuit, Gate
+   ➕ from qiskit.circuit.library.standard_gates.u3 import _generate_gray_code
+🧪 MÓDULO QUÂNTICO: double_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: clifford_6_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hrs_cumulative_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: state_visualization.py
+   ➕ from typing import List, Union
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: qft.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, CircuitInstruction, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_6a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: stabilizer_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: template_nct_9c_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: postprocess.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕     from qiskit.quantum_info.states.statevector import Statevector
+🧪 MÓDULO QUÂNTICO: backend_utils.py
+   ➕ from math import log2
+   ➕ from types import SimpleNamespace
+🧪 MÓDULO QUÂNTICO: template_nct_6a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7e_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: clifford_2_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: clifford_8_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sparse_pauli_op.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING, List
+🧪 MÓDULO QUÂNTICO: template_nct_9c_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: sampler.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: initializer.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: save_expectation_value.py
+   ➕ from numpy import allclose
+   ➕ from qiskit.quantum_info import Pauli, SparsePauliOp, Operator
+🧪 MÓDULO QUÂNTICO: permutation_lnn.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: quantum_state.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: template_nct_7b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: isometry.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.exceptions import CircuitError
+🧪 MÓDULO QUÂNTICO: template_nct_9c_12.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Type, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: kraus.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: pauli_list.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: template_nct_9d_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: solovay_kitaev.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_bm.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: product_formula.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: qdrift.py
+   ➕ from __future__ import annotations
+   ➕ from itertools import chain
+🧪 MÓDULO QUÂNTICO: vrg_modular_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: tolerances.py
+   ➕ from abc import ABCMeta
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: twirling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit._accelerate.twirling import twirl_circuit as twirl_rs
+🧪 MÓDULO QUÂNTICO: template_nct_9d_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: statevector.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: transpiler.py
+   ➕ from time import time
+   ➕ from typing import List, Union, Dict, Callable, Any, Optional, TypeVar
+🧪 MÓDULO QUÂNTICO: clifford_2_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: stinespring.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: n_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Mapping, Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: circuit_to_instruction.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕ from qiskit.circuit.instruction import Instruction
+🧪 MÓDULO QUÂNTICO: matrix_synthesis.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from .evolution_synthesis import EvolutionSynthesis
+🧪 MÓDULO QUÂNTICO: hamiltonian_gate.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: dihedral.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cdkm_ripple_carry_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: base_pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: solovay_kitaev_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.converters import circuit_to_dag
+🧪 MÓDULO QUÂNTICO: template_nct_9c_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: choi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: base_operator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC
+🧪 MÓDULO QUÂNTICO: pauli_evolution.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: unitary.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit import _numpy_compat
+🧪 MÓDULO QUÂNTICO: template_nct_5a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: collect_cliffords.py
+   ➕ from functools import partial
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: pauli_lindblad_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: high_level_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: builder.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Collection, Iterable, FrozenSet, Tuple, Union, Optional, Sequence
+🧪 MÓDULO QUÂNTICO: approximate.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: anti_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: rg_qft_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError, MissingOptionalLibraryError
+🧪 MÓDULO QUÂNTICO: stabilizerstate.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: clifford_4_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: graph_state.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: name_mapping.py
+   ➕ from qiskit.circuit import ControlledGate, Parameter
+   ➕ from qiskit.circuit.reset import Reset
+🧪 MÓDULO QUÂNTICO: template_nct_9c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: optimize_1q_decomposition.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: statevector_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: hls_plugins.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: densitymatrix.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: lie_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: mcx_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_two_qubits.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_5a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: set_unitary.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: template_nct_2a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_layers.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: state_preparation.py
+   ➕ from typing import Union, Optional
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: clifford_decompose_ag.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: stabilizer_circuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: optimize_1q_gates.py
+   ➕ from itertools import groupby
+   ➕ from qiskit.transpiler.exceptions import TranspilerError
+🧪 MÓDULO QUÂNTICO: annotated_operation.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Union, List
+🧪 MÓDULO QUÂNTICO: operator.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: chi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: set_density_matrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import DensityMatrix
+🧪 MÓDULO QUÂNTICO: clifford_4_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hoare_opt.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.circuit import QuantumRegister, ControlledGate, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_6a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: result.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: template_nct_9a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: operation.py
+   ➕ from abc import ABC, abstractmethod
+   ➕            from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_optimization.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.dagcircuit import DAGDependency
+🧪 MÓDULO QUÂNTICO: backend_estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: clifford_5_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: aerbackend.py
+   ➕ from abc import ABC, abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, ParameterExpression, Delay
+🧪 MÓDULO QUÂNTICO: sampled_expval.py
+   ➕ from qiskit._accelerate.sampled_exp_val import sampled_expval_float, sampled_expval_complex
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: annotation.py
+   ➕     from qiskit.circuit import annotation, QuantumCircuit, BoxOp
+   ➕     from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: template_nct_7d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: phase_estimation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit, QuantumRegister, Gate
+🧪 MÓDULO QUÂNTICO: template_nct_7a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: superop.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: template_nct_9c_11.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: qsd.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Callable
+🧪 MÓDULO QUÂNTICO: template_nct_9d_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: quantumcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections import OrderedDict
+🧪 MÓDULO QUÂNTICO: weighted_sum.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: parse.py
+   ➕ from typing import Iterable, Callable
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: clifford_6_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: diagonal.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: quantum_error.py
+   ➕ from typing import Iterable
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, Reset
+🧪 MÓDULO QUÂNTICO: aqc.py
+   ➕ from __future__ import annotations
+   ➕ from functools import partial
+🧪 MÓDULO QUÂNTICO: optimize_cliffords.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: clifford_8_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_3_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.symplectic.pauli_list import PauliList
+🧪 MÓDULO QUÂNTICO: template_nct_5a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: hidden_linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_greedy.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: template_nct_4b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: vbe_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Bit
+🧪 MÓDULO QUÂNTICO: operator_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: clifford_4_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: grover_operator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import List, Optional, Union
+🧪 MÓDULO QUÂNTICO: template_nct_9c_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_full.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import CNOTDihedral
+🧪 MÓDULO QUÂNTICO: dynamical_decoupling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Gate, ParameterExpression, Qubit
+🧪 MÓDULO QUÂNTICO: commuting_2q_gate_router.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: uc_pauli_rot.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: permutation_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: blueprintcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: gms.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: noise_transformation.py
+   ➕ from typing import Sequence, List, Union, Callable
+   ➕ from qiskit.circuit import Reset
+🧪 MÓDULO QUÂNTICO: estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: sampler.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: aer_densitymatrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: aer_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info.states import Statevector
+🧪 MÓDULO QUÂNTICO: noise_model.py
+   ➕ from typing import Optional
+   ➕ from warnings import warn, catch_warnings, filterwarnings
+🧪 MÓDULO QUÂNTICO: standard_errors.py
+   ➕ from qiskit.circuit import Reset
+   ➕ from qiskit.circuit.library.standard_gates import IGate, XGate, ZGate
+🧪 MÓDULO QUÂNTICO: readout_error.py
+   ➕ from numpy.linalg import norm
+   ➕ from qiskit.circuit import Instruction
+🧪 MÓDULO QUÂNTICO: pauli_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: base_quantum_error.py
+   ➕ from abc import abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, QuantumRegister
+🧪 MÓDULO QUÂNTICO: pauli_lindblad_error.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ from .readout_error import ReadoutError
+   ➕ from .quantum_error import QuantumError
+🧪 MÓDULO QUÂNTICO: quantum_error.py
+   ➕ from typing import Iterable
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction, Reset
+🧪 MÓDULO QUÂNTICO: save_expectation_value.py
+   ➕ from numpy import allclose
+   ➕ from qiskit.quantum_info import Pauli, SparsePauliOp, Operator
+🧪 MÓDULO QUÂNTICO: set_stabilizer.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import StabilizerState, Clifford
+🧪 MÓDULO QUÂNTICO: set_statevector.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Statevector
+🧪 MÓDULO QUÂNTICO: set_superop.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import SuperOp
+🧪 MÓDULO QUÂNTICO: set_unitary.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: set_density_matrix.py
+   ➕ from qiskit.circuit import QuantumCircuit, Instruction
+   ➕ from qiskit.quantum_info import DensityMatrix
+🧪 MÓDULO QUÂNTICO: backend_utils.py
+   ➕ from math import log2
+   ➕ from types import SimpleNamespace
+🧪 MÓDULO QUÂNTICO: name_mapping.py
+   ➕ from qiskit.circuit import ControlledGate, Parameter
+   ➕ from qiskit.circuit.reset import Reset
+🧪 MÓDULO QUÂNTICO: aerbackend.py
+   ➕ from abc import ABC, abstractmethod
+   ➕ from qiskit.circuit import QuantumCircuit, ParameterExpression, Delay
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ tried from index 0 onwards, and the first match is used.  The import ``qelib1.inc`` is treated
+   ➕     from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: parse.py
+   ➕ from typing import Iterable, Callable
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: transpiler.py
+   ➕ from time import time
+   ➕ from typing import List, Union, Dict, Callable, Any, Optional, TypeVar
+🧪 MÓDULO QUÂNTICO: statevector_sampler.py
+   ➕ from __future__ import annotations
+   ➕ from dataclasses import dataclass
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Instruction, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: observables_array.py
+   ➕ from __future__ import annotations
+   ➕ from copy import deepcopy
+🧪 MÓDULO QUÂNTICO: statevector_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Iterable
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕     from qiskit.primitives import StatevectorEstimator as Estimator
+   ➕     from qiskit.circuit.library import RealAmplitudes
+🧪 MÓDULO QUÂNTICO: backend_estimator_v2.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: base_estimator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod, ABC
+🧪 MÓDULO QUÂNTICO: validation_v1.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from rustworkx import PyDiGraph
+   ➕ from qiskit.circuit import (
+🧪 MÓDULO QUÂNTICO: instructionset.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import MutableSequence
+🧪 MÓDULO QUÂNTICO: controlledgate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Union
+🧪 MÓDULO QUÂNTICO: gate.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Iterator, Iterable
+🧪 MÓDULO QUÂNTICO: twirling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit._accelerate.twirling import twirl_circuit as twirl_rs
+🧪 MÓDULO QUÂNTICO: template_nct_9c_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7e_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6b_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_8.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_12.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_9.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_6.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_10.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_6a_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_2a_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7d_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_11.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9d_7.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_7c_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_5a_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_4b_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: template_nct_9c_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_5_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_5.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_8_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_3_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_3.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_2.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_6_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_2_4.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_4_1.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: mcg_up_to_diagonal.py
+   ➕ from qiskit.circuit import Gate
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, QuantumCircuit
+🧪 MÓDULO QUÂNTICO: gr.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕        from qiskit.circuit.library import GR
+🧪 MÓDULO QUÂNTICO: linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: uc.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: isometry.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.exceptions import CircuitError
+🧪 MÓDULO QUÂNTICO: unitary.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit import _numpy_compat
+🧪 MÓDULO QUÂNTICO: permutation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from qiskit.circuit.quantumcircuitdata import CircuitInstruction
+   ➕ from qiskit.circuit.library.standard_gates.x import XGate
+🧪 MÓDULO QUÂNTICO: diagonal.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: uc_pauli_rot.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: gms.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: xx_minus_yy.py
+   ➕ from __future__ import annotations
+   ➕ from cmath import exp
+🧪 MÓDULO QUÂNTICO: hamiltonian_gate.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: pauli_evolution.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: graph_state.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, Gate
+🧪 MÓDULO QUÂNTICO: initializer.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: state_preparation.py
+   ➕ from typing import Union, Optional
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit.circuit import QuantumCircuit
+   ➕    from qiskit.circuit.library import PauliEvolutionGate
+🧪 MÓDULO QUÂNTICO: two_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: evolved_operator_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Sequence
+🧪 MÓDULO QUÂNTICO: qaoa_ansatz.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.parametervector import ParameterVector
+🧪 MÓDULO QUÂNTICO: n_local.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Mapping, Sequence, Iterable
+🧪 MÓDULO QUÂNTICO: phase_estimation.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit, QuantumRegister, Gate
+🧪 MÓDULO QUÂNTICO: qft.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumRegister, CircuitInstruction, Gate
+🧪 MÓDULO QUÂNTICO: hidden_linear_function.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕ from .quantum_and import AND, AndGate
+   ➕ from .quantum_or import OR, OrGate
+🧪 MÓDULO QUÂNTICO: grover_operator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import List, Optional, Union
+🧪 MÓDULO QUÂNTICO: blueprintcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: builder.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Collection, Iterable, FrozenSet, Tuple, Union, Optional, Sequence
+🧪 MÓDULO QUÂNTICO: annotated_operation.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Union, List
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit import QuantumCircuit
+   ➕     from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: operation.py
+   ➕ from abc import ABC, abstractmethod
+   ➕            from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: annotation.py
+   ➕     from qiskit.circuit import annotation, QuantumCircuit, BoxOp
+   ➕     from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: quantumcircuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections import OrderedDict
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.random import (
+🧪 MÓDULO QUÂNTICO: quantum_state.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: statevector.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: stabilizerstate.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: densitymatrix.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: scalar_op.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: transformations.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: quantum_channel.py
+   ➕ from __future__ import annotations
+   ➕ from abc import abstractmethod
+🧪 MÓDULO QUÂNTICO: ptm.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: kraus.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: stinespring.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: choi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: chi.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: superop.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: double_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: anti_commutator.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TypeVar
+🧪 MÓDULO QUÂNTICO: random.py
+   ➕ from __future__ import annotations
+   ➕ from numpy.random import default_rng
+🧪 MÓDULO QUÂNTICO: base_operator.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC
+🧪 MÓDULO QUÂNTICO: clifford.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal
+🧪 MÓDULO QUÂNTICO: clifford_circuits.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Barrier, Delay, Gate
+🧪 MÓDULO QUÂNTICO: sparse_pauli_op.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING, List
+🧪 MÓDULO QUÂNTICO: pauli_list.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: base_pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: pauli.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Literal, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: pauli_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info.operators.symplectic.pauli_list import PauliList
+🧪 MÓDULO QUÂNTICO: measures.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError, MissingOptionalLibraryError
+🧪 MÓDULO QUÂNTICO: tolerances.py
+   ➕ from abc import ABCMeta
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: operator.py
+   ➕ from __future__ import annotations
+   ➕ from numbers import Number
+🧪 MÓDULO QUÂNTICO: dihedral.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: operator_utils.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.quantum_info import Operator
+🧪 MÓDULO QUÂNTICO: distance.py
+   ➕ from __future__ import annotations
+   ➕             from qiskit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: postprocess.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕     from qiskit.quantum_info.states.statevector import Statevector
+🧪 MÓDULO QUÂNTICO: result.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: sampled_expval.py
+   ➕ from qiskit._accelerate.sampled_exp_val import sampled_expval_float, sampled_expval_complex
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: suzuki_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: product_formula.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable, Sequence
+🧪 MÓDULO QUÂNTICO: qdrift.py
+   ➕ from __future__ import annotations
+   ➕ from itertools import chain
+🧪 MÓDULO QUÂNTICO: matrix_synthesis.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from .evolution_synthesis import EvolutionSynthesis
+🧪 MÓDULO QUÂNTICO: lie_trotter.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: stabilizer_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: stabilizer_circuit.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Collection
+🧪 MÓDULO QUÂNTICO: rv_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: vrg_modular_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: cdkm_ripple_carry_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: draper_qft_adder.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit import QuantumRegister
+🧪 MÓDULO QUÂNTICO: vbe_ripple_carry_adder.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Bit
+🧪 MÓDULO QUÂNTICO: hrs_cumulative_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: rg_qft_multiplier.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_greedy.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: compare_2s.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.circuit.library.boolean_logic.quantum_or import OrGate
+🧪 MÓDULO QUÂNTICO: weighted_sum.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit, QuantumRegister, AncillaRegister
+🧪 MÓDULO QUÂNTICO: qft_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation_lnn.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: permutation_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_full.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: clifford_decompose_bm.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_decompose_layers.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: clifford_decompose_ag.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: clifford_decompose_greedy.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import Clifford
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_general.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_two_qubits.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: cnotdihedral_decompose_full.py
+   ➕ from qiskit.circuit import QuantumCircuit
+   ➕ from qiskit.quantum_info import CNOTDihedral
+🧪 MÓDULO QUÂNTICO: multi_control_rotation_gates.py
+   ➕ from qiskit.circuit import QuantumCircuit, Gate
+   ➕ from qiskit.circuit.library.standard_gates.u3 import _generate_gray_code
+🧪 MÓDULO QUÂNTICO: mcx_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from math import ceil
+🧪 MÓDULO QUÂNTICO: approximate.py
+   ➕ from __future__ import annotations
+   ➕ from abc import ABC, abstractmethod
+🧪 MÓDULO QUÂNTICO: aqc.py
+   ➕ from __future__ import annotations
+   ➕ from functools import partial
+🧪 MÓDULO QUÂNTICO: qsd.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Callable
+🧪 MÓDULO QUÂNTICO: solovay_kitaev.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: two_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import Optional, Type, TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: weyl.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: decomposer.py
+   ➕ from __future__ import annotations
+   ➕ from operator import itemgetter
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: one_qubit_decompose.py
+   ➕ from __future__ import annotations
+   ➕ from typing import TYPE_CHECKING
+🧪 MÓDULO QUÂNTICO: state_visualization.py
+   ➕ from typing import List, Union
+   ➕ from functools import reduce
+🧪 MÓDULO QUÂNTICO: __init__.py
+   ➕    from qiskit.visualization import plot_histogram
+   ➕    from qiskit.visualization import plot_histogram
+🧪 MÓDULO QUÂNTICO: default_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from math import pi, inf, isclose
+🧪 MÓDULO QUÂNTICO: clifford_unitary_synth_plugin.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: solovay_kitaev_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.converters import circuit_to_dag
+🧪 MÓDULO QUÂNTICO: high_level_synthesis.py
+   ➕ from __future__ import annotations
+   ➕ from collections.abc import Callable
+🧪 MÓDULO QUÂNTICO: hls_plugins.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+🧪 MÓDULO QUÂNTICO: pauli_2q_evolution_commutation.py
+   ➕ from typing import Tuple
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: commuting_2q_gate_router.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: commutative_inverse_cancellation.py
+   ➕ from qiskit.circuit.commutation_library import SessionCommutationChecker as scc
+   ➕ from qiskit.circuit import CircuitError
+🧪 MÓDULO QUÂNTICO: collect_cliffords.py
+   ➕ from functools import partial
+   ➕ from qiskit.exceptions import QiskitError
+🧪 MÓDULO QUÂNTICO: optimize_1q_decomposition.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: optimize_1q_gates.py
+   ➕ from itertools import groupby
+   ➕ from qiskit.transpiler.exceptions import TranspilerError
+🧪 MÓDULO QUÂNTICO: hoare_opt.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.circuit import QuantumRegister, ControlledGate, Gate
+🧪 MÓDULO QUÂNTICO: template_optimization.py
+   ➕ from qiskit.circuit.quantumcircuit import QuantumCircuit
+   ➕ from qiskit.dagcircuit import DAGDependency
+🧪 MÓDULO QUÂNTICO: optimize_cliffords.py
+   ➕ from qiskit.transpiler.basepasses import TransformationPass
+   ➕ from qiskit.transpiler.passes.utils import control_flow
+🧪 MÓDULO QUÂNTICO: dynamical_decoupling.py
+   ➕ from __future__ import annotations
+   ➕ from qiskit.circuit import Gate, ParameterExpression, Qubit
+🧪 MÓDULO QUÂNTICO: common.py
+   ➕ from typing import Optional
+   ➕ from qiskit.circuit.equivalence_library import SessionEquivalenceLibrary as sel
+🧪 MÓDULO QUÂNTICO: circuits.py
+   ➕ from __future__ import annotations
+   ➕ from collections import defaultdict
+🧪 MÓDULO QUÂNTICO: circuit_to_gate.py
+   ➕ from qiskit.circuit.annotated_operation import AnnotatedOperation
+   ➕ from qiskit.circuit.gate import Gate
+🧪 MÓDULO QUÂNTICO: circuit_to_instruction.py
+   ➕ from qiskit.exceptions import QiskitError
+   ➕ from qiskit.circuit.instruction import Instruction
+🧪 MÓDULO QUÂNTICO: sistema_pesquisa_avancada.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: fundacao_master_sem_plot.py
+   ➕     from qiskit import QuantumCircuit
+   ➕     from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: sistema_completo_independente.py
+   ➕ from qiskit import QuantumCircuit, transpile
+   ➕ from qiskit_aer import AerSimulator
+🧪 MÓDULO QUÂNTICO: fundacao_alquimista_definitiva.py
+   ➕     from qiskit import QuantumCircuit, transpile
+   ➕     from qiskit_aer import AerSimulator
+
+🔄 FLUXOS DE DADOS PRINCIPAIS:
+🎯 PONTO DE ENTRADA: dashboard_fundacao.py
+🎯 PONTO DE ENTRADA: backup_fundacao.py
+🎯 PONTO DE ENTRADA: teste_completo_fundacao.py
+🎯 PONTO DE ENTRADA: aplicacoes_medicas_avancadas.py
+🎯 PONTO DE ENTRADA: teste_completo_definitivo.py
+🎯 PONTO DE ENTRADA: experimentos_avancados.py
+🎯 PONTO DE ENTRADA: experimentos_fundamentais.py
+🎯 PONTO DE ENTRADA: dashboard_fundacao.py
+🎯 PONTO DE ENTRADA: teste_completo_fundacao.py
+🎯 PONTO DE ENTRADA: aplicacoes_medicas_avancadas.py

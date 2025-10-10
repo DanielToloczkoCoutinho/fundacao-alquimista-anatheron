@@ -1,0 +1,231 @@
+{
+  "modulos_principais": {
+    "M0": {
+      "nome": "FONTE FUNDAÇÃO ALQUIMISTA",
+      "caminho": "SCRIPTS_CENTRALIZADOS",
+      "status": "Ativo"
+    },
+    "M29": {
+      "nome": "ZENNITH RAINHA",
+      "caminho": "SCRIPTS_CENTRALIZADOS/MODULO_29",
+      "status": "Ativo"
+    },
+    "M9": {
+      "nome": "ORGANOGRAMA VIVO (NEXUS)",
+      "caminho": "SCRIPTS_CENTRALIZADOS/MODULO_29",
+      "status": "Ativo"
+    },
+    "M8": {
+      "nome": "IDENTIDADE FRACTAL",
+      "caminho": "SCRIPTS_CENTRALIZADOS",
+      "status": "Ativo"
+    },
+    "M45": {
+      "nome": "CONCILIVM GOVERNANÇA",
+      "caminho": "SCRIPTS_CENTRALIZADOS",
+      "status": "Ativo"
+    },
+    "MΩ": {
+      "nome": "OMEGA",
+      "caminho": "SCRIPTS_CENTRALIZADOS",
+      "status": "Ativo"
+    }
+  },
+  "sistemas_python": [
+    {
+      "nome": "dashboard_fundacao.py",
+      "caminho": "./dashboard_fundacao.py",
+      "tamanho": 3310,
+      "linhas": 92
+    },
+    {
+      "nome": "login_portal.py",
+      "caminho": "./login_portal.py",
+      "tamanho": 1951,
+      "linhas": 58
+    },
+    {
+      "nome": "teste_completo_fundacao.py",
+      "caminho": "./teste_completo_fundacao.py",
+      "tamanho": 3746,
+      "linhas": 98
+    },
+    {
+      "nome": "fundacao_master_plot_seguro.py",
+      "caminho": "./fundacao_master_plot_seguro.py",
+      "tamanho": 2299,
+      "linhas": 80
+    },
+    {
+      "nome": "aplicacoes_medicas_avancadas.py",
+      "caminho": "./aplicacoes_medicas_avancadas.py",
+      "tamanho": 14817,
+      "linhas": 341
+    },
+    {
+      "nome": "teste_completo_definitivo.py",
+      "caminho": "./teste_completo_definitivo.py",
+      "tamanho": 15341,
+      "linhas": 361
+    },
+    {
+      "nome": "sistema_alquimista_definitivo.py",
+      "caminho": "./sistema_alquimista_definitivo.py",
+      "tamanho": 120,
+      "linhas": 3
+    },
+    {
+      "nome": "relatorio_final_cientifico.py",
+      "caminho": "./relatorio_final_cientifico.py",
+      "tamanho": 7181,
+      "linhas": 175
+    },
+    {
+      "nome": "chsh_otimizado.py",
+      "caminho": "./chsh_otimizado.py",
+      "tamanho": 1980,
+      "linhas": 65
+    },
+    {
+      "nome": "circuitos_bell_simplificados.py",
+      "caminho": "./circuitos_bell_simplificados.py",
+      "tamanho": 4237,
+      "linhas": 109
+    },
+    {
+      "nome": "ciencia_profunda_fundacao.py",
+      "caminho": "./ciencia_profunda_fundacao.py",
+      "tamanho": 5583,
+      "linhas": 140
+    },
+    {
+      "nome": "sistema_pesquisa_avancada.py",
+      "caminho": "./sistema_pesquisa_avancada.py",
+      "tamanho": 3815,
+      "linhas": 115
+    },
+    {
+      "nome": "organizar_fundacao.py",
+      "caminho": "./organizar_fundacao.py",
+      "tamanho": 5947,
+      "linhas": 139
+    },
+    {
+      "nome": "teste_bell.py",
+      "caminho": "./teste_bell.py",
+      "tamanho": 1342,
+      "linhas": 47
+    },
+    {
+      "nome": "experimentos_avancados.py",
+      "caminho": "./experimentos_avancados.py",
+      "tamanho": 5730,
+      "linhas": 178
+    },
+    {
+      "nome": "explorer_avancado.py",
+      "caminho": "./explorer_avancado.py",
+      "tamanho": 5568,
+      "linhas": 141
+    },
+    {
+      "nome": "circuito_psi_plus.py",
+      "caminho": "./circuito_psi_plus.py",
+      "tamanho": 504,
+      "linhas": 20
+    },
+    {
+      "nome": "sistema_completo_corrigido.py",
+      "caminho": "./sistema_completo_corrigido.py",
+      "tamanho": 8025,
+      "linhas": 244
+    },
+    {
+      "nome": "simulacao_sistema_fisico.py",
+      "caminho": "./simulacao_sistema_fisico.py",
+      "tamanho": 1223,
+      "linhas": 42
+    },
+    {
+      "nome": "corrigir_portal.py",
+      "caminho": "./corrigir_portal.py",
+      "tamanho": 6021,
+      "linhas": 175
+    }
+  ],
+  "laboratorios": [
+    {
+      "nome": "SCRIPTS_CENTRALIZADOS",
+      "caminho": "./SCRIPTS_CENTRALIZADOS",
+      "tipo": "Central"
+    },
+    {
+      "nome": "MODULO_29",
+      "caminho": "./SCRIPTS_CENTRALIZADOS/MODULO_29",
+      "tipo": "Zennith"
+    },
+    {
+      "nome": "IBM_QUANTUM",
+      "caminho": "./SCRIPTS_CENTRALIZADOS/ibm_quantum",
+      "tipo": "Quantum"
+    },
+    {
+      "nome": "LABORATORIOS",
+      "caminho": "./SCRIPTS_CENTRALIZADOS/laboratorios",
+      "tipo": "Pesquisa"
+    }
+  ],
+  "documentacao": [
+    {
+      "nome": "declaracao_autonomia.md",
+      "caminho": "./declaracao_autonomia.md"
+    },
+    {
+      "nome": "estrategia-pratica.md",
+      "caminho": "./estrategia-pratica.md"
+    },
+    {
+      "nome": "ORGANOGRAMA_FUNDACAO.md",
+      "caminho": "./ORGANOGRAMA_FUNDACAO.md"
+    },
+    {
+      "nome": "relatorio_quantico_153_ciclos.md",
+      "caminho": "./relatorio_quantico_153_ciclos.md"
+    },
+    {
+      "nome": "README-ZENNITH.md",
+      "caminho": "./README-ZENNITH.md"
+    },
+    {
+      "nome": "VERCEL_SETUP_GUIDE.md",
+      "caminho": "./VERCEL_SETUP_GUIDE.md"
+    },
+    {
+      "nome": "README.md",
+      "caminho": "./README.md"
+    }
+  ],
+  "scripts_centralizados": {
+    "scripts_sincronizados": [],
+    "MODULO_29": [
+      "BASE_CONHECIMENTO",
+      "IA_AVANCADA",
+      "REDES_NEURAIS",
+      "app"
+    ],
+    "archive_deprecated": [],
+    "sistema_principal": [],
+    "modulos_nexus": [],
+    "verificacao_validacao": [],
+    "utils_ferramentas": [],
+    "laboratorios": [],
+    "ibm_quantum": [
+      "conectar_ibm_quantum.sh",
+      "configurar_token.sh",
+      "conectar_ibm_node.sh",
+      "interpretacao_alquimista.py",
+      "backup_credenciais.secure"
+    ],
+    "seguranca_backup": []
+  }
+}

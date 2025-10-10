@@ -1,0 +1,17 @@
+# PLANO DE DIVISÃO - organize_por_tecnologias
+# ===========================================
+
+BLOCO 1: Detecção de tecnologias (linhas 210-250)
+  → Função: detectar_tecnologias_arquivo()
+
+BLOCO 2: Categorização por tipo (linhas 251-300)  
+  → Função: categorizar_por_tipo()
+
+BLOCO 3: Organização física (linhas 301-350)
+  → Função: executar_organizacao_fisica()
+
+BLOCO 4: Geração de relatório (linhas 351-408)
+  → Função: gerar_relatorio_organizacao()
+
+FUNÇÃO PRINCIPAL: organize_por_tecnologias() (orquestração)
+  → Reduzida para ~50 linhas

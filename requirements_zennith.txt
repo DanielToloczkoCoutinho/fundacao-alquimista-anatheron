@@ -1,0 +1,20 @@
+# DEPENDÊNCIAS CORE - ZENNITH SYSTEM
+# ===================================
+
+# Computação quântica (36MB)
+qiskit>=0.45.0
+qiskit-aer>=0.13.0
+
+# Computação científica (59MB)  
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Análise de dados
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Utilitários
+requests>=2.31.0
+tqdm>=4.65.0
+
+# NOTA: Total ~100MB - Essenciais para funcionalidade core

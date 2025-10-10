@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "��️  PROTECTOR DO SISTEMA ATIVADO"
+echo "================================"
+echo "❌ NUNCA DELETAR ESTES DIRETÓRIOS:"
+echo "   - src/ (Frontend Next.js)"
+echo "   - public/ (Arquivos públicos)" 
+echo "   - package.json (Dependências)"
+echo "   - laboratorios_hierarquicos/ (Sistema Zennith)"
+echo "   - SCRIPTS_CENTRALIZADOS/ (Scripts principais)"
+echo "   - FUNDACAO_ORGANIZADA_DEFINITIVA/ (Estrutura)"
+echo ""
+echo "🎯 SISTEMA 100% OPERACIONAL - NÃO CRIAR NOVOS SCRIPTS"

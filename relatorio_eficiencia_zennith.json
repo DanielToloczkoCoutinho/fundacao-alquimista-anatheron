@@ -1,0 +1,43 @@
+{
+  "metricas": {
+    "tamanho_build": "107.61 MB",
+    "componentes_react": 15,
+    "total_dependencias": 16,
+    "componentes_total": 13,
+    "paginas_total": 13
+  },
+  "ineficiencias": {
+    "build_grande": {
+      "nivel": "ALTO",
+      "descricao": "Build muito grande: 107.61 MB",
+      "impacto": "Performance reduzida"
+    },
+    "sem_analise_bundle": {
+      "nivel": "BAIXO",
+      "descricao": "Sem análise de bundle otimizada",
+      "impacto": "Dificuldade na otimização"
+    },
+    "dependencias_pesadas": {
+      "nivel": "MEDIO",
+      "descricao": "Dependências pesadas: three, @types/three",
+      "impacto": "Build mais lento e maior"
+    },
+    "configuracoes_otimizacao": {
+      "nivel": "BAIXO",
+      "descricao": "Configurações de otimização básicas",
+      "impacto": "Performance não maximizada"
+    },
+    "sem_pwa": {
+      "nivel": "BAIXO",
+      "descricao": "Sem configuração PWA",
+      "impacto": "Experiência mobile não otimizada"
+    }
+  },
+  "recomendacoes": [
+    "Implementar code splitting e lazy loading",
+    "Otimizar uso de Three.js e Qiskit",
+    "Adicionar análise de bundle @next/bundle-analyzer",
+    "Configurar PWA para melhor experiência mobile"
+  ],
+  "status_geral": "🔴 ATENÇÃO"
+}

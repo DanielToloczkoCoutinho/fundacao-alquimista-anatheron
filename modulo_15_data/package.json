@@ -1,0 +1,14 @@
+{
+  "name": "modulo-15-ecossistemas",
+  "version": "1.0.0",
+  "description": "Módulo 15 - Gerenciamento de Ecossistemas Planetários da Fundação Alquimista",
+  "main": "M15_ECOSSISTEMAS.js",
+  "scripts": {
+    "start": "node INTEGRADOR_M15.js",
+    "test": "./TESTAR_M15.sh",
+    "deploy": "echo 'Módulo 15 pronto para deploy'"
+  },
+  "keywords": ["fundacao-alquimista", "ecossistemas", "planetario", "modulo15"],
+  "author": "Anatheron & Zennith Rainha",
+  "license": "ALQUIMISTA_COSMICA"
+}

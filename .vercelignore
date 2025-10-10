@@ -1,0 +1,6 @@
+backup-completo/
+backup_rapido_deploy/
+BACKUP_ESSENCIAL/
+backup_automatico/
+*backup*
+*.backup.*

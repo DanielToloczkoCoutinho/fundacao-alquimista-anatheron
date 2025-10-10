@@ -1,0 +1,17 @@
+# MAPA DE SUBSTITUIÇÃO - FUNÇÕES DUPLICADAS
+# =========================================
+
+# LOG FUNCTIONS
+log_.*() → log_zennith()
+
+# VALIDATION FUNCTIONS  
+validar_.*() → validar_arquivo() / validar_diretorio()
+
+# MONITORING FUNCTIONS
+monitorar_.*() → monitorar_recursos()
+
+# BACKUP FUNCTIONS
+backup_.*() → backup_automatico()
+
+# ANALYSIS FUNCTIONS
+analisar_.*() → analisar_espaco()

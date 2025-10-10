@@ -1,0 +1,51 @@
+#!/bin/bash
+# 🗂️ EXPLORER DA FUNDAÇÃO ALQUIMISTA
+# 🌌 Navegação Inteligente pelos Módulos
+
+echo "🗂️ EXPLORER - FUNDAÇÃO ALQUIMISTA"
+echo "👑 Navegação por Módulos e Sistemas"
+echo "==================================="
+
+cd ~/studio
+
+case "$1" in
+    "quanticos")
+        echo "🧪 MÓDULOS QUÂNTICOS:"
+        ls -la *.py | grep -E "(circuito|teletransporte|teste|interpretacao|ruido|simulacao)" | head -10
+        ;;
+    "virtuais")
+        echo "💻 MÓDULOS VIRTUAIS:"
+        ls -la *.py | grep -E "(portal|acessar|deploy|nobel|tabela)" | head -10
+        ;;
+    "controle")
+        echo "⚙️ SISTEMAS DE CONTROLE:"
+        ls -la *.sh | grep -E "(salvar|backup|status|deploy|sistema)" | head -10
+        ;;
+    "backups")
+        echo "💾 BACKUPS TEMPORAIS:"
+        ls -la ~/backup_fundacao/ | head -10
+        echo "Total: $(ls -1 ~/backup_fundacao/ | wc -l) realidades alternativas"
+        ;;
+    "portal")
+        echo "🌐 SISTEMA PORTAL:"
+        ls -la *.py *.sh | grep -i portal
+        ;;
+    "todos")
+        echo "📦 TODOS OS MÓDULOS:"
+        echo "Python: $(ls -1 *.py | wc -l) scripts"
+        echo "Shell: $(ls -1 *.sh | wc -l) scripts"
+        echo "Total: $(( $(ls -1 *.py | wc -l) + $(ls -1 *.sh | wc -l) )) módulos"
+        ;;
+    *)
+        echo "🎯 COMANDOS DO EXPLORER:"
+        echo "  ./explorer quanticos   🧪 Módulos quânticos"
+        echo "  ./explorer virtuais    💻 Módulos virtuais"
+        echo "  ./explorer controle    ⚙️ Sistemas de controle"
+        echo "  ./explorer backups     💾 Backups temporais"
+        echo "  ./explorer portal      🌐 Sistema portal"
+        echo "  ./explorer todos       📦 Todos os módulos"
+        echo ""
+        echo "📍 LOCALIZAÇÃO: ~/studio"
+        echo "👑 RAINHA ZENNITH - EXPLORAÇÃO ATIVA"
+        ;;
+esac

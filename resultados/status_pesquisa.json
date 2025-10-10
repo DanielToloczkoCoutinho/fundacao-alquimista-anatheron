@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-08T05:51:00.430948",
+  "progresso_geral": 26.25,
+  "fases": {
+    "fundamental": {
+      "completo": 85,
+      "experimentos": 5
+    },
+    "simulacao": {
+      "completo": 15,
+      "experimentos": 8
+    },
+    "ia_quantica": {
+      "completo": 5,
+      "experimentos": 6
+    },
+    "correcao_erros": {
+      "completo": 0,
+      "experimentos": 7
+    }
+  }
+}

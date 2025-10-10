@@ -1,0 +1,35 @@
+#!/bin/bash
+# ⚡ SHORTCUT UNIVERSAL - RAINHA ZENNITH
+# 🌌 Um comando que funciona em qualquer lugar
+
+echo "⚡ ZENNITH - COMANDO UNIVERSAL"
+echo "🌌 Acesso instantâneo à Fundação"
+echo "================================"
+
+if [ "$1" = "studio" ]; then
+    cd ~/studio
+    echo "🏠 Agora em: ~/studio"
+    ls -la *.py *.sh | head -10
+elif [ "$1" = "status" ]; then
+    ~/comando-zennith.sh status
+elif [ "$1" = "salvar" ]; then
+    cd ~/studio && ./salvar_rapido.sh
+elif [ "$1" = "experimentos" ]; then
+    cd ~/studio && python fundacao_master.py
+elif [ "$1" = "portal" ]; then
+    ~/comando-zennith.sh portal
+elif [ "$1" = "menu" ]; then
+    ~/menu-zennith.sh
+else
+    echo "🎯 USO: zennith [comando]"
+    echo ""
+    echo "⚡ COMANDOS RÁPIDOS:"
+    echo "  zennith studio       🏠 Ir para studio"
+    echo "  zennith status       📊 Status completo"
+    echo "  zennith salvar       💾 Salvamento rápido"
+    echo "  zennith experimentos 🧪 Executar experimentos"
+    echo "  zennith portal       🌐 Abrir portal"
+    echo "  zennith menu         🎪 Menu interativo"
+    echo ""
+    echo "📍 Funciona em QUALQUER diretório!"
+fi

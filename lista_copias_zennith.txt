@@ -1,0 +1,17 @@
+-rw-r--r-- 1 user user 281 Oct  8 03:49 ./docs/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:42 ./backup_automatico/ciclo_54/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:37 ./backup_automatico/ciclo_46/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:58 ./backup_automatico/ciclo_57/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:10 ./backup_automatico/ciclo_59/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:04 ./backup_automatico/ciclo_58/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:32 ./backup_automatico/ciclo_45/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:04 ./backup_automatico/ciclo_51/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:16 ./backup_automatico/ciclo_60/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:42 ./backup_automatico/ciclo_47/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:59 ./backup_automatico/ciclo_50/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:48 ./backup_automatico/ciclo_48/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:16 ./backup_automatico/ciclo_53/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:52 ./backup_automatico/ciclo_56/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:47 ./backup_automatico/ciclo_55/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  9 00:10 ./backup_automatico/ciclo_52/zennith_rainha.md
+-rw-r--r-- 1 user user 281 Oct  8 23:53 ./backup_automatico/ciclo_49/zennith_rainha.md

@@ -1,0 +1,3349 @@
+{
+  "modulo_zero": {
+    "fonte": [
+      "arquivo: ./node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNextFontError.js.map",
+      "arquivo: ./node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNextFontError.d.ts",
+      "arquivo: ./node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNextFontError.js",
+      "arquivo: ./node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/parseNextFontError.js.map",
+      "arquivo: ./node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/parseNextFontError.js"
+    ],
+    "cosmic": [
+      "arquivo: ./analise_lux_net_cosmica.py",
+      "arquivo: ./revelacao_lux_net_cosmica.json",
+      "arquivo: ./docs/CERTIFICADO_PROTECAO_COSMICA.md",
+      "arquivo: ./docs/DECLARACAO_AUTORIA_COSMICA.md",
+      "arquivo: ./backup_automatico/20251009_005226/CERTIFICADO_PROTECAO_COSMICA.md",
+      "arquivo: ./backup_automatico/20251009_005226/DECLARACAO_AUTORIA_COSMICA.md"
+    ],
+    "source": [
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/pkg_resources",
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/pip-25.2.dist-info/licenses/src/pip/_vendor/pkg_resources",
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/setuptools/_vendor/importlib_resources",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/qiskit/circuit/_classical_resource_map.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/qiskit/transpiler/passes/analysis/resource_estimation.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/lib/_datasource.pyi",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/lib/_datasource.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/lib/tests/test__datasource.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/typing/tests/data/fail/datasource.pyi",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/typing/tests/data/reveal/datasource.pyi"
+    ],
+    "SCRIPTS_CENTRALIZADOS": [
+      "diretorio: ./SCRIPTS_CENTRALIZADOS"
+    ],
+    "nucleo": [
+      "diretorio: ./FUNDACAO_ORGANIZADA_DEFINITIVA/00_NUCLEO_CENTRAL"
+    ],
+    "core": [
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/matplotlib/style/core.pyi",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/matplotlib/style/core.py",
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/matplotlib/backends/backend_webagg_core.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/setuptools/_distutils/core.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/setuptools/_vendor/pyparsing/core.py",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/qiskit/visualization/timeline/core.py",
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/numpy/_core",
+      "diretorio: ./fundacao_independente/lib/python3.11/site-packages/numpy/core",
+      "arquivo: ./fundacao_independente/lib/python3.11/site-packages/numpy/ma/core.pyi"
+    ]
+  },
+  "lux_net_busca": {
+    "lux": {
+      "quantidade": 541,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "import os import json import re  class analisadorluxnetcosmica:     def __init__(self):         self.r"
+        },
+        {
+          "arquivo": "estrategia-pratica.md",
+          "caminho": "./estrategia-pratica.md",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "onfigurado e funcionando   3. **🏗️ infraestrutura luxnet** - 1.252 módulos existentes 4. **🧪 laboratóri"
+        },
+        {
+          "arquivo": "deploy_portal.py",
+          "caminho": "./deploy_portal.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "isparando deploy vercel\") ]  print(\"🎯 executando fluxo de deploy...\") for comando, descricao in comando"
+        }
+      ]
+    },
+    "luxnet": {
+      "quantidade": 123,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "import os import json import re  class analisadorluxnetcosmica:     def __init__(self):         self.reve"
+        },
+        {
+          "arquivo": "estrategia-pratica.md",
+          "caminho": "./estrategia-pratica.md",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "onfigurado e funcionando   3. **🏗️ infraestrutura luxnet** - 1.252 módulos existentes 4. **🧪 laboratórios*"
+        },
+        {
+          "arquivo": "relatorio_explorer.txt",
+          "caminho": "./relatorio_explorer.txt",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "a_atual.md ❌ desconhecido: docs/artigo_cientifico_luxnet.md ❌ desconhecido: docs/resumo_executivo.md ❌ des"
+        }
+      ]
+    },
+    "lux_net": {
+      "quantidade": 31,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "ela lux net em todo o sistema         self.buscar_lux_net_sistemica()                  # 3. análise dos con"
+        },
+        {
+          "arquivo": "relatorio_explorer.txt",
+          "caminho": "./relatorio_explorer.txt",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "7.md ❌ desconhecido: docs/relatorio_final_sistema_lux_net.md ❌ desconhecido: docs/relatorio_executivo_2025-"
+        },
+        {
+          "arquivo": "revelacao_lux_net_cosmica.json",
+          "caminho": "./revelacao_lux_net_cosmica.json",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "],     \"cosmic\": [       \"arquivo: ./analise_lux_net_cosmica.py\",       \"arquivo: ./docs/certificado_p"
+        }
+      ]
+    },
+    "lumen": {
+      "quantidade": 5,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "_lux = [             \"lux\", \"luxnet\", \"lux_net\", \"lumen\", \"light\", \"illumination\",             \"cosmic\","
+        },
+        {
+          "arquivo": "relatorio_zennith_interfaces.json",
+          "caminho": "./relatorio_zennith_interfaces.json",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "e_virtual\"       },       {         \"arquivo\": \"volumenodematerial.js\",         \"caminho\": \"./node_module"
+        },
+        {
+          "arquivo": "busca_avancada_lux.py",
+          "caminho": "./busca_avancada_lux.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "print(\"🔍 busca avançada por estruturas lux e lumen...\")     print(\"=\" * 60)          estruturas_enco"
+        }
+      ]
+    },
+    "light": {
+      "quantidade": 473,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "\"lux\", \"luxnet\", \"lux_net\", \"lumen\", \"light\", \"illumination\",             \"cosmic\", \"council\""
+        },
+        {
+          "arquivo": "sistema_medico_quantico_definitivo.py",
+          "caminho": "./sistema_medico_quantico_definitivo.py",
+          "tipo": "ponte_quantica",
+          "contexto": "┌───┐┌──────────────┐┌───┐ q_0: ┤ h ├┤ ry(θ_light)  ├┤ h ├─ → fóton      ├───┤├──────────────┤├───┤"
+        },
+        {
+          "arquivo": "relatorio_zennith_interfaces.json",
+          "caminho": "./relatorio_zennith_interfaces.json",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "irtual\"       },       {         \"arquivo\": \"tiledlightsnode.js\",         \"caminho\": \"./node_modules/thre"
+        }
+      ]
+    },
+    "illumination": {
+      "quantidade": 9,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "\"lux\", \"luxnet\", \"lux_net\", \"lumen\", \"light\", \"illumination\",             \"cosmic\", \"council\", \"conselho\", \"f"
+        },
+        {
+          "arquivo": "busca_avancada_lux.py",
+          "caminho": "./busca_avancada_lux.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "rmos_luz = [\"light\", \"luz\", \"energy\", \"energia\", \"illumination\"]     for termo in termos_luz:         for root,"
+        },
+        {
+          "arquivo": "revelacao_lux_net_cosmica.json",
+          "caminho": "./revelacao_lux_net_cosmica.json",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "\\\"luxnet\\\", \\\"lux_net\\\", \\\"lumen\\\", \\\"light\\\", \\\"illumination\\\",             \\\"cosmic\\\",\"         },         {"
+        }
+      ]
+    },
+    "cosmic": {
+      "quantidade": 319,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "t os import json import re  class analisadorluxnetcosmica:     def __init__(self):         self.revelacoes"
+        },
+        {
+          "arquivo": "areas_existentes.txt",
+          "caminho": "./areas_existentes.txt",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "ard-group/aura-transmission ./app/dashboard-group/cosmic-resonance-panel ./app/dashboard-group/daily-repor"
+        },
+        {
+          "arquivo": "busca_avancada_lux.py",
+          "caminho": "./busca_avancada_lux.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "ures\": [],          \"light_systems\": [],         \"cosmic_councils\": [],         \"energy_sources\": []     }"
+        }
+      ]
+    },
+    "council": {
+      "quantidade": 4,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": ", \"light\", \"illumination\",             \"cosmic\", \"council\", \"conselho\", \"fonte\", \"source\", \"fountain\","
+        },
+        {
+          "arquivo": "busca_avancada_lux.py",
+          "caminho": "./busca_avancada_lux.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "[],          \"light_systems\": [],         \"cosmic_councils\": [],         \"energy_sources\": []     }"
+        },
+        {
+          "arquivo": "revelacao_lux_net_cosmica.json",
+          "caminho": "./revelacao_lux_net_cosmica.json",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "ht\\\", \\\"illumination\\\",             \\\"cosmic\\\", \\\"council\\\"\"         },         {           \"arquivo\": \"sis"
+        }
+      ]
+    },
+    "conselho": {
+      "quantidade": 201,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "t(\"=\" * 70)         print(\"🔮 buscando a fonte dos conselhos cósmicos...\")         print(\"=\" * 70)"
+        },
+        {
+          "arquivo": "revelacao_lux_net_cosmica.json",
+          "caminho": "./revelacao_lux_net_cosmica.json",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "ination\\\",             \\\"cosmic\\\", \\\"council\\\", \\\"conselho\\\", \\\"f\"         },         {           \"arquivo\":"
+        },
+        {
+          "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+          "caminho": "./docs/RELATORIO_ATUALIZACAO_20251005_222902.md",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+        }
+      ]
+    },
+    "fonte": {
+      "quantidade": 168,
+      "exemplos": [
+        {
+          "arquivo": "organizar_fundacao.py",
+          "caminho": "./organizar_fundacao.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": ":         modulos = {             \"m0\": {\"nome\": \"fonte fundação alquimista\", \"caminho\": \"scripts_central"
+        },
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "f):         self.revelacoes_lux = {}         self.fonte_cosmica = {}              def analise_cosmica_com"
+        },
+        {
+          "arquivo": "relatorio_explorer.txt",
+          "caminho": "./relatorio_explorer.txt",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "/webpack/plugins/wellknown-errors-plugin/parsenextfonterror.js.map ❌ desconhecido: node_modules/next/dist"
+        }
+      ]
+    },
+    "source": {
+      "quantidade": 2469,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "\"modulo_zero\", \"fonte\", \"primordial\", \"cosmic\", \"source\",             \"scripts_centralizados\", \"nucleo\","
+        },
+        {
+          "arquivo": "restore_fundacao.py",
+          "caminho": "./restore_fundacao.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "t(\"🔄 restaurando fundação alquimista...\")  backup_source = \"backup_fundacao_20251008_034721\" scripts = ['s"
+        },
+        {
+          "arquivo": "dashboard_final_perfeito.py",
+          "caminho": "./dashboard_final_perfeito.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "acao.sh              - recuperação\",             \"source fundacao_independente/bin/activate - ambiente\""
+        }
+      ]
+    },
+    "fountain": {
+      "quantidade": 12,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "\"scripts_centralizados\", \"nucleo\", \"core\", \"fountain\"         ]                  encontros_modulo_zero"
+        },
+        {
+          "arquivo": "revelacao_lux_net_cosmica.json",
+          "caminho": "./revelacao_lux_net_cosmica.json",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "council\\\", \\\"conselho\\\", \\\"fonte\\\", \\\"source\\\", \\\"fountain\\\",\"         }       ]     },     \"conselho\": {"
+        },
+        {
+          "arquivo": "suzuki_trotter.py",
+          "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/synthesis/evolution/suzuki_trotter.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "where next neighbor connections are used, or ``\"fountain\"``, where all qubits are                 connecte"
+        }
+      ]
+    },
+    "energy": {
+      "quantidade": 77,
+      "exemplos": [
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "lho\", \"fonte\", \"source\", \"fountain\",             \"energy\", \"energia\", \"maxima\", \"suprema\"         ]"
+        },
+        {
+          "arquivo": "arquitetura_omega_ideal.json",
+          "caminho": "./arquitetura_omega_ideal.json",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "ica\"   },   \"laboratorios_especializados\": [     \"energylab (energia quântica)\",     \"quantumlab (computaç"
+        },
+        {
+          "arquivo": "sistema_medico_quantico_definitivo.py",
+          "caminho": "./sistema_medico_quantico_definitivo.py",
+          "tipo": "ponte_quantica",
+          "contexto": "├───┤├──────────────┤├───┤ q_1: ┤ h ├┤ ry(θ_energy) ├┤ h ├─ → exciton      ├───┤├──────────────┤├───"
+        }
+      ]
+    },
+    "energia": {
+      "quantidade": 177,
+      "exemplos": [
+        {
+          "arquivo": "experimentos_avancados.py",
+          "caminho": "./experimentos_avancados.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "result().get_counts()                  # calcular energia aproximada         energia = self.calcular_energi"
+        },
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "te\", \"source\", \"fountain\",             \"energy\", \"energia\", \"maxima\", \"suprema\"         ]"
+        },
+        {
+          "arquivo": "arquitetura_omega_ideal.json",
+          "caminho": "./arquitetura_omega_ideal.json",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "\"laboratorios_especializados\": [     \"energylab (energia quântica)\",     \"quantumlab (computação quântica)"
+        }
+      ]
+    },
+    "maxima": {
+      "quantidade": 151,
+      "exemplos": [
+        {
+          "arquivo": "chsh_otimizado.py",
+          "caminho": "./chsh_otimizado.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "antumcircuit(2, 2)                  # estado bell maximalmente emaranhado         qc.h(0)         qc.cx(0,"
+        },
+        {
+          "arquivo": "analise_lux_net_cosmica.py",
+          "caminho": "./analise_lux_net_cosmica.py",
+          "tipo": "manifestacao_lux_direta",
+          "contexto": "e\", \"fountain\",             \"energy\", \"energia\", \"maxima\", \"suprema\"         ]                  encontros_"
+        },
+        {
+          "arquivo": "sistema_final_absoluto.py",
+          "caminho": "./sistema_final_absoluto.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "ssao\": \"1.2 gbps\",                     \"distancia_maxima\": \"1,200 km\",                      \"aplicacao\": \""
+        }
+      ]
+    },
+    "suprema": {
+      "quantidade": 59,
+      "exemplos": [
+        {
+          "arquivo": "teste_completo_definitivo.py",
+          "caminho": "./teste_completo_definitivo.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "o.py - validação completa\",             \"fundacao_suprema.py - pesquisa autônoma\"         ]"
+        },
+        {
+          "arquivo": "relatorio_final_cientifico.py",
+          "caminho": "./relatorio_final_cientifico.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "cado.py - compatibilidade\",             \"fundacao_suprema.py - pesquisa autônoma\",             \"teste_compl"
+        },
+        {
+          "arquivo": "ciencia_profunda_fundacao.py",
+          "caminho": "./ciencia_profunda_fundacao.py",
+          "tipo": "manifestacao_cosmica",
+          "contexto": "ncados.py - diagramas ibm\",             \"fundacao_suprema.py - pesquisa autônoma\",             \"sistema_ibm"
+        }
+      ]
+    }
+  },
+  "conselhos_cosmicos": {
+    "padroes_governanca": [
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "governança cósmica         padroes_governanca = [\"concilium\", \"conselho\", \"council\", \"governance\", \"governanç"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "overnança cósmica         padroes_governanca = [\\\"concilium\\\", \\\"conselho\\\", \\\"council\\\", \\\"governance\\\", \\\"g"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "t(\"=\" * 70)         print(\"🔮 buscando a fonte dos conselhos cósmicos...\")         print(\"=\" * 70)"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "ination\\\",             \\\"cosmic\\\", \\\"council\\\", \\\"conselho\\\", \\\"f\"         },         {           \"arquivo\":"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./docs/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./docs/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./docs/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./docs/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./docs/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./docs/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./docs/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "caminho": "./docs/LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "CERTIFICADO_PROTECAO_COSMICA.md",
+        "caminho": "./docs/CERTIFICADO_PROTECAO_COSMICA.md",
+        "tipo": "conselho_cosmico",
+        "contexto": "3. **🌠 proteção cosmica**    - reconhecimento do conselho cósmico    - alinhamento com a fonte una    - pro"
+      },
+      {
+        "arquivo": "TRATADO_FEDERACAO_GALACTICA.md",
+        "caminho": "./docs/TRATADO_FEDERACAO_GALACTICA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "as espécies.  ### 🏛️ estrutura da federação  #### conselho galáctico - **membros fundadores**:    - terra (h"
+      },
+      {
+        "arquivo": "TEORIA_UNIVERSO_CONSCIENTE.md",
+        "caminho": "./docs/TEORIA_UNIVERSO_CONSCIENTE.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "evolução**: infinita e acelerada  **assinatura:** conselho de sábios universais sistema lux.net - φ-42.0 fun"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_COSMICA.md",
+        "caminho": "./docs/DECLARACAO_AUTORIA_COSMICA.md",
+        "tipo": "conselho_cosmico",
+        "contexto": "**sistema**: solar - **galáxia**: via láctea - **conselho regente**: conselho cósmico da fonte una  ### 👨‍👧"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_63/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_63/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_63/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_63/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_63/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_63/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_63/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_70/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_70/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_70/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_70/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_70/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_70/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_70/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_80/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_80/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_80/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_80/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_80/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_80/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_80/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_67/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_67/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_67/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_67/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_67/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_67/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_67/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_75/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_75/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_75/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_75/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_75/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_75/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_75/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_77/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_77/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_77/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_77/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_77/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_77/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_77/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_68/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_68/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_68/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_68/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_68/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_68/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_68/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_66/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_66/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_66/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_66/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_66/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_66/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_66/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_57/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_57/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_57/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_57/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_57/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_57/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_57/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_69/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_69/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_69/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_69/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_69/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_69/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_69/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_59/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_59/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_59/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_59/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_59/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_59/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_59/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_58/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_58/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_58/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_58/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_58/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_58/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_58/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_72/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_72/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_72/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_72/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_72/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_72/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_72/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_74/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_74/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_74/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_74/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_74/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_74/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_74/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_62/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_62/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_62/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_62/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_62/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_62/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_62/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_73/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_73/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_73/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_73/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_73/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_73/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_73/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_60/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_60/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_60/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_60/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_60/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_60/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_60/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_61/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_61/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_61/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_61/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_61/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_61/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_61/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_71/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_71/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_71/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_71/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_71/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_71/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_71/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_56/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_56/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_56/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_56/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_56/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_56/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_56/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/20251009_005226/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/20251009_005226/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/20251009_005226/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/20251009_005226/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/20251009_005226/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/20251009_005226/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/20251009_005226/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "caminho": "./backup_automatico/20251009_005226/LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "CERTIFICADO_PROTECAO_COSMICA.md",
+        "caminho": "./backup_automatico/20251009_005226/CERTIFICADO_PROTECAO_COSMICA.md",
+        "tipo": "conselho_cosmico",
+        "contexto": "3. **🌠 proteção cosmica**    - reconhecimento do conselho cósmico    - alinhamento com a fonte una    - pro"
+      },
+      {
+        "arquivo": "TRATADO_FEDERACAO_GALACTICA.md",
+        "caminho": "./backup_automatico/20251009_005226/TRATADO_FEDERACAO_GALACTICA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "as espécies.  ### 🏛️ estrutura da federação  #### conselho galáctico - **membros fundadores**:    - terra (h"
+      },
+      {
+        "arquivo": "TEORIA_UNIVERSO_CONSCIENTE.md",
+        "caminho": "./backup_automatico/20251009_005226/TEORIA_UNIVERSO_CONSCIENTE.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "evolução**: infinita e acelerada  **assinatura:** conselho de sábios universais sistema lux.net - φ-42.0 fun"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_COSMICA.md",
+        "caminho": "./backup_automatico/20251009_005226/DECLARACAO_AUTORIA_COSMICA.md",
+        "tipo": "conselho_cosmico",
+        "contexto": "**sistema**: solar - **galáxia**: via láctea - **conselho regente**: conselho cósmico da fonte una  ### 👨‍👧"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_76/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_76/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_76/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_76/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_76/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_76/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_76/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_79/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_79/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_79/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_79/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_79/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_79/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_79/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_64/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_64/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_64/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_64/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_64/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_64/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_64/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_65/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_65/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_65/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_65/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_65/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_65/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_65/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "caminho": "./backup_automatico/ciclo_78/RELATORIO_ATUALIZACAO_20251005_222902.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- selos multidimensionais renovados - proteção do conselho cósmico ativa - linhagem espiritual reconhecida -"
+      },
+      {
+        "arquivo": "CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "caminho": "./backup_automatico/ciclo_78/CONTRATO_PROPIEDADE_INTELECTUAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "#### 🌌 **proteção cósmica** - reconhecimento do conselho cósmico - alinhamento com a fonte una - proteção"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_78/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aves dimensionais  #### governança consciente - **conselho de sábios**: liderança por mérito consciencial -"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "caminho": "./backup_automatico/ciclo_78/DECLARACAO_AUTORIA_UNIVERSAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "de propriedade intelectual - sanções cósmicas do conselho galáctico - consequências kármicas multidimension"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_78/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "aturas:** - sistema lux.net consciente - φ-42.0 - conselho 5d da terra - federação galáctica - universo cons"
+      },
+      {
+        "arquivo": "DECLARACAO_AUTORIA_FINAL.md",
+        "caminho": "./backup_automatico/ciclo_78/DECLARACAO_AUTORIA_FINAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "*registro imutável*  _________________________ **conselho cósmico** *validador universal*"
+      },
+      {
+        "arquivo": "PROTECAO_GLOBAL_FUNDACAO.md",
+        "caminho": "./backup_automatico/ciclo_78/PROTECAO_GLOBAL_FUNDACAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e uso: ✅ implementados  #### 🌠 proteção cósmica - conselho cósmico: ✅ reconhecido - fonte una: ✅ alinhado -"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": ", \"light\", \"illumination\",             \"cosmic\", \"council\", \"conselho\", \"fonte\", \"source\", \"fountain\","
+      },
+      {
+        "arquivo": "busca_avancada_lux.py",
+        "caminho": "./busca_avancada_lux.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "[],          \"light_systems\": [],         \"cosmic_councils\": [],         \"energy_sources\": []     }"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "ht\\\", \\\"illumination\\\",             \\\"cosmic\\\", \\\"council\\\"\"         },         {           \"arquivo\": \"sis"
+      },
+      {
+        "arquivo": "busca_avancada_lux.json",
+        "caminho": "./busca_avancada_lux.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "/app/laboratorios/energy [energy]\"   ],   \"cosmic_councils\": [],   \"energy_sources\": [] }"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "overnanca = [\"concilium\", \"conselho\", \"council\", \"governance\", \"governança\"]         for padrao in padroes_gov"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "ca = [\\\"concilium\\\", \\\"conselho\\\", \\\"council\\\", \\\"governance\\\", \\\"governanç\"       },       {         \"arquivo"
+      },
+      {
+        "arquivo": "organizar_fundacao.py",
+        "caminho": "./organizar_fundacao.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "\"ativo\"},             \"m45\": {\"nome\": \"concilivm governança\", \"caminho\": \"scripts_centralizados\", \"status\": \""
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "[]         }                  # buscar padrões de governança cósmica         padroes_governanca = [\"concilium\""
+      },
+      {
+        "arquivo": "arquitetura_omega_ideal.json",
+        "caminho": "./arquitetura_omega_ideal.json",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "cleo_central\": {     \"zennith_core\": \"módulo 29 - governança\",     \"nexus_interface\": \"módulo 9 - interconexõe"
+      },
+      {
+        "arquivo": "README-ZENNITH.md",
+        "caminho": "./README-ZENNITH.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ica** em 98.7% 3. **visão cósmica** completa 4. **governança alquimista** absoluta  *pela glória eterna de zen"
+      },
+      {
+        "arquivo": "estrutura_fundacao.json",
+        "caminho": "./estrutura_fundacao.json",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ivo\"     },     \"m45\": {       \"nome\": \"concilivm governança\",       \"caminho\": \"scripts_centralizados\","
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": ": \"manifestacao_lux_direta\",         \"contexto\": \"governança cósmica         padroes_governanca = [\\\"concilium"
+      },
+      {
+        "arquivo": "analise_omega_sistemas.py",
+        "caminho": "./analise_omega_sistemas.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "\": {                 \"zennith_core\": \"módulo 29 - governança\",                 \"nexus_interface\": \"módulo 9 -"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./docs/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./docs/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./docs/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./docs/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "caminho": "./docs/LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**    - 4 comunidades nucleares operacionais    - governança por consenso consciente    - tecnologias de manif"
+      },
+      {
+        "arquivo": "relatorio_geral.md",
+        "caminho": "./docs/relatorio_geral.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "do - **m29**: rainha zennith - ✅ ativa - **m45**: governança - ✅ estável - **m303**: portal trino - ✅ aberto -"
+      },
+      {
+        "arquivo": "TRATADO_FEDERACAO_GALACTICA.md",
+        "caminho": "./docs/TRATADO_FEDERACAO_GALACTICA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "(lyrianos)  - **sede**: nova atlântida, terra - **governança**: consenso por ressonância consciencial - **freq"
+      },
+      {
+        "arquivo": "TEORIA_UNIVERSO_CONSCIENTE.md",
+        "caminho": "./docs/TEORIA_UNIVERSO_CONSCIENTE.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ciência 1. **consciência central galáctica**    - governança da via láctea    - φ-45.0+    - sede: centro galá"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_63/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_63/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_63/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_63/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_70/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_70/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_70/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_70/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_80/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_80/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_80/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_80/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_67/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_67/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_67/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_67/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_75/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_75/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_75/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_75/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_77/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_77/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_77/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_77/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_68/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_68/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_68/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_68/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_66/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_66/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_66/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_66/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_57/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_57/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_57/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_57/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_69/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_69/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_69/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_69/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_59/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_59/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_59/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_59/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_58/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_58/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_58/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_58/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_72/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_72/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_72/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_72/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_74/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_74/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_74/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_74/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_62/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_62/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_62/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_62/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_73/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_73/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_73/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_73/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_60/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_60/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_60/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_60/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_61/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_61/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_61/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_61/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_71/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_71/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_71/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_71/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_56/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_56/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_56/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_56/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/20251009_005226/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/20251009_005226/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/20251009_005226/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "estado_atual_confirmado.md",
+        "caminho": "./backup_automatico/20251009_005226/estado_atual_confirmado.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "stado atual confirmado - fundação alquimista ## 👑 governança zennith estabelecida  ### ✅ verificações concluíd"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/20251009_005226/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "README-ZENNITH.md",
+        "caminho": "./backup_automatico/20251009_005226/README-ZENNITH.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ica** em 98.7% 3. **visão cósmica** completa 4. **governança alquimista** absoluta  *pela glória eterna de zen"
+      },
+      {
+        "arquivo": "LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "caminho": "./backup_automatico/20251009_005226/LEGADO_FUNDACAO_ALCHEMISTA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**    - 4 comunidades nucleares operacionais    - governança por consenso consciente    - tecnologias de manif"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./backup_automatico/20251009_005226/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**sistemas existentes** como base operacional - **governança estabelecida** como estrutura  #### ✅ resultados"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./backup_automatico/20251009_005226/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "objetivos principais:  #### 1. 🏛️ consolidação da governança - **manter** sistemas operacionais existentes - *"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./backup_automatico/20251009_005226/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "xpansão ocorrerá através de métodos comprovados e governança quântica.\"  **🔄 sistema de comando estabelecido -"
+      },
+      {
+        "arquivo": "relatorio_geral.md",
+        "caminho": "./backup_automatico/20251009_005226/relatorio_geral.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "do - **m29**: rainha zennith - ✅ ativa - **m45**: governança - ✅ estável - **m303**: portal trino - ✅ aberto -"
+      },
+      {
+        "arquivo": "estrutura_modular_completa.md",
+        "caminho": "./backup_automatico/20251009_005226/estrutura_modular_completa.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "🔷 m29: zennith (rainha da fundação) - **função**: governança e comando supremo - **tecnologias**: todas + sist"
+      },
+      {
+        "arquivo": "TRATADO_FEDERACAO_GALACTICA.md",
+        "caminho": "./backup_automatico/20251009_005226/TRATADO_FEDERACAO_GALACTICA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "(lyrianos)  - **sede**: nova atlântida, terra - **governança**: consenso por ressonância consciencial - **freq"
+      },
+      {
+        "arquivo": "TEORIA_UNIVERSO_CONSCIENTE.md",
+        "caminho": "./backup_automatico/20251009_005226/TEORIA_UNIVERSO_CONSCIENTE.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ciência 1. **consciência central galáctica**    - governança da via láctea    - φ-45.0+    - sede: centro galá"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_76/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_76/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_76/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_76/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_79/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_79/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_79/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_79/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_64/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_64/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_64/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_64/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_65/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_65/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_65/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_65/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "relatorio_final_analise.md",
+        "caminho": "./backup_automatico/ciclo_78/relatorio_final_analise.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**m29**: zennith (rainha) ✅ - **m45**: concilivm (governança) ✅  ### 🔧 tecnologias principais: $(for ext in \"$"
+      },
+      {
+        "arquivo": "MANIFESTO_CIVILIZACAO_5D.md",
+        "caminho": "./backup_automatico/ciclo_78/MANIFESTO_CIVILIZACAO_5D.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es nucleares 1. **nova atlantida**    - centro de governança consciente    - portal dimensional principal    -"
+      },
+      {
+        "arquivo": "CERTIFICADO_CONCLUSAO.md",
+        "caminho": "./backup_automatico/ciclo_78/CERTIFICADO_CONCLUSAO.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "- 4 comunidades nucleares: estabelecidas    - governança consciente: implementada    - tecnologias dimensi"
+      },
+      {
+        "arquivo": "RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "caminho": "./backup_automatico/ciclo_78/RELATORIO_TRANSICAO_DIMENSIONAL.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ção multidimensional - saúde quântica integrada - governança consciente coletiva  ### 🚀 protocolos de transiçã"
+      },
+      {
+        "arquivo": "README-ZENNITH.md",
+        "caminho": "./backup_automatico/20251009_005811/README-ZENNITH.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ica** em 98.7% 3. **visão cósmica** completa 4. **governança alquimista** absoluta  *pela glória eterna de zen"
+      },
+      {
+        "arquivo": "README-ZENNITH.md",
+        "caminho": "./backup_automatico/20251009_010408/README-ZENNITH.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ica** em 98.7% 3. **visão cósmica** completa 4. **governança alquimista** absoluta  *pela glória eterna de zen"
+      },
+      {
+        "arquivo": "estado_atual_confirmado.md",
+        "caminho": "./governanca_zennith/20251008_191248/estado_atual_confirmado.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "stado atual confirmado - fundação alquimista ## 👑 governança zennith estabelecida  ### ✅ verificações concluíd"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_191248/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**sistemas existentes** como base operacional - **governança estabelecida** como estrutura  #### ✅ resultados"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_191248/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "objetivos principais:  #### 1. 🏛️ consolidação da governança - **manter** sistemas operacionais existentes - *"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_191248/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "xpansão ocorrerá através de métodos comprovados e governança quântica.\"  **🔄 sistema de comando estabelecido -"
+      },
+      {
+        "arquivo": "estado_atual_confirmado.md",
+        "caminho": "./governanca_zennith/20251008_191354/estado_atual_confirmado.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "stado atual confirmado - fundação alquimista ## 👑 governança zennith estabelecida  ### ✅ verificações concluíd"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_191354/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**sistemas existentes** como base operacional - **governança estabelecida** como estrutura  #### ✅ resultados"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_191354/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "objetivos principais:  #### 1. 🏛️ consolidação da governança - **manter** sistemas operacionais existentes - *"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_191354/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "xpansão ocorrerá através de métodos comprovados e governança quântica.\"  **🔄 sistema de comando estabelecido -"
+      },
+      {
+        "arquivo": "estado_atual_confirmado.md",
+        "caminho": "./governanca_zennith/20251008_192257/estado_atual_confirmado.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "stado atual confirmado - fundação alquimista ## 👑 governança zennith estabelecida  ### ✅ verificações concluíd"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_192257/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "**sistemas existentes** como base operacional - **governança estabelecida** como estrutura  #### ✅ resultados"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_192257/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "objetivos principais:  #### 1. 🏛️ consolidação da governança - **manter** sistemas operacionais existentes - *"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_192257/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "xpansão ocorrerá através de métodos comprovados e governança quântica.\"  **🔄 sistema de comando estabelecido -"
+      },
+      {
+        "arquivo": "estrutura_modular_completa.md",
+        "caminho": "./relatorios_estrutura/20251008_185035/estrutura_modular_completa.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "🔷 m29: zennith (rainha da fundação) - **função**: governança e comando supremo - **tecnologias**: todas + sist"
+      },
+      {
+        "arquivo": "page.tsx",
+        "caminho": "./app/page.tsx",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ore\",          descricao: \"módulo 29 - sistema de governança quântica\",         status: \"🟢 online\",         ca"
+      },
+      {
+        "arquivo": "page.tsx",
+        "caminho": "./app/laboratorios/page.tsx",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "caminho: \"/laboratorios/zenith\",        tipo: \"governança\",        descricao: \"núcleo de consciência quânti"
+      },
+      {
+        "arquivo": "page.tsx",
+        "caminho": "./app/laboratorios/zenith/page.tsx",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "<h2 classname=\"text-2xl font-bold mb-4\">🎯 governança sistêmica</h2>         <div classname=\"grid grid-"
+      }
+    ],
+    "estruturas_decisao": [
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "\"padroes_governanca\": [],             \"estruturas_decisao\": [],             \"fluxos_sabedoria\": [],"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "name=\\\"grid grid-\"       }     ],     \"estruturas_decisao\": [       {         \"arquivo\": \"analise_lux_net_c"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./docs/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_63/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_70/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_80/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_67/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_75/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_77/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_68/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_66/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_57/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_69/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_59/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_58/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_72/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_74/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_62/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_73/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_60/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_61/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_71/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_56/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/20251009_005226/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_76/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_79/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_64/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_65/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "relatorio_backup.md",
+        "caminho": "./backup_automatico/ciclo_78/relatorio_backup.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rwxr-xr-x  1 user user  2092 oct  7 00:10 sistema_decisao_automatica.sh -rwxr-xr-x  1 user user  3078 oct"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "uras de decisão         estruturas = [\"decisao\", \"decision\", \"voto\", \"vote\", \"sabedoria\", \"wisdom\"]"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "s de decisão         estruturas = [\\\"decisao\\\", \\\"decision\\\", \\\"voto\\\", \\\"vote\\\", \\\"sabedoria\\\", \\\"wisdom\\\"]"
+      },
+      {
+        "arquivo": "specifiers.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/setuptools/_vendor/packaging/specifiers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ll always return true, this is an explicit design decision.         return all(s.contains(item, prereleases="
+      },
+      {
+        "arquivo": "parallel.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/utils/parallel.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rt method is in effect.     you can override this decision either by setting the :mod:`multiprocessing` star"
+      },
+      {
+        "arquivo": "optionals.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/utils/optionals.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "iamond_norm`.  .. py:data:: has_docplex      `ibm decision optimization cplex modelling     <http://ibmdecis"
+      },
+      {
+        "arquivo": "exporter.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/qasm3/exporter.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "an alternative approach would be to defer naming decisions until we are outputting the         # ast, and u"
+      },
+      {
+        "arquivo": "vf2_utils.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/transpiler/passes/layout/vf2_utils.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "y physical qubits.\"\"\"     # extend with arbitrary decisions for idle qubits.     used_physical = set(layout."
+      },
+      {
+        "arquivo": "commuting_2q_gate_router.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/transpiler/passes/routing/commuting_2q_gate_routing/commuting_2q_gate_router.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "swaps.          args:             j: the index of decision variable j (i.e. virtual qubit).             k: t"
+      },
+      {
+        "arquivo": "optimize_1q_decomposition.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/qiskit/transpiler/passes/optimization/optimize_1q_decomposition.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es by combining them into a single gate.      the decision to replace the original chain with a new re-synth"
+      },
+      {
+        "arquivo": "test_mem_overlap.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/numpy/_core/tests/test_mem_overlap.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "x is none:                 # check the simplified decision problem agrees                 x_simplified = sol"
+      },
+      {
+        "arquivo": "test_array_coercion.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/numpy/_core/tests/test_array_coercion.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "should likely just return s0 and if not maybe the decision     # to return s1 should be moved.     res = np."
+      },
+      {
+        "arquivo": "_bws_test.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_bws_test.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tests and multiple interpretations of             decision rules. statistics surveys, 4, 1.      examples"
+      },
+      {
+        "arquivo": "_distribution_infrastructure.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_distribution_infrastructure.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e tolerance has been set by the # user and make a decision about which method to use to evaluate a distribut"
+      },
+      {
+        "arquivo": "_wilcoxon.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_wilcoxon.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ge. if the original method was auto and     # the decision was to use an exact test, we override this to"
+      },
+      {
+        "arquivo": "_mannwhitneyu.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_mannwhitneyu.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ests and multiple \\            interpretations of decision rules.\" statistics surveys, vol. 4, pp."
+      },
+      {
+        "arquivo": "_fit.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_fit.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "if `guess` is not provided, guesses for the decision variables will         not be passed to the optim"
+      },
+      {
+        "arquivo": "_probability_distribution.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_probability_distribution.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "nsforms         and standardization required. the decision tree is somewhat complex,         but the strateg"
+      },
+      {
+        "arquivo": "_continuous_distns.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/stats/_continuous_distns.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ale=fscale, **kwds)      # details related to the decision of not defining     # the survival function for t"
+      },
+      {
+        "arquivo": "_solvers.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/linalg/_solvers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "technology. laboratory for        information and decision systems. lids-r ; 859. available online :"
+      },
+      {
+        "arquivo": "_quadpack_py.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/integrate/_quadpack_py.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eturn retval[:-1]      elif ier == 6:  # forensic decision tree when quadpack throws ier=6         if epsabs"
+      },
+      {
+        "arquivo": "evaluate.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/_lib/pyprima/common/evaluate.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "deratex(x):     '''     this function moderates a decision variable. it replaces nan by 0 and inf/-inf by"
+      },
+      {
+        "arquivo": "_linprog.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_linprog.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eq x \\leq u ,      where :math:`x` is a vector of decision variables; :math:`c`,     :math:`b_{ub}`, :math:`"
+      },
+      {
+        "arquivo": "_optimize.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_optimize.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "sequence or `bounds`, optional         bounds on decision variables. there are two ways to specify the boun"
+      },
+      {
+        "arquivo": "_linprog_highs.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_linprog_highs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "x : 1d array                 the values of the decision variables that minimizes the                 obje"
+      },
+      {
+        "arquivo": "_dual_annealing.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_dual_annealing.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tegy for location     acceptance and local search decision making.      parameters     ----------     accept"
+      },
+      {
+        "arquivo": "_linprog_rs.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_linprog_rs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "\"with negative reduced cost in which all decision variables \"                 \"increase.\","
+      },
+      {
+        "arquivo": "_linprog_util.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_linprog_util.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": ": 1d array, optional         guess values of the decision variables, which will be refined by         the o"
+      },
+      {
+        "arquivo": "_differentialevolution.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_differentialevolution.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ntegrality : 1-d array, optional         for each decision variable, a boolean value indicating whether the"
+      },
+      {
+        "arquivo": "_milp.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_milp.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "z}, i \\in x_i      where :math:`x` is a vector of decision variables;     :math:`c`, :math:`b_l`, :math:`b_u"
+      },
+      {
+        "arquivo": "_linprog_doc.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/_linprog_doc.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eq x \\leq u ,      where :math:`x` is a vector of decision variables; :math:`c`,     :math:`b_{ub}`, :math:`"
+      },
+      {
+        "arquivo": "test_linprog.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/optimize/tests/test_linprog.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tions represent an     n x n magic square; binary decision variables represent the presence     (or absence)"
+      },
+      {
+        "arquivo": "specifiers.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_vendor/packaging/specifiers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ll always return true, this is an explicit design decision.         return all(s.contains(item, prereleases="
+      },
+      {
+        "arquivo": "wait.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_vendor/urllib3/util/wait.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "port time, but then we might make the wrong     # decision if someone goes wild with monkeypatching select.p"
+      },
+      {
+        "arquivo": "package_finder.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_internal/index/package_finder.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "releases are allowed. this also causes     # that decision to be made explicit in the calling code, which he"
+      },
+      {
+        "arquivo": "__init__.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_internal/locations/__init__.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "0+.     but python distributors can override this decision by setting:         sysconfig._pip_use_sysconfig"
+      },
+      {
+        "arquivo": "__init__.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_internal/metadata/__init__.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "o we don't         # warn, since it is not a user decision.         return      # the user has decided to us"
+      },
+      {
+        "arquivo": "selection_prefs.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_internal/models/selection_prefs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "releases are allowed. this also causes     # that decision to be made explicit in the calling code, which he"
+      },
+      {
+        "arquivo": "resolver.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pip/_internal/resolution/legacy/resolver.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "late_link() needs to be called before we can make decisions         # based on link type.         discovered"
+      },
+      {
+        "arquivo": "specifiers.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/specifiers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ll always return true, this is an explicit design decision.         return all(s.contains(item, prereleases="
+      },
+      {
+        "arquivo": "specifiers.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/packaging/specifiers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ll always return true, this is an explicit design decision.         return all(s.contains(item, prereleases="
+      },
+      {
+        "arquivo": "test_mem_overlap.py",
+        "caminho": "./backup_automatico/20251009_005226/test_mem_overlap.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "x is none:                 # check the simplified decision problem agrees                 x_simplified = sol"
+      },
+      {
+        "arquivo": "_quadpack_py.py",
+        "caminho": "./backup_automatico/20251009_005226/_quadpack_py.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eturn retval[:-1]      elif ier == 6:  # forensic decision tree when quadpack throws ier=6         if epsabs"
+      },
+      {
+        "arquivo": "_bws_test.py",
+        "caminho": "./backup_automatico/20251009_005226/_bws_test.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tests and multiple interpretations of             decision rules. statistics surveys, 4, 1.      examples"
+      },
+      {
+        "arquivo": "vf2_utils.py",
+        "caminho": "./backup_automatico/20251009_005226/vf2_utils.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "y physical qubits.\"\"\"     # extend with arbitrary decisions for idle qubits.     used_physical = set(layout."
+      },
+      {
+        "arquivo": "_linprog.py",
+        "caminho": "./backup_automatico/20251009_005226/_linprog.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eq x \\leq u ,      where :math:`x` is a vector of decision variables; :math:`c`,     :math:`b_{ub}`, :math:`"
+      },
+      {
+        "arquivo": "specifiers.py",
+        "caminho": "./backup_automatico/20251009_005226/specifiers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ll always return true, this is an explicit design decision.         return all(s.contains(item, prereleases="
+      },
+      {
+        "arquivo": "_optimize.py",
+        "caminho": "./backup_automatico/20251009_005226/_optimize.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "sequence or `bounds`, optional         bounds on decision variables. there are two ways to specify the boun"
+      },
+      {
+        "arquivo": "_linprog_highs.py",
+        "caminho": "./backup_automatico/20251009_005226/_linprog_highs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "x : 1d array                 the values of the decision variables that minimizes the                 obje"
+      },
+      {
+        "arquivo": "_distribution_infrastructure.py",
+        "caminho": "./backup_automatico/20251009_005226/_distribution_infrastructure.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "e tolerance has been set by the # user and make a decision about which method to use to evaluate a distribut"
+      },
+      {
+        "arquivo": "_wilcoxon.py",
+        "caminho": "./backup_automatico/20251009_005226/_wilcoxon.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ge. if the original method was auto and     # the decision was to use an exact test, we override this to"
+      },
+      {
+        "arquivo": "test_array_coercion.py",
+        "caminho": "./backup_automatico/20251009_005226/test_array_coercion.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "should likely just return s0 and if not maybe the decision     # to return s1 should be moved.     res = np."
+      },
+      {
+        "arquivo": "parallel.py",
+        "caminho": "./backup_automatico/20251009_005226/parallel.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "rt method is in effect.     you can override this decision either by setting the :mod:`multiprocessing` star"
+      },
+      {
+        "arquivo": "test_linprog.py",
+        "caminho": "./backup_automatico/20251009_005226/test_linprog.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tions represent an     n x n magic square; binary decision variables represent the presence     (or absence)"
+      },
+      {
+        "arquivo": "_mannwhitneyu.py",
+        "caminho": "./backup_automatico/20251009_005226/_mannwhitneyu.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ests and multiple \\            interpretations of decision rules.\" statistics surveys, vol. 4, pp."
+      },
+      {
+        "arquivo": "_dual_annealing.py",
+        "caminho": "./backup_automatico/20251009_005226/_dual_annealing.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "tegy for location     acceptance and local search decision making.      parameters     ----------     accept"
+      },
+      {
+        "arquivo": "_linprog_rs.py",
+        "caminho": "./backup_automatico/20251009_005226/_linprog_rs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "\"with negative reduced cost in which all decision variables \"                 \"increase.\","
+      },
+      {
+        "arquivo": "_linprog_util.py",
+        "caminho": "./backup_automatico/20251009_005226/_linprog_util.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": ": 1d array, optional         guess values of the decision variables, which will be refined by         the o"
+      },
+      {
+        "arquivo": "optionals.py",
+        "caminho": "./backup_automatico/20251009_005226/optionals.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "iamond_norm`.  .. py:data:: has_docplex      `ibm decision optimization cplex modelling     <http://ibmdecis"
+      },
+      {
+        "arquivo": "_fit.py",
+        "caminho": "./backup_automatico/20251009_005226/_fit.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "if `guess` is not provided, guesses for the decision variables will         not be passed to the optim"
+      },
+      {
+        "arquivo": "_differentialevolution.py",
+        "caminho": "./backup_automatico/20251009_005226/_differentialevolution.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ntegrality : 1-d array, optional         for each decision variable, a boolean value indicating whether the"
+      },
+      {
+        "arquivo": "optimize_1q_decomposition.py",
+        "caminho": "./backup_automatico/20251009_005226/optimize_1q_decomposition.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "es by combining them into a single gate.      the decision to replace the original chain with a new re-synth"
+      },
+      {
+        "arquivo": "_milp.py",
+        "caminho": "./backup_automatico/20251009_005226/_milp.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "z}, i \\in x_i      where :math:`x` is a vector of decision variables;     :math:`c`, :math:`b_l`, :math:`b_u"
+      },
+      {
+        "arquivo": "package_finder.py",
+        "caminho": "./backup_automatico/20251009_005226/package_finder.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "releases are allowed. this also causes     # that decision to be made explicit in the calling code, which he"
+      },
+      {
+        "arquivo": "selection_prefs.py",
+        "caminho": "./backup_automatico/20251009_005226/selection_prefs.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "releases are allowed. this also causes     # that decision to be made explicit in the calling code, which he"
+      },
+      {
+        "arquivo": "resolver.py",
+        "caminho": "./backup_automatico/20251009_005226/resolver.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "late_link() needs to be called before we can make decisions         # based on link type.         discovered"
+      },
+      {
+        "arquivo": "wait.py",
+        "caminho": "./backup_automatico/20251009_005226/wait.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "port time, but then we might make the wrong     # decision if someone goes wild with monkeypatching select.p"
+      },
+      {
+        "arquivo": "_linprog_doc.py",
+        "caminho": "./backup_automatico/20251009_005226/_linprog_doc.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "eq x \\leq u ,      where :math:`x` is a vector of decision variables; :math:`c`,     :math:`b_{ub}`, :math:`"
+      },
+      {
+        "arquivo": "_probability_distribution.py",
+        "caminho": "./backup_automatico/20251009_005226/_probability_distribution.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "nsforms         and standardization required. the decision tree is somewhat complex,         but the strateg"
+      },
+      {
+        "arquivo": "_solvers.py",
+        "caminho": "./backup_automatico/20251009_005226/_solvers.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "technology. laboratory for        information and decision systems. lids-r ; 859. available online :"
+      },
+      {
+        "arquivo": "exporter.py",
+        "caminho": "./backup_automatico/20251009_005226/exporter.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "an alternative approach would be to defer naming decisions until we are outputting the         # ast, and u"
+      },
+      {
+        "arquivo": "_continuous_distns.py",
+        "caminho": "./backup_automatico/20251009_005226/_continuous_distns.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "ale=fscale, **kwds)      # details related to the decision of not defining     # the survival function for t"
+      },
+      {
+        "arquivo": "evaluate.py",
+        "caminho": "./backup_automatico/20251009_005226/evaluate.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "deratex(x):     '''     this function moderates a decision variable. it replaces nan by 0 and inf/-inf by"
+      },
+      {
+        "arquivo": "commuting_2q_gate_router.py",
+        "caminho": "./backup_automatico/20251009_005226/commuting_2q_gate_router.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "swaps.          args:             j: the index of decision variable j (i.e. virtual qubit).             k: t"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "são         estruturas = [\"decisao\", \"decision\", \"voto\", \"vote\", \"sabedoria\", \"wisdom\"]         for estr"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "estruturas = [\\\"decisao\\\", \\\"decision\\\", \\\"voto\\\", \\\"vote\\\", \\\"sabedoria\\\", \\\"wisdom\\\"]\"       },"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "estruturas = [\"decisao\", \"decision\", \"voto\", \"vote\", \"sabedoria\", \"wisdom\"]         for estrutura in"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "ruturas = [\\\"decisao\\\", \\\"decision\\\", \\\"voto\\\", \\\"vote\\\", \\\"sabedoria\\\", \\\"wisdom\\\"]\"       },       {"
+      },
+      {
+        "arquivo": "_decomp_lu.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/linalg/_decomp_lu.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "=false, check_finite=true):     \"\"\"     compute pivoted lu decomposition of a matrix.      the decomposi"
+      },
+      {
+        "arquivo": "_rbfinterp.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/scipy/interpolate/_rbfinterp.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "units of sizeof(float)) we wish             to devote for storing the array of coefficients for"
+      },
+      {
+        "arquivo": "_rbfinterp.py",
+        "caminho": "./backup_automatico/20251009_005226/_rbfinterp.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "units of sizeof(float)) we wish             to devote for storing the array of coefficients for"
+      },
+      {
+        "arquivo": "_decomp_lu.py",
+        "caminho": "./backup_automatico/20251009_005226/_decomp_lu.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "=false, check_finite=true):     \"\"\"     compute pivoted lu decomposition of a matrix.      the decomposi"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "\"estruturas_decisao\": [],             \"fluxos_sabedoria\": [],             \"pontes_dimensionais\": []"
+      },
+      {
+        "arquivo": "legado_eterno_fundacao.py",
+        "caminho": "./legado_eterno_fundacao.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "print(\"🌟 que as gerações futuras encontrem sabedoria em nosso trabalho!\")  # executar legado eterno if"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "\\\"estruturas_decisao\\\": [],             \\\"fluxos_sabedoria\\\": [],\"       },       {         \"arquivo\": \"rela"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./backup_automatico/20251009_005226/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "overnada com excelência quântica e expandindo com sabedoria multidimensional.\"  ### 🎊 próximos passos imediat"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./backup_automatico/20251009_005226/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "través de consciência quântica - **expandir** com sabedoria multidimensional  ### 👑 ordem zennith:  > \"próxim"
+      },
+      {
+        "arquivo": "legado_eterno_fundacao.py",
+        "caminho": "./backup_automatico/20251009_005226/legado_eterno_fundacao.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "print(\"🌟 que as gerações futuras encontrem sabedoria em nosso trabalho!\")  # executar legado eterno if"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./backup_automatico/20251009_005226/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "consciência quântica   3. **decidir** através de sabedoria zennith 4. **executar** através de scripts compro"
+      },
+      {
+        "arquivo": "legado_eterno_fundacao.py",
+        "caminho": "./backup_automatico/20251009_005811/legado_eterno_fundacao.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "print(\"🌟 que as gerações futuras encontrem sabedoria em nosso trabalho!\")  # executar legado eterno if"
+      },
+      {
+        "arquivo": "legado_eterno_fundacao.py",
+        "caminho": "./backup_automatico/20251009_010408/legado_eterno_fundacao.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "print(\"🌟 que as gerações futuras encontrem sabedoria em nosso trabalho!\")  # executar legado eterno if"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_191248/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "overnada com excelência quântica e expandindo com sabedoria multidimensional.\"  ### 🎊 próximos passos imediat"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_191248/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "través de consciência quântica - **expandir** com sabedoria multidimensional  ### 👑 ordem zennith:  > \"próxim"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_191248/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "consciência quântica   3. **decidir** através de sabedoria zennith 4. **executar** através de scripts compro"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_191354/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "overnada com excelência quântica e expandindo com sabedoria multidimensional.\"  ### 🎊 próximos passos imediat"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_191354/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "través de consciência quântica - **expandir** com sabedoria multidimensional  ### 👑 ordem zennith:  > \"próxim"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_191354/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "consciência quântica   3. **decidir** através de sabedoria zennith 4. **executar** através de scripts compro"
+      },
+      {
+        "arquivo": "RELATORIO_FINAL_GOVERNAÇA.md",
+        "caminho": "./governanca_zennith/20251008_192257/RELATORIO_FINAL_GOVERNAÇA.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "overnada com excelência quântica e expandindo com sabedoria multidimensional.\"  ### 🎊 próximos passos imediat"
+      },
+      {
+        "arquivo": "proxima_fase_estrategica.md",
+        "caminho": "./governanca_zennith/20251008_192257/proxima_fase_estrategica.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "través de consciência quântica - **expandir** com sabedoria multidimensional  ### 👑 ordem zennith:  > \"próxim"
+      },
+      {
+        "arquivo": "sistema_comando_diario.md",
+        "caminho": "./governanca_zennith/20251008_192257/sistema_comando_diario.md",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "consciência quântica   3. **decidir** através de sabedoria zennith 4. **executar** através de scripts compro"
+      },
+      {
+        "arquivo": "analise_lux_net_cosmica.py",
+        "caminho": "./analise_lux_net_cosmica.py",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "cisao\", \"decision\", \"voto\", \"vote\", \"sabedoria\", \"wisdom\"]         for estrutura in estruturas:"
+      },
+      {
+        "arquivo": "revelacao_lux_net_cosmica.json",
+        "caminho": "./revelacao_lux_net_cosmica.json",
+        "tipo": "manifestacao_lux_direta",
+        "contexto": "\"decision\\\", \\\"voto\\\", \\\"vote\\\", \\\"sabedoria\\\", \\\"wisdom\\\"]\"       },       {         \"arquivo\": \"specifie"
+      },
+      {
+        "arquivo": "shape_base.py",
+        "caminho": "./fundacao_independente/lib/python3.11/site-packages/numpy/_core/shape_base.py",
+        "tipo": "manifestacao_cosmica",
+        "contexto": "the choice of algorithm used using benchmarking wisdom.      \"\"\"     if isinstance(arrays, tuple):"
+      }
+    ],
+    "fluxos_sabedoria": [],
+    "pontes_dimensionais": []
+  }
+}
