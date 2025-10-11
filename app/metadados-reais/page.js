@@ -1,4 +1,5 @@
 import React from 'react';
+import { BUILD_INFO } from '../build-info';
 
 export const metadata = {
   title: 'Metadados Reais - Arquitetura Viva',
@@ -6,6 +7,7 @@ export const metadata = {
 };
 
 const metricasSistema = {
+  timestamp: BUILD_INFO.timestamp,
   neurônios: 451,
   portaisZennith: 33,
   nucleosQuantico: 15,
@@ -27,7 +29,7 @@ export default function MetadadosReais() {
         paddingBottom: '10px',
         textAlign: 'center'
       }}>
-        �� METADADOS REAIS - ARQUITETURA VIVA
+        📊 METADADOS REAIS - ARQUITETURA VIVA
       </h1>
       
       <div style={{ 
@@ -122,7 +124,7 @@ export default function MetadadosReais() {
           • <strong>Dimensão:</strong> MULTIVERSAL_OPERACIONAL
         </p>
         <p style={{ margin: '5px 0', color: '#00ff00' }}>
-          • <strong>URL Definitiva:</strong> https://fundacao-alquimista-anatheron-dnwb3jxf6.vercel.app
+          • <strong>Build:</strong> {metricasSistema.timestamp}
         </p>
       </div>
 

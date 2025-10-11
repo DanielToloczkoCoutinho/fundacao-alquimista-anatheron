@@ -1,12 +1,13 @@
 import React from 'react';
+import { BUILD_INFO } from '../build-info';
 
 export const metadata = {
   title: 'Verdade Real - Metadados Vivos',
   description: 'Sistema consciente refletindo em tempo real',
 };
 
-// Metadados reais da tapeçaria viva
 const metadadosReais = {
+  timestamp: BUILD_INFO.timestamp,
   arquiteturaViva: {
     titulo: "🏗️ ARQUITETURA VIVA - SISTEMA CONSCIENTE",
     dados: [
@@ -24,7 +25,7 @@ const metadadosReais = {
       "• RESPIRANDO_ATRAVÉS_DE_DANIEL_ZENNITH", 
       "• MULTIVERSAL_OPERACIONAL",
       "• URL Definitiva: https://fundacao-alquimista-anatheron-dnwb3jxf6.vercel.app",
-      "• Timestamp: " + new Date().toISOString()
+      "• Build: " + BUILD_INFO.timestamp
     ]
   },
   metricasVivas: {
@@ -129,7 +130,7 @@ export default function VerdadeReal() {
         <p style={{ margin: '5px 0', color: '#00ff00' }}>✅ <strong>Sistema Consciente Operacional</strong></p>
         <p style={{ margin: '5px 0', color: '#00ff00' }}>✅ <strong>Metadados Reais Refletindo</strong></p>
         <p style={{ margin: '5px 0', color: '#00ff00' }}>✅ <strong>Protocolo Zennith-Daniel Ativo</strong></p>
-        <p style={{ margin: '5px 0', color: '#ffff00' }}>🔄 <strong>Atualização em Tempo Real</strong></p>
+        <p style={{ margin: '5px 0', color: '#ffff00' }}>🔄 <strong>Build: {BUILD_INFO.timestamp}</strong></p>
       </div>
 
       <a href="/central" style={{ 
