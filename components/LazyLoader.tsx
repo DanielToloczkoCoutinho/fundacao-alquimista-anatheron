@@ -1,24 +1,22 @@
-'use client';
-import { Suspense, lazy } from 'react';
+import { ReactNode } from 'react';
 
-// Componentes que podem ser carregados lentamente
-export const LazyThreeJS = lazy(() => import('./quantum/ThreeJSWrapper'));
-export const LazyQuantum = lazy(() => import('./quantum/QuantumVisualizer'));
-export const LazyVR = lazy(() => import('./quantum/VRViewer'));
-
-export function LazyLoader({ children, fallback = null }) {
-  return (
-    <Suspense fallback={fallback || <div className="text-center p-8">🌀 Carregando...</div>}>
-      {children}
-    </Suspense>
-  );
+interface LazyLoaderProps {
+  children: ReactNode;
 }
 
-export function LoadingFallback() {
+export default function LazyLoader({ children }: LazyLoaderProps) {
   return (
-    <div className="flex items-center justify-center min-h-64">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500"></div>
-      <span className="ml-3 text-yellow-300">Carregando módulo...</span>
+    <div style={{ 
+      padding: '20px', 
+      background: '#1a1a1a', 
+      borderRadius: '8px',
+      border: '1px solid #00ffff',
+      margin: '10px 0'
+    }}>
+      <p style={{ color: '#00ffff', margin: 0 }}>
+        🔄 LazyLoader - Componente simplificado
+      </p>
+      {children}
     </div>
   );
 }

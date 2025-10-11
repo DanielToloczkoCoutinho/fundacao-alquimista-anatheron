@@ -1,53 +1,66 @@
-'use client';
-import { useState } from 'react';
-
+"use client";
+export const dynamic = "force-dynamic";
 export default function Dashboard() {
-  const [dadosReais] = useState({
-    sistemas_complexos: 3285,
-    interfaces_vr: 1093,
-    sistemas_quantum: 845,
-    tecnologias: 61,
-    componentes_react: 10
-  });
-
+  const currentInterface = "dashboard";
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-green-900 text-white p-8">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">📊 OMEGA DASHBOARD</h1>
-        <p className="text-xl text-green-300">Visão Holística Baseada na Análise Real</p>
-        <div className="mt-4 inline-block bg-green-600 px-4 py-2 rounded-full">
-          🟢 DADOS EM TEMPO REAL
-        </div>
+    <div style={{ 
+      padding: '40px', 
+      background: '#0a0a0a', 
+      color: '#00ffff',
+      fontFamily: 'monospace',
+      minHeight: '100vh'
+    }}>
+      <h1 style={{ fontSize: '2.5em', marginBottom: '20px', textAlign: 'center' }}>
+        📊 DASHBOARD
+      </h1>
+      <p style={{ fontSize: '1.1em', marginBottom: '30px', textAlign: 'center' }}>
+        Sistema de Monitoramento - Fundação Alquimista
+      </p>
+      
+      <div style={{ 
+        background: '#1a1a1a', 
+        padding: '20px', 
+        margin: '20px auto',
+        borderRadius: '10px',
+        border: '1px solid #00ffff',
+        maxWidth: '800px'
+      }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '15px' }}>✅ SISTEMA OPERACIONAL</h2>
+        <p style={{ textAlign: 'center' }}><strong>Build:</strong> Next.js 15.5.4</p>
+        <p style={{ textAlign: 'center' }}><strong>CSS:</strong> Inline</p>
+        <p style={{ textAlign: 'center' }}><strong>Interface:</strong> Dashboard</p>
       </div>
 
-      {/* MÉTRICAS PRINCIPAIS */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-red-400">{dadosReais.sistemas_complexos}</div>
-          <div className="text-sm text-gray-300">Sistemas Complexos</div>
-        </div>
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-blue-400">{dadosReais.interfaces_vr}</div>
-          <div className="text-sm text-gray-300">Interfaces VR</div>
-        </div>
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-purple-400">{dadosReais.sistemas_quantum}</div>
-          <div className="text-sm text-gray-300">Sistemas Quânticos</div>
-        </div>
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-yellow-400">{dadosReais.tecnologias}</div>
-          <div className="text-sm text-gray-300">Tecnologias</div>
-        </div>
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-green-400">{dadosReais.componentes_react}</div>
-          <div className="text-sm text-gray-300">Componentes React</div>
-        </div>
-      </div>
-
-      <div className="text-center mt-8">
-        <a href="/" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
-          ← Voltar para Home
-        </a>
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', 
+        gap: '15px',
+        marginTop: '30px',
+        maxWidth: '800px',
+        margin: '30px auto'
+      }}>
+        {[
+          { name: 'Sistemas', value: '284', color: '#ff4444' },
+          { name: 'Interfaces', value: '47', color: '#4444ff' },
+          { name: 'Scripts', value: '1.937', color: '#44ff44' },
+          { name: 'Arquivos', value: '284K', color: '#ffff44' }
+        ].map((metric, index) => (
+          <div key={index} style={{
+            background: '#1a1a1a',
+            padding: '15px',
+            borderRadius: '8px',
+            border: '1px solid #ff4444',
+            textAlign: 'center'
+          }}>
+            <div style={{ fontSize: '2em', color: '#ff4444', fontWeight: 'bold' }}>
+              {metric.value}
+            </div>
+            <div style={{ fontSize: '0.9em', opacity: 0.8 }}>
+              {metric.name}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

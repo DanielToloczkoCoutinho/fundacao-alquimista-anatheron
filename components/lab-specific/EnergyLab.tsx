@@ -1,24 +1,48 @@
-'use client';
+interface EnergyLabProps {
+  dados?: {
+    dobramentoProteico?: number;
+    fotossinteseQuantica?: number;
+    eficienciaEnergetica?: number;
+  };
+}
 
-export default function EnergyLab({ metricas = {} }) {
+export default function EnergyLab({ dados = {} }: EnergyLabProps) {
+  const {
+    dobramentoProteico = 85,
+    fotossinteseQuantica = 92,
+    eficienciaEnergetica = 78
+  } = dados;
+
   return (
-    <div className="p-6 bg-green-900 bg-opacity-30 rounded-lg border border-green-500">
-      <h3 className="text-2xl font-bold mb-4 text-green-400">⚡ EnergyLab</h3>
-      <p className="text-green-300 mb-4">
-        Sistema de Energia Quântica e Dobramento Proteico
-      </p>
-      <div className="space-y-3">
-        <div className="flex justify-between">
-          <span>Dobramento Proteico:</span>
-          <span className="text-green-400">{metricas.dobramentoProteico || 94.7}%</span>
+    <div style={{ 
+      padding: '20px', 
+      background: '#1a2a1a', 
+      borderRadius: '8px',
+      border: '1px solid #00ff88',
+      margin: '10px 0'
+    }}>
+      <h3 style={{ color: '#00ff88', margin: '0 0 15px 0' }}>🧪 Energy Lab</h3>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#00ff88' }}>
+            {dobramentoProteico}%
+          </div>
+          <div style={{ fontSize: '0.8em', opacity: 0.8 }}>Dobramento Proteico</div>
         </div>
-        <div className="flex justify-between">
-          <span>Fotossíntese Quântica:</span>
-          <span className="text-green-400">{metricas.fotossinteseQuantica || 96.9}%</span>
+        
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#00ff88' }}>
+            {fotossinteseQuantica}%
+          </div>
+          <div style={{ fontSize: '0.8em', opacity: 0.8 }}>Fotossíntese Quântica</div>
         </div>
-        <div className="flex justify-between">
-          <span>Eficiência Energética:</span>
-          <span className="text-green-400">{metricas.eficienciaEnergetica || 97.9}%</span>
+        
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#00ff88' }}>
+            {eficienciaEnergetica}%
+          </div>
+          <div style={{ fontSize: '0.8em', opacity: 0.8 }}>Eficiência Energética</div>
         </div>
       </div>
     </div>

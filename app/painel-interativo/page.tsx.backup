@@ -1,6 +1,4 @@
-export default function Interfaces() {
-  const currentInterface = "interfaces";
-  
+export default function PainelInterativo() {
   return (
     <div style={{ 
       padding: '40px', 
@@ -10,10 +8,12 @@ export default function Interfaces() {
       minHeight: '100vh'
     }}>
       <h1 style={{ fontSize: '2.5em', marginBottom: '20px', textAlign: 'center' }}>
-        🌐 ÍNDICE DE INTERFACES
+        {interface === 'interfaces' ? '🌐 ÍNDICE' : 
+         interface === 'nexus' ? '🌌 NEXUS' :
+         interface === 'painel-interativo' ? '📊 PAINEL' : '🔗 STATUS'}
       </h1>
       <p style={{ fontSize: '1.1em', marginBottom: '30px', textAlign: 'center' }}>
-        Sistema de Navegação - Fundação Alquimista
+        Fundação Alquimista - Sistema Multidimensional
       </p>
       
       <div style={{ 
@@ -25,8 +25,9 @@ export default function Interfaces() {
         maxWidth: '800px'
       }}>
         <h2 style={{ textAlign: 'center', marginBottom: '15px' }}>✅ SISTEMA OPERACIONAL</h2>
-        <p style={{ textAlign: 'center' }}><strong>Interface:</strong> Índice</p>
-        <p style={{ textAlign: 'center' }}><strong>Status:</strong> currentInterface corrigido</p>
+        <p style={{ textAlign: 'center' }}><strong>Interface:</strong> painel-interativo</p>
+        <p style={{ textAlign: 'center' }}><strong>Função:</strong> PainelInterativo</p>
+        <p style={{ textAlign: 'center' }}><strong>Status:</strong> Corrigido manualmente</p>
       </div>
     </div>
   );

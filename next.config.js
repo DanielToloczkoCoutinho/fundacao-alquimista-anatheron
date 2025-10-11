@@ -2,8 +2,6 @@
 const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-  // Desativar pages router para evitar conflitos
-  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  poweredByHeader: false,
 }
-
 module.exports = nextConfig

@@ -1,43 +1,32 @@
-export default function Page() {
-  const interfaceName = '"'$(basename "$dir")'"';
+export default function StatusUrls() {
+  const currentInterface = "status-urls";
   
   return (
     <div style={{ 
       padding: '40px', 
       background: '#0a0a0a', 
       color: '#00ffff',
-      fontFamily: 'Courier New, monospace',
+      fontFamily: 'monospace',
       minHeight: '100vh'
     }}>
-      <h1 style={{ fontSize: '2.5em', marginBottom: '20px' }}>
-        🌌 {interfaceName.toUpperCase()}
+      <h1 style={{ fontSize: '2.5em', marginBottom: '20px', textAlign: 'center' }}>
+        🔗 STATUS URLs
       </h1>
-      <p style={{ fontSize: '1.1em', marginBottom: '30px' }}>
-        Interface da Fundação Alquimista - Online
+      <p style={{ fontSize: '1.1em', marginBottom: '30px', textAlign: 'center' }}>
+        Monitoramento de Interfaces - Fundação Alquimista
       </p>
       
-      <div style={{
-        background: '#1a1a1a',
-        padding: '25px',
-        borderRadius: '12px',
-        border: '2px solid #00ffff',
-        marginBottom: '20px'
+      <div style={{ 
+        background: '#1a1a1a', 
+        padding: '20px', 
+        margin: '20px auto',
+        borderRadius: '10px',
+        border: '1px solid #00ffff',
+        maxWidth: '800px'
       }}>
-        <h2>✅ STATUS: ONLINE</h2>
-        <p>Esta interface foi ativada via correção automática</p>
-        <p><strong>URL:</strong> https://fundacao-alquimista-anatheron-8xv9ixbp3.vercel.app/{interfaceName}</p>
-      </div>
-
-      <div style={{
-        padding: '20px',
-        background: '#1a2a2a',
-        borderRadius: '8px',
-        marginTop: '30px'
-      }}>
-        <h3>🔧 Informações Técnicas</h3>
-        <p><strong>Build:</strong> Next.js 15.5.4</p>
-        <p><strong>Router:</strong> App Router</p>
-        <p><strong>Status:</strong> Operacional</p>
+        <h2 style={{ textAlign: 'center', marginBottom: '15px' }}>✅ SISTEMA OPERACIONAL</h2>
+        <p style={{ textAlign: 'center' }}><strong>Interface:</strong> Status URLs</p>
+        <p style={{ textAlign: 'center' }}><strong>Status:</strong> currentInterface corrigido</p>
       </div>
     </div>
   );
