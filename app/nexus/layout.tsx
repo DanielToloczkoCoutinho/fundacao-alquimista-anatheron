@@ -1,0 +1,18 @@
+export const metadata = {
+  title: '🌌 Nexus - Fundação Alquimista',
+  description: 'Sistema Multidimensional de Coerência Vibracional',
+}
+
+export default function NexusLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="pt-br">
+      <body>
+        {children}
+      </body>
+    </html>
+  )
+}
