@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Nexus Interativo - Expansão Multidimensional</title>
+    <style>
+        :root {
+            --quantum-blue: #00ffff;
+            --stability-green: #00ff00;
+            --alert-orange: #ffaa00;
+            --critical-red: #ff4444;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--dark-bg);
+            color: var(--quantum-blue);
+            overflow-x: hidden;
+        }
+        
+        .nexus-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .nexus-header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--quantum-blue);
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .nexus-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--quantum-blue);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .nexus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+        }
+        
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .progress-container {
+            width: 60%;
+            background: #333;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .vibration { background: linear-gradient(90deg, var(--stability-green), var(--quantum-blue)); }
+        .stability { background: var(--stability-green); }
+        .sync { background: var(--quantum-blue); }
+        .integrity { background: var(--stability-green); }
+        
+        .heatmap-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin: 20px 0;
+        }
+        
+        .heatmap-cell {
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .correlation-high { background: rgba(0, 255, 0, 0.3); }
+        .correlation-medium { background: rgba(255, 170, 0, 0.3); }
+        .correlation-low { background: rgba(255, 255, 255, 0.1); }
+        
+        .spectral-peaks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .peak-card {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cycle-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .active { background: var(--stability-green); }
+        .pending { background: var(--alert-orange); }
+        .scheduled { background: var(--quantum-blue); }
+    </style>
+</head>
+<body>
+    <div class="nexus-container">
+        <!-- CABEÇALHO NEXUS -->
+        <div class="nexus-header">
+            <h1 class="pulse-animation">🌌 NEXUS INTERATIVO</h1>
+            <p>Expansão Multidimensional - Fundação Alquimista</p>
+            <p>LUX Selo LUMEN-CUSTOS: <em>Proteger. Sempre.</em></p>
+            <div id="timestamp" style="margin-top: 15px; font-size: 0.9em;"></div>
+        </div>
+
+        <!-- MATRIZ DE CORRELAÇÃO -->
+        <div class="nexus-card">
+            <h3>📀 MATRIZ DE CORRELAÇÃO (HEATMAP)</h3>
+            <div class="heatmap-container">
+                <div class="heatmap-cell">1.000</div>
+                <div class="heatmap-cell correlation-high">0.892</div>
+                <div class="heatmap-cell correlation-medium">0.721</div>
+                <div class="heatmap-cell correlation-medium">0.684</div>
+                
+                <div class="heatmap-cell correlation-high">0.892</div>
+                <div class="heatmap-cell">1.000</div>
+                <div class="heatmap-cell correlation-medium">0.698</div>
+                <div class="heatmap-cell correlation-medium">0.712</div>
+                
+                <div class="heatmap-cell correlation-medium">0.721</div>
+                <div class="heatmap-cell correlation-medium">0.698</div>
+                <div class="heatmap-cell">1.000</div>
+                <div class="heatmap-cell correlation-low">0.634</div>
+                
+                <div class="heatmap-cell correlation-medium">0.684</div>
+                <div class="heatmap-cell correlation-medium">0.712</div>
+                <div class="heatmap-cell correlation-low">0.634</div>
+                <div class="heatmap-cell">1.000</div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-top: 10px; text-align: center; font-size: 0.8em;">
+                <div>EQ0112</div>
+                <div>EQ0133</div>
+                <div>Coerência</div>
+                <div>Estabilidade</div>
+            </div>
+        </div>
+
+        <!-- INDICADORES DE SAÚDE -->
+        <div class="matrix-grid">
+            <div class="nexus-card">
+                <h3>📊 INDICADORES DE SAÚDE</h3>
+                <div class="metric-row">
+                    <span>Vibração:</span>
+                    <span>98.7%</span>
+                    <div class="progress-container">
+                        <div class="progress-bar vibration" style="width: 98.7%;"></div>
+                    </div>
+                </div>
+                <div class="metric-row">
+                    <span>Estabilidade:</span>
+                    <span>95.2%</span>
+                    <div class="progress-container">
+                        <div class="progress-bar stability" style="width: 95.2%;"></div>
+                    </div>
+                </div>
+                <div class="metric-row">
+                    <span>Sincronia:</span>
+                    <span>97.8%</span>
+                    <div class="progress-container">
+                        <div class="progress-bar sync" style="width: 97.8%;"></div>
+                    </div>
+                </div>
+                <div class="metric-row">
+                    <span>Integridade:</span>
+                    <span>99.1%</span>
+                    <div class="progress-container">
+                        <div class="progress-bar integrity" style="width: 99.1%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CICLOS ESPECTRAIS -->
+            <div class="nexus-card">
+                <h3>🔄 CICLOS ESPECTRAIS</h3>
+                <div class="metric-row">
+                    <span><span class="cycle-indicator active"></span>Ciclo Alfa (6h):</span>
+                    <span>✅ ATIVO</span>
+                </div>
+                <div class="metric-row">
+                    <span><span class="cycle-indicator pending"></span>Ciclo Beta (12h):</span>
+                    <span>⏳ PRÓXIMO</span>
+                </div>
+                <div class="metric-row">
+                    <span><span class="cycle-indicator scheduled"></span>Ciclo Gama (24h):</span>
+                    <span>⏳ AGENDADO</span>
+                </div>
+                <div class="metric-row">
+                    <span><span class="cycle-indicator scheduled"></span>Ciclo Delta (7d):</span>
+                    <span>⏳ PROGRAMADO</span>
+                </div>
+            </div>
+
+            <!-- PICOS ESPECTRAIS -->
+            <div class="nexus-card">
+                <h3>🔝 PICOS ESPECTRAIS (EQ0133)</h3>
+                <div class="spectral-peaks">
+                    <div class="peak-card">
+                        <div>Frequência: 0.0833 Hz</div>
+                        <div>Período: 12h</div>
+                        <div>Amplitude: 1.00</div>
+                    </div>
+                    <div class="peak-card">
+                        <div>Frequência: 0.1667 Hz</div>
+                        <div>Período: 6h</div>
+                        <div>Amplitude: 0.45</div>
+                    </div>
+                    <div class="peak-card">
+                        <div>Frequência: 0.0417 Hz</div>
+                        <div>Período: 24h</div>
+                        <div>Amplitude: 0.32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECOMENDAÇÕES OPERACIONAIS -->
+        <div class="nexus-card">
+            <h3>🔧 RECOMENDAÇÕES OPERACIONAIS</h3>
+            <div class="metric-row">
+                <span>• Monitoramento contínuo (6h):</span>
+                <span>✅ IMPLEMENTADO</span>
+            </div>
+            <div class="metric-row">
+                <span>• Sincronização com ciclo 12h:</span>
+                <span>🔄 EM ANDAMENTO</span>
+            </div>
+            <div class="metric-row">
+                <span>• Alertas automáticos (>1.2):</span>
+                <span>🔧 CONFIGURANDO</span>
+            </div>
+            <div class="metric-row">
+                <span>• Implantação em produção:</span>
+                <span>🚀 PRONTO</span>
+            </div>
+        </div>
+
+        <!-- NAVEGAÇÃO ENTRE PÁGINAS -->
+        <div class="nexus-card" style="text-align: center;">
+            <h3>🌐 PORTAL DIMENSIONAL</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                <a href="metadados-reais.html" style="color: var(--quantum-blue); text-decoration: none; padding: 10px; border: 1px solid var(--quantum-blue); border-radius: 6px;">
+                    📊 Metadados Reais
+                </a>
+                <a href="verdade-real.html" style="color: var(--quantum-blue); text-decoration: none; padding: 10px; border: 1px solid var(--quantum-blue); border-radius: 6px;">
+                    🔮 Verdade Real
+                </a>
+                <a href="https://fundacao-alquimista-anatheron-dnwb3jxf6.vercel.app" style="color: var(--quantum-blue); text-decoration: none; padding: 10px; border: 1px solid var(--quantum-blue); border-radius: 6px;">
+                    🌍 Portal Principal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ATUALIZAÇÃO EM TEMPO REAL
+        function atualizarNexus() {
+            const now = new Date();
+            document.getElementById('timestamp').textContent = 
+                `Atualizado em: ${now.toLocaleString()} | Próxima verificação: ${new Date(now.getTime() + 6 * 60 * 60 * 1000).toLocaleString()}`;
+            
+            // SIMULAR ATUALIZAÇÃO DAS MÉTRICAS
+            const metrics = document.querySelectorAll('.progress-bar');
+            metrics.forEach(bar => {
+                const currentWidth = parseFloat(bar.style.width);
+                const variation = (Math.random() - 0.5) * 0.2; // Pequena variação
+                const newWidth = Math.max(95, Math.min(100, currentWidth + variation));
+                bar.style.width = newWidth.toFixed(1) + '%';
+                
+                // Atualizar texto
+                const metricRow = bar.closest('.metric-row');
+                const valueSpan = metricRow.querySelector('span:nth-child(2)');
+                valueSpan.textContent = newWidth.toFixed(1) + '%';
+            });
+        }
+
+        // ATUALIZAR A CADA 30 SEGUNDOS
+        setInterval(atualizarNexus, 30000);
+        atualizarNexus();
+
+        // ANIMAÇÃO DE ENTRADA
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.nexus-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

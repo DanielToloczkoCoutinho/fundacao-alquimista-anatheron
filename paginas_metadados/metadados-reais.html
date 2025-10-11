@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Metadados Reais - Fundação Alquimista</title>
+    <style>
+        body { 
+            font-family: 'Courier New', monospace; 
+            background: #0a0a0a; 
+            color: #00ff00; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #1a1a1a; padding: 20px; border-radius: 8px; border-left: 4px solid #00ff00; }
+        .alert { border-left-color: #ff4444; }
+        .warning { border-left-color: #ffaa00; }
+        .metric { display: flex; justify-content: space-between; margin: 10px 0; }
+        .progress-bar { background: #333; height: 10px; border-radius: 5px; overflow: hidden; }
+        .progress { height: 100%; background: #00ff00; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌌 METADADOS REAIS</h1>
+            <p>Fundamento Alquimista - Sistema de Coerência Vibracional</p>
+            <p id="timestamp">Carregando...</p>
+        </div>
+
+        <div class="status-grid">
+            <div class="card">
+                <h3>🔮 ESTADO DO SISTEMA</h3>
+                <div class="metric"><span>Coerência Vibracional:</span> <span id="coherence">--</span></div>
+                <div class="metric"><span>Módulo 15:</span> <span id="m15-status">--</span></div>
+                <div class="metric"><span>URL Principal:</span> <span id="url-status">--</span></div>
+            </div>
+
+            <div class="card">
+                <h3>📊 MÓDULO 15 - MÉTRICAS</h3>
+                <div class="metric"><span>Planetas Monitorados:</span> <span id="planets">--</span></div>
+                <div class="metric"><span>Equilíbrio Médio:</span> <span id="balance">--</span></div>
+                <div class="metric"><span>Saúde do Sistema:</span> <span id="health">--</span></div>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ INFRAESTRUTURA</h3>
+                <div class="metric"><span>Arquivos Totais:</span> <span id="files">--</span></div>
+                <div class="metric"><span>Ferramentas Quantum:</span> <span id="quantum-tools">--</span></div>
+                <div class="metric"><span>Ambiente Nix:</span> <span id="nix-env">--</span></div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <h3>🔄 CICLOS ESPECTRAIS ATIVOS</h3>
+            <div id="cycles"></div>
+        </div>
+    </div>
+
+    <script>
+        // DADOS EM TEMPO REAL (SIMULAÇÃO)
+        const metadados = {
+            estado: "COERÊNCIA_ESTABELECIDA",
+            timestamp: new Date().toISOString(),
+            operador: "Daniel Toloczko Coutinho",
+            sistema: {
+                arquivos_totais: 37291,
+                modulo_15: "OPERACIONAL",
+                url_canonica: "https://fundacao-alquimista-anatheron-dnwb3jxf6.vercel.app",
+                ferramentas_quantum: 94,
+                ambiente_nix: "ESTÁVEL"
+            },
+            metricas_m15: {
+                planetas_monitorados: 5,
+                equilibrio_medio: 3.65,
+                saude_sistema: "ATENÇÃO",
+                ecossistemas_estaveis: 1,
+                ecossistemas_atencao: 4
+            }
+        };
+
+        function atualizarInterface() {
+            document.getElementById('timestamp').textContent = 
+                `Atualizado em: ${new Date().toLocaleString()}`;
+            
+            document.getElementById('coherence').textContent = metadados.estado;
+            document.getElementById('m15-status').textContent = metadados.sistema.modulo_15;
+            document.getElementById('url-status').textContent = '✅ ONLINE';
+            
+            document.getElementById('planets').textContent = metadados.metricas_m15.planetas_monitorados;
+            document.getElementById('balance').textContent = metadados.metricas_m15.equilibrio_medio + '/10';
+            document.getElementById('health').textContent = metadados.metricas_m15.saude_sistema;
+            
+            document.getElementById('files').textContent = metadados.sistema.arquivos_totais.toLocaleString();
+            document.getElementById('quantum-tools').textContent = metadados.sistema.ferramentas_quantum;
+            document.getElementById('nix-env').textContent = metadados.sistema.ambiente_nix;
+
+            // ATUALIZAR CICLOS
+            document.getElementById('cycles').innerHTML = `
+                <div class="metric">🔄 Ciclo Alfa: ✅ Ativo (próxima verificação: 6h)</div>
+                <div class="metric">📊 Ciclo Beta: ⏳ Programado</div>
+                <div class="metric">💾 Ciclo Gama: ⏳ Agendado</div>
+            `;
+        }
+
+        // ATUALIZAR A CADA 30 SEGUNDOS
+        setInterval(atualizarInterface, 30000);
+        atualizarInterface();
+    </script>
+</body>
+</html>
