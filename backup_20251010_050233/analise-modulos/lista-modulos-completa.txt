@@ -1,5 +1,0 @@
-/home/user/studio/app/module-9
-/home/user/studio/app/module-zero
-/home/user/studio/app/module-omega
-/home/user/studio/MODULOS_CENTRALIZADOS
-/home/user/studio/SCRIPTS_CENTRALIZADOS/MODULO_29
