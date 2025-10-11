@@ -2,14 +2,8 @@
 const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+  // Desativar pages router para evitar conflitos
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
 }
 
-// Bundle analyzer apenas em desenvolvimento
-if (process.env.ANALYZE === 'true') {
-  const withBundleAnalyzer = require('@next/bundle-analyzer')({
-    enabled: true,
-  })
-  module.exports = withBundleAnalyzer(nextConfig)
-} else {
-  module.exports = nextConfig
-}
+module.exports = nextConfig
