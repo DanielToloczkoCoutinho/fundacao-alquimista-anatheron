@@ -1,8 +1,26 @@
 "use client";
+import { useEffect, useState } from "react";
+
+
 export const dynamic = "force-dynamic";
 export default function Dashboard() {
   const currentInterface = "dashboard";
+  const [loadTime, setLoadTime] = useState('');
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    setLoadTime(new Date().toLocaleString());
+  }, []);
+
   
+  // Dados dinâmicos
+  const dynamicData = {
+    carregadoEm: loadTime,
+    isClient: isClient,
+    path: '/dashboard'
+  };
+
   return (
     <div style={{ 
       padding: '40px', 

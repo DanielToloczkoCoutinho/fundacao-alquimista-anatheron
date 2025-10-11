@@ -1,7 +1,16 @@
 'use client';
+import { useEffect, useState } from 'react';
 export const dynamic = "force-dynamic";
 
 export default function NeuralLabPage() {
+  // Lógica dinâmica
+  const [loadTime, setLoadTime] = useState('');
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    setLoadTime(new Date().toLocaleString());
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 to-indigo-900 text-white p-8">
       <div className="text-center mb-8">
