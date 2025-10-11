@@ -14,25 +14,25 @@ class SistemaM15 {
             equilibrio: parseFloat(equilibrio),
             status: equilibrio > 6 ? "ESTÁVEL" : "ATENÇÃO"
         };
-        console.log(\`📊 \${planeta}: Equilíbrio \${equilibrio}/10 - \${this.ecossistemas[planeta].status}\`);
+        console.log(`📊 \${planeta}: Equilíbrio \${equilibrio}/10 - \${this.ecossistemas[planeta].status}`);
     }
 
     relatorio() {
-        console.log("\\n📈 RELATÓRIO DEFINITIVO:");
+        console.log("n📈 RELATÓRIO DEFINITIVO:");
         const planetas = Object.keys(this.ecossistemas);
         let soma = 0;
         
         planetas.forEach(planeta => {
             const eco = this.ecossistemas[planeta];
-            console.log(\`   🌍 \${planeta.padEnd(8)}: \${eco.equilibrio.toFixed(2)}/10 - \${eco.status}\`);
+            console.log(`   🌍 \${planeta.padEnd(8)}: \${eco.equilibrio.toFixed(2)}/10 - \${eco.status}`);
             soma += eco.equilibrio;
         });
         
         const media = soma / planetas.length;
-        console.log(\`\\n📊 ESTATÍSTICAS:\`);
-        console.log(\`   ✅ Planetas: \${planetas.length}\`);
-        console.log(\`   📊 Equilíbrio médio: \${media.toFixed(2)}/10\`);
-        console.log(\`   🏥 Saúde: \${media > 7 ? "EXCELENTE" : media > 5 ? "BOA" : "ATENÇÃO"}\`);
+        console.log(`n📊 ESTATÍSTICAS:`);
+        console.log(`   ✅ Planetas: \${planetas.length}`);
+        console.log(`   📊 Equilíbrio médio: \${media.toFixed(2)}/10`);
+        console.log(`   🏥 Saúde: \${media > 7 ? "EXCELENTE" : media > 5 ? "BOA" : "ATENÇÃO"}`);
     }
 }
 
@@ -46,6 +46,6 @@ const m15 = new SistemaM15();
 
 m15.relatorio();
 
-console.log("\\n🎉 SISTEMA M15 - DEPLOY CONCLUÍDO!");
+console.log("n🎉 SISTEMA M15 - DEPLOY CONCLUÍDO!");
 console.log("💫 Status: OPERACIONAL");
 console.log("🌌 Fundação Alquimista: INTEGRADA");
