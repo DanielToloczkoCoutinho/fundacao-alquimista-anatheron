@@ -4,7 +4,7 @@ echo "🚀 INTEGRAÇÃO VERCEL - NEXUS MULTIDIMENSIONAL"
 echo "📍 URL: https://fundacao-alquimista-anatheron-b8q3t0nhk.vercel.app"
 echo "================================================================"
 
-cd /home/user/studio
+cd .
 
 echo "🔍 PASSO 1: ANALISANDO ESTRUTURA..."
 if [ -d "app" ]; then

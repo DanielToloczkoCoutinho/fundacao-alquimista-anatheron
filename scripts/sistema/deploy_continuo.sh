@@ -4,7 +4,7 @@
 echo "🚀 INICIANDO DEPLOY CONTÍNUO - $(date)"
 echo "====================================="
 
-cd /home/user/studio
+cd .
 
 # 1. ATUALIZAR METADADOS
 echo "📊 ATUALIZANDO METADADOS VIVOS..."

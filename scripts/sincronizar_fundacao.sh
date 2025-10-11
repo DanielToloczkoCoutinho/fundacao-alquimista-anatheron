@@ -2,7 +2,7 @@
 # 🔗 SINCRONIZADOR FUNDAÇÃO ALQUIMISTA
 echo "🔗 SINCRONIZANDO COM FUNDAÇÃO ALQUIMISTA..."
 
-cd /home/user/studio
+cd .
 
 # CRIAR LINKS SIMBÓLICOS PARA A FUNDAÇÃO
 if [ ! -L "fundacao" ] && [ -d "../fundacao-alquimista-limpa" ]; then

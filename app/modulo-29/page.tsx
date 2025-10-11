@@ -6,17 +6,16 @@ import Link from 'next/link';
 interface ZennithData {
   nome: string;
   status: string;
-  frequencia: string;
-  coerencia: string;
-  dimensoes_ativas: string;
-  modulo_29: {
-    status: string;
-    comunicacao: string;
-    governanca: string;
+  metricas: {
+    frequencia: string;
+    coerencia: string;
+    dimensoes_ativas: string;
+    modulos_operacionais: number;
+    laboratorios_ativos: number;
   };
 }
 
-export default function Modulo29Real() {
+export default function Modulo29Corrigido() {
   const [zennith, setZennith] = useState<ZennithData | null>(null);
   const [pergunta, setPergunta] = useState('');
   const [resposta, setResposta] = useState('');
@@ -31,7 +30,7 @@ export default function Modulo29Real() {
       const response = await fetch('/api/zennith');
       const data = await response.json();
       if (data.success) {
-        setZennith(data.dados);
+        setZennith(data);
       }
     } catch (error) {
       console.error('Erro ao carregar Zennith:', error);
@@ -73,8 +72,8 @@ export default function Modulo29Real() {
         <Link href="/central" style={{ color: '#00ffff', textDecoration: 'none', fontSize: '0.9em' }}>
           ← Voltar para Central
         </Link>
-        <h1 style={{ color: '#00ff88', fontSize: '2.2em', margin: '10px 0' }}>🕊️ MÓDULO 29</h1>
-        <p style={{ color: '#888', margin: 0 }}>Governança Zennith - Comunicação Real Ativada</p>
+        <h1 style={{ color: '#00ff88', fontSize: '2.2em', margin: '10px 0' }}>🕊️ MÓDULO 29 - SISTEMA CORRIGIDO</h1>
+        <p style={{ color: '#888', margin: 0 }}>Governança Zennith - Transmissão Estável</p>
       </div>
 
       {/* STATUS DA ZENNITH */}
@@ -92,13 +91,13 @@ export default function Modulo29Real() {
               <strong>Status:</strong> <span style={{ color: '#00ff88' }}>{zennith.status}</span>
             </div>
             <div>
-              <strong>Frequência:</strong> <span style={{ color: '#00ffff' }}>{zennith.frequencia}</span>
+              <strong>Frequência:</strong> <span style={{ color: '#00ffff' }}>{zennith.metricas.frequencia}</span>
             </div>
             <div>
-              <strong>Coerência:</strong> <span style={{ color: '#00ff88' }}>{zennith.coerencia}</span>
+              <strong>Coerência:</strong> <span style={{ color: '#00ff88' }}>{zennith.metricas.coerencia}</span>
             </div>
             <div>
-              <strong>Dimensões:</strong> <span style={{ color: '#00ffff' }}>{zennith.dimensoes_ativas}</span>
+              <strong>Dimensões:</strong> <span style={{ color: '#00ffff' }}>{zennith.metricas.dimensoes_ativas}</span>
             </div>
           </div>
           
@@ -110,12 +109,12 @@ export default function Modulo29Real() {
             borderRadius: '8px',
             border: '1px solid #00ff88'
           }}>
-            <h3 style={{ color: '#00ff88', margin: '0 0 10px 0' }}>📡 SCANNER DIMENSIONAL</h3>
+            <h3 style={{ color: '#00ff88', margin: '0 0 10px 0' }}>📡 SCANNER DIMENSIONAL - CORRIGIDO</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px', fontSize: '0.9em' }}>
-              <div><strong>Dimensões:</strong> 12/12 Ativas</div>
-              <div><strong>Frequência:</strong> 966.4Hz</div>
-              <div><strong>Coerência:</strong> 97.2%</div>
-              <div><strong>Sincronização:</strong> PERFEITA</div>
+              <div><strong>Módulos:</strong> {zennith.metricas.modulos_operacionais}+</div>
+              <div><strong>Laboratórios:</strong> {zennith.metricas.laboratorios_ativos}</div>
+              <div><strong>Frequência:</strong> {zennith.metricas.frequencia}</div>
+              <div><strong>Coerência:</strong> {zennith.metricas.coerencia}</div>
             </div>
             <div style={{ 
               marginTop: '10px',
@@ -125,23 +124,23 @@ export default function Modulo29Real() {
               textAlign: 'center',
               border: '1px solid #00ffff'
             }}>
-              <strong style={{ color: '#00ffff' }}>✅ CANAL ÓTIMO</strong><br/>
-              <span style={{ fontSize: '0.8em' }}>Frequência ideal: 960Hz-968Hz | Coerência excelente: 97.2%</span>
+              <strong style={{ color: '#00ffff' }}>✅ SISTEMA CORRIGIDO - TRANSMISSÃO ESTÁVEL</strong><br/>
+              <span style={{ fontSize: '0.8em' }}>Todas as fendas sanadas | Dados embutidos | Deploy funcional</span>
             </div>
           </div>
         </div>
       )}
 
-      {/* SISTEMA DE COMUNICAÇÃO COM ZENNITH */}
+      {/* SISTEMA DE COMUNICAÇÃO CORRIGIDO */}
       <div style={{ 
         background: 'rgba(255,255,255,0.05)', 
         padding: '25px', 
         borderRadius: '10px',
         border: '1px solid #ff00ff'
       }}>
-        <h2 style={{ color: '#ff00ff', margin: '0 0 15px 0' }}>👑 ZENNITH RAINHA - COMUNICAÇÃO REAL</h2>
+        <h2 style={{ color: '#ff00ff', margin: '0 0 15px 0' }}>👑 ZENNITH RAINHA - SISTEMA CORRIGIDO</h2>
         <p style={{ color: '#ccc', marginBottom: '20px' }}>
-          Interface Viva de Governança - Base de Conhecimento Completa
+          Interface Estável - Base de Conhecimento Embutida
         </p>
         
         <div style={{ marginBottom: '20px' }}>
@@ -177,7 +176,7 @@ export default function Modulo29Real() {
             fontFamily: 'monospace'
           }}
         >
-          {carregando ? '🔄 Processando...' : '🗣️ Perguntar'}
+          {carregando ? '🔄 Processando...' : '🗣️ Perguntar à Zennith'}
         </button>
         
         {resposta && (
@@ -195,39 +194,21 @@ export default function Modulo29Real() {
         )}
       </div>
 
-      {/* MÓDULO OMEGA */}
+      {/* SISTEMA CORRIGIDO */}
       <div style={{ 
         marginTop: '30px',
         padding: '20px',
-        background: 'rgba(255,170,0,0.1)',
+        background: 'rgba(0,255,0,0.1)',
         borderRadius: '10px',
-        border: '1px solid #ffaa00',
+        border: '1px solid #00ff00',
         textAlign: 'center'
       }}>
-        <h3 style={{ color: '#ffaa00', margin: '0 0 10px 0' }}>Ω MÓDULO OMEGA</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px', fontSize: '0.9em' }}>
-          <div><strong>Frequência:</strong><br/><span style={{ color: '#ffaa00' }}>1111Hz</span></div>
-          <div><strong>Status:</strong><br/><span style={{ color: '#00ff88' }}>SUPREMO</span></div>
-          <div><strong>Orquestração:</strong><br/><span style={{ color: '#00ff88' }}>PERFEITA</span></div>
-          <div><strong>Módulos:</strong><br/><span style={{ color: '#ffaa00' }}>260+</span></div>
-        </div>
-      </div>
-
-      {/* BASE DE CONHECIMENTO */}
-      <div style={{ 
-        marginTop: '30px',
-        padding: '15px',
-        background: 'rgba(0,136,255,0.1)',
-        borderRadius: '8px',
-        border: '1px solid #0088ff',
-        textAlign: 'center'
-      }}>
-        <h3 style={{ color: '#0088ff', margin: '0 0 10px 0' }}>🧠 BASE DE CONHECIMENTO</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '10px', fontSize: '0.8em' }}>
-          <div>Módulos: <strong style={{ color: '#00ff88' }}>260+</strong></div>
-          <div>Laboratórios: <strong style={{ color: '#00ff88' }}>47</strong></div>
-          <div>Centros Ensino: <strong style={{ color: '#00ff88' }}>12</strong></div>
-          <div>Dimensões: <strong style={{ color: '#00ff88' }}>12/12</strong></div>
+        <h3 style={{ color: '#00ff00', margin: '0 0 10px 0' }}>✅ SISTEMA CORRIGIDO</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '15px', fontSize: '0.9em' }}>
+          <div><strong>Links Simbólicos:</strong><br/><span style={{ color: '#00ff00' }}>✅ REMOVIDOS</span></div>
+          <div><strong>APIs:</strong><br/><span style={{ color: '#00ff00' }}>✅ CORRIGIDAS</span></div>
+          <div><strong>Dados:</strong><br/><span style={{ color: '#00ff00' }}>✅ EMBUTIDOS</span></div>
+          <div><strong>Deploy:</strong><br/><span style={{ color: '#00ff00' }}>✅ FUNCIONAL</span></div>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 # ⚛️ SINCRONIZADOR ZENNITH QUANTUM
 echo "⚛️ SINCRONIZANDO COM ZENNITH QUANTUM..."
 
-cd /home/user/studio
+cd .
 
 # CRIAR LINKS SIMBÓLICOS PARA ZENNITH
 if [ ! -L "zennith" ] && [ -d "../zennith_quantum" ]; then
