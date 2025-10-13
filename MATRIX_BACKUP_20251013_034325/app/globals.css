@@ -1,0 +1,15 @@
+/* CSS GLOBAL SEGURO - SEM CONFLITOS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset mínimo e seguro */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}

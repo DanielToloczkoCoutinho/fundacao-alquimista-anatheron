@@ -1,3 +1,4 @@
+"use client";
 export default function HealingLabPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-900 to-orange-900 text-white p-8">

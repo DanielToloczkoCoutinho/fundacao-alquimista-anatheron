@@ -1,2 +1,1 @@
-#!/bin/bash
-# Conteúdo do primeiro script de correção
+[COLE O SCRIPT ACIMA AQUI]

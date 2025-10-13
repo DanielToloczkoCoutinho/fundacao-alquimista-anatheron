@@ -1,3 +1,4 @@
+"use client";
 export default function CommunicationLabPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 to-pink-900 text-white p-8">

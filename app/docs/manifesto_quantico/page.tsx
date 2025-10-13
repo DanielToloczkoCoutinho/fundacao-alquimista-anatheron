@@ -1,9 +1,13 @@
-export default function ManifestoQuantico() {
+"use client";
+import React from 'react';
+export default function Page() {
   return (
-    <div className="min-h-screen p-8 bg-gradient-to-br from-purple-900 to-blue-900 text-white">
-      <h1 className="text-4xl font-bold mb-4">Manifesto Quântico da Fundação Alquimista</h1>
-      <p className="text-lg">A Nova Era pulsa: 1.252 módulos, 138 laboratórios, 720 bibliotecas cósmicas...</p>
-      {/* Cole seu texto completo aqui */}
+    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+      <h1>🌌 {route} - Fundação Alquimista</h1>
+      <p>Interface em construção na Matriz LUX.NET</p>
+      <ul>
+        <li><a href="/fundacao-completa">Voltar à Fundação Completa</a></li>
+      </ul>
     </div>
   );
 }

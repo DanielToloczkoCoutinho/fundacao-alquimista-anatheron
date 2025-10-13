@@ -1,33 +1,13 @@
-export default function Interfaces() {
-  const currentInterface = "interfaces";
-  
+"use client";
+import React from 'react';
+export default function Page() {
   return (
-    <div style={{ 
-      padding: '40px', 
-      background: '#0a0a0a', 
-      color: '#00ffff',
-      fontFamily: 'monospace',
-      minHeight: '100vh'
-    }}>
-      <h1 style={{ fontSize: '2.5em', marginBottom: '20px', textAlign: 'center' }}>
-        🌐 ÍNDICE DE INTERFACES
-      </h1>
-      <p style={{ fontSize: '1.1em', marginBottom: '30px', textAlign: 'center' }}>
-        Sistema de Navegação - Fundação Alquimista
-      </p>
-      
-      <div style={{ 
-        background: '#1a1a1a', 
-        padding: '20px', 
-        margin: '20px auto',
-        borderRadius: '10px',
-        border: '1px solid #00ffff',
-        maxWidth: '800px'
-      }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '15px' }}>✅ SISTEMA OPERACIONAL</h2>
-        <p style={{ textAlign: 'center' }}><strong>Interface:</strong> Índice</p>
-        <p style={{ textAlign: 'center' }}><strong>Status:</strong> currentInterface corrigido</p>
-      </div>
+    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+      <h1>🌌 {route} - Fundação Alquimista</h1>
+      <p>Interface em construção na Matriz LUX.NET</p>
+      <ul>
+        <li><a href="/fundacao-completa">Voltar à Fundação Completa</a></li>
+      </ul>
     </div>
   );
 }

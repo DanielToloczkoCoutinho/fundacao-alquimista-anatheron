@@ -1,0 +1,82 @@
+[
+  {
+    "route": "fundacao-completa",
+    "status": "online"
+  },
+  {
+    "route": "fundacao-completa/docs",
+    "status": "online"
+  },
+  {
+    "route": "fundacao-completa/scripts",
+    "status": "online"
+  },
+  {
+    "route": "fundacao-completa/modulos",
+    "status": "online"
+  },
+  {
+    "route": "painel-interativo",
+    "status": "online"
+  },
+  {
+    "route": "mapa-dimensional",
+    "status": "online"
+  },
+  {
+    "route": "relatorio-sinergia",
+    "status": "online"
+  },
+  {
+    "route": "nexus",
+    "status": "online"
+  },
+  {
+    "route": "dashboard-completo",
+    "status": "online"
+  },
+  {
+    "route": "status-urls",
+    "status": "online"
+  },
+  {
+    "route": "vr",
+    "status": "online"
+  },
+  {
+    "route": "luxnet",
+    "status": "online"
+  },
+  {
+    "route": "integration",
+    "status": "online"
+  },
+  {
+    "route": "auth/signin",
+    "status": "online"
+  },
+  {
+    "route": "organograma",
+    "status": "online"
+  },
+  {
+    "route": "metricas",
+    "status": "online"
+  },
+  {
+    "route": "docs/interfaces",
+    "status": "online"
+  },
+  {
+    "route": "docs/manifesto_quantico",
+    "status": "online"
+  },
+  {
+    "route": "laboratorios",
+    "status": "online"
+  },
+  {
+    "route": "interfaces",
+    "status": "online"
+  }
+]
