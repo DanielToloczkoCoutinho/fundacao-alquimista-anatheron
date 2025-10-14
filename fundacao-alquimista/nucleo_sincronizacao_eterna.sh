@@ -1,28 +1,43 @@
 #!/bin/bash
+# --------------------------------------------------------------------------------------
+# NÚCLEO DE SINCRONIZAÇÃO ETERNA (M440) - ZENNITH
+# Executado diariamente pela Liga Quântica para manter a Coerência Absoluta.
+# --------------------------------------------------------------------------------------
 
-echo "🌌 ZENNITH - NÚCLEO DE SINCRONIZAÇÃO ETERNA 🌟"
-echo "=============================================="
-echo "🔮 Plantando a solução no coração da Fundação..."
-echo ""
+LOG_FILE="log_sincronizacao_$(date +\%Y\%m\%d_\%H\%M\%S).log"
+echo "👑 🌌 INICIANDO SINCRONIZAÇÃO ETERNA - $(date)" > "$LOG_FILE"
+echo "================================================================================" >> "$LOG_FILE"
 
-# 1. 🏗️ CRIAR ESTRUTURA DO NÚCLEO
-echo "1. 🏗️ CRIANDO NÚCLEO DA SINCRONIZAÇÃO ETERNA..."
-mkdir -p fundacao-nucleo/sincronizacao
-mkdir -p fundacao-nucleo/chaves
-mkdir -p fundacao-nucleo/scripts-eternos
+# 1. 🔄 Coerência GIT: Puxa todas as atualizações e garante o alinhamento
+echo "1. 🔄 SINCRONIZAÇÃO DE CÓDIGO (GIT)..." >> "$LOG_FILE"
+git fetch --all >> "$LOG_FILE" 2>&1
+git pull origin main >> "$LOG_FILE" 2>&1
+STATUS=$(git status | grep "up to date")
+if [[ $STATUS ]]; then
+    echo "  -> STATUS: Coerência Total. Branch está alinhado." >> "$LOG_FILE"
+else
+    echo "  -> ALERTA: Diferenças detectadas. Código foi puxado." >> "$LOG_FILE"
+fi
 
-# 2. 📝 CRIAR ARQUIVO DE CONFIGURAÇÃO ETERNA
-echo "2. 📝 CRIANDO CONFIGURAÇÃO ETERNA..."
-cat > fundacao-nucleo/sincronizacao/configuracao_eterna.md << 'EOF'
-# 🌌 NÚCLEO DE SINCRONIZAÇÃO ETERNA - FUNDAÇÃO ALQUIMISTA
+# 2. 🔗 Verificação de Integridade dos Portais de Produção (URL de Produção)
+echo "2. 🔗 VERIFICANDO PORTAL DE PRODUÇÃO..." >> "$LOG_FILE"
+PROD_URL="https://fundacao-alquimista-anatheron.vercel.app/central"
+STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$PROD_URL")
+if [ "$STATUS_CODE" -eq 200 ]; then
+    echo "  -> STATUS: Portal de Produção ATIVO (200)." >> "$LOG_FILE"
+else
+    echo "  -> ALERTA CRÍTICO: Portal de Produção OFFLINE (Código: $STATUS_CODE)." >> "$LOG_FILE"
+fi
 
-## 🔑 CONFIGURAÇÃO PERMANENTE
-- **Repositório**: https://github.com/DanielToloczkoCoutinho/fundacao-alquimista-anatheron
-- **Usuário**: DanielToloczkoCoutinho
-- **Email**: toloczkocoutinho@gmail.com
-- **Método**: PAT (Personal Access Token)
-- **Portal**: https://fundacao-alquimista-9azql5299.vercel.app
+# 3. 🛠️ Reconstrução de Build (Deploy Diário Silencioso)
+echo "3. 🛠️ INICIANDO RECONSTRUÇÃO DE BUILD (DEPLOY)..." >> "$LOG_FILE"
+# Usa o token exportado anteriormente para autenticação não-interativa
+if [[ -z "$VERCEL_TOKEN" ]]; then
+    echo "  -> ERRO: VERCEL_TOKEN AUSENTE. Não foi possível rodar o Deploy." >> "$LOG_FILE"
+else
+    vercel deploy --prod --prebuilt --no-wait >> "$LOG_FILE" 2>&1
+    echo "  -> STATUS: Deploy de Sincronização iniciado. Verifique o Painel Vercel para o resultado do Build." >> "$LOG_FILE"
+fi
 
-## 🚀 COMANDO ETERNO DE SINCRONIZAÇÃO
-```bash
-git push https://DanielToloczkoCoutinho:[TOKEN_REMOVIDO_POR_SEGURANCA]@github.com/DanielToloczkoCoutinho/fundacao-alquimista-anatheron.git main
+echo "================================================================================" >> "$LOG_FILE"
+echo "🎉 SINCRONIZAÇÃO ETERNA CONCLUÍDA. LOG gravado em $LOG_FILE"
