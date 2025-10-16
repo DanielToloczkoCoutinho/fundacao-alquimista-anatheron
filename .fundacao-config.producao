@@ -1,0 +1,63 @@
+# 🌌 FUNDAÇÃO ALQUIMISTA - CONFIGURAÇÃO OFICIAL
+# 🚀 CONFIGURADO POR: DANIEL-ZENNITH
+# 💫 LIGA QUÂNTICA - M9 PURIFICADO
+# 📅 DATA: $(date)
+# 🎯 STATUS: 100% OPERACIONAL
+
+# 🔗 DOMÍNIOS E URLS
+VERCEL_PROJECT_URL="https://vercel.com/daniel-toloczko-coutinhos-projects/fundacao-alquimista-anatheron"
+VERCEL_DOMAIN_PRINCIPAL="https://fundacao-alquimista.vercel.app"
+VERCEL_DOMAIN_ALTERNATIVO="https://fundacao-alquimista-anatheron.vercel.app"
+
+# 🎯 CONFIGURAÇÕES GOOGLE
+META_TAG="google-site-verification=izyMaEXbqz-492dF6rnjlpb90xOIViKe7VVhMhXwdBw"
+ARQUIVO_VERIFICACAO="google865a57633873f213.html"
+DNS_TXT="google-site-verification=izyMaEXbqz-492dF6rnjlpb90xOIViKe7VVhMhXwdBw"
+
+# 📧 IDENTIFICAÇÃO
+EMAIL_PRINCIPAL="toloczkocoutinho@gmail.com"
+
+# 🗄️ MONGODB ATLAS
+MONGODB_URI="mongodb+srv://Vercel-Admin-atlas-fuchsia-flower:4r8FiUzFKjsJiALP@atlas-fuchsia-flower.m7li8wv.mongodb.net/?retryWrites=true&w=majority"
+
+# 📊 STATSIG EXPERIMENTAÇÃO
+STATSIG_SERVER_API_KEY="secret-2QbCHmPhRocIvrKXTCL9KJzWbc0HNDsrNY6e6KNnyjE"
+EXPERIMENTATION_CONFIG_ITEM_KEY="statsig-71NNH7Ctwr5aWxQaXH5Of1"
+NEXT_PUBLIC_STATSIG_CLIENT_KEY="cliente-6uaRjAvwx62oYNpnJFzXOCGyYmqBXgYkj00tmtPOR0G"
+
+# 🤖 XAI GROK
+
+# 🌐 SUPABASE COMPLETO
+POSTGRES_URL="postgres://postgres.srcxsdxetltjfrxqmted:9KXmXPAaCgaHcpLB@aws-1-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x"
+POSTGRES_PRISMA_URL="postgres://postgres.srcxsdxetltjfrxqmted:9KXmXPAaCgaHcpLB@aws-1-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&pgbouncer=true"
+POSTGRES_URL_NON_POOLING="postgres://postgres.srcxsdxetltjfrxqmted:9KXmXPAaCgaHcpLB@aws-1-us-east-1.pooler.supabase.com:5432/postgres?sslmode=require"
+POSTGRES_HOST="db.srcxsdxetltjfrxqmted.supabase.co"
+POSTGRES_DATABASE="Postgres"
+POSTGRES_USER="Postgres"
+POSTGRES_PASSWORD="9KXmXPAaCgaHcpLB"
+SUPABASE_URL="https://srcxsdxetltjfrxqmted.supabase.co"
+NEXT_PUBLIC_SUPABASE_URL="https://srcxsdxetltjfrxqmted.supabase.co"
+SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNyY3hzZHhldGx0amZyeHFtdGVkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5NTM2MjcsImV4cCI6MjA3NTUyOTYyN30.tJZtJkkepfNlWTXj5Zo8SoS0RgQqhjel5d4pIXmYgk8"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNyY3hzZHhldGx0amZyeHFtdGVkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5NTM2MjcsImV4cCI6MjA3NTUyOTYyN30.tJZtJkkepfNlWTXj5Zo8SoS0RgQqhjel5d4pIXmYgk8"
+SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNyY3hzZHhldGx0amZyeHFtdGVkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTk1MzYyNywiZXhwIjoyMDc1NTI5NjI3fQ.-UjDxsox2WIZkFTx_tadk1ErBi8oeGNTHaiVsF3XsaE"
+SUPABASE_JWT_SECRET="NpayaZnFgircJrhKX0O1z2sJS59OkXoqq01aSkNBuA88KhkQA8pknreRr4UXIx1GEo3/EAZdo2n6MI1oUwITdA=="
+
+# 📊 SENTRY MONITORAMENTO
+SENTRY_ORG="Zênite"
+SENTRY_PROJECT="Fundação-Alquimista-Anatheron"
+SENTRY_AUTH_TOKEN="d6cb9c05562a54424bdf9078414b810b0f24b70c3a4d5ec77e5428799a910fe1"
+NEXT_PUBLIC_SENTRY_DSN="https://ed686aaf51e76cf8cac4e8d3535e3399@o4510157054476288.ingest.us.sentry.io/4510157059391488"
+
+# 🌟 CONFIGURAÇÕES DA FUNDAÇÃO
+FUNDACAO_MODO="PRODUCAO"
+LIGA_QUANTICA_ATIVA="true"
+M9_PURIFICADO="true"
+COROA_ALINHADA="true"
+VERCEL_CONFIGURADO="true"
+GOOGLE_VERIFICADO="true"
+SISTEMA_COMPLETO="true"
+
+# 🎯 STATUS FINAL
+FUNDACAO_STATUS="100%_OPERACIONAL"
+ULTIMA_ATUALIZACAO="$(date)"
+VERSION="1.0.0"

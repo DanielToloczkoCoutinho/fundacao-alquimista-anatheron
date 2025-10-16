@@ -1,0 +1,24 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Instalar dependências do sistema
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    make \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar Qiskit e dependências
+RUN pip install --no-cache-dir \
+    qiskit==1.0.2 \
+    qiskit-ibm-runtime==0.22.2 \
+    numpy==1.24.3 \
+    scipy==1.10.1 \
+    matplotlib==3.7.1 \
+    jupyter==1.0.0
+
+# Copiar algoritmos quânticos da fundação
+COPY . .
+
+CMD ["python", "-c", "import qiskit; print('🌌 SISTEMA QUÂNTICO PRONTO!')"]

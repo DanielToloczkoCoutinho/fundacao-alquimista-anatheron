@@ -9,10 +9,14 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/index.html"
     }
   ],
   "env": {
-    "NEXT_PUBLIC_APP_URL": "https://fundacao-alquimista-anatheron.vercel.app"
-  }
+    "NODE_ENV": "production"
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "framework": "nextjs"
 }

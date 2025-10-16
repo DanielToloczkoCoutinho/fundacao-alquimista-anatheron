@@ -1,0 +1,16 @@
+EQ001: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ002: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ003: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ004: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ005: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ006: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ007: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ050: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ051: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ052: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ053: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ100: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ101: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ102: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ201: ./public/fundacao-completa/docs/equacoes_fundamentais.md
+EQ231: ./public/fundacao-completa/docs/equacoes_fundamentais.md
