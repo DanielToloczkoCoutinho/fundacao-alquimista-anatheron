@@ -1,0 +1,16 @@
+name: 💾 Disk Space Monitor
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Weekly
+  workflow_dispatch:
+
+jobs:
+  check-space:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check disk usage
+        run: |
+          echo "🔄 Checking disk space..."
+          df -h
+          echo "�� Home directory:"
+          df -h /home

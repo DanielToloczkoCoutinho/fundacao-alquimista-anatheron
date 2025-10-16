@@ -1,0 +1,12 @@
+=== METADADOS DO MÓDULO: module-omega ===
+Data: Wed Oct  8 12:19:34 AM UTC 2025
+Localização: ~/studio/app/module-omega/
+
+ESTRUTURA:
+
+
+CONTEÚDO PRINCIPAL:
+
+
+CONEXÕES:
+
