@@ -1,0 +1,39 @@
+name: 🚀 Vercel Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          # Usando a versão Node.js v18 como padrão para Vercel
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js
+        # O build é essencial para validar o código ANTES do deploy
+        run: npm run build
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v20
+        with:
+          # Segredos a serem configurados no GitHub
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          # O working-directory é o diretório raiz do Next.js
+          working-directory: .
+          # Alias opcional. Removido por enquanto para evitar problemas de "Domain already in use"
+          # alias-domains: fundacao-alquimista-anatheron.vercel.app

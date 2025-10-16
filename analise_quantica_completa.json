@@ -1,0 +1,57 @@
+{
+  "arquivos_quanticos": {
+    "python": [
+      "teletransporte_quantico.py",
+      "analisar_quantico_completo.py",
+      "public/fundacao-completa/scripts-alquimicos/teletransporte_quantico.py",
+      "backup_fundacao_20251008_034721/teletransporte_quantico.py"
+    ],
+    "javascript": [
+      "test_quantum.js",
+      "lib/quantum-calculations.ts",
+      "src/components/ui/quantum-orchestrator.tsx"
+    ],
+    "configuracoes": [],
+    "documentacao": [],
+    "interfaces": [
+      "analise_quantum.sh",
+      "redundancias_nix_quantum.sh",
+      "quantum-env",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum/conectar_ibm_quantum.sh",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum/conectar_ibm_quantum.sh.backup",
+      "components/quantum",
+      "public/quantum-textures",
+      "public/fundacao-completa/scripts-alquimicos/conectar_ibm_quantum.sh",
+      "src/components/quantum",
+      "app/laboratorios/quantum",
+      "src/app/docs/manifesto_quantico",
+      "app/docs/manifesto_quantico",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum/conectar_ibm_quantum.sh",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum/conectar_ibm_node.sh",
+      "SCRIPTS_CENTRALIZADOS/ibm_quantum/conectar_ibm_quantum.sh.backup",
+      "public/fundacao-completa/scripts-alquimicos/conectar_ibm_quantum.sh",
+      "public/fundacao-completa/scripts-alquimicos/conectar_ibm_node.sh"
+    ]
+  },
+  "analise_frameworks": {
+    "qiskit_detected": true,
+    "algoritmos": [],
+    "circuitos": [
+      "teletransporte_quantico.py",
+      "analisar_quantico_completo.py",
+      "public/fundacao-completa/scripts-alquimicos/teletransporte_quantico.py",
+      "backup_fundacao_20251008_034721/teletransporte_quantico.py"
+    ],
+    "simuladores": [],
+    "integracoes_ibm": true
+  },
+  "estatisticas": {
+    "total_python": 4,
+    "total_javascript": 3,
+    "total_docs": 0,
+    "total_configs": 0,
+    "total_interfaces": 19
+  }
+}

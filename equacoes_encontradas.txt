@@ -1,0 +1,2 @@
+./docs/equacoes_fundamentais.md
+./public/fundacao-completa/docs/equacoes_fundamentais.md
