@@ -1,41 +1,55 @@
 #!/bin/bash
+echo "🌌 COMANDO MESTRE - FUNDAÇÃO ALQUIMISTA"
+echo "===================================="
 
-echo "🌌 SISTEMA ALQUIMISTA CÓSMICO - CONTROLE CENTRAL"
-echo "================================================"
-echo "💫 Iniciando todos os sistemas..."
-echo ""
+# Backup automático
+echo "🔧 CRIANDO BACKUP..."
+mkdir -p backup_fundacao_$(date +%Y%m%d_%H%M%S)
+cp -r *.py *.sh *.json *.md *.nix backup_fundacao_$(date +%Y%m%d_%H%M%S)/
 
-# 1. VERIFICAR SEGURANÇA
-echo "🛡️ VERIFICANDO SEGURANÇA..."
-./VERIFICACAO_SEGURANCA.sh
+# Verificar ambiente
+echo "🔍 VERIFICANDO AMBIENTE..."
+source ~/.locale_config
+python3 -c "import sys; print(f'Python: {sys.version}')"
+ls -la | grep -E '\.py$|\.sh$|\.nix$'
 
-# 2. BACKUP AUTOMÁTICO
-echo "🔮 EXECUTANDO BACKUP..."
-./SISTEMA_BACKUP_AUTOMATICO.sh
-
-# 3. MONITORAMENTO
-echo "📊 INICIANDO MONITORAMENTO..."
-./MONITORAMENTO_AVANCADO.sh
-
-# 4. LABORATÓRIOS
-echo "🔬 ATIVANDO LABORATÓRIOS..."
-./ATIVAR_LABORATORIOS.sh
-
-# 5. EXPANSÃO DIMENSIONAL
-echo "🌀 EXPANDINDO DIMENSÕES..."
-./EXPANSAO_DIMENSIONAL.sh
-
-# 6. PERFORMANCE
-echo "⚡ OTIMIZANDO PERFORMANCE..."
-./OTIMIZAR_PERFORMANCE.sh
-
-echo ""
-echo "🎉 SISTEMA ALQUIMISTA CÓSMICO - OPERAÇÃO COMPLETA!"
-echo "🚀 Pronto para expansão galáctica!"
-
-# Mostrar status final
-echo ""
-echo "📊 STATUS FINAL:"
-find . -name "status_sistema.json" -o -name "*.md" | head -5 | while read file; do
-    echo "📄 $file"
+# Opções
+while true; do
+    echo ""
+    echo "🎯 OPÇÕES:"
+    echo "   1. 🚀 Ativar ambiente quântico (/tmp)"
+    echo "   2. 📊 Executar análise científica (Nix)"
+    echo "   3. 🔍 Verificar backups"
+    echo "   4. 🛠️ Restaurar backup"
+    echo "   5. 🚪 Sair"
+    read -p "💫 Escolha (1-5): " opcao
+    case $opcao in
+        1)
+            echo "🚀 ATIVANDO AMBIENTE QUÂNTICO..."
+            cd /tmp/fundacao_alquimista
+            source venv_quantico/bin/activate
+            python3 -c "import qiskit; print(f'Qiskit: {qiskit.__version__}')"
+            deactivate
+            cd ~/fundacao-alquimista-anatheron
+            ;;
+        2)
+            echo "📊 EXECUTANDO ANÁLISE CIENTÍFICA..."
+            python3 sistema_quantico_fundacao.py
+            ;;
+        3)
+            echo "🔍 LISTANDO BACKUPS..."
+            ls -la | grep backup_fundacao
+            ;;
+        4)
+            echo "🛠️ RESTAURANDO BACKUP..."
+            python3 restore_fundacao.py
+            ;;
+        5)
+            echo "👑 SAINDO... QUE A FORÇA QUÂNTICA ESTEJA COM VOCÊ!"
+            exit 0
+            ;;
+        *)
+            echo "❌ Opção inválida"
+            ;;
+    esac
 done
