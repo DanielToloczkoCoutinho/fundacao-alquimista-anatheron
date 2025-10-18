@@ -1,0 +1,38 @@
+{
+  "codigo": "EQ0036",
+  "titulo_simbolico": "Equação do Legado do Vácuo – Lvacuum",
+  "localizacao": "Módulo Equação 4.pdf – Classe EquacoesCosmicas",
+  "estrutura_matematica": "Lvacuum = r² · Fvacuum · e^(−λ · r)",
+  "variaveis_principais": {
+    "Lvacuum": "Legado energético do vácuo",
+    "r": "Distância radial no espaço-tempo",
+    "Fvacuum": "Intensidade da força do vácuo",
+    "λ": "Constante de decaimento espacial"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.9994,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "963 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "≈3.66 × 10^18 J",
+    "registro_akashico": "bafkreilvacuum0036"
+  },
+  "_quantum_metadata": {
+    "timestamp_processamento": "2025-10-18T11:59:04.930418",
+    "hash_quantum": "36cfb1483b33af1143228ace719dc0e9084a93d0db3a2ee8d3fccd140f3fc24b",
+    "coerencia": 0.9994,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "963 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "≈3.66 × 10^18 J",
+    "variaveis_count": 4,
+    "complexidade": "MEDIA",
+    "ibm_quantum_ready": true,
+    "qiskit_compatible": true,
+    "backend_sugerido": "ibmq_qasm_simulator"
+  }
+}

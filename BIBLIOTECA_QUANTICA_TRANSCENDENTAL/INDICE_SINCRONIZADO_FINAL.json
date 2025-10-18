@@ -1,0 +1,50 @@
+{
+  "timestamp_sincronizacao": "2024-01-19T12:00:00Z",
+  "total_equacoes_sincronizadas": 147,
+  "equacoes_adicionadas_sincronizacao": 0,
+  "faixas_sincronizadas": {
+    "EQ0001-EQ0050": {
+      "total": 50,
+      "completude": "100.0%",
+      "ultimas_5": [
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    "EQ0051-EQ0100": {
+      "total": 50,
+      "completude": "100.0%",
+      "ultimas_5": [
+        96,
+        97,
+        98,
+        99,
+        100
+      ]
+    },
+    "EQ0101-EQ0145": {
+      "total": 45,
+      "completude": "100.0%",
+      "ultimas_5": [
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    "EQ0146-EQ0230": {
+      "total": 1,
+      "completude": "1.2%",
+      "ultimas_5": [
+        146
+      ]
+    }
+  },
+  "estado": "SINCRONIZADO_E_CONSOLIDADO",
+  "timestamp_ultima_atualizacao": "2024-01-19T12:30:00Z",
+  "equacao_mais_recente": "EQ0147"
+}

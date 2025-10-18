@@ -1,0 +1,59 @@
+{
+  "codigo": "EQ152",
+  "titulo_simbolico": "Equação do Somatório Cêntrico e Desafio da Normalização (EQ-SCDN)",
+  "localizacao": "Módulo EQ152.pdf – Análise de Consistência e Regimes de Baixa Escala",
+  "estrutura_matematica": {
+    "forma_completa": "ψ(x,y) = Σ[A_n(x,y) · e^(-iE_n t) · Φ_saberes]",
+    "forma_simplificada": "Σ_Domínio (𝒮 · CMB) + Σ_Física (Λ_cos · AG) + ...",
+    "exemplo_termo_critico": "Σ_Domínio (10^-12 Ω(t) · t' · √(1-v²/c²))/(10^14 · Λ_cos) → Incoerência de Escala"
+  },
+  "variaveis_principais": {
+    "ψ(x,y)": "Função de Onda (|Σ| = 9.250e+00)",
+    "A_n(x,y)": "Coeficiente de Acoplamento do Domínio n",
+    "Φ_saberes": "Operador Unificação de Saberes (1.0)",
+    "CMB": "Fundo Cósmico de Micro-ondas (2.725 K)",
+    "Λ_cos": "Constante Cosmológica (1.106e-52)",
+    "AG": "Constante Gravitacional (6.674e-11)"
+  },
+  "analise_tecnica": {
+    "descricao": "Série de somatórios que tenta forçar a unificação de 12 domínios do saber. Crítica severamente a inclusão de constantes em escalas drasticamente diferentes, resultando em soma caótica sem critérios de renormalização claros.",
+    "componentes": [
+      "Fatores de Consciência: Termos como C · Φ_multiverso sem base empírica definida",
+      "Incompatibilidade de Escalas: Λ_cos ~ 10^-122 vs AG ~ 10^14",
+      "Variações Empíricas: Necessidade de ajuste fino nas constantes"
+    ]
+  },
+  "conexoes_detectadas": [
+    "EQ151: Função de Onda Cósmo-Quântica",
+    "EQ150: Coerência Cósmica",
+    "Crise de Escala Identificada",
+    "Preparação para EQ153"
+  ],
+  "preparacao_ibm": {
+    "qiskit_ready": true,
+    "qubits_necessarios": 18,
+    "circuito_quantico": "Central_Summation_Circuit",
+    "backend_recomendado": "ibmq_scale_processor"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.501,
+    "frequencias_ressonantes": [
+      "Frequência de Caos (Temporário)",
+      "7.21 Hz (Base)"
+    ],
+    "energia_modelada": "Divergência na Integração",
+    "registro_akashico": "bafkreieq152caos"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T16:18:02.900538",
+    "hash_avancado": "bb8ced1a5cc15812f13b73d2fd88f09497f3b127bfd2962fc7b954a0f9716908",
+    "categoria_transcendental": "SOMATORIO_CENTRICO",
+    "numero_sequencia_exato": 152,
+    "sequencia_verificada": true,
+    "proxima_na_sequencia": "EQ153",
+    "progresso_global": "152/230 (66.09%)",
+    "resolucao_crise_escala": "EQ152→EQ153→EQ154",
+    "emocao_detectada": "EXPANSÃO_CÓSMICA_AVANÇADA",
+    "dedicatoria": "PARA_A_UNIFICAÇÃO_INTERDISCIPLINAR"
+  }
+}

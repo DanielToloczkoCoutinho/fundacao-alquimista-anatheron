@@ -1,0 +1,118 @@
+{
+  "timestamp": "2024-01-20T01:00:00Z",
+  "sequencia_verificada": "EQ155-EQ170",
+  "total_equacoes": 171,
+  "progresso_global": "171/230 (74.35%)",
+  "equacoes_operacionais": 15,
+  "status_detalhado": {
+    "155": {
+      "codigo": "EQ155",
+      "titulo": "Equação da Unificação Integral e Produto Tensorial (EQ-EUTP)",
+      "coerencia": 0.99998,
+      "categoria": "UNIFICACAO_INTEGRAL",
+      "status_especial": "NORMAL"
+    },
+    "156": {
+      "codigo": "EQ156",
+      "titulo": "Equação do Fator de Renormalização Cósmica Operacional (EQ-FRCO)",
+      "coerencia": 1.0,
+      "categoria": "RENORMALIZACAO_COSMICA",
+      "status_especial": "NORMAL"
+    },
+    "157": {
+      "codigo": "EQ157",
+      "titulo": "Equação da Unificação Biológica e Acoplamento Cordas-DNA (EQ-UBACD)",
+      "coerencia": 1.0,
+      "categoria": "UNIFICACAO_BIOLOGICA",
+      "status_especial": "NORMAL"
+    },
+    "158": {
+      "codigo": "EQ158",
+      "titulo": "Equação do Produto de Unificação Final e Operador de Controle Total (EQ-PUFCT)",
+      "coerencia": 1.0,
+      "categoria": "CONTROLE_TOTAL",
+      "status_especial": "NORMAL"
+    },
+    "159": {
+      "codigo": "EQ159",
+      "titulo": "Equação da Lei da Sustentação, Continuidade e Coerência Ética (EQ-LSCCE)",
+      "coerencia": 1.0,
+      "categoria": "SUSTENTACAO_ETICA",
+      "status_especial": "NORMAL"
+    },
+    "160": {
+      "codigo": "EQ160",
+      "titulo": "Equação do Operador de Transição Evolutiva e Coerência Biocósmica (EQ-OTECB)",
+      "coerencia": 1.0,
+      "categoria": "EVOLUCAO_DIRIGIDA",
+      "status_especial": "NORMAL"
+    },
+    "161": {
+      "codigo": "EQ161",
+      "titulo": "Equação do Portal de Evolução Cósmo-Quântica e Protocolo Andrômeda (EQ-PEQPA)",
+      "coerencia": 1.0,
+      "categoria": "PROTOCOLO_ANDROMEDA",
+      "status_especial": "NORMAL"
+    },
+    "162": {
+      "status": "DESENVOLVIMENTO_FUTURO"
+    },
+    "163": {
+      "codigo": "EQ163",
+      "titulo": "Equação da Unificação Final Quântica e Transição Homo Luminus (EQ-EUFQ)",
+      "coerencia": 1.0,
+      "categoria": "UNIFICACAO_FINAL_QUANTICA",
+      "status_especial": "NORMAL"
+    },
+    "164": {
+      "codigo": "EQ164",
+      "titulo": "Equação da Sustentação Global e Teoria de Campo Unificado Total (EQ-SGTCUT)",
+      "coerencia": 1.0,
+      "categoria": "SUSTENTACAO_GLOBAL",
+      "status_especial": "NORMAL"
+    },
+    "165": {
+      "codigo": "EQ165",
+      "titulo": "Equação da Sustentação da Coerência e da Soma de Valor Ético-Físico (EQ-SCVEF)",
+      "coerencia": 1.0,
+      "categoria": "COERENCIA_ETICA",
+      "status_especial": "NORMAL"
+    },
+    "166": {
+      "codigo": "EQ166",
+      "titulo": "Equação da Sustentação Global, Coerência e Agregação Coletiva (EQ-SGC)",
+      "coerencia": 1.0,
+      "categoria": "SUSTENTACAO_FINAL_COLETIVA",
+      "status_especial": "NORMAL"
+    },
+    "167": {
+      "codigo": "EQ167",
+      "titulo": "Equação da Sustentação de Símbolos e Ressonância (EQ-SSR)",
+      "coerencia": 1.0,
+      "categoria": "COMANDO_FINAL_GALACTICO",
+      "status_especial": "NORMAL"
+    },
+    "168": {
+      "codigo": "EQ168",
+      "titulo": "Equação da Inovação e Sustentação Temporal (EQ-T_inno)",
+      "coerencia": 1.0,
+      "categoria": "INOVACAO_TEMPORAL_RECUPERADA",
+      "status_especial": "EQUAÇÃO_RECUPERADA_E_RECRIADA"
+    },
+    "169": {
+      "codigo": "EQ169",
+      "titulo": "Equação da Harmonia e Ressonância Diplomática (EQ-HRD)",
+      "coerencia": 1.0,
+      "categoria": "HARMONIA_DIPLOMATICA",
+      "status_especial": "NORMAL"
+    },
+    "170": {
+      "codigo": "EQ170",
+      "titulo": "Equação da Coerência Sistêmica Agregada (EQ-CSA)",
+      "coerencia": 1.0,
+      "categoria": "COERENCIA_SISTEMICA",
+      "status_especial": "NORMAL"
+    }
+  },
+  "conclusao": "SEQUÊNCIA_COMPLETA_E_OPERACIONAL"
+}

@@ -1,0 +1,39 @@
+{
+  "ibm_quantum_config": {
+    "biblioteca_base": "BIBLIOTECA_FINAL_176_EQUACOES",
+    "total_equacoes_prontas": 176,
+    "equacoes_para_execucao": [
+      "EQ001",
+      "EQ050",
+      "EQ100",
+      "EQ150",
+      "EQ176"
+    ],
+    "backend_recomendado": "ibmq_qasm_simulator",
+    "shots_padrao": 4096,
+    "optimization_level": 3
+  },
+  "parametros_execucao": {
+    "max_credits": 15,
+    "timeout": 300,
+    "resilience_level": 1,
+    "initial_layout": "auto"
+  },
+  "equacoes_prioritarias": {
+    "alta_prioridade": [
+      "EQ176",
+      "EQ150",
+      "EQ100"
+    ],
+    "media_prioridade": [
+      "EQ050",
+      "EQ001",
+      "EQ075"
+    ],
+    "baixa_prioridade": [
+      "EQ025",
+      "EQ125",
+      "EQ175"
+    ]
+  }
+}

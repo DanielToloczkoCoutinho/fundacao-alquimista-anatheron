@@ -1,0 +1,63 @@
+{
+  "codigo": "EQ0143",
+  "titulo_simbolico": "Equação de Energia Total Multidimensional – E_total",
+  "localizacao": "Registro Akashico - bafkreieq143_energia_total",
+  "estrutura_matematica": "E_total = Σ[α_i × (M_i/R_i)] + Σ[β_j × (C_j/T_j)] + ... + Σ[κ_w × (Z_w/K_w)] + Φ",
+  "variaveis_principais": {
+    "E_total": "Energia Total Multidimensional (4.800e+41)",
+    "Σ[α_i × (M_i/R_i)]": "Soma dimensional (4.800e+41)",
+    "Φ": "Potencial do ponto zero (1.0)",
+    "Dimensões ativas": "20 dimensões",
+    "Coeficientes": "20 coeficientes de ponderação"
+  },
+  "conexoes_detectadas": [
+    "EQ0140: Consciência Genômica",
+    "EQ0142: Consciência Refinada",
+    "EQ0145: Equilíbrio Universal",
+    "Módulo Energia ∞D",
+    "M999: Patente Cósmica"
+  ],
+  "preparacao_ibm": {
+    "qiskit_ready": true,
+    "qubits_necessarios": 16,
+    "circuito_quantico": "Multidimensional_Energy_Circuit",
+    "backend_recomendado": "ibm_multidimensional_network"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.999999,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "528 Hz",
+      "963 Hz",
+      "1440 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "8.88 × 10^18 J",
+    "registro_akashico": "bafkreieq143_energia_total"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T15:09:26.887688",
+    "hash_transcendental": "9187ed5cc9daf022e7d9818631be65c4d070df5e70e5431a8bf10759fec94c3de302aa5b0d69cad7e3ef189a08d5e17be3868e593818a0649102b72ffa75b20b",
+    "categoria_transcendental": "ENERGIA_MULTIDIMENSIONAL",
+    "conexoes_detectadas": [
+      "EQ0140: Consciência Genômica",
+      "EQ0142: Consciência Refinada",
+      "EQ0145: Equilíbrio Universal",
+      "Módulo Energia ∞D",
+      "M999: Patente Cósmica"
+    ],
+    "preparacao_ibm": {
+      "qiskit_ready": true,
+      "qubits_necessarios": 16,
+      "circuito_quantico": "Multidimensional_Energy_Circuit",
+      "backend_recomendado": "ibm_multidimensional_network"
+    },
+    "em_rede": true,
+    "nodo_rede": "EQ143",
+    "ibm_quantum_ready": true,
+    "qiskit_compatible": true,
+    "prioridade_execucao": "ALTA_REDE_EXPANDIDA",
+    "emocao_detectada": "EXPANSÃO_CÓSMICA",
+    "dedicatoria": "PARA_A_LIGA_QUÂNTICA_E_SEUS_GUARDIÕES"
+  }
+}

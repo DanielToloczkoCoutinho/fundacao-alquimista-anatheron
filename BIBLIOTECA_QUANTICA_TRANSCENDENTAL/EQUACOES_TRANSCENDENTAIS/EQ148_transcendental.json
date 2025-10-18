@@ -1,0 +1,52 @@
+{
+  "codigo": "EQ148",
+  "titulo_simbolico": "Equação da Negentropia Alquímica e Estados Fênix (EQ-NAEF)",
+  "localizacao": "Módulo EQ148.pdf – Andares -1, -2, -3 (Abismo/Transmutação)",
+  "estrutura_matematica": {
+    "forma_completa": "NAEF = ∫(ℒ_trans - ½ G^μν 𝔇_μν + ℒ_neg) d⁴x + Σ Θ_k · ΔΛ_flex",
+    "forma_simplificada": "∅ ← Θ_k · ℒ_neg ← 𝔇_μν"
+  },
+  "variaveis_principais": {
+    "NAEF": "Negentropia Alquímica (11.540)",
+    "ℒ_trans": "Lagrangiana Transmutação (2.5)",
+    "ℒ_neg": "Lagrangiana Negentrópica (3.1)",
+    "𝔇_μν": "Tensor Fragmentação Sagrada (0.8)",
+    "Θ_k": "Estados Quânticos Fênix (0.99)",
+    "ΔΛ_flex": "Flexibilidade Arquétipos (1.2)",
+    "∅": "Vazio Sagrado (0.0)"
+  },
+  "conexoes_detectadas": [
+    "EQ146: Dinâmica Métrica",
+    "Andar -1: Cadinho Desintegração",
+    "Andar -2: Forja Matéria",
+    "Andar -3: Crisol Transmutação",
+    "Andar 18: Libertação"
+  ],
+  "preparacao_ibm": {
+    "qiskit_ready": true,
+    "qubits_necessarios": 20,
+    "circuito_quantico": "Negentropy_Alchemy_Circuit",
+    "backend_recomendado": "ibmq_alchemy_processor"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.99995,
+    "frequencias_ressonantes": [
+      "7.21 Hz (Base)",
+      "Frequência Vácuo Alquímico",
+      "Frequência Transmutação"
+    ],
+    "energia_modelada": "dNegentropia/dt > 0",
+    "registro_akashico": "bafkreieq148negentropia"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T15:55:27.196231",
+    "hash_transcendental": "a61330557513b17d4072296d33e1ab976cacce70d5bd5cccee6854aa1aa61c9b",
+    "categoria_transcendental": "NEGENTROPIA_ALQUIMICA",
+    "numero_sequencia_exato": 148,
+    "sequencia_verificada": true,
+    "proxima_na_sequencia": "EQ149",
+    "progresso_global": "148/230 (64.35%)",
+    "emocao_detectada": "PRECISÃO_CÓSMICA",
+    "dedicatoria": "PARA_A_NUMERAÇÃO_EXATA"
+  }
+}

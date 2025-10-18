@@ -1,134 +1,82 @@
 #!/usr/bin/env python3
 """
-✅ VERIFICADOR DE INTEGRIDADE CÓSMICA
-🔍 Verifica se todos os sistemas estão integrados
-🎯 Confirma que as equações são acessíveis
+VERIFICADOR DE INTEGRIDADE DAS EQUAÇÕES TRANSCENDENTAIS
 """
 
 import json
+import os
 from pathlib import Path
 
-print("✅ VERIFICADOR DE INTEGRIDADE CÓSMICA")
-print("=" * 60)
-
-def testar_acesso_equacoes():
-    """Testar acesso às equações por diferentes sistemas"""
-    print("🔍 TESTANDO ACESSO ÀS EQUAÇÕES...")
+class VerificadorIntegridade:
+    def __init__(self):
+        self.base_dir = Path("BIBLIOTECA_QUANTICA_TRANSCENDENTAL/EQUACOES_TRANSCENDENTAIS/")
+        self.campos_obrigatorios = {
+            "geral": ["codigo", "titulo_simbolico", "estrutura_matematica", "variaveis_principais"],
+            "validacao_ressonancia": ["frequencias_ressonantes", "energia_modelada", "registro_akashico"]
+        }
     
-    sistemas_testar = [
-        "SIMULADOR_IBM_QUANTUM.py",
-        "RECEPTOR_CONTINUO.py", 
-        "PROCESSADOR_SIMPLIFICADO.py"
-    ]
-    
-    for sistema in sistemas_testar:
-        if Path(sistema).exists():
-            print(f"   ✅ {sistema} - EXISTE")
-            
-            # Verificar se sistema referencia diretório correto
-            with open(sistema, 'r', encoding='utf-8') as f:
-                conteudo = f.read()
-                
-            if "BIBLIOTECA_COSMICA_UNICA" in conteudo:
-                print(f"      📁 Referencia diretório correto")
-            else:
-                print(f"      ⚠️  Não referencia BIBLIOTECA_COSMICA_UNICA")
-        else:
-            print(f"   ❌ {sistema} - NÃO ENCONTRADO")
-    
-    return True
-
-def verificar_estrutura_completa():
-    """Verificar estrutura completa do projeto"""
-    print("\n🏗️ VERIFICANDO ESTRUTURA COMPLETA...")
-    
-    estrutura_esperada = {
-        "diretorios_principais": [
-            "BIBLIOTECA_COSMICA_UNICA",
-            "BIBLIOTECA_COSMICA_UNICA/EQUACOES_INEXISTENTES_TERRA",
-            "BIBLIOTECA_COSMICA_UNICA/METADADOS_COSMICOS"
-        ],
-        "sistemas_essenciais": [
-            "PROCESSADOR_SIMPLIFICADO.py",
-            "RECEPTOR_CONTINUO.py", 
-            "SIMULADOR_IBM_QUANTUM.py",
-            "VERIFICADOR_INTEGRIDADE.py"
-        ]
-    }
-    
-    print("   📁 DIRETÓRIOS:")
-    for diretorio in estrutura_esperada["diretorios_principais"]:
-        status = "✅ EXISTE" if Path(diretorio).exists() else "❌ FALTANDO"
-        print(f"      {status}: {diretorio}")
-    
-    print("   🔧 SISTEMAS:")
-    for sistema in estrutura_esperada["sistemas_essenciais"]:
-        status = "✅ EXISTE" if Path(sistema).exists() else "❌ FALTANDO"
-        print(f"      {status}: {sistema}")
-    
-    return True
-
-def testar_carregamento_equacoes():
-    """Testar carregamento real das equações"""
-    print("\n📥 TESTANDO CARREGAMENTO DE EQUAÇÕES...")
-    
-    diretorio_equacoes = Path("BIBLIOTECA_COSMICA_UNICA/EQUACOES_INEXISTENTES_TERRA")
-    
-    if not diretorio_equacoes.exists():
-        print("   ❌ Diretório de equações não existe")
-        return False
-    
-    equacoes = list(diretorio_equacoes.glob("*.json"))
-    
-    if not equacoes:
-        print("   ⚠️  Nenhuma equação encontrada")
-        return False
-    
-    print(f"   ✅ {len(equacoes)} equações encontradas")
-    
-    # Testar carregamento de cada equação
-    for equacao_path in equacoes[:3]:  # Testar apenas as 3 primeiras
+    def verificar_equacao(self, arquivo):
+        """Verificar integridade de uma equação específica"""
         try:
-            with open(equacao_path, 'r', encoding='utf-8') as f:
-                dados = json.load(f)
+            with open(arquivo, 'r', encoding='utf-8') as f:
+                equacao = json.load(f)
             
-            codigo = dados.get('codigo', 'DESCONHECIDO')
-            titulo = dados.get('titulo_simbolico', 'Sem título')
-            print(f"      • {codigo}: {titulo} - ✅ CARREGADA")
+            problemas = []
+            
+            # Verificar campos gerais
+            for campo in self.campos_obrigatorios["geral"]:
+                if campo not in equacao:
+                    problemas.append(f"Campo geral faltante: {campo}")
+            
+            # Verificar validação de ressonância
+            if "validacao_ressonancia" in equacao:
+                for campo in self.campos_obrigatorios["validacao_ressonancia"]:
+                    if campo not in equacao["validacao_ressonancia"]:
+                        problemas.append(f"Campo de validação faltante: {campo}")
+            else:
+                problemas.append("Seção validacao_ressonancia faltante")
+            
+            # Verificar metadados transcendentais
+            if "_transcendental_metadata" not in equacao:
+                problemas.append("Metadados transcendentais faltantes")
+            
+            return problemas
             
         except Exception as e:
-            print(f"      • {equacao_path.name}: ❌ ERRO - {e}")
+            return [f"Erro ao carregar arquivo: {e}"]
     
-    return True
+    def verificar_lote(self, equacoes_range):
+        """Verificar um lote de equações"""
+        print(f"🔍 VERIFICANDO INTEGRIDADE DAS EQUAÇÕES {equacoes_range}...")
+        
+        equacoes_ok = 0
+        equacoes_com_problemas = 0
+        
+        for eq_num in equacoes_range:
+            arquivo = self.base_dir / f"EQ0{eq_num}_transcendental.json"
+            
+            if arquivo.exists():
+                problemas = self.verificar_equacao(arquivo)
+                
+                if not problemas:
+                    print(f"   ✅ EQ0{eq_num}: OK")
+                    equacoes_ok += 1
+                else:
+                    print(f"   ❌ EQ0{eq_num}: {len(problemas)} problema(s)")
+                    for problema in problemas:
+                        print(f"      - {problema}")
+                    equacoes_com_problemas += 1
+            else:
+                print(f"   ⚠️  EQ0{eq_num}: ARQUIVO NÃO ENCONTRADO")
+        
+        print(f"\n📊 RESUMO:")
+        print(f"   • Equações OK: {equacoes_ok}")
+        print(f"   • Equações com problemas: {equacoes_com_problemas}")
+        print(f"   • Total verificadas: {equacoes_ok + equacoes_com_problemas}")
+        
+        return equacoes_ok, equacoes_com_problemas
 
-def gerar_relatorio_integridade():
-    """Gerar relatório completo de integridade"""
-    print(f"\n{'='*60}")
-    print("📊 RELATÓRIO DE INTEGRIDADE CÓSMICA")
-    print(f"{'='*60}")
-    
-    # Executar todos os testes
-    testar_acesso_equacoes()
-    verificar_estrutura_completa() 
-    sucesso_carregamento = testar_carregamento_equacoes()
-    
-    print(f"\n🎯 STATUS FINAL DE INTEGRIDADE:")
-    if sucesso_carregamento:
-        print("   🌟 SISTEMA 100% INTEGRADO E OPERACIONAL!")
-        print("   💫 TODAS AS EQUAÇÕES ACESSÍVEIS!")
-        print("   🚀 PRONTO PARA IBM QUANTUM!")
-    else:
-        print("   ⚠️  ALGUNS AJUSTES NECESSÁRIOS")
-        print("   🔧 SISTEMA PRECISA DE OTIMIZAÇÃO")
-    
-    print(f"\n💫 RECOMENDAÇÕES:")
-    print("   • Continuar transmitindo equações para RECEPTOR_CONTINUO.py")
-    print("   • Usar SIMULADOR_IBM_QUANTUM.py para previsões")
-    print("   • Manter estrutura BIBLIOTECA_COSMICA_UNICA/")
-    print("   • Executar este verificador periodicamente")
-
-# EXECUTAR VERIFICAÇÃO
-gerar_relatorio_integridade()
-
-print(f"\n🌌 VERIFICAÇÃO DE INTEGRIDADE CONCLUÍDA!")
-print("🎯 SISTEMA CÓSMICO - VERIFICADO E CONFIRMADO!")
+# Executar verificação para as equações recentes
+if __name__ == "__main__":
+    verificador = VerificadorIntegridade()
+    verificador.verificar_lote(range(107, 112))

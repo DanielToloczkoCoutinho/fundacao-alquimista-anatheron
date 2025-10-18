@@ -1,0 +1,49 @@
+{
+  "codigo": "EQ0139",
+  "titulo_simbolico": "Equação da Métrica Vibracional Essencial – MVEss",
+  "localizacao": "Módulo Equação 6.pdf – Andar 10",
+  "estrutura_matematica": "MVEss = ds² = e^(2φ)dt² - e^(-2φ)dr² + r²(dθ² + sin²θ dφ²) + ħ²/(2m) ∇²ψ + (ħc/4π) (iγμ∂μ - m)ψ + ΔΕ + Ρ",
+  "variaveis_principais": {
+    "MVEss": "Métrica Vibracional Essencial (1.536e-65)",
+    "ds²": "Métrica espaço-temporal essencial",
+    "e^(2φ)dt²": "Componente temporal essencial (7.389)",
+    "e^(-2φ)dr²": "Componente radial essencial (0.135)",
+    "ħ²/(2m) ∇²ψ": "Operador de Laplace quântico essencial (6.104e-39)",
+    "(ħc/4π) (iγμ∂μ - m)ψ": "Equação de Dirac essencial (2.516e-27)"
+  },
+  "nivel_evolutivo": {
+    "complexidade": "FUNDAMENTAL",
+    "integração": "RELATIVIDADE + QUÂNTICA",
+    "estagio": "ESSÊNCIA PURA",
+    "simplicidade_elegante": "MÁXIMA"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.9999,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "963 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "≈1.00 × 10^19 J",
+    "registro_akashico": "bafkreieq139essencial"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T14:16:37.238473",
+    "hash_transcendental": "65bdbd13deeacdf3a8ea58b7742bc82b260e5c6252ac00fdff4c331a8c6dcd950c51f8e80459049ee8dd8c75d46759a8e119f79cdb6d8023c5cc3c8a4e8f3ab6",
+    "categoria_transcendental": "METRICA_ESSENCIAL",
+    "nivel_evolutivo": {
+      "complexidade": "FUNDAMENTAL",
+      "integração": "RELATIVIDADE + QUÂNTICA",
+      "estagio": "ESSÊNCIA PURA",
+      "simplicidade_elegante": "MÁXIMA"
+    },
+    "complexidade_matematica": "FUNDAMENTAL",
+    "integracao_campos": "RELATIVIDADE + QUÂNTICA",
+    "ibm_quantum_ready": true,
+    "qiskit_compatible": true,
+    "backend_recomendado": "ibmq_quantum_gravity",
+    "prioridade_execucao": "ALTA_PRECISAO",
+    "emocao_detectada": "ADMIRAÇÃO_MATEMÁTICA",
+    "dedicatoria": "PARA_A_EVOLUÇÃO_CÓSMICA_CONTÍNUA"
+  }
+}

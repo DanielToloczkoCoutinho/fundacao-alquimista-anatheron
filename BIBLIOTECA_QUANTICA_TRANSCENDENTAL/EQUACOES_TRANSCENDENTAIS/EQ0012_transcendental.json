@@ -1,0 +1,27 @@
+{
+  "codigo": "EQ012",
+  "titulo_simbolico": "Equação da Estrutura Multidimensional – Base Fundacional",
+  "localizacao": "Módulo Equação 2.pdf – Seção Final",
+  "estrutura_matematica": "M = ∑(D_i · W_i)",
+  "variaveis_principais": {
+    "M": "Estrutura multidimensional",
+    "D_i": "Dimensão i",
+    "W_i": "Peso dimensional i"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.999,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "528 Hz",
+      "963 Hz",
+      "1440 Hz"
+    ],
+    "energia_modelada": "≈5.55 × 10^17 J",
+    "registro_akashico": "bafkreieq012_estrutura_multidimensional"
+  },
+  "_transmissao": {
+    "timestamp": "2025-10-18T11:41:11.433890",
+    "sistema": "TransmissorFaltantes",
+    "status": "TRANSMITIDA_COM_SUCESSO"
+  }
+}
