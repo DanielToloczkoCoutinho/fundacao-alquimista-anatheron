@@ -1,0 +1,18 @@
+{
+  "_metadata": {
+    "numero_equacao": 214,
+    "codigo": "EQ214",
+    "nome": "Taxa de Purificação Planetária",
+    "categoria": "PURIFICACAO_PLANETARIA",
+    "complexidade": 0.89,
+    "taxa": "2.78 × 10³ U/s"
+  },
+  "equacao_latex": "\\text{rate}_{\\text{purificação}} = \\frac{E_{\\text{ZPE}}}{\\hbar \\cdot N_{\\text{nanobots}}}",
+  "variaveis": {
+    "E_ZPE": "energia de ponto zero do Reactor Gaia",
+    "N_nanobots": "1000 nanorrobôs de purificação ativos"
+  },
+  "resultado": "taxa de regeneração planetária de 2.78 × 10³ unidades por segundo",
+  "aplicacao": "Recuperação ambiental acelerada do planeta",
+  "impacto": "Reversão de danos ambientais em escala global"
+}

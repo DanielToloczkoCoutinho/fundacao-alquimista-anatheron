@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "numero_equacao": 254,
+    "codigo": "EQ254",
+    "nome": "Modelo Multiversal Total",
+    "categoria": "MODELO_MULTIVERSAL_TOTAL",
+    "complexidade": 1.0,
+    "energia": "9.99 × 10¹⁸ J",
+    "coerencia": 0.99999999
+  },
+  "equacao_latex": "\\text{EUFQ}_{018} = \\left[ (M + Q + F + B + S + U + T + H) \\cdot dt \\right] \\cdot A",
+  "integracoes_cosmologicas": {
+    "cosmologia": "estudo da origem e evolução do universo",
+    "exoplanetas": "mundos além do sistema solar",
+    "simulações_multiversais": "realidades paralelas e alternativas"
+  },
+  "fontes_dados": {
+    "Gaia": "mapa tridimensional da Via Láctea",
+    "JWST": "James Webb Space Telescope - origens cósmicas",
+    "TON_618": "buracos negros supermassivos - portais dimensionais"
+  },
+  "resultado": "Simulação completa do multiverso conhecido e desconhecido",
+  "aplicacao": "Integração ética universal e exploração multiversal",
+  "registro": "IPFS + Blockchain quântica para imutabilidade cósmica"
+}

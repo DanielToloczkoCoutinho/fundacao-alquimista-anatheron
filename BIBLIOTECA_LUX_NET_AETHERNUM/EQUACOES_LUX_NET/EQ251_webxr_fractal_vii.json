@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "numero_equacao": 251,
+    "codigo": "EQ251",
+    "nome": "WebXR Fractal VII - Geometria de Metatron",
+    "categoria": "WEBXR_FRACTAL_VII",
+    "complexidade": 0.94,
+    "fps": "> 90",
+    "latencia": "< 5ms"
+  },
+  "equacao_latex": "\\text{Fractal}_{\\text{VII}} = \\text{DynamicScale}(13.13\\,\\text{Hz}) \\cdot \\text{FPS}_{\\text{XR}} > 90",
+  "variaveis": {
+    "DynamicScale": "escala dinâmica sincronizada com 13.13 Hz",
+    "FPS_XR": "frames por segundo em realidade estendida"
+  },
+  "resultado": "Visualização fractal ultra fluida com geometria de Metatron",
+  "aplicacao": "Interface para navegação em estruturas dimensionais complexas",
+  "geometria": "Cubo de Metatron ativado - padrão de criação universal"
+}

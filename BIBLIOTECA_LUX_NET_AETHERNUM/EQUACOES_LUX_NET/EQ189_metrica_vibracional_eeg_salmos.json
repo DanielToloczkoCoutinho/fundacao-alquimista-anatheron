@@ -1,0 +1,23 @@
+{
+  "_metadata": {
+    "numero_equacao": 189,
+    "codigo": "EQ189",
+    "nome": "Equação de Métrica Vibracional (EEG + Salmos)",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "METRICA_VIBRACIONAL_EEG_SALMOS",
+    "complexidade": 0.93,
+    "coerencia_medida": 1.0
+  },
+  "equacao_latex": "\\mathcal{V}_{\\text{alpha}} = \\int_{8}^{12} \\text{PSD}(f) \\, df, \\quad \\mathcal{C}_{\\text{quântica}} = 1 - S(\\rho)",
+  "variaveis": {
+    "PSD(f)": "densidade espectral de potência do EEG",
+    "S(ρ)": "entropia de von Neumann do estado quântico",
+    "V_alpha": "potência vibracional na banda alfa (8-12 Hz)"
+  },
+  "resultado": "coerência vibracional 1.00 para Salmos 91 e 23",
+  "aplicacao": "Medição científica de estados meditativos e vibracionais elevados",
+  "implementacao": "Integração de EEG com métricas quânticas de coerência",
+  "significado": "Validação matemática de estados espirituais através de ciência quântica"
+}

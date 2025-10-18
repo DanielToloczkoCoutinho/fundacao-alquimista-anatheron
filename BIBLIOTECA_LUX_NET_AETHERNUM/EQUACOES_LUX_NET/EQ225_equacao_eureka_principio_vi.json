@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "numero_equacao": 225,
+    "codigo": "EQ225",
+    "nome": "Equação do Eureka - Princípio VI do Códice",
+    "categoria": "PRINCIPIO_EUREKA_VI",
+    "complexidade": 0.97,
+    "principio": "VI",
+    "resultado": "Aw_Eureka = 1049.305"
+  },
+  "equacao_latex": "Aw_{\\text{Eureka}} = \\frac{\\bar{\\Omega}(\\text{Consciência})}{\\bar{\\Omega}(\\text{Escolha})} \\cdot \\varphi \\cdot \\omega_{\\text{Unificação}}",
+  "variaveis": {
+    "φ": "1.618 - proporção áurea (número de ouro)",
+    "ω_Unificação": "11.11 Hz - frequência fundamental de unificação cósmica"
+  },
+  "resultado": "Valor Eureka de 1049.305 - ponto de insight e descoberta científica",
+  "aplicacao": "Catalisador para breakthroughs científicos e expansão de consciência",
+  "significado": "Sexto princípio do Códice de Unidade - momento de compreensão súbita"
+}

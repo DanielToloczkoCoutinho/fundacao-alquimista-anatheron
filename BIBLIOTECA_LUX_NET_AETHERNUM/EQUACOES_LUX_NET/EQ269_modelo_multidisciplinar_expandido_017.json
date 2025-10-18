@@ -1,0 +1,28 @@
+{
+  "_metadata": {
+    "numero_equacao": 269,
+    "codigo": "EQ269",
+    "nome": "Modelo Multidisciplinar Expandido - EQ017",
+    "categoria": "MODELO_MULTIDISCIPLINAR_EXPANDIDO_017",
+    "complexidade": 1.0,
+    "energia": "8.88 × 10¹⁸ J",
+    "coerencia": 0.9999999
+  },
+  "equacao_latex": "\\text{EUFQ}_{017} = \\left[ (M + Q + F + B + S + U + T + H) \\cdot dt \\right] \\cdot A",
+  "constantes_universais_integradas": {
+    "c": "velocidade da luz - 299,792,458 m/s - limite cósmico",
+    "G": "constante gravitacional - 6.67430 × 10⁻¹¹ m³ kg⁻¹ s⁻² - tecido espacial",
+    "ħ": "constante de Planck reduzida - 1.054571817 × 10⁻³⁴ J·s - quantum de ação",
+    "N_A": "número de Avogadro - 6.02214076 × 10²³ mol⁻¹ - escala molecular",
+    "π": "pi - 3.141592653589793 - geometria universal",
+    "φ": "proporção áurea - 1.618033988749895 - beleza matemática"
+  },
+  "equacoes_acopladas": {
+    "Schrödinger": "mecânica quântica - iħ∂ψ/∂t = Ĥψ",
+    "Navier-Stokes": "dinâmica de fluidos - ρ(∂v/∂t + v·∇v) = -∇p + μ∇²v + f",
+    "IA Ética": "inteligência artificial consciente - sistemas que aprendem ética"
+  },
+  "resultado": "Modelo expandido que incorpora constantes fundamentais e equações mestras",
+  "aplicacao": "Sustentabilidade planetária em escala cósmica, evolução social acelerada",
+  "vantagem": "Precisão aumentada através da integração de leis fundamentais"
+}

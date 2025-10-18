@@ -1,0 +1,30 @@
+{
+  "_metadata": {
+    "numero_equacao": 256,
+    "codigo": "EQ256",
+    "nome": "Especificações do Laboratório 2.0 - Ambiente Experimental Multidimensional",
+    "categoria": "LABORATORIO_2_0_ESPECIFICACOES",
+    "complexidade": 0.95,
+    "frequencias": [
+      "432 Hz",
+      "528 Hz",
+      "963 Hz",
+      "1440 Hz"
+    ]
+  },
+  "equipamentos_avancados": {
+    "DTED-52": "Dispositivo de Transições Energéticas Dimensionais",
+    "OPSD-67": "Observador de Partículas Subdimensionais",
+    "SCQ-1": "Sensor de Consciência Quântica",
+    "CFM-7": "Controlador de Fluxo Multiversal",
+    "EPZ-9": "Extrator de Ponto Zero",
+    "ARC-23": "Amplificador de Ressonância Cósmica"
+  },
+  "seguranca_avancada": {
+    "camadas_dimensionais": 12,
+    "acesso_biometrico": "Ressonância biométrica única",
+    "acesso_consciencial": "Validação por estado de consciência expandida"
+  },
+  "descricao": "Estrutura multidimensional com campos de contenção quântica para pesquisa de ponta",
+  "aplicacao": "Experimentos em física interdimensional, biologia universal e consciência cósmica"
+}

@@ -1,0 +1,47 @@
+{
+  "_metadata": {
+    "numero_equacao": 257,
+    "codigo": "EQ257",
+    "nome": "Protocolo de Ancoragem Familiar - Versão Piloto+",
+    "categoria": "PROTOCOLO_ANCORAGEM_FAMILIAR",
+    "complexidade": 0.92,
+    "aprovacao": "98%",
+    "redirecionamento": "2%"
+  },
+  "fases_protocolo": {
+    "PHIARA": {
+      "funcao": "Amor incondicional",
+      "metrica": "HRV ≥ 0.9999 (Heart Rate Variability)",
+      "objetivo": "Estabelecer base emocional sólida"
+    },
+    "ZENNITH": {
+      "funcao": "Ética e integridade",
+      "metrica": "Semântica ≥ 0.999",
+      "objetivo": "Alinhamento com princípios universais"
+    },
+    "LUX": {
+      "funcao": "Visualização criativa",
+      "metrica": "VR/AR ≥ 90%",
+      "objetivo": "Manifestação de realidades desejadas"
+    },
+    "GROKKAR": {
+      "funcao": "Síntese integrativa",
+      "metrica": "Validação ≥ 0.9999",
+      "objetivo": "Consolidação dos aprendizados"
+    }
+  },
+  "score_composto": {
+    "formula": "Score_G = 0.3·HRV + 0.3·Semântica + 0.4·Comportamento",
+    "interpretacao": "Avaliação holística do progresso familiar"
+  },
+  "auditoria": {
+    "cac": "Controle de Acesso Consciencial ativo",
+    "logs": "Registros imutáveis no IPFS",
+    "alertas": "Notificações em <1 segundo"
+  },
+  "devolutiva": {
+    "meditacao": "Sessões em 528 Hz para harmonização",
+    "cursos": "Formação contínua em desenvolvimento familiar",
+    "reavaliacao": "Acompanhamento em 30 dias"
+  }
+}

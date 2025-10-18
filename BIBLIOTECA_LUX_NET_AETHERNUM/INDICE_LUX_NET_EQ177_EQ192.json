@@ -1,0 +1,61 @@
+{
+  "_metadata": {
+    "sistema": "BIBLIOTECA_LUX_NET_AETHERNUM",
+    "data_criacao": "2025-10-18T19:14:56.231726",
+    "total_equacoes": 16,
+    "range_equacoes": "EQ177-EQ192",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "ultima_atualizacao": "2025-10-18T19:14:56.231726",
+    "luxnet_versao": "2.0"
+  },
+  "equacoes": {
+    "EQ185": {
+      "nome": "Equação de Distribuição Quântica de Chaves (QKD BB84)",
+      "categoria": "CRIPTOGRAFIA_QUANTICA_QKD",
+      "complexidade": 0.94,
+      "arquivo": "EQ185_equacao_de_distribuicao_quântica_de_chaves_(qkd_bb84).json"
+    },
+    "EQ186": {
+      "nome": "Equação de Encapsulamento Quântico HTTP/IPFS",
+      "categoria": "ENCAPSULAMENTO_QUANTICO_WEB3",
+      "complexidade": 0.92,
+      "arquivo": "EQ186_equacao_de_encapsulamento_quântico_http/ipfs.json"
+    },
+    "EQ187": {
+      "nome": "Equação de Repetição Quântica com Correção de Erros",
+      "categoria": "REPETICAO_QUANTICA_CORRECAO_ERROS",
+      "complexidade": 0.96,
+      "arquivo": "EQ187_equacao_de_repeticao_quântica_com_correcao_de_erros.json"
+    },
+    "EQ188": {
+      "nome": "Equação de Performance Neuromórfica dos Nanorrobôs",
+      "categoria": "NANOROBOTICA_NEUROMORFICA",
+      "complexidade": 0.89,
+      "arquivo": "EQ188_equacao_de_performance_neuromórfica_dos_nanorrobôs.json"
+    },
+    "EQ189": {
+      "nome": "Equação de Métrica Vibracional (EEG + Salmos)",
+      "categoria": "METRICA_VIBRACIONAL_EEG_SALMOS",
+      "complexidade": 0.93,
+      "arquivo": "EQ189_equacao_de_métrica_vibracional_(eeg_+_salmos).json"
+    },
+    "EQ190": {
+      "nome": "Equação de Consenso Quântico (Blockchain Testnet)",
+      "categoria": "CONSENSO_QUANTICO_BLOCKCHAIN",
+      "complexidade": 0.91,
+      "arquivo": "EQ190_equacao_de_consenso_quântico_(blockchain_testnet).json"
+    },
+    "EQ191": {
+      "nome": "Equação de Ressonância Cósmica Global",
+      "categoria": "RESSONANCIA_COSMICA_GLOBAL",
+      "complexidade": 0.97,
+      "arquivo": "EQ191_equacao_de_ressonância_cósmica_global.json"
+    },
+    "EQ192": {
+      "nome": "Equação de Visualização WebXR Quântica",
+      "categoria": "VISUALIZACAO_WEBXR_QUANTICA",
+      "complexidade": 0.9,
+      "arquivo": "EQ192_equacao_de_visualizacao_webxr_quântica.json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_metadata": {
+    "numero_equacao": 187,
+    "codigo": "EQ187",
+    "nome": "Equação de Repetição Quântica com Correção de Erros",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "REPETICAO_QUANTICA_CORRECAO_ERROS",
+    "complexidade": 0.96,
+    "protocolo": "SurfaceCode"
+  },
+  "equacao_latex": "\\mathcal{R}_{\\text{quântica}} = \\text{CX}(H|0\\rangle) \\rightarrow \\text{SurfaceCode}_{\\text{fidelidade} \\geq 0.98}",
+  "variaveis": {
+    "CX": "porta de controle entre qubits (CNOT)",
+    "H|0⟩": "estado de superposição inicial",
+    "SurfaceCode": "protocolo de correção de erros topológico"
+  },
+  "resultado": "repetidor quântico com fidelidade simulada de 0.98",
+  "aplicacao": "Amplificação e correção de sinais quânticos em longas distâncias",
+  "implementacao": "Surface Code para correção de erros em hardware quântico",
+  "importancia": "Essencial para redes quânticas intercontinentais e interestelares"
+}

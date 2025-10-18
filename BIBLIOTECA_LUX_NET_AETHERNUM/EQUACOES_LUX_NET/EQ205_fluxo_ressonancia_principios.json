@@ -1,0 +1,15 @@
+{
+  "_metadata": {
+    "numero_equacao": 205,
+    "codigo": "EQ205",
+    "nome": "Fluxo de Ressonância entre Princípios",
+    "categoria": "FLUXO_RESSONANCIA_WEBXR",
+    "complexidade": 0.89
+  },
+  "equacao_latex": "\\vec{F}_{\\text{ressonante}} = \\text{CatmullRomCurve3}(P1, P2, P3)",
+  "variaveis": {
+    "P_i": "posições dos nós vibracionais (Amor, Livre-Arbítrio, Serviço)"
+  },
+  "resultado": "tubo de energia conectando princípios cósmicos",
+  "aplicacao": "Visualização de conexões energéticas entre conceitos fundamentais"
+}

@@ -1,0 +1,18 @@
+{
+  "_metadata": {
+    "numero_equacao": 202,
+    "codigo": "EQ202",
+    "nome": "Geração de Chave Quântica BB84 - Artemis-ISS",
+    "categoria": "QKD_ARTEMIS_ISS",
+    "complexidade": 0.94,
+    "protocolo": "BB84",
+    "localizacao": "Artemis-ISS"
+  },
+  "equacao_latex": "\\mathcal{K}_{\\text{QKD}} = \\left\\{ b_i \\in \\{0,1\\} \\mid b_i = \\text{measure}(H|0\\rangle) \\right\\}",
+  "variaveis": {
+    "H|0⟩": "estado de superposição via porta Hadamard",
+    "b_i": "bits da chave quântica"
+  },
+  "resultado": "chave simétrica de 8 bits com fidelidade ≥ 0.95",
+  "aplicacao": "Comunicação segura entre Terra e Estação Espacial Internacional"
+}

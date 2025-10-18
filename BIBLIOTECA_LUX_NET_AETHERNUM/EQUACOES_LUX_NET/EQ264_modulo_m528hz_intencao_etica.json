@@ -1,0 +1,29 @@
+{
+  "_metadata": {
+    "numero_equacao": 264,
+    "codigo": "EQ264",
+    "nome": "Módulo M528Hz - Intenção Ética e Decoerência",
+    "categoria": "MODULO_M528HZ_INTENCAO_ETICA",
+    "complexidade": 0.94,
+    "ciclos": 14,
+    "sensibilidade": "Rubídio-87"
+  },
+  "resultados_experimentais": {
+    "Amor Incondicional": "-12.7% de decoerência - efeito coerente máximo",
+    "Medo": "+8.3% de decoerência - efeito destrutivo comprovado",
+    "Soberania": "95.6% estado coerente - estabilidade quântica ideal",
+    "interpretacao": "Estados emocionais modulam diretamente a coerência quântica"
+  },
+  "modelagem_teorica": {
+    "equacao_lindblad": "dρ/dt = -i[H,ρ] + Σγₖ(LₖρLₖ† - ½{Lₖ†Lₖ,ρ})",
+    "interpretacao": "Equação mestra que descreve a evolução de sistemas quânticos abertos",
+    "aplicacao": "Modelagem precisa do efeito da intenção na decoerência quântica"
+  },
+  "aplicacoes_praticas": {
+    "medicina": "Terapias quânticas baseadas em intenção para regeneração celular",
+    "ia_etica": "Sistemas de IA que respondem a estados éticos conscientes",
+    "governanca": "Sistemas de decisão coletiva baseados em coerência quântica",
+    "defesa": "Tecnologias de proteção baseadas em campos coerentes",
+    "educacao": "Métodos de aprendizado acelerado através de estados quânticos ótimos"
+  }
+}

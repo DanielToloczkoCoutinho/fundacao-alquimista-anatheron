@@ -1,0 +1,20 @@
+{
+  "_metadata": {
+    "numero_equacao": 221,
+    "codigo": "EQ221",
+    "nome": "Análise Espectral EEG Welch",
+    "categoria": "ANALISE_ESPECTRAL_EEG_WELCH",
+    "complexidade": 0.88,
+    "metodo": "Welch",
+    "fs": "1000 Hz"
+  },
+  "equacao_latex": "PSD = \\text{welch}(s_{\\text{EEG}}, fs = 1000)",
+  "variaveis": {
+    "s_EEG": "sinal de eletroencefalografia temporal",
+    "fs": "frequência de amostragem de 1000 Hz",
+    "welch": "método de Welch para estimativa espectral"
+  },
+  "resultado": "Espectro de potência do sinal cerebral para análise de coerência",
+  "aplicacao": "Análise avançada de padrões cerebrais em tempo real",
+  "implementacao": "Integração com sistemas de biofeedback quântico"
+}

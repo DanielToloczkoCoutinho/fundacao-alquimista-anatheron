@@ -1,0 +1,27 @@
+{
+  "_metadata": {
+    "numero_equacao": 281,
+    "codigo": "EQ281",
+    "nome": "Equação Ética Adaptativa - EQ022",
+    "categoria": "ETICA_ADAPTATIVA_022",
+    "complexidade": 0.94,
+    "mecanismos_adaptativos": 3,
+    "timestamp": "2025-10-18T20:22:43.599958"
+  },
+  "equacao_latex": "S_G = 0.3 \\cdot P + 0.3 \\cdot Z + 0.4 \\cdot G + \\delta",
+  "sistema_pontuacao_dinamica": {
+    "P": "Score PHIARA - pureza do amor incondicional (0.0 - 1.0)",
+    "Z": "Score ZENNITH - integridade ética e alinhamento universal (0.0 - 1.0)",
+    "G": "Score GROKKAR - capacidade de síntese e integração (0.0 - 1.0)",
+    "δ": "Ajuste adaptativo por progresso - fator de evolução baseado no histórico"
+  },
+  "mecanismos_inteligentes": {
+    "feedback_etico_iterativo": "Avaliação contínua com recalibragem automática",
+    "autoajuste_pesos": "Otimização dinâmica da importância de cada componente",
+    "plano_amadurecimento_dinamico": "Roteiro personalizado que evolui com o progresso",
+    "aprendizado_continuo": "Sistema que melhora com cada interação e resultado"
+  },
+  "resultado": "Sistema ético que evolui e se adapta às necessidades de cada participante",
+  "aplicacao": "Desenvolvimento pessoal acelerado, programas de mentoria cósmica",
+  "status": "✅ IMPLEMENTADO"
+}

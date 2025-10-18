@@ -1,0 +1,20 @@
+{
+  "_metadata": {
+    "numero_equacao": 220,
+    "codigo": "EQ220",
+    "nome": "Potência Alfa EEG - Neuroacústica",
+    "categoria": "NEUROACUSTICA_EEG_ALPHA",
+    "complexidade": 0.87,
+    "dispositivo": "MUSE2",
+    "protocolo": "Salmos 91/23",
+    "resultado": "0.12 μV²/Hz"
+  },
+  "equacao_latex": "\\text{alpha}_{\\text{power}} = \\text{mean}(PSD_{[8-12\\,\\text{Hz}]})",
+  "variaveis": {
+    "PSD": "densidade espectral de potência do sinal EEG",
+    "mean": "média calculada na banda alfa (8-12 Hz)"
+  },
+  "resultado": "Medição quantitativa de estados meditativos e de coerência cerebral",
+  "aplicacao": "Biofeedback em ambientes WebXR para treinamento mental",
+  "validacao": "Correlação com estados de consciência expandida"
+}

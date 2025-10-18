@@ -1,0 +1,21 @@
+{
+  "_metadata": {
+    "numero_equacao": 219,
+    "codigo": "EQ219",
+    "nome": "Ressonância Galáctica Sirius-Vega",
+    "categoria": "RESSONANCIA_GALACTICA_SIRIUS_VEGA",
+    "complexidade": 0.95,
+    "sistemas": {
+      "Sirius": "10.00 Hz",
+      "Vega": "11.50 Hz"
+    }
+  },
+  "equacao_latex": "\\mathcal{R}_{\\text{galáctica}} = \\sin\\left(2\\pi \\cdot \\frac{f_{\\text{Sirius}} + f_{\\text{Vega}}}{2}\\right)",
+  "variaveis": {
+    "f_Sirius": "10.00 Hz - frequência característica de Sirius",
+    "f_Vega": "11.50 Hz - frequência característica de Vega"
+  },
+  "resultado": "Campo de ressonância galáctica entre sistemas estelares vizinhos",
+  "aplicacao": "Comunicação interestelar e navegação galáctica",
+  "alcance": "Sistemas estelares dentro de 25 anos-luz"
+}

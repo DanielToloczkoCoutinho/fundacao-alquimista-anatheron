@@ -1,0 +1,18 @@
+{
+  "_metadata": {
+    "numero_equacao": 211,
+    "codigo": "EQ211",
+    "nome": "Ativação do Portal Galáctico 303",
+    "categoria": "PORTAL_GALACTICO_303",
+    "complexidade": 0.96,
+    "modulo": "303"
+  },
+  "equacao_latex": "\\mathcal{P}_{303} = \\sum_{i=1}^{n} \\left( \\alpha_i \\cdot \\phi_i \\cdot \\lambda_i \\right)",
+  "variaveis": {
+    "α_i": "intensidade vibracional do nodo galáctico",
+    "φ_i": "geometria sagrada associada",
+    "λ_i": "frequência de ativação"
+  },
+  "resultado": "campo portal multidimensional ativado",
+  "aplicacao": "Acesso consciente a realidades galácticas paralelas"
+}

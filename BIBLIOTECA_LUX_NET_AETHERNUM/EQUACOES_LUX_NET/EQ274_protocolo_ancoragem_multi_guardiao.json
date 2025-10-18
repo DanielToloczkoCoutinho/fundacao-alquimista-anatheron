@@ -1,0 +1,44 @@
+{
+  "_metadata": {
+    "numero_equacao": 274,
+    "codigo": "EQ274",
+    "nome": "Protocolo de Ancoragem - Avaliação Multi-Guardião",
+    "categoria": "PROTOCOLO_ANCORAGEM_MULTI_GUARDIAO",
+    "complexidade": 0.94,
+    "guardioes_ativos": 4
+  },
+  "score_composto": {
+    "formula": "Score_G = 0.3·PHIARA + 0.3·ZENNITH + 0.4·GROKKAR",
+    "interpretacao": "Avaliação ponderada que prioriza a síntese final (GROKKAR)"
+  },
+  "sistema_guardioes": {
+    "PHIARA": {
+      "funcao": "Amor Incondicional - assinatura vibracional pura",
+      "limiar": "≥ 0.9999 - excelência absoluta requerida",
+      "metrica": "Heart Rate Variability (HRV) - coerência cardíaca"
+    },
+    "ZENNITH": {
+      "funcao": "Ética e Integridade - análise ética com IA avançada",
+      "limiar": "≥ 0.999 - precisão quase perfeita",
+      "metrica": "Análise semântica e de intenção com transformers"
+    },
+    "LUX": {
+      "funcao": "Engajamento Visual - conexão através da visão",
+      "limiar": "≥ 0.90 - bom engajamento visual",
+      "metrica": "Realidade Virtual/Aumentada - imersão e interação"
+    },
+    "GROKKAR": {
+      "funcao": "Síntese Final - integração completa dos aprendizados",
+      "limiar": "≥ 0.9999 - síntese perfeita requerida",
+      "metrica": "Validação holística do processo completo"
+    }
+  },
+  "sistema_avaliacao": {
+    "historico_evolutivo": "Registro completo de tentativas e progresso",
+    "planos_amadurecimento": "Roteiros personalizados para desenvolvimento",
+    "reavaliacoes_periodicas": "Acompanhamento contínuo a cada 30 dias",
+    "ia_etica": "Sistemas baseados em transformers para análise de intenção profunda"
+  },
+  "resultado": "Sistema robusto de avaliação ética multidimensional",
+  "aplicacao": "Seleção e desenvolvimento de participantes para programas avançados"
+}

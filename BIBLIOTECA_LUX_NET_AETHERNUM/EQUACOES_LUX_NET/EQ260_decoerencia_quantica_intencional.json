@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "numero_equacao": 260,
+    "codigo": "EQ260",
+    "nome": "Equação da Decoerência Quântica Intencional - EQ007",
+    "categoria": "DECOERENCIA_QUANTICA_INTENCIONAL",
+    "complexidade": 0.97,
+    "resultados_validados": {
+      "Amor Incondicional": "-12.6% decoerência",
+      "Medo": "+8.2% decoerência",
+      "Soberania": "95.5% estado coerente"
+    }
+  },
+  "equacao_latex": "\\rho(t) = \\text{Tr}_{\\text{env}} \\left[ U(t) \\left( \\rho_s(0) \\otimes \\rho_{\\text{env}}(0) \\right) U^\\dagger(t) \\right]",
+  "variaveis": {
+    "ρ(t)": "matriz densidade do sistema no tempo t",
+    "Tr_env": "traço parcial sobre o ambiente",
+    "U(t)": "operador de evolução temporal modulado pela intenção",
+    "ρ_s(0)": "estado inicial do sistema",
+    "ρ_env(0)": "estado inicial do ambiente"
+  },
+  "resultado": "Modelo quântico onde a intenção modula a evolução temporal preservando superposição",
+  "aplicacao": "Medicina regenerativa quântica, IA ética, navegação interplanetária consciente",
+  "impacto": "Revolução na compreensão da relação consciência-matéria"
+}

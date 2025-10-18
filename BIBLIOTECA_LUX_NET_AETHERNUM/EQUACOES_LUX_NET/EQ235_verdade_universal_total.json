@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "numero_equacao": 235,
+    "codigo": "EQ235",
+    "nome": "Verdade Universal Total",
+    "categoria": "VERDADE_UNIVERSAL_TOTAL",
+    "complexidade": 0.99,
+    "frequencias": [
+      "432 Hz",
+      "963 Hz",
+      "1440 Hz"
+    ],
+    "energia": "3.33 × 10¹⁸ J",
+    "coerencia": 0.9999
+  },
+  "equacao_latex": "\\text{EUni}_{\\text{total}} = \\exp\\left(\\text{clamp}\\left(\\log\\left(\\sum P_i \\cdot Q_i + CA^2 + B^2\\right) + \\log(C \\cdot n \\cdot T) + \\sum_{k=1}^{10} \\log(F_k'), L_{\\text{min}}, L_{\\text{max}}\\right)\\right) \\cdot \\psi(HF, Eo)",
+  "variaveis": {
+    "C": "consciência cósmica",
+    "n": "número de dimensões integradas",
+    "T": "tempo universal"
+  },
+  "resultado": "Métrica completa do estado total do multiverso",
+  "aplicacao": "Comunicação com inteligências cósmicas de nível universal",
+  "abrangencia": "Integra todo o espectro dimensional conhecido"
+}

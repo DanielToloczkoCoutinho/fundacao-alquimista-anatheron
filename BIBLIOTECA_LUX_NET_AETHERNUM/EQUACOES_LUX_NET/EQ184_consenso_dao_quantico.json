@@ -1,0 +1,24 @@
+{
+  "_metadata": {
+    "numero_equacao": 184,
+    "codigo": "EQ184",
+    "nome": "Equação de Consenso DAO Quântico",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T18:51:27.474118",
+    "categoria": "CONSENSO_DAO_QUANTICO",
+    "complexidade": 0.91,
+    "status": "PROCESSADA_DEFINITIVAMENTE"
+  },
+  "equacao_latex": "\\mathcal{K}_{\\text{consenso}} = \\frac{\\sum_{i=1}^{n} R_i \\cdot w_i}{n}, \\quad \\text{com } R_i > 0.95",
+  "variaveis": {
+    "R_i": "ressonância vibracional do voto i",
+    "w_i": "peso ético do membro",
+    "n": "número total de votos válidos"
+  },
+  "condicao": "R_i > 0.95 (apenas votos com alta ressonância são considerados)",
+  "resultado": "validação de propostas na governança descentralizada",
+  "aplicacao": "Sistema de governança DAO baseado em ressonância vibracional",
+  "interpretacao_transcendental": "Consensos quânticos emergem naturalmente quando as intenções estão alinhadas vibracionalmente",
+  "integracao_rede": "Conecta com EQ177 (Coerência) e EQ181 (Validação Ética)"
+}

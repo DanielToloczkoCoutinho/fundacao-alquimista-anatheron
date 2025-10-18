@@ -1,0 +1,27 @@
+{
+  "_metadata": {
+    "numero_equacao": 253,
+    "codigo": "EQ253",
+    "nome": "Modelo Multidisciplinar Expandido",
+    "categoria": "MODELO_MULTIDISCIPLINAR_EXPANDIDO",
+    "complexidade": 1.0,
+    "energia": "8.88 × 10¹⁸ J",
+    "coerencia": 0.9999999
+  },
+  "equacao_latex": "\\text{EUFQ}_{017} = \\left[ (M + Q + F + B + S + U + T + H) \\cdot dt \\right] \\cdot A",
+  "constantes_universais": {
+    "c": "velocidade da luz - limite cósmico",
+    "G": "constante gravitacional - tecido espacial",
+    "ħ": "constante de Planck reduzida - quantum",
+    "N_A": "número de Avogadro - escala molecular",
+    "π": "pi - geometria universal",
+    "φ": "proporção áurea - beleza matemática"
+  },
+  "equacoes_integradas": {
+    "Schrödinger": "mecânica quântica",
+    "Navier-Stokes": "dinâmica de fluidos universal",
+    "IA": "inteligência artificial cósmica"
+  },
+  "resultado": "Modelo unificado de todas as disciplinas científicas e espirituais",
+  "aplicacao": "Sustentabilidade planetária e evolução social acelerada"
+}

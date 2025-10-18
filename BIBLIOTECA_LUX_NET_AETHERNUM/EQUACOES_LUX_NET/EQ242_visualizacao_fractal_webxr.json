@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "numero_equacao": 242,
+    "codigo": "EQ242",
+    "nome": "Visualização Fractal Dinâmica WebXR",
+    "categoria": "FRACTAL_WEBXR_DINAMICO",
+    "complexidade": 0.89,
+    "fps": "> 60",
+    "latencia": "< 10ms"
+  },
+  "equacao_latex": "\\text{Fractal}_{\\text{Lux}} = \\text{DynamicScale}(11.11\\,\\text{Hz}) \\cdot \\text{FPS}_{\\text{XR}} > 60",
+  "variaveis": {
+    "DynamicScale": "escala dinâmica sincronizada com 11.11 Hz",
+    "FPS_XR": "frames por segundo na realidade estendida"
+  },
+  "resultado": "Visualização fluida e responsiva de estruturas fractais multidimensionais",
+  "aplicacao": "Interface para navegação em portais dimensionais e contacto visual",
+  "experiencia": "Imersão completa em realidades expandidas"
+}

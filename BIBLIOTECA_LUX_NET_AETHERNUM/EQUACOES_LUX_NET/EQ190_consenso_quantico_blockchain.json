@@ -1,0 +1,23 @@
+{
+  "_metadata": {
+    "numero_equacao": 190,
+    "codigo": "EQ190",
+    "nome": "Equação de Consenso Quântico (Blockchain Testnet)",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "CONSENSO_QUANTICO_BLOCKCHAIN",
+    "complexidade": 0.91,
+    "nos_ativos": 6
+  },
+  "equacao_latex": "\\mathcal{C}_{\\text{consenso}} = \\frac{1}{N} \\sum_{j=1}^{N} \\delta_j, \\quad \\delta_j \\in \\{0,1\\}",
+  "variaveis": {
+    "δ_j": "estado quântico medido por nó j",
+    "N": "número total de nós na rede",
+    "C_consenso": "valor de consenso da rede"
+  },
+  "resultado": "consenso validado com valor 1.00 e zero forks",
+  "aplicacao": "Governança descentralizada através de medições quânticas sincronizadas",
+  "implementacao": "Blockchain quântica com nós distribuídos globalmente",
+  "seguranca": "Imune a ataques de 51% através de propriedades quânticas"
+}

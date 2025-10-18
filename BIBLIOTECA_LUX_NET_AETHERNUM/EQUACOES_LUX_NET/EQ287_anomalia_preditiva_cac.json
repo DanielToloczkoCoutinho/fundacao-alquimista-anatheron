@@ -1,0 +1,31 @@
+{
+  "_metadata": {
+    "numero_equacao": 287,
+    "codigo": "EQ287",
+    "nome": "Equação de Anomalia Preditiva (CAC) - Avançada",
+    "categoria": "ANOMALIA_PREDITIVA_CAC",
+    "complexidade": 0.95,
+    "timestamp": "2025-10-18T20:22:43.599958"
+  },
+  "equacao_latex": "s(x) = 2^{-\\frac{E(h(x))}{c(n)}}",
+  "explicacao_detalhada": {
+    "E(h(x))": "Profundidade média de isolamento - medida de quão isolado um ponto está na árvore",
+    "c(n)": "Valor esperado de h(x) para amostra de tamanho n - normalização pelo tamanho da amostra",
+    "s(x)": "Score de anomalia - valor entre 0 e 1, onde valores próximos de 1 indicam anomalia"
+  },
+  "algoritmo_isolation_forest": {
+    "principio": "Anomalias são mais fáceis de isolar do que observações normais",
+    "arvores_de_isolamento": "Construção de múltiplas árvores de decisão para isolar pontos",
+    "caracteristicas": "Não supervisionado, eficiente com dados de alta dimensionalidade",
+    "vantagens": "Não requer labels, robusto a outliers, escalável para grandes datasets"
+  },
+  "parametros_operacionais": {
+    "n_estimators": "100 árvores de isolamento",
+    "contamination": "0.1 - proporção esperada de anomalias no dataset",
+    "random_state": "42 para reproducibilidade",
+    "n_jobs": "-1 - uso de todos os cores disponíveis"
+  },
+  "aplicacao_sistema": "Detecção de desvios em tempo real nos parâmetros do LuxNet",
+  "resultado": "Sistema proativo de identificação de anomalias antes que se tornem críticas",
+  "status": "✅ IMPLEMENTADO"
+}

@@ -1,0 +1,18 @@
+{
+  "_metadata": {
+    "numero_equacao": 239,
+    "codigo": "EQ239",
+    "nome": "Eficiência Energética Nanorrobótica",
+    "categoria": "EFICIENCIA_NANOROBOTICA_ZPE",
+    "complexidade": 0.85,
+    "valor": "1 μW/unidade",
+    "escala": "1.000.000 unidades = 1 kW total"
+  },
+  "equacao_latex": "\\text{ZPE}_{\\text{unit}} = \\frac{1\\,\\text{kW}}{10^6\\,\\text{nanounidades}}",
+  "variaveis": {
+    "ZPE_unit": "consumo de energia de ponto zero por nanorrobô"
+  },
+  "resultado": "Eficiência energética extremamente alta para operação em escala",
+  "aplicacao": "Sistemas médicos e de biofabricação em nanoescala",
+  "vantagem": "Operação sustentável através de energia do vácuo quântico"
+}

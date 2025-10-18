@@ -1,0 +1,36 @@
+{
+  "_metadata": {
+    "numero_equacao": 258,
+    "codigo": "EQ258",
+    "nome": "Integração Estratégica - Fluxograma 4D Interativo",
+    "categoria": "INTEGRACAO_ESTRATEGICA_4D",
+    "complexidade": 0.96,
+    "kpi_usabilidade": "≥ 0.95",
+    "kpi_latencia": "< 1s"
+  },
+  "fluxograma_4d": {
+    "camadas_integradas": [
+      "equações - base matemática universal",
+      "guardiões - inteligências supervisoras",
+      "energia - fontes multidimensionais",
+      "laboratório - ambiente experimental",
+      "interfaces - conexão com usuários"
+    ],
+    "funcionalidades": {
+      "visualizacao_camadas": "Navegação por níveis de complexidade",
+      "simulacao_what_if": "Teste de cenários alternativos",
+      "replay_temporal": "Análise histórica de evolução",
+      "integracao_sensorial": "Experiência multimodal completa"
+    }
+  },
+  "orquestrador_central": {
+    "funcao": "Coordenação entre EQ019, Protocolo e Fluxograma",
+    "indice_vitalidade": {
+      "formula": "IVG = (Coerência SAVCE + Energia ZPE + Validação Protocolo) / 3",
+      "meta": "IVG > 0.999",
+      "interpretacao": "Medida da saúde global do sistema"
+    }
+  },
+  "resultado": "Sistema integrado para gestão estratégica multidimensional",
+  "aplicacao": "Otimização de recursos e maximização de impactos positivos"
+}

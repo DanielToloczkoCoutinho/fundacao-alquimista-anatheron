@@ -1,0 +1,24 @@
+{
+  "_metadata": {
+    "numero_equacao": 229,
+    "codigo": "EQ229",
+    "nome": "Complexidade Quântica de Navegação",
+    "categoria": "COMPLEXIDADE_NAVEGACAO_QUANTICA",
+    "complexidade": 0.94,
+    "frequencias": [
+      "528 Hz",
+      "963 Hz"
+    ],
+    "ct_medio": 450
+  },
+  "equacao_latex": "\\text{CT}_{\\text{final}} = \\frac{\\sum_{i=1}^{n} P_i \\cdot Q_i \\cdot (1 + K \\cdot H_i) + CA^2 + B^2}{\\max(\\Phi_C \\cdot T \\cdot \\phi_q, \\varepsilon_{\\text{min}})} \\cdot (1 + \\rho \\cdot \\text{Risco}_{\\text{final}})",
+  "variaveis": {
+    "P_i, Q_i": "variáveis de estado quântico",
+    "H_i": "fatores de harmonia dimensional",
+    "Φ_C": "fluxo consciente",
+    "φ_q": "fase quântica"
+  },
+  "resultado": "Avaliação da complexidade de trajetórias através de múltiplas dimensões",
+  "aplicacao": "Navegação interdimensional otimizada (4D → 6D+)",
+  "escala": "Complexidade média de 450 unidades para saltos dimensionais"
+}

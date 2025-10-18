@@ -1,0 +1,21 @@
+{
+  "_metadata": {
+    "numero_equacao": 228,
+    "codigo": "EQ228",
+    "nome": "Modulação de Campo Gravitacional",
+    "categoria": "MODULACAO_CAMPO_GRAVITACIONAL",
+    "complexidade": 0.97,
+    "frequencia": "7.83 Hz",
+    "coerencia": 0.997
+  },
+  "equacao_latex": "g_{\\text{efetivo}}(t, r) = f_{\\text{env}}(t) \\cdot \\left[1 - a \\cdot \\sin(2\\pi \\cdot \\nu_{\\text{grav}} \\cdot t + \\phi)\\right] \\cdot \\left(\\frac{G \\cdot M}{r^2}\\right) \\quad \\text{com} \\quad \\left|\\frac{dg_{\\text{efetivo}}}{dr}\\right| \\leq T_{\\text{tide}}",
+  "variaveis": {
+    "f_env": "função envelope de modulação temporal",
+    "ν_grav": "frequência de modulação gravitacional (7.83 Hz)",
+    "φ": "fase de modulação",
+    "T_tide": "limite de tensão de maré"
+  },
+  "resultado": "Modulação suave de campos gravitacionais com trava de segurança de maré",
+  "aplicacao": "Propulsão por manipulação gravitacional e estabilização orbital",
+  "seguranca": "Impede colapsos gravitacionais através do limite de maré"
+}

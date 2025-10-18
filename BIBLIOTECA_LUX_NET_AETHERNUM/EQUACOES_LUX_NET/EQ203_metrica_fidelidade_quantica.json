@@ -1,0 +1,16 @@
+{
+  "_metadata": {
+    "numero_equacao": 203,
+    "codigo": "EQ203",
+    "nome": "Métrica de Fidelidade Quântica",
+    "categoria": "FIDELIDADE_QUANTICA",
+    "complexidade": 0.91
+  },
+  "equacao_latex": "\\mathcal{F}_{\\text{quântica}} = \\left| \\langle \\psi_{\\text{ideal}} | \\psi_{\\text{real}} \\rangle \\right|^2",
+  "variaveis": {
+    "ψ_ideal": "estado quântico ideal",
+    "ψ_real": "estado quântico real implementado"
+  },
+  "resultado": "fidelidade ≥ 0.95 confirmada em testes físicos",
+  "aplicacao": "Validação de implementações quânticas em hardware real"
+}

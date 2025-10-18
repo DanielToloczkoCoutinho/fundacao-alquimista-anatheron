@@ -1,0 +1,22 @@
+{
+  "_metadata": {
+    "numero_equacao": 240,
+    "codigo": "EQ240",
+    "nome": "Ressonância Harmônica Solar-Galáctica",
+    "categoria": "RESSONANCIA_SOLAR_GALACTICA",
+    "complexidade": 0.93,
+    "nodos": [
+      "Sirius",
+      "Orion Nebula",
+      "Alpha Centauri"
+    ],
+    "frequencia": "11.11 Hz"
+  },
+  "equacao_latex": "\\text{R}_{\\text{Solar}} = \\sin\\left(2\\pi\\left(\\frac{\\text{freq}_1 + \\text{freq}_2}{2}\\right)\\right)",
+  "variaveis": {
+    "freq_1, freq_2": "frequências características de sistemas estelares em ressonância"
+  },
+  "resultado": "Padrão de interferência construtiva entre corpos celestes",
+  "aplicacao": "Comunicação e navegação através do meio interestelar",
+  "alcance": "Sistemas estelares dentro da vizinhança solar (até 100 anos-luz)"
+}

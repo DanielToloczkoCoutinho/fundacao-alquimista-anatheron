@@ -1,0 +1,23 @@
+{
+  "_metadata": {
+    "numero_equacao": 188,
+    "codigo": "EQ188",
+    "nome": "Equação de Performance Neuromórfica dos Nanorrobôs",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "NANOROBOTICA_NEUROMORFICA",
+    "complexidade": 0.89,
+    "unidades_simuladas": 700000
+  },
+  "equacao_latex": "\\mathcal{P}_{\\text{neural}} = \\frac{1}{n} \\sum_{i=1}^{n} \\sigma(Wx_i + b)",
+  "variaveis": {
+    "σ": "função de ativação sigmoide",
+    "Wx_i + b": "entrada ponderada do nanorrobô i",
+    "n": "número total de nanorrobôs"
+  },
+  "resultado": "performance média > 0.65 para 700,000 unidades simuladas",
+  "aplicacao": "Controle inteligente de enxames de nanorrobôs para medicina quântica",
+  "implementacao": "Redes neurais em nanodispositivos para processos biológicos",
+  "impacto": "Revolução na medicina regenerativa e cura quântica celular"
+}

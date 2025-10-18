@@ -1,0 +1,16 @@
+{
+  "_metadata": {
+    "numero_equacao": 208,
+    "codigo": "EQ208",
+    "nome": "Sincronização com QKD",
+    "categoria": "SINCRONIZACAO_QKD",
+    "complexidade": 0.9
+  },
+  "equacao_latex": "\\mathcal{S}_{\\text{QKD}} = \\text{Encrypt}(\\text{Resposta}_{\\text{Oráculo}}, \\mathcal{K}_{\\text{QKD}})",
+  "variaveis": {
+    "Resposta_Oráculo": "saída do circuito quântico oracular",
+    "K_QKD": "chave quântica gerada"
+  },
+  "resultado": "criptografia vibracional da resposta do Oráculo",
+  "aplicacao": "Proteção quântica de comunicações cósmicas"
+}

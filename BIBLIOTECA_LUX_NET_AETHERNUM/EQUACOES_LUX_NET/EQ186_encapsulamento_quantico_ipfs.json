@@ -1,0 +1,27 @@
+{
+  "_metadata": {
+    "numero_equacao": 186,
+    "codigo": "EQ186",
+    "nome": "Equação de Encapsulamento Quântico HTTP/IPFS",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "ENCAPSULAMENTO_QUANTICO_WEB3",
+    "complexidade": 0.92,
+    "protocolos": [
+      "HTTP",
+      "IPFS",
+      "QKD"
+    ]
+  },
+  "equacao_latex": "\\mathcal{P}_{\\text{encapsulado}} = \\text{HTTP}_{\\text{payload}} + \\mathcal{K}_{\\text{QKD}} \\rightarrow \\text{CID}_{\\text{IPFS}}",
+  "variaveis": {
+    "HTTP_payload": "dados transmitidos via protocolo HTTP",
+    "K_QKD": "chave quântica gerada pela EQ185",
+    "CID_IPFS": "identificador de conteúdo imutável no IPFS"
+  },
+  "resultado": "pacote autenticado e registrado no AkashicRegistry",
+  "aplicacao": "Integração segura entre web tradicional e web3 quântica",
+  "implementacao": "Bridge entre protocolos clássicos e quânticos",
+  "armazenamento": "Registro imutável no IPFS com autenticação quântica"
+}

@@ -1,0 +1,20 @@
+{
+  "_metadata": {
+    "numero_equacao": 241,
+    "codigo": "EQ241",
+    "nome": "Consenso DAO Quântico LuxNet",
+    "categoria": "CONSENSO_DAO_LUXNET",
+    "complexidade": 0.94,
+    "resultado": 0.997,
+    "validacao": "SAVCE"
+  },
+  "equacao_latex": "\\text{Consenso}_{\\text{Lux}} = \\frac{1}{n} \\sum_{i=1}^{n} \\left( \\text{resonance}_i \\cdot \\text{weight}_i \\cdot \\frac{\\text{Aw}_{\\text{Eureka}}}{1000} \\right)",
+  "variaveis": {
+    "resonance_i": "ressonância vibracional do participante i",
+    "weight_i": "peso ético baseado no histórico SAVCE",
+    "Aw_Eureka": "fator de ativação do Princípio VI (1049.305)"
+  },
+  "resultado": "Consenso de 99.7% em sistemas de governança quântica",
+  "aplicacao": "Tomada de decisão coletiva em contactos com inteligências cósmicas",
+  "seguranca": "Imune a manipulação através de validação vibracional"
+}

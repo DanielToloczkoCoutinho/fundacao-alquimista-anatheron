@@ -1,0 +1,32 @@
+{
+  "_metadata": {
+    "numero_equacao": 289,
+    "codigo": "EQ289",
+    "nome": "Equação de Governança Multiagente Avançada - Orquestrador Triádico",
+    "categoria": "GOVERNAÇA_MULTIAGENTE_AVANCADA",
+    "complexidade": 0.97,
+    "timestamp": "2025-10-18T20:22:43.599958"
+  },
+  "equacao_latex": "\\text{Quorum}_{\\text{ação}} = \\frac{\\sum_{i=1}^{n} C_i \\cdot V_i}{n} \\geq \\theta",
+  "sistema_avancado_governanca": {
+    "C_i": "Confiança do agente i - medida baseada em histórico de acertos e coerência (0.0 - 1.0)",
+    "V_i": "Voto do agente i - decisão quantificada com base em expertise específica",
+    "θ": "Limiar de aprovação - valor mínimo para execução da ação (ex.: 0.66 para maioria qualificada)",
+    "n": "Número total de agentes ativos no quórum"
+  },
+  "mecanismos_sofisticados": {
+    "veto_etico": "Agente Zennith possui poder de veto absoluto sobre ações eticamente questionáveis",
+    "consenso_ponderado": "Votos ponderados pela confiança histórica de cada agente",
+    "registro_imutavel": "Todas as decisões registradas em blockchain com hash SHA3-256",
+    "auditoria_automatica": "Sistema CAC monitora continuamente a qualidade das decisões"
+  },
+  "agentes_especializados_v2": {
+    "Phiara_v2": "Amplificado com aprendizado por reforço para melhor detecção de ressonância cardíaca",
+    "Zennith_v2": "Aprimorado com transformers para análise semântica profunda de intenção",
+    "Lux_v2": "Atualizado com realidade estendida WebXR para imersão total",
+    "Grokkar_v2": "Otimizado com redes neurais para síntese holística acelerada"
+  },
+  "resultado": "Sistema de governança distribuída de última geração com inteligência coletiva",
+  "aplicacao": "Orquestração de sistemas complexos, tomada de decisão em ambientes de alta incerteza",
+  "status": "✅ IMPLEMENTADO"
+}

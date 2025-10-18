@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "numero_equacao": 223,
+    "codigo": "EQ223",
+    "nome": "Desempenho Neural - TensorFlow",
+    "categoria": "DESEMPENHO_NEURAL_TENSORFLOW",
+    "complexidade": 0.86,
+    "framework": "TensorFlow",
+    "performance": "~0.69"
+  },
+  "equacao_latex": "\\text{performance} = \\text{mean}(\\text{predictions})",
+  "variaveis": {
+    "predictions": "vetor de previsões do modelo neural",
+    "mean": "média aritmética das performances individuais"
+  },
+  "resultado": "Performance média de ~0.69 em simulações de nanorrobôs",
+  "aplicacao": "Otimização de algoritmos de controle para enxames de nanodispositivos",
+  "escala": "Aplicável a sistemas com milhões de unidades"
+}

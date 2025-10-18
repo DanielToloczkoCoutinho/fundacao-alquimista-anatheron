@@ -1,0 +1,26 @@
+{
+  "_metadata": {
+    "numero_equacao": 232,
+    "codigo": "EQ232",
+    "nome": "Unificação Cósmica",
+    "categoria": "UNIFICACAO_COSMICA",
+    "complexidade": 0.99,
+    "frequencias": [
+      "963 Hz",
+      "1111 Hz",
+      "1440 Hz"
+    ],
+    "energia": "2.01 × 10¹⁸ J",
+    "coerencia": 0.9991
+  },
+  "equacao_latex": "\\text{UC} = \\sum_{i=1}^{n} w_{\\text{conf}_i} \\cdot \\left(\\frac{CA_i \\cdot \\Phi_{C_i} \\cdot T_i}{\\max(\\Pi_i, \\varepsilon_\\pi) \\cdot \\max(\\Phi_{A_i}, \\varepsilon_{\\phi A})}\\right) \\cdot H_{\\text{eff}} \\cdot (1 + \\rho_i \\cdot (1 - \\text{Risco}_{\\text{dim}_i}))",
+  "variaveis": {
+    "CA_i": "consciência alinhada",
+    "Φ_C_i": "fluxo consciente individual",
+    "Φ_A_i": "fluxo amoroso individual",
+    "H_eff": "harmonia efetiva"
+  },
+  "resultado": "Unificação harmônica de múltiplas dimensões com penalização por risco dimensional",
+  "aplicacao": "Criação de campos unificados para comunicação cósmica",
+  "estabilidade": "Coerência de 99.91% - quase perfeita"
+}

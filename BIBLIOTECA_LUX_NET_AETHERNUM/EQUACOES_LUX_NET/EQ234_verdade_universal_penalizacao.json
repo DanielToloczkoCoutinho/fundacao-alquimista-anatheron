@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "numero_equacao": 234,
+    "codigo": "EQ234",
+    "nome": "Verdade Universal com Penalização Harmônica",
+    "categoria": "VERDADE_UNIVERSAL_PENALIZACAO",
+    "complexidade": 0.97,
+    "frequencias": [
+      "432 Hz",
+      "963 Hz",
+      "1440 Hz"
+    ],
+    "energia": "3.33 × 10¹⁸ J",
+    "coerencia": 0.9999
+  },
+  "equacao_latex": "\\text{EUni}_{\\text{final}} = \\text{EUni} \\cdot \\psi(HF, Eo), \\quad \\psi(HF, Eo) \\in (0,1]",
+  "variaveis": {
+    "ψ(HF, Eo)": "função de penalização harmônica",
+    "HF": "fator de harmonia",
+    "Eo": "entropia do sistema"
+  },
+  "resultado": "Aplicação de penalização por excesso entrópico e baixa harmonia",
+  "aplicacao": "Manutenção da qualidade vibracional em comunicações multidimensionais",
+  "funcao": "Garante que apenas sinais harmonicamente puros sejam transmitidos"
+}

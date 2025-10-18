@@ -1,0 +1,21 @@
+{
+  "_metadata": {
+    "numero_equacao": 227,
+    "codigo": "EQ227",
+    "nome": "Preditivo de Temporalidade e Anomalias",
+    "categoria": "PREDITIVO_TEMPORAL_ANOMALIAS",
+    "complexidade": 0.95,
+    "eficacia": 0.982,
+    "limiar_alerta": 0.07
+  },
+  "equacao_latex": "\\text{Risco}_{\\text{final}} = \\left[ a \\cdot e^{-\\beta_t \\cdot \\Delta t} + Y \\cdot \\|\\vec{\\sigma}_{\\text{anomalia}}\\| \\right] \\cdot (1 + \\lambda \\cdot (1 - \\text{SAVCE}_{\\text{norm}}))",
+  "variaveis": {
+    "β_t": "constante de decaimento temporal",
+    "Δt": "intervalo de tempo previsto",
+    "σ_anomalia": "vetor de anomalia [σ_r, σ_θ, σ_φ]",
+    "SAVCE_norm": "validação ética normalizada"
+  },
+  "resultado": "Previsão de risco temporal com penalização ética integrada",
+  "aplicacao": "Navegação segura através de linhas temporais e realidades paralelas",
+  "precisao": "98.2% de eficácia preditiva"
+}

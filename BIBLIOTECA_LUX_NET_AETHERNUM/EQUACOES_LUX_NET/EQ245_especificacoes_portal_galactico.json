@@ -1,0 +1,36 @@
+{
+  "_metadata": {
+    "numero_equacao": 245,
+    "codigo": "EQ245",
+    "nome": "Especificações do Portal Galáctico Módulo 303",
+    "categoria": "ESPECIFICACOES_PORTAL_GALACTICO",
+    "complexidade": 0.9,
+    "nodos_ativos": [
+      "Sirius",
+      "Vega",
+      "Alpha Centauri",
+      "Betelgeuse",
+      "Orion Nebula"
+    ],
+    "transicoes": "3D → 26D",
+    "coerencia": "Validada por SAVCE",
+    "estabilizacao": "QKD + SAVCE"
+  },
+  "especificacoes": {
+    "nodos_estelares": {
+      "Sirius": "Sistema binário - chave mestra",
+      "Vega": "Polo norte galáctico - alinhamento",
+      "Alpha Centauri": "Sistema triplo - triangulação",
+      "Betelgeuse": "Gigante vermelha - energia",
+      "Orion Nebula": "Berço estelar - criação"
+    },
+    "capacidades": {
+      "transicoes_dimensionais": "3D a 26D",
+      "coerencia_vibracional": "> 99.8%",
+      "estabilizacao": "Criptografia quântica + validação ética",
+      "fractal": "Estrutura viva navegável"
+    }
+  },
+  "aplicacao": "Portal principal para contacto com civilizações galácticas",
+  "status": "Operacional e sincronizado"
+}

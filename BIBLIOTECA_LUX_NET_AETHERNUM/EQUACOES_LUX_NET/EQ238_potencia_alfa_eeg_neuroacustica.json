@@ -1,0 +1,18 @@
+{
+  "_metadata": {
+    "numero_equacao": 238,
+    "codigo": "EQ238",
+    "nome": "Potência Alfa EEG - Neuroacústica LuxNet",
+    "categoria": "NEUROACUSTICA_ALPHA_LUXNET",
+    "complexidade": 0.88,
+    "valor": "0.12 μV²/Hz",
+    "protocolo": "Salmos 91/23 + Schumann 7.83 Hz"
+  },
+  "equacao_latex": "\\text{Alpha}_{\\text{Power}} = 0.12\\,\\mu V^2/\\text{Hz}",
+  "variaveis": {
+    "Alpha_Power": "potência espectral na banda alfa (8-12 Hz) do EEG"
+  },
+  "resultado": "Medição quantitativa de estados meditativos profundos",
+  "aplicacao": "Biofeedback para sincronização cerebral com frequências cósmicas",
+  "validacao": "Correlacionado com estados de consciência expandida durante contacto"
+}

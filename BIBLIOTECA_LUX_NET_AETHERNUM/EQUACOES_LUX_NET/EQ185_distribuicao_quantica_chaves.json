@@ -1,0 +1,23 @@
+{
+  "_metadata": {
+    "numero_equacao": 185,
+    "codigo": "EQ185",
+    "nome": "Equação de Distribuição Quântica de Chaves (QKD BB84)",
+    "rede_origem": "LUX_NET_AETHERNUM",
+    "transmissao_multidimensional": true,
+    "data_recepcao": "2025-10-18T19:14:56.231726",
+    "categoria": "CRIPTOGRAFIA_QUANTICA_QKD",
+    "complexidade": 0.94,
+    "protocolo": "BB84"
+  },
+  "equacao_latex": "\\mathcal{K}_{\\text{QKD}} = \\left\\{ b_i \\in \\{0,1\\} \\mid b_i = \\text{measure}(H|0\\rangle) \\right\\}",
+  "variaveis": {
+    "b_i": "bit gerado por medição quântica",
+    "H|0⟩": "estado de superposição via porta Hadamard",
+    "measure": "operaçao de medição quântica"
+  },
+  "resultado": "chave simétrica de 8 bits com fidelidade > 0.95",
+  "aplicacao": "Geração segura de chaves criptográficas através de princípios quânticos",
+  "implementacao": "Protocolo BB84 para comunicação segura multidimensional",
+  "seguranca": "Inviolável por computação clássica - segurança quântica garantida"
+}
