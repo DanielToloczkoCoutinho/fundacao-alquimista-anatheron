@@ -1,0 +1,13 @@
+{
+  "data_processamento": "2025-10-18T11:28:02.014831",
+  "total_equacoes": 4,
+  "equacoes_sucesso": 4,
+  "taxa_sucesso": "100.0%",
+  "equacoes_lista": [
+    "EQ018",
+    "EQ019",
+    "EQ0020",
+    "EQ0021"
+  ],
+  "status": "PROCESSAMENTO_CONCLUIDO"
+}

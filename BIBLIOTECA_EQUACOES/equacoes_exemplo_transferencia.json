@@ -1,0 +1,22 @@
+{
+  "equacoes": [
+    {
+      "equacao_latex": "i\\hbar\\frac{\\partial}{\\partial t}\\Psi = \\hat{H}\\Psi",
+      "nome_equacao": "Equação de Schrödinger Dependente do Tempo",
+      "area_cientifica": "fisica_quantica",
+      "descricao": "Descreve a evolução temporal de sistemas quânticos"
+    },
+    {
+      "equacao_latex": "\\hat{H}\\psi = E\\psi",
+      "nome_equacao": "Equação de Schrödinger Independente do Tempo",
+      "area_cientifica": "fisica_quantica",
+      "descricao": "Para estados estacionários em mecânica quântica"
+    },
+    {
+      "equacao_latex": "[\\hat{x}, \\hat{p}] = i\\hbar",
+      "nome_equacao": "Relação de Comutação Canônica",
+      "area_cientifica": "fisica_quantica",
+      "descricao": "Relação fundamental entre posição e momento"
+    }
+  ]
+}

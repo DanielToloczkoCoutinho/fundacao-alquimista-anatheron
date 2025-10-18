@@ -1,0 +1,16 @@
+{
+  "timestamp_preparacao": "2025-10-18T11:54:43.876202",
+  "equacao_codigo": "EQ0028",
+  "hash_quantum": "8153c20b6c3c3ad6eb8973fc2df138eaaba25af59e2052db2ca8657257dc12ae",
+  "coerencia": 0.9988,
+  "frequencias_ressonantes": [
+    "528 Hz",
+    "963 Hz",
+    "1440 Hz"
+  ],
+  "energia_modelada": "≈2.44 × 10^17 J",
+  "variaveis_count": 4,
+  "complexidade_quantica": "ALTA",
+  "ibm_quantum_ready": true,
+  "qiskit_compatible": true
+}

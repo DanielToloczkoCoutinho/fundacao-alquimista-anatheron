@@ -1,0 +1,15 @@
+{
+  "equacao_latex": "\\Psi",
+  "nome_equacao": "Função de Onda Quântica",
+  "area_cientifica": "fisica_quantica",
+  "descricao": "Função de onda na mecânica quântica",
+  "aplicacoes": [
+    "Equação de Schrödinger",
+    "Interpretação probabilística"
+  ],
+  "variaveis": {
+    "Ψ": "Função de onda quântica"
+  },
+  "ocorrencias": 6,
+  "laboratorios_encontrados": 4
+}

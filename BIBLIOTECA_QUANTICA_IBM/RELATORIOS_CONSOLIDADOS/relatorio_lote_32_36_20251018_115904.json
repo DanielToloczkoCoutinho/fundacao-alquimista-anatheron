@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-18T11:59:04.930803",
+  "lote": "EQ0032-EQ0036",
+  "equacoes_processadas": [
+    "EQ0032",
+    "EQ0033",
+    "EQ0034",
+    "EQ0035",
+    "EQ0036"
+  ],
+  "total_sucessos": 5,
+  "coerencia_media": 0.9991999999999999,
+  "complexidade_geral": "MEDIA",
+  "status": "LOTE_PROCESSADO_COM_SUCESSO",
+  "proximo_lote": "EQ0037-EQ0041"
+}

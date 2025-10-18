@@ -1,0 +1,35 @@
+{
+  "formato_equacao": "LaTeX",
+  "campos_obrigatorios": [
+    "equacao_latex",
+    "nome_equacao",
+    "area_cientifica",
+    "descricao",
+    "aplicacoes",
+    "variaveis",
+    "constantes",
+    "referencias"
+  ],
+  "exemplo": {
+    "equacao_latex": "E = mc^2",
+    "nome_equacao": "Equivalência Massa-Energia",
+    "area_cientifica": "fisica_relatividade",
+    "descricao": "Equação que demonstra a equivalência entre massa e energia",
+    "aplicacoes": [
+      "Energia nuclear",
+      "Cosmologia",
+      "Física de partículas"
+    ],
+    "variaveis": {
+      "E": "Energia",
+      "m": "Massa",
+      "c": "Velocidade da luz"
+    },
+    "constantes": {
+      "c": "299792458 m/s"
+    },
+    "referencias": [
+      "Einstein, A. (1905)"
+    ]
+  }
+}

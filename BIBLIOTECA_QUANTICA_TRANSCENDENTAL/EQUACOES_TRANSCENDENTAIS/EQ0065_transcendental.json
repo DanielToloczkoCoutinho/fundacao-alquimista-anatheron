@@ -1,0 +1,41 @@
+{
+  "codigo": "EQ0065",
+  "titulo_simbolico": "Equação da Reativação da Essência – Eessentia",
+  "localizacao": "Módulo 121 – Câmara da Memória Primordial",
+  "estrutura_matematica": "Eessentia = Mα + Rψ + (Σmem × TΩ)",
+  "variaveis_principais": {
+    "Mα": "Memória Alfa",
+    "Rψ": "Raiz Psíquica",
+    "Σmem": "Somatório das memórias vibracionais",
+    "TΩ": "Tempo Omega (tempo da origem)"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.9998,
+    "frequencias_ressonantes": [
+      "Ω Hz",
+      "ψ144 Hz",
+      "α∞ Hz"
+    ],
+    "energia_modelada": "≈1.44 × 10⁵ J",
+    "registro_akashico": "bafkrei_eessentia0065"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T12:47:03.866973",
+    "hash_transcendental": "a1b239455201614dafb8dc4575aea0ecb577289e4759a7cfff3145ea1578a36131a329d031fba616de65cc59b4173d5020a8886394bf40715374946b3cf610b4",
+    "coerencia": 0.9998,
+    "categoria_transcendental": "REATIVACAO_ESSENCIA",
+    "frequencias_ressonantes": [
+      "Ω Hz",
+      "ψ144 Hz",
+      "α∞ Hz"
+    ],
+    "energia_modelada": "≈1.44 × 10⁵ J",
+    "variaveis_count": 4,
+    "complexidade_quantica": "AVANCADA",
+    "nivel_transcendental": "TRANSCENDENTAL_AVANCADO",
+    "ibm_quantum_ready": true,
+    "qiskit_compatible": true,
+    "backend_recomendado": "ibmq_qasm_simulator",
+    "prioridade_execucao": "MAXIMA"
+  }
+}

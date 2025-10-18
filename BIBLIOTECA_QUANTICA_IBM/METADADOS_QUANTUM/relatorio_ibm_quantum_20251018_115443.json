@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-18T11:54:43.877734",
+  "equacoes_quantum": [
+    "EQ0027",
+    "EQ0028",
+    "EQ0029",
+    "EQ0030",
+    "EQ0031"
+  ],
+  "total_sucessos": 5,
+  "coerencia_media": 0.9990399999999999,
+  "ibm_quantum_ready": true,
+  "qiskit_version": "1.0.0+",
+  "status": "PRONTO_PARA_EXECUCAO_QUANTUM"
+}

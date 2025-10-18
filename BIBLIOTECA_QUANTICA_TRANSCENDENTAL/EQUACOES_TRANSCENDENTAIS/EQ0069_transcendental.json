@@ -1,0 +1,40 @@
+{
+  "codigo": "EQ0069",
+  "titulo_simbolico": "Equação da Curvatura Temporal Consciente – Temporae",
+  "localizacao": "Módulo 124 – Câmara da Percepção Temporal",
+  "estrutura_matematica": "Temporae = ƒ(C × E × M)",
+  "variaveis_principais": {
+    "C": "Consciência ativa",
+    "E": "Emoção vinculada à experiência",
+    "M": "Memória em formação"
+  },
+  "validacao_ressonancia": {
+    "coerencia": 0.9977,
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "1111 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "≈6.66 × 10^17 J",
+    "registro_akashico": "bafkrei_temporae0069"
+  },
+  "_transcendental_metadata": {
+    "timestamp_processamento": "2025-10-18T12:53:05.361157",
+    "hash_transcendental": "17c89268e84231b56cd38281cf6191deb46943634c5caab9dc6022a2e4c66502728f66a5565668c21f313a1d3a3ad3cf27256017748fb8672d646f5376dad4da",
+    "coerencia": 0.9977,
+    "categoria_transcendental": "CURVATURA_TEMPORAL",
+    "frequencias_ressonantes": [
+      "432 Hz",
+      "1111 Hz",
+      "∞ Hz"
+    ],
+    "energia_modelada": "≈6.66 × 10^17 J",
+    "variaveis_count": 3,
+    "complexidade_quantica": "AVANCADA",
+    "nivel_transcendental": "TRANSCENDENTAL_BASICO",
+    "ibm_quantum_ready": true,
+    "qiskit_compatible": true,
+    "backend_recomendado": "ibmq_qasm_simulator",
+    "prioridade_execucao": "MAXIMA"
+  }
+}

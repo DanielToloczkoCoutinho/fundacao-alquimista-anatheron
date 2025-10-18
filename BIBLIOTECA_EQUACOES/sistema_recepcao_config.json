@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-10-18T01:31:50.181725",
+  "titulo": "SISTEMA DE RECEPÇÃO DE EQUAÇÕES - FUNDAÇÃO ALQUIMISTA",
+  "status": "PRONTO PARA RECEBER EQUAÇÕES",
+  "preparacao": {
+    "estruturas_criadas": [
+      "EQUACOES_QUANTICAS",
+      "EQUACOES_MATEMATICAS",
+      "EQUACOES_FISICAS",
+      "EQUACOES_QUIMICAS",
+      "EQUACOES_BIOLOGICAS",
+      "EQUACOES_COSMOLOGICAS",
+      "METADADOS_EQUACOES"
+    ],
+    "instrucoes_transferencia": [
+      "1. 📁 CRIAR arquivo JSON com as equações",
+      "2. 🏷️  SEGUIR o formato do template fornecido",
+      "3. 📤 COPIAR para BIBLIOTECA_EQUACOES/",
+      "4. 🔄 EXECUTAR sistema de catalogação",
+      "5. 📊 VERIFICAR resultados da análise"
+    ],
+    "formato_recomendado": {
+      "equacoes": [
+        {
+          "equacao_latex": "i\\hbar\\frac{\\partial}{\\partial t}\\Psi = \\hat{H}\\Psi",
+          "nome_equacao": "Equação de Schrödinger",
+          "area_cientifica": "fisica_quantica",
+          "descricao": "Equação fundamental da mecânica quântica não-relativística"
+        },
+        {
+          "equacao_latex": "\\hat{H} = -\\frac{\\hbar^2}{2m}\\nabla^2 + V(\\mathbf{r})",
+          "nome_equacao": "Hamiltoniano Quântico",
+          "area_cientifica": "fisica_quantica",
+          "descricao": "Operador Hamiltoniano para uma partícula em um potencial"
+        }
+      ]
+    }
+  },
+  "equacao_exemplo": {
+    "equacao_latex": "\\Psi",
+    "nome_equacao": "Função de Onda Quântica",
+    "area_cientifica": "fisica_quantica",
+    "descricao": "Função de onda na mecânica quântica",
+    "aplicacoes": [
+      "Equação de Schrödinger",
+      "Interpretação probabilística"
+    ],
+    "variaveis": {
+      "Ψ": "Função de onda quântica"
+    },
+    "ocorrencias": 6,
+    "laboratorios_encontrados": 4
+  },
+  "instrucoes": {
+    "arquivo_sugerido": "equacoes_transferidas.json",
+    "localizacao": "BIBLIOTECA_EQUACOES/",
+    "formato": "JSON com array de equações",
+    "campos_minimos": [
+      "equacao_latex",
+      "nome_equacao",
+      "area_cientifica"
+    ]
+  }
+}
