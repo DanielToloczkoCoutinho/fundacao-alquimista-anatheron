@@ -1,0 +1,17 @@
+{
+  "chave_definitiva": "CHAVE_84911C9EBDFDB8CE6E2DD19192720423",
+  "data_criacao": "2025-10-18T00:09:11.261817",
+  "total_componentes": 24183,
+  "categorias_principais": {
+    "fisica_quantica": 9135,
+    "computacao_quantica": 877,
+    "scripts_shell": 513,
+    "dados": 127,
+    "relatorios": 120,
+    "laboratorios": 40,
+    "interface_web": 19,
+    "configuracoes": 9
+  },
+  "sistema_operacional": true,
+  "acesso_automatico": true
+}

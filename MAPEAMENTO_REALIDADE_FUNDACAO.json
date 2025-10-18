@@ -1,0 +1,4867 @@
+{
+  "timestamp": "2025-10-18T00:57:20.665866",
+  "titulo": "MAPEAMENTO DA REALIDADE VIRTUAL - FUNDAÇÃO ALQUIMISTA",
+  "resumo": {
+    "total_elementos_virtuais": 446,
+    "distribuicao": {
+      "laboratorios_virtuais_scripts": 29,
+      "laboratorios_virtuais_sistemas": 0,
+      "laboratorios_hibridos": 0,
+      "estruturas_numericas": 52,
+      "modulos_especializados": 365,
+      "sistemas_integrados": 0
+    },
+    "caracteristicas_sistema": [
+      "• 🚀 ALTA EFICIÊNCIA: Baixo armazenamento, alta funcionalidade",
+      "• 🔄 ADAPTABILIDADE: Sistema se reorganiza constantemente",
+      "• 💻 VIRTUALIZAÇÃO: Labs são principalmente código executável",
+      "• 🏗️  MODULARIDADE: Estrutura baseada em módulos especializados",
+      "• 🔗 INTEGRAÇÃO: Sistemas interconectados formando ecossistema",
+      "• 📊 PRODUÇÃO EM CÓDIGO: Conhecimento incorporado em funcionalidades"
+    ],
+    "implicacoes_estrategicas": [
+      "1. ✅ SISTEMA MAIS AVANÇADO que o inicialmente percebido",
+      "2. ✅ MODELO DE PESQUISA INOVADOR baseado em código",
+      "3. ✅ EFICIÊNCIA OPERACIONAL exemplar",
+      "4. ✅ ARQUITETURA ADAPTATIVA de classe mundial",
+      "5. ✅ POTENCIAL DE ESCALA praticamente ilimitado"
+    ]
+  },
+  "detalhes_mapeamento": {
+    "laboratorios_virtuais_scripts": [
+      {
+        "nome": "teste_conexao_ibm.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_conexao_ibm.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 610,
+        "linhas": 21,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell_otimizado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_bell_otimizado.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1523,
+        "linhas": 52,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell_otimizado_OTIMIZADO.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_bell_otimizado_OTIMIZADO.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 399,
+        "linhas": 16,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "⚡ VERSÃO OTIMIZADA: teste_bell_otimizado.py\n🎯 Melhorias de performance implementadas\n⏱️ Tempo estimado reduzido: 25s → 10.0s"
+      },
+      {
+        "nome": "teste_nova_chave.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_nova_chave.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 3055,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit",
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "🔑 TESTE DA NOVA CHAVE - FUNDAÇÃO ALQUIMISTA3\n⚛️ Teste imediato da chave recém-criada"
+      },
+      {
+        "nome": "teste_bell_OTIMIZADO.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_bell_OTIMIZADO.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 388,
+        "linhas": 16,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "⚡ VERSÃO OTIMIZADA: teste_bell.py\n🎯 Melhorias de performance implementadas\n⏱️ Tempo estimado reduzido: 22s → 8.8s"
+      },
+      {
+        "nome": "teste_conexao_simulada.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/teste_conexao_simulada.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 256,
+        "linhas": 7,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_conexao_ibm.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_conexao_ibm.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 610,
+        "linhas": 21,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell_otimizado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_bell_otimizado.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1523,
+        "linhas": 52,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell_otimizado_OTIMIZADO.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_bell_otimizado_OTIMIZADO.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 399,
+        "linhas": 16,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "⚡ VERSÃO OTIMIZADA: teste_bell_otimizado.py\n🎯 Melhorias de performance implementadas\n⏱️ Tempo estimado reduzido: 25s → 10.0s"
+      },
+      {
+        "nome": "teste_nova_chave.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_nova_chave.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 3055,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit",
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "🔑 TESTE DA NOVA CHAVE - FUNDAÇÃO ALQUIMISTA3\n⚛️ Teste imediato da chave recém-criada"
+      },
+      {
+        "nome": "teste_bell_OTIMIZADO.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/teste_bell_OTIMIZADO.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 388,
+        "linhas": 16,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "⚡ VERSÃO OTIMIZADA: teste_bell.py\n🎯 Melhorias de performance implementadas\n⏱️ Tempo estimado reduzido: 22s → 8.8s"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/scripts-alquimicos/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_nova_chave.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/teste_nova_chave.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 3055,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit",
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "🔑 TESTE DA NOVA CHAVE - FUNDAÇÃO ALQUIMISTA3\n⚛️ Teste imediato da chave recém-criada"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251008_034721/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell_otimizado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/teste_bell_otimizado.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1523,
+        "linhas": 52,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_nova_chave.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/teste_nova_chave.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 3055,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit",
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "🔑 TESTE DA NOVA CHAVE - FUNDAÇÃO ALQUIMISTA3\n⚛️ Teste imediato da chave recém-criada"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_nova_chave.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/teste_nova_chave.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 3055,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit",
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "🔑 TESTE DA NOVA CHAVE - FUNDAÇÃO ALQUIMISTA3\n⚛️ Teste imediato da chave recém-criada"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/laboratorios/lab_quantico_avancado/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "teste_bell.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/teste_bell.py",
+        "tipo": "laboratorio_virtual_script",
+        "tamanho": 1342,
+        "linhas": 48,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "qiskit"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      }
+    ],
+    "laboratorios_virtuais_sistemas": [],
+    "laboratorios_hibridos": [],
+    "estruturas_numericas": [
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 22639,
+        "scripts": 1,
+        "tamanho_total": 484096710
+      },
+      {
+        "nome": "zennith",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/SCRIPTS_CENTRALIZADOS/MODULO_29/app/zennith",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 404
+      },
+      {
+        "nome": "is-core-module",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/is-core-module",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 10,
+        "scripts": 0,
+        "tamanho_total": 33475
+      },
+      {
+        "nome": "eslint-module-utils",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 46,
+        "scripts": 0,
+        "tamanho_total": 108309
+      },
+      {
+        "nome": "is-bun-module",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/is-bun-module",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 9,
+        "scripts": 0,
+        "tamanho_total": 21943
+      },
+      {
+        "nome": "parent-module",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/parent-module",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 4,
+        "scripts": 0,
+        "tamanho_total": 3922
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/rimraf/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 7,
+        "scripts": 0,
+        "tamanho_total": 55064
+      },
+      {
+        "nome": "module-importer",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 12,
+        "scripts": 0,
+        "tamanho_total": 21177
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 11,
+        "scripts": 0,
+        "tamanho_total": 53255
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/tinyglobby/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 21,
+        "scripts": 0,
+        "tamanho_total": 138548
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 184,
+        "scripts": 0,
+        "tamanho_total": 318652
+      },
+      {
+        "nome": "module_dir",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/module_dir",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 10,
+        "scripts": 0,
+        "tamanho_total": 24
+      },
+      {
+        "nome": "ymodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/module_dir/ymodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "xmodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/module_dir/xmodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "zmodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/module_dir/zmodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 24
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/shadowed_core/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/resolver/symlinked/_/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/path-scurry/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 21,
+        "scripts": 0,
+        "tamanho_total": 804301
+      },
+      {
+        "nome": "is-core-module",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@nolyfill/is-core-module",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 4,
+        "scripts": 0,
+        "tamanho_total": 2706
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/visitor-keys/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 12,
+        "scripts": 0,
+        "tamanho_total": 37151
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/eslint-plugin/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 7,
+        "scripts": 0,
+        "tamanho_total": 63384
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/typescript-estree/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 64,
+        "scripts": 0,
+        "tamanho_total": 446537
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 32,
+        "scripts": 0,
+        "tamanho_total": 232272
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/wrap-ansi-cjs/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 16,
+        "scripts": 0,
+        "tamanho_total": 53416
+      },
+      {
+        "nome": "module_dir",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/module_dir",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 10,
+        "scripts": 0,
+        "tamanho_total": 177
+      },
+      {
+        "nome": "ymodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/module_dir/ymodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 51
+      },
+      {
+        "nome": "xmodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/module_dir/xmodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 51
+      },
+      {
+        "nome": "zmodules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/module_dir/zmodules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 75
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/shadowed_core/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 2,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/resolver/symlinked/_/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 0
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@isaacs/cliui/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 12,
+        "scripts": 0,
+        "tamanho_total": 9985
+      },
+      {
+        "nome": "route-modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 135,
+        "scripts": 0,
+        "tamanho_total": 94050
+      },
+      {
+        "nome": "module-loader",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 6,
+        "scripts": 0,
+        "tamanho_total": 2112
+      },
+      {
+        "nome": "postcss-modules-extract-imports",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/postcss-modules-extract-imports",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 3603
+      },
+      {
+        "nome": "postcss-modules-scope",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/postcss-modules-scope",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 66926
+      },
+      {
+        "nome": "postcss-modules-local-by-default",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/postcss-modules-local-by-default",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 71117
+      },
+      {
+        "nome": "postcss-modules-values",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/postcss-modules-values",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 2835
+      },
+      {
+        "nome": "route-modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 190,
+        "scripts": 0,
+        "tamanho_total": 139744
+      },
+      {
+        "nome": "module-loader",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 9,
+        "scripts": 0,
+        "tamanho_total": 3251
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/fast-glob/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 6,
+        "scripts": 0,
+        "tamanho_total": 12134
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/string-width-cjs/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 10,
+        "scripts": 0,
+        "tamanho_total": 48255
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/glob/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 64,
+        "scripts": 0,
+        "tamanho_total": 446537
+      },
+      {
+        "nome": "modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/tslib/modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 3,
+        "scripts": 0,
+        "tamanho_total": 2243
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/string-width/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 12,
+        "scripts": 0,
+        "tamanho_total": 9985
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-import-resolver-node/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 11,
+        "scripts": 0,
+        "tamanho_total": 53255
+      },
+      {
+        "nome": "node_modules",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/wrap-ansi/node_modules",
+        "tipo": "modulo_especializado",
+        "total_arquivos": 18,
+        "scripts": 0,
+        "tamanho_total": 27473
+      },
+      {
+        "nome": "zennith",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/app/zennith",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 6649
+      },
+      {
+        "nome": "nexus-global",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/app/nexus-global",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 5339
+      },
+      {
+        "nome": "zennith-dinamico",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/app/zennith-dinamico",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 7259
+      },
+      {
+        "nome": "zennith-data",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/app/api/zennith-data",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 754
+      },
+      {
+        "nome": "nexus-data",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/app/api/nexus-data",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 0,
+        "tamanho_total": 707
+      },
+      {
+        "nome": "lab_zennith",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/laboratorios/lab_zennith",
+        "tipo": "sistema_rainha",
+        "total_arquivos": 1,
+        "scripts": 1,
+        "tamanho_total": 2690
+      }
+    ],
+    "modulos_especializados": [
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RECONHECEDOR_MODULOS_RAINHA.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/RECONHECEDOR_MODULOS_RAINHA.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 8843,
+        "linhas": 197,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "🔧 RECONHECEDOR INTELIGENTE DOS MÓDULOS DA RAINHA\n⚛️ Sistema avançado de identificação de módulos\n🌌 Reconhecimento por nomes equivalentes e padrões"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RECONHECEDOR_MODULOS_RAINHA.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/RECONHECEDOR_MODULOS_RAINHA.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 8843,
+        "linhas": 197,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "🔧 RECONHECEDOR INTELIGENTE DOS MÓDULOS DA RAINHA\n⚛️ Sistema avançado de identificação de módulos\n🌌 Reconhecimento por nomes equivalentes e padrões"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251018_003238/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-omega-metadados.txt",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analise-modulos/metadados/module-omega-metadados.txt",
+        "tipo": "modulo_especializado",
+        "tamanho": 172,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-zero-metadados.txt",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analise-modulos/metadados/module-zero-metadados.txt",
+        "tipo": "modulo_especializado",
+        "tamanho": 215,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-9-metadados.txt",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/analise-modulos/metadados/module-9-metadados.txt",
+        "tipo": "modulo_especializado",
+        "tamanho": 164,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "sync-zennith.sh",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/scripts-alquimicos/sync-zennith.sh",
+        "tipo": "sistema_rainha",
+        "tamanho": 324,
+        "linhas": 12,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/scripts-alquimicos/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_TECNICO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/docs/RELATORIO_TECNICO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 163,
+        "linhas": 6,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_conexoes_20251005_224551.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/docs/mapa_nexus_conexoes_20251005_224551.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1668,
+        "linhas": 31,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "zennith_rainha.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/docs/zennith_rainha.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 281,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "zennith_rainha.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/docs/zennith_rainha.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 281,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_CIENTIFICO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/public/fundacao-completa/docs/RELATORIO_CIENTIFICO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 217,
+        "linhas": 6,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_223238/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-assign-module-variable.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@next/eslint-plugin-next/dist/rules/no-assign-module-variable.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1259,
+        "linhas": 36,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/src/module-importer.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 733,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.cjs",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/src/module-importer.cjs",
+        "tipo": "modulo_especializado",
+        "tamanho": 2567,
+        "linhas": 82,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/dist/module-importer.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 561,
+        "linhas": 19,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.d.cts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/dist/module-importer.d.cts",
+        "tipo": "modulo_especializado",
+        "tamanho": 910,
+        "linhas": 28,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/dist/module-importer.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 83,
+        "linhas": 3,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-importer.cjs",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@humanwhocodes/module-importer/dist/module-importer.cjs",
+        "tipo": "modulo_especializado",
+        "tamanho": 854,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "moduleVisitor.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/moduleVisitor.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 5458,
+        "linhas": 165,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-require.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/module-require.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 80,
+        "linhas": 4,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ModuleCache.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/ModuleCache.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1688,
+        "linhas": 53,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-require.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/module-require.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1041,
+        "linhas": 37,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ModuleCache.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/ModuleCache.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 603,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "moduleVisitor.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-module-utils/moduleVisitor.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 591,
+        "linhas": 27,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module_dir.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/module_dir.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1558,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-modules-paths.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/test/node-modules-paths.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 5101,
+        "linhas": 144,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-modules-paths.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-react/node_modules/resolve/lib/node-modules-paths.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1294,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "es6-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/caniuse-lite/data/features/es6-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 2020,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "es6-module-dynamic-import.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/caniuse-lite/data/features/es6-module-dynamic-import.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1971,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "css-module-scripts.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/caniuse-lite/data/features/css-module-scripts.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1917,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "link-rel-modulepreload.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/caniuse-lite/data/features/link-rel-modulepreload.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1950,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "relative-module-resolver.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint/lib/shared/relative-module-resolver.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1774,
+        "linhas": 51,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-restricted-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint/lib/rules/no-restricted-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 7068,
+        "linhas": 214,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "relative-module-resolver.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@eslint/eslintrc/lib/shared/relative-module-resolver.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1420,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@types/node/module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 23396,
+        "linhas": 540,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ModuleScope.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/scope/ModuleScope.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 437,
+        "linhas": 9,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "TSModuleScope.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/scope/TSModuleScope.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 457,
+        "linhas": 9,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "TSModuleScope.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/scope/TSModuleScope.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 434,
+        "linhas": 12,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ModuleScope.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/scope/ModuleScope.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 424,
+        "linhas": 12,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "TSModuleNameDefinition.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/definition/TSModuleNameDefinition.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 533,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "TSModuleNameDefinition.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/scope-manager/dist/definition/TSModuleNameDefinition.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 479,
+        "linhas": 9,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "explicit-module-boundary-types.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/eslint-plugin/dist/rules/explicit-module-boundary-types.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 679,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "explicit-module-boundary-types.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@typescript-eslint/eslint-plugin/dist/rules/explicit-module-boundary-types.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 17685,
+        "linhas": 387,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-unused-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/lib/rules/no-unused-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 126125,
+        "linhas": 1072,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-internal-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/lib/rules/no-internal-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 16508,
+        "linhas": 144,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-nodejs-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/lib/rules/no-nodejs-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 4748,
+        "linhas": 44,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-import-module-exports.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/lib/rules/no-import-module-exports.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 12235,
+        "linhas": 86,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-internal-modules.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/docs/rules/no-internal-modules.md",
+        "tipo": "modulo_especializado",
+        "tamanho": 2927,
+        "linhas": 137,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-import-module-exports.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/docs/rules/no-import-module-exports.md",
+        "tipo": "modulo_especializado",
+        "tamanho": 1780,
+        "linhas": 82,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-nodejs-modules.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/docs/rules/no-nodejs-modules.md",
+        "tipo": "modulo_especializado",
+        "tamanho": 829,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "no-unused-modules.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/eslint-plugin-import/docs/rules/no-unused-modules.md",
+        "tipo": "modulo_especializado",
+        "tamanho": 3422,
+        "linhas": 137,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module_dir.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/module_dir.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1558,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-modules-paths.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/test/node-modules-paths.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 5101,
+        "linhas": 144,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-modules-paths.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/resolve/lib/node-modules-paths.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1294,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getCssModuleLocalIdent.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/getCssModuleLocalIdent.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 201,
+        "linhas": 3,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/modules.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 289,
+        "linhas": 4,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3585,
+        "linhas": 84,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getCssModuleLocalIdent.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/getCssModuleLocalIdent.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1971,
+        "linhas": 37,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getCssModuleLocalIdent.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/getCssModuleLocalIdent.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1056,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/config/blocks/css/loaders/modules.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2109,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "get-module-build-info.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/get-module-build-info.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 358,
+        "linhas": 15,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "get-module-build-info.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/get-module-build-info.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 1448,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "next-flight-client-module-loader.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 89,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "next-flight-client-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1252,
+        "linhas": 37,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "get-module-build-info.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/get-module-build-info.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 239,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "next-flight-client-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 684,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-proxy.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 232,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-proxy.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 433,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-proxy.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 61,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "webpackModuleError.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2896,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getModuleTrace.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/getModuleTrace.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3659,
+        "linhas": 89,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "webpackModuleError.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 287,
+        "linhas": 4,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getModuleTrace.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/getModuleTrace.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 434,
+        "linhas": 11,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "webpackModuleError.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 5338,
+        "linhas": 143,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getModuleTrace.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/getModuleTrace.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2363,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "polyfill-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/polyfills/polyfill-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1380,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "polyfill-nomodule.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/polyfills/polyfill-nomodule.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 112594,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "parse-module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/analysis/parse-module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 229,
+        "linhas": 6,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "parse-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/analysis/parse-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 511,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "parse-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/build/analysis/parse-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 902,
+        "linhas": 27,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/config/blocks/css/loaders/modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3269,
+        "linhas": 74,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getCssModuleLocalIdent.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/config/blocks/css/loaders/getCssModuleLocalIdent.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1509,
+        "linhas": 22,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getCssModuleLocalIdent.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/config/blocks/css/loaders/getCssModuleLocalIdent.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1053,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/config/blocks/css/loaders/modules.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2100,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "get-module-build-info.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/get-module-build-info.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 276,
+        "linhas": 8,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "next-flight-client-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/next-flight-client-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1009,
+        "linhas": 27,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "get-module-build-info.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/get-module-build-info.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 234,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "next-flight-client-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/next-flight-client-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 694,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-proxy.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/next-flight-loader/module-proxy.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 253,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-proxy.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/loaders/next-flight-loader/module-proxy.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 259,
+        "linhas": 5,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "webpackModuleError.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2961,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getModuleTrace.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/getModuleTrace.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 2992,
+        "linhas": 62,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "webpackModuleError.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3317,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "getModuleTrace.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/webpack/plugins/wellknown-errors-plugin/getModuleTrace.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2327,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "parse-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/analysis/parse-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 553,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "parse-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/build/analysis/parse-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 632,
+        "linhas": 15,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "extract-modules-from-turbopack-message.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/dev/extract-modules-from-turbopack-message.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1016,
+        "linhas": 27,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "extract-modules-from-turbopack-message.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/dev/extract-modules-from-turbopack-message.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 906,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "edge-route-module-wrapper.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/web/edge-route-module-wrapper.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2265,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "edge-route-module-wrapper.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/web/edge-route-module-wrapper.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3640,
+        "linhas": 90,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "app-dir-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/lib/app-dir-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1048,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "app-dir-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/lib/app-dir-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1000,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/route-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 304,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/route-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 310,
+        "linhas": 11,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages-api/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 585,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages-api/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1299,
+        "linhas": 31,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages-api/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1215,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages-api/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages-api/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 487,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.render.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 324,
+        "linhas": 10,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1137,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 907,
+        "linhas": 24,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 835,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 760,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-page/module.render.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 408,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.render.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 320,
+        "linhas": 10,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 569,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 753,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 862,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 483,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/pages/module.render.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 398,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1144,
+        "linhas": 23,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "shared-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/shared-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 334,
+        "linhas": 5,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 27325,
+        "linhas": 477,
+        "complexidade": "MODERADO",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 13169,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "shared-modules.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/shared-modules.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 205,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/route-modules/app-route/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 761,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/route-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 415,
+        "linhas": 12,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 102,
+        "linhas": 5,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/route-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 477,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/node-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 499,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/node-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 475,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/esm/server/future/helpers/module-loader/module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 144,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ReactRefreshModule.runtime.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/ReactRefreshModule.runtime.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3980,
+        "linhas": 69,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ModuleFilenameHelpers.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/webpack/ModuleFilenameHelpers.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 63,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "NormalModule.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/webpack/NormalModule.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 54,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "HotModuleReplacement.runtime.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/webpack/HotModuleReplacement.runtime.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 10211,
+        "linhas": 408,
+        "complexidade": "MODERADO",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "JavascriptHotModuleReplacement.runtime.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/webpack/JavascriptHotModuleReplacement.runtime.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 13261,
+        "linhas": 464,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "plugin-transform-modules-commonjs.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/babel/plugin-transform-modules-commonjs.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 70,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "hotModuleReplacement.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3183,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "extract-modules-from-turbopack-message.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/dev/extract-modules-from-turbopack-message.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1266,
+        "linhas": 37,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "extract-modules-from-turbopack-message.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/dev/extract-modules-from-turbopack-message.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 923,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "extract-modules-from-turbopack-message.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/dev/extract-modules-from-turbopack-message.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 179,
+        "linhas": 3,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "edge-route-module-wrapper.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/web/edge-route-module-wrapper.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 2175,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "edge-route-module-wrapper.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/web/edge-route-module-wrapper.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 1282,
+        "linhas": 33,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "edge-route-module-wrapper.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/web/edge-route-module-wrapper.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3875,
+        "linhas": 96,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "app-dir-module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/lib/app-dir-module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 550,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "app-dir-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/lib/app-dir-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1556,
+        "linhas": 54,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "app-dir-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/lib/app-dir-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1034,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/route-module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 309,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/route-module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 1518,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/route-module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 395,
+        "linhas": 18,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 599,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1808,
+        "linhas": 53,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 1217,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 488,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages-api/module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 3073,
+        "linhas": 99,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.render.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 540,
+        "linhas": 20,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1151,
+        "linhas": 24,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 2970,
+        "linhas": 94,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 888,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 761,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.render.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 419,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.render.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 124,
+        "linhas": 3,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-page/module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 1696,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.render.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 540,
+        "linhas": 20,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 583,
+        "linhas": 14,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 2744,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 891,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 484,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.render.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 409,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.render.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.render.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 107,
+        "linhas": 3,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/pages/module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 3424,
+        "linhas": 93,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.compiled.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 1158,
+        "linhas": 24,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "shared-modules.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/shared-modules.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 2005,
+        "linhas": 56,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 29583,
+        "linhas": 534,
+        "complexidade": "MODERADO",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 12825,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [
+          "requests"
+        ],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "shared-modules.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/shared-modules.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 193,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.compiled.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 25,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.compiled.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.compiled.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 762,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "shared-modules.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/shared-modules.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 94,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/route-modules/app-route/module.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 4774,
+        "linhas": 119,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/route-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 651,
+        "linhas": 22,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 171,
+        "linhas": 8,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module-loader.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/route-module-loader.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 346,
+        "linhas": 9,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-module-loader.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/node-module-loader.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 209,
+        "linhas": 8,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "route-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/route-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 475,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-loader.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/module-loader.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 125,
+        "linhas": 7,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-module-loader.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/node-module-loader.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 660,
+        "linhas": 21,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "node-module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/node-module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 480,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "module-loader.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/next/dist/server/future/helpers/module-loader/module-loader.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 134,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modern-module-resolution.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@rushstack/eslint-patch/modern-module-resolution.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 43,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modern-module-resolution.d.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@rushstack/eslint-patch/lib/modern-module-resolution.d.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 65,
+        "linhas": 2,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modern-module-resolution.js.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@rushstack/eslint-patch/lib/modern-module-resolution.js.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 5192,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modern-module-resolution.d.ts.map",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@rushstack/eslint-patch/lib/modern-module-resolution.d.ts.map",
+        "tipo": "modulo_especializado",
+        "tamanho": 142,
+        "linhas": 1,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modern-module-resolution.js",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/node_modules/@rushstack/eslint-patch/lib/modern-module-resolution.js",
+        "tipo": "modulo_especializado",
+        "tamanho": 3543,
+        "linhas": 69,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_213238/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_205540/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "NexusNavegacao.tsx",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/components/NexusNavegacao.tsx",
+        "tipo": "sistema_rainha",
+        "tamanho": 1575,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "modules-metadata.ts",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/src/lib/modules-metadata.ts",
+        "tipo": "modulo_especializado",
+        "tamanho": 148,
+        "linhas": 8,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_202900/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_233238/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "sync-zennith.sh",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/scripts/sync-zennith.sh",
+        "tipo": "sistema_rainha",
+        "tamanho": 324,
+        "linhas": 12,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_222833/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_203238/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_TECNICO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/docs/RELATORIO_TECNICO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 163,
+        "linhas": 6,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_conexoes_20251005_224551.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/docs/mapa_nexus_conexoes_20251005_224551.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1668,
+        "linhas": 31,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "zennith_rainha.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/docs/zennith_rainha.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 281,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "zennith_rainha.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/docs/zennith_rainha.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 281,
+        "linhas": 13,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_CIENTIFICO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/docs/RELATORIO_CIENTIFICO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 217,
+        "linhas": 6,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_210532/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapa_nexus_mestres.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/mapa_nexus_mestres.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 8338,
+        "linhas": 266,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/ESTRATEGIA_CONTEUDO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1297,
+        "linhas": 42,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_ATIVACAO_ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/RELATORIO_ATIVACAO_ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1300,
+        "linhas": 38,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_zennith.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/analisar_conteudo_zennith.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2209,
+        "linhas": 65,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analisar_conteudo_nexus.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/analisar_conteudo_nexus.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 2185,
+        "linhas": 57,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "analise_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/analise_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 3732,
+        "linhas": 222,
+        "complexidade": "MODERADO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "conteudo_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/conteudo_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 1918,
+        "linhas": 92,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "RELATORIO_NEXUS_ATIVADOS.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/RELATORIO_NEXUS_ATIVADOS.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1174,
+        "linhas": 32,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_mestres.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/mapear_nexus_mestres.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1624,
+        "linhas": 47,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "investigacao_modulos_zennith.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/investigacao_modulos_zennith.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 2065,
+        "linhas": 108,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "mapear_nexus_avancado.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/mapear_nexus_avancado.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 3003,
+        "linhas": 87,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "README-ZENNITH.md",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/README-ZENNITH.md",
+        "tipo": "sistema_rainha",
+        "tamanho": 1161,
+        "linhas": 43,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "nexus_mapeamento_refinado.json",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/nexus_mapeamento_refinado.json",
+        "tipo": "sistema_rainha",
+        "tamanho": 28632,
+        "linhas": 1210,
+        "complexidade": "COMPLEXO",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      },
+      {
+        "nome": "fundacao_rainha.py",
+        "caminho": "/home/user/fundacao-alquimista-anatheron/backup_fundacao_20251017_204522/fundacao_rainha.py",
+        "tipo": "sistema_rainha",
+        "tamanho": 1469,
+        "linhas": 46,
+        "complexidade": "SIMPLES",
+        "dependencias": [],
+        "funcionalidades": [],
+        "descricao": "Elemento virtual funcional"
+      }
+    ],
+    "sistemas_integrados": []
+  },
+  "conclusao": "FUNDAÇÃO OPERA EM PARADIGMA AVANÇADO DE PESQUISA VIRTUALIZADA"
+}

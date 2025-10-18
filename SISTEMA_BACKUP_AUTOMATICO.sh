@@ -1,3 +1,9 @@
+
+
 #!/bin/bash
-echo "✅ SISTEMA_BACKUP_AUTOMATICO.sh executado com sucesso!"
-echo "Sistema Alquimista Cósmico operacional"
+while true; do
+mkdir -p backup_fundacao_$(date +%Y%m%d_%H%M%S)
+cp -r *.py *.sh *.json *.md *.nix backup_fundacao_$(date +%Y%m%d_%H%M%S)/
+echo "✅ Backup criado: $(date)"
+sleep 3600
+done

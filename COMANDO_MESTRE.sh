@@ -11,18 +11,18 @@ cp -r *.py *.sh *.json *.md *.nix backup_fundacao_$(date +%Y%m%d_%H%M%S)/
 echo "🔍 VERIFICANDO AMBIENTE..."
 source ~/.locale_config
 python3 -c "import sys; print(f'Python: {sys.version}')"
-ls -la | grep -E '\.py$|\.sh$|\.nix$'
 
 # Opções
 while true; do
     echo ""
     echo "🎯 OPÇÕES:"
     echo "   1. 🚀 Ativar ambiente quântico (/tmp)"
-    echo "   2. 📊 Executar análise científica (Nix)"
+    echo "   2. 📊 Ativar ambiente Nix"
     echo "   3. 🔍 Verificar backups"
     echo "   4. 🛠️ Restaurar backup"
-    echo "   5. 🚪 Sair"
-    read -p "💫 Escolha (1-5): " opcao
+    echo "   5. ⚛️ Executar no IBM Quantum"
+    echo "   6. 🚪 Sair"
+    read -p "💫 Escolha (1-6): " opcao
     case $opcao in
         1)
             echo "🚀 ATIVANDO AMBIENTE QUÂNTICO..."
@@ -33,8 +33,8 @@ while true; do
             cd ~/fundacao-alquimista-anatheron
             ;;
         2)
-            echo "📊 EXECUTANDO ANÁLISE CIENTÍFICA..."
-            python3 sistema_quantico_fundacao.py
+            echo "📊 ATIVANDO AMBIENTE NIX..."
+            nix-shell .idx/dev.nix
             ;;
         3)
             echo "🔍 LISTANDO BACKUPS..."
@@ -45,6 +45,14 @@ while true; do
             python3 restore_fundacao.py
             ;;
         5)
+            echo "⚛️ EXECUTANDO NO IBM QUANTUM..."
+            cd /tmp/fundacao_alquimista
+            source venv_quantico/bin/activate
+            python3 sistema_ibm_quantum_reconstruido.py
+            deactivate
+            cd ~/fundacao-alquimista-anatheron
+            ;;
+        6)
             echo "👑 SAINDO... QUE A FORÇA QUÂNTICA ESTEJA COM VOCÊ!"
             exit 0
             ;;

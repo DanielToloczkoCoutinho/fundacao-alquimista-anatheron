@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-10-18T00:12:41.465114",
+  "tempo_total_segundos": 240.863589,
+  "fases_sucesso": 3,
+  "total_fases": 5,
+  "taxa_sucesso": 60.0,
+  "detalhes_fases": {
+    "1": {
+      "status": "SUCESSO",
+      "tempo_execucao": 0.185087,
+      "timestamp": "2025-10-18T00:08:40.786567"
+    },
+    "2": {
+      "status": "FALHA",
+      "tempo_execucao": 194.407575,
+      "erro": "management.get:WARNING:2025-10-18 00:09:05,959: Loading default saved account\nmanagement.get:WARNING:2025-10-18 00:11:56,300: Loading default saved account\nTraceback (most recent call last):\n  File \"/home/user/fundacao-alquimista-anatheron/sistema_fundacao_robusto.py\", line 189, in <module>\n    sistema.gerar_relatorio_completo(circuito, resultados, \"relatorio_fundacao_robusto.png\")\n  File \"/home/user/fundacao-alquimista-anatheron/sistema_fundacao_robusto.py\", line 118, in gerar_relatorio_completo\n    circuito.draw('mpl', ax=ax2)\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/circuit/quantumcircuit.py\", line 3943, in draw\n    return circuit_drawer(\n           ^^^^^^^^^^^^^^^\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/visualization/circuit/circuit_visualization.py\", line 350, in circuit_drawer\n    image = _matplotlib_circuit_drawer(\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/visualization/circuit/circuit_visualization.py\", line 742, in _matplotlib_circuit_drawer\n    qcd = _matplotlib.MatplotlibDrawer(\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/utils/classtools.py\", line 111, in out\n    callback.__get__(obj, objtype)(*args, **kwargs)\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/utils/lazy_tester.py\", line 41, in __call__\n    self._tester.require_now(self._feature)\n  File \"/tmp/fundacao_venv/lib/python3.11/site-packages/qiskit/utils/lazy_tester.py\", line 221, in require_now\n    raise MissingOptionalLibraryError(\nqiskit.exceptions.MissingOptionalLibraryError: \"The 'pylatexenc' library is required to use 'MatplotlibDrawer'. You can install it with 'pip install pylatexenc'.\"",
+      "timestamp": "2025-10-18T00:11:57.194542"
+    },
+    "3": {
+      "status": "FALHA",
+      "tempo_execucao": 0.022561,
+      "erro": "File \"/home/user/fundacao-alquimista-anatheron/teste_bell_otimizado.py\", line 2\n    from qiskit import # \ud83d\udd2e CIRCUITO OTIMIZADO PARA IBM QUANTUM\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: invalid syntax",
+      "timestamp": "2025-10-18T00:11:59.217504"
+    },
+    "4": {
+      "status": "SUCESSO",
+      "tempo_execucao": 0.111244,
+      "timestamp": "2025-10-18T00:12:01.329173"
+    },
+    "5": {
+      "status": "SUCESSO",
+      "tempo_execucao": 38.135336,
+      "timestamp": "2025-10-18T00:12:41.464900"
+    }
+  },
+  "sistema": {
+    "total_scripts": 14802,
+    "scripts_executados": "FASE A FASE",
+    "organizacao": "5 FASES L\u00d3GICAS"
+  }
+}
