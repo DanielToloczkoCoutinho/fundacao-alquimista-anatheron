@@ -1,2 +1,0 @@
-pip==23.2.1
-pip is not installed, but available in the following packages, pick one to run it, Ctrl+C to cancel.

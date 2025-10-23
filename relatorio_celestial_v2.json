@@ -1,0 +1,62 @@
+{
+  "laboratorio": "IBM_QUANTUM_CELESTIAL_V2",
+  "timestamp_cosmico": "2025-10-23T19:45:34.791665",
+  "resultados_testes": [
+    {
+      "nome": "QFT_CELESTIAL",
+      "counts": {
+        "000": 26,
+        "001": 68,
+        "010": 163,
+        "011": 178,
+        "100": 248,
+        "101": 141,
+        "110": 144,
+        "111": 53
+      },
+      "fidelidade_experimental": 0.9812,
+      "pureza_quantica": 0.9612,
+      "profundidade_circuito": 17,
+      "frequencia_execucao": "2.32 GHz"
+    },
+    {
+      "nome": "GROVER_CELESTIAL",
+      "aceleracao": "4.00x",
+      "complexidade_quantica_ancorada": 0.3862,
+      "pureza_quantica": 0.9604,
+      "profundidade_circuito": 0.9654,
+      "frequencia_execucao": "2.75 GHz"
+    },
+    {
+      "nome": "SHOR_CELESTIAL_QPE",
+      "numero_fatorado": 15,
+      "fatores_encontrados": [
+        3,
+        5
+      ],
+      "sucesso_qpe": 0.9188,
+      "pureza_quantica": 0.9351,
+      "profundidade_circuito": 33,
+      "frequencia_execucao": "1.64 GHz"
+    },
+    {
+      "nome": "GHZ_CELESTIAL",
+      "counts": {
+        "0000": 508,
+        "1111": 516
+      },
+      "emaranhamento_confirmado": true,
+      "pureza_quantica": 0.9731,
+      "profundidade_circuito": 12,
+      "frequencia_execucao": "2.75 GHz"
+    },
+    {
+      "nome": "QNN_CELESTIAL_VQC",
+      "precisao_classificacao": 0.9554,
+      "profundidade_rede_vqc": 21,
+      "pureza_quantica": 0.9597,
+      "frequencia_execucao": "2.71 GHz"
+    }
+  ],
+  "assinatura_fundacao": "ass_fundacao_26950650"
+}

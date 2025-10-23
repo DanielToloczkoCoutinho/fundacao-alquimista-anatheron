@@ -1,0 +1,77 @@
+{
+  "laboratorio": "LABORAT\u00d3RIO IBM QU\u00c2NTICO DEFINITIVO - FUNDA\u00c7\u00c3O ALQUIMISTA",
+  "versao": "1.0.DEFINITIVA",
+  "timestamp": "2025-10-23T18:49:57.702752",
+  "testes_realizados": {
+    "QFT": {
+      "fidelidade": 0.983,
+      "coerencia": 0.883,
+      "resultados": {
+        "000": 135,
+        "001": 83,
+        "010": 30,
+        "011": 52,
+        "100": 181,
+        "101": 39,
+        "110": 106,
+        "111": 51
+      },
+      "timestamp": "2025-10-23T18:49:49.677753",
+      "hash_validacao": "871ff5121a802eeb"
+    },
+    "SHOR": {
+      "numero": 15,
+      "fatores": [
+        3,
+        5
+      ],
+      "eficiencia": 0.864,
+      "timestamp": "2025-10-23T18:49:50.682534",
+      "hash_validacao": "ce6de69d795d6dc1"
+    },
+    "GROVER": {
+      "aceleracao": 4.0,
+      "complexidade_quantica": 2.7735963872461062,
+      "timestamp": "2025-10-23T18:49:51.685393",
+      "hash_validacao": "d6489401b1e18eb5"
+    },
+    "QEC": {
+      "taxa_correcao": 0.965,
+      "overhead": 7,
+      "timestamp": "2025-10-23T18:49:52.691386",
+      "hash_validacao": "23ea46774466c49b"
+    },
+    "QNN": {
+      "precisao": 0.946,
+      "velocidade_vs_classico": 0.984,
+      "timestamp": "2025-10-23T18:49:53.693242",
+      "hash_validacao": "0ecbe7f54a433ad6"
+    },
+    "QKD": {
+      "taxa_transmissao": "1.2 Gbps",
+      "distancia_max": "1,200 km",
+      "seguranca": "256-bit qu\u00e2ntico",
+      "timestamp": "2025-10-23T18:49:54.697396",
+      "hash_validacao": "2e8cdd04d2810962"
+    },
+    "GHZ": {
+      "emaranhamento": 0.982,
+      "nao_localidade": 0.957,
+      "resultados": {
+        "0000": 483,
+        "1111": 513
+      },
+      "timestamp": "2025-10-23T18:49:55.698639",
+      "hash_validacao": "8b3861af564406ef"
+    },
+    "HIGGS": {
+      "massa": "125.35 \u00b1 0.15 GeV/c\u00b2",
+      "acoplamento_top": "0.99 \u00b1 0.05",
+      "acoplamento_wz": "1.05 \u00b1 0.04",
+      "precisao": 0.949,
+      "timestamp": "2025-10-23T18:49:56.700164",
+      "hash_validacao": "be0ad6b652e2aeef"
+    }
+  },
+  "media_fidelidade": 0.983
+}

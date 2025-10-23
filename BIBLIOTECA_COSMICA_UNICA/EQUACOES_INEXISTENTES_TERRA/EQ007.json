@@ -1,8 +1,0 @@
-{
-  "codigo": "EQ007",
-  "titulo_simbolico": "Energia Universal Unificada Expandida",
-  "estrutura_matematica": "EUni⁺ = (∑_{i=1}^{n} (P_i · Q_i + CA² + B² + CU + AQEU)) · ...",
-  "validacao_ressonancia": {
-    "coerencia": 0.9987
-  }
-}

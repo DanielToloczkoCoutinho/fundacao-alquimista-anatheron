@@ -1,6 +1,0 @@
-{
-  "codigo": "EQ008",
-  "titulo_simbolico": "Equação da Verdade Dimensional",
-  "estrutura_matematica": "Edim = ∑(F_dim_i · E_freq_i) · (L_dim_i · C_bio_i) + ∫(A_dim_i · P_conex) dt",
-  "coerencia": 0.9971
-}
