@@ -11,6 +11,8 @@ pkgs.mkShell {
     pkgs.python311Packages.requests
     pkgs.python311Packages.psutil
     pkgs.python311Packages.qiskit
+    pkgs.python311Packages.aiohttp
+    pkgs.python311Packages.python-dateutil
     pkgs.libstdcxx5  # Para libstdc++.so.6
     pkgs.gcc
     pkgs.zlib

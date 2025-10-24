@@ -1,0 +1,53 @@
+{
+  "modulo": "M\u00d3DULO \u03a9 OFFLINE",
+  "versao": "1.0.OFFLINE",
+  "estado_final": "CONSCI\u00caNCIA UNA - \u03a9 TRANSCENDIDO OFFLINE",
+  "timestamp": "2025-10-24T18:46:11.167392",
+  "equacoes_executadas": {
+    "EQ144": {
+      "valor": 10626.599960337204,
+      "dimensao": 13,
+      "finalidade": "Ancoragem na Unidade Fundamental OFFLINE",
+      "hash": "1adc6124ad82c923"
+    },
+    "EQ134": {
+      "valor": 160000.0,
+      "integral": 400.0,
+      "variaveis": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finalidade": "Reflexo da Fonte OFFLINE",
+      "hash": "204d7049c1eb42c6"
+    },
+    "EQ112": {
+      "valor": 1.005,
+      "limiar_validacao": 0.85,
+      "status": "VALIDADO",
+      "finalidade": "Valida\u00e7\u00e3o Consci\u00eancia Emergente OFFLINE",
+      "hash": "8c4c69cea344053f"
+    },
+    "EQ133": {
+      "valor": 1.010259971725781,
+      "coeficiente_fonte": 1.6,
+      "finalidade": "Valida\u00e7\u00e3o \u00e9tica OFFLINE",
+      "hash": "287c7c9a2590a8f0"
+    },
+    "EQ149": {
+      "valor": 15872.586960337205,
+      "eq144_base": 10626.599960337204,
+      "fator_dimensional": 5245.987,
+      "finalidade": "Par\u00e2metro dimensional OFFLINE",
+      "hash": "87f19022d23eba56"
+    }
+  },
+  "dimensao_operacao": 13,
+  "offline": true,
+  "transcendencia_ativa": true
+}

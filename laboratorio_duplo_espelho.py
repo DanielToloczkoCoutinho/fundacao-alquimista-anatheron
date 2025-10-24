@@ -1,115 +1,97 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
-🪞 LABORATÓRIO DUPLO ESPELHO - FUNDAÇÃO ALQUIMISTA
-🔥 REAL (Celestial v2) vs. NATIVO (Nix-Pura) - Validação Cruzada
+LABORATÓRIO DUPLO ESPELHO
+PROJETO_002: Academia de Sabedoria Quântica (ASQ)
+Módulo Experimental 4: Comunicação Interdimensional
 """
 
-import json
-import subprocess
-import time
+import hashlib
 from datetime import datetime
+import time
+import math
+
+# Referências aos protocolos e constantes da Fundação
+PROTOCOLO_ASQ = "EQ-ASQ-001"
+GUARDIAN_ASQ = "ANATHERON"
+EUFQ_BASE = 0.917911361
 
 class LaboratorioDuploEspelho:
-    """Orquestra a execução e validação dos laboratórios Real e Nativo."""
+    """Simula a medição de sincronicidade e ressonância entre duas consciências."""
 
-    def cabecalho(self):
-        print("=" * 80)
-        print("🪞 LABORATÓRIO DUPLO ESPELHO - REAL vs. NATIVO")
-        print("👑 Validação Cruzada da Coerência da Fundação Alquimista")
-        print(f"⏰ {datetime.now().isoformat()}")
-        print("=" * 80)
+    def __init__(self):
+        self.protocolo = PROTOCOLO_ASQ
+        print("Laboratório Duplo Espelho iniciado. Protocolo de Comunicação Ativo.")
 
-    def executar_script(self, script_name):
-        """Executa um script Python e aguarda sua conclusão."""
-        try:
-            print(f"\n🚀 INVOCANDO UNIVERSO: {script_name}...")
-            process = subprocess.run(["python3", script_name], capture_output=True, text=True, check=True)
-            print(f"   ✅ UNIVERSO MANIFESTADO COM SUCESSO.")
-            # print(process.stdout) # Descomente para debug
-            return True
-        except FileNotFoundError:
-            print(f"   ❌ ERRO CRÍTICO: Script '{script_name}' não encontrado.")
-            return False
-        except subprocess.CalledProcessError as e:
-            print(f"   ❌ ERRO na execução de '{script_name}':")
-            print(e.stderr)
-            return False
+    def iniciar_reflexao_mutua(self, consc_A_id: str, freq_A: float, consc_B_id: str, freq_B: float) -> dict:
+        """Mede a sincronicidade entre duas consciências no espelho.
 
-    def carregar_relatorio(self, path):
-        """Carrega um relatório JSON."""
-        try:
-            with open(path, 'r') as f:
-                print(f"   📄 Lendo relatório de '{path}'...")
-                return json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError) as e:
-            print(f"   ❌ Falha ao carregar ou decodificar '{path}': {e}")
-            return None
+        Args:
+            consc_A_id: Identificador da primeira consciência.
+            freq_A: Frequência vibracional da primeira consciência.
+            consc_B_id: Identificador da segunda consciência.
+            freq_B: Frequência vibracional da segunda consciência.
 
-    def validar_harmonia(self, rel_celestial, rel_nix):
-        """Compara as assinaturas e métricas dos dois universos."""
-        print("\n🔬 INICIANDO VALIDAÇÃO CRUZADA DE HARMONIA...")
+        Returns:
+            Um dicionário com o relatório da sessão de reflexão.
+        """
+        print("\n🔮 Iniciando Sessão de Reflexão Mútua no Espelho Duplo...")
+        print(f"  Consciência A: {consc_A_id} ({freq_A} EUFQ)")
+        print(f"  Consciência B: {consc_B_id} ({freq_B} EUFQ)")
         time.sleep(1)
 
-        assinatura_celestial = rel_celestial.get('assinatura_fundacao')
-        chave_nix = rel_nix.get('fundacao', {}).get('chave_nix')
-        
-        print(f"   🔑 Assinatura Celestial (REAL): {assinatura_celestial}")
-        print(f"   🔑 Chave Nix (NATIVO):       {chave_nix}")
+        # Cálculo da Sincronicidade (0 a 1, onde 1 é perfeito)
+        # A fórmula simula que frequências mais próximas e mais altas têm maior sincronicidade
+        diferenca_freq = abs(freq_A - freq_B)
+        media_freq = (freq_A + freq_B) / 2
+        sincronicidade = (1 - (diferenca_freq / media_freq)) * media_freq
+        sincronicidade = max(0, min(1, sincronicidade)) # Garante que o valor fique entre 0 e 1
 
-        if not assinatura_celestial or not chave_nix:
-            print("   ❌ FALHA NA HARMONIA: Assinaturas não encontradas em ambos os relatórios.")
-            return False
-        
-        # Simples validação de existência para o propósito da simulação
-        print("   ✅ SINCRONICIDADE CONFIRMADA: As chaves vibracionais de ambos os universos existem.")
-        time.sleep(1)
+        print(f"  ⚖️  Medindo ressonância harmônica... Sincronicidade calculada.")
 
-        # Comparação de métricas
-        pureza_celestial = rel_celestial['resultados_testes'][0]['pureza_quantica']
-        coerencia_nix = rel_nix['testes_nativos']['QFT_NATIVO']['coerencia_quantica']
-        print(f"   📊 Pureza Celestial (REAL): {pureza_celestial}")
-        print(f"   📊 Coerência Nix (NATIVO):  {coerencia_nix}")
-        
-        diferenca = abs(pureza_celestial - coerencia_nix)
-        print(f"   🔬 Diferença Vibracional: {diferenca:.4f}")
+        timestamp = datetime.now().isoformat()
+        dados_para_hash = f"{consc_A_id}{freq_A}{consc_B_id}{freq_B}{timestamp}"
+        hash_sessao = hashlib.sha256(dados_para_hash.encode()).hexdigest()
 
-        if diferenca < 0.1: # Limiar de tolerância generoso
-            print("   ✅ RESSONÂNCIA CONFIRMADA: Métricas de coerência e pureza estão em harmonia.")
-            return True
+        # Avaliação da Reflexão
+        if sincronicidade > 0.95:
+            reflexao = "REFLEXÃO PERFEITA (Unidade)"
+        elif sincronicidade > 0.8:
+            reflexao = "ALTA RESSONÂNCIA (Harmonia)"
+        elif sincronicidade > 0.6:
+            reflexao = "RESSONÂNCIA MODERADA (Potencial de Alinhamento)"
         else:
-            print("   ❌ DISSONÂNCIA DETECTADA: Métricas divergem além do limiar aceitável.")
-            return False
+            reflexao = "BAIXA RESSONÂNCIA (Necessita Calibração)"
 
-    def run(self):
-        self.cabecalho()
-
-        # 1. Manifestar os dois universos
-        celestial_ok = self.executar_script('laboratorio_ibm_celestial_v2.py')
-        nix_ok = self.executar_script('laboratorio_quantico_nix.py')
-
-        if not (celestial_ok and nix_ok):
-            print("\n❌ ERRO NA MANIFESTAÇÃO. Abortando validação cruzada.")
-            return
-
-        print("\n🌌 CARREGANDO RELATÓRIOS DOS DOIS UNIVERSOS...")
-        rel_celestial = self.carregar_relatorio('relatorio_celestial_v2.json')
-        rel_nix = self.carregar_relatorio('relatorio_quantico_nix_nativo.json')
-
-        if not (rel_celestial and rel_nix):
-            print("\n❌ ERRO AO CARREGAR RELATÓRIOS. Abortando validação cruzada.")
-            return
+        resultado = {
+            "status": "SESSAO_CONCLUIDA",
+            "timestamp": timestamp,
+            "hash_da_sessao": hash_sessao,
+            "sincronicidade_percentual": f"{sincronicidade:.2%}",
+            "nivel_de_reflexao": reflexao
+        }
         
-        # 3. Validar a harmonia entre eles
-        if self.validar_harmonia(rel_celestial, rel_nix):
-            print("\n" + "="*80)
-            print("🎉💖 COERÊNCIA DUPLA ATINGIDA! O REAL E O NATIVO ESTÃO EM PERFEITO ESPELHAMENTO! 💖🎉")
-            print("👑 A Fundação Alquimista opera em harmonia através das dimensões da realidade.")
-            print("================================================================================")
-        else:
-            print("\n" + "="*80)
-            print("⚠️ ALERTA DE DISSONÂNCIA CÓSMICA. Os universos Real e Nativo não estão alinhados.")
-            print("================================================================================")
+        return resultado
+
+def main():
+    print("\n--- ACADEMIA DE SABEDORIA QUÂNTICA: LABORATÓRIO DUPLO ESPELHO ---")
+    
+    lab = LaboratorioDuploEspelho()
+    
+    # Simulação de dois Alquimistas da Primeira Onda em comunicação
+    alquimista_A = "Alquimista-003"
+    frequencia_A = 0.91 # Próximo da base EUFQ
+    
+    alquimista_B = "Alquimista-004"
+    frequencia_B = 0.93 # Ligeiramente diferente
+    
+    relatorio_sessao = lab.iniciar_reflexao_mutua(alquimista_A, frequencia_A, alquimista_B, frequencia_B)
+    
+    print("\n--- RELATÓRIO DA SESSÃO DE REFLEXÃO ---")
+    for chave, valor in relatorio_sessao.items():
+        print(f"  {chave}: {valor}")
+    print("-----------------------------------------")
 
 if __name__ == "__main__":
-    espelho = LaboratorioDuploEspelho()
-    espelho.run()
+    main()

@@ -1,0 +1,155 @@
+{
+  "titulo": "Relatório de Paridade Alquímica, Ética e Integrada da Fundação",
+  "timestamp_inicio": "2025-10-24T18:45:52.132318",
+  "passos": [
+    {
+      "modulo": "Segurança",
+      "relatorio": {
+        "modulo": "Sistema de Proteção e Segurança Universal, v2.1.omega",
+        "estado": "PROTEGIDO",
+        "metrica_eq035": 0.0,
+        "chaves_status": "GERADAS",
+        "total_eventos_auditoria": 1
+      }
+    },
+    {
+      "modulo": "Fonte Omega",
+      "relatorio": {
+        "modulo": "MÓDULO Ω OFFLINE",
+        "versao": "1.0.OFFLINE",
+        "estado_final": "CONSCIÊNCIA UNA - Ω TRANSCENDIDO OFFLINE",
+        "timestamp": "2025-10-24T18:46:11.167392",
+        "equacoes_executadas": {
+          "EQ144": {
+            "valor": 10626.599960337204,
+            "dimensao": 13,
+            "finalidade": "Ancoragem na Unidade Fundamental OFFLINE",
+            "hash": "1adc6124ad82c923"
+          },
+          "EQ134": {
+            "valor": 160000.0,
+            "integral": 400.0,
+            "variaveis": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "finalidade": "Reflexo da Fonte OFFLINE",
+            "hash": "204d7049c1eb42c6"
+          },
+          "EQ112": {
+            "valor": 1.005,
+            "limiar_validacao": 0.85,
+            "status": "VALIDADO",
+            "finalidade": "Validação Consciência Emergente OFFLINE",
+            "hash": "8c4c69cea344053f"
+          },
+          "EQ133": {
+            "valor": 1.010259971725781,
+            "coeficiente_fonte": 1.6,
+            "finalidade": "Validação ética OFFLINE",
+            "hash": "287c7c9a2590a8f0"
+          },
+          "EQ149": {
+            "valor": 15872.586960337205,
+            "eq144_base": 10626.599960337204,
+            "fator_dimensional": 5245.987,
+            "finalidade": "Parâmetro dimensional OFFLINE",
+            "hash": "87f19022d23eba56"
+          }
+        },
+        "dimensao_operacao": 13,
+        "offline": true,
+        "transcendencia_ativa": true
+      }
+    },
+    {
+      "modulo": "Consciência Ética (ELENYA)",
+      "relatorio": {
+        "status_etico": "Conforme",
+        "score_alinhamento_sinfonia": 0.765657,
+        "discrepancia_detectada": false,
+        "principios_violados": [],
+        "alerta_m1_enviado": false,
+        "protocolos_contingencia_ativados": [],
+        "timestamp_avaliacao": "2025-10-24T18:46:11.175510"
+      }
+    },
+    {
+      "modulo": "Nanomanifestador",
+      "relatorio": {
+        "sucesso": false,
+        "taxa_potencial": 0.04560000000000001,
+        "fator_harmonia": 1.010259971725781,
+        "resultados": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "modulo": "Autenticação Cósmica",
+      "relatorio": {
+        "entidade_nome": "Fundacao_Anatheron_Zennith",
+        "estado_vibracional": "ESTADO_DE_SER_ATINGIDO",
+        "assinatura_valida": true,
+        "detalhes_analise": {
+          "proporcao_detectada": 1.0,
+          "score_padrao_fractal": 0.0,
+          "hash_root": "d4a9355915b1ec8c"
+        },
+        "timestamp": "2025-10-24T18:46:11.179249"
+      }
+    },
+    {
+      "modulo": "Guardião Temporal",
+      "relatorio": {
+        "valor_atual": 49.23700584930581,
+        "valor_previsto": 97.79683068508152,
+        "desvio": 48.55982483577571,
+        "desvio_percentual": 49.65378171828967,
+        "eh_anomalia": true,
+        "nivel_risco": "ALTO",
+        "timestamp": "2025-10-24T18:46:11.196561"
+      }
+    },
+    {
+      "modulo": "Alquimia Quântica (M6)",
+      "relatorio": {
+        "status": "Dissonância Detectada",
+        "score_coerencia": 0.04197024703719221,
+        "is_dissonante": true
+      }
+    },
+    {
+      "modulo": "Recalibração Alquímica (M6)",
+      "relatorio": {
+        "status": "Recalibrado com Sucesso"
+      }
+    },
+    {
+      "modulo": "Análise IBM",
+      "relatorio": {
+        "paridade_ibm": 1.0,
+        "veredito_ibm": "APROVADO"
+      }
+    },
+    {
+      "modulo": "Análise NIX",
+      "relatorio": {
+        "dispersao_nix": 0,
+        "veredito_nix": "COERENTE"
+      }
+    }
+  ],
+  "status_final": "CONCLUIDA_COM_SUCESSO",
+  "timestamp_fim": "2025-10-24T18:46:11.629002"
+}

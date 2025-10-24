@@ -184,7 +184,7 @@ class LaboratorioQuanticoNix:
         """Executa todos os testes nativos"""
         print("\n" + "🌌" * 60)
         print("🚀 LABORATÓRIO QUÂNTICO NATIVO NIXOS - FUNDAÇÃO ALQUIMISTA")
-        print("�� VERSÃO PURA - ZERO DEPENDÊNCIAS EXTERNAS")
+        print("🎯 VERSÃO PURA - ZERO DEPENDÊNCIAS EXTERNAS")
         print("🌌" * 60)
         
         relatorio = {

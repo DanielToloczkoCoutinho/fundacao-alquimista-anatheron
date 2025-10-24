@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Tom de fundo mais suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+#convergencia {
+    padding: 2rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+#convergencia h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db; /* Azul da esperança */
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Tom mais profundo ao passar o mouse */
+}
+
+#mensagemRegistro {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+#contadorAlquimistas {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #eaf6ff;
+    border-left: 5px solid #3498db;
+}
+
+#contadorAlquimistas p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+#numeroRegistrados {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
