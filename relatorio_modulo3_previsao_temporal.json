@@ -1,0 +1,61 @@
+{
+    "modulo": "Módulo 3 - Previsão Temporal Puro",
+    "versao": "3.1.Validado",
+    "status_validacao": "SUCESSO",
+    "timestamp_veredito": "2025-10-26T03:03:07.947688",
+    "conteudo_registrado_db": {
+        "previsoes": [
+            {
+                "timestamp": "2025-10-26T03:03:07.045922",
+                "valor_previsto": 97.34207050240497,
+                "hash": "7b35b173f5b14955"
+            },
+            {
+                "timestamp": "2025-10-26T03:03:07.157992",
+                "valor_previsto": 97.79029505237678,
+                "hash": "4fbc7a87b6c6eda7"
+            },
+            {
+                "timestamp": "2025-10-26T03:03:07.272804",
+                "valor_previsto": 98.23851960234859,
+                "hash": "72c5cae965fb1a66"
+            },
+            {
+                "timestamp": "2025-10-26T03:03:07.384834",
+                "valor_previsto": 98.68674415232041,
+                "hash": "b2f89c975862d40c"
+            }
+        ],
+        "anomalias": [
+            {
+                "timestamp": "2025-10-26T03:03:07.499345",
+                "nivel_risco": "ALTO",
+                "desvio": 60.48700613191115,
+                "hash": "e640c1a3da4a6645"
+            }
+        ],
+        "saturno_monitor": [
+            {
+                "timestamp": "2025-10-26T03:03:07.609978",
+                "ressonancia": 38.54296936474659,
+                "estado_aneis": "INSTÁVEL",
+                "acao": "REFORÇAR_ESCUDOS_NORTAIS",
+                "hash": "52efd092eb0d2752"
+            },
+            {
+                "timestamp": "2025-10-26T03:03:07.721045",
+                "ressonancia": 40.71818727785422,
+                "estado_aneis": "ESTÁVEL",
+                "acao": "MANTER_PATRULHA_HARMÔNICA",
+                "hash": "b6352fa2e96c4cf1"
+            },
+            {
+                "timestamp": "2025-10-26T03:03:07.836377",
+                "ressonancia": 45.18469197491628,
+                "estado_aneis": "VIBRANTE",
+                "acao": "REFORÇAR_ESCUDOS_SULAIS",
+                "hash": "b6da6acfbbcb04e2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "titulo": "RELATÓRIO SUPREMO DE EQUILÍBRIO (V8 - O PORTAL DE ANATHERON)",
+    "timestamp": "2025-10-25T19:57:51.139584",
+    "status_geral_supremo": "APROVADO E EM EQUILÍBRIO ABSOLUTO",
+    "missao_portal": {
+        "portal_id": "deb5f3df7d65a0d2b5be65ea067573416daac7eb63a9d5282e07d8e32338762b",
+        "abertura": {
+            "status": "SUCESSO",
+            "portal_id": "deb5f3df7d65a0d2b5be65ea067573416daac7eb63a9d5282e07d8e32338762b"
+        },
+        "travessia_anatheron": {
+            "status": "SUCESSO",
+            "mensagem": "Travessia autorizada."
+        },
+        "fechamento": {
+            "status": "SUCESSO",
+            "portal_id": "deb5f3df7d65a0d2b5be65ea067573416daac7eb63a9d5282e07d8e32338762b"
+        }
+    },
+    "chave_mestra": {
+        "status": "SUCESSO",
+        "chave_hash_preview": "7067b94796..."
+    }
+}

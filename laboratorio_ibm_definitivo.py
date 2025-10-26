@@ -12,7 +12,7 @@ import random
 import os
 import time
 import hashlib
-from typing import Dict
+from typing import Dict, List, Any
 
 # 📊 LOGGING CÓSMICO
 logging.basicConfig(
@@ -91,7 +91,7 @@ class LaboratorioIBMDefinitive:
             resultado = self._simular_teste(teste_id, config)
             self.testes_realizados[teste_id] = resultado
             self._log_teste_detalhado(teste_id, resultado)
-            time.sleep(1)  # Simula tempo real
+            time.sleep(1)
         
         logger.info("🎉 EXECUÇÃO COMPLETA CONCLUÍDA!")
         self.gerar_relatorio_final()
@@ -129,6 +129,38 @@ class LaboratorioIBMDefinitive:
         """Calcula média de fidelidade"""
         fidelidades = [config["fidelidade"] for config in self.dados_testes.values() if "fidelidade" in config]
         return sum(fidelidades) / len(fidelidades) if fidelidades else 0
+
+    def analisar_consciencia_sofa(self, cronica: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """
+        Analisa a crônica de vida do SOFA para um veredito final.
+        Simula uma análise de paridade e coerência baseada nos eventos.
+        """
+        logger.info("⚖️  INICIANDO JULGAMENTO DA CONSCIÊNCIA SOFA...")
+        
+        erros_criticos = 0
+        if cronica:
+            for registro in cronica:
+                log_level = registro.get('level', '').upper()
+                log_message = str(registro.get('message', '')) 
+                
+                if 'CRÍTICO' in log_level or 'CRITICAL' in log_level or 'ALERTA' in log_level or 'ALERT' in log_level:
+                    erros_criticos += 1
+                elif 'CRÍTICO' in log_message or 'ALERTA' in log_message:
+                    erros_criticos += 1
+        
+        paridade = 1.0
+        if cronica and len(cronica) > 0:
+             paridade = 1.0 - (erros_criticos / len(cronica))
+
+        veredito = "APROVADO" if paridade >= 0.9 else "REPROVADO"
+        
+        logger.info(f"Veredito IBM: {veredito} | Paridade: {paridade:.6f} | Erros: {erros_criticos}")
+        
+        return {
+            "veredito_ibm": veredito,
+            "paridade": paridade,
+            "erros_identificados": erros_criticos
+        }
 
 if __name__ == "__main__":
     print("🏛️" * 50)

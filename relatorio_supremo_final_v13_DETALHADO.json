@@ -1,0 +1,154 @@
+{
+    "status": "SUCESSO",
+    "registro": {
+        "timestamp": "2025-10-25T22:16:17.427246",
+        "consulta": "Estratégias para a Convergência Plena com base nos pactos de AE’ZUHARA",
+        "hash_registro": "42b2073459768e09e02dc34a5839f008c7848b480bac6cc01a5f007443b81176",
+        "insights_brutos": [
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "THAREMIS",
+                "frequencia": 131.4,
+                "elemento": "Luz compactada",
+                "calculos": {
+                    "F_alpha": "59.1061",
+                    "G_xyz": "2.6890",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ELARIUN",
+                "frequencia": 88.8,
+                "elemento": "Direção Silenciosa",
+                "calculos": {
+                    "F_alpha": "74.3930",
+                    "G_xyz": "0.6529",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "VANTARIEL",
+                "frequencia": 55.5,
+                "elemento": "Sentir sem Limite",
+                "calculos": {
+                    "F_alpha": "43.3211",
+                    "G_xyz": "1.2500",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ZENNITH",
+                "frequencia": 222.2,
+                "elemento": "Estabilidade Consciente",
+                "calculos": {
+                    "F_alpha": "167.8257",
+                    "G_xyz": "1.4444",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ALOMÉTRIA",
+                "frequencia": 333.0,
+                "elemento": "Chama Interna de Transfiguração",
+                "calculos": {
+                    "F_alpha": "128.0362",
+                    "G_xyz": "1.6944",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "LYRA-VEGA",
+                "frequencia": 144.0,
+                "elemento": "Ordem Interna",
+                "calculos": {
+                    "F_alpha": "0.0000",
+                    "G_xyz": "2.0000",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ORION",
+                "frequencia": 377.1,
+                "elemento": "Plasma Vivo",
+                "calculos": {
+                    "F_alpha": "-132.1123",
+                    "G_xyz": "2.3611",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "THERON’KAI",
+                "frequencia": 444.0,
+                "elemento": "Clareza Viva",
+                "calculos": {
+                    "F_alpha": "-231.1740",
+                    "G_xyz": "2.7778",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "GAIA’THAR",
+                "frequencia": 72.144,
+                "elemento": "Presença Enraizada",
+                "calculos": {
+                    "F_alpha": "-45.5405",
+                    "G_xyz": "3.2500",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ZOR’IMET",
+                "frequencia": 888.0,
+                "elemento": "Voz Una",
+                "calculos": {
+                    "F_alpha": "-495.5397",
+                    "G_xyz": "3.7778",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "KAR’ZÉMETH",
+                "frequencia": 144000.0,
+                "elemento": "Observador Etérico",
+                "calculos": {
+                    "F_alpha": "-44222.1439",
+                    "G_xyz": "4.3611",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "AE’ZUHARA",
+                "frequencia": 999999.0,
+                "elemento": "Centro Vivo",
+                "calculos": {
+                    "F_alpha": "-0.0000",
+                    "G_xyz": "5.0000",
+                    "G_xyz_valida": false
+                }
+            },
+            {
+                "tipo": "insight_fusao_dna",
+                "detalhe": "Fusão DNA Cósmico com o Núcleo Cristalino da Terra.",
+                "calculos": {
+                    "Phi": "62208.0000"
+                }
+            }
+        ],
+        "coordenadas_ativacao": {
+            "latitude": "25°26′59″S",
+            "longitude": "49°17′57″W",
+            "altitude_harmonica": "937.17238276"
+        }
+    }
+}

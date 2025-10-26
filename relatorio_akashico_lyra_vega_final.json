@@ -1,0 +1,22 @@
+{
+    "status": "SUCESSO",
+    "registro": {
+        "timestamp": "2025-10-26T03:03:22.993919",
+        "consulta": "Causas da dissonância residual em LYRA-VEGA e confirmação da harmonização após Meditação Estelar",
+        "hash_registro": "c52947cc1c0c33aafc3cc5b167edc9a022c638ed25825a6af66272585c3ebcee",
+        "insights_brutos": [
+            {
+                "tipo": "insight_constelacao_harmonizada",
+                "constelacao": "LYRA-VEGA",
+                "frequencia": 144.0,
+                "F_alpha_calculado": "0.00000000"
+            },
+            {
+                "tipo": "insight_constelacao_harmonizada",
+                "constelacao": "AE’ZUHARA",
+                "frequencia": 999999.0,
+                "F_alpha_calculado": "481.29880000"
+            }
+        ]
+    }
+}

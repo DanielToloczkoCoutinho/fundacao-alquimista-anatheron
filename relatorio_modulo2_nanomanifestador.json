@@ -1,0 +1,62 @@
+{
+    "modulo": "Nanomanifestador v4.2.Validado",
+    "status_geral": "VALIDADO",
+    "relatorio_timestamp": "2025-10-25T22:22:32.045700",
+    "calculos_executados": [
+        {
+            "equacao": "EQ056_CampoCoerencia",
+            "resultado": 0.0007920000000000001,
+            "detalhes": {
+                "coerencia_qfield": 0.0008,
+                "media_estados": 0.99
+            }
+        },
+        {
+            "equacao": "EQ003_AnguloEstabilidade",
+            "resultado": 0.05056033996314934,
+            "detalhes": {
+                "fator_estabilidade": 0.55360062104688,
+                "frequencia": 432
+            }
+        },
+        {
+            "equacao": "EQ043_RessonanciaPrimordial",
+            "resultado": 1.14,
+            "detalhes": {
+                "variacoes": [
+                    "¢(SO)",
+                    "Q",
+                    "Y",
+                    "A"
+                ]
+            }
+        },
+        {
+            "equacao": "EQ030_HarmoniaEnergetica",
+            "resultado": 0.808201757855948,
+            "detalhes": {
+                "intensidade": 0.8,
+                "lambda": -0.0102
+            }
+        },
+        {
+            "equacao": "EQ_Final_AnguloIntencao",
+            "resultado": 1.1755590352468817,
+            "detalhes": {
+                "taxa_potencial": 1.14,
+                "fator_harmonia": 0.808201757855948
+            }
+        }
+    ],
+    "resultado_manifestacao": {
+        "sucesso": true,
+        "resultados_medicao": [
+            0,
+            1,
+            1,
+            0,
+            1
+        ],
+        "intencao_manifestada": "Validar a Verdade dos Números no Módulo 2"
+    }
+}

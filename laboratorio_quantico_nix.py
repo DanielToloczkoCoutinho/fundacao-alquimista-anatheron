@@ -10,6 +10,7 @@ import time
 import random
 import math
 from datetime import datetime
+from typing import List, Dict, Any
 
 class SimuladorQuanticoNativo:
     """Simulador quântico puro sem dependências externas"""
@@ -24,26 +25,21 @@ class SimuladorQuanticoNativo:
         total_combinacoes = 2 ** qubits
         for i in range(total_combinacoes):
             estado = format(i, f'0{qubits}b')
-            # Distribuição probabilística uniforme com pequenas variações quânticas
             probabilidade = (1.0 / total_combinacoes) * random.uniform(0.95, 1.05)
             estados[estado] = max(0, min(1, probabilidade))
         
-        # Normaliza
         total = sum(estados.values())
         return {k: v/total for k, v in estados.items()}
     
     def circuito_qft_nativo(self, qubits):
         """Implementa QFT nativamente"""
         estados = self.estado_superposicao(qubits)
-        # Simula o efeito da transformada de Fourier
         resultados = {}
         for estado in estados:
-            # Frequência "quântica" baseada no estado
             freq = int(estado, 2) / (2 ** qubits)
             amplitude = math.sin(2 * self.pi * freq + random.uniform(-0.1, 0.1))
             resultados[estado] = max(0, abs(amplitude))
         
-        # Normaliza para distribuição de probabilidade
         total = sum(resultados.values())
         return {k: (v/total * 1000) for k, v in resultados.items()}
 
@@ -66,19 +62,40 @@ class LaboratorioQuanticoNix:
         print(f"🎯 {len(self.testes)} TESTES NATIVOS CARREGADOS")
     
     def gerar_hash_alquimista(self, dados):
-        """Hash alquímico com sal quântico"""
         sal_quantico = f"{datetime.now().isoformat()}{random.getrandbits(128)}"
         dados_str = json.dumps(dados, sort_keys=True) + sal_quantico
         return hashlib.sha256(dados_str.encode()).hexdigest()[:16]
     
     def medir_coerencia_quantica(self):
-        """Mede coerência quântica com ruído simulado"""
         return round(1 - random.uniform(0.001, 0.03), 4)
-    
-    def teste_qft_nativo(self):
-        """🔬 QFT Nativo - Transformada Quântica de Fourier"""
-        resultados = self.simulador.circuito_qft_nativo(3)
+
+    def analisar_coerencia_sofa(self, cronica: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Analisa a crônica de vida do SOFA sob a ótica da coerência e dispersão."""
+        print("--- ANÁLISE NIX: Verificando coerência do SOFA ---")
+        erros_criticos = 0
+        if cronica:
+            for registro in cronica:
+                log_level = registro.get('level', '').upper()
+                log_message = str(registro.get('message', '')) 
+                if 'CRÍTICO' in log_level or 'CRITICAL' in log_level or 'ALERTA' in log_level or 'ALERT' in log_level:
+                    erros_criticos += 1
         
+        dispersao = 0.0
+        if cronica and len(cronica) > 0:
+            dispersao = erros_criticos / len(cronica)
+
+        veredito = "COERENTE" if dispersao < 0.1 else "INCOERENTE"
+        
+        print(f"Veredito NIX: {veredito} | Dispersão: {dispersao:.2f}")
+        
+        return {
+            "veredito_nix": veredito,
+            "dispersao": dispersao,
+            "erros_identificados": erros_criticos
+        }
+
+    def teste_qft_nativo(self):
+        resultados = self.simulador.circuito_qft_nativo(3)
         return {
             'algoritmo': 'QFT_Nativo_Nix',
             'qubits': 3,
@@ -90,7 +107,6 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_shor_nativo(self):
-        """🔢 Shor Nativo - Fatoração Quântica"""
         return {
             'algoritmo': 'Shor_Nativo_Nix',
             'numero': 15,
@@ -102,10 +118,8 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_grover_nativo(self):
-        """⚡ Grover Nativo - Busca Quântica"""
         aceleracao = 4.0
         complexidade = (self.simulador.pi/4) * math.sqrt(16) * random.uniform(0.9, 1.1)
-        
         return {
             'algoritmo': 'Grover_Nativo_Nix',
             'aceleracao': aceleracao,
@@ -116,14 +130,12 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_entrelacamento(self):
-        """🔗 Entrelaçamento Quântico Nativo"""
         estados_entrelacados = {
             '00': random.randint(480, 520),
             '11': random.randint(480, 520),
             '01': random.randint(0, 20),
             '10': random.randint(0, 20)
         }
-        
         return {
             'algoritmo': 'Entrelacamento_Nativo',
             'emaranhamento': round(random.uniform(0.97, 0.99), 4),
@@ -135,7 +147,6 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_teleportacao(self):
-        """📡 Teleportação Quântica Nativa"""
         return {
             'algoritmo': 'Teleportacao_Quantica',
             'fidelidade': round(random.uniform(0.88, 0.96), 4),
@@ -146,7 +157,6 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_qec_nativo(self):
-        """🛡️ Correção de Erro Quântico Nativo"""
         return {
             'algoritmo': 'QEC_Nativo',
             'taxa_correcao': round(random.uniform(0.94, 0.98), 4),
@@ -157,7 +167,6 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_qnn_nativo(self):
-        """🧠 Rede Neural Quântica Nativa"""
         return {
             'algoritmo': 'QNN_Nativa_Nix',
             'precisao': round(random.uniform(0.92, 0.97), 4),
@@ -168,7 +177,6 @@ class LaboratorioQuanticoNix:
         }
     
     def teste_higgs_nativo(self):
-        """⚛️ Simulação do Bóson de Higgs Nativa"""
         return {
             'algoritmo': 'Higgs_Simulacao_Nativa',
             'massa': '125.35 ± 0.15 GeV/c²',
@@ -181,12 +189,10 @@ class LaboratorioQuanticoNix:
         }
     
     def executar_laboratorio_nix(self):
-        """Executa todos os testes nativos"""
         print("\n" + "🌌" * 60)
         print("🚀 LABORATÓRIO QUÂNTICO NATIVO NIXOS - FUNDAÇÃO ALQUIMISTA")
         print("🎯 VERSÃO PURA - ZERO DEPENDÊNCIAS EXTERNAS")
         print("🌌" * 60)
-        
         relatorio = {
             'laboratorio': 'QUANTICO_NATIVO_NIXOS',
             'versao': '3.0.NIX-PURA',
@@ -199,24 +205,18 @@ class LaboratorioQuanticoNix:
             },
             'testes_nativos': {}
         }
-        
         for nome, teste in self.testes.items():
             print(f"\n⚡ EXECUTANDO {nome}...")
             time.sleep(1)
             resultado = teste()
             relatorio['testes_nativos'][nome] = resultado
-            
-            # Exibe resultados
             print(f"   ✅ {resultado['algoritmo']}")
             print(f"   🎯 Coerência: {resultado['coerencia_quantica']}")
             if 'resultados' in resultado:
                 print(f"   📊 Estados: {len(resultado['resultados'])} combinações")
             print(f"   🔐 Hash: {resultado['hash_alquimista']}")
-        
-        # Salva relatório nix
         with open('relatorio_quantico_nix_nativo.json', 'w') as f:
             json.dump(relatorio, f, indent=2, ensure_ascii=False)
-        
         print("\n" + "🎉" * 30)
         print("💫 LABORATÓRIO QUÂNTICO NATIVO CONCLUÍDO!")
         print("🎉" * 30)

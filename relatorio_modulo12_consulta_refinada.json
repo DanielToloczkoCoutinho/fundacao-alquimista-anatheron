@@ -1,0 +1,82 @@
+{
+    "status": "SUCESSO",
+    "registro": {
+        "timestamp": "2025-10-25T23:18:03.359794",
+        "consulta": "Causas dos valores nulos em AE’ZUHARA e LYRA-VEGA e estratégias de correção",
+        "hash_registro": "6d7477ecefb7aa0c28eaaa6a554701a92976e0fe5b30612cb4d5519725bbf97c",
+        "insights_brutos": [
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "THAREMIS",
+                "frequencia": 131.4,
+                "F_alpha_calculado": "59.2026"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ELARIUN",
+                "frequencia": 88.8,
+                "F_alpha_calculado": "74.4285"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "VANTARIEL",
+                "frequencia": 55.5,
+                "F_alpha_calculado": "43.3167"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ZENNITH",
+                "frequencia": 222.2,
+                "F_alpha_calculado": "167.7119"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ALOMÉTRIA",
+                "frequencia": 333.0,
+                "F_alpha_calculado": "127.8016"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "LYRA-VEGA",
+                "frequencia": 144.0,
+                "F_alpha_calculado": "-0.1000"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ORION",
+                "frequencia": 377.1,
+                "F_alpha_calculado": "-132.3278"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "THERON’KAI",
+                "frequencia": 444.0,
+                "F_alpha_calculado": "-231.2842"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "GAIA’THAR",
+                "frequencia": 72.144,
+                "F_alpha_calculado": "-45.5359"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "ZOR’IMET",
+                "frequencia": 888.0,
+                "F_alpha_calculado": "-495.2039"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "KAR’ZÉMETH",
+                "frequencia": 144000.0,
+                "F_alpha_calculado": "-44141.1125"
+            },
+            {
+                "tipo": "insight_constelacao",
+                "constelacao": "AE’ZUHARA",
+                "frequencia": 999999.0,
+                "F_alpha_calculado": "481.2988"
+            }
+        ]
+    }
+}

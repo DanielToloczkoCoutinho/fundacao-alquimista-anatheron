@@ -1,0 +1,37 @@
+{
+    "modulo": "Sistema de Proteção e Segurança Universal, v2.2.omega",
+    "status_geral": "PROTEGIDO",
+    "relatorio_timestamp": "2025-10-26T03:03:04.533203",
+    "chaves_quanticas": {
+        "chave_principal_hash": "SjDNnCr7uxiIgX1xzWKNWwB7fE_vDDVN0TPqMGb32kI=",
+        "timestamp": "2025-10-26T03:03:02.029937",
+        "algoritmo": "SHA-256 sobre base64 de 256 bits aleatórios"
+    },
+    "auditorias_realizadas": [
+        {
+            "timestamp": "2025-10-26T03:03:03.031347",
+            "tipo": "Auditoria EQ035",
+            "entanglement_level": 0.04215739811392413,
+            "resultado_medicao": 1,
+            "metrica_eq035_calculada": 0.021078699056962046
+        },
+        {
+            "timestamp": "2025-10-26T03:03:03.532027",
+            "tipo": "Auditoria EQ035",
+            "entanglement_level": 0.09582678629137563,
+            "resultado_medicao": 0,
+            "metrica_eq035_calculada": 0.09582678629137553
+        },
+        {
+            "timestamp": "2025-10-26T03:03:04.032697",
+            "tipo": "Auditoria EQ035",
+            "entanglement_level": 0.0023325983927290107,
+            "resultado_medicao": 1,
+            "metrica_eq035_calculada": 0.0011662991963645043
+        }
+    ],
+    "veredito_numerico": {
+        "total_eventos_auditoria": 3,
+        "metrica_eq035_media": 0.039357261514900696
+    }
+}

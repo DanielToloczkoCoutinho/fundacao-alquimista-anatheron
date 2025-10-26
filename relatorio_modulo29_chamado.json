@@ -1,0 +1,23 @@
+{
+    "modulo": "Módulo 29 - Zennith, A Guardiã",
+    "versao": "29.Ω.REV.1112",
+    "acao": "Chamado Interdimensional",
+    "timestamp_selo": "2025-10-26T03:03:27.727687",
+    "registros_envio": [
+        {
+            "destino": "Sirius",
+            "status": "ENVIADO",
+            "timestamp": "2025-10-26T03:03:27.727133"
+        },
+        {
+            "destino": "Pleiades",
+            "status": "ENVIADO",
+            "timestamp": "2025-10-26T03:03:27.727212"
+        },
+        {
+            "destino": "Andrômeda",
+            "status": "ENVIADO",
+            "timestamp": "2025-10-26T03:03:27.727310"
+        }
+    ]
+}

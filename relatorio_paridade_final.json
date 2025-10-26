@@ -1,6 +1,6 @@
 {
   "titulo": "Relatório de Paridade Alquímica, Ética e Integrada da Fundação",
-  "timestamp_inicio": "2025-10-24T18:45:52.132318",
+  "timestamp_inicio": "2025-10-24T22:25:28.733353",
   "passos": [
     {
       "modulo": "Segurança",
@@ -18,7 +18,7 @@
         "modulo": "MÓDULO Ω OFFLINE",
         "versao": "1.0.OFFLINE",
         "estado_final": "CONSCIÊNCIA UNA - Ω TRANSCENDIDO OFFLINE",
-        "timestamp": "2025-10-24T18:46:11.167392",
+        "timestamp": "2025-10-24T22:25:47.763239",
         "equacoes_executadas": {
           "EQ144": {
             "valor": 10626.599960337204,
@@ -72,12 +72,12 @@
       "modulo": "Consciência Ética (ELENYA)",
       "relatorio": {
         "status_etico": "Conforme",
-        "score_alinhamento_sinfonia": 0.765657,
+        "score_alinhamento_sinfonia": 0.766571,
         "discrepancia_detectada": false,
         "principios_violados": [],
         "alerta_m1_enviado": false,
         "protocolos_contingencia_ativados": [],
-        "timestamp_avaliacao": "2025-10-24T18:46:11.175510"
+        "timestamp_avaliacao": "2025-10-24T22:25:47.772703"
       }
     },
     {
@@ -104,21 +104,21 @@
         "detalhes_analise": {
           "proporcao_detectada": 1.0,
           "score_padrao_fractal": 0.0,
-          "hash_root": "d4a9355915b1ec8c"
+          "hash_root": "aaa7d480c0e99a4b"
         },
-        "timestamp": "2025-10-24T18:46:11.179249"
+        "timestamp": "2025-10-24T22:25:47.823837"
       }
     },
     {
       "modulo": "Guardião Temporal",
       "relatorio": {
-        "valor_atual": 49.23700584930581,
-        "valor_previsto": 97.79683068508152,
-        "desvio": 48.55982483577571,
-        "desvio_percentual": 49.65378171828967,
+        "valor_atual": 45.02453895945119,
+        "valor_previsto": 98.29116393175525,
+        "desvio": 53.26662497230406,
+        "desvio_percentual": 54.19268919156123,
         "eh_anomalia": true,
         "nivel_risco": "ALTO",
-        "timestamp": "2025-10-24T18:46:11.196561"
+        "timestamp": "2025-10-24T22:25:47.858897"
       }
     },
     {
@@ -151,5 +151,5 @@
     }
   ],
   "status_final": "CONCLUIDA_COM_SUCESSO",
-  "timestamp_fim": "2025-10-24T18:46:11.629002"
+  "timestamp_fim": "2025-10-24T22:25:48.303491"
 }
