@@ -1,0 +1,29 @@
+{
+  "alvo": "Sinfonia_Cosmica_Principal",
+  "relatorio": {
+    "alvo": "Sinfonia_Cosmica_Principal",
+    "anomalia_temporal": "NÃO_DETECTADA",
+    "paradoxo_causal": "SEM_PARADOXO",
+    "alinhamento_etico": "COMPROMETIDO",
+    "score_resiliencia": 0.9751061894958741,
+    "status_geral": "ÓTIMO",
+    "score_alinhamento_etico": 0.8002123789917481
+  },
+  "limiares": {
+    "RESILIENCE_OPTIMAL_THRESHOLD": 0.8,
+    "RESILIENCE_CRITICAL_THRESHOLD": 0.5,
+    "ETHICAL_ALIGNMENT_THRESHOLD": 0.85
+  },
+  "historico_agg": {
+    "resiliencia": {
+      "min": 0.9751061894958741,
+      "max": 0.9751061894958741,
+      "avg": 0.9751061894958741
+    },
+    "alinhamento": {
+      "min": 0.8002123789917481,
+      "max": 0.8002123789917481,
+      "avg": 0.8002123789917481
+    }
+  }
+}

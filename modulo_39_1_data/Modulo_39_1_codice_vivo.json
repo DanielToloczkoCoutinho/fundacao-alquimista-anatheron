@@ -2,39 +2,87 @@
     "nome": "Módulo 39.1",
     "funcao": "Guardião da Integridade e Resiliência Cósmica",
     "status_operacional": "ATIVO",
-    "data_ativacao": "2025-10-29T16:25:01.473833",
+    "data_ativacao": "2025-10-31T16:49:01.545103",
     "metricas_integridade": {
-        "ultima_verificacao": "2025-10-29T16:25:05.951322",
-        "score_integridade": 1.0,
-        "status_resiliencia": "CRÍTICO"
+        "ultima_verificacao": "2025-10-31T16:49:07.086687",
+        "score_integridade": 0.8959666272636454,
+        "status_resiliencia": "ÓTIMO"
+    },
+    "historico": {
+        "integridade": [
+            {
+                "t": "2025-10-31T16:49:01.547654",
+                "v": 0.7767977103959436
+            },
+            {
+                "t": "2025-10-31T16:49:02.552710",
+                "v": 0.8950601446328621
+            },
+            {
+                "t": "2025-10-31T16:49:06.068911",
+                "v": 0.9950601446328621
+            },
+            {
+                "t": "2025-10-31T16:49:07.079387",
+                "v": 0.8959666272636454
+            }
+        ],
+        "resiliencia": [
+            {
+                "t": "2025-10-31T16:49:03.558264",
+                "v": 0.9751061894958741
+            },
+            {
+                "t": "2025-10-31T16:49:04.564427",
+                "v": 0.175
+            },
+            {
+                "t": "2025-10-31T16:49:07.086681",
+                "v": 0.9277610237038774
+            }
+        ],
+        "alinhamento": [
+            {
+                "t": "2025-10-31T16:49:03.558103",
+                "v": 0.8002123789917481
+            },
+            {
+                "t": "2025-10-31T16:49:04.564218",
+                "v": 0.4
+            },
+            {
+                "t": "2025-10-31T16:49:07.086267",
+                "v": 0.7055220474077547
+            }
+        ]
     },
     "eventos_registrados": [
         {
             "tipo": "Validação_Integridade_Iniciada",
             "alvo": "Modulo_Exemplo_Alfa",
-            "timestamp": "2025-10-29T16:25:01.479038"
+            "timestamp": "2025-10-31T16:49:01.546191"
         },
         {
-            "tipo": "Integridade_Validada",
+            "tipo": "Integridade_Comprometida",
             "alvo": "Modulo_Exemplo_Alfa",
-            "score": 0.9726097408081245,
-            "timestamp": "2025-10-29T16:25:01.479921"
+            "score": 0.7767977103959436,
+            "timestamp": "2025-10-31T16:49:01.547761"
         },
         {
             "tipo": "Validação_Integridade_Iniciada",
             "alvo": "Modulo_Exemplo_Beta",
-            "timestamp": "2025-10-29T16:25:02.488494"
+            "timestamp": "2025-10-31T16:49:02.550259"
         },
         {
             "tipo": "Integridade_Comprometida",
             "alvo": "Modulo_Exemplo_Beta",
-            "score": 0.9658962347816242,
-            "timestamp": "2025-10-29T16:25:02.489904"
+            "score": 0.8950601446328621,
+            "timestamp": "2025-10-31T16:49:02.552811"
         },
         {
             "tipo": "Monitoramento_Resiliencia_Iniciada",
             "alvo": "Sinfonia_Cosmica_Principal",
-            "timestamp": "2025-10-29T16:25:03.498689"
+            "timestamp": "2025-10-31T16:49:03.556308"
         },
         {
             "tipo": "Monitoramento_Resiliencia_Concluido",
@@ -43,23 +91,23 @@
                 "alvo": "Sinfonia_Cosmica_Principal",
                 "anomalia_temporal": "NÃO_DETECTADA",
                 "paradoxo_causal": "SEM_PARADOXO",
-                "alinhamento_etico": "ÓTIMO",
-                "score_resiliencia": 1.0,
+                "alinhamento_etico": "COMPROMETIDO",
+                "score_resiliencia": 0.9751061894958741,
                 "status_geral": "ÓTIMO",
-                "score_alinhamento_etico": 0.9900119359769883
+                "score_alinhamento_etico": 0.8002123789917481
             },
-            "timestamp": "2025-10-29T16:25:03.499953"
+            "timestamp": "2025-10-31T16:49:03.558273"
         },
         {
             "tipo": "Monitoramento_Resiliencia_Iniciada",
             "alvo": "Nexus_Central_Critico",
-            "timestamp": "2025-10-29T16:25:04.506442"
+            "timestamp": "2025-10-31T16:49:04.562495"
         },
         {
             "tipo": "Restauracao_Integridade_Iniciada",
             "alvo": "Nexus_Central_Critico",
             "tipo_restauracao": "Emergencial",
-            "timestamp": "2025-10-29T16:25:04.512736"
+            "timestamp": "2025-10-31T16:49:04.564553"
         },
         {
             "tipo": "Protocolo_Cura_Iniciado",
@@ -68,13 +116,13 @@
                 "status": "CURA_INICIADA",
                 "detalhes": "Processo de reajuste vibracional iniciado (simulado)."
             },
-            "timestamp": "2025-10-29T16:25:04.517791"
+            "timestamp": "2025-10-31T16:49:04.565709"
         },
         {
             "tipo": "Restauracao_Concluida",
             "alvo": "Nexus_Central_Critico",
-            "novo_score_integridade": 1.0,
-            "timestamp": "2025-10-29T16:25:05.949553"
+            "novo_score_integridade": 0.9950601446328621,
+            "timestamp": "2025-10-31T16:49:06.068940"
         },
         {
             "tipo": "Monitoramento_Resiliencia_Concluido",
@@ -92,8 +140,46 @@
                 "mensagem_paradoxo": "Paradoxo causal forçado.",
                 "score_alinhamento_etico": 0.4
             },
-            "timestamp": "2025-10-29T16:25:05.951333"
+            "timestamp": "2025-10-31T16:49:06.072367"
+        },
+        {
+            "tipo": "Pre_Validacao_Portal",
+            "portal_id": "PORTAL_ALPHA_7",
+            "dimensao": "Dimensao_Harmonia_007",
+            "freq": 777.7,
+            "intencao": "Abertura para Troca Consciente",
+            "timestamp": "2025-10-31T16:49:07.074675"
+        },
+        {
+            "tipo": "Validação_Integridade_Iniciada",
+            "alvo": "Portal_PORTAL_ALPHA_7",
+            "timestamp": "2025-10-31T16:49:07.076747"
+        },
+        {
+            "tipo": "Integridade_Comprometida",
+            "alvo": "Portal_PORTAL_ALPHA_7",
+            "score": 0.8959666272636454,
+            "timestamp": "2025-10-31T16:49:07.079513"
+        },
+        {
+            "tipo": "Monitoramento_Resiliencia_Iniciada",
+            "alvo": "PORTAL_ALPHA_7",
+            "timestamp": "2025-10-31T16:49:07.083664"
+        },
+        {
+            "tipo": "Monitoramento_Resiliencia_Concluido",
+            "alvo": "PORTAL_ALPHA_7",
+            "relatorio": {
+                "alvo": "PORTAL_ALPHA_7",
+                "anomalia_temporal": "NÃO_DETECTADA",
+                "paradoxo_causal": "SEM_PARADOXO",
+                "alinhamento_etico": "COMPROMETIDO",
+                "score_resiliencia": 0.9277610237038774,
+                "status_geral": "ÓTIMO",
+                "score_alinhamento_etico": 0.7055220474077547
+            },
+            "timestamp": "2025-10-31T16:49:07.086690"
         }
     ],
-    "hash_assinatura": "d7b680ef36a741b9827e2695af5b58c4321fff484f9593bf81fc829a250db5e3"
+    "hash_assinatura": "db283a0cf5dc8deaa372bd557b876e4ec09b9792cb906f463621dd44754aa089"
 }

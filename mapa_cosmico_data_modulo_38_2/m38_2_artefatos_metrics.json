@@ -1,0 +1,308 @@
+{
+  "Voyager1": [
+    {
+      "timestamp": "2025-10-31T14:24:15.561082",
+      "freq_media": 432.0,
+      "coerencia": 7453330.192204,
+      "EEQ_energy": 0.022765634246976484,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.614374",
+      "freq_media": 432.0,
+      "coerencia": 293832338.423634,
+      "EEQ_energy": 1.293049376141023,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.676431",
+      "freq_media": 432.0,
+      "coerencia": 613706105.389833,
+      "EEQ_energy": 0.40162646373180255,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.751959",
+      "freq_media": 432.0,
+      "coerencia": 348250727.697279,
+      "EEQ_energy": 0.7061676251273509,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    }
+  ],
+  "VLT": [
+    {
+      "timestamp": "2025-10-31T14:24:15.563770",
+      "freq_media": 586.5,
+      "coerencia": 226246810.183476,
+      "EEQ_energy": 0.7055386201937096,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.618100",
+      "freq_media": 586.5,
+      "coerencia": 616307488.636115,
+      "EEQ_energy": 0.20958622283032857,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.680623",
+      "freq_media": 586.5,
+      "coerencia": 543123534.396204,
+      "EEQ_energy": 0.7357126396091553,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.757091",
+      "freq_media": 586.5,
+      "coerencia": 314757922.608185,
+      "EEQ_energy": 1.2204427843931933,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    }
+  ],
+  "Hubble": [
+    {
+      "timestamp": "2025-10-31T14:24:15.566877",
+      "freq_media": 480.0,
+      "coerencia": 266245203.659018,
+      "EEQ_energy": 0.2983527488551899,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.620986",
+      "freq_media": 480.0,
+      "coerencia": 442329287.912229,
+      "EEQ_energy": 0.5736905928412919,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.684911",
+      "freq_media": 480.0,
+      "coerencia": 192875080.152211,
+      "EEQ_energy": 0.5197397662492266,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.762104",
+      "freq_media": 480.0,
+      "coerencia": 141645370.835586,
+      "EEQ_energy": 0.8276571584879954,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    }
+  ],
+  "JWST": [
+    {
+      "timestamp": "2025-10-31T14:24:15.569516",
+      "freq_media": 432.0,
+      "coerencia": 294103448.733299,
+      "EEQ_energy": 0.6441596443152372,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.624559",
+      "freq_media": 432.0,
+      "coerencia": 534257090.467966,
+      "EEQ_energy": 0.6459844398345874,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.688729",
+      "freq_media": 432.0,
+      "coerencia": 263325862.22517,
+      "EEQ_energy": 0.8778047410489362,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.767113",
+      "freq_media": 432.0,
+      "coerencia": 160749353.383516,
+      "EEQ_energy": 0.9707263370428774,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    }
+  ],
+  "Voyager2": [
+    {
+      "timestamp": "2025-10-31T14:24:15.573478",
+      "freq_media": 432.0,
+      "coerencia": 590797276.752489,
+      "EEQ_energy": 0.26698373174370793,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.627677",
+      "freq_media": 432.0,
+      "coerencia": 597533088.664387,
+      "EEQ_energy": 0.2660123369605936,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.692734",
+      "freq_media": 432.0,
+      "coerencia": 392721625.616776,
+      "EEQ_energy": 0.09423218259192681,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.772816",
+      "freq_media": 432.0,
+      "coerencia": 115846226.14073,
+      "EEQ_energy": 0.519948763415699,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    }
+  ],
+  "Keck": [
+    {
+      "timestamp": "2025-10-31T14:24:15.575928",
+      "freq_media": 480.0,
+      "coerencia": 60207618.339989,
+      "EEQ_energy": 0.9422473718250762,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.631457",
+      "freq_media": 480.0,
+      "coerencia": 74642158.317122,
+      "EEQ_energy": 1.1397818766449765,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.696489",
+      "freq_media": 480.0,
+      "coerencia": 159941845.305889,
+      "EEQ_energy": 0.3430419880053479,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.779142",
+      "freq_media": 480.0,
+      "coerencia": 139941176.641266,
+      "EEQ_energy": 0.920127650564184,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    }
+  ],
+  "Cassini": [
+    {
+      "timestamp": "2025-10-31T14:24:15.578806",
+      "freq_media": 480.0,
+      "coerencia": 203629916.382435,
+      "EEQ_energy": 0.9188112991290094,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.634368",
+      "freq_media": 480.0,
+      "coerencia": 571473998.362513,
+      "EEQ_energy": 0.6789762980225638,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.702030",
+      "freq_media": 480.0,
+      "coerencia": 550136278.720735,
+      "EEQ_energy": 0.5929660695183769,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.785149",
+      "freq_media": 480.0,
+      "coerencia": 638030526.868987,
+      "EEQ_energy": 0.5689249140801362,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    }
+  ],
+  "NewHorizons": [
+    {
+      "timestamp": "2025-10-31T14:24:15.581868",
+      "freq_media": 586.5,
+      "coerencia": 426332097.804995,
+      "EEQ_energy": 0.07891551064010152,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.637923",
+      "freq_media": 586.5,
+      "coerencia": 531938552.027313,
+      "EEQ_energy": 0.48786529612427926,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.706691",
+      "freq_media": 586.5,
+      "coerencia": 440815883.182975,
+      "EEQ_energy": 0.03495063871470987,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.792861",
+      "freq_media": 586.5,
+      "coerencia": 540860784.80003,
+      "EEQ_energy": 0.3004120004807623,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    }
+  ],
+  "ALMA": [
+    {
+      "timestamp": "2025-10-31T14:24:15.584353",
+      "freq_media": 586.5,
+      "coerencia": 581744733.624462,
+      "EEQ_energy": 0.638937764935204,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.642217",
+      "freq_media": 586.5,
+      "coerencia": 499827438.322114,
+      "EEQ_energy": 0.6579945379556705,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.711047",
+      "freq_media": 586.5,
+      "coerencia": 60042741.752584,
+      "EEQ_energy": 0.5780548684329505,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    {
+      "timestamp": "2025-10-31T14:24:15.807339",
+      "freq_media": 586.5,
+      "coerencia": 330789461.674355,
+      "EEQ_energy": 0.7994619615165032,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    }
+  ]
+}

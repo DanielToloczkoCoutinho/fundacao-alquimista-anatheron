@@ -1,0 +1,7 @@
+{
+  "status": "OK",
+  "versao": "38.2",
+  "timestamp": "2025-10-31T16:04:33.873487+00:00",
+  "bridge": "M39↔M38.2",
+  "note": "Handshake offline-safe para trace do M38.2"
+}

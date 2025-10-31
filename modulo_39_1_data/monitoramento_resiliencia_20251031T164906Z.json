@@ -1,0 +1,33 @@
+{
+  "alvo": "Nexus_Central_Critico",
+  "relatorio": {
+    "alvo": "Nexus_Central_Critico",
+    "anomalia_temporal": "DETECTADA",
+    "paradoxo_causal": "DETECTADO",
+    "alinhamento_etico": "COMPROMETIDO",
+    "score_resiliencia": 0.175,
+    "status_geral": "CRÍTICO",
+    "severidade_anomalia": 0.8,
+    "mensagem_anomalia": "Anomalia temporal forçada.",
+    "severidade_paradoxo": 0.9,
+    "mensagem_paradoxo": "Paradoxo causal forçado.",
+    "score_alinhamento_etico": 0.4
+  },
+  "limiares": {
+    "RESILIENCE_OPTIMAL_THRESHOLD": 0.8,
+    "RESILIENCE_CRITICAL_THRESHOLD": 0.5,
+    "ETHICAL_ALIGNMENT_THRESHOLD": 0.85
+  },
+  "historico_agg": {
+    "resiliencia": {
+      "min": 0.175,
+      "max": 0.9751061894958741,
+      "avg": 0.5750530947479371
+    },
+    "alinhamento": {
+      "min": 0.4,
+      "max": 0.8002123789917481,
+      "avg": 0.6001061894958741
+    }
+  }
+}

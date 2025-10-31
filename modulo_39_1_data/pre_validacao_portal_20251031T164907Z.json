@@ -1,0 +1,32 @@
+{
+  "portal_id": "PORTAL_ALPHA_7",
+  "dimensao_alvo": "Dimensao_Harmonia_007",
+  "frequencia_ativacao": 777.7,
+  "intencao": {
+    "descricao": "Abertura para Troca Consciente",
+    "pureza": 0.92
+  },
+  "integridade": {
+    "status": "FALHA_INTEGRIDADE",
+    "mensagem": "Integridade do 'Portal_PORTAL_ALPHA_7' comprometida: Score 0.90.",
+    "score": 0.8959666272636454
+  },
+  "resiliencia": {
+    "status": "SUCESSO",
+    "relatorio": {
+      "alvo": "PORTAL_ALPHA_7",
+      "anomalia_temporal": "NÃO_DETECTADA",
+      "paradoxo_causal": "SEM_PARADOXO",
+      "alinhamento_etico": "COMPROMETIDO",
+      "score_resiliencia": 0.9277610237038774,
+      "status_geral": "ÓTIMO",
+      "score_alinhamento_etico": 0.7055220474077547
+    }
+  },
+  "etica": {
+    "pureza": 0.92,
+    "threshold": 0.85,
+    "ok": true
+  },
+  "veredito": false
+}

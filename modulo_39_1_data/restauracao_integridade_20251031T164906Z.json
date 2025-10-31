@@ -1,0 +1,10 @@
+{
+  "alvo": "Nexus_Central_Critico",
+  "resultado": "SUCESSO",
+  "score_integridade_pos_restauracao": 0.9950601446328621,
+  "historico_agg": {
+    "min": 0.7767977103959436,
+    "max": 0.9950601446328621,
+    "avg": 0.8889726665538893
+  }
+}
