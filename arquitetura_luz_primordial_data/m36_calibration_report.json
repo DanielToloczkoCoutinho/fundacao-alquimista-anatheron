@@ -1,0 +1,49 @@
+{
+  "por_dominio": {
+    "Criação de um Campo de Abundância Universal": {
+      "total": 8,
+      "sucesso": 4,
+      "hold_refino": 3,
+      "falha": 1,
+      "taxa_sucesso": 0.5,
+      "ressonancia_media_sucesso": 0.814
+    },
+    "Elevação Vibracional Planetária": {
+      "total": 8,
+      "sucesso": 4,
+      "hold_refino": 2,
+      "falha": 2,
+      "taxa_sucesso": 0.5,
+      "ressonancia_media_sucesso": 0.792
+    },
+    "Proteção Cósmica": {
+      "total": 8,
+      "sucesso": 4,
+      "hold_refino": 4,
+      "falha": 0,
+      "taxa_sucesso": 0.5,
+      "ressonancia_media_sucesso": 0.795
+    },
+    "Ascensão Consciente da Humanidade": {
+      "total": 8,
+      "sucesso": 3,
+      "hold_refino": 4,
+      "falha": 1,
+      "taxa_sucesso": 0.375,
+      "ressonancia_media_sucesso": 0.793
+    },
+    "Domínio sobre Outras Realidades": {
+      "total": 8,
+      "sucesso": 4,
+      "hold_refino": 4,
+      "falha": 0,
+      "taxa_sucesso": 0.5,
+      "ressonancia_media_sucesso": 0.798
+    }
+  },
+  "geral": {
+    "total": 40,
+    "sucesso": 19,
+    "taxa_sucesso": 0.475
+  }
+}

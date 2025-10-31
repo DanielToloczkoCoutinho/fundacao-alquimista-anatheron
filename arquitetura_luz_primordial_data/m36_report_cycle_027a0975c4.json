@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-30T23:53:57.664794+00:00",
+  "intencao": "Criação de um Campo de Abundância Universal",
+  "status": "SUCESSO",
+  "resultado": {
+    "status": "SUCESSO",
+    "mensagem": "Matéria manifestada com sucesso.",
+    "material_id": "MAT_4dabc8de",
+    "ressonancia": 0.8115297645537218,
+    "unificacao": 0.6625674005779528,
+    "modelo_integrado": 0.47214615386901515,
+    "selo_struct": "d9f2e44639f48069"
+  }
+}

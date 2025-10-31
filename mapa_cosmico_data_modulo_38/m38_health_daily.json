@@ -1,0 +1,11 @@
+{
+  "date": "2025-10-31",
+  "health": {
+    "coerencia_media": 0.873,
+    "taxa_ouro_prata": 1.0,
+    "dissociacoes": 0,
+    "ledger_valid": true,
+    "timestamp": "2025-10-31T01:10:08.577433+00:00"
+  },
+  "blocks": 15
+}

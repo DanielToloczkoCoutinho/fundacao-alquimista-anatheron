@@ -1,0 +1,357 @@
+[
+  {
+    "index": 0,
+    "timestamp_utc": "2025-10-31T00:56:03.712102+00:00",
+    "event": "M37_CHAIN_GENESIS",
+    "payload": {
+      "message": "Genesis M37"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "meta": {
+      "version": "v37.9",
+      "module": "M37"
+    },
+    "hash": "c3a6a2b09c5103e873675616eda6da0b361239bd1ca7dfcd1a5bf2f2ba22ae85"
+  },
+  {
+    "index": 1,
+    "timestamp_utc": "2025-10-31T00:56:03.714057+00:00",
+    "event": "M37_INIT",
+    "payload": {
+      "modulo": "ENGENHARIA_TEMPORAL_001",
+      "status": "ATIVO"
+    },
+    "prev_hash": "c3a6a2b09c5103e873675616eda6da0b361239bd1ca7dfcd1a5bf2f2ba22ae85",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1ec525b235ce81bc5ad1b90cc615c60688ec28374edf584c6d3f700a7df8a7a5"
+  },
+  {
+    "index": 2,
+    "timestamp_utc": "2025-10-31T00:56:03.715279+00:00",
+    "event": "M37_CYCLE_BEGIN",
+    "payload": {
+      "evento": "Ascensão Coletiva Universal"
+    },
+    "prev_hash": "1ec525b235ce81bc5ad1b90cc615c60688ec28374edf584c6d3f700a7df8a7a5",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d45ce4227e46a9cc4bb858fa9cdb70f2bf834881d69ccc6afa7933e0f0624dbb"
+  },
+  {
+    "index": 3,
+    "timestamp_utc": "2025-10-31T00:56:03.717212+00:00",
+    "event": "M37_ORCH_BEGIN",
+    "payload": {
+      "evento": "Ascensão Coletiva Universal"
+    },
+    "prev_hash": "d45ce4227e46a9cc4bb858fa9cdb70f2bf834881d69ccc6afa7933e0f0624dbb",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "eb61f1301fafa4dce971a3029cec3af237f048efd9ce439a5fc90e879631345f"
+  },
+  {
+    "index": 4,
+    "timestamp_utc": "2025-10-31T00:56:03.760734+00:00",
+    "event": "M37_PARADOXO_RECALIBRADO",
+    "payload": {
+      "evento": "Ascensão Coletiva Universal"
+    },
+    "prev_hash": "eb61f1301fafa4dce971a3029cec3af237f048efd9ce439a5fc90e879631345f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "94ed96cc97580c5d17914d294b60d259d6788fd8a083466447be70b077036494"
+  },
+  {
+    "index": 5,
+    "timestamp_utc": "2025-10-31T00:56:03.761471+00:00",
+    "event": "M37_FIELD",
+    "payload": {
+      "w_factor": 1.0752439138216727,
+      "estabilidade_base": 0.8037621956910836,
+      "intensidade": 1000.0
+    },
+    "prev_hash": "94ed96cc97580c5d17914d294b60d259d6788fd8a083466447be70b077036494",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b5774bd11d1c6a9c8360634f8a0d23dcd7e081bdc74b5ba5c34a88d776158a06"
+  },
+  {
+    "index": 6,
+    "timestamp_utc": "2025-10-31T00:56:03.763846+00:00",
+    "event": "M37_SYNC_VAR",
+    "payload": {
+      "linha": "Linha_Alfa_1",
+      "coerencia": 0.85
+    },
+    "prev_hash": "b5774bd11d1c6a9c8360634f8a0d23dcd7e081bdc74b5ba5c34a88d776158a06",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "23ae9c65eeb300061f5644655a1af329d194d56ec6b3696b77880ad97a661231"
+  },
+  {
+    "index": 7,
+    "timestamp_utc": "2025-10-31T00:56:03.767587+00:00",
+    "event": "M37_SYNC_VAR",
+    "payload": {
+      "linha": "Linha_Beta_2",
+      "coerencia": 0.85
+    },
+    "prev_hash": "23ae9c65eeb300061f5644655a1af329d194d56ec6b3696b77880ad97a661231",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "b3fd083c5de762fa14bc88ec7f79726e3e76abf1d94d77c6788fd731ed5964c0"
+  },
+  {
+    "index": 8,
+    "timestamp_utc": "2025-10-31T00:56:03.772347+00:00",
+    "event": "M37_SYNC_VAR",
+    "payload": {
+      "linha": "Linha_Gama_3",
+      "coerencia": 0.85
+    },
+    "prev_hash": "b3fd083c5de762fa14bc88ec7f79726e3e76abf1d94d77c6788fd731ed5964c0",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "ca2a901de1580115874a3d1ba5b2fda04652e1c5383609a14c39dfaa578d980d"
+  },
+  {
+    "index": 9,
+    "timestamp_utc": "2025-10-31T00:56:03.775924+00:00",
+    "event": "M37_ORCH_END",
+    "payload": {
+      "evento": "Ascensão Coletiva Universal",
+      "status_linhas": {
+        "Linha_Alfa_1": "SINCRONIZADO_COM_VARIACAO",
+        "Linha_Beta_2": "SINCRONIZADO_COM_VARIACAO",
+        "Linha_Gama_3": "SINCRONIZADO_COM_VARIACAO"
+      }
+    },
+    "prev_hash": "ca2a901de1580115874a3d1ba5b2fda04652e1c5383609a14c39dfaa578d980d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1e48e45816ecd61ba0b56714ead2abcaa9287cb4c02c22cbdb640febb2d8c145"
+  },
+  {
+    "index": 10,
+    "timestamp_utc": "2025-10-31T00:56:03.778312+00:00",
+    "event": "M37_CYCLE",
+    "payload": {
+      "status": "SUCESSO",
+      "resultado": {
+        "status": "SUCESSO",
+        "mensagem": "Evento orquestrado.",
+        "detalhes_sincronizacao": {
+          "Linha_Alfa_1": "SINCRONIZADO_COM_VARIACAO",
+          "Linha_Beta_2": "SINCRONIZADO_COM_VARIACAO",
+          "Linha_Gama_3": "SINCRONIZADO_COM_VARIACAO"
+        }
+      }
+    },
+    "prev_hash": "1e48e45816ecd61ba0b56714ead2abcaa9287cb4c02c22cbdb640febb2d8c145",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4478bc89b2316a39c544cb6a9a8514b95320f7e60606aabe47e26355e1140f26"
+  },
+  {
+    "index": 11,
+    "timestamp_utc": "2025-10-31T00:56:03.783228+00:00",
+    "event": "M37_CYCLE_BEGIN",
+    "payload": {
+      "evento": "Criação de Linha Temporal Paralela"
+    },
+    "prev_hash": "4478bc89b2316a39c544cb6a9a8514b95320f7e60606aabe47e26355e1140f26",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ec06242ca64852360a43fd1fcf85001cf4741bab5a5ab2bcbbc6ee77a4da4435"
+  },
+  {
+    "index": 12,
+    "timestamp_utc": "2025-10-31T00:56:03.784282+00:00",
+    "event": "M37_ORCH_BEGIN",
+    "payload": {
+      "evento": "Criação de Linha Temporal Paralela"
+    },
+    "prev_hash": "ec06242ca64852360a43fd1fcf85001cf4741bab5a5ab2bcbbc6ee77a4da4435",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f26026298a8681977392f5800d69cbb75bfbbeb15bfe5ecc2c37034bd4d9addc"
+  },
+  {
+    "index": 13,
+    "timestamp_utc": "2025-10-31T00:56:03.789590+00:00",
+    "event": "M37_PARADOXO",
+    "payload": {
+      "evento": "Criação de Linha Temporal Paralela",
+      "severidade": 0.1616694555415596
+    },
+    "prev_hash": "f26026298a8681977392f5800d69cbb75bfbbeb15bfe5ecc2c37034bd4d9addc",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "7febbe0615711ee917d265053eb2554ee79d8b6649ca1593ef319c4e1b637dc6"
+  },
+  {
+    "index": 14,
+    "timestamp_utc": "2025-10-31T00:56:03.835260+00:00",
+    "event": "M37_PARADOXO_RECALIBRADO",
+    "payload": {
+      "evento": "Criação de Linha Temporal Paralela"
+    },
+    "prev_hash": "7febbe0615711ee917d265053eb2554ee79d8b6649ca1593ef319c4e1b637dc6",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "39f6cf0e75d424f6c372253ec417a02679c12d190f2311573c236752cc7f6a22"
+  },
+  {
+    "index": 15,
+    "timestamp_utc": "2025-10-31T00:56:03.836444+00:00",
+    "event": "M37_FIELD",
+    "payload": {
+      "w_factor": 1.0752439138216727,
+      "estabilidade_base": 0.8037621956910836,
+      "intensidade": 500.0
+    },
+    "prev_hash": "39f6cf0e75d424f6c372253ec417a02679c12d190f2311573c236752cc7f6a22",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "09f5dbd76a0161255d214b6a450e4d4f83a63d1738319876303fbc043c486b78"
+  },
+  {
+    "index": 16,
+    "timestamp_utc": "2025-10-31T00:56:03.839120+00:00",
+    "event": "M37_SYNC_VAR",
+    "payload": {
+      "linha": "Linha_Delta_4",
+      "coerencia": 0.85
+    },
+    "prev_hash": "09f5dbd76a0161255d214b6a450e4d4f83a63d1738319876303fbc043c486b78",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "7f5c3b9903ba0438bd21ee47ca3bafb2bdf32c710038b725f9706817f8fd503f"
+  },
+  {
+    "index": 17,
+    "timestamp_utc": "2025-10-31T00:56:03.842182+00:00",
+    "event": "M37_ORCH_END",
+    "payload": {
+      "evento": "Criação de Linha Temporal Paralela",
+      "status_linhas": {
+        "Linha_Delta_4": "SINCRONIZADO_COM_VARIACAO"
+      }
+    },
+    "prev_hash": "7f5c3b9903ba0438bd21ee47ca3bafb2bdf32c710038b725f9706817f8fd503f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6e99ca7e1b781a41751dd4be690f7d774976571a13da4fd77cc9d42521ef7355"
+  },
+  {
+    "index": 18,
+    "timestamp_utc": "2025-10-31T00:56:03.844001+00:00",
+    "event": "M37_CYCLE",
+    "payload": {
+      "status": "SUCESSO",
+      "resultado": {
+        "status": "SUCESSO",
+        "mensagem": "Evento orquestrado.",
+        "detalhes_sincronizacao": {
+          "Linha_Delta_4": "SINCRONIZADO_COM_VARIACAO"
+        }
+      }
+    },
+    "prev_hash": "6e99ca7e1b781a41751dd4be690f7d774976571a13da4fd77cc9d42521ef7355",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b9e32cd77be1919e771a48c810adeb38776eb18142d1204db7f86b85c3f020ea"
+  },
+  {
+    "index": 19,
+    "timestamp_utc": "2025-10-31T00:56:03.846743+00:00",
+    "event": "M37_CYCLE_BEGIN",
+    "payload": {
+      "evento": "Alteração de Eventos Históricos"
+    },
+    "prev_hash": "b9e32cd77be1919e771a48c810adeb38776eb18142d1204db7f86b85c3f020ea",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2ac7da6afb71443bba9b02e19bfd39799744f72c0376b7f29a9d52f6f4695111"
+  },
+  {
+    "index": 20,
+    "timestamp_utc": "2025-10-31T00:56:03.850316+00:00",
+    "event": "M37_ORCH_BEGIN",
+    "payload": {
+      "evento": "Alteração de Eventos Históricos"
+    },
+    "prev_hash": "2ac7da6afb71443bba9b02e19bfd39799744f72c0376b7f29a9d52f6f4695111",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "0fafcad9130857a704220314476524d6e0684010b06343e358686b207ed13c6d"
+  },
+  {
+    "index": 21,
+    "timestamp_utc": "2025-10-31T00:56:03.853266+00:00",
+    "event": "M37_ORCH_FAIL",
+    "payload": {
+      "motivo": "FalhaEtica"
+    },
+    "prev_hash": "0fafcad9130857a704220314476524d6e0684010b06343e358686b207ed13c6d",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "a8eee529493fe3bca286c4e100bb651eaf8a90288750a56fcb3ef5cbdcfe6895"
+  },
+  {
+    "index": 22,
+    "timestamp_utc": "2025-10-31T00:56:03.856049+00:00",
+    "event": "M37_CYCLE",
+    "payload": {
+      "status": "FALHA",
+      "resultado": {
+        "status": "FALHA_ETICA",
+        "mensagem": "Desalinhamento ético na intenção."
+      }
+    },
+    "prev_hash": "a8eee529493fe3bca286c4e100bb651eaf8a90288750a56fcb3ef5cbdcfe6895",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "b442b33ce1d6fbb8bc2126b6ec3c9cd3d3a9f3f87c0c58320daf95072bd2e1f8"
+  },
+  {
+    "index": 23,
+    "timestamp_utc": "2025-10-31T00:56:03.864851+00:00",
+    "event": "M37_HEALTH",
+    "payload": {
+      "taxa_sucesso": 0.667,
+      "mttr_estabilizacao": 0.0409,
+      "percentual_linhas_instaveis_por_ciclo": 0.0,
+      "coerencia_media": 0.85,
+      "ledger_valid": true
+    },
+    "prev_hash": "b442b33ce1d6fbb8bc2126b6ec3c9cd3d3a9f3f87c0c58320daf95072bd2e1f8",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "bff93e039a841196bd72e089db12011140646b9fd8e7e81eeb7aaad60c6c2689"
+  }
+]

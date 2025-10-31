@@ -1,0 +1,22 @@
+{
+  "sequencia_execucao": [
+    {
+      "modulo": "M3_Temporal",
+      "funcao": "aplicar_equacao_externa",
+      "parametros": {
+        "eq_id": "EQ008_F",
+        "frequencia": 741000,
+        "parametros": {
+          "tipo": "defesa"
+        }
+      }
+    },
+    {
+      "modulo": "M5_Consciencia",
+      "funcao": "transmitir_para_malha",
+      "parametros": {
+        "mensagem": "ESCUDO ETERNO ATIVADO"
+      }
+    }
+  ]
+}

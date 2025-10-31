@@ -1,0 +1,40 @@
+{
+    "biossintese": {
+        "ecossistema": "Oasis_Estelar_Alpha",
+        "vitalidade_inicial": 1.5048871943215745,
+        "frequencia": 2.375575847462255,
+        "diretriz": "Diretriz: A criação de vida é um ato sagrado. Cuide com Amor Incondicional e harmonia universal."
+    },
+    "regulacao_ciclos": {
+        "ecossistema": "Oasis_Estelar_Alpha",
+        "vitalidade_atualizada": 1.4173274389180406,
+        "status": "CICLOS_ESTABILIZADOS"
+    },
+    "detecao_colapso": {
+        "ecossistema": "Oasis_Estelar_Alpha",
+        "risco_colapso": 0.7659189107668508,
+        "status_detecao": "NENHUM_COLAPSO_IMINENTE"
+    },
+    "harmonizacao_constelacoes": {
+        "status": "FALHA_NA_HARMONIZACAO_GERAL",
+        "taxa_sucesso": 0.6666666666666666,
+        "constelacoes_processadas": 3,
+        "resultados_detalhados": [
+            {
+                "constelacao": "Orion",
+                "status": "FALHA_NA_HARMONIZACAO"
+            },
+            {
+                "constelacao": "Draco",
+                "status": "HARMONIZADA",
+                "frequencia_aplicada": 528.0
+            },
+            {
+                "constelacao": "Lyra_Antiga",
+                "status": "HARMONIZADA",
+                "frequencia_aplicada": 528.0
+            }
+        ]
+    },
+    "timestamp_conclusao": "2025-10-31T02:40:16.736247"
+}

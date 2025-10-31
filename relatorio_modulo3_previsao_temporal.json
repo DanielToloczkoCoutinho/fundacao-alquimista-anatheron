@@ -2,59 +2,59 @@
     "modulo": "Módulo 3 - Previsão Temporal Puro",
     "versao": "3.1.Validado",
     "status_validacao": "SUCESSO",
-    "timestamp_veredito": "2025-10-26T03:03:07.947688",
+    "timestamp_veredito": "2025-10-26T20:13:45.848818",
     "conteudo_registrado_db": {
         "previsoes": [
             {
-                "timestamp": "2025-10-26T03:03:07.045922",
-                "valor_previsto": 97.34207050240497,
-                "hash": "7b35b173f5b14955"
+                "timestamp": "2025-10-26T20:13:44.955450",
+                "valor_previsto": 98.02742591585309,
+                "hash": "0fbe32fa87f32dfa"
             },
             {
-                "timestamp": "2025-10-26T03:03:07.157992",
-                "valor_previsto": 97.79029505237678,
-                "hash": "4fbc7a87b6c6eda7"
+                "timestamp": "2025-10-26T20:13:45.067513",
+                "valor_previsto": 98.48149767666233,
+                "hash": "28209680e587053b"
             },
             {
-                "timestamp": "2025-10-26T03:03:07.272804",
-                "valor_previsto": 98.23851960234859,
-                "hash": "72c5cae965fb1a66"
+                "timestamp": "2025-10-26T20:13:45.180624",
+                "valor_previsto": 98.93556943747157,
+                "hash": "2427dc888933b921"
             },
             {
-                "timestamp": "2025-10-26T03:03:07.384834",
-                "valor_previsto": 98.68674415232041,
-                "hash": "b2f89c975862d40c"
+                "timestamp": "2025-10-26T20:13:45.291889",
+                "valor_previsto": 99.38964119828083,
+                "hash": "78d6315eb393d816"
             }
         ],
         "anomalias": [
             {
-                "timestamp": "2025-10-26T03:03:07.499345",
+                "timestamp": "2025-10-26T20:13:45.403273",
                 "nivel_risco": "ALTO",
-                "desvio": 60.48700613191115,
-                "hash": "e640c1a3da4a6645"
+                "desvio": 61.195750388708994,
+                "hash": "dd7bc021561ba950"
             }
         ],
         "saturno_monitor": [
             {
-                "timestamp": "2025-10-26T03:03:07.609978",
-                "ressonancia": 38.54296936474659,
-                "estado_aneis": "INSTÁVEL",
-                "acao": "REFORÇAR_ESCUDOS_NORTAIS",
-                "hash": "52efd092eb0d2752"
-            },
-            {
-                "timestamp": "2025-10-26T03:03:07.721045",
-                "ressonancia": 40.71818727785422,
+                "timestamp": "2025-10-26T20:13:45.513975",
+                "ressonancia": 41.354671888336405,
                 "estado_aneis": "ESTÁVEL",
                 "acao": "MANTER_PATRULHA_HARMÔNICA",
-                "hash": "b6352fa2e96c4cf1"
+                "hash": "bdbf9df9713d66be"
             },
             {
-                "timestamp": "2025-10-26T03:03:07.836377",
-                "ressonancia": 45.18469197491628,
+                "timestamp": "2025-10-26T20:13:45.625677",
+                "ressonancia": 39.83338686883744,
+                "estado_aneis": "INSTÁVEL",
+                "acao": "REFORÇAR_ESCUDOS_NORTAIS",
+                "hash": "eab17bcefc350674"
+            },
+            {
+                "timestamp": "2025-10-26T20:13:45.735755",
+                "ressonancia": 45.40051398877271,
                 "estado_aneis": "VIBRANTE",
                 "acao": "REFORÇAR_ESCUDOS_SULAIS",
-                "hash": "b6da6acfbbcb04e2"
+                "hash": "7963ce14011ecba4"
             }
         ]
     }

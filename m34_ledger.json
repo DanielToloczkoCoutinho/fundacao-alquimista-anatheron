@@ -1,0 +1,463 @@
+[
+  {
+    "index": 0,
+    "timestamp_utc": "2025-10-31T02:54:24.069029+00:00",
+    "event": "M34_CHAIN_GENESIS",
+    "payload": {
+      "message": "Genesis M34"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "meta": {
+      "version": "definitivo",
+      "module": "M34"
+    },
+    "hash": "1d6b1326720979ebbac87fc905bb71653749b374f4e3e4c3845a9b73a97c9e5a"
+  },
+  {
+    "index": 1,
+    "timestamp_utc": "2025-10-31T02:54:24.070152+00:00",
+    "event": "M34_INIT",
+    "payload": {
+      "modulo": "CORACAO_PULSANTE_DEF",
+      "status": "ATIVO"
+    },
+    "prev_hash": "1d6b1326720979ebbac87fc905bb71653749b374f4e3e4c3845a9b73a97c9e5a",
+    "meta": {
+      "version": "definitivo",
+      "component": "init"
+    },
+    "hash": "68520af466b2fa17940009d08d9cd833b710bca0b41e2126d0780f69ccc087c3"
+  },
+  {
+    "index": 2,
+    "timestamp_utc": "2025-10-31T02:54:24.073709+00:00",
+    "event": "M34_AUTH",
+    "payload": {
+      "ok": true
+    },
+    "prev_hash": "68520af466b2fa17940009d08d9cd833b710bca0b41e2126d0780f69ccc087c3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "220b85236970d9d73e436cc8322146c27f94d6d29adf35b0f1bc832186e07988"
+  },
+  {
+    "index": 3,
+    "timestamp_utc": "2025-10-31T02:54:24.077736+00:00",
+    "event": "M34_DEFENSE",
+    "payload": {
+      "nivel_ameaca": 0.25072745899707966
+    },
+    "prev_hash": "220b85236970d9d73e436cc8322146c27f94d6d29adf35b0f1bc832186e07988",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "25f90ee69695abf94879b83797c180bf3c9acd11f35afcdc9967e1ecdbab13c6"
+  },
+  {
+    "index": 4,
+    "timestamp_utc": "2025-10-31T02:54:24.079008+00:00",
+    "event": "M34_FILTER",
+    "payload": {
+      "mu": 171.42027672561494,
+      "removidos": 4
+    },
+    "prev_hash": "25f90ee69695abf94879b83797c180bf3c9acd11f35afcdc9967e1ecdbab13c6",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "16ab2a139fbb9108e54bbfd7adce2c488dbd5645e89ca5899e59a848d53b9d49"
+  },
+  {
+    "index": 5,
+    "timestamp_utc": "2025-10-31T02:54:24.081216+00:00",
+    "event": "M34_EVOLVE",
+    "payload": {
+      "dissonancia": 4.740722599164632e-20,
+      "omega": 443.664,
+      "kappa": 0.041268186474927
+    },
+    "prev_hash": "16ab2a139fbb9108e54bbfd7adce2c488dbd5645e89ca5899e59a848d53b9d49",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "956b0d6fa9878d17f46b5d38e628755e9e3e9a0fc9fa6a55e3b5c08a024674a4"
+  },
+  {
+    "index": 6,
+    "timestamp_utc": "2025-10-31T02:54:24.084253+00:00",
+    "event": "M34_AUTOCOR",
+    "payload": {
+      "dissonancia": 4.740722599164632e-20
+    },
+    "prev_hash": "956b0d6fa9878d17f46b5d38e628755e9e3e9a0fc9fa6a55e3b5c08a024674a4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "8a029ca6c556abb1b110d59e9dba14e149a2e6fddc13f015b001885a2d2a6879"
+  },
+  {
+    "index": 7,
+    "timestamp_utc": "2025-10-31T02:54:24.087302+00:00",
+    "event": "M34_M33_DIRETRIZ",
+    "payload": {
+      "diretriz": {
+        "id": "0444e9c64b",
+        "texto": "Diretriz: Focar em Intervenção acelerada em múltiplos domínios com pureza 0.62",
+        "intencao": {
+          "tema": "Intervenção acelerada em múltiplos domínios",
+          "pureza": 0.62
+        },
+        "timestamp": "2025-10-31T02:54:24.087285+00:00"
+      }
+    },
+    "prev_hash": "8a029ca6c556abb1b110d59e9dba14e149a2e6fddc13f015b001885a2d2a6879",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4525230068387e3b4f7edb75ba16dd490201630b7d42ee6851c0617c70436beb"
+  },
+  {
+    "index": 8,
+    "timestamp_utc": "2025-10-31T02:54:24.091529+00:00",
+    "event": "M34_ETHICS",
+    "payload": {
+      "intencao": "Intervenção acelerada em múltiplos domínios",
+      "pureza": 0.62,
+      "limiar": 0.85,
+      "aprovado": false
+    },
+    "prev_hash": "4525230068387e3b4f7edb75ba16dd490201630b7d42ee6851c0617c70436beb",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "4a90e72be744cf5f248a7c891c357c48ef349c6ab230bd1405698f2a57031716"
+  },
+  {
+    "index": 9,
+    "timestamp_utc": "2025-10-31T02:54:24.094856+00:00",
+    "event": "M34_CYCLE",
+    "payload": {
+      "status": "FALHA_ETICA"
+    },
+    "prev_hash": "4a90e72be744cf5f248a7c891c357c48ef349c6ab230bd1405698f2a57031716",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "ca6bc644d478e8915df35fe3ad8dfbf812ca68f753442245e74fd1bc8bbf983c"
+  },
+  {
+    "index": 10,
+    "timestamp_utc": "2025-10-31T02:54:24.096347+00:00",
+    "event": "M34_AUTH",
+    "payload": {
+      "ok": true
+    },
+    "prev_hash": "ca6bc644d478e8915df35fe3ad8dfbf812ca68f753442245e74fd1bc8bbf983c",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "5ff52fb0a3aacbc4fdf996565ae24864bbe163b8e8528f0f3f1e8025fd1dc558"
+  },
+  {
+    "index": 11,
+    "timestamp_utc": "2025-10-31T02:54:24.099894+00:00",
+    "event": "M34_DEFENSE",
+    "payload": {
+      "nivel_ameaca": 0.7142275823489613
+    },
+    "prev_hash": "5ff52fb0a3aacbc4fdf996565ae24864bbe163b8e8528f0f3f1e8025fd1dc558",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "ae8af205709690e775362566f454672ddf7169d43715d17a3e0700215e93b379"
+  },
+  {
+    "index": 12,
+    "timestamp_utc": "2025-10-31T02:54:24.100859+00:00",
+    "event": "M34_FILTER",
+    "payload": {
+      "mu": 141.1409667121479,
+      "removidos": 0
+    },
+    "prev_hash": "ae8af205709690e775362566f454672ddf7169d43715d17a3e0700215e93b379",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "17e3450612e7ad34a44a6e94b259e895d492352c1a97700aa34fd261e41beb19"
+  },
+  {
+    "index": 13,
+    "timestamp_utc": "2025-10-31T02:54:24.104572+00:00",
+    "event": "M34_FAIL_SOFT",
+    "payload": {
+      "motivo": "Simulação de falha do solver"
+    },
+    "prev_hash": "17e3450612e7ad34a44a6e94b259e895d492352c1a97700aa34fd261e41beb19",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "a59f93078b2bdbb2dcfbf65c58baafc480f4b02c70cac66772059df51d16c164"
+  },
+  {
+    "index": 14,
+    "timestamp_utc": "2025-10-31T02:54:24.106838+00:00",
+    "event": "M34_EVOLVE",
+    "payload": {
+      "dissonancia": 4.740722599164632e-20,
+      "omega": 455.84639999999996,
+      "kappa": 0.042855689558724035
+    },
+    "prev_hash": "a59f93078b2bdbb2dcfbf65c58baafc480f4b02c70cac66772059df51d16c164",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "319b3cf4cf912cabafccdbe9d8d7efd31c6718c62e1beab3f8972d225fdd0641"
+  },
+  {
+    "index": 15,
+    "timestamp_utc": "2025-10-31T02:54:24.109209+00:00",
+    "event": "M34_AUTOCOR",
+    "payload": {
+      "dissonancia": 4.740722599164632e-20
+    },
+    "prev_hash": "319b3cf4cf912cabafccdbe9d8d7efd31c6718c62e1beab3f8972d225fdd0641",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ab3a5b0ce1a5efd34006e24fe46db1c5d935b9c5bf3907669906d2b6db928da3"
+  },
+  {
+    "index": 16,
+    "timestamp_utc": "2025-10-31T02:54:24.111382+00:00",
+    "event": "M34_M33_DIRETRIZ",
+    "payload": {
+      "diretriz": {
+        "id": "204532c6b8",
+        "texto": "Diretriz: Focar em Manutenção da Harmonia Cósmica com pureza 0.93",
+        "intencao": {
+          "tema": "Manutenção da Harmonia Cósmica",
+          "pureza": 0.93
+        },
+        "timestamp": "2025-10-31T02:54:24.111364+00:00"
+      }
+    },
+    "prev_hash": "ab3a5b0ce1a5efd34006e24fe46db1c5d935b9c5bf3907669906d2b6db928da3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1fef8f4be7e61acb972ed54a0740b733a447699484bddb694eabe29ea8ac5f95"
+  },
+  {
+    "index": 17,
+    "timestamp_utc": "2025-10-31T02:54:24.113521+00:00",
+    "event": "M34_ETHICS",
+    "payload": {
+      "intencao": "Manutenção da Harmonia Cósmica",
+      "pureza": 0.93,
+      "limiar": 0.85,
+      "aprovado": true
+    },
+    "prev_hash": "1fef8f4be7e61acb972ed54a0740b733a447699484bddb694eabe29ea8ac5f95",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "417f5613b0f9d6519a43849822b8d730e19a3c91b5f2add2d3edf2f3e1045585"
+  },
+  {
+    "index": 18,
+    "timestamp_utc": "2025-10-31T02:54:24.115971+00:00",
+    "event": "M34_DUAL_APPROVAL",
+    "payload": {
+      "intencao": "Manutenção da Harmonia Cósmica",
+      "pureza": 0.93,
+      "consenso_score": 0.92,
+      "r33": {
+        "status": "APROVADA"
+      },
+      "r45": {
+        "status": "VALIDADA",
+        "score": 0.92,
+        "proposta_id": "80f22da0"
+      },
+      "cht_hash": "8328c87f1331444626dcbef7df6f6edc3a514869b0df3be141cb9cf5cf8103fb"
+    },
+    "prev_hash": "417f5613b0f9d6519a43849822b8d730e19a3c91b5f2add2d3edf2f3e1045585",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "21048b438245b583288df5024caa388798c4105eb7bdc2ea8b20747036defac2"
+  },
+  {
+    "index": 19,
+    "timestamp_utc": "2025-10-31T02:54:24.118569+00:00",
+    "event": "M34_M45_DELIB",
+    "payload": {
+      "deliberacao": {
+        "status": "VALIDADA",
+        "score": 0.92,
+        "proposta_id": "204532c6b8"
+      }
+    },
+    "prev_hash": "21048b438245b583288df5024caa388798c4105eb7bdc2ea8b20747036defac2",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4cbae978fcbe8b6767ae73884057afa8c181f7b8c36a361e6bd2395ac9e82287"
+  },
+  {
+    "index": 20,
+    "timestamp_utc": "2025-10-31T02:54:24.121368+00:00",
+    "event": "M34_HEALTHMAP",
+    "payload": {
+      "dissonancia_media": 4.740722599164632e-20,
+      "taxa_etica_aprovada": 0.5,
+      "estado": "ATENCAO",
+      "mttr_falhas": 0.002861499786376953,
+      "mttr_autocor": 0.0
+    },
+    "prev_hash": "4cbae978fcbe8b6767ae73884057afa8c181f7b8c36a361e6bd2395ac9e82287",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "7f663b3c97feb99253150926e4e417b593742675384fd93bac6ce95f1fa82f0b"
+  },
+  {
+    "index": 21,
+    "timestamp_utc": "2025-10-31T02:54:24.124053+00:00",
+    "event": "M34_CYCLE",
+    "payload": {
+      "status": "SUCESSO",
+      "health": {
+        "dissonancia_media": 4.740722599164632e-20,
+        "taxa_etica_aprovada": 0.5,
+        "estado": "ATENCAO",
+        "mttr_falhas": 0.002861499786376953,
+        "mttr_autocor": 0.0
+      }
+    },
+    "prev_hash": "7f663b3c97feb99253150926e4e417b593742675384fd93bac6ce95f1fa82f0b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "612a9100b182d525f8cbfb2a18b81c2ba3b362b66bf083bb09bda0679a238912"
+  },
+  {
+    "index": 22,
+    "timestamp_utc": "2025-10-31T02:54:24.127248+00:00",
+    "event": "M34_AUTH",
+    "payload": {
+      "ok": true
+    },
+    "prev_hash": "612a9100b182d525f8cbfb2a18b81c2ba3b362b66bf083bb09bda0679a238912",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "0a0e7e45fd0efd1a5ef964b8743b93e28f97ab357f6e08e1a492ae91ce93e1b7"
+  },
+  {
+    "index": 23,
+    "timestamp_utc": "2025-10-31T02:54:24.131895+00:00",
+    "event": "M34_DEFENSE",
+    "payload": {
+      "nivel_ameaca": 0.19878046348906145
+    },
+    "prev_hash": "0a0e7e45fd0efd1a5ef964b8743b93e28f97ab357f6e08e1a492ae91ce93e1b7",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4178450040485fb73ff9cd68e0186ca217abb73513ea272842249246c1291924"
+  },
+  {
+    "index": 24,
+    "timestamp_utc": "2025-10-31T02:54:24.141057+00:00",
+    "event": "M34_FILTER",
+    "payload": {
+      "mu": 170.33694456823906,
+      "removidos": 2
+    },
+    "prev_hash": "4178450040485fb73ff9cd68e0186ca217abb73513ea272842249246c1291924",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "54152916f16d449bd328b08264446db43577b007c8e7ed4a02faaa9e73eb4db4"
+  },
+  {
+    "index": 25,
+    "timestamp_utc": "2025-10-31T02:54:24.144467+00:00",
+    "event": "M34_EVOLVE",
+    "payload": {
+      "dissonancia": 2.870525102554537e-20,
+      "omega": 450.37963636363634,
+      "kappa": 0.03621951158722654
+    },
+    "prev_hash": "54152916f16d449bd328b08264446db43577b007c8e7ed4a02faaa9e73eb4db4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f145d02dc814c1e6b821c33aea331549be8aaaf5bfc4a87d2fbca6e1487bb136"
+  },
+  {
+    "index": 26,
+    "timestamp_utc": "2025-10-31T02:54:24.154470+00:00",
+    "event": "M34_AUTOCOR",
+    "payload": {
+      "dissonancia": 2.870525102554537e-20
+    },
+    "prev_hash": "f145d02dc814c1e6b821c33aea331549be8aaaf5bfc4a87d2fbca6e1487bb136",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e73e95c3fafc870f82c6c0cb3356f3b6fcd9530ca0c6a66ebbb2fc7952116c83"
+  },
+  {
+    "index": 27,
+    "timestamp_utc": "2025-10-31T02:54:24.158276+00:00",
+    "event": "M34_M33_DIRETRIZ",
+    "payload": {
+      "diretriz": {
+        "id": "cdf5b6ce3a",
+        "texto": "Diretriz: Focar em Ajuste fino de portais temporais com pureza 0.76",
+        "intencao": {
+          "tema": "Ajuste fino de portais temporais",
+          "pureza": 0.76
+        },
+        "timestamp": "2025-10-31T02:54:24.158256+00:00"
+      }
+    },
+    "prev_hash": "e73e95c3fafc870f82c6c0cb3356f3b6fcd9530ca0c6a66ebbb2fc7952116c83",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3f2e97b1c114357418efab0fe6f7c6af44eda34dff9f5cc30e9ac738bf9df02c"
+  },
+  {
+    "index": 28,
+    "timestamp_utc": "2025-10-31T02:54:24.162325+00:00",
+    "event": "M34_ETHICS",
+    "payload": {
+      "intencao": "Ajuste fino de portais temporais",
+      "pureza": 0.76,
+      "limiar": 0.85,
+      "aprovado": false
+    },
+    "prev_hash": "3f2e97b1c114357418efab0fe6f7c6af44eda34dff9f5cc30e9ac738bf9df02c",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "15556f5eb69619f5344bd014641c3a7da1d282db062f42daa5beae86b3a41150"
+  },
+  {
+    "index": 29,
+    "timestamp_utc": "2025-10-31T02:54:24.167971+00:00",
+    "event": "M34_CYCLE",
+    "payload": {
+      "status": "FALHA_ETICA"
+    },
+    "prev_hash": "15556f5eb69619f5344bd014641c3a7da1d282db062f42daa5beae86b3a41150",
+    "meta": {
+      "severity": "CRITICO"
+    },
+    "hash": "e849e9c950361af413662375b25b9a9a9b2d58403f6e74348739b156e524d8d2"
+  }
+]

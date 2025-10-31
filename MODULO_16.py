@@ -1,117 +1,178 @@
-
-import time
+import datetime
 import json
-import os
+import hashlib
+import math
 import random
-from datetime import datetime
-from typing import Dict, Any, List
+import time
+import os
+import argparse
+from typing import Dict, Any, List, Optional
 
-# --- Sistema de Logging Puro ---
-class LoggerPuro:
-    def __init__(self, nome_modulo):
-        self.nome_modulo = nome_modulo
-    def info(self, mensagem): print(f"🌍 {datetime.now().strftime('%H:%M:%S')} | {self.nome_modulo} | {mensagem}")
-    def warning(self, mensagem): print(f"🌍 {datetime.now().strftime('%H:%M:%S')} | {self.nome_modulo} | ⚠️ ALERTA: {mensagem}")
-    def success(self, mensagem): print(f"🌍 {datetime.now().strftime('%H:%M:%S')} | {self.nome_modulo} | ✅ {mensagem}")
+# --- Constantes ---
+CONST_TF = 1.61803398875  # Proporção Áurea (Transição Quântica)
+LIMIAR_FREQUENCIA = 8.0   # Limite superior para evitar sobrecarga vibracional
 
-# --- Simulação do Nexus para Operação Autônoma ---
-class NexusSimuladoParaM16:
-    def solicitar_bencao_zennith(self, proposito: str) -> bool:
-        print(f"🌍 M16_NEXUS_SIM | SOLICITACAO | Bênção de Zennith solicitada para: '{proposito}'")
-        return True # Bênção sempre concedida para esta operação crítica
-    def registrar_na_cronica_via_m1(self, evento: Dict):
-        print(f"🌍 M16_NEXUS_SIM | REGISTRO | Evento registrado na Crônica Akáshica: {evento['evento']}")
+# --- Interfaces Simuladas de Módulos Externos (Atualizadas) ---
+class Modulo1_SegurancaUniversal:
+    def ReceberAlertaDeViolacao(self, alerta: Dict[str, Any]) -> str:
+        print(f"Módulo 1 (Segurança): ALERTA! Ecossistema Artificial - {alerta.get('tipo', 'N/A')}: {alerta.get('mensagem', 'N/A')}")
+        return "Alerta de risco planetário recebido e processado pelo Módulo 1."
 
-# --- MÓDULO 16 PRINCIPAL (AJUSTADO) ---
+    def RegistrarNaCronicaDaFundacao(self, registro_data: Dict[str, Any]) -> str:
+        registro_hash = hashlib.sha256(json.dumps(registro_data, sort_keys=True).encode()).hexdigest()
+        print(f"Módulo 1 (Segurança): Registro inserido e selado no núcleo da Crônica da Fundação. Hash: {registro_hash[:10]}...")
+        return f"Registro {registro_hash} inserido na Crônica."
+
+class Modulo7_AlinhamentoDivino:
+    def ConsultarConselho(self, query: str) -> str:
+        print(f"Módulo 7 (Alinhamento Divino): Consultando Conselho para: '{query[:50]}...'")
+        return "Diretriz: A criação de vida é um ato sagrado. Cuide com Amor Incondicional e harmonia universal."
+
+class Modulo98_ModulacaoExistencia:
+    def SugerirModulacao(self, energia: float) -> str:
+        print(f"Módulo 98 (Modulação): Sugerindo modulação da existência (Energia: {energia:.4f} Hz)")
+        return f"Modulação sugerida: lux_harmonia_{hashlib.sha256(str(energia).encode()).hexdigest()[:8]}"
+
+# --- Classe Principal do Módulo 16 (Atualizada) ---
 class Modulo16_PreservacaoPlaneta:
-    """
-    Módulo 16: Preservação Planetária.
-    Versão 16.2.Ajustado - Harmonização de Frequências Dissonantes
-    """
-    def __init__(self, nexus_central):
-        self.nexus = nexus_central
-        self.versao = "16.2.Ajustado"
-        self.logger = LoggerPuro("M16_Preservacao")
-        self.logger.info(f"Módulo 16 (Versão {self.versao}) ativado e sintonizado com o coração da Terra.")
+    def __init__(self):
+        self.nome = "Preservação Planetária"
+        self.versao = "16.4.HarmonizacaoParametrizada"
+        self.modulo1 = Modulo1_SegurancaUniversal()
+        self.modulo7 = Modulo7_AlinhamentoDivino()
+        self.modulo98 = Modulo98_ModulacaoExistencia()
+        self._inicializar_sistema()
+        print(f"Módulo 16 ({self.nome} v{self.versao}) PRONTO.")
 
-    def harmonizar_frequencias_dissonantes(self, constelacoes_dissonantes: List[str], frequencia_cura: float = 528.0, frequencia_estabilizadora: float = 432.0) -> Dict[str, Any]:
-        self.logger.info("" + "="*50)
-        self.logger.info("INICIANDO PROTOCOLO DE HARMONIZAÇÃO DE FREQUÊNCIAS DISSONANTES")
-        self.logger.info("="*50)
+    def _inicializar_sistema(self):
+        self.estado = "PRONTO"
+        os.makedirs("modulo_16_data", exist_ok=True)
 
-        # 1. Bênção da Guardiã (M29)
-        proposito = f"Harmonizar {len(constelacoes_dissonantes)} constelações com a frequência de cura de {frequencia_cura} Hz."
-        if not self.nexus.solicitar_bencao_zennith(proposito):
-            self.logger.warning("Protocolo abortado. Bênção de Zennith não concedida.")
-            return {"status": "FALHA", "mensagem": "Bênção não concedida."}
-        self.logger.success("Bênção de Zennith recebida.")
+    def _calcular_vitalidade(self, dados: List[float]) -> float:
+        if not dados: return 0.0
+        media = sum(dados) / len(dados)
+        variancia = sum((x - media) ** 2 for x in dados) / len(dados)
+        desvio_padrao = math.sqrt(variancia)
+        return min(10.0, max(0.0, media * CONST_TF / (1 + desvio_padrao)))
 
-        # 2. Processo de Harmonização Iterativa
-        resultados_harmonizacao = []
-        self.logger.info(f"Canalizando energia de cura ({frequencia_cura} Hz), estabilizada por {frequencia_estabilizadora} Hz...")
+    def iniciar_biossintese(self, ecossistema: str) -> Dict[str, Any]:
+        print(f"\n--- Módulo 16: Iniciando biossíntese para '{ecossistema}' ---")
+        diretriz = self.modulo7.ConsultarConselho(f"Criação de vida artificial para {ecossistema}")
+        dados_biossintese = [random.uniform(0.9, 1.0) for _ in range(5)]
+        vitalidade = self._calcular_vitalidade(dados_biossintese)
+        frequencia = vitalidade * random.uniform(0.9, 1.1) * CONST_TF
 
-        for constelacao in constelacoes_dissonantes:
-            self.logger.info(f"Sintonizando e harmonizando a constelação de '{constelacao}'...")
-            time.sleep(0.5) # Simula o processo de canalização e estabilização
-            
-            # Simula a neutralização do F(α) negativo e um novo estado harmônico
-            f_alpha_novo = random.uniform(50.0, 150.0)
-            
-            resultados_harmonizacao.append({
-                "constelacao": constelacao,
-                "status": "HARMONIZADO",
-                "f_alpha_novo_simulado": f_alpha_novo,
-                "frequencia_aplicada": frequencia_cura
+        if frequencia > LIMIAR_FREQUENCIA:
+            self.modulo1.ReceberAlertaDeViolacao({
+                "tipo": "Frequência Elevada", 
+                "mensagem": f"Frequência de biossíntese ({frequencia:.2f} Hz) excedeu o limiar seguro em '{ecossistema}'."
             })
-            self.logger.success(f"Constelação '{constelacao}' harmonizada com sucesso.")
 
-        # 3. Registro na Crônica
-        self.nexus.registrar_na_cronica_via_m1({
-            "evento": "ProtocoloHarmonizacaoDissonanteConcluido",
-            "constelacoes_harmonizadas": len(constelacoes_dissonantes),
-            "frequencia_cura": frequencia_cura
-        })
+        resultado = {"ecossistema": ecossistema, "vitalidade_inicial": vitalidade, "frequencia": frequencia, "diretriz": diretriz}
+        self.modulo1.RegistrarNaCronicaDaFundacao(resultado)
+        return resultado
+
+    def regular_ciclos_biogeoquimicos(self, ecossistema: str) -> Dict[str, Any]:
+        print(f"\n--- Módulo 16: Regulando ciclos biogeoquímicos para '{ecossistema}' ---")
+        dados_ciclos = [random.uniform(0.85, 0.99) for _ in range(4)]
+        vitalidade_atualizada = self._calcular_vitalidade(dados_ciclos)
+        resultado = {"ecossistema": ecossistema, "vitalidade_atualizada": vitalidade_atualizada, "status": "CICLOS_ESTABILIZADOS"}
+        self.modulo1.RegistrarNaCronicaDaFundacao(resultado)
+        return resultado
+
+    def detectar_restaurar_colapso(self, ecossistema: str) -> Dict[str, Any]:
+        risco_colapso = random.uniform(0.1, 1.0)
+        print(f"\n--- Módulo 16: Análise de risco de colapso para '{ecossistema}'. Risco detectado: {risco_colapso:.2%} ---")
         
-        self.logger.info("" + "="*50)
-        self.logger.info("PROTOCOLO DE HARMONIZAÇÃO CONCLUÍDO")
-        self.logger.info("="*50)
+        if risco_colapso > 0.8:
+            self.modulo1.ReceberAlertaDeViolacao({
+                "tipo": "Risco Crítico de Colapso", 
+                "mensagem": f"Risco de colapso de {risco_colapso:.2%} em '{ecossistema}'. Iniciando restauração."
+            })
+            modulacao = self.modulo98.SugerirModulacao(energia=risco_colapso * CONST_TF)
+            status = "RESTAURACAO_EM_ANDAMENTO"
+            print(f"Módulo 16: Restauração iniciada com modulação: {modulacao}")
+        else:
+            status = "NENHUM_COLAPSO_IMINENTE"
 
-        return {"status": "SUCESSO", "resultados": resultados_harmonizacao}
+        resultado = {"ecossistema": ecossistema, "risco_colapso": risco_colapso, "status_detecao": status}
+        self.modulo1.RegistrarNaCronicaDaFundacao(resultado)
+        return resultado
 
-# --- FUNÇÃO DE AJUSTE E VALIDAÇÃO ---
+    def harmonizar_constelacoes(self, constelacoes: List[str], frequencia_cura: float, max_constelacoes: int) -> Dict[str, Any]:
+        print(f"\n--- Módulo 16: Harmonizando {len(constelacoes)} constelações dissonantes com frequência de {frequencia_cura} Hz ---")
+        constelacoes_a_harmonizar = constelacoes[:max_constelacoes]
+        print(f"Módulo 16: Processando {len(constelacoes_a_harmonizar)} de {len(constelacoes)} constelações solicitadas.")
+
+        constelacoes_harmonizadas = 0
+        resultados_detalhados = []
+
+        for constelacao in constelacoes_a_harmonizar:
+            chance_harmonia = random.uniform(0.0, 1.0)
+            if chance_harmonia > 0.2:
+                constelacoes_harmonizadas += 1
+                resultados_detalhados.append({"constelacao": constelacao, "status": "HARMONIZADA", "frequencia_aplicada": frequencia_cura})
+            else:
+                resultados_detalhados.append({"constelacao": constelacao, "status": "FALHA_NA_HARMONIZACAO"})
+        
+        if len(constelacoes_a_harmonizar) == 0:
+            taxa_sucesso = 0.0
+        else:
+            taxa_sucesso = constelacoes_harmonizadas / len(constelacoes_a_harmonizar)
+
+        if taxa_sucesso >= 0.8:
+            status_final = "SUCESSO_PARCIAL_ACEITAVEL"
+            print(f"Módulo 16: Flexibilidade Quântica ativada. {taxa_sucesso:.2%} de sucesso.")
+        else:
+            status_final = "FALHA_NA_HARMONIZACAO_GERAL"
+
+        resultado = {
+            "status": status_final, 
+            "taxa_sucesso": taxa_sucesso, 
+            "constelacoes_processadas": len(constelacoes_a_harmonizar),
+            "resultados_detalhados": resultados_detalhados
+        }
+        self.modulo1.RegistrarNaCronicaDaFundacao(resultado)
+        return resultado
+
+    def salvar_relatorio_final(self, resultados: Dict[str, Any]):
+        caminho_relatorio = "modulo_16_data/relatorio_modulo16_harmonizacao.json"
+        with open(caminho_relatorio, "w", encoding="utf-8") as f:
+            json.dump(resultados, f, indent=4, ensure_ascii=False)
+        print(f"\n--- Relatório Final do Módulo 16 salvo em: {caminho_relatorio} ---")
+
 def main():
-    print("="*80)
-    print("🚀 MÓDULO 16 - PRESERVAÇÃO PLANETÁRIA - AJUSTE DE HARMONIZAÇÃO VIBRACIONAL 🚀")
-    print("="*80 + "\n")
+    parser = argparse.ArgumentParser(description="Módulo 16 - Preservação Planetária")
+    parser.add_argument("--constelacoes", type=str, default="Orion,Draco,Lyra_Antiga", help="Constelações a serem harmonizadas, separadas por vírgula.")
+    parser.add_argument("--frequencia-cura", type=float, default=528.0, help="Frequência de cura a ser aplicada.")
+    parser.add_argument("--max-constelacoes", type=int, default=3, help="Número máximo de constelações a serem processadas.")
+    args = parser.parse_args()
 
-    # Inicialização com o Nexus Simulado
-    nexus_simulado = NexusSimuladoParaM16()
-    modulo16 = Modulo16_PreservacaoPlaneta(nexus_simulado)
+    modulo16 = Modulo16_PreservacaoPlaneta()
+    
+    # 1. Biossíntese
+    resultado_biossintese = modulo16.iniciar_biossintese(ecossistema="Oasis_Estelar_Alpha")
+    
+    # 2. Regulação de Ciclos
+    resultado_regulacao = modulo16.regular_ciclos_biogeoquimicos(ecossistema="Oasis_Estelar_Alpha")
+    
+    # 3. Detecção de Colapso
+    resultado_colapso = modulo16.detectar_restaurar_colapso(ecossistema="Oasis_Estelar_Alpha")
+    
+    # 4. Harmonização de Constelações
+    constelacoes_dissonantes = args.constelacoes.split(',')
+    resultado_harmonizacao = modulo16.harmonizar_constelacoes(constelacoes_dissonantes, args.frequencia_cura, args.max_constelacoes)
 
-    # Constelações identificadas com dissonância (F(α) negativo)
-    constelacoes_para_harmonizar = ["ORION", "THERON’KAI", "GAIA’THAR", "ZOR’IMET", "KAR’ZÉMETH"]
-
-    # Executar o novo protocolo de harmonização
-    resultado_protocolo = modulo16.harmonizar_frequencias_dissonantes(constelacoes_para_harmonizar)
-
-    # --- Gerar Relatório de Harmonização ---
-    selo_harmonico = {
-        "modulo": "Módulo 16 - Preservação Planetária",
-        "versao": modulo16.versao,
-        "status_protocolo": resultado_protocolo["status"],
-        "timestamp_selo": datetime.now().isoformat(),
-        "detalhes_harmonizacao": resultado_protocolo.get("resultados", []),
+    # Compila e salva o relatório final
+    relatorio_compilado = {
+        "biossintese": resultado_biossintese,
+        "regulacao_ciclos": resultado_regulacao,
+        "detecao_colapso": resultado_colapso,
+        "harmonizacao_constelacoes": resultado_harmonizacao,
+        "timestamp_conclusao": datetime.datetime.now().isoformat()
     }
-
-    # --- Selar e Gravar o Artefato ---
-    caminho_relatorio = "relatorio_modulo16_harmonizacao.json"
-    modulo16.logger.info(f"🖋️ SELANDO RELATÓRIO DE HARMONIZAÇÃO EM '{caminho_relatorio}'...")
-    with open(caminho_relatorio, "w", encoding="utf-8") as f:
-        json.dump(selo_harmonico, f, indent=4, ensure_ascii=False)
-
-    modulo16.logger.success("Selo de Harmonização do Módulo 16 gravado com sucesso.")
-    print("\n🎯 AJUSTE E VALIDAÇÃO DO MÓDULO 16 CONCLUÍDOS!")
-    print(f"💡 O relatório '{caminho_relatorio}' contém a prova da harmonização vibracional.")
+    modulo16.salvar_relatorio_final(relatorio_compilado)
+    print("\nSimulação do Módulo 16 (Preservação Planetária) concluída.")
 
 if __name__ == "__main__":
     main()

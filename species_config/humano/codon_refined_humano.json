@@ -1,0 +1,485 @@
+{
+  "ATG": {
+    "cor": "Dourado",
+    "funcao": "Iniciação Universal",
+    "origem": "Consciência Primordial",
+    "códons_associados": [
+      "ATG"
+    ],
+    "freq_min": 963.0,
+    "freq_max": 963.0,
+    "freq_hz": 963.0,
+    "harmonic_offset": 0.05,
+    "chakra": "coroa",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 959.5,
+        "freq_max_sub": 959.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 967.2,
+        "freq_max_sub": 967.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 964.1,
+        "freq_max_sub": 964.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 965.7,
+        "freq_max_sub": 965.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Capital Universal de Aton"
+  },
+  "TAA": {
+    "cor": "Ciano Celeste",
+    "funcao": "Cessação Harmônica",
+    "origem": "Vazio Cósmico",
+    "códons_associados": [
+      "TAA"
+    ],
+    "freq_min": 432.0,
+    "freq_max": 432.0,
+    "freq_hz": 432.0,
+    "harmonic_offset": -0.1,
+    "chakra": "sacro",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 428.5,
+        "freq_max_sub": 428.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 436.2,
+        "freq_max_sub": 436.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 433.1,
+        "freq_max_sub": 433.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 434.7,
+        "freq_max_sub": 434.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Reino de Erebus"
+  },
+  "TGA": {
+    "cor": "Magenta Estelar",
+    "funcao": "Transmutação Essencial",
+    "origem": "Nebulosa da Transformação",
+    "códons_associados": [
+      "TGA"
+    ],
+    "freq_min": 741.0,
+    "freq_max": 741.0,
+    "freq_hz": 741.0,
+    "harmonic_offset": 0.02,
+    "chakra": "frontal",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 737.5,
+        "freq_max_sub": 737.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 745.2,
+        "freq_max_sub": 745.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 742.1,
+        "freq_max_sub": 742.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 743.7,
+        "freq_max_sub": 743.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Nexus de Andrômeda"
+  },
+  "TGC": {
+    "cor": "Verde Esmeralda",
+    "funcao": "Síntese Vibracional",
+    "origem": "Jardim Pleiadiano",
+    "códons_associados": [
+      "TGC"
+    ],
+    "freq_min": 528.0,
+    "freq_max": 528.0,
+    "freq_hz": 528.0,
+    "harmonic_offset": 0.08,
+    "chakra": "coração",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 524.5,
+        "freq_max_sub": 524.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 532.2,
+        "freq_max_sub": 532.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 529.1,
+        "freq_max_sub": 529.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 530.7,
+        "freq_max_sub": 530.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Jardins de Alcyone"
+  },
+  "GGC": {
+    "cor": "Azul Profundo",
+    "funcao": "Crescimento & Adaptação",
+    "origem": "Arcturus",
+    "códons_associados": [
+      "GGC"
+    ],
+    "freq_min": 850.0,
+    "freq_max": 850.0,
+    "freq_hz": 850.0,
+    "harmonic_offset": 0.03,
+    "chakra": "plexo solar",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 846.5,
+        "freq_max_sub": 846.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 854.2,
+        "freq_max_sub": 854.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 851.1,
+        "freq_max_sub": 851.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 852.7,
+        "freq_max_sub": 852.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Nexus Arcturiano"
+  },
+  "CCA": {
+    "cor": "Dourado Solar",
+    "funcao": "Ativação Portal",
+    "origem": "Pleiades",
+    "códons_associados": [
+      "CCA"
+    ],
+    "freq_min": 920.0,
+    "freq_max": 920.0,
+    "freq_hz": 920.0,
+    "harmonic_offset": 0.15,
+    "chakra": "laríngeo",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 916.5,
+        "freq_max_sub": 916.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 924.2,
+        "freq_max_sub": 924.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 921.1,
+        "freq_max_sub": 921.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 922.7,
+        "freq_max_sub": 922.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Alcyone (Pleiades)"
+  },
+  "AGT": {
+    "cor": "Rosa Cósmico",
+    "funcao": "Reparação Harmônica",
+    "origem": "Andrômeda",
+    "códons_associados": [
+      "AGT"
+    ],
+    "freq_min": 780.0,
+    "freq_max": 780.0,
+    "freq_hz": 780.0,
+    "harmonic_offset": 0.07,
+    "chakra": "raiz",
+    "equacao_primaria": "Equação Genérica Padrão",
+    "comentário_quantico": "Comentário Quântico Genérico Padrão",
+    "subtons": {
+      "pastel": {
+        "freq_min_sub": 776.5,
+        "freq_max_sub": 776.5,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
+        }
+      },
+      "neon": {
+        "freq_min_sub": 784.2,
+        "freq_max_sub": 784.2,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
+        }
+      },
+      "opalescente": {
+        "freq_min_sub": 781.1,
+        "freq_max_sub": 781.1,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
+        }
+      },
+      "cristalino": {
+        "freq_min_sub": 782.7,
+        "freq_max_sub": 782.7,
+        "equacoes": {
+          "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
+          "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
+        }
+      }
+    },
+    "instrumentos": {
+      "mutacao": [
+        "Luz Coerente",
+        "Som de Solfeggio",
+        "Toque Cristalino"
+      ],
+      "reparacao": [
+        "Cristal Vibracional",
+        "Canto Harmônico"
+      ],
+      "ativacao": [
+        "Reator de Phi",
+        "Pêndulo Resonante"
+      ]
+    },
+    "cidade_luz_associada": "Xylos (Andrômeda)"
+  }
+}

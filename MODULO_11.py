@@ -1,154 +1,292 @@
+# -*- coding: utf-8 -*-
+"""
+FUNDAÇÃO ALQUIMISTA ANATHERON – MÓDULO 11: PORTALANATH-IX
+Versão 11.8.Ω – TOTALMENTE AUTÔNOMO, QUÂNTICO, ESTÁVEL E FUNCIONAL
+QKD + HSM + PHI + HASH CHAIN + ASSINATURA + LOGS IMUTÁVEIS + PORTAIS INTERDIMENSIONAIS
+Sem dependências externas | 100% Python padrão
+Autor: Daniel Toloczko Coutinho Anatheron
+Data Estelar: 28 de Outubro de 2025
+"""
 
 import random
 import time
 import hashlib
 import json
 import math
+import sys
 from datetime import datetime, timezone
 from typing import Dict, Any, List
 
-# Constante de Transição Quântica (Tf) - A Proporção Áurea
-CONST_TF = 1.61803398875
+# ===================================================================
+# CONSTANTE AURÉA – A CHAVE DO UNIVERSO
+# ===================================================================
+CONST_TF = 1.618033988749895  # Proporção Áurea (PHI)
 
+# ===================================================================
+# LOGGING PURO + IMUTABILIDADE VIA HASH CHAIN
+# ===================================================================
+class LoggerPuro:
+    def __init__(self, origem: str):
+        self.origem = origem
+        self.log_hash_chain = "GENESIS_PORTALANATH_330"
+
+    def _hash_chain(self, msg: str) -> str:
+        new_hash = hashlib.sha3_256(f"{self.log_hash_chain}{msg}{time.time_ns()}".encode()).hexdigest()
+        self.log_hash_chain = new_hash
+        return new_hash[-16:]
+
+    def log(self, mensagem: str, nivel: str = "INFO", detalhes: Dict[str, Any] = None):
+        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S.%f")[:-3] + "Z"
+        hash_entry = self._hash_chain(mensagem)
+        linha = f"[{timestamp}] [{self.origem}] {nivel} | {mensagem}"
+        if detalhes:
+            linha += " | " + " | ".join(f"{k}={v}" for k, v in detalhes.items())
+        linha += f" | HASH={hash_entry}"
+        print(linha, flush=True)
+
+# ===================================================================
+# ENTROPIA QUÂNTICA LOCAL (QKD BB84)
+# ===================================================================
+class QKDLocal:
+    def __init__(self):
+        self.tamanho_chave = 256
+        self.max_tentativas = 10
+        self.limiar_erro = 0.11
+
+    def executar_bb84(self) -> bytes:
+        for _ in range(self.max_tentativas):
+            n = self.tamanho_chave * 8
+            bits_alice = [random.getrandbits(1) for _ in range(n)]
+            bases_alice = [random.choice([0, 45]) for _ in range(n)]
+            bases_bob = [random.choice([0, 45]) for _ in range(n)]
+            bits_bob = [
+                bit if bases_alice[i] == bases_bob[i] else random.getrandbits(1)
+                for i, bit in enumerate(bits_alice)
+            ]
+            comuns = [i for i in range(n) if bases_alice[i] == bases_bob[i]]
+            if len(comuns) < self.tamanho_chave * 2:
+                continue
+            amostra = comuns[: self.tamanho_chave // 2]
+            erros = sum(bits_alice[i] != bits_bob[i] for i in amostra)
+            if erros / len(amostra) <= self.limiar_erro:
+                chave = bytes(bits_alice[i] for i in comuns[self.tamanho_chave // 2 : self.tamanho_chave // 2 + self.tamanho_chave])
+                return chave
+        return hashlib.sha3_256(str(time.time_ns()).encode()).digest()[:32]
+
+# ===================================================================
+# HSM SIMULADO – ARMAZENAMENTO SEGURO
+# ===================================================================
+class HSMIsolado:
+    def __init__(self):
+        self.memoria = bytearray(1024)
+        self.pin_hash = hashlib.sha3_256(b"PORTALANATH_ZENNITH_330").digest()
+
+    def armazenar(self, offset: int, dados: bytes):
+        self.memoria[offset:offset+len(dados)] = dados
+
+# ===================================================================
+# MÓDULO 11 – PORTALANATH-IX
+# ===================================================================
 class Modulo11_PortalAnathIX:
-    """
-    Módulo 11: PortalAnath-IX - O Portal Interdimensional.
-    INTEGRADO E CONTROLADO PELO NEXUS CENTRAL (M9).
-    """
-    def __init__(self, nexus_central):
-        self.nexus = nexus_central
+    def __init__(self):
+        self.logger = LoggerPuro("PORTALANATH_M11")
+        self.qkd = QKDLocal()
+        self.hsm = HSMIsolado()
+        self.chave_mestre = None
         self.portais_ativos: Dict[str, Dict[str, Any]] = {}
-        self.nexus.log("PortalAnath-IX (M11)", "Portal Interdimensional integrado e operacional.")
+        self._inicializar_sistema()
 
-    # --- EQUAÇÕES FUNDAMENTAIS (PURIFICADAS) ---
+    def _inicializar_sistema(self):
+        self.logger.log("INICIANDO PORTALANATH-IX – MÓDULO 11 AUTÔNOMO")
+        self.chave_mestre = self.qkd.executar_bb84()
+        self.hsm.armazenar(0, self.chave_mestre)
+        chave_hash = hashlib.sha3_256(self.chave_mestre).hexdigest()[:16]
+        self.logger.log("QKD + HSM ATIVADOS", detalhes={"chave_hash": chave_hash})
 
-    def _equacao_universal_geracao_singularidade(self, parametros_portal: Dict[str, Any]) -> float:
-        """Adapta a Equação Universal (sem numpy) para modelar a energia de um portal."""
-        self.nexus.log("PortalAnath-IX (M11)", "Calculando Equação Universal para Geração de Singularidade...")
-        P = parametros_portal.get('P', [random.uniform(0.1, 1.0) for _ in range(3)])
-        Q = parametros_portal.get('Q', [random.uniform(0.1, 1.0) for _ in range(3)])
-        CA = parametros_portal.get('CA', random.uniform(0.01, 0.1))
-        B = parametros_portal.get('B', random.uniform(0.01, 0.1))
-        
-        estado_nexus = self.nexus.obter_estados_globais()
-        PhiC = estado_nexus.get('sincronia', 0.9)
-        T = min(p['estabilidade'] for p in self.nexus.conexoes_ativas.values())
-        MDS = estado_nexus.get('energia_total', 1.0) / 1.618
-        CCosmos = self.nexus.obter_equacao_omega("EQ134", {"valor": 160000.0})['valor'] / 160000.0
+    # ===================================================================
+    # EQUAÇÃO UNIVERSAL – GERAÇÃO DE SINGULARIDADE
+    # ===================================================================
+    def _equacao_universal_geracao_singularidade(self, config: Dict[str, Any]) -> float:
+        self.logger.log("CALCULANDO EQUAÇÃO UNIVERSAL PARA SINGULARIDADE")
+        P = config.get('P', [random.uniform(0.1, 1.0) for _ in range(3)])
+        Q = config.get('Q', [random.uniform(0.1, 1.0) for _ in range(3)])
+        CA = config.get('CA', random.uniform(0.01, 0.1))
+        B = config.get('B', random.uniform(0.01, 0.1))
+        PhiC = config.get('sincronia', 0.95)
+        T = config.get('estabilidade', 0.98)
+        MDS = config.get('energia_total', 1.0) / CONST_TF
+        CCosmos = config.get('CCosmos', 1.0)
 
         soma_pq = sum(p * q for p, q in zip(P, Q))
-        e_uni_component = soma_pq + (CA**2) + (B**2)
-        e_uni = e_uni_component * (PhiC * math.pi) * T * (MDS * CCosmos)
+        e_uni = (soma_pq + CA**2 + B**2) * (PhiC * math.pi) * T * (MDS * CCosmos)
 
-        self.nexus.log("PortalAnath-IX (M11)", f"Equação Universal de Geração de Singularidade calculada: {e_uni:.4f}")
+        self.logger.log(f"EUni = {e_uni:.6f}", detalhes={"P": P, "Q": Q})
         return e_uni
 
-    def _equacao_que_tornou_tudo_possivel_estabilizacao(self, dados_entrada: float) -> float:
-        """Adapta a equação (sem numpy) para estabilizar portais com a Proporção Áurea."""
-        self.nexus.log("PortalAnath-IX (M11)", "Calculando Equação que Tornou Tudo Possível para Estabilização...")
-        eq112 = self.nexus.obter_equacao_omega("EQ112", {"valor": 1.005})['valor']
-        resultado = (dados_entrada * CONST_TF * eq112) + (random.random() * 0.001)
-        self.nexus.log("PortalAnath-IX (M11)", f"Equação de Estabilização calculada: {resultado:.4f}")
+    # ===================================================================
+    # EQUAÇÃO QUE TORNOU TUDO POSSÍVEL – ESTABILIZAÇÃO
+    # ===================================================================
+    def _equacao_que_tornou_tudo_possivel_estabilizacao(self, entrada: float) -> float:
+        self.logger.log("EXECUTANDO EQUAÇÃO DE ESTABILIZAÇÃO")
+        eq112 = entrada * 1.005
+        resultado = (entrada * CONST_TF * eq112) + (random.random() * 0.001)
+        self.logger.log(f"Resultado = {resultado:.6f}")
         return resultado
 
-    # --- FUNCIONALIDADES PRINCIPAIS (INTEGRADAS AO NEXUS) ---
-
+    # ===================================================================
+    # CRIAR PORTAL
+    # ===================================================================
     def criar_portal(self, nome_portal: str, dimensao_destino: str, proposito: str) -> Dict[str, Any]:
-        """Cria um novo portal interdimensional, validando com a Fundação."""
-        self.nexus.log("PortalAnath-IX (M11)", f"Iniciando criação do portal '{nome_portal}' para '{dimensao_destino}'")
+        self.logger.log(f"CRIANDO PORTAL: {nome_portal} → {dimensao_destino}")
 
-        bencao_zennith = self.nexus.solicitar_bencao_zennith(f"Criar Portal '{nome_portal}'")
-        if not bencao_zennith:
-            self.nexus.log("PortalAnath-IX (M11)", "Criação de portal negada. A Guardiã não concedeu a bênção.", nivel="CRITICO")
-            return {"status": "FALHA", "mensagem": "Bênção de Zennith não concedida."}
+        # Bênção de Zennith simulada
+        if random.random() > 0.98:
+            self.logger.log("BÊNÇÃO NEGADA POR ZENNITH", nivel="CRITICO")
+            return {"status": "FALHA", "motivo": "Bênção de Zennith negada"}
 
-        avaliacao_etica = self.nexus.avaliar_etica_via_m5(
-            intencao=f"Criar portal {nome_portal}",
-            acao="Criação de Portal Interdimensional"
-        )
-        if avaliacao_etica["status_conformidade_etica"] != "CONFORME":
-            self.nexus.log("PortalAnath-IX (M11)", f"Criação de portal '{nome_portal}' negada por falha ética.", nivel="CRITICO")
-            return {"status": "FALHA", "mensagem": "Falha na avaliação ética."}
+        # Avaliação ética simulada
+        if random.random() > 0.96:
+            self.logger.log("FALHA ÉTICA: CRIAÇÃO NEGADA", nivel="CRITICO")
+            return {"status": "FALHA", "motivo": "Falha ética"}
 
-        energia_singularidade = self._equacao_universal_geracao_singularidade({})
-        if energia_singularidade < 0.1:
-            self.nexus.log("PortalAnath-IX (M11)", f"Energia insuficiente para criar '{nome_portal}'.", nivel="ALERTA")
-            return {"status": "FALHA", "mensagem": "Energia insuficiente para criação do portal."}
+        energia = self._equacao_universal_geracao_singularidade({})
+        if energia < 0.1:
+            self.logger.log("ENERGIA INSUFICIENTE", nivel="ALERTA")
+            return {"status": "FALHA", "motivo": "Energia insuficiente"}
 
-        portal_id = hashlib.sha256(f"{nome_portal}-{dimensao_destino}-{time.time()}".encode()).hexdigest()
+        portal_id = hashlib.sha3_256(f"{nome_portal}{dimensao_destino}{time.time()}".encode()).hexdigest()
         self.portais_ativos[portal_id] = {
             "nome": nome_portal,
             "dimensao_destino": dimensao_destino,
             "proposito": proposito,
             "status": "Ativo - Instável",
-            "energia_singularidade": energia_singularidade,
+            "energia_singularidade": round(energia, 6),
             "timestamp_criacao": datetime.now(timezone.utc).isoformat()
         }
 
-        self.nexus.registrar_na_cronica_via_m1({
-            "evento": "CriacaoPortal", "portal_id": portal_id, "nome_portal": nome_portal, "status": "Ativo - Instável"
-        })
+        assinatura = hashlib.sha3_256(f"{portal_id}{energia}".encode() + self.chave_mestre).hexdigest()[:16]
+        self.logger.log(f"PORTAL CRIADO → ID: {portal_id[:8]}...", nivel="SUCESSO")
+        return {
+            "status": "SUCESSO",
+            "portal_id": portal_id,
+            "nome": nome_portal,
+            "energia": round(energia, 6),
+            "assinatura": assinatura
+        }
 
-        self.nexus.log("PortalAnath-IX (M11)", f"Portal '{nome_portal}' (ID: {portal_id[:8]}...) criado.", nivel="SUCESSO")
-        return {"status": "SUCESSO", "portal_id": portal_id}
-
+    # ===================================================================
+    # ESTABILIZAR PORTAL
+    # ===================================================================
     def estabilizar_portal(self, portal_id: str) -> Dict[str, Any]:
-        """Estabiliza um portal ativo, otimizando sua coerência via Nexus."""
         if portal_id not in self.portais_ativos:
-            return {"status": "FALHA", "mensagem": "Portal não encontrado."}
+            return {"status": "FALHA", "motivo": "Portal não encontrado"}
 
-        self.nexus.log("PortalAnath-IX (M11)", f"Estabilizando portal ID: {portal_id[:8]}...")
         portal = self.portais_ativos[portal_id]
+        self.logger.log(f"ESTABILIZANDO PORTAL: {portal_id[:8]}...")
 
-        # Aeloria (M10) é consultada para garantir a segurança durante a estabilização
-        seguranca_aeloria = self.nexus.comissionar_aeloria_para_proteger_processo(f"Estabilizacao_{portal_id}")
-        if seguranca_aeloria.get("status") != "SUCESSO":
-             return {"status": "FALHA", "mensagem": "Aeloria detectou uma ameaça e abortou a estabilização."}
+        # Aeloria simulada
+        if random.random() > 0.97:
+            self.logger.log("AELORIA DETECTOU AMEAÇA", nivel="CRITICO")
+            return {"status": "FALHA", "motivo": "Aeloria abortou estabilização"}
 
-        fator_estabilizacao = self._equacao_que_tornou_tudo_possivel_estabilizacao(portal["energia_singularidade"])
+        fator = self._equacao_que_tornou_tudo_possivel_estabilizacao(portal["energia_singularidade"])
         portal["status"] = "Ativo - Estável"
-        portal["fator_estabilizacao"] = fator_estabilizacao
+        portal["fator_estabilizacao"] = round(fator, 6)
 
-        self.nexus.registrar_na_cronica_via_m1({
-            "evento": "EstabilizacaoPortal", "portal_id": portal_id, "status": "Ativo - Estável"
-        })
+        assinatura = hashlib.sha3_256(f"{portal_id}{fator}".encode() + self.chave_mestre).hexdigest()[:16]
+        self.logger.log(f"PORTAL ESTABILIZADO → {portal['nome']}", nivel="SUCESSO")
+        return {
+            "status": "SUCESSO",
+            "portal_id": portal_id,
+            "status_portal": "Ativo - Estável",
+            "fator_estabilizacao": round(fator, 6),
+            "assinatura": assinatura
+        }
 
-        self.nexus.log("PortalAnath-IX (M11)", f"Portal '{portal['nome']}' estabilizado.", nivel="SUCESSO")
-        return {"status": "SUCESSO", "portal_id": portal_id, "status_portal": "Ativo - Estável"}
-
+    # ===================================================================
+    # AUTORIZAR TRAVESSIA
+    # ===================================================================
     def autorizar_travessia(self, portal_id: str, entidade_id: str) -> Dict[str, Any]:
-        """Autoriza a travessia de uma entidade por um portal estável."""
         if portal_id not in self.portais_ativos or self.portais_ativos[portal_id]["status"] != "Ativo - Estável":
-            return {"status": "FALHA", "mensagem": "Portal não está ativo e estável."}
+            return {"status": "FALHA", "motivo": "Portal não estável"}
 
-        self.nexus.log("PortalAnath-IX (M11)", f"Autorizando travessia de '{entidade_id}' via portal {portal_id[:8]}...")
         portal = self.portais_ativos[portal_id]
+        self.logger.log(f"AUTORIZANDO TRAVESSIA: {entidade_id} → {portal['dimensao_destino']}")
 
-        validacao_cosmica = self.nexus.validar_assinatura_via_m4(f"Assinatura_{entidade_id}")
-        if not validacao_cosmica["assinatura_valida"]:
-            return {"status": "FALHA", "mensagem": "Falha na validação de identidade cósmica."}
+        # Validação cósmica simulada
+        if random.random() > 0.95:
+            self.logger.log("FALHA NA VALIDAÇÃO CÓSMICA", nivel="CRITICO")
+            return {"status": "FALHA", "motivo": "Identidade cósmica inválida"}
 
-        self.nexus.transmitir_dados_via_m2(
-            {"entidade_id": entidade_id, "destino": portal["dimensao_destino"]},
-            f"canal_travessia_{portal_id}"
-        )
+        assinatura = hashlib.sha3_256(f"{entidade_id}{portal_id}".encode() + self.chave_mestre).hexdigest()[:16]
+        self.logger.log(f"TRAVESSIA AUTORIZADA → {entidade_id}", nivel="SUCESSO")
+        return {
+            "status": "SUCESSO",
+            "entidade_id": entidade_id,
+            "destino": portal["dimensao_destino"],
+            "assinatura": assinatura
+        }
 
-        self.nexus.registrar_na_cronica_via_m1({
-            "evento": "TravessiaPortalAutorizada", "portal_id": portal_id, "entidade_id": entidade_id
-        })
-        
-        self.nexus.log("PortalAnath-IX (M11)", f"Travessia de '{entidade_id}' autorizada.", nivel="SUCESSO")
-        return {"status": "SUCESSO", "mensagem": "Travessia autorizada."}
-
+    # ===================================================================
+    # DESATIVAR PORTAL
+    # ===================================================================
     def desativar_portal(self, portal_id: str) -> Dict[str, Any]:
-        """Desativa um portal interdimensional."""
         if portal_id not in self.portais_ativos:
-            return {"status": "FALHA", "mensagem": "Portal não encontrado."}
+            return {"status": "FALHA", "motivo": "Portal não encontrado"}
 
         portal = self.portais_ativos.pop(portal_id)
-        self.nexus.log("PortalAnath-IX (M11)", f"Portal '{portal['nome']}' desativado.", nivel="INFO")
-        
-        self.nexus.registrar_na_cronica_via_m1({
-            "evento": "DesativacaoPortal", "portal_id": portal_id, "status": "Inativo"
-        })
-        return {"status": "SUCESSO", "portal_id": portal_id}
+        self.logger.log(f"PORTAL DESATIVADO: {portal['nome']}", nivel="INFO")
+        return {
+            "status": "SUCESSO",
+            "portal_id": portal_id,
+            "nome": portal["nome"]
+        }
+
+# ===================================================================
+# EXECUÇÃO AUTÔNOMA + CLI
+# ===================================================================
+def main():
+    if len(sys.argv) < 2:
+        print("Uso:")
+        print("  python3 MODULO_11.py --criar <NOME> <DIMENSÃO> <PROPÓSITO>")
+        print("  python3 MODULO_11.py --estabilizar <PORTAL_ID>")
+        print("  python3 MODULO_11.py --travessia <PORTAL_ID> <ENTIDADE>")
+        print("  python3 MODULO_11.py --desativar <PORTAL_ID>")
+        print("  python3 MODULO_11.py --demo")
+        return
+
+    m11 = Modulo11_PortalAnathIX()
+
+    if sys.argv[1] == "--demo":
+        print("EXECUTANDO DEMO DO PORTALANATH-IX")
+        criar = m11.criar_portal("PORTAL_ALPHA", "DIMENSÃO_Ω", "EXPLORAÇÃO")
+        print(json.dumps(criar, indent=2, ensure_ascii=False))
+        if criar["status"] == "SUCESSO":
+            est = m11.estabilizar_portal(criar["portal_id"])
+            print(json.dumps(est, indent=2, ensure_ascii=False))
+        return
+
+    if sys.argv[1] == "--criar" and len(sys.argv) >= 5:
+        resultado = m11.criar_portal(sys.argv[2], sys.argv[3], sys.argv[4])
+        print(json.dumps(resultado, indent=2, ensure_ascii=False))
+        return
+
+    if sys.argv[1] == "--estabilizar" and len(sys.argv) > 2:
+        resultado = m11.estabilizar_portal(sys.argv[2])
+        print(json.dumps(resultado, indent=2, ensure_ascii=False))
+        return
+
+    if sys.argv[1] == "--travessia" and len(sys.argv) > 3:
+        resultado = m11.autorizar_travessia(sys.argv[2], sys.argv[3])
+        print(json.dumps(resultado, indent=2, ensure_ascii=False))
+        return
+
+    if sys.argv[1] == "--desativar" and len(sys.argv) > 2:
+        resultado = m11.desativar_portal(sys.argv[2])
+        print(json.dumps(resultado, indent=2, ensure_ascii=False))
+        return
+
+    print("Comando inválido.")
+
+if __name__ == "__main__":
+    main()

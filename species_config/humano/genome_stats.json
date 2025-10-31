@@ -1,0 +1,5 @@
+{
+  "chromosomes": 23, "genes_estimated": 20000, "base_pairs_total": 3200000000,
+  "mitochondrial_dna": true, "y_chromosome_present": true, "x_chromosome_present": true,
+  "junk_dna_percent": 96.0, "epigenetic_flexibility": "Alta"
+}

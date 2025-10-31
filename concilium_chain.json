@@ -1,0 +1,10 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2025-10-29T19:16:35.703557Z",
+    "event": "CONCILIUM_GENESIS",
+    "payload": {},
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a28d89d0b176dfbe0b8cc9d99c751596c1894feeb5bd55fac93ed9fc99ab31cb"
+  }
+]

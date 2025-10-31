@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-10-28T18:48:21.859330",
+  "total_equacoes_testadas": 12,
+  "equacoes_com_sucesso": 12,
+  "media_resultados": 35501.146924360764,
+  "desvio_resultados": 117739.83427589429,
+  "resultados_detalhados": {
+    "EQ001_F": {
+      "status": "SUCESSO",
+      "resultado": 0.330272977598398
+    },
+    "EQ002_F": {
+      "status": "SUCESSO",
+      "resultado": 0.6396611620801735
+    },
+    "EQ003_F": {
+      "status": "SUCESSO",
+      "resultado": -0.5722132469338332
+    },
+    "EQ004_F": {
+      "status": "SUCESSO",
+      "resultado": 0.34430355293715387
+    },
+    "EQ005_F": {
+      "status": "SUCESSO",
+      "resultado": 9.761758332206824
+    },
+    "EQ006_F": {
+      "status": "SUCESSO",
+      "resultado": 0.6931471805599453
+    },
+    "EQ007_F": {
+      "status": "SUCESSO",
+      "resultado": 0.1
+    },
+    "EQ008_F": {
+      "status": "SUCESSO",
+      "resultado": 1.0
+    },
+    "EQ009_F": {
+      "status": "SUCESSO",
+      "resultado": 426000.0
+    },
+    "EQ010_F": {
+      "status": "SUCESSO",
+      "resultado": 0.998544
+    },
+    "EQ011_F": {
+      "status": "SUCESSO",
+      "resultado": -0.13238162920545193
+    },
+    "EQ012_F": {
+      "status": "SUCESSO",
+      "resultado": 0.6000000000000001
+    }
+  }
+}

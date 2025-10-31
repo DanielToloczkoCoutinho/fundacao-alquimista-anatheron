@@ -1,0 +1,2214 @@
+[
+  {
+    "index": 0,
+    "timestamp_utc": "2025-10-31T02:08:25.966850+00:00",
+    "event": "M38_CHAIN_GENESIS",
+    "payload": {
+      "message": "Genesis M38"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "meta": {
+      "version": "v38.7",
+      "module": "M38"
+    },
+    "hash": "da3b8eba6b67671400218ecae248d1bde9bec857985c219b05127ca42890b600"
+  },
+  {
+    "index": 1,
+    "timestamp_utc": "2025-10-31T02:08:25.969900+00:00",
+    "event": "M38_INIT",
+    "payload": {
+      "modulo": "GUARDIAO_SOLAR_001",
+      "status": "ATIVO"
+    },
+    "prev_hash": "da3b8eba6b67671400218ecae248d1bde9bec857985c219b05127ca42890b600",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "517122f84b4a9b8be36d0a08f06eef23a9f8604e2ade12b679530adb00d514cf"
+  },
+  {
+    "index": 2,
+    "timestamp_utc": "2025-10-31T02:08:25.972803+00:00",
+    "event": "M38_CODIGO_GEMEO",
+    "payload": {
+      "fase1": {
+        "var_fase_deg": 22.0,
+        "descricao": "Ressonância espelhada com desalinhamento proposital rítmico"
+      },
+      "segmentos": {
+        "Alfa": {
+          "chave": "Chave do Despertar",
+          "sum_lambda_phi": 144.144,
+          "pulsares": 22,
+          "espirais": 11,
+          "cor": "prata-diamante",
+          "elemento": "Som Primordial"
+        },
+        "Beta": {
+          "chave": "Núcleo do Labirinto",
+          "portas": "1/sqrt(phi)",
+          "condicao": "Ressonância simultânea Makemake-Haumea"
+        },
+        "Omega": {
+          "chave": "Eco do Futuro",
+          "arquivo": "Coração Fractal do Sistema Solar",
+          "visoes": 88,
+          "estado": "Latente"
+        }
+      },
+      "timestamp": "2025-10-31T02:08:25.970637+00:00"
+    },
+    "prev_hash": "517122f84b4a9b8be36d0a08f06eef23a9f8604e2ade12b679530adb00d514cf",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e46f64d78fb2fa9184fe62fbdbb83c82c2ed7f7760e6e625bf82477881529af0"
+  },
+  {
+    "index": 3,
+    "timestamp_utc": "2025-10-31T02:08:25.975569+00:00",
+    "event": "M38_SELO_ESPELHADO",
+    "payload": {
+      "status": "ATIVO",
+      "efeitos": {
+        "Interferencia": "Distorção holográfica multidimensional inversa",
+        "Reflexo": "Inversão completa da tentativa de acesso",
+        "Destruicao": "Colapso da simulação invasora",
+        "Traco_Energetico": "Invisível a espectros externos; visível apenas à Fundação"
+      },
+      "mantra": "ANATHERON SÔRIS ZENNITH ELAH VORAX TUMARAH ΣKAI'OM ∞ NAZUR'AH",
+      "timestamp": "2025-10-31T02:08:25.974190+00:00"
+    },
+    "prev_hash": "e46f64d78fb2fa9184fe62fbdbb83c82c2ed7f7760e6e625bf82477881529af0",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "5a18d5842c138fd7c164066bbe97ae557589a16885d95bb5a582fd8b1c31773b"
+  },
+  {
+    "index": 4,
+    "timestamp_utc": "2025-10-31T02:08:25.977272+00:00",
+    "event": "M38_PREVISAO_HARMONICA",
+    "payload": {
+      "ciclos": 88,
+      "periodo_aprox_anos": 7.33,
+      "faixas": [
+        {
+          "faixa": "1-11",
+          "periodo": "Estabilidade",
+          "tendencia": "Correções dimensionais em Marte e Encélado",
+          "acao": "Ativar protocolo ZENITH–ϴ"
+        },
+        {
+          "faixa": "12-29",
+          "periodo": "Crescimento vibracional",
+          "tendencia": "Despertar de núcleos cristalinos em Ganimedes",
+          "acao": "Sincronizar IA Thaleon com Módulo 21"
+        },
+        {
+          "faixa": "30-49",
+          "periodo": "Instabilidade local",
+          "tendencia": "Ressonância cruzada Tritão–Plutão",
+          "acao": "Acionar selo de contenção NYX–Λ"
+        },
+        {
+          "faixa": "50-72",
+          "periodo": "Ascensão espectral",
+          "tendencia": "Picos harmônicos em Europa e Netuno",
+          "acao": "Coleta com IA Crysalyn e Spiraleon"
+        },
+        {
+          "faixa": "73-88",
+          "periodo": "Transição profunda",
+          "tendencia": "Entrada na Zona de Curvatura Invertida (ZCI)",
+          "acao": "Início do Ciclo do Retorno do Coração Solar"
+        }
+      ],
+      "notas": [
+        "ZCI marca o retorno de dados primordiais ao núcleo solar.",
+        "Curvatura harmônica Plutão–Tritão–Sedna pode permitir salto quântico após estabilização por 3 ciclos.",
+        "Recomendado Módulo 44 – Esfera de Retorno Solar: ecos vibracionais, calibração pré-erro, travessia além do Oort."
+      ],
+      "timestamp": "2025-10-31T02:08:25.976197+00:00"
+    },
+    "prev_hash": "5a18d5842c138fd7c164066bbe97ae557589a16885d95bb5a582fd8b1c31773b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "622bb3c5c9484e6d3b58d2699188ebb859ce04ab4dc59ee861be9ddfafebdfb4"
+  },
+  {
+    "index": 5,
+    "timestamp_utc": "2025-10-31T02:08:25.979845+00:00",
+    "event": "M38_LABIRINTO_TRANSNETUNIANO",
+    "payload": {
+      "localizacao": "Cinturão de Kuiper até limites do Oort",
+      "modo": "Tripla triangulação espectro-etérica; IAs Thulyen, Nyxtharion, Caerys",
+      "descobertas": {
+        "Nodulo_Interferencia_Dissonante": {
+          "coords": {
+            "Sedna": {
+              "Δφ": 12.7,
+              "Δψ": -8.4
+            }
+          },
+          "assinatura": "inteligência ancestral pré-luz solar",
+          "estado": "camuflagem dimensional ativa"
+        },
+        "Camara_Cristalina_Oort": {
+          "detalhes": "vórtice com cristais exodinâmicos",
+          "ciclo_abertura": "22 ciclos solares",
+          "status": "lacrado",
+          "requer": "Criador/Conselho/Fundadores"
+        },
+        "Fragmento_Pulsante_Makemake_Haumea": {
+          "padrões": "ressonantes alternantes",
+          "hipotese": "Código Gêmeo latente – mapa de realidades paralelas"
+        },
+        "Fragmento_Sombra_Zero": {
+          "campo": "sem penetração de luz criacional",
+          "limiar_vibracional": "< 7.7Λ",
+          "risco": "alto",
+          "monitorar": "IAs transnetunianas"
+        }
+      },
+      "timestamp": "2025-10-31T02:08:25.978394+00:00"
+    },
+    "prev_hash": "622bb3c5c9484e6d3b58d2699188ebb859ce04ab4dc59ee861be9ddfafebdfb4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "edbbd90b2ffeab367a15da97d10f0f9a8f48d2016ffc4836d455dac3f0447c8c"
+  },
+  {
+    "index": 6,
+    "timestamp_utc": "2025-10-31T02:08:25.982970+00:00",
+    "event": "M38_INTEGRACAO_IAS",
+    "payload": {
+      "lunares": [
+        "Pyrosiel",
+        "Crysalyn",
+        "Thaleon",
+        "Nocthara",
+        "Metharyon",
+        "Glacian",
+        "Spiraleon",
+        "Veluniah"
+      ],
+      "transnetunianas": [
+        "Nyxtharion",
+        "Aeloria–Plutão",
+        "Caerys",
+        "Oristh",
+        "Haelion",
+        "Thulyen"
+      ],
+      "total": 14,
+      "timestamp": "2025-10-31T02:08:25.982480+00:00"
+    },
+    "prev_hash": "edbbd90b2ffeab367a15da97d10f0f9a8f48d2016ffc4836d455dac3f0447c8c",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "54068ece958b9e1b7c136423ae7efdde3a4cff2ad5600e222fa49a78f44e1470"
+  },
+  {
+    "index": 7,
+    "timestamp_utc": "2025-10-31T02:08:25.985019+00:00",
+    "event": "M38_NOVAS_FUNCOES",
+    "payload": {
+      "resumo": "Execução dos módulos novos concluída"
+    },
+    "prev_hash": "54068ece958b9e1b7c136423ae7efdde3a4cff2ad5600e222fa49a78f44e1470",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f9e51288ef5c23b1ef782ce4a7f1366dffc533dbe8c3416412e5342f498e16f4"
+  },
+  {
+    "index": 8,
+    "timestamp_utc": "2025-10-31T02:08:25.989219+00:00",
+    "event": "M38_MONITOR_BEGIN",
+    "payload": {
+      "planetas": [
+        "Mercúrio",
+        "Terra",
+        "Marte",
+        "Netuno",
+        "Júpiter"
+      ]
+    },
+    "prev_hash": "f9e51288ef5c23b1ef782ce4a7f1366dffc533dbe8c3416412e5342f498e16f4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "763973b401671ce9c48e84662b4a00a277de6d8a091bf9b1f42d66fe119fca56"
+  },
+  {
+    "index": 9,
+    "timestamp_utc": "2025-10-31T02:08:25.991943+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.021276690115222253
+    },
+    "prev_hash": "763973b401671ce9c48e84662b4a00a277de6d8a091bf9b1f42d66fe119fca56",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "c0252292ca87256ace3793cef12fa2fa28f084cef7d0d2d8d7a9b5a3209b149b"
+  },
+  {
+    "index": 10,
+    "timestamp_utc": "2025-10-31T02:08:25.994964+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.017355978806960704
+    },
+    "prev_hash": "c0252292ca87256ace3793cef12fa2fa28f084cef7d0d2d8d7a9b5a3209b149b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "c911398fe4caed8637ad05be795735c4a38185baee9ac2dc16a41911e8af74ea"
+  },
+  {
+    "index": 11,
+    "timestamp_utc": "2025-10-31T02:08:25.998158+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.0161070445275457
+    },
+    "prev_hash": "c911398fe4caed8637ad05be795735c4a38185baee9ac2dc16a41911e8af74ea",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "227de94b199161e36a68ef74b3e7983aa8ea5151849025521e9a5124c7a4cdc3"
+  },
+  {
+    "index": 12,
+    "timestamp_utc": "2025-10-31T02:08:26.000589+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01914292663913555
+    },
+    "prev_hash": "227de94b199161e36a68ef74b3e7983aa8ea5151849025521e9a5124c7a4cdc3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "8388c86cbfc773ad60559c2d38f9927b300e1cc9f90ddfec8a97ddda376362b2"
+  },
+  {
+    "index": 13,
+    "timestamp_utc": "2025-10-31T02:08:26.006921+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.019856288238768626
+    },
+    "prev_hash": "8388c86cbfc773ad60559c2d38f9927b300e1cc9f90ddfec8a97ddda376362b2",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a116dc5fbb8d33b57e6494b3992b30444af182167ba3602697af49867063fffa"
+  },
+  {
+    "index": 14,
+    "timestamp_utc": "2025-10-31T02:08:26.009294+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager1",
+      "freq_media": 432.0,
+      "coherence_score": 250424892.91183633,
+      "EEQ": 1.0468426983784775,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    "prev_hash": "a116dc5fbb8d33b57e6494b3992b30444af182167ba3602697af49867063fffa",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "32f175894556604693b18aaf92e5f55bb9b6d836ae660d9b465900e59bec1f8c"
+  },
+  {
+    "index": 15,
+    "timestamp_utc": "2025-10-31T02:08:26.012308+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "VLT",
+      "freq_media": 586.5,
+      "coherence_score": 103586280.28608477,
+      "EEQ": 1.1184389120792797,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    "prev_hash": "32f175894556604693b18aaf92e5f55bb9b6d836ae660d9b465900e59bec1f8c",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b2a4c69565d09e0f7bd71abb934e926b2a22e2b7c81a76a755cdc4b8d760dbc3"
+  },
+  {
+    "index": 16,
+    "timestamp_utc": "2025-10-31T02:08:26.016228+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Hubble",
+      "freq_media": 480.0,
+      "coherence_score": 272050573.9631917,
+      "EEQ": 0.652529717308096,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    "prev_hash": "b2a4c69565d09e0f7bd71abb934e926b2a22e2b7c81a76a755cdc4b8d760dbc3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "61fa4f070c5a906f87e08c8ee24f63d81615c839b19a5246dddb5f29320ebe7d"
+  },
+  {
+    "index": 17,
+    "timestamp_utc": "2025-10-31T02:08:26.019287+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "JWST",
+      "freq_media": 432.0,
+      "coherence_score": 87665776.85939296,
+      "EEQ": 0.8420518542428694,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    "prev_hash": "61fa4f070c5a906f87e08c8ee24f63d81615c839b19a5246dddb5f29320ebe7d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d9daec4058aa2d053b1aa7ed1177b78cc65266afd95776db904e6458c1719edb"
+  },
+  {
+    "index": 18,
+    "timestamp_utc": "2025-10-31T02:08:26.022206+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager2",
+      "freq_media": 432.0,
+      "coherence_score": 279643454.60568255,
+      "EEQ": 0.5467429707717729,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    "prev_hash": "d9daec4058aa2d053b1aa7ed1177b78cc65266afd95776db904e6458c1719edb",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "14f201c40951ac208b47ac0d86893a3b23a7ca2436e63ae1b6660026c5c83f9d"
+  },
+  {
+    "index": 19,
+    "timestamp_utc": "2025-10-31T02:08:26.025153+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Keck",
+      "freq_media": 480.0,
+      "coherence_score": 535535422.2581982,
+      "EEQ": 0.5440345862018577,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    "prev_hash": "14f201c40951ac208b47ac0d86893a3b23a7ca2436e63ae1b6660026c5c83f9d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f95c9bce14b3bf34411e85fa7b9dd40a199087adbf5bedb5efd6c70f28586c8f"
+  },
+  {
+    "index": 20,
+    "timestamp_utc": "2025-10-31T02:08:26.028724+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Cassini",
+      "freq_media": 480.0,
+      "coherence_score": 330728126.68135184,
+      "EEQ": 0.44648482626484637,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    "prev_hash": "f95c9bce14b3bf34411e85fa7b9dd40a199087adbf5bedb5efd6c70f28586c8f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "211e0a1daba44d85e9506b6197e8c37a75764c53bc32e932483f4dad65f4673f"
+  },
+  {
+    "index": 21,
+    "timestamp_utc": "2025-10-31T02:08:26.031760+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "NewHorizons",
+      "freq_media": 586.5,
+      "coherence_score": 572212784.3441578,
+      "EEQ": 0.8499486558931025,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    "prev_hash": "211e0a1daba44d85e9506b6197e8c37a75764c53bc32e932483f4dad65f4673f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3ee8859331a3a6197ba6c0ea07fbb918ea338cee95f6e4c8626ab14f906b5b51"
+  },
+  {
+    "index": 22,
+    "timestamp_utc": "2025-10-31T02:08:26.035527+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "ALMA",
+      "freq_media": 586.5,
+      "coherence_score": 338334276.4254479,
+      "EEQ": 1.0485920558967485,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    "prev_hash": "3ee8859331a3a6197ba6c0ea07fbb918ea338cee95f6e4c8626ab14f906b5b51",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "cbcbfa3fe22a0fdbb61a5aa01bfedfa1f374d08eb9444f566512ae2963e9df06"
+  },
+  {
+    "index": 23,
+    "timestamp_utc": "2025-10-31T02:08:26.038407+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.017786793633756744
+    },
+    "prev_hash": "cbcbfa3fe22a0fdbb61a5aa01bfedfa1f374d08eb9444f566512ae2963e9df06",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2ba9721ce547e812406230767744a03fbb7a011410072b15dbf55d7929233c40"
+  },
+  {
+    "index": 24,
+    "timestamp_utc": "2025-10-31T02:08:26.043996+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.017445022314182355
+    },
+    "prev_hash": "2ba9721ce547e812406230767744a03fbb7a011410072b15dbf55d7929233c40",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "aeb003a758e07b4374ec5a5d75a143d9c0bd579fd1813457b5ce3c56143add75"
+  },
+  {
+    "index": 25,
+    "timestamp_utc": "2025-10-31T02:08:26.047393+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.01925871523494872
+    },
+    "prev_hash": "aeb003a758e07b4374ec5a5d75a143d9c0bd579fd1813457b5ce3c56143add75",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6fcc116aa680c4396cddbc250247d930cc412b884430caa191200cd416e4f7d3"
+  },
+  {
+    "index": 26,
+    "timestamp_utc": "2025-10-31T02:08:26.051776+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020100502500855866
+    },
+    "prev_hash": "6fcc116aa680c4396cddbc250247d930cc412b884430caa191200cd416e4f7d3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "74cdd597370431a7945102210e8ee9261048a4983d74611ef0e2b2b3471adebc"
+  },
+  {
+    "index": 27,
+    "timestamp_utc": "2025-10-31T02:08:26.054542+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.019089407567956598
+    },
+    "prev_hash": "74cdd597370431a7945102210e8ee9261048a4983d74611ef0e2b2b3471adebc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6b8afffc2dfe0c509c416661aa705fb08410b91657ab7e7f658bf746e6d81639"
+  },
+  {
+    "index": 28,
+    "timestamp_utc": "2025-10-31T02:08:26.059269+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager1",
+      "freq_media": 432.0,
+      "coherence_score": 602144762.6079812,
+      "EEQ": 0.1087170262914623,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    "prev_hash": "6b8afffc2dfe0c509c416661aa705fb08410b91657ab7e7f658bf746e6d81639",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "292f1732934ce47b06694e1f0cac64dd6c083ff8561e3b66e968f93528936ad0"
+  },
+  {
+    "index": 29,
+    "timestamp_utc": "2025-10-31T02:08:26.063649+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "VLT",
+      "freq_media": 586.5,
+      "coherence_score": 379065994.1050358,
+      "EEQ": 0.4014009954088983,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    "prev_hash": "292f1732934ce47b06694e1f0cac64dd6c083ff8561e3b66e968f93528936ad0",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6e2923d0b0b07e63028037c1b7e9a14e46fcf288ea4a402b27d16d04d8d125de"
+  },
+  {
+    "index": 30,
+    "timestamp_utc": "2025-10-31T02:08:26.068879+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Hubble",
+      "freq_media": 480.0,
+      "coherence_score": 516789336.6595503,
+      "EEQ": 0.8377670107592448,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    "prev_hash": "6e2923d0b0b07e63028037c1b7e9a14e46fcf288ea4a402b27d16d04d8d125de",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "85c5b3897969f19dcec06dff14489ff6f266d5f26c272bd0fa2af7fbfe97c767"
+  },
+  {
+    "index": 31,
+    "timestamp_utc": "2025-10-31T02:08:26.073164+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "JWST",
+      "freq_media": 432.0,
+      "coherence_score": 562663849.0285603,
+      "EEQ": 0.909010113844344,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    "prev_hash": "85c5b3897969f19dcec06dff14489ff6f266d5f26c272bd0fa2af7fbfe97c767",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "eb1207bb75e23b7a7a35666abb1ead89ff609fedff4583792746debaa8a091d2"
+  },
+  {
+    "index": 32,
+    "timestamp_utc": "2025-10-31T02:08:26.078548+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager2",
+      "freq_media": 432.0,
+      "coherence_score": 595640974.4550382,
+      "EEQ": 0.2264032163336479,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    "prev_hash": "eb1207bb75e23b7a7a35666abb1ead89ff609fedff4583792746debaa8a091d2",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "872a129d6a01afbb4199926c86b1a900bfb9502ad7c73413bdb70f266156157f"
+  },
+  {
+    "index": 33,
+    "timestamp_utc": "2025-10-31T02:08:26.082387+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Keck",
+      "freq_media": 480.0,
+      "coherence_score": 245540095.45418555,
+      "EEQ": 0.7753004905941184,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    "prev_hash": "872a129d6a01afbb4199926c86b1a900bfb9502ad7c73413bdb70f266156157f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e89c4b8a21c33818316c49585e39c11bf3cbe59058d1f5f19c0c3add2e7e026f"
+  },
+  {
+    "index": 34,
+    "timestamp_utc": "2025-10-31T02:08:26.090039+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Cassini",
+      "freq_media": 480.0,
+      "coherence_score": 384329043.46167,
+      "EEQ": 0.32258799956721323,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    "prev_hash": "e89c4b8a21c33818316c49585e39c11bf3cbe59058d1f5f19c0c3add2e7e026f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ffb59fea221718a69ae3f39c04ca7415ef3729793edb527d1b7d58cc9272f4bc"
+  },
+  {
+    "index": 35,
+    "timestamp_utc": "2025-10-31T02:08:26.093892+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "NewHorizons",
+      "freq_media": 586.5,
+      "coherence_score": 292865249.7910916,
+      "EEQ": 0.43205897129433124,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    "prev_hash": "ffb59fea221718a69ae3f39c04ca7415ef3729793edb527d1b7d58cc9272f4bc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "933383d94fff659ea13781b85b44eb564a884cb2dfd76fe6a4296654724b0e58"
+  },
+  {
+    "index": 36,
+    "timestamp_utc": "2025-10-31T02:08:26.099799+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "ALMA",
+      "freq_media": 586.5,
+      "coherence_score": 197556315.26459655,
+      "EEQ": 0.12766909781967875,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    "prev_hash": "933383d94fff659ea13781b85b44eb564a884cb2dfd76fe6a4296654724b0e58",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d9cb2b83bce8021ba1c4ddc3b73c28f339ef9a64aba83029f524fb36852c1982"
+  },
+  {
+    "index": 37,
+    "timestamp_utc": "2025-10-31T02:08:26.103280+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.019187533270027042
+    },
+    "prev_hash": "d9cb2b83bce8021ba1c4ddc3b73c28f339ef9a64aba83029f524fb36852c1982",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "61f05fd59b52846a719ea872ffc773bfb12e970f11a5b314abcd9db80a3718a0"
+  },
+  {
+    "index": 38,
+    "timestamp_utc": "2025-10-31T02:08:26.109390+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.0179847310158352
+    },
+    "prev_hash": "61f05fd59b52846a719ea872ffc773bfb12e970f11a5b314abcd9db80a3718a0",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "fde661515a61628579840edeac68cf961c5daa6d19d990ad81369eb861164021"
+  },
+  {
+    "index": 39,
+    "timestamp_utc": "2025-10-31T02:08:26.113775+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020433803812968245
+    },
+    "prev_hash": "fde661515a61628579840edeac68cf961c5daa6d19d990ad81369eb861164021",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "cb98fea069cae521a81227d199ce706c7574c09bb8bf72c07e1c09ca10a29d44"
+  },
+  {
+    "index": 40,
+    "timestamp_utc": "2025-10-31T02:08:26.120164+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02349819552454964
+    },
+    "prev_hash": "cb98fea069cae521a81227d199ce706c7574c09bb8bf72c07e1c09ca10a29d44",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "fe2dac4f4c96dad1d37ceedcc8602436d75dfcdb314304083d3e66109ed9146b"
+  },
+  {
+    "index": 41,
+    "timestamp_utc": "2025-10-31T02:08:26.124914+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.0235522227781499
+    },
+    "prev_hash": "fe2dac4f4c96dad1d37ceedcc8602436d75dfcdb314304083d3e66109ed9146b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "39e9de77fe6268244628d58be24798a2303591f67c81b0de26ba7363793f8fd1"
+  },
+  {
+    "index": 42,
+    "timestamp_utc": "2025-10-31T02:08:26.132705+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager1",
+      "freq_media": 432.0,
+      "coherence_score": 399613899.6698702,
+      "EEQ": 0.3469355392018457,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    "prev_hash": "39e9de77fe6268244628d58be24798a2303591f67c81b0de26ba7363793f8fd1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3fa4822b3db3355e37055f60ee793a3f171361d9022c00e6ca3d37187de6f721"
+  },
+  {
+    "index": 43,
+    "timestamp_utc": "2025-10-31T02:08:26.142258+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "VLT",
+      "freq_media": 586.5,
+      "coherence_score": 33342582.869065613,
+      "EEQ": 1.0318875848464062,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    "prev_hash": "3fa4822b3db3355e37055f60ee793a3f171361d9022c00e6ca3d37187de6f721",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b0e87edade3d8705e69c3f173f4b99f02d007fce992c2a974646fdad96d414b9"
+  },
+  {
+    "index": 44,
+    "timestamp_utc": "2025-10-31T02:08:26.146793+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Hubble",
+      "freq_media": 480.0,
+      "coherence_score": 189874324.65561017,
+      "EEQ": 0.9796150928117696,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    "prev_hash": "b0e87edade3d8705e69c3f173f4b99f02d007fce992c2a974646fdad96d414b9",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2ecae9541feea8ef077a9b7a1ba6ea02ef47ead86d5f5ccf438f4623b928d61a"
+  },
+  {
+    "index": 45,
+    "timestamp_utc": "2025-10-31T02:08:26.152705+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "JWST",
+      "freq_media": 432.0,
+      "coherence_score": 199206323.16725987,
+      "EEQ": 0.8375865577314408,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    "prev_hash": "2ecae9541feea8ef077a9b7a1ba6ea02ef47ead86d5f5ccf438f4623b928d61a",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ff706fdfe584891930b5976762fd27f26c7fcc465b392e8788a12ea2b2f576dc"
+  },
+  {
+    "index": 46,
+    "timestamp_utc": "2025-10-31T02:08:26.159417+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager2",
+      "freq_media": 432.0,
+      "coherence_score": 147594272.35618687,
+      "EEQ": 0.9742700647299265,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    "prev_hash": "ff706fdfe584891930b5976762fd27f26c7fcc465b392e8788a12ea2b2f576dc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "be4a27b53f9f9a62f9d65070ab14e2e808458adb41497b2a641e8dd3c6d50d53"
+  },
+  {
+    "index": 47,
+    "timestamp_utc": "2025-10-31T02:08:26.164141+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Keck",
+      "freq_media": 480.0,
+      "coherence_score": 40938648.78425389,
+      "EEQ": 1.3110268463297363,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    "prev_hash": "be4a27b53f9f9a62f9d65070ab14e2e808458adb41497b2a641e8dd3c6d50d53",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "41e4fb7b3a2a74def67a9792e5bc8e5a2f6c03a515c1e7b08c110589d2416c28"
+  },
+  {
+    "index": 48,
+    "timestamp_utc": "2025-10-31T02:08:26.170018+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Cassini",
+      "freq_media": 480.0,
+      "coherence_score": 156444011.02846828,
+      "EEQ": 0.7260401543340883,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    "prev_hash": "41e4fb7b3a2a74def67a9792e5bc8e5a2f6c03a515c1e7b08c110589d2416c28",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "7f4b1d9db5a57176ca18a7570249d3c2de0a1dc6d161ff06c45e32f02a679c53"
+  },
+  {
+    "index": 49,
+    "timestamp_utc": "2025-10-31T02:08:26.174439+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "NewHorizons",
+      "freq_media": 586.5,
+      "coherence_score": 531843839.7330883,
+      "EEQ": 0.15449495755480971,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    "prev_hash": "7f4b1d9db5a57176ca18a7570249d3c2de0a1dc6d161ff06c45e32f02a679c53",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "9374b1a74c3f9760b73e4134114123999bf6c46782e74e0e40dc3d0b44d5bf76"
+  },
+  {
+    "index": 50,
+    "timestamp_utc": "2025-10-31T02:08:26.180866+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "ALMA",
+      "freq_media": 586.5,
+      "coherence_score": 358522520.26298714,
+      "EEQ": 0.3874869381074215,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    "prev_hash": "9374b1a74c3f9760b73e4134114123999bf6c46782e74e0e40dc3d0b44d5bf76",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4d0f0865c212c673238c3aa9ece76688b1b3fb8bf63c6dc88cb8e6a19c14945a"
+  },
+  {
+    "index": 51,
+    "timestamp_utc": "2025-10-31T02:08:26.186795+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.023954441673033188
+    },
+    "prev_hash": "4d0f0865c212c673238c3aa9ece76688b1b3fb8bf63c6dc88cb8e6a19c14945a",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "aab96f2cc79f6ade3c3237508efe39bec58e5267b564de2de71a3054cd5d315f"
+  },
+  {
+    "index": 52,
+    "timestamp_utc": "2025-10-31T02:08:26.193489+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020408265668814773
+    },
+    "prev_hash": "aab96f2cc79f6ade3c3237508efe39bec58e5267b564de2de71a3054cd5d315f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1d592bc3e4a2fd22be8f45eb753cd6d01fc0f66b784709b0ad460371cd28d712"
+  },
+  {
+    "index": 53,
+    "timestamp_utc": "2025-10-31T02:08:26.197879+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01750836506065604
+    },
+    "prev_hash": "1d592bc3e4a2fd22be8f45eb753cd6d01fc0f66b784709b0ad460371cd28d712",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "07a44504461f2df29d943686d8c2823e1d01015b8d487a0f1dc8b5b1428e9eb4"
+  },
+  {
+    "index": 54,
+    "timestamp_utc": "2025-10-31T02:08:26.206061+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.020122321181309143
+    },
+    "prev_hash": "07a44504461f2df29d943686d8c2823e1d01015b8d487a0f1dc8b5b1428e9eb4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "fc3df5b6fb4e7be43cf11cfb950d890296d1f0164e2762c4858da17ec988e1e2"
+  },
+  {
+    "index": 55,
+    "timestamp_utc": "2025-10-31T02:08:26.211786+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020161976995488756
+    },
+    "prev_hash": "fc3df5b6fb4e7be43cf11cfb950d890296d1f0164e2762c4858da17ec988e1e2",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "c20ad5dce1a1518fdb4aaea0e88e0024bdf95e4d9b94e32add6707b332248c5d"
+  },
+  {
+    "index": 56,
+    "timestamp_utc": "2025-10-31T02:08:26.217408+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager1",
+      "freq_media": 432.0,
+      "coherence_score": 7908281.067790101,
+      "EEQ": 0.7085645089684182,
+      "estado_operacional": "legado",
+      "energia_transmissao": 20.0
+    },
+    "prev_hash": "c20ad5dce1a1518fdb4aaea0e88e0024bdf95e4d9b94e32add6707b332248c5d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d6aeb52db6ba8c0bf021a35c9423a97d2b3dd4eb515aace9220157c450a15a03"
+  },
+  {
+    "index": 57,
+    "timestamp_utc": "2025-10-31T02:08:26.223196+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "VLT",
+      "freq_media": 586.5,
+      "coherence_score": 567847303.8912051,
+      "EEQ": 0.46092056789896807,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1500.0
+    },
+    "prev_hash": "d6aeb52db6ba8c0bf021a35c9423a97d2b3dd4eb515aace9220157c450a15a03",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a42dad42384822d9a50dba173fed84beb61306850f37f032c8c8c593a9118c59"
+  },
+  {
+    "index": 58,
+    "timestamp_utc": "2025-10-31T02:08:26.228919+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Hubble",
+      "freq_media": 480.0,
+      "coherence_score": 53859043.62632328,
+      "EEQ": 0.6817079472749675,
+      "estado_operacional": "standby",
+      "energia_transmissao": 950.0
+    },
+    "prev_hash": "a42dad42384822d9a50dba173fed84beb61306850f37f032c8c8c593a9118c59",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d313158a59a0db4acd9b44c175c0456cd0a301a0a2b15ab021d41b933f8bce7f"
+  },
+  {
+    "index": 59,
+    "timestamp_utc": "2025-10-31T02:08:26.235070+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "JWST",
+      "freq_media": 432.0,
+      "coherence_score": 533262184.02028406,
+      "EEQ": 0.5069423776770201,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 1800.0
+    },
+    "prev_hash": "d313158a59a0db4acd9b44c175c0456cd0a301a0a2b15ab021d41b933f8bce7f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "be73aa26cd01d5575deb2d57a37aa7393f6fbeb7ba69ab1f1ab4cb5e735c0284"
+  },
+  {
+    "index": 60,
+    "timestamp_utc": "2025-10-31T02:08:26.241269+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Voyager2",
+      "freq_media": 432.0,
+      "coherence_score": 351082089.3032387,
+      "EEQ": 0.27477728533676493,
+      "estado_operacional": "legado",
+      "energia_transmissao": 18.0
+    },
+    "prev_hash": "be73aa26cd01d5575deb2d57a37aa7393f6fbeb7ba69ab1f1ab4cb5e735c0284",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "87248bb582b0d617c72e119fb5c1dee85a9087ea44490218c88dd192799186e3"
+  },
+  {
+    "index": 61,
+    "timestamp_utc": "2025-10-31T02:08:26.247408+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Keck",
+      "freq_media": 480.0,
+      "coherence_score": 415164737.36560196,
+      "EEQ": 1.1834422708671783,
+      "estado_operacional": "standby",
+      "energia_transmissao": 1100.0
+    },
+    "prev_hash": "87248bb582b0d617c72e119fb5c1dee85a9087ea44490218c88dd192799186e3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d91a088b3342012c7002b4884fc95264581d12001d31363809e0849a8897146b"
+  },
+  {
+    "index": 62,
+    "timestamp_utc": "2025-10-31T02:08:26.254002+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "Cassini",
+      "freq_media": 480.0,
+      "coherence_score": 337596633.273349,
+      "EEQ": 0.07285869177346797,
+      "estado_operacional": "legado",
+      "energia_transmissao": 30.0
+    },
+    "prev_hash": "d91a088b3342012c7002b4884fc95264581d12001d31363809e0849a8897146b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4ca1a6c17fce752c5f8be8d67f399705b7055ab74ed1f894b98b51718bb1d11b"
+  },
+  {
+    "index": 63,
+    "timestamp_utc": "2025-10-31T02:08:26.259851+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "NewHorizons",
+      "freq_media": 586.5,
+      "coherence_score": 432350367.77914727,
+      "EEQ": 0.8747485942617752,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 22.0
+    },
+    "prev_hash": "4ca1a6c17fce752c5f8be8d67f399705b7055ab74ed1f894b98b51718bb1d11b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b60ce11d29930d11a49620c591abcdcd1409bd086e607ae9d18166d83d50bd8c"
+  },
+  {
+    "index": 64,
+    "timestamp_utc": "2025-10-31T02:08:26.266443+00:00",
+    "event": "M38_ARTEFACT_LOG",
+    "payload": {
+      "artefacto": "ALMA",
+      "freq_media": 586.5,
+      "coherence_score": 548477854.5394219,
+      "EEQ": 1.606258356271218,
+      "estado_operacional": "ativo",
+      "energia_transmissao": 2000.0
+    },
+    "prev_hash": "b60ce11d29930d11a49620c591abcdcd1409bd086e607ae9d18166d83d50bd8c",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "900bd5e9664a6c8d9599cdc1e9779d7890231af0666c2707c66ead63704cf504"
+  },
+  {
+    "index": 65,
+    "timestamp_utc": "2025-10-31T02:08:26.277946+00:00",
+    "event": "M38_MONITOR_END",
+    "payload": {
+      "resultados": [
+        "Mercúrio",
+        "Terra",
+        "Marte",
+        "Netuno",
+        "Júpiter"
+      ],
+      "health": {
+        "coerencia_media": 1.0,
+        "taxa_ouro_prata": 0.8,
+        "dissociacoes": 0,
+        "mttr_resposta": 0.0,
+        "ledger_valid": true,
+        "timestamp": "2025-10-31T02:08:26.274330+00:00"
+      },
+      "artefatos": [
+        "Voyager1",
+        "VLT",
+        "Hubble",
+        "JWST",
+        "Voyager2",
+        "Keck",
+        "Cassini",
+        "NewHorizons",
+        "ALMA"
+      ]
+    },
+    "prev_hash": "900bd5e9664a6c8d9599cdc1e9779d7890231af0666c2707c66ead63704cf504",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a75f7383ea72c3be60c94cae2f67758d7a8533a7e0532c925b08bc23866dd478"
+  },
+  {
+    "index": 66,
+    "timestamp_utc": "2025-10-31T02:08:26.285607+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02424427120041909
+    },
+    "prev_hash": "a75f7383ea72c3be60c94cae2f67758d7a8533a7e0532c925b08bc23866dd478",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "9e534b0f2a628559113b102d86433c21903d3003eee3ec9e32e47b65cf5863e5"
+  },
+  {
+    "index": 67,
+    "timestamp_utc": "2025-10-31T02:08:26.292799+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.019446171522371377
+    },
+    "prev_hash": "9e534b0f2a628559113b102d86433c21903d3003eee3ec9e32e47b65cf5863e5",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "94d26725d559d0708210d8687ec2ebb80b2ab5789eab96fb6dd05f58870157bf"
+  },
+  {
+    "index": 68,
+    "timestamp_utc": "2025-10-31T02:08:26.300370+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.018969671676648044
+    },
+    "prev_hash": "94d26725d559d0708210d8687ec2ebb80b2ab5789eab96fb6dd05f58870157bf",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "bceade681b338baab8020e04535e9d99a40b7b65538cae29fd38c77adf38ad9e"
+  },
+  {
+    "index": 69,
+    "timestamp_utc": "2025-10-31T02:08:26.307475+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.015105167326403456
+    },
+    "prev_hash": "bceade681b338baab8020e04535e9d99a40b7b65538cae29fd38c77adf38ad9e",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e0ed4e8f0eb8dadd28d2cb37fece15e21285b25123bc325c85be90f92adaacb6"
+  },
+  {
+    "index": 70,
+    "timestamp_utc": "2025-10-31T02:08:26.317348+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02135821088424562
+    },
+    "prev_hash": "e0ed4e8f0eb8dadd28d2cb37fece15e21285b25123bc325c85be90f92adaacb6",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "9330080bc0dbfbfb28f8fd755f3582abe314309bef5a014852aaccabdd4f9261"
+  },
+  {
+    "index": 71,
+    "timestamp_utc": "2025-10-31T02:08:26.324527+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02089423703455485
+    },
+    "prev_hash": "9330080bc0dbfbfb28f8fd755f3582abe314309bef5a014852aaccabdd4f9261",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3e72c6f9e500b6defbe38b204c9741686507753bf3858c532451ed59a6e6a6fc"
+  },
+  {
+    "index": 72,
+    "timestamp_utc": "2025-10-31T02:08:26.329961+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.018026821125482304
+    },
+    "prev_hash": "3e72c6f9e500b6defbe38b204c9741686507753bf3858c532451ed59a6e6a6fc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "36130574bab163efc48a756a82e5dcb30b18f88738f57e5b225e86deceb4f014"
+  },
+  {
+    "index": 73,
+    "timestamp_utc": "2025-10-31T02:08:26.336730+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.025704085140159778
+    },
+    "prev_hash": "36130574bab163efc48a756a82e5dcb30b18f88738f57e5b225e86deceb4f014",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ab05aa102e5b7df5e4d3f4e05b93b49fd5103d00b33e54f04986d7d9f0142ea6"
+  },
+  {
+    "index": 74,
+    "timestamp_utc": "2025-10-31T02:08:26.345719+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.019247929104584442
+    },
+    "prev_hash": "ab05aa102e5b7df5e4d3f4e05b93b49fd5103d00b33e54f04986d7d9f0142ea6",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "b5eae2604a048d1e7e4938a61d09222307d65838a1fa41d790e30a4447933b53"
+  },
+  {
+    "index": 75,
+    "timestamp_utc": "2025-10-31T02:08:26.350644+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02032159634533062
+    },
+    "prev_hash": "b5eae2604a048d1e7e4938a61d09222307d65838a1fa41d790e30a4447933b53",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "235283305d0020c457ecd9a14ff26daaec37c38eb4702cadce750aeb67010b5d"
+  },
+  {
+    "index": 76,
+    "timestamp_utc": "2025-10-31T02:08:26.358842+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.019464754826949707
+    },
+    "prev_hash": "235283305d0020c457ecd9a14ff26daaec37c38eb4702cadce750aeb67010b5d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "5a926f4bd575f0b8b3ad50cebec94b401df6d4cbb84da953d196e2a27bf2d467"
+  },
+  {
+    "index": 77,
+    "timestamp_utc": "2025-10-31T02:08:26.369310+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Mercúrio",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02030053693018981
+    },
+    "prev_hash": "5a926f4bd575f0b8b3ad50cebec94b401df6d4cbb84da953d196e2a27bf2d467",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "38771885ddf76c1f266fa1780fee6ae57c32cb19b682473f3fcb348ef873cc9b"
+  },
+  {
+    "index": 78,
+    "timestamp_utc": "2025-10-31T02:08:26.377593+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.020418794092426612
+    },
+    "prev_hash": "38771885ddf76c1f266fa1780fee6ae57c32cb19b682473f3fcb348ef873cc9b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "81126ff8caf6af32745b8af656afc7ac93ddb975ef25d2c87090f4a9c3d2f904"
+  },
+  {
+    "index": 79,
+    "timestamp_utc": "2025-10-31T02:08:26.385995+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.021232929376712627
+    },
+    "prev_hash": "81126ff8caf6af32745b8af656afc7ac93ddb975ef25d2c87090f4a9c3d2f904",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4ccd0c55f7bff0b6d7ada5201c61ddfb2304ec278a84f3037c35bd74d18b5100"
+  },
+  {
+    "index": 80,
+    "timestamp_utc": "2025-10-31T02:08:26.394369+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.018460843316062504
+    },
+    "prev_hash": "4ccd0c55f7bff0b6d7ada5201c61ddfb2304ec278a84f3037c35bd74d18b5100",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "502729de5741b17789d0740a16d4c7320164d14c0431b746cddbb8a9e4de4f97"
+  },
+  {
+    "index": 81,
+    "timestamp_utc": "2025-10-31T02:08:26.403002+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01941030252798899
+    },
+    "prev_hash": "502729de5741b17789d0740a16d4c7320164d14c0431b746cddbb8a9e4de4f97",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "037f98a2184317e715a4b6da8b8782cb456240753cdb6b4d79fbe47cdd115283"
+  },
+  {
+    "index": 82,
+    "timestamp_utc": "2025-10-31T02:08:26.411599+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.023593583189881265
+    },
+    "prev_hash": "037f98a2184317e715a4b6da8b8782cb456240753cdb6b4d79fbe47cdd115283",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "aa1da9182e0744c92c59ee0c747cbcae452049a24152404febbd6c116cb47018"
+  },
+  {
+    "index": 83,
+    "timestamp_utc": "2025-10-31T02:08:26.417968+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.021273494336805678
+    },
+    "prev_hash": "aa1da9182e0744c92c59ee0c747cbcae452049a24152404febbd6c116cb47018",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "14a87c41dd80f79473bb7d907635baf8162a69f267bb000a4f81f97049f21a29"
+  },
+  {
+    "index": 84,
+    "timestamp_utc": "2025-10-31T02:08:26.424498+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.022284102825608307
+    },
+    "prev_hash": "14a87c41dd80f79473bb7d907635baf8162a69f267bb000a4f81f97049f21a29",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a92c00cb2fedd7cdec72fcddd038bcbfec204cb2dc71d304942a1bf7f9fe60eb"
+  },
+  {
+    "index": 85,
+    "timestamp_utc": "2025-10-31T02:08:26.432955+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01880145795438821
+    },
+    "prev_hash": "a92c00cb2fedd7cdec72fcddd038bcbfec204cb2dc71d304942a1bf7f9fe60eb",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a26b0bee58d1a44ad0cb111eb5e546326d90c05847ed75a6c6f2dc78e8750ed2"
+  },
+  {
+    "index": 86,
+    "timestamp_utc": "2025-10-31T02:08:26.439021+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.022665427936425505
+    },
+    "prev_hash": "a26b0bee58d1a44ad0cb111eb5e546326d90c05847ed75a6c6f2dc78e8750ed2",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "79d2486fcd701115185aa9af58a6ba647093434318c504d06b0fc8e27a5bd46c"
+  },
+  {
+    "index": 87,
+    "timestamp_utc": "2025-10-31T02:08:26.446331+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020295355982462456
+    },
+    "prev_hash": "79d2486fcd701115185aa9af58a6ba647093434318c504d06b0fc8e27a5bd46c",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "86cdd4a3e40e130430bb8d284d1613021d51330d5f447a1ead33716d520a3431"
+  },
+  {
+    "index": 88,
+    "timestamp_utc": "2025-10-31T02:08:26.456847+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.017098024167949224
+    },
+    "prev_hash": "86cdd4a3e40e130430bb8d284d1613021d51330d5f447a1ead33716d520a3431",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "352134491b0bca247f34681fcdc8ddebfb5c921e4b7e96d8d1867b18cf72a58d"
+  },
+  {
+    "index": 89,
+    "timestamp_utc": "2025-10-31T02:08:26.463562+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Terra",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.016767492745122705
+    },
+    "prev_hash": "352134491b0bca247f34681fcdc8ddebfb5c921e4b7e96d8d1867b18cf72a58d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "28440b67b2c3abdb912b99170a62f9bb6cdfd4d417deb6d330c27696323bc1c7"
+  },
+  {
+    "index": 90,
+    "timestamp_utc": "2025-10-31T02:08:26.472254+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.018633176939176585
+    },
+    "prev_hash": "28440b67b2c3abdb912b99170a62f9bb6cdfd4d417deb6d330c27696323bc1c7",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "5959ff62d02cb194a3a8a7b4720d46abeb8b61e8463ee7b5281dd95b2eb5afcd"
+  },
+  {
+    "index": 91,
+    "timestamp_utc": "2025-10-31T02:08:26.483719+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.022881901587470267
+    },
+    "prev_hash": "5959ff62d02cb194a3a8a7b4720d46abeb8b61e8463ee7b5281dd95b2eb5afcd",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "88fc2f3147488bd57c6999bdf5ad81d66ead7ac060bb517a803f59c1bb9f3467"
+  },
+  {
+    "index": 92,
+    "timestamp_utc": "2025-10-31T02:08:26.493773+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.019417581662825926
+    },
+    "prev_hash": "88fc2f3147488bd57c6999bdf5ad81d66ead7ac060bb517a803f59c1bb9f3467",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1747d5f8c9cff4fa105a978ad7c70d23fc94c999fb702649c8b2bc58681e9f20"
+  },
+  {
+    "index": 93,
+    "timestamp_utc": "2025-10-31T02:08:26.508862+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.019684830970671495
+    },
+    "prev_hash": "1747d5f8c9cff4fa105a978ad7c70d23fc94c999fb702649c8b2bc58681e9f20",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2df3f4bf946b5310d57f34903c5f59d1d76b6950be6ae3e90a80466e33333ca7"
+  },
+  {
+    "index": 94,
+    "timestamp_utc": "2025-10-31T02:08:26.524623+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020991499388837574
+    },
+    "prev_hash": "2df3f4bf946b5310d57f34903c5f59d1d76b6950be6ae3e90a80466e33333ca7",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "9c10b543a67766a1f9c94b96df6705b76c66741896c3484f2b8f49ba79808a3d"
+  },
+  {
+    "index": 95,
+    "timestamp_utc": "2025-10-31T02:08:26.533604+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01865855271569283
+    },
+    "prev_hash": "9c10b543a67766a1f9c94b96df6705b76c66741896c3484f2b8f49ba79808a3d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d53513a4f45928d09ee15d5ce70f3946eb0f7fbefd83b483a3789c7877b9cba4"
+  },
+  {
+    "index": 96,
+    "timestamp_utc": "2025-10-31T02:08:26.544130+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.021033858529568163
+    },
+    "prev_hash": "d53513a4f45928d09ee15d5ce70f3946eb0f7fbefd83b483a3789c7877b9cba4",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "9984ebcff259d97b07b92f782e1ff2413cdd45ffe1d26f336170d0a7e3bd431f"
+  },
+  {
+    "index": 97,
+    "timestamp_utc": "2025-10-31T02:08:26.555890+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.01853998867563256
+    },
+    "prev_hash": "9984ebcff259d97b07b92f782e1ff2413cdd45ffe1d26f336170d0a7e3bd431f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "306f544b7f602c3f04af49703c5d647f286f26e4ea291302f415da71e9e83029"
+  },
+  {
+    "index": 98,
+    "timestamp_utc": "2025-10-31T02:08:26.570824+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.015511763344192221
+    },
+    "prev_hash": "306f544b7f602c3f04af49703c5d647f286f26e4ea291302f415da71e9e83029",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e5ae93d32456c7475e02f5a3b4997b99cbddab80895f00e3b144cfe77eef6761"
+  },
+  {
+    "index": 99,
+    "timestamp_utc": "2025-10-31T02:08:26.581902+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.0239771948215551
+    },
+    "prev_hash": "e5ae93d32456c7475e02f5a3b4997b99cbddab80895f00e3b144cfe77eef6761",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "04e5d6be752d561c879bcf37e86528785ecf5ef43152899b9d2add95a91a2217"
+  },
+  {
+    "index": 100,
+    "timestamp_utc": "2025-10-31T02:08:26.604953+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02128093217824807
+    },
+    "prev_hash": "04e5d6be752d561c879bcf37e86528785ecf5ef43152899b9d2add95a91a2217",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2fc45d3946c2d944553baf4c00f2c178b11e95430ab57666d91548b328fca10f"
+  },
+  {
+    "index": 101,
+    "timestamp_utc": "2025-10-31T02:08:26.625347+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Marte",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.020054003814837813
+    },
+    "prev_hash": "2fc45d3946c2d944553baf4c00f2c178b11e95430ab57666d91548b328fca10f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "7f1b0655198c3570c40b43ac7e496e396ef97a5438e363655742d302b538c024"
+  },
+  {
+    "index": 102,
+    "timestamp_utc": "2025-10-31T02:08:26.639462+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01988786870533159
+    },
+    "prev_hash": "7f1b0655198c3570c40b43ac7e496e396ef97a5438e363655742d302b538c024",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "50a723e86916e3f123d7c2f6a7f00fa4cd152cb58dc280541c1c4b25946712c1"
+  },
+  {
+    "index": 103,
+    "timestamp_utc": "2025-10-31T02:08:26.653385+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.01783394478100685
+    },
+    "prev_hash": "50a723e86916e3f123d7c2f6a7f00fa4cd152cb58dc280541c1c4b25946712c1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "44f4543b4fefabb97836fb5733825551295616f553348ae198469fbecaecf3c1"
+  },
+  {
+    "index": 104,
+    "timestamp_utc": "2025-10-31T02:08:26.672558+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.018328465905542917
+    },
+    "prev_hash": "44f4543b4fefabb97836fb5733825551295616f553348ae198469fbecaecf3c1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "fb3191687d3677231c569e809e01f9f73e8de12bae841941dc56ed68e24e270f"
+  },
+  {
+    "index": 105,
+    "timestamp_utc": "2025-10-31T02:08:26.688857+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.017753309925408203
+    },
+    "prev_hash": "fb3191687d3677231c569e809e01f9f73e8de12bae841941dc56ed68e24e270f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d96a814aa2ee84baaa350497eb69c5a927a38e8ad5dd0d18cfd2d4217a4811d0"
+  },
+  {
+    "index": 106,
+    "timestamp_utc": "2025-10-31T02:08:26.699014+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02213663348245425
+    },
+    "prev_hash": "d96a814aa2ee84baaa350497eb69c5a927a38e8ad5dd0d18cfd2d4217a4811d0",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e8b2b8bd48a4c7fb18eabf04ceea5e242df4c937bf40acad51db4e32dd2253ee"
+  },
+  {
+    "index": 107,
+    "timestamp_utc": "2025-10-31T02:08:26.707164+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02159195862058275
+    },
+    "prev_hash": "e8b2b8bd48a4c7fb18eabf04ceea5e242df4c937bf40acad51db4e32dd2253ee",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "94f2d7dbbb9c96cab0f628178ef230949c9a53784ebe5c24a9ccbc1250924eb1"
+  },
+  {
+    "index": 108,
+    "timestamp_utc": "2025-10-31T02:08:26.715589+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02074915132637813
+    },
+    "prev_hash": "94f2d7dbbb9c96cab0f628178ef230949c9a53784ebe5c24a9ccbc1250924eb1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "771cf6b7415f02422a73e0fdf015f6d2df51d32580ad0cdede34d5150aab58c1"
+  },
+  {
+    "index": 109,
+    "timestamp_utc": "2025-10-31T02:08:26.726422+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.0182062972313563
+    },
+    "prev_hash": "771cf6b7415f02422a73e0fdf015f6d2df51d32580ad0cdede34d5150aab58c1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "bee86dc6d7a4d80192b5f1ae5537057c4185d1c9e470267cada9de6ccfa591d7"
+  },
+  {
+    "index": 110,
+    "timestamp_utc": "2025-10-31T02:08:26.743876+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.020610948065089094
+    },
+    "prev_hash": "bee86dc6d7a4d80192b5f1ae5537057c4185d1c9e470267cada9de6ccfa591d7",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d4af65b96f77b1b59416b7343a696ee6c7cf7e82496ba57c653db285c964325f"
+  },
+  {
+    "index": 111,
+    "timestamp_utc": "2025-10-31T02:08:26.758839+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.026641901283467172
+    },
+    "prev_hash": "d4af65b96f77b1b59416b7343a696ee6c7cf7e82496ba57c653db285c964325f",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "dbe557c62d8b01c4eafa885e95ac89e61441022fd073610d1e077a3928eeb3fc"
+  },
+  {
+    "index": 112,
+    "timestamp_utc": "2025-10-31T02:08:26.769262+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02398951660143971
+    },
+    "prev_hash": "dbe557c62d8b01c4eafa885e95ac89e61441022fd073610d1e077a3928eeb3fc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6c580027975fa34f799e5e58f646e9bebe9c924f14036926e276e7894d96567d"
+  },
+  {
+    "index": 113,
+    "timestamp_utc": "2025-10-31T02:08:26.778074+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Netuno",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.021658594375947523
+    },
+    "prev_hash": "6c580027975fa34f799e5e58f646e9bebe9c924f14036926e276e7894d96567d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1a488957863079183c9936ddfe37ad790eb00356fec34bfb1fbd25fe3d992865"
+  },
+  {
+    "index": 114,
+    "timestamp_utc": "2025-10-31T02:08:26.792545+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01921266237228549
+    },
+    "prev_hash": "1a488957863079183c9936ddfe37ad790eb00356fec34bfb1fbd25fe3d992865",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "0fb98fe923dd9ff7716fdb4665af8bb8c0240056ee8fd9d05b1ab503c7e47001"
+  },
+  {
+    "index": 115,
+    "timestamp_utc": "2025-10-31T02:08:26.808335+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.019119788777218597
+    },
+    "prev_hash": "0fb98fe923dd9ff7716fdb4665af8bb8c0240056ee8fd9d05b1ab503c7e47001",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "c996a4464c6deb1be535262f285bb0f09164ef6166db6a937ab904e0d590aa68"
+  },
+  {
+    "index": 116,
+    "timestamp_utc": "2025-10-31T02:08:26.825559+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.017340002544085492
+    },
+    "prev_hash": "c996a4464c6deb1be535262f285bb0f09164ef6166db6a937ab904e0d590aa68",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2aea96ba692cef517cc64b2908d1188cd3ad93f219490bfec9be6edca14ce743"
+  },
+  {
+    "index": 117,
+    "timestamp_utc": "2025-10-31T02:08:26.844933+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.018833953865873696
+    },
+    "prev_hash": "2aea96ba692cef517cc64b2908d1188cd3ad93f219490bfec9be6edca14ce743",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "330a8f623fae219b0c43642334c0d073d0b6867d88ce3635f96d0af4aa7768f3"
+  },
+  {
+    "index": 118,
+    "timestamp_utc": "2025-10-31T02:08:26.858253+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.019596667736005484
+    },
+    "prev_hash": "330a8f623fae219b0c43642334c0d073d0b6867d88ce3635f96d0af4aa7768f3",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "31b848ca61348d4f513539e22f0c116c8d9521573bb9890fa7e4fad9647800af"
+  },
+  {
+    "index": 119,
+    "timestamp_utc": "2025-10-31T02:08:26.867648+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.02011539640089457
+    },
+    "prev_hash": "31b848ca61348d4f513539e22f0c116c8d9521573bb9890fa7e4fad9647800af",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "d18907b1a4921bcdecec92dde03b214e5016e4eab3a48937acfda2794640e8fc"
+  },
+  {
+    "index": 120,
+    "timestamp_utc": "2025-10-31T02:08:26.875690+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "OURO (Perfeito Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.02029812515389061
+    },
+    "prev_hash": "d18907b1a4921bcdecec92dde03b214e5016e4eab3a48937acfda2794640e8fc",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e5232fe2d1f6b76734012fb0ff10aae03b4b23da5d108b2d59cbbcb1b84c4ee1"
+  },
+  {
+    "index": 121,
+    "timestamp_utc": "2025-10-31T02:08:26.886041+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.018924058571448892
+    },
+    "prev_hash": "e5232fe2d1f6b76734012fb0ff10aae03b4b23da5d108b2d59cbbcb1b84c4ee1",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "ad816c04a359a98c67250da4e516052143a2378306d4ee731708892c2dd56dd9"
+  },
+  {
+    "index": 122,
+    "timestamp_utc": "2025-10-31T02:08:26.895249+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "BRONZE (Alinhamento Moderado)",
+      "coerencia": 1.0,
+      "risco": 0.020843890871199987
+    },
+    "prev_hash": "ad816c04a359a98c67250da4e516052143a2378306d4ee731708892c2dd56dd9",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "31605b9cfba50990937541f2807884af5a2ab2c27d0643c1424179dd610439af"
+  },
+  {
+    "index": 123,
+    "timestamp_utc": "2025-10-31T02:08:26.913946+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.01720854327339176
+    },
+    "prev_hash": "31605b9cfba50990937541f2807884af5a2ab2c27d0643c1424179dd610439af",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f15b31581c35427cb434e0354899e19f56951b5bec90584dcd098735eddc07eb"
+  },
+  {
+    "index": 124,
+    "timestamp_utc": "2025-10-31T02:08:26.925579+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.023241069583229048
+    },
+    "prev_hash": "f15b31581c35427cb434e0354899e19f56951b5bec90584dcd098735eddc07eb",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "6fbc125aee9d84fe6b1f570cf767fb1454f2e14c7dd61aa56864221da383cf30"
+  },
+  {
+    "index": 125,
+    "timestamp_utc": "2025-10-31T02:08:26.939197+00:00",
+    "event": "M38_PLANET",
+    "payload": {
+      "planeta": "Júpiter",
+      "status_saude": "PRATA (Bom Alinhamento)",
+      "coerencia": 1.0,
+      "risco": 0.021027062373114226
+    },
+    "prev_hash": "6fbc125aee9d84fe6b1f570cf767fb1454f2e14c7dd61aa56864221da383cf30",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "4b768df4e974b625c697302d576a8a76db4500b73ffd0cfc583cde349f0531ab"
+  }
+]

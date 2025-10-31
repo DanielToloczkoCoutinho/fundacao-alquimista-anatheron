@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-31T00:00:33.803820+00:00",
+  "intencao": "Elevação Vibracional Planetária",
+  "status": "SUCESSO",
+  "resultado": {
+    "status": "SUCESSO",
+    "mensagem": "Matéria manifestada com sucesso.",
+    "material_id": "MAT_b0938ba4",
+    "ressonancia": 0.8056669879999999,
+    "unificacao": 0.5868265158273277,
+    "modelo_integrado": 0.5408370626360485,
+    "selo_struct": "9ace0616a4f63a47"
+  }
+}

@@ -2,30 +2,30 @@
   "laboratorio": "QUANTICO_NATIVO_NIXOS",
   "versao": "3.0.NIX-PURA",
   "sistema": "NixOS_Imutavel",
-  "timestamp_nix": "2025-10-26T03:03:40.125255",
+  "timestamp_nix": "2025-10-27T15:46:47.022135",
   "fundacao": {
     "nome": "Fundação Alquimista",
     "fundador": "Anatheron",
-    "chave_nix": "32e657eb4ce46eea"
+    "chave_nix": "8c02c8383dbcc08e"
   },
   "testes_nativos": {
     "QFT_NATIVO": {
       "algoritmo": "QFT_Nativo_Nix",
       "qubits": 3,
-      "coerencia_quantica": 0.9743,
+      "coerencia_quantica": 0.9778,
       "resultados": {
-        "000": 17.519036325923327,
-        "001": 140.17177942062355,
-        "010": 196.09972925307702,
-        "011": 136.47879478548538,
-        "100": 16.431599690153252,
-        "101": 149.81423240543205,
-        "110": 196.0944133150073,
-        "111": 147.39041480429816
+        "000": 15.739701840099642,
+        "001": 153.69046498341646,
+        "010": 200.91780522479374,
+        "011": 153.53191245494864,
+        "100": 0.24750732632748282,
+        "101": 128.7216173977101,
+        "110": 201.8485541453783,
+        "111": 145.3024366273257
       },
-      "entropia_quantica": 0.8907,
-      "timestamp": "2025-10-26T03:03:41.125570",
-      "hash_alquimista": "f9dd813282ad4710"
+      "entropia_quantica": 0.9297,
+      "timestamp": "2025-10-27T15:46:48.022564",
+      "hash_alquimista": "29052f7f030f4c1a"
     },
     "SHOR_NATIVO": {
       "algoritmo": "Shor_Nativo_Nix",
@@ -34,66 +34,66 @@
         3,
         5
       ],
-      "eficiencia_quantica": 0.9408,
-      "coerencia_quantica": 0.9831,
-      "timestamp": "2025-10-26T03:03:42.125869",
-      "hash_alquimista": "0a78e342616c7e81"
+      "eficiencia_quantica": 0.8826,
+      "coerencia_quantica": 0.9805,
+      "timestamp": "2025-10-27T15:46:49.022960",
+      "hash_alquimista": "d01532b6032cb4bb"
     },
     "GROVER_NATIVO": {
       "algoritmo": "Grover_Nativo_Nix",
       "aceleracao": 4.0,
-      "complexidade_quantica": 2.9632,
-      "coerencia_quantica": 0.9957,
-      "timestamp": "2025-10-26T03:03:43.126217",
-      "hash_alquimista": "87974eefdae896ac"
+      "complexidade_quantica": 3.4417,
+      "coerencia_quantica": 0.971,
+      "timestamp": "2025-10-27T15:46:50.023444",
+      "hash_alquimista": "a62fc73f6614caaf"
     },
     "ENTRELAÇAMENTO": {
       "algoritmo": "Entrelacamento_Nativo",
-      "emaranhamento": 0.98,
-      "nao_localidade": 0.9614,
+      "emaranhamento": 0.9744,
+      "nao_localidade": 0.9683,
       "estados_entrelacados": {
-        "00": 492,
-        "11": 498,
-        "01": 2,
-        "10": 19
+        "00": 500,
+        "11": 503,
+        "01": 16,
+        "10": 18
       },
-      "coerencia_quantica": 0.9951,
-      "timestamp": "2025-10-26T03:03:44.126627",
-      "hash_alquimista": "ba4051f99dfe4561"
+      "coerencia_quantica": 0.9898,
+      "timestamp": "2025-10-27T15:46:51.024076",
+      "hash_alquimista": "d077991d7682845f"
     },
     "TELEPORTACAO": {
       "algoritmo": "Teleportacao_Quantica",
-      "fidelidade": 0.8988,
+      "fidelidade": 0.9596,
       "velocidade": "instantânea",
-      "coerencia_quantica": 0.9854,
-      "timestamp": "2025-10-26T03:03:45.126952",
-      "hash_alquimista": "9b7484f09a73d5ab"
+      "coerencia_quantica": 0.9737,
+      "timestamp": "2025-10-27T15:46:52.024495",
+      "hash_alquimista": "d4c782588a19ed45"
     },
     "QEC_NATIVO": {
       "algoritmo": "QEC_Nativo",
-      "taxa_correcao": 0.9556,
+      "taxa_correcao": 0.9554,
       "overhead": 7,
-      "coerencia_quantica": 0.9909,
-      "timestamp": "2025-10-26T03:03:46.127272",
-      "hash_alquimista": "516086b59e7ad80c"
+      "coerencia_quantica": 0.9941,
+      "timestamp": "2025-10-27T15:46:53.024910",
+      "hash_alquimista": "3c0b31cc79376a73"
     },
     "QNN_NATIVO": {
       "algoritmo": "QNN_Nativa_Nix",
-      "precisao": 0.9692,
-      "velocidade_vs_classico": 3.4441,
-      "coerencia_quantica": 0.9961,
-      "timestamp": "2025-10-26T03:03:47.127665",
-      "hash_alquimista": "ce0a045be38b3ff1"
+      "precisao": 0.9575,
+      "velocidade_vs_classico": 3.073,
+      "coerencia_quantica": 0.997,
+      "timestamp": "2025-10-27T15:46:54.025317",
+      "hash_alquimista": "9e4125d49f982743"
     },
     "HIGGS_NATIVO": {
       "algoritmo": "Higgs_Simulacao_Nativa",
       "massa": "125.35 ± 0.15 GeV/c²",
-      "acoplamento_top": "0.97 ± 0.05",
-      "acoplamento_wz": "1.04 ± 0.04",
-      "precisao": 0.9347,
-      "coerencia_quantica": 0.9968,
-      "timestamp": "2025-10-26T03:03:48.127995",
-      "hash_alquimista": "1c4e76c7609fb2ff"
+      "acoplamento_top": "1.00 ± 0.05",
+      "acoplamento_wz": "1.05 ± 0.04",
+      "precisao": 0.9395,
+      "coerencia_quantica": 0.9755,
+      "timestamp": "2025-10-27T15:46:55.025708",
+      "hash_alquimista": "40d808c280e8f9d2"
     }
   }
 }

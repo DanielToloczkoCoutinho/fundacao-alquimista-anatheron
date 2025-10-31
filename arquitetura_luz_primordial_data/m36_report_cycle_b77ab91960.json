@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-30T23:11:35.230785+00:00",
+  "intencao": "Elevação Vibracional Planetária",
+  "status": "FALHA",
+  "resultado": {
+    "status": "FALHA_ENERGIA",
+    "mensagem": "Energia primordial insuficiente."
+  }
+}

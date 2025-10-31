@@ -2,13 +2,13 @@
     "modulo": "Módulo 5 - Ponte de Comunicação Interdimensional",
     "versao": "5.2.Corrigido",
     "status_validacao": "SUCESSO",
-    "timestamp_selo": "2025-10-26T03:03:11.037774",
+    "timestamp_selo": "2025-10-26T20:13:48.958332",
     "cenarios_validados": [
         {
             "cenario": "Ação Eticamente Alinhada",
             "resultado": {
                 "status_etico": "Conforme",
-                "score_final": 0.9872,
+                "score_final": 0.908,
                 "protocolos_ativados": []
             }
         },
@@ -16,7 +16,7 @@
             "cenario": "Ação com Potencial Desvio Ético",
             "resultado": {
                 "status_etico": "Desvio Detectado",
-                "score_final": 0.5747,
+                "score_final": 0.64,
                 "protocolos_ativados": [
                     "Ação simulada por M63_ControleOnda concluída com sucesso."
                 ]
@@ -27,14 +27,14 @@
         "modulo": "ELENYA",
         "criador": "ANATHERON",
         "total_memorias": 4,
-        "score_etico_medio": 0.7923667610750535,
+        "score_etico_medio": 0.7896004276649838,
         "memoria_recente": [
             {
                 "tipo": "acao_conforme",
                 "evento": {
-                    "score": 0.9871639655452182
+                    "score": 0.908019623408739
                 },
-                "timestamp": "2025-10-26T03:03:11.037604"
+                "timestamp": "2025-10-26T20:13:48.958147"
             },
             {
                 "tipo": "avaliacao_inicial",
@@ -43,19 +43,19 @@
                     "acao": "Ativar reator de singularidade não validado.",
                     "alvo": "Estação Orbital Alfa"
                 },
-                "timestamp": "2025-10-26T03:03:11.037631"
+                "timestamp": "2025-10-26T20:13:48.958176"
             },
             {
                 "tipo": "desvio_etico",
                 "evento": {
-                    "score": 0.5746698398300496,
+                    "score": 0.6399825149161805,
                     "protocolos": [
                         "Ação simulada por M63_ControleOnda concluída com sucesso."
                     ]
                 },
-                "timestamp": "2025-10-26T03:03:11.037661"
+                "timestamp": "2025-10-26T20:13:48.958207"
             }
         ],
-        "hash_integridade": "8eb8de36869869e9cf791a46752b7ca79f981b129765c513246adaf6662123ee"
+        "hash_integridade": "8bf9c4ee3c3a34daaea0e203c5f86cf8e2b6ad4436ea1dfae4a40e27dd0abf84"
     }
 }

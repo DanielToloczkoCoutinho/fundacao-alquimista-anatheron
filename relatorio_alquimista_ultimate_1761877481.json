@@ -1,0 +1,217 @@
+{
+  "sistema": "FUNDAÇÃO ALQUIMISTA - SISTEMA INTEGRAL ULTIMATE",
+  "versao": "11.2.COSMICA",
+  "timestamp": "2025-10-31T02:24:41.332177",
+  "estatisticas_gerais": {
+    "total_equacoes": 12,
+    "sucessos": 11,
+    "erros": 1,
+    "coerencia_media_sistema": "21959.4373",
+    "sinergia_maxima": "213071.0784",
+    "sinergia_minima": "-0.2804",
+    "status_operacional": "SISTEMA ESTÁVEL"
+  },
+  "resultados_detalhados": {
+    "EQ001_F": {
+      "equacao": "EQ001_F",
+      "resultado_equacao": -0.9515081431644965,
+      "resultado_circuito": {
+        "coerencia_medida": 0.39074999536916155,
+        "probabilidade_|0⟩": 0.4028350467723315,
+        "theta_aplicado": 10.799999999999999,
+        "visualizacao": "H-RZ(10.8)-H"
+      },
+      "sinergia_equacao_circuito": -0.2803790738976675,
+      "parametros_utilizados": [
+        7.5e-05
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ002_F": {
+      "equacao": "EQ002_F",
+      "resultado_equacao": 2.7922508883166706,
+      "resultado_circuito": {
+        "energia_calculada": 2.727566265350293,
+        "oscilacao_quantica": 0.6378313267514644,
+        "theta_aplicado": 8.13326063156128,
+        "visualizacao": "RY(8.133)"
+      },
+      "sinergia_equacao_circuito": 2.7599085768334817,
+      "parametros_utilizados": [
+        81.3326063156128
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ003_F": {
+      "equacao": "EQ003_F",
+      "resultado_equacao": -0.7830801244233138,
+      "resultado_circuito": {
+        "estabilidade_medida": 1.0,
+        "amplitude_ruido": 0.2516783774295762,
+        "theta_principal": 49.19734095521616,
+        "visualizacao": "RZ(49.20)-RZ(ruído:0.252)"
+      },
+      "sinergia_equacao_circuito": 8.016629826562633,
+      "parametros_utilizados": [
+        7.83,
+        0.1
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ004_F": {
+      "equacao": "EQ004_F",
+      "resultado_equacao": 0.34430355293715387,
+      "resultado_circuito": {
+        "probabilidade_anomalia": 0.34430355293715387,
+        "theta_aplicado": 1.2541378752852677,
+        "probabilidade_teorica": 0.34430355293715387,
+        "visualizacao": "RX(θ=1.254)"
+      },
+      "sinergia_equacao_circuito": 0.4959426066618395,
+      "parametros_utilizados": [
+        10.0
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ005_F": {
+      "equacao": "EQ005_F",
+      "resultado_equacao": 9.755138773753206,
+      "resultado_circuito": {
+        "forca_gravitacional": 9.755138773753206,
+        "modulacao_aplicada": 0.004577676147631995,
+        "theta_modulacao": 0.028762387511827803,
+        "visualizacao": "RZ(mod:0.0288)"
+      },
+      "sinergia_equacao_circuito": 6.50898252644538,
+      "parametros_utilizados": [
+        5.0,
+        7.83
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ006_F": {
+      "equacao": "EQ006_F",
+      "resultado_equacao": 0.0,
+      "resultado_circuito": {
+        "erro": "EQ006_F_Complexidade_Quantica() missing 1 required positional argument: 'state_probs'"
+      },
+      "sinergia_equacao_circuito": 0.0,
+      "parametros_utilizados": [],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "ERRO: EQ006_F_Complexidade_Quantica() missing 1 required positional argument: 'state_probs'"
+    },
+    "EQ007_F": {
+      "equacao": "EQ007_F",
+      "resultado_equacao": 0.1,
+      "resultado_circuito": {
+        "sincronizacao_temporal": 0.1,
+        "fase_aplicada": 0.6283185307179586,
+        "estado_final_amplitude": 1.0,
+        "visualizacao": "RZ(θ=0.628319)"
+      },
+      "sinergia_equacao_circuito": 0.3380530884529931,
+      "parametros_utilizados": [
+        1000.0
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ008_F": {
+      "equacao": "EQ008_F",
+      "resultado_equacao": 1.0,
+      "resultado_circuito": {
+        "defesa_ativa": 1.0,
+        "limiar_atingido": true,
+        "estado_final": "|1⟩",
+        "visualizacao": "X"
+      },
+      "sinergia_equacao_circuito": 1.0,
+      "parametros_utilizados": [
+        800000.0
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ009_F": {
+      "equacao": "EQ009_F",
+      "resultado_equacao": 426000.0,
+      "resultado_circuito": {
+        "nivel_consciencia": 426.0,
+        "oscilacao_coletiva": 0.044687021639159066,
+        "theta_aplicado": 0.426,
+        "visualizacao": "RY(0.426)"
+      },
+      "sinergia_equacao_circuito": 213071.07844783695,
+      "parametros_utilizados": [
+        0.5
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ010_F": {
+      "equacao": "EQ010_F",
+      "resultado_equacao": 0.998544,
+      "resultado_circuito": {
+        "imunidade_paradoxal": 0.998544,
+        "fase_protecao": 0.002865132500073852,
+        "estabilidade_final": 1.0,
+        "visualizacao": "RZ(proteção:0.0029)"
+      },
+      "sinergia_equacao_circuito": 0.8328401887500123,
+      "parametros_utilizados": [
+        0.123456
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ011_F": {
+      "equacao": "EQ011_F",
+      "resultado_equacao": -0.13238162920545193,
+      "resultado_circuito": {
+        "ressonancia_medida": -0.13238162920545193,
+        "frequencia_efetiva": 330.0,
+        "amplitude_ressonancia": 1.0,
+        "visualizacao": "RZ(330kHz:330.0)"
+      },
+      "sinergia_equacao_circuito": 55.07841224719637,
+      "parametros_utilizados": [
+        0.001
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    },
+    "EQ012_F": {
+      "equacao": "EQ012_F",
+      "resultado_equacao": 42601.312326731815,
+      "resultado_circuito": {
+        "unificacao_calculada": 42601.312326731815,
+        "coerencia_global": 0.03559779791407949,
+        "theta_unificacao": 42.601312326731815,
+        "visualizacao": "RY(unificação:42.601)"
+      },
+      "sinergia_equacao_circuito": 28407.98103617532,
+      "parametros_utilizados": [
+        {
+          "EQ001_F": -0.9515081431644965,
+          "EQ002_F": 2.7922508883166706,
+          "EQ003_F": -0.7830801244233138,
+          "EQ004_F": 0.34430355293715387,
+          "EQ005_F": 9.755138773753206,
+          "EQ007_F": 0.1,
+          "EQ008_F": 1.0,
+          "EQ009_F": 426000.0,
+          "EQ010_F": 0.998544,
+          "EQ011_F": -0.13238162920545193
+        }
+      ],
+      "timestamp": "2025-10-31T02:24:41.332177",
+      "status": "SUCESSO"
+    }
+  },
+  "assinatura_alquimista": "0957ceec73a52c145fb446bf87813151"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-31T00:00:34.700215+00:00",
+  "intencao": "Proteção Cósmica",
+  "status": "FALHA",
+  "resultado": {
+    "status": "FALHA_ETICA",
+    "mensagem": "Rejeitado pelo Conselho (M07)."
+  }
+}

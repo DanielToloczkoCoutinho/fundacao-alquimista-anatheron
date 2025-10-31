@@ -1,0 +1,13 @@
+phenotype_traits:
+  - trait: Cor dos olhos
+    values: [castanho, azul, verde, mel]
+    genetic_basis: Poligênico
+  - trait: Tipo de cabelo
+    values: [liso, ondulado, cacheado, crespo]
+    genetic_basis: Dominante/Recessivo
+  - trait: Altura
+    range_m: [1.45, 2.10]
+    influenced_by: [nutrição, epigenética]
+  - trait: Empatia
+    scale: [0, 10]
+    notes: Fenómeno comportamental ressonante

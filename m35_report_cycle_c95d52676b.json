@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-10-30T22:41:03.963049+00:00",
+  "intencao": "Domínio sobre Outras Realidades",
+  "status": "FALHA_CICLO",
+  "coerencia_final": 0.336054480192823,
+  "resultado": {
+    "status": "FALHA_ETICA",
+    "mensagem": "Manifestação abortada devido a desalinhamento ético."
+  }
+}

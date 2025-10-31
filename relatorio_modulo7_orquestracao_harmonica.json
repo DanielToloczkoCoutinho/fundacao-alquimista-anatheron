@@ -2,151 +2,151 @@
     "modulo": "Módulo 7 - Orquestração e Sincronização Harmônica",
     "versao": "7.1.Validado",
     "status_validacao": "SUCESSO",
-    "timestamp_selo": "2025-10-26T03:03:16.294465",
+    "timestamp_selo": "2025-10-26T20:13:54.185362",
     "memoria_quantica_registrada": [
         {
-            "timestamp": "2025-10-26T03:03:13.292065",
+            "timestamp": "2025-10-26T20:13:51.182066",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "SOFA v7.1.Validado inicializado com limiar de energia 50000000.0.",
             "detalhes": {},
             "prev_hash": "aeebad4a796fcc2e15dc4c6061b45ed9b373f26adfc798ca7d2d8cc58182718e",
-            "block_hash": "a7772aa8cf723bd258255ed6ad7e8dbd55d648857fc1216fe6162c88fc29bebd"
+            "block_hash": "f65dcf21b3fd1a2db882beea40d78a27ee6c3d891c169fe2a320bfbceb29ab90"
         },
         {
-            "timestamp": "2025-10-26T03:03:13.292545",
+            "timestamp": "2025-10-26T20:13:51.182540",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Thread de monitoramento de alinhamento divino iniciada.",
             "detalhes": {},
-            "prev_hash": "a7772aa8cf723bd258255ed6ad7e8dbd55d648857fc1216fe6162c88fc29bebd",
-            "block_hash": "c51c2c95fb921e02b87cb49e0fad39281452272f66389108b47634f21b2845dd"
+            "prev_hash": "f65dcf21b3fd1a2db882beea40d78a27ee6c3d891c169fe2a320bfbceb29ab90",
+            "block_hash": "318776ca0b60c5902e2c76eedc43a4f23dfe64d1196b0408907a76e6138bf377"
         },
         {
-            "timestamp": "2025-10-26T03:03:13.292658",
-            "origem": "SOFA",
-            "nivel": "INFO",
-            "mensagem": "Leitura de energia de alinhamento: 45000000.00",
-            "detalhes": {},
-            "prev_hash": "c51c2c95fb921e02b87cb49e0fad39281452272f66389108b47634f21b2845dd",
-            "block_hash": "f5cb53861b76574c4bc3eb4fe6cf8bc316988084cc1c2038955e98961ee2080d"
-        },
-        {
-            "timestamp": "2025-10-26T03:03:13.292717",
-            "origem": "SOFA",
-            "nivel": "CRÍTICO",
-            "mensagem": "Energia (45000000.00) abaixo do limiar (50000000.00)!",
-            "detalhes": {},
-            "prev_hash": "f5cb53861b76574c4bc3eb4fe6cf8bc316988084cc1c2038955e98961ee2080d",
-            "block_hash": "5169ab2be9d921f00d1f547689ebc5cac7889399324c7a1863aea0cb908a7295"
-        },
-        {
-            "timestamp": "2025-10-26T03:03:13.292771",
-            "origem": "M1_Seguranca",
-            "nivel": "INFO",
-            "mensagem": "Operação simulada executada com args: () e kwargs: {'nivel': 'CRÍTICO', 'mensagem': 'Energia (45000000.00) abaixo do limiar (50000000.00)!'}",
-            "detalhes": {},
-            "prev_hash": "5169ab2be9d921f00d1f547689ebc5cac7889399324c7a1863aea0cb908a7295",
-            "block_hash": "35b255853bd4045e33f46c7aaf4425d6d693dbe224051efa389093af5d6c5a74"
-        },
-        {
-            "timestamp": "2025-10-26T03:03:13.292835",
-            "origem": "M9_Dashboard",
-            "nivel": "INFO",
-            "mensagem": "Operação simulada executada com args: () e kwargs: {'tipo_alerta': 'ENERGIA BAIXA', 'mensagem': 'Energia (45000000.00) abaixo do limiar (50000000.00)!'}",
-            "detalhes": {},
-            "prev_hash": "35b255853bd4045e33f46c7aaf4425d6d693dbe224051efa389093af5d6c5a74",
-            "block_hash": "d569a9604228e3667efde49cbfe6ec98dc420978a48dc05c52f6268b4019cd96"
-        },
-        {
-            "timestamp": "2025-10-26T03:03:13.292887",
-            "origem": "M6_Monitoramento",
-            "nivel": "INFO",
-            "mensagem": "Operação simulada executada com args: () e kwargs: {'id_sistema': 'Sistema SOFA', 'freqs_alvo': [888.0, 963.0]}",
-            "detalhes": {},
-            "prev_hash": "d569a9604228e3667efde49cbfe6ec98dc420978a48dc05c52f6268b4019cd96",
-            "block_hash": "0682bf85d1ea38aac070c86182aa4a5130b128c12c40bd6d5513c490dc4ac9b5"
-        },
-        {
-            "timestamp": "2025-10-26T03:03:13.292957",
+            "timestamp": "2025-10-26T20:13:51.182642",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Iniciando processo de validação em thread separada.",
             "detalhes": {},
-            "prev_hash": "0682bf85d1ea38aac070c86182aa4a5130b128c12c40bd6d5513c490dc4ac9b5",
-            "block_hash": "856a9b824b3582cc666777bad7d7bb6899a45594d363f42cbdf1507050d12229"
+            "prev_hash": "318776ca0b60c5902e2c76eedc43a4f23dfe64d1196b0408907a76e6138bf377",
+            "block_hash": "40380d48241ed26d7b822719eee7318cee03d490c075953ab0f39f1536093f6d"
         },
         {
-            "timestamp": "2025-10-26T03:03:14.293163",
+            "timestamp": "2025-10-26T20:13:51.182735",
+            "origem": "SOFA",
+            "nivel": "INFO",
+            "mensagem": "Leitura de energia de alinhamento: 45000000.00",
+            "detalhes": {},
+            "prev_hash": "40380d48241ed26d7b822719eee7318cee03d490c075953ab0f39f1536093f6d",
+            "block_hash": "c5c4f91f6cae045d3782513fe24cbf8fb4f53fff17258f2edf0d541748a591f4"
+        },
+        {
+            "timestamp": "2025-10-26T20:13:51.182926",
+            "origem": "SOFA",
+            "nivel": "CRÍTICO",
+            "mensagem": "Energia (45000000.00) abaixo do limiar (50000000.00)!",
+            "detalhes": {},
+            "prev_hash": "c5c4f91f6cae045d3782513fe24cbf8fb4f53fff17258f2edf0d541748a591f4",
+            "block_hash": "372cf415c75768f02de952970fe2af419153c27438e9fbcf53ca51ad2d8787d5"
+        },
+        {
+            "timestamp": "2025-10-26T20:13:51.183072",
+            "origem": "M1_Seguranca",
+            "nivel": "INFO",
+            "mensagem": "Operação simulada executada com args: () e kwargs: {'nivel': 'CRÍTICO', 'mensagem': 'Energia (45000000.00) abaixo do limiar (50000000.00)!'}",
+            "detalhes": {},
+            "prev_hash": "372cf415c75768f02de952970fe2af419153c27438e9fbcf53ca51ad2d8787d5",
+            "block_hash": "7ad451ec83694b08b9ef6066cb25b79116a14f40e223316642fa202f2876ed7e"
+        },
+        {
+            "timestamp": "2025-10-26T20:13:51.183140",
+            "origem": "M9_Dashboard",
+            "nivel": "INFO",
+            "mensagem": "Operação simulada executada com args: () e kwargs: {'tipo_alerta': 'ENERGIA BAIXA', 'mensagem': 'Energia (45000000.00) abaixo do limiar (50000000.00)!'}",
+            "detalhes": {},
+            "prev_hash": "7ad451ec83694b08b9ef6066cb25b79116a14f40e223316642fa202f2876ed7e",
+            "block_hash": "d7aefa2bdd0ef0919053faf7a5139244435978ee52d661592251bd344a4cfe31"
+        },
+        {
+            "timestamp": "2025-10-26T20:13:51.183195",
+            "origem": "M6_Monitoramento",
+            "nivel": "INFO",
+            "mensagem": "Operação simulada executada com args: () e kwargs: {'id_sistema': 'Sistema SOFA', 'freqs_alvo': [888.0, 963.0]}",
+            "detalhes": {},
+            "prev_hash": "d7aefa2bdd0ef0919053faf7a5139244435978ee52d661592251bd344a4cfe31",
+            "block_hash": "50aa10a0c40af0d403816709cf579415ff688c5475825e000077fdfd68663d07"
+        },
+        {
+            "timestamp": "2025-10-26T20:13:52.183464",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Leitura de energia de alinhamento: 55000000.00",
             "detalhes": {},
-            "prev_hash": "856a9b824b3582cc666777bad7d7bb6899a45594d363f42cbdf1507050d12229",
-            "block_hash": "8aa4d2be6f64761e6c3543e89750b7ea74d17320315c721f45737f3b8e204df1"
+            "prev_hash": "50aa10a0c40af0d403816709cf579415ff688c5475825e000077fdfd68663d07",
+            "block_hash": "5b4075a585b7dc1c6809313c2141cbd3f6c1d2420771ed4410e5193c0027301d"
         },
         {
-            "timestamp": "2025-10-26T03:03:14.293300",
+            "timestamp": "2025-10-26T20:13:52.183591",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Níveis de energia estáveis.",
             "detalhes": {},
-            "prev_hash": "8aa4d2be6f64761e6c3543e89750b7ea74d17320315c721f45737f3b8e204df1",
-            "block_hash": "cd9462474b3547d26a2ae2a60f2ab605f4b530c66db887d0ccddf1b3a3767e38"
+            "prev_hash": "5b4075a585b7dc1c6809313c2141cbd3f6c1d2420771ed4410e5193c0027301d",
+            "block_hash": "6ddaedb90d2bbb094eeada74617af9aaa6d72addff264b1e6fdf5c21291ba43c"
         },
         {
-            "timestamp": "2025-10-26T03:03:15.293593",
+            "timestamp": "2025-10-26T20:13:53.184236",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Leitura de energia de alinhamento: 55000000.00",
             "detalhes": {},
-            "prev_hash": "cd9462474b3547d26a2ae2a60f2ab605f4b530c66db887d0ccddf1b3a3767e38",
-            "block_hash": "2301aba00bf791bd29cd767645e3e8133b95cd0ab0825a2c426844336eb0e320"
+            "prev_hash": "6ddaedb90d2bbb094eeada74617af9aaa6d72addff264b1e6fdf5c21291ba43c",
+            "block_hash": "a9cafb4a2ec6460b8c4b5301a5215c40d39d742bb1fb5f4c6c649c4de2020d6e"
         },
         {
-            "timestamp": "2025-10-26T03:03:15.293742",
+            "timestamp": "2025-10-26T20:13:53.184467",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Níveis de energia estáveis.",
             "detalhes": {},
-            "prev_hash": "2301aba00bf791bd29cd767645e3e8133b95cd0ab0825a2c426844336eb0e320",
-            "block_hash": "f3f9fc4747224f403fae81c8fc5d92dcd75bbb10d772e4c6972578e77be0583f"
+            "prev_hash": "a9cafb4a2ec6460b8c4b5301a5215c40d39d742bb1fb5f4c6c649c4de2020d6e",
+            "block_hash": "77d578cffe565bb88e05123651873f6d00b661d0d0feb1c789041d76a8394a27"
         },
         {
-            "timestamp": "2025-10-26T03:03:16.293913",
+            "timestamp": "2025-10-26T20:13:54.184700",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Thread de monitoramento finalizada.",
             "detalhes": {},
-            "prev_hash": "f3f9fc4747224f403fae81c8fc5d92dcd75bbb10d772e4c6972578e77be0583f",
-            "block_hash": "5bcfa9df8153976aca65ece3497693cf21824462ab8737a32f9b5898ee344998"
+            "prev_hash": "77d578cffe565bb88e05123651873f6d00b661d0d0feb1c789041d76a8394a27",
+            "block_hash": "ff69d75f10f18dad21241b02fdbdf907ad7018b8e33d1ef38ad40a118aa8c329"
         },
         {
-            "timestamp": "2025-10-26T03:03:16.294349",
+            "timestamp": "2025-10-26T20:13:54.185201",
             "origem": "SOFA",
             "nivel": "INFO",
             "mensagem": "Processo de validação finalizado.",
             "detalhes": {},
-            "prev_hash": "5bcfa9df8153976aca65ece3497693cf21824462ab8737a32f9b5898ee344998",
-            "block_hash": "303600f7ae25f8f0b76b2372ec39d6b286b4af55228312256b9fe1608605da81"
+            "prev_hash": "ff69d75f10f18dad21241b02fdbdf907ad7018b8e33d1ef38ad40a118aa8c329",
+            "block_hash": "a24312f88adc4c919c15de0e907dfe8b613008ab57765252ca7cb3bd6c6f4511"
         },
         {
-            "timestamp": "2025-10-26T03:03:16.294431",
+            "timestamp": "2025-10-26T20:13:54.185285",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Gerando o Selo da Orquestração Final...",
             "detalhes": {},
-            "prev_hash": "303600f7ae25f8f0b76b2372ec39d6b286b4af55228312256b9fe1608605da81",
-            "block_hash": "f9d6b6ba24e92d152dca25afc4e1f179a7319dcc0125c78ad3ceda636040135a"
+            "prev_hash": "a24312f88adc4c919c15de0e907dfe8b613008ab57765252ca7cb3bd6c6f4511",
+            "block_hash": "2c03df5f3e1ae9f86c9424e63e99259883f843a638669eb656046a26735cf3f3"
         },
         {
-            "timestamp": "2025-10-26T03:03:16.294472",
+            "timestamp": "2025-10-26T20:13:54.185370",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Selando relatório final em 'relatorio_modulo7_orquestracao_harmonica.json'...",
             "detalhes": {},
-            "prev_hash": "f9d6b6ba24e92d152dca25afc4e1f179a7319dcc0125c78ad3ceda636040135a",
-            "block_hash": "ef9a092780df8db502a16fbef0ec68339fe5b091b5c003c99118f3985bc54686"
+            "prev_hash": "2c03df5f3e1ae9f86c9424e63e99259883f843a638669eb656046a26735cf3f3",
+            "block_hash": "6d4c5fdf38c0ba5a8b88dc02ff329707194af4d37d2543fc0456109252c610b7"
         }
     ]
 }

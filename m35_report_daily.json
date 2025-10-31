@@ -1,0 +1,15 @@
+{
+  "date": "2025-10-31",
+  "health": {
+    "dissonancia_media": 0.8860526764673967,
+    "mttr_harmonizacao": 0.03560972213745117,
+    "mttr_abortos": 0.007380843162536621,
+    "taxa_etica_aprovada": 0.6666666666666666,
+    "alertas_criticos_emitidos": 2,
+    "tendencia_coerencia": 0.0,
+    "percentual_ciclos_recuperando": 1.0,
+    "estado": "ATENCAO"
+  },
+  "blocks": 45,
+  "ledger_valid": true
+}

@@ -1,0 +1,150 @@
+{
+  "suite_teste": "TESTES EXATOS EQ001-F a EQ008-F",
+  "versao": "9.0_EXATO",
+  "timestamp_inicio": "2025-10-28T22:56:48.974602",
+  "timestamp_fim": "2025-10-28T22:56:48.976283",
+  "equacoes_testadas": [
+    "EQ001-F - Fator de Coerência Quântica",
+    "EQ002-F - Pureza Vibracional",
+    "EQ003-F - Fidelidade Quântica",
+    "EQ004-F - Ressonância Schumann",
+    "EQ005-F - Modulação Gravitacional",
+    "EQ006-F - Complexidade de Trajetória",
+    "EQ007-F - Energia Universal Unificada",
+    "EQ008-F - Verdade Dimensional"
+  ],
+  "resultados_detalhados": {
+    "EQ001-F Coerência Quântica": {
+      "test_type": "EQ001_F_COERENCIA_QUANTICA",
+      "resultados_estados": [
+        {
+          "estado": [
+            0.5,
+            0.5
+          ],
+          "S_vN": "0.693147",
+          "D": 2,
+          "Phi_C": "0.306853"
+        },
+        {
+          "estado": [
+            1.0,
+            0.0
+          ],
+          "S_vN": "0.000000",
+          "D": 2,
+          "Phi_C": "1.000000"
+        },
+        {
+          "estado": [
+            0.85,
+            0.15
+          ],
+          "S_vN": "0.320210",
+          "D": 2,
+          "Phi_C": "0.679790"
+        }
+      ],
+      "coerencia_confirmada": true
+    },
+    "EQ002-F Pureza Vibracional": {
+      "test_type": "EQ002_F_PUREZA_VIBRACIONAL",
+      "resultados_estados": [
+        {
+          "estado": [
+            1.0,
+            0.0
+          ],
+          "pureza": "1.000000",
+          "tipo": "Puro"
+        },
+        {
+          "estado": [
+            0.6,
+            0.4
+          ],
+          "pureza": "0.270400",
+          "tipo": "Misto"
+        },
+        {
+          "estado": [
+            0.5,
+            0.5
+          ],
+          "pureza": "0.250000",
+          "tipo": "Misto"
+        }
+      ],
+      "pureza_validada": true
+    },
+    "EQ004-F Ressonância Schumann": {
+      "test_type": "EQ004_F_RESSONANCIA_SCHUMANN",
+      "resultados_temporais": [
+        {
+          "tempo": "0.10s",
+          "ressonancia": "-0.978581"
+        },
+        {
+          "tempo": "0.20s",
+          "ressonancia": "-0.402906"
+        },
+        {
+          "tempo": "0.30s",
+          "ressonancia": "0.812694"
+        },
+        {
+          "tempo": "0.40s",
+          "ressonancia": "0.737513"
+        },
+        {
+          "tempo": "0.50s",
+          "ressonancia": "-0.509041"
+        }
+      ],
+      "frequencia_confirmada": true,
+      "nu_S": "7.83 Hz"
+    },
+    "EQ005-F Modulação Gravitacional": {
+      "test_type": "EQ005_F_MODULACAO_GRAVITACIONAL",
+      "resultados_modulacao": [
+        {
+          "tempo": "0.00s",
+          "g_efetivo": "9.819973 m/s²",
+          "modulacao": "0.2038%"
+        },
+        {
+          "tempo": "0.10s",
+          "g_efetivo": "9.724833 m/s²",
+          "modulacao": "-0.7670%"
+        },
+        {
+          "tempo": "0.20s",
+          "g_efetivo": "9.781192 m/s²",
+          "modulacao": "-0.1919%"
+        },
+        {
+          "tempo": "0.30s",
+          "g_efetivo": "9.897421 m/s²",
+          "modulacao": "0.9941%"
+        },
+        {
+          "tempo": "0.40s",
+          "g_efetivo": "9.889557 m/s²",
+          "modulacao": "0.9138%"
+        },
+        {
+          "tempo": "0.50s",
+          "g_efetivo": "9.772424 m/s²",
+          "modulacao": "-0.2814%"
+        }
+      ],
+      "modulacao_detectada": true
+    },
+    "EQ007-F Energia Universal": {
+      "test_type": "EQ007_F_ENERGIA_UNIVERSAL",
+      "energia_universal": "7.281153e+00 J",
+      "escala_cosmica": true
+    }
+  },
+  "assinatura_matematica": "48bd092cb3a44166cc7bf6fe7c729bc3"
+}

@@ -1,0 +1,31 @@
+ley_lines:
+  - name: Linha Dragão Dourado
+    coordinates: [ -23.5505, -46.6333 ] # São Paulo, BR
+    resonance_tag: "Ascensão Coletiva"
+    chakra_node: "Plexo Solar Planetário"
+    flow_intensity: 0.85
+    celestial_alignment: "Sirius A"
+  - name: Veia de Cristal de Sedona
+    coordinates: [ 34.8601, -111.7601 ] # Sedona, AZ, EUA
+    resonance_tag: "Cura Telúrica"
+    chakra_node: "Coração Planetário"
+    flow_intensity: 0.92
+    celestial_alignment: "Plêiades"
+  - name: Eixo de Glastonbury
+    coordinates: [ 51.1456, -2.7099 ] # Glastonbury, UK
+    resonance_tag: "Reconexão Atlante"
+    chakra_node: "Raiz Planetária"
+    flow_intensity: 0.78
+    celestial_alignment: "Arcturus"
+  - name: Nó Energético de Gizé
+    coordinates: [ 30.0444, 31.2357 ] # Gizé, Egito
+    resonance_tag: "Sabedoria Ancestral"
+    chakra_node: "Frontal Planetário"
+    flow_intensity: 0.95
+    celestial_alignment: "Órion"
+  - name: Corrente dos Andes
+    coordinates: [ -33.4489, -70.6693 ] # Santiago, Chile (Exemplo)
+    resonance_tag: "Sustentabilidade Cósmica"
+    chakra_node: "Sacro Planetário"
+    flow_intensity: 0.80
+    celestial_alignment: "Aldebaran"

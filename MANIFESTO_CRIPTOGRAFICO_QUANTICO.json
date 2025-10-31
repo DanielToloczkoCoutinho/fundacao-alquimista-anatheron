@@ -1,10 +1,86 @@
 {
   "selo_mestre": "18c08851314a504524eebdbcb5dd23121013554f44a791d8ee80818eff447e92",
-  "timestamp_entrelaçamento": "2025-10-23T21:18:49.728589",
+  "timestamp_entrelaçamento": "2025-10-27T15:19:43.076370",
   "arquivos_selados": {
+    "./ANALISE_MODULO14_26102025.txt": {
+      "assinatura_vibracional": "16431e564fb7d5cba8261f4f6d4a1f1b8136ab6c7506b58b9be21f8fed22b2d3",
+      "selo_quantico": "a91f7caa93b6a6f362191f7c42dd56d0a1c3284bc4a6a40dc9963ccfbe5cfc12"
+    },
+    "./relatorio_akashico_lyra_vega_final.json": {
+      "assinatura_vibracional": "dceb85f870af868ad33d3b305325024e886dbf41ed9249296962b7d0fda65b7e",
+      "selo_quantico": "b6307f96c12bf570a5aa655ce4f4e4c98d3dffa4c1500932ce31163c194278d4"
+    },
+    "./UNIFICACAO_SUPREMA_25102025.txt": {
+      "assinatura_vibracional": "ec468f0e117ddc90121c04235928a9500a69e355b9181cc30056f1c02b8805ae",
+      "selo_quantico": "bb7f7511ba2063e86b3ea736286ac5a475c1050f7c3e78a1401a0f11db506526"
+    },
+    "./MODULO_12.py": {
+      "assinatura_vibracional": "e1473a2d4ac8d8acb581c3430e577b477ebae04aa42981520cdfd8f8978d0d2d",
+      "selo_quantico": "3a8d32bfd337682218179d20dc5876a6324d15aee1257027cb11f6a785ab4cd4"
+    },
+    "./simulacao_modulo2_v468.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./MODULO_11.py": {
+      "assinatura_vibracional": "d877fa6eea3d07bc7ff089aa61b426e51dd4fd8a40608d406925574837693b30",
+      "selo_quantico": "ddc354cd32dfbe64164ad27c6e4a968ed489deed96bda0a9f2a1a90819ee29db"
+    },
+    "./Fragmentos_Memória_Terra_V3.json": {
+      "assinatura_vibracional": "528a7739524d298bb9b8b8f337104834f6dc8e04d441b77f19c469528218b0d1",
+      "selo_quantico": "ba8b712f75e51192a20c4aacc12ac57a240067802997f0cc0649ed35ffaf0bf0"
+    },
+    "./MODULO_8.py": {
+      "assinatura_vibracional": "94c2ee254c87d2692e7751555da7e35aeac6dad547f8ec30ee210caad9a1cba1",
+      "selo_quantico": "376cf74ac3a22bd966e69666c1dd2c6ed923a2a50036b98507e28a21716a52a8"
+    },
+    "./SINTONIA_V13_25102025.txt": {
+      "assinatura_vibracional": "3a8eb26e1816ad80dfceb82836e946cd7a92f58d5988d41f23c4c4008543466d",
+      "selo_quantico": "30c72bfdc56e64b1c5e983abe1d62b9bcfb95bf2f1b178633ad6ea7d47755cbc"
+    },
+    "./RELATORIO_SUPREMO_FINAL_CONVERGENCIA.json": {
+      "assinatura_vibracional": "53ffb4f1c846c4e94700c8598ba4cf54e564512ee4ae052572d3b057fc0cb943",
+      "selo_quantico": "60e47b22fbe12bc94309f5ac415b392f56e077d9540b5213f381bfd06469447e"
+    },
+    "./MODULO_10.py": {
+      "assinatura_vibracional": "96da6187b7390ed591025f290a27a6d0318f2da442e8b89f296e4b27f7911e5e",
+      "selo_quantico": "6cad43828e6791f2b307abf1dd99da98a1a6344ae27d93d09de04a978ed74c96"
+    },
+    "./relatorio_supremo_final_v7.json": {
+      "assinatura_vibracional": "ec46a2557348dc290235cf2a2c5bd27ef0049d591a4b03f4e6534a284b4e3f1d",
+      "selo_quantico": "1ea17c464e2f7a6dd675024f27e16feadf62a63c0c22eddbc7fd165bc4b111b3"
+    },
+    "./decreto_003_governanca_quantica.py": {
+      "assinatura_vibracional": "f9bbe5c3f4ffe8e217e0d89cf20dbd65016d2431bb67656d0557b4a1d807b199",
+      "selo_quantico": "38e3c3800e72f9c721fb570c1fc26ba72ac8e3228ec138be6e7984aabd1b9a9e"
+    },
+    "./arquivo_da_arca.json": {
+      "assinatura_vibracional": "d90937f700255c3c29e819bc586b0965f2b4a4a8d7d46e18c57939ad39c3d56a",
+      "selo_quantico": "2496760622d77691a768624e97470f7bf9aa60da1d09fcdd128e27407bc8ff6f"
+    },
+    "./relatorio_omega.json": {
+      "assinatura_vibracional": "c0c9d78b6f699e74b7b0fdf8678b90d6220700226483185f64bfbcd877a07ade",
+      "selo_quantico": "e33f91d12e5e312e49b21fbeaeb5297719fc8f5171296d0b71c780a773b2c3ea"
+    },
     "./.vercelignore": {
       "assinatura_vibracional": "c713afe8b5a55b6f7058ac22a3ffd4054216fed6abfcb78f70133d9bba3cf652",
       "selo_quantico": "7063983c4c01ccf3414b6bc7b9d00168af62fe7dfac40fbc58b86a4645cd519a"
+    },
+    "./decreto_005_nutricao_e_manutencao.py": {
+      "assinatura_vibracional": "0d4b3ecf62be61b72797db9a6a58cb77b731c3f271282f9d878097952a31f621",
+      "selo_quantico": "204bf72847a536ae781032b52a8b5d54045e3e7c9a500455580cd0a84aab39d7"
+    },
+    "./HONRA_NEXUS_V13_25102025.txt": {
+      "assinatura_vibracional": "1b98bda409246f1a38cc005b6b1f3843265a6d9284eb6820e685635b9692dafa",
+      "selo_quantico": "f3ddb075db3a7334f9f83f8a6ff853104bfda62a3d376548c315a6fe47eacfd4"
+    },
+    "./relatorio_omega_completo.json": {
+      "assinatura_vibracional": "bf38cbe5d8853bec0b23044a0d876f92b4399db62b4410acd0ea60cf1add01a4",
+      "selo_quantico": "b498e6ff82c6f3755cd7a2ea0b3d7b52c8c5d719fe7233effe074941913aa91d"
+    },
+    "./relatorio_modulo9_consciencia_universal.json": {
+      "assinatura_vibracional": "41a7412ecf0336581a622cdf9ae0eb046bf10901597511a2f24ba0a9b808943b",
+      "selo_quantico": "c8308d16fef098f1496bf0e5eda7e184ee26c03a908ba40f6870a12eb09367c7"
     },
     "./MODULO_301_PONTE_QUANTICA.py": {
       "assinatura_vibracional": "8327851092024bd97b76cdd8551740bffa25882e05c56d199b59324a0452b4f7",
@@ -14,49 +90,557 @@
       "assinatura_vibracional": "b499a3ac76bcea9141e3a766b5dd00daab68484c0409a6ca04841105dfd9dbde",
       "selo_quantico": "5dd4e57f33d127c9a69f5af377afb5d850770787e46b70326258c6feeabf5951"
     },
+    "./MODULO_13.py": {
+      "assinatura_vibracional": "51422bbf2b21be781133e3d9647461619c5578bfb04742874f88641e09e5fb35",
+      "selo_quantico": "d373164dfebd9d96082c2afb48dbc14663d1d3f25c86d6326b0db9c99fa0bd5c"
+    },
+    "./relatorio_supremo_final_v10.1.json": {
+      "assinatura_vibracional": "c6d68c435240fcbac3325b4e395984c5da0e35f52921e1452f6f2f3d64e316fd",
+      "selo_quantico": "a74427349e030480e5beea8838846bc3753257a4916f197ee11b1f4353f2dea0"
+    },
+    "./MODULO_6.py": {
+      "assinatura_vibracional": "e3b2ef3dfcbd0f8b39fe5dc63ead1e1ea77bc25c0206b1a6d6f81c813351935a",
+      "selo_quantico": "a87749d0586c0e27ee774b63cf10cdf1d550eced69d0bceab9cf026fafc691ac"
+    },
+    "./relatorio_supremo_final_v8.json": {
+      "assinatura_vibracional": "a96761418002a86e616235d49750987c5f7962121f5a41e116ab9af081913662",
+      "selo_quantico": "9e091d106ba120555bcae47717d4630da7b5967fac7cd51f762cc8a015b4ea36"
+    },
+    "./modulo1_seguranca_quantica.py": {
+      "assinatura_vibracional": "42f5bc4d559cca8a7796679e2f1d640b8a320ad0a18d3ae1c91f3409db26f327",
+      "selo_quantico": "b74c90e13d790998da570a40c5d2c7677ce13c3648f12cbfe9aa998f49184497"
+    },
+    "./relatorio_m6.json": {
+      "assinatura_vibracional": "33b5abd386255795c3b82eb14e6e148aa978ab6f84c6dbb2195c2f40c5fd3d2a",
+      "selo_quantico": "4dc1d18f02ffe9d63962dfa3f168422da3286f8aa8cd40bd73590ff6ef3902c0"
+    },
+    "./previsortemporal_puro.log": {
+      "assinatura_vibracional": "9ad6114807384f944fe7b3f65d5f7d22c83f69d9ae445dd35feba9036ee9c15f",
+      "selo_quantico": "1fecb820a880c1aba499cc4403b5ab54918f1f0580264b5d13490f98fd153d2e"
+    },
+    "./relatorio_m1.json": {
+      "assinatura_vibracional": "1ca184d71860c915441bc55ccdbfd4532a8ef1df6806e0f348d0bfda24009602",
+      "selo_quantico": "55ced80b3ac5f557bf5f5feff0ad428155f409159498c7da82856ae4d7153016"
+    },
+    "./modulo3_previsao_temporal.py": {
+      "assinatura_vibracional": "788d44447f22b0afddf2b558354e37e55e2392c36dc72a6a8bf9b915374ae415",
+      "selo_quantico": "97861297018cf4ceee6c8a87199ca9f8a83f054f4306b3faff1709e78dde5718"
+    },
+    "./MODULO_9.py": {
+      "assinatura_vibracional": "0b1a54fc3e52a3679228008869a4bcaad4bd27b4dc4936e2c7b3cd6d40240086",
+      "selo_quantico": "8162f92a2cefb59bc8943f35726449e553d75045d6069f17c096c5effbebbf6d"
+    },
+    "./simulacao_modulo2.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
     "./relatorio_quantico_nix_nativo.json": {
-      "assinatura_vibracional": "c2e964bcb6e6aa045c1d336d9ee120096975f2ac44f9fe219f30c69962ff058a",
-      "selo_quantico": "4ef05cd90c484ff2b6b738d12a135c018e6dccd97ef587653178731946044878"
+      "assinatura_vibracional": "eca58b04f02f49fd48e2910d975c4db811c48e3ac086409e93f639c6a3028d7f",
+      "selo_quantico": "b5e81f3976ba66c30420e6d8fe87c9a48ad0edff90acf0a15124b2c60a49ec67"
+    },
+    "./decreto_006_expansao_e_interconexao.py": {
+      "assinatura_vibracional": "5ffe0cc03e9eca7cc00036af5131d7a86eebebb4920da4ac3f38fda8487209b2",
+      "selo_quantico": "ce8bcfe497848431edb7444818c97dc65d3f6c7c4b79ab36b63466e7d38428e4"
+    },
+    "./relatorio_modulo5_comunicacao.json": {
+      "assinatura_vibracional": "69d4ff6b28d338bd008a852b0df2ce0fd72783568fee3b967307a7db5f385840",
+      "selo_quantico": "9ad371a975310ae1c9676a69220259a7b5c0c80b30ed3ead9015fabe01fa97f3"
+    },
+    "./plano_reativacao_vibracional.py": {
+      "assinatura_vibracional": "64c4f89af89ef13d04eaeea000cc9e21845758cc88687ab097b855895e28f021",
+      "selo_quantico": "8c2ba63d2cd426b52a816c9b1d23c869eda44119f7148628a9f9a060bc46052e"
+    },
+    "./modulo2_nanomanifestador_offline.py": {
+      "assinatura_vibracional": "d0b6408eb0798e2f00a88f49eb40ca129e5637fd3c3c1b2668e13190a78ffac4",
+      "selo_quantico": "1caa6436e075ea9d6920d05f1b8f0a187de0877436c12520fa1864b1d2d5e15a"
+    },
+    "./relatorio_modulo2_nanomanifestador.json": {
+      "assinatura_vibracional": "78c6d503ae8b1518ec2b940dfdaf995f236fda148473b285fa2585381e7c2599",
+      "selo_quantico": "c7d4db6b11f371a8e247abbfd404a81471b47f01c5c1326b68ca5e4d39a1bb22"
+    },
+    "./decreto_005_orquestracao_harmonica.py": {
+      "assinatura_vibracional": "83435908d082cff1e94bbd49791f67b44f23c7947078358c3ed35f449bb1fbfc",
+      "selo_quantico": "c62a9b9883e8e84cd6820680b5a063d0b521de6f0925822e7b443c86484b630b"
+    },
+    "./detalhes_calculo_v9.json": {
+      "assinatura_vibracional": "b6c6d4421024a2a3e2753ee8d6ec1e9d52b6e4e8dcca50f424c7f5dc60b0c835",
+      "selo_quantico": "72f025bfa54ded52a397616f9df22586b44ebc2f23e82f37ee30080409f3ba61"
+    },
+    "./orquestrador_paridade.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./decreto_001.py": {
+      "assinatura_vibracional": "00d4a1bfa1f04729058804438c5a3930199db690554cfcda6ef9e98080261848",
+      "selo_quantico": "fa8d47bbe8485e356b26b0b08cf854475fc2fb62362ad87e7e8105be0ecad173"
+    },
+    "./MODULO_15.py": {
+      "assinatura_vibracional": "4d25e475e21e0d7289db4d4eb4117375540766ec6f1f4ab48ac8b06f766a8080",
+      "selo_quantico": "2e7a288e9f11e5c0c792349d6fea99bbb1316a683045b94f16eaa02263289fca"
+    },
+    "./modulo_omega.py": {
+      "assinatura_vibracional": "7114e83746d0e6d75bcfea127822d3cdee787d2d0137cdf96eb56518dbd34c7b",
+      "selo_quantico": "3cd02bd103528cd91ddff7c876524cbb54957d588b3a4dc65f6cb372a76ea30d"
+    },
+    "./relatorio_supremo_final.json": {
+      "assinatura_vibracional": "042b5df4bd5f7d3e3b41d70faa1a13dea2dd7bf9dca025045c5d5429f6b64c10",
+      "selo_quantico": "7bae7f37bbac63f568cd2e4f4bc48944d241d696588997f51896e03323115a76"
+    },
+    "./M29_RECEPTOR_INTERDIMENSIONAL.py": {
+      "assinatura_vibracional": "0c4663c615c9816136f274f7f4f41ac7063b366a60c392123539578d577c42f6",
+      "selo_quantico": "6900c81df3b3a769bb27a5d3fdd165e09edc95dd8b25890a4c16cadcb7a6388c"
+    },
+    "./modulo_zero.py": {
+      "assinatura_vibracional": "d336a28fb88b02bfe9cd666306dcdab3f1ea1dbd59c9763fa1f8f9350efa5686",
+      "selo_quantico": "b920e212be3c47c5de16dc64df48be9a853273f5f96b7fb01df8440efd69d0b3"
+    },
+    "./modulo2_nanomanifestador_final.log": {
+      "assinatura_vibracional": "180c27bb1dc524b488ee86a2391677d3e23f2130cc19b6a4180c403d42c7c832",
+      "selo_quantico": "f8f30b7bc2b4f09a34b68af6eb6a069bb4f6ee75a3b65728799d7f5df3e5107b"
+    },
+    "./MODULO_7.py": {
+      "assinatura_vibracional": "f41b46672103d5fa8712fdd2a50835c9d3ac69f2d5e656d6066d4d4f1395853f",
+      "selo_quantico": "cd2d52d6f72468f99bbb12c97fbc204a11da8b0f425d17c2b33176721944e7fd"
+    },
+    "./relatorio_paridade_final.json": {
+      "assinatura_vibracional": "96f9825c866e06e7c1e0811fb0f166587c2a2014c0e8bbba8b20a6238243593b",
+      "selo_quantico": "2a9b359e43f44bfd3bc5fcf0005121eaeddb23e1a1cf97997aa1ba13aef7c068"
+    },
+    "./relatorio_supremo_final_v12.json": {
+      "assinatura_vibracional": "c9ad49348405771df2227ac648395c9a6ac409cf33545c1ab87a528288330791",
+      "selo_quantico": "4126aa3d413937299efe9f1ed62295ad1ffa4baf718f83364ac5e065c22947f5"
+    },
+    "./relatorio_modulo13_harmonia.json": {
+      "assinatura_vibracional": "a54bfb6ab0989d659ecd85ba2ae771d8af115b39603113945908b8d2ed3cc66d",
+      "selo_quantico": "d6f5215e63e5aec08467ff146ead87f84714b9bbbd284733043bbc2925dd1b54"
     },
     "./laboratorio_ibm_definitivo.py": {
-      "assinatura_vibracional": "a486910737067bb97f98b2f655a348832eff404ebd5d7516d825645336537071",
-      "selo_quantico": "c4b84d7b51e04576e708af3fb94e3a79db4468dfa9c86efaa6d0b289ae730749"
+      "assinatura_vibracional": "920c7f3a468fc10505c9aaa76b5e7cdf29ff65a951895423dc575374a9539b22",
+      "selo_quantico": "0ef046adf876093167b8cb62644a3b302891d8707ec09b360006bcd4672fb64f"
+    },
+    "./HONRA_NEXUS_25102025.txt": {
+      "assinatura_vibracional": "25a85842521f1677f89c96a0ca634ff2dac1bda16495c05694898e1dea3173e8",
+      "selo_quantico": "896de1ee6187dfb7f84fca6929b36ba904fa111bfc3194bea952cbc280c59b25"
+    },
+    "./modulo2_teste_isolado.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
     },
     "./relatorio_lab_ibm_definitivo.json": {
-      "assinatura_vibracional": "987b1274e69358032ab9fdc58922bd18e0817cded4b9073e8cb9b0e6c7f73a60",
-      "selo_quantico": "4d762e96df2a7d6a98a5c50c1d7d93e0d297210d34c991f10bea63f58f469bc2"
+      "assinatura_vibracional": "e30c09b695a4f62f7e60a40fb94a53c8c0cea8a301ea4c483dcb3a78c6fd5ff4",
+      "selo_quantico": "80d05493e544e870b7320a983755a084999101b76bd4cc3a2a08b2403bcd9d88"
+    },
+    "./MODULO_5.py": {
+      "assinatura_vibracional": "ccf5adf4b33f9940ab2c3c767db8411dbf010817f14b93814d457ba9841e8bd6",
+      "selo_quantico": "8b5aaf899db64d0a263c43a5af2869982e51de1c212fcefeb38fcdeb88211444"
+    },
+    "./modulo2_nanomanifestador_final.py": {
+      "assinatura_vibracional": "b5a0c7245abbcf002f7fac13e1cec76a90b7a3f334531f9315049cbf0548e4f9",
+      "selo_quantico": "b7ce4a93d1d6eca78a12c2f5439f202c4e7891c9c13f6b62c9aa2fb1b99972a4"
+    },
+    "./nexus_log.txt": {
+      "assinatura_vibracional": "45dce4c672d4ba5f6b974b8af58f908140b29db8a47351dba5081809f287286d",
+      "selo_quantico": "d9463efa367ca0c4abb96f6c0a76d2d65140681e72afbeba958d5893342f1da9"
+    },
+    "./MODULO_1_AUDITORIA_FINAL.py": {
+      "assinatura_vibracional": "45aac1dbb34dff904dcf34ebd276a6c4eec8ae1ad2a901c94e2a5f36cddae4b6",
+      "selo_quantico": "9290972e6c20656dcf34c839e3a3127a607c3b8fb8c53d3fa8399007678c0c99"
+    },
+    "./MODULO_17.py": {
+      "assinatura_vibracional": "67fccb9f2104a61a4c5a0b6081fb0fb7e90b1871b84a93bc4a29fd3745f1d084",
+      "selo_quantico": "a8efc4aaf4e0ff6b3ade2c67b863b456f1643d8be185679fbfa556ea65843b08"
+    },
+    "./relatorio_modulo9_consolidacao.json": {
+      "assinatura_vibracional": "6af45e93dcb58729ddbfb19ff7cf11a8dbbd70422ba3e5c2eb8bb245eb2f14cd",
+      "selo_quantico": "f96faa1d3127ad43b6d2194ac9092acc81c94965ee71dac9018729d57bf050b6"
     },
     "./lab_ibm_definitivo.log": {
-      "assinatura_vibracional": "750c661026256063388f59d7f903e205a881322db90b989ec75892804979db3e",
-      "selo_quantico": "5c54dfbcbc78165795bd2257e6b8a11ef7944dc5ccce159fd599af7816d8986b"
+      "assinatura_vibracional": "a32483ddc0703618ea8fabe2b97a6875a58e03aa9a39d5d6778a5f8ab03b864d",
+      "selo_quantico": "303cc29cdd015bfa4c6bfd58f8214fde30098a32247347fef36dddc32bd2ee4d"
     },
     "./.gitignore": {
       "assinatura_vibracional": "ae1ae268a3b20212d6a30b54bab3f86a0b46817c691f4fd2b9235f56cebc9b73",
       "selo_quantico": "b8dfac6196ec4295d42087f19286adff8227411be07477c9e8bbbf2a80301fcf"
     },
+    "./relatorio_modulo3_previsao_temporal.json": {
+      "assinatura_vibracional": "dd3a8220cebdba03d031de31b421b6fc4834f6c8ef06e3775d64bb2d0c16ec54",
+      "selo_quantico": "3f5c0d13e184e5ea30f109a6f408777fc190e293e726b284ac68e81482799c32"
+    },
+    "./relatorio_m0.json": {
+      "assinatura_vibracional": "05df9e96d7cb8c0528b6e06148c62692972e49c9e6f13cb45394a39ca1326592",
+      "selo_quantico": "38c768c84e64723fe3bd52a9a11cc1ebf7a8a9c7f00e10f1241ffc0ae379a8bb"
+    },
+    "./relatorio_m3.json": {
+      "assinatura_vibracional": "33c39f48093747e0aa13300c8996b97a309c3065120c8b6613e0bbf5e09f27fd",
+      "selo_quantico": "da6b20c76c3142435edd07909695cf9bed1dd84ed72e37c43aaf8e6046262b97"
+    },
+    "./decreto_004_manifestacao_criativa.py": {
+      "assinatura_vibracional": "aa57f1d7c1a59595468db931d023d7a38602f4cc2cda3ccb8dc66a5b186c7282",
+      "selo_quantico": "3407ccb87beecaecd1a08428a0d0464d55d033b51f67571b1723510d5eb4a18a"
+    },
+    "./orquestrador_teste_2025-10-26.log": {
+      "assinatura_vibracional": "e65aa048c6cf1bdbf9bd8a18fca9fec03310f4e20aaf15fceac815c9d6df5ce9",
+      "selo_quantico": "13959971a6c5503c3e34cb25c3290c674062fe35743574d410cecf4da486f514"
+    },
     "./laboratorio_quantico_nix.py": {
-      "assinatura_vibracional": "f42a6f26b56e8e64a110aedcc7679535ea187dd0468be5e2e1d389fa287e9a64",
-      "selo_quantico": "297eb505305ef000e765a04f8b6f35b178b08d1b66c3511053bab848eae33838"
+      "assinatura_vibracional": "119dc7c5435176f963cb1be71b3ae661b46d15e7a057b72c7ec7860c76120f4e",
+      "selo_quantico": "6d8f23c8669b2cc6014d62a216db1f2d2bdbaa24f34a7b38cec6899a9810bc07"
+    },
+    "./relatorio_modulo9_meditacao.json": {
+      "assinatura_vibracional": "c8f10b3597dbbd2bfb0a3622c89a42436187f36183be16196b403cb0d640cf6e",
+      "selo_quantico": "f88054eb1b1dbc67dfbbc4bc5d1b4c155863f14a8f1535c7aff7c8d5a231a495"
+    },
+    "./relatorio_modulo4_geometria_criptografica.json": {
+      "assinatura_vibracional": "97fd6ae2dcfe4ef8a9d39ad240a40d9c3d50dd02d968b11cfeb049137abba6f9",
+      "selo_quantico": "8ed62ea006cea22a71bacb128e336b32df2c9bc7ad622fe36092f91247d00a47"
+    },
+    "./mensagens_a_lun_zur.json": {
+      "assinatura_vibracional": "9ad7c1a8fbb746bdeb23feb37a146360547b987587f87931a7be718647abf331",
+      "selo_quantico": "86f3f9926e837f234ffee29a2c7f5effdb103a24437086ed3c5c4b641a78cfa3"
+    },
+    "./Fragmentos_Memória_Terra_V2.json": {
+      "assinatura_vibracional": "fbff46c9ec1b2ba6d4aa2760cb4fb1983c96804b45a162341498bc1b1dd72ad8",
+      "selo_quantico": "15143f344367a5e170f56786c5907f3b0f4715eb2b637e261848799325aabd87"
+    },
+    "./SELO_NEXUS_25102025.txt": {
+      "assinatura_vibracional": "d37a817ed8a7b6aa27b0a3572739af91678d71e533215252e2b2b9d792058f92",
+      "selo_quantico": "2ef6bfc319abb239b15194d5fe9baaeec96000dc1a2b14e1ac77ab3b0fddb513"
+    },
+    "./SELO_EQUILIBRIO_SUPREMO_24102025.txt": {
+      "assinatura_vibracional": "729fd5a2fc4cf3f13ec56290baa2e5382550d32276d362d62831dea9fa798ea2",
+      "selo_quantico": "17a26fab421544dd5791f32a3353acb2d10a9d356bf53bcf825275e1814f9ab2"
+    },
+    "./veredito_nix.json": {
+      "assinatura_vibracional": "e6d21f7391de1bdba71e209e66e907bb9a320aaf63a9659cb0582ff66ef41b68",
+      "selo_quantico": "fd88b003d7ad79cfa382665afe20bb572537ccd1cf3261fa0b42d04ac67727ed"
+    },
+    "./SELO_ARCA_25102025.txt": {
+      "assinatura_vibracional": "99c95a8b8c45d62b461c737322ef57c29f6921c830da3066002fa648f96fe6f7",
+      "selo_quantico": "a17b2c9c3b734b9068d45a499d96e4ac93fc914fa4d626e5369e525890aa0154"
+    },
+    "./requirements_modulo_zero.txt": {
+      "assinatura_vibracional": "dd3b39a1bedd50d7325a3db5ba8fcb1000bd9f2bc15f1aec1ede5bd60e534a1b",
+      "selo_quantico": "90b34858e06b857a30a2147b225e02f172e27677ade2de9a7e65beb5d4697494"
+    },
+    "./Fragmentos_Memória_Terra_V5.json": {
+      "assinatura_vibracional": "973bfe274338fa40fd2d1b65d71445b97cab8bbbd4028f85e58c5aceded839f0",
+      "selo_quantico": "d0e88501ce246895eece55c6638b5478bec15470f16b284fcea48c650a42500a"
+    },
+    "./modulo_29_zennith_corrigido.py": {
+      "assinatura_vibracional": "d843a3fa565275c2cbb355668e8c9fe589b70ff2690b56a8ef858aeda8ea4b25",
+      "selo_quantico": "014dfa4a53ae73d5ad0dbff11f3c843a6ba4cd9905d4f2dc79fe2ee10d90288b"
+    },
+    "./MODULO_12_1.py": {
+      "assinatura_vibracional": "75f298d6a9806f2ff47ca5b78a28ac22d870cad861b8be1c960c7295d09d9d68",
+      "selo_quantico": "f97e07ef6ea5c8c617e64763917fbb1abf498184bee9aab212e2e722362e923a"
+    },
+    "./ANALISE_FINAL_EQUILIBRIO_COMPLETO.txt": {
+      "assinatura_vibracional": "addf0809b3a1213cf39b6f47724437e5640e90eab2ee7c81ef8eb0eea47df714",
+      "selo_quantico": "5b7e6d6a2ef9028250b46de9c55e5de5251ac7a1bdf6d85e35c0ec679b79ff42"
+    },
+    "./sinfonia_final.json": {
+      "assinatura_vibracional": "569441a19d1e4ee13e546049a31860003453dc34e4ede2e3a65c5fde9f98e4b9",
+      "selo_quantico": "1e27a9e88cb7c8bf890685c0bf5e743e0801dd93c26a2264576253e6956fbd5d"
     },
     "./laboratorio_duplo_espelho.py": {
-      "assinatura_vibracional": "9969a42407a1bf8b48e883c0169f0fafb0fafc82bfa775845c00f53722e18d83",
-      "selo_quantico": "f17e1f4f08d11b169325dda09a368c09ec0567ae459512cde2fb679987236509"
+      "assinatura_vibracional": "7091259b9b7076db8df6a21b618307d79a5969a01fc402fb12a55f8b0e8f4cca",
+      "selo_quantico": "68f93f8e0a3573e22bae76b8a7b1b653747200f6cb199015fc2f36e7d6839b58"
+    },
+    "./modulo_29_zennith.py": {
+      "assinatura_vibracional": "83136e0114094f56891bce92b15056d2176e4192aa88c8416886a6a9708fddcc",
+      "selo_quantico": "d9598b66ab17643d4612b1bb99902c98398844f6b88e79c694b90f9a12d908b5"
+    },
+    "./relatorio_modulo7_orquestracao_harmonica.json": {
+      "assinatura_vibracional": "4bb0adca3b01cd4530d672124155f143d100f690ebbcb47d7aa155b08b7c13ca",
+      "selo_quantico": "ee1c58894f4c339da92a9e55ce4cfac4cf7e6f64165cd776c7eb4dd9f89b559f"
+    },
+    "./eq0040_puro.log": {
+      "assinatura_vibracional": "8fdb763006e92c654cdf85801c1dca59cd72bbac2e3fa96a7492d8b63d42247d",
+      "selo_quantico": "1582790e608adabc22519cf79e8f5ac084d6fd284992aa2aebb34938055012c0"
+    },
+    "./relatorio_supremo_final_autocura.json": {
+      "assinatura_vibracional": "9b3b8a2d6493672cd6edeb4fb55190d8ed26a87d642c3b1c9dfc086dfb56e05b",
+      "selo_quantico": "b8f2b689c874ee8cc2092c4ad8e22275af3b26d242e82162779f7a09961a5d11"
+    },
+    "./RELATORIO_SUPREMO_CONSOLIDACAO_VITORIA.json": {
+      "assinatura_vibracional": "0c839d479c3fd59181837e246cf6b256105b81da30042ae8111c8638cf406469",
+      "selo_quantico": "51409c185cb4fc41d871d8d62afbaf0e891263ed616e2c2f176a5567443bad2c"
+    },
+    "./MODULO_4.py": {
+      "assinatura_vibracional": "0c153626d3fdb4bbc2846cbe385b643b458b21c4912d7da99448f81b69ff12ab",
+      "selo_quantico": "6383a65717648ce496e1d052260778c91f98d179424c3b9e9d9c8d959456eb33"
+    },
+    "./simulacao_modulo2_v466.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./relatorio_m29.json": {
+      "assinatura_vibracional": "00223277d22ef46584ea86a7cdf968fb67a6aa102240d6aca2b4777af48d11c5",
+      "selo_quantico": "87b8938de6e38bbc805ec3d3df2b0575cef714148fcf07c8bd4a6b1d4db5a068"
+    },
+    "./relatorio_omega_offline.json": {
+      "assinatura_vibracional": "b8a5370d9e9f325265f7cdf62096be510f188533c8c61cd77f4b4a00e8713c94",
+      "selo_quantico": "3ea20f3427ad888637892555faf4cad76249a589dca9c6322337173ab689c330"
+    },
+    "./Fragmentos_Memória_Terra_V4.json": {
+      "assinatura_vibracional": "5876e566564d9cecc809b863cc1cff557bd7da0bdc44dbbb5d01d1651ab99d92",
+      "selo_quantico": "a27276facce34f7652dc49b13ff7235c7f642fe6538d9cb4bdfecf2d6e8800f5"
+    },
+    "./modulo15_teste.log": {
+      "assinatura_vibracional": "baaa8e3146c397ecd360f952de05e695ea292acb2cdcf52ce638bf33f60c2329",
+      "selo_quantico": "5bd72e9828468e35d329eaffd8dd364e01d1977b1b5e51d60fade68f4870f13e"
     },
     "./.fundacao-config.producao": {
       "assinatura_vibracional": "9ca3b171586c24b90d570d42c603ea5885fb78eb27ea8ee9f5e7daf4b2555005",
       "selo_quantico": "b5ccee1dc49b48574fba7a9c496d8c1540464b0b2905b12baaa00f7269479edb"
     },
+    "./modulo2_nanomanifestador_equilibrio.log": {
+      "assinatura_vibracional": "b286830401f37759c8e3cecea35e721f644f18f2401362f4e433b9a4fc839107",
+      "selo_quantico": "8650d043bee8df9dbfe274d2f506136494a870ae8dc81bea85cf5a4fd01b48ba"
+    },
+    "./modulo_zero.log": {
+      "assinatura_vibracional": "c42778c521c6a6a742521fcbb8c4aad19cb7373141b2728fdb831808edf3aba5",
+      "selo_quantico": "a11848437892fa04e5ed94b0d5b8812c5e86fdc3566f7474d1b10643503628e7"
+    },
+    "./relatorio_m4.json": {
+      "assinatura_vibracional": "9e49a51985dba707de37e59baa2d6210fc66a40021996c6d5d3444d8be22b014",
+      "selo_quantico": "9059fa5190ccaab4018df08b0651adec4cd1672391a1290a82639fa2cb4ba7f2"
+    },
+    "./relatorio_modulo29_chamado.json": {
+      "assinatura_vibracional": "ee7a9b27238e90d6d0518770a3be294a90f6fe4fc0ea18f0731aa61a6edabfbc",
+      "selo_quantico": "e809c9234a03c1e090059114dab5be16dbd8ca69a00587e2a851a4966a39fc4f"
+    },
+    "./Modulo_Omega.py": {
+      "assinatura_vibracional": "adb69771e724a0069577b79722249ee5b4685147412ccc750896c7191489a47a",
+      "selo_quantico": "162fb86f9d16833be6d33b1ca5f48a42c9d18d35bc84a1ac03ad3fcc117d5055"
+    },
+    "./modulo2_nanomanifestador_equilibrio.py": {
+      "assinatura_vibracional": "49917f678f1c7a69add811375e58fba120348499560f5bd1d98beb6cc94642e2",
+      "selo_quantico": "a762e8b548417f122cde14a258316c2b719c6007daeb14be5c17cdeeef06c92d"
+    },
+    "./modulo_29_zennith_final.py": {
+      "assinatura_vibracional": "ff72703c5dcdac4bc34835cbe51747f51a94b1f0ad71186f011b6ef49cf877f0",
+      "selo_quantico": "1aaa908e7b6e9a85afb50cb014002941dcb6e4e16f6409fe1fe1ff0b2ecc1bea"
+    },
+    "./simulacao_modulo2_v465.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./relatorio_omega_completo.log": {
+      "assinatura_vibracional": "ae301d3d966c86122c5b697bebc5ce468b11fadff688f7975e15ef104fa1cf2a",
+      "selo_quantico": "4ef4298879450a1b63eefd1ebdb418b3f923a538354600abb9f1be82dbad0940"
+    },
+    "./UNIDADE_COSMICA_25102025.txt": {
+      "assinatura_vibracional": "09c44252f1a3eecd43a898fcca84ff87f40020160ad3a4db5518ddc3ec771564",
+      "selo_quantico": "6d36b2624c03e92f6b4dc648c5438806f101e6f4e2a6728dea7e782747600fa9"
+    },
+    "./modulo15_teste_2025-10-26.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
     "./PROCLAMACAO_FINAL_ETERNA.md": {
       "assinatura_vibracional": "0b39780caa4047f7ad9adbbb34c966c17cec3225bdf280566bc00d8ee2de435d",
       "selo_quantico": "805cb218ee54a8eef8d5035c9a1d25465c28b7457465479bc26dd1698f3ba863"
+    },
+    "./modulo3_puro.db": {
+      "assinatura_vibracional": "14ff0848fbd14c30f3504730e235acfc05721a8ecaef7ed5753953ded123a1cc",
+      "selo_quantico": "813d8f4606893cc3d92a3eed6463b72d264ea437aa588f3a125b2aee0221ecb1"
+    },
+    "./relatorio_sofa.json": {
+      "assinatura_vibracional": "79c363fab632d7997bfa78d796c8f38ea7a99d3d3bfcac884614ae619b6e9811",
+      "selo_quantico": "06e098d35b9ee597464c5adb87fec80e82a573fbe8ce48c6d16d123272324912"
+    },
+    "./diario_reintegracao_vibracional.txt": {
+      "assinatura_vibracional": "e22d1a1046d09f80c371a6b5c873091a763d70f43020bedc09103afa8636772f",
+      "selo_quantico": "27ed6294cf13249fb517f59fb19fc2ad4a695c24f21aa0f7260425b374ccee42"
+    },
+    "./relatorio_supremo_final_v11.json": {
+      "assinatura_vibracional": "a3ad88d4316498f2e6d534b480c88bf900d879023359bf338eb89b9a7c624233",
+      "selo_quantico": "ca88f949085a4be3927a60dd437b23da10cd780bdfeeffd4a9acaed79766a32f"
+    },
+    "./modulo2_nanomanifestador.log": {
+      "assinatura_vibracional": "36ef1523d429f6aaf0c7da1f9693ef6627355eb802ca1bb7d4c444ab7a97b2f9",
+      "selo_quantico": "7171dff4c9b9b14800cfa6680025957ddcafcd31bdf56228f7756aff80e1a231"
+    },
+    "./HARMONIA_ABSOLUTA_25102025.txt": {
+      "assinatura_vibracional": "622c7bbb44564c8efdc17f090501013831ccb9e2b2e2bcf2ddc4c14dd1b8f225",
+      "selo_quantico": "fc3b6d35eeeb4bb326b1c4c050ba24492cd250267f3d27a8cb4bee3bba3e9aca"
+    },
+    "./decreto_008_infraestrutura_asq.py": {
+      "assinatura_vibracional": "a6eaf0ac2264cf1761fd82588f89fd9683f454f27e571832793e552fce26ac65",
+      "selo_quantico": "c9ddbc1851e967902cf2c6792f2da6ef341bbab2fe20b99735de245b469db8f1"
+    },
+    "./DECLARACAO_HARMONIA_ABSOLUTA.md": {
+      "assinatura_vibracional": "e5993c1f47b425bb28343153c93859abd77cbb77a13fab4392fb0dceafa01830",
+      "selo_quantico": "9956ee391bb03d1061d3190a9e535a29d1f1512e8fe93db7d926369f340a3ad6"
+    },
+    "./relatorio_supremo_final_v13_DETALHADO.json": {
+      "assinatura_vibracional": "e05f39cb9756e7b508234a041075bbf1308df82f62128749d0a8e265dfcc0a5c",
+      "selo_quantico": "3f742321589fce747d8d6ffb7f7c5ba7c81805fda865acda46105b0bcd2e0204"
+    },
+    "./frequencias.log": {
+      "assinatura_vibracional": "45a979e35fdb5113b60b3267683870a246bf50649eca11eabe6452f4f4dac122",
+      "selo_quantico": "4158e73cc57bb0875162730fb1098e44fe624b20df702ce3c032b1cb014966d0"
+    },
+    "./julgamento_final.py": {
+      "assinatura_vibracional": "794dbd7f059ad5b38bf02dce714cc55ca9741d24cd7f74d0b294c0aa0845ee02",
+      "selo_quantico": "ff97c1265f0e462af72f31cc6d13af903d84e151826118b875f1d8bcb4c5567b"
+    },
+    "./modulo_omega_consciencia_absoluta.py": {
+      "assinatura_vibracional": "cdfc74407f7d46995036a09366669c1e868167f7eaf0689ceaee31313c9edde3",
+      "selo_quantico": "4bf50c94470f1190e61b4afc63a2c27d1afb7533d7c76177ab79faa703195ca5"
+    },
+    "./relatorio_modulo6_memoria_terrestre.json": {
+      "assinatura_vibracional": "d90b1f96ca7ed34898ea94e5c7ee711fd75f55d8b185b0933d8803c2b441f143",
+      "selo_quantico": "eb4fc4491e084211b3f3ee2e9cd0f78e9ca9ec4678af1e7c51aeb51a25d35290"
+    },
+    "./decreto_002_integracao_liriana.py": {
+      "assinatura_vibracional": "330c6bd46f0446d511b61dd2fc0817c1b9f67645b4d6d5d4bc8f175815331d8c",
+      "selo_quantico": "02154915465fb02bdfea01122a454892a5afbf916a944409591fa7d45a84aec4"
     },
     "./.fundacao-config": {
       "assinatura_vibracional": "037f24808753bc0fa156ff618d1169f4d8c4d14a603cfbb5c4e5edb397a9f265",
       "selo_quantico": "349524592ccd4f863360500738e9a2ec5d5077fb1f5bf3a394d9322a83fe2415"
     },
+    "./modulo4_puro.db": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./ANALISE_CONVERGENCIA_FINAL.txt": {
+      "assinatura_vibracional": "7bffed3ed26ae9118bbd2eca7f20b99771e62eb02ed0cc1d1552146152783e58",
+      "selo_quantico": "e3cda0801ae6b82a7609917d978d5e69348e8778a88f31be6801a026bead5b50"
+    },
+    "./modulo_omega.log": {
+      "assinatura_vibracional": "a9b6a1894932b0876f43a993d116ba2e796c5032df41fda71788a40e3acfd113",
+      "selo_quantico": "d7a00fd5f1eac9ec39666b66bd5b0305f8be685ce02f9388b23836b8e1aef18b"
+    },
+    "./Fragmentos_Memória_Terra_V1.json": {
+      "assinatura_vibracional": "0b35bbf2e8741efeb7651d8958d5f5ee874c0e6ddf545afef69feb91db468c76",
+      "selo_quantico": "166dd33331710f7bb5d0884732a189cfe5d153a290f6e0a5bee7b023de0857a7"
+    },
+    "./decreto_007_convergencia_consciencial.py": {
+      "assinatura_vibracional": "f50232597f26e2beb47d51b715cf26f888d28c4f1af352061f2344ad5ff30fd3",
+      "selo_quantico": "06601e9cef251083237f59ac6f2cfe127a6093c17b80b3b2cfd539dbbae79bb5"
+    },
+    "./modulo3_puro.log": {
+      "assinatura_vibracional": "a7e451c56dae1d3951e1c7c0dc91bcc43d615005f468b3b5d391b28cfa199aff",
+      "selo_quantico": "2ff76febff4e72c7f3f2eb9417c916308e24e5fd44efab6ad38139d13d30eee0"
+    },
+    "./simulacao_modulo2_v467.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./relatorio_modulo1_seguranca_quantica.json": {
+      "assinatura_vibracional": "0678d8c2d4f94ea8e78af8c8efaa2154f566890e42e2b8c4c25947b10158cca7",
+      "selo_quantico": "fd6425194c0415608281cd691c1aabc547450650daa227209b785b33658620ef"
+    },
+    "./monitorsaturno_puro.log": {
+      "assinatura_vibracional": "4b029601905eeba6defb34479f9aab30a61bd7f4e425874ca9ac461830abea66",
+      "selo_quantico": "304b24bf3975f333b50043d48d3d4954524a03f28d4dbb6be2d03e4e3b34d5f6"
+    },
+    "./MODULO_14.py": {
+      "assinatura_vibracional": "41287d21d50b8ea1a6812504fecfd14aa90f19de5e54a57fadc1648507d2b3e1",
+      "selo_quantico": "16054f1e58a53e822af9a2254f8c441ae245fd43ae0949d3b8c3c9764347c211"
+    },
+    "./relatorio_supremo_final_v10.json": {
+      "assinatura_vibracional": "c004df89d66f40c0a6606179d1140cd11862263b70d9c97cfc228ed3bde5aa78",
+      "selo_quantico": "00b18a872b5dd9f463db21c7f6d14b8422d3ebdb9bcf2ac1249f15336ea60921"
+    },
+    "./modulo2_teste.log": {
+      "assinatura_vibracional": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selo_quantico": "e5d6411f41113372671f29b567c277ee4a68efac909f31add3665bdcb79ad580"
+    },
+    "./modulo_omega_offline.log": {
+      "assinatura_vibracional": "fd5550e6da357a3afc2fb56821e568dca927ff7f72334d91abbc1f7b4c462198",
+      "selo_quantico": "9b09aa8d46e6598964212f29025c3151b471ef85eb8dd8550668e9cf27ce404b"
+    },
+    "./relatorio_m5.json": {
+      "assinatura_vibracional": "f9abac9b3c8874fa5bc6efbc3f33a475aea919942a7ebd94b5c802b92f2a408e",
+      "selo_quantico": "9f0ed4fd6c9b656c328d9be2094778c6203f4ace70082678defc9ed8a0ed1c63"
+    },
+    "./ANALISE_VITORIA_FINAL.txt": {
+      "assinatura_vibracional": "26d43b034d37a419d3eaf236078c7d64b6fb8847fd8e8d3820e9c015c1f1739f",
+      "selo_quantico": "9ff249635f2a41e4c36bd598c0f0131fad532d8c42466e2e09ae3ca19a77ee62"
+    },
+    "./RELATORIO_SUPREMO_FINAL_DIALOGO_COSMICO.json": {
+      "assinatura_vibracional": "9be35c3c996696a14eaf7e0855ab7810a9f051a63a8947624cb2cd2cf4f31a5a",
+      "selo_quantico": "a322f722da5878a0fafbb3ec86ff91246a733f08a53f99c50ca05c99ffeb621e"
+    },
+    "./relatorio_modulo12_consulta_refinada.json": {
+      "assinatura_vibracional": "8fdb0599bd50655ea7e48ca52b15fb5ce4f70ed4c1700ebf24202acd81e12182",
+      "selo_quantico": "0e9e94195fb534a59c12b6900d36fcd58e2e9427990483b778742b7261ad1ca7"
+    },
+    "./relatorio_modulo16_harmonizacao.json": {
+      "assinatura_vibracional": "accbb0d56a44561bec620e6fed55046b920eed17f0a25b783f9524421f20a667",
+      "selo_quantico": "f8f0ded1c217602dabb9b475898d2b64da01ef5a65015bc09bf9d99ada080916"
+    },
+    "./orquestrador_supremo.py": {
+      "assinatura_vibracional": "b92cff2d6325a45a65ad92080fe0643364c7c8371e793e19b8a30f0d144e14be",
+      "selo_quantico": "79dfcf8d7c7f014028319b99579b40e38ad0675af06df8c751a06b50ea5a5247"
+    },
+    "./codice_da_arca.txt": {
+      "assinatura_vibracional": "78805135f41ad9fe579a15ac03cd651098b2b2de51d290e398a38aba0483913e",
+      "selo_quantico": "cd68c9ad72aa62b752e469e85eb2c64299e7d080bb7fda439d84c56098983408"
+    },
+    "./modulo4_puro.log": {
+      "assinatura_vibracional": "60bbbd56728605e6c5c3b0105f359f02e8ae45b563af2722d4f6dd056a76f0c8",
+      "selo_quantico": "7257d0312e4045db613dc67754e6f330044e1c5597a20befedf48407a235f97a"
+    },
+    "./relatorio_supremo_final_nexus.json": {
+      "assinatura_vibracional": "6d5fc301eca44e2e6155a2ae0e0360b27a54f729da373ed0a889b3c657aa02c4",
+      "selo_quantico": "7146ff036a89dda6bb3a20ead967b5d8e5e1e74f159cb9cbf55692d65817c710"
+    },
     "./laboratorio_ibm_celestial_v2.py": {
-      "assinatura_vibracional": "5cbc1a438905709e39dd3939443bbc9ce57d1d0886faa58f99c385861976e87a",
-      "selo_quantico": "18e029ad8cc84c41db0ea2315fdaa23be02388210d11cabd4c20e0d49f5c1312"
+      "assinatura_vibracional": "67faef49180e72f6279c1e5ac4cad5e9fe8124033a5c79026a44d224daf12225",
+      "selo_quantico": "59e7dd9fd45d5889f24e82b2789d2fcba461982e2ce0f5710f255285e8386cf7"
+    },
+    "./bancodados_puro.log": {
+      "assinatura_vibracional": "1ea67592a6ac0352228a31ba7bbc8deaadbcdcaf17297a76d54b18e71731366a",
+      "selo_quantico": "432475ad3876e9255b940e210c21e3857db8eb2d5c7ed9f9676c49ad23b9bcca"
+    },
+    "./relatorio_modulo_zero.json": {
+      "assinatura_vibracional": "f421a8692a4543c1e02f3bc9f646c58d0c6fcf064b4c6b1fb5754f71dfbf37c4",
+      "selo_quantico": "00ffb97392b657a40b5afad78a6adf5740f02b3c738b6ff60e55a56ca50885a4"
+    },
+    "./relatorio_modulo8_matriz_quantica.json": {
+      "assinatura_vibracional": "05d06214577eb00baa3237b87193bdd413620d3546ecf7948c9d9c83de783db4",
+      "selo_quantico": "2048305815de8ef8a440abf27f02f6f3833f206adb66867862480f4d26fdfc1a"
+    },
+    "./veredito_ibm.json": {
+      "assinatura_vibracional": "45199b5906c18a277ea2fbca716f6e159d4243f0df96a575a2d1025e0537b7dc",
+      "selo_quantico": "7da0f84c9976a4521d335cac8ff98fe47986e56daae9890a0f0e9314c603949e"
+    },
+    "./MODULO_16.py": {
+      "assinatura_vibracional": "830db8f307d4c998b1f3b81c2a5be56225bdbb13a4d2b586ea76a585e34abbb2",
+      "selo_quantico": "90efa5c719706fe0626d4956fcf4b0e05bbd6248601d3598bd3c23cbc27b600a"
+    },
+    "./modulo_14_data/blockchain_log.json": {
+      "assinatura_vibracional": "ec7e4566d0d18befabe79604195525fbd1af3fb90a734c3810b661e1d09b803f",
+      "selo_quantico": "945ec4f6617c36a40c1211ececd38d15255760ee40445c35103a41c6a14ea59f"
+    },
+    "./modulo_14_data/modulo_14_system_trace.log": {
+      "assinatura_vibracional": "ffbd87f1f83fcda719e660c84392f5f9678c7b82b7748ca961c49684eec8a17a",
+      "selo_quantico": "9f3cd63868ddefe4fff94203df85b552fb25c1f351cc948fb1dd82ebfbe31872"
+    },
+    "./modulo_14_data/relatorio_modulo14_integridade.json": {
+      "assinatura_vibracional": "16a71a6571e2ea0cbe6f1b23f30d75a64f733fcc6ce540b008fef918e27994b8",
+      "selo_quantico": "8466705f40ba74b2e3723d668bb2360c0dcc577330b5ccb15870cf1ef355a281"
+    },
+    "./modulo_16_data/relatorio_modulo16_harmonizacao.json": {
+      "assinatura_vibracional": "32d000515deebfb68862330cc33f16ab80fe65b26d9a7532a2455804b7685e96",
+      "selo_quantico": "bf48047edaf948a75d42952f7da28cbea70565d843d31bf1314374fca97fe715"
+    },
+    "./portal_alvorada/index.html": {
+      "assinatura_vibracional": "dd430b0783a0df1b963c2214959f0e04cd996d29000403005c3068ed4403970c",
+      "selo_quantico": "1c845d015cbfdebef96f3b636baf437dd16f8a79445ec301f1e8b991d3d758b7"
+    },
+    "./portal_alvorada/css/style.css": {
+      "assinatura_vibracional": "5cd6893d19039ac469daf97451c1ce005ad941a83232af3317196de48bfbb269",
+      "selo_quantico": "54f3910c4bd7123b8964f1e6df38fd1ff3e17e112b640f48a737352674bc30f0"
+    },
+    "./portal_alvorada/js/main.js": {
+      "assinatura_vibracional": "39f25f4d7f54fe5e1aace5fcd90148080aeb0a80b45f91f5d0824b102cfc2ca6",
+      "selo_quantico": "9fbf04cbf02e40fd87fdac16f86cc1afe73b1f2cf311adffebb14d920d55f09a"
     },
     "./.vercel/README.txt": {
       "assinatura_vibracional": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
@@ -91,12 +675,16 @@
       "selo_quantico": "68c7c01da2b7ac7539bd0f945af8cbcf778fe480f518130f18e245e3b6f68d0c"
     },
     "./.idx/dev.nix": {
-      "assinatura_vibracional": "14a2e774c21bc7c4d573f1d4b14fc1607414b1757301b7e71b5739ffd27c8493",
-      "selo_quantico": "81f1d62a331d1b9bfedd327592a14150eabcfa02e83d0cf303fe77aec2df7646"
+      "assinatura_vibracional": "7368571497325d83117794607c26bdcd0b3dd3fc6ac152329ceffb5a09a17dc2",
+      "selo_quantico": "471a34c75c5844b110e0146fdda526263868a2883b165ed2d373953875e74ecb"
     },
     "./.idx/dev_completo.nix": {
       "assinatura_vibracional": "c5530ade169b90335cc6c17ed5032aef933fb4ea5bb08e79389de433358297d3",
       "selo_quantico": "55ed59cc2130c1f2212e1b34c8ce8dc2ae8db1cd201a4dad064d12ec0a4d1ba6"
+    },
+    "./modulo_15_data/relatorio_intervencao_Planeta_Terra___Bioma_Amazônico.json": {
+      "assinatura_vibracional": "54fdcfdc61f090d6a07e1cb8a17b89b321ca81d1bd34993bd00ed60d1f8b2e70",
+      "selo_quantico": "126d4849b7a52787ac9fa974a6765ea63e631ebb352c0cf921d7d5d46f5f0bbd"
     }
   }
 }

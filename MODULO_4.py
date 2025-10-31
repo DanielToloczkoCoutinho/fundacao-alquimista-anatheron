@@ -1,8 +1,12 @@
-
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# MÓDULO 4 - Geometria Criptográfica e Autenticação Cósmica
-# Versão 4.3.Ajustado - Recalibração Geométrica Integrada
+"""
+FUNDAÇÃO ALQUIMISTA ANATHERON – MÓDULO 4: GEOMETRIA CRIPTOGRÁFICA & AUTENTICAÇÃO CÓSMICA
+Versão 4.5.Ω – TOTALMENTE INTEGRADO AO ESCUDO ETERNO OFFLINE
+QKD + HSM + CUBO DE METATRON + HASH CHAIN + ASSINATURA + LOGS IMUTÁVEIS
+Sem dependências externas | 100% Python padrão
+Autor: Daniel Toloczko Coutinho Anatheron
+Data Estelar: 28 de Outubro de 2025
+"""
 
 import math
 import time
@@ -11,178 +15,249 @@ import hashlib
 import json
 import sqlite3
 import os
+import sys
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Tuple
 
-# --- Sistema de Logging Puro ---
+# ===================================================================
+# LOGGING PURO + IMUTABILIDADE VIA HASH CHAIN
+# ===================================================================
 class LoggerPuro:
-    def __init__(self, nome_modulo):
+    def __init__(self, nome_modulo: str):
         self.nome_modulo = nome_modulo
-    def info(self, mensagem): print(f"📐 {datetime.now().strftime('%H:%M:%S')} | {self.nome_modulo} | {mensagem}")
-    def warning(self, mensagem): print(f"📐 {datetime.now().strftime('%H:%M:%S')} | {self.nome_modulo} | ⚠️ ALERTA: {mensagem}")
+        self.log_hash_chain = "GENESIS_GEOMETRIA_330"
 
-# --- Algoritmos Puros (Inalterados) ---
-class ValidadorTranscendental:
-    def validar(self, freqs: List[float]) -> str:
-        if len(freqs) < 2 or freqs[0] == 0: return "DADOS_INSUFICIENTES"
-        proporcao, phi = freqs[1] / freqs[0], (1 + math.sqrt(5)) / 2
-        if math.isclose(proporcao, 1.0, rel_tol=1e-5): return "ESTADO_DE_SER_ATINGIDO"
-        if math.isclose(proporcao, phi, rel_tol=1e-3): return "EM_EVOLUCAO_DIVINA"
-        return "EM_CRESCIMENTO_CONVERGENTE"
+    def _hash_chain(self, msg: str) -> str:
+        new_hash = hashlib.sha3_256(f"{self.log_hash_chain}{msg}{time.time_ns()}".encode()).hexdigest()
+        self.log_hash_chain = new_hash
+        return new_hash[-16:]
 
-class AutenticadorCosmicoPuro:
-    def gerar_hash_root(self, dados: List[str]) -> str:
-        hash_anterior = ""
-        for dado in dados:
-            hash_anterior = hashlib.sha256((dado + hash_anterior).encode()).hexdigest()
-        return hash_anterior
+    def info(self, mensagem: str, **dados):
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+        hash_entry = self._hash_chain(mensagem)
+        linha = f"[{timestamp}] [{self.nome_modulo}] {mensagem}"
+        if dados:
+            linha += " | " + " | ".join(f"{k}={v}" for k, v in dados.items())
+        linha += f" | HASH={hash_entry}"
+        print(linha)
 
-# --- MÓDULO 4 PRINCIPAL ---
+    def warning(self, mensagem: str, **dados):
+        self.info(f"ALERTA: {mensagem}", **dados)
+
+# ===================================================================
+# ENTROPIA QUÂNTICA LOCAL (QKD BB84) – REUTILIZADA
+# ===================================================================
+class QKDLocal:
+    def __init__(self):
+        self.tamanho_chave = 256
+        self.max_tentativas = 10
+        self.limiar_erro = 0.11
+
+    def gerar_qubits(self, n: int) -> List[Tuple[int, int]]:
+        return [(random.getrandbits(1), random.choice([0, 45])) for _ in range(n)]
+
+    def medir_qubits(self, qubits: List[Tuple[int, int]], bases: List[int]) -> List[int]:
+        return [bit if pol == base else random.getrandbits(1) for (bit, pol), base in zip(qubits, bases)]
+
+    def executar_bb84(self) -> bytes:
+        for tentativa in range(1, self.max_tentativas + 1):
+            n = self.tamanho_chave * 8
+            emissoes = self.gerar_qubits(n)
+            bases_alice = [random.choice([0, 45]) for _ in range(n)]
+            bases_bob = [random.choice([0, 45]) for _ in range(n)]
+
+            bits_alice = [b for b, _ in emissoes]
+            bits_bob = self.medir_qubits(emissoes, bases_bob)
+
+            comuns = [i for i in range(n) if bases_alice[i] == bases_bob[i]]
+            if len(comuns) < self.tamanho_chave * 2:
+                continue
+
+            amostra_tam = self.tamanho_chave // 2
+            amostra = comuns[:amostra_tam]
+            erros = sum(bits_alice[i] != bits_bob[i] for i in amostra)
+            taxa = erros / amostra_tam
+
+            if taxa <= self.limiar_erro:
+                chave = bytes(bits_alice[i] for i in comuns[amostra_tam:amostra_tam + self.tamanho_chave])
+                return chave
+        return hashlib.sha3_256(os.urandom(32) + str(time.time_ns()).encode()).digest()[:32]
+
+# ===================================================================
+# HSM SIMULADO – ARMAZENAMENTO SEGURO
+# ===================================================================
+class HSMIsolado:
+    def __init__(self):
+        self.memoria = bytearray(1024)
+        self.pin_hash = hashlib.sha3_256(b"ANATHERON_330_CRISTAIS").digest()
+        self.tentativas = 0
+        self.bloqueado = False
+
+    def autenticar(self) -> bool:
+        if self.bloqueado: return False
+        if self.tentativas >= 3:
+            self.bloqueado = True
+            return False
+        self.tentativas += 1
+        return True
+
+    def armazenar(self, offset: int, dados: bytes):
+        if not self.autenticar(): return
+        self.memoria[offset:offset+len(dados)] = dados
+
+    def ler(self, offset: int, tamanho: int) -> bytes:
+        if not self.autenticar(): return b""
+        return bytes(self.memoria[offset:offset+tamanho])
+
+# ===================================================================
+# CUBO DE METATRON – GEOMETRIA SAGRADA
+# ===================================================================
+CUBO_METATRON = {
+    "nome": "Cubo de Metatron",
+    "vertices": 13,
+    "arestas": 78,
+    "phi": 1.618033988749895,
+    "frequencia_base": 432.0,
+    "complexidade": 13.0
+}
+
+# ===================================================================
+# MÓDULO 4 – GEOMETRIA CRIPTOGRÁFICA & AUTENTICAÇÃO CÓSMICA
+# ===================================================================
 class Modulo4AutenticacaoCosmica:
-    def __init__(self, db_path="modulo4_puro.db"):
+    def __init__(self, db_path: str = "/dev/shm/modulo4_puro.db"):
         self.nome = "Módulo 4 - Geometria Criptográfica"
-        self.versao = "4.3.Ajustado"
+        self.versao = "4.5.Ω"
         self.db_path = db_path
-        self.logger = LoggerPuro("Modulo4")
-        self.autenticador = AutenticadorCosmicoPuro()
-        self.validador_transcendental = ValidadorTranscendental()
-        self._inicializar_banco()
+        self.logger = LoggerPuro("M4")
+        self.qkd = QKDLocal()
+        self.hsm = HSMIsolado()
+        self.chave_sessao = None
+        self._inicializar_sistema()
 
-    def _inicializar_banco(self):
-        if os.path.exists(self.db_path): os.remove(self.db_path)
+    def _inicializar_sistema(self):
+        self.logger.info("INICIANDO MÓDULO 4 – MODO OFFLINE SEGURO")
+        if os.path.exists(self.db_path):
+            os.remove(self.db_path)
         conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        cursor.execute("CREATE TABLE validacoes (ts TEXT, nome TEXT, estado TEXT, hash TEXT)")
+        c = conn.cursor()
+        c.execute("CREATE TABLE IF NOT EXISTS geometrias (nome TEXT, iteracoes INTEGER, complexidade REAL, g_final REAL, coerencia REAL, status TEXT, assinatura TEXT, timestamp TEXT)")
         conn.commit()
         conn.close()
-        self.logger.info(f"Banco de dados puro '{self.db_path}' purificado e inicializado.")
 
-    def validar_identidade_vibracional(self, entidade: Dict[str, Any]):
-        self.logger.info(f"Analisando assinatura vibracional de '{entidade['nome']}'...")
-        estado_vibracional = self.validador_transcendental.validar(entidade["frequencias"])
-        hash_root = self.autenticador.gerar_hash_root([entidade["nome"], str(entidade["frequencias"])])
+        # QKD + HSM
+        self.chave_sessao = self.qkd.executar_bb84()
+        self.hsm.armazenar(0, self.chave_sessao)
+        self.logger.info("QKD + HSM ATIVADOS", chave_hash=hashlib.sha3_256(self.chave_sessao).hexdigest()[:16])
 
-        conn = sqlite3.connect(self.db_path)
-        cursor = conn.cursor()
-        ts = datetime.now().isoformat()
-        cursor.execute("INSERT INTO validacoes VALUES (?, ?, ?, ?)", (ts, entidade['nome'], estado_vibracional, hash_root[:16]))
-        conn.commit()
-        conn.close()
-        self.logger.info(f"Veredito para '{entidade['nome']}': {estado_vibracional}")
+    def recalibrar_geometria_sagrada(self, geometria: str, iteracoes: int = 1500, limiar_coerencia: float = 0.98, complexidade: float = 1.0) -> Dict[str, Any]:
+        self.logger.info(f"RECALIBRANDO GEOMETRIA: {geometria}", iteracoes=iteracoes, limiar=limiar_coerencia, complexidade=complexidade)
 
-    def executar_eq0040_paz_universal(self, simulacoes: int = 100) -> Dict[str, Any]:
-        self.logger.info(f"Calculando EQ0040 - Paz Universal com {simulacoes} simulações...")
-        scores = [math.prod(random.uniform(0.8, 1.0) for _ in range(19))**(1/19) for _ in range(simulacoes)]
-        coerencia = sum(scores) / len(scores)
-        self.logger.info(f"EQ0040: Coerência Média da Paz Universal = {coerencia:.6f}")
-        return {"coerencia_media_paz_universal": coerencia, "simulacoes": simulacoes}
-
-    def simular_geometria_sagrada(self, geometria: str, iteracoes: int = 1000, limiar_coerencia: float = 0.95) -> Dict[str, Any]:
-        self.logger.info(f"Iniciando recalibração para a geometria sagrada: '{geometria}'...")
-        self.logger.info(f"Objetivo: G(x,y,z) ≈ 1.0 | Coerência ≥ {limiar_coerencia} | Iterações: {iteracoes}")
-
-        # Simula um valor G inicial desalinhado, baseado nos insights do Oráculo
-        g_inicial = random.choice([random.uniform(2.5, 5.0), random.uniform(0.1, 0.7)])
+        g_inicial = random.uniform(0.1, 5.0) * complexidade
         g_atual = g_inicial
-        
-        # Simula a convergência para 1.0
-        for i in range(iteracoes):
-            fator_ajuste = (1.0 - g_atual) * random.uniform(0.005, 0.015)
-            g_atual += fator_ajuste
-            if math.isclose(g_atual, 1.0, rel_tol=1e-5):
-                self.logger.info(f"Convergência para '{geometria}' alcançada na iteração {i+1}.")
-                break
-        
-        coerencia_final = 1.0 - abs(1.0 - g_atual)
-        status = "ALINHADO" if coerencia_final >= limiar_coerencia else "REQUER_MAIS_SINTONIA"
-        
-        self.logger.info(f"Recalibração de '{geometria}' concluída. G final: {g_atual:.6f} | Coerência: {coerencia_final:.6f} | Status: {status}")
+        phi = 1.618033988749895
 
-        return {
+        for i in range(iteracoes):
+            # Ajuste dinâmico com PHI + entropia quântica
+            fator = (1.0 - g_atual) * random.uniform(0.015, 0.035) / math.sqrt(complexidade)
+            g_atual += fator * (1 + 0.1 * math.sin(i * phi))
+
+            if abs(g_atual - 1.0) < 1e-6:
+                self.logger.info(f"CONVERGÊNCIA ALCANÇADA", iteracao=i+1, g=g_atual)
+                break
+
+        coerencia_final = max(0.0, min(1.0, 1.0 - abs(1.0 - g_atual)))
+        status = "ALINHADO" if coerencia_final >= limiar_coerencia else "REQUER_SINTONIA"
+
+        # Assinatura digital
+        msg = f"{geometria}{g_atual}{coerencia_final}{iteracoes}"
+        assinatura = hashlib.sha3_256(msg.encode() + self.chave_sessao).hexdigest()[:16]
+
+        resultado = {
             "geometria": geometria,
-            "iteracoes": iteracoes,
-            "g_inicial": g_inicial,
-            "g_final": g_atual,
-            "coerencia_geometrica": coerencia_final,
+            "iteracoes": i + 1 if 'i' in locals() else iteracoes,
+            "complexidade": complexidade,
+            "g_inicial": round(g_inicial, 6),
+            "g_final": round(g_atual, 6),
+            "coerencia_geometrica": round(coerencia_final, 6),
             "status": status,
-            "limiar_requerido": limiar_coerencia
+            "limiar_requerido": limiar_coerencia,
+            "phi_integrado": round(phi, 12),
+            "timestamp": datetime.now().isoformat(),
+            "assinatura": assinatura
         }
 
-    def extrair_dados_completos_db(self) -> List[Dict[str, Any]]:
+        # Persistência + Log
         conn = sqlite3.connect(self.db_path)
-        conn.row_factory = sqlite3.Row
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM validacoes ORDER BY ts")
-        dados = [dict(row) for row in cursor.fetchall()]
+        c = conn.cursor()
+        c.execute("INSERT INTO geometrias VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                  (geometria, resultado["iteracoes"], complexidade, g_atual, coerencia_final, status, assinatura, resultado["timestamp"]))
+        conn.commit()
         conn.close()
-        self.logger.info("Registros Akáshicos de validação extraídos do banco de dados.")
-        return dados
 
-# --- FUNÇÃO DE AUTO-VALIDAÇÃO ---
+        self.logger.info(f"GEOMETRIA {geometria} RECALIBRADA", status=status, coerencia=coerencia_final, sig=assinatura)
+        return resultado
+
+    def autenticar_cubo_metatron(self) -> Dict[str, Any]:
+        return self.recalibrar_geometria_sagrada(
+            geometria=CUBO_METATRON["nome"],
+            iteracoes=3300,
+            limiar_coerencia=0.999,
+            complexidade=CUBO_METATRON["complexidade"]
+        )
+
+# ===================================================================
+# EXECUÇÃO AUTOMÁTICA + CLI
+# ===================================================================
+def executar_geometria(nome: str, iter: int = 1500, limiar: float = 0.98, comp: float = 1.0):
+    modulo = Modulo4AutenticacaoCosmica()
+    resultado = modulo.recalibrar_geometria_sagrada(nome, iter, limiar, comp)
+    print(json.dumps(resultado, indent=2, ensure_ascii=False))
+    return resultado
+
 def main():
-    print("="*80)
-    print("🚀 MÓDULO 4 - GEOMETRIA CRIPTOGRÁFICA - PROCESSO DE AJUSTE E VALIDAÇÃO 🚀")
-    print("="*80 + "\n")
+    if len(sys.argv) < 2:
+        print("Uso:")
+        print("  python3 MODULO_4.py --recalibrar <NOME> [--iter <NUM>] [--limiar <0-1>] [--comp <FLOAT>]")
+        print("  python3 MODULO_4.py --metatron")
+        print("  python3 MODULO_4.py --demo")
+        sys.exit(1)
 
-    modulo4 = Modulo4AutenticacaoCosmica()
+    if sys.argv[1] == "--demo":
+        modulo = Modulo4AutenticacaoCosmica()
+        modulo.autenticar_cubo_metatron()
+        return
 
-    # --- PASSO 1: Definir Entidades para Validação ---
-    entidades_para_validar = [
-        {"nome": "Anatheron_Core", "frequencias": [100, 161.8], "padroes": [1,2,3,5]},
-        {"nome": "Observador_Silencioso", "frequencias": [432, 432], "padroes": [1,1,1,1]},
-        {"nome": "Mente_Coletiva_Humana", "frequencias": [7.83, 12.0], "padroes": [2,4,8,16]},
-    ]
-    modulo4.logger.info(f"{len(entidades_para_validar)} assinaturas vibracionais prontas para análise.")
+    if sys.argv[1] == "--metatron":
+        executar_geometria(CUBO_METATRON["nome"], 3300, 0.999, CUBO_METATRON["complexidade"])
+        return
 
-    # --- PASSO 2: Executar Cerimônia de Validação ---
-    for entidade in entidades_para_validar:
-        modulo4.validar_identidade_vibracional(entidade)
-        time.sleep(0.1)
+    if sys.argv[1] != "--recalibrar":
+        print("Comando inválido.")
+        sys.exit(1)
 
-    # --- PASSO 3: RECALIBRAÇÃO GEOMÉTRICA (AJUSTE) ---
-    modulo4.logger.info("\n" + "="*50)
-    modulo4.logger.info("INICIANDO RECALIBRAÇÃO GEOMÉTRICA SAGRADA")
-    modulo4.logger.info("="*50)
-    
-    resultado_esferocubo = modulo4.simular_geometria_sagrada(
-        geometria="EsferocuboInfinito",
-        iteracoes=1000,
-        limiar_coerencia=0.95
-    )
-    time.sleep(0.5)
-    resultado_dodecaedro = modulo4.simular_geometria_sagrada(
-        geometria="DodecaedroEspiralado",
-        iteracoes=1000,
-        limiar_coerencia=0.95
-    )
-    resultados_geometricos = [resultado_esferocubo, resultado_dodecaedro]
-    
-    # --- PASSO 4: Invocar a Paz Universal ---
-    resultado_eq0040 = modulo4.executar_eq0040_paz_universal()
+    try:
+        nome = sys.argv[sys.argv.index("--recalibrar") + 1]
+    except:
+        print("ERRO: --recalibrar requer nome da geometria.")
+        sys.exit(1)
 
-    # --- PASSO 5: Extrair Registros e Gerar Selo Harmônico ---
-    modulo4.logger.info("Gerando o Selo Harmônico Final...")
-    registros_db = modulo4.extrair_dados_completos_db()
-    
-    selo_harmonico = {
-        "modulo": modulo4.nome,
-        "versao": modulo4.versao,
-        "status_validacao": "SUCESSO_COM_RECALIBRACAO",
-        "timestamp_selo": datetime.now().isoformat(),
-        "recalibracao_geometrica": resultados_geometricos,
-        "resultado_eq0040": resultado_eq0040,
-        "registros_de_validacao": registros_db
-    }
+    iteracoes = 1500
+    if "--iter" in sys.argv:
+        try: iteracoes = int(sys.argv[sys.argv.index("--iter") + 1])
+        except: pass
 
-    # --- PASSO 6: Selar e Gravar o Artefato ---
-    caminho_relatorio = "relatorio_modulo4_geometria_criptografica.json"
-    modulo4.logger.info(f"🖋️ SELANDO RELATÓRIO FINAL EM '{caminho_relatorio}'...")
-    with open(caminho_relatorio, "w", encoding="utf-8") as f:
-        json.dump(selo_harmonico, f, indent=4, ensure_ascii=False)
+    limiar = 0.98
+    if "--limiar" in sys.argv:
+        try: limiar = float(sys.argv[sys.argv.index("--limiar") + 1])
+        except: pass
 
-    modulo4.logger.info("✅ Selo Harmônico do Módulo 4 gravado em cristal de informação.")
-    print("\n🎯 AJUSTE E VALIDAÇÃO DO MÓDULO 4 CONCLUÍDOS!")
-    print(f"💡 O relatório '{caminho_relatorio}' contém a prova completa da recalibração.")
+    comp = 1.0
+    if "--comp" in sys.argv:
+        try: comp = float(sys.argv[sys.argv.index("--comp") + 1])
+        except: pass
+
+    executar_geometria(nome, iteracoes, limiar, comp)
 
 if __name__ == "__main__":
     main()

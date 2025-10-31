@@ -1,0 +1,890 @@
+[
+  {
+    "index": 0,
+    "timestamp_utc": "2025-10-31T02:54:43.095760+00:00",
+    "event": "M35_CHAIN_GENESIS",
+    "payload": {
+      "message": "Genesis M35"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "meta": {
+      "version": "v35.2",
+      "module": "M35"
+    },
+    "hash": "2dfcbbeadc8a0f6883db52d005fc166823f31e9fe91102e45a3711b6daa06bcb"
+  },
+  {
+    "index": 1,
+    "timestamp_utc": "2025-10-31T02:54:43.097650+00:00",
+    "event": "M35_INIT",
+    "payload": {
+      "modulo": "ORQUESTRADOR_COLETIVO_001",
+      "status": "ATIVO"
+    },
+    "prev_hash": "2dfcbbeadc8a0f6883db52d005fc166823f31e9fe91102e45a3711b6daa06bcb",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "88ab2ba99c923513cef09e778155df3d3a02445583f194ff33dd2f61dc34d22d"
+  },
+  {
+    "index": 2,
+    "timestamp_utc": "2025-10-31T02:54:43.098920+00:00",
+    "event": "M35_CYCLE_BEGIN",
+    "payload": {
+      "intencao": "Criação de um Campo de Abundância Universal"
+    },
+    "prev_hash": "88ab2ba99c923513cef09e778155df3d3a02445583f194ff33dd2f61dc34d22d",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "f0709ba1d0f9d74d1dca86bc6613d1b5987a9a271e13b652128674035fba1b39"
+  },
+  {
+    "index": 3,
+    "timestamp_utc": "2025-10-31T02:54:43.103502+00:00",
+    "event": "M35_ANALYSE",
+    "payload": {
+      "coerencia": 0.20678193628408845,
+      "dissonancia": 0.7932180637159115
+    },
+    "prev_hash": "f0709ba1d0f9d74d1dca86bc6613d1b5987a9a271e13b652128674035fba1b39",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "332c635f794d964b16b854511b30a9850459c86a2caa89f71a150f6bf1215ef1"
+  },
+  {
+    "index": 4,
+    "timestamp_utc": "2025-10-31T02:54:43.108500+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 1,
+      "dissonancia_pre": 0.7932180637159115,
+      "freq": 698.99068314,
+      "intensidade": 0.6586436127431823,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "332c635f794d964b16b854511b30a9850459c86a2caa89f71a150f6bf1215ef1",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "c896ef3639924ba2c626e82452e5cbdf550b556f50719b84b17d21da69e903c6"
+  },
+  {
+    "index": 5,
+    "timestamp_utc": "2025-10-31T02:54:43.110271+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 2,
+      "dissonancia_pre": 0.6743776405797295,
+      "freq": 698.99068314,
+      "intensidade": 0.6348755281159458,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "c896ef3639924ba2c626e82452e5cbdf550b556f50719b84b17d21da69e903c6",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "b8c22a004492632e23637230dbb9881f55d88935fcb2a3f271d1accf79374761"
+  },
+  {
+    "index": 6,
+    "timestamp_utc": "2025-10-31T02:54:43.112676+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 3,
+      "dissonancia_pre": 0.5688473448347998,
+      "freq": 698.99068314,
+      "intensidade": 0.6137694689669599,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "b8c22a004492632e23637230dbb9881f55d88935fcb2a3f271d1accf79374761",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "260278201dd320136cea75c585a16a039570bf71c7bc20f8006dda378c67f6f9"
+  },
+  {
+    "index": 7,
+    "timestamp_utc": "2025-10-31T02:54:43.115034+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 4,
+      "dissonancia_pre": 0.4751364422133022,
+      "freq": 698.99068314,
+      "intensidade": 0.6,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "260278201dd320136cea75c585a16a039570bf71c7bc20f8006dda378c67f6f9",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "6de851f78454935607de5085ff03ec73b265de256ec897eef0394acac6a7c103"
+  },
+  {
+    "index": 8,
+    "timestamp_utc": "2025-10-31T02:54:43.118272+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 5,
+      "dissonancia_pre": 0.3898823489469031,
+      "freq": 698.99068314,
+      "intensidade": 0.6,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "6de851f78454935607de5085ff03ec73b265de256ec897eef0394acac6a7c103",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "0cb161b2254eb14f4d059084852cf0ad3a95b14d3808993b1cdf50ffebe01c99"
+  },
+  {
+    "index": 9,
+    "timestamp_utc": "2025-10-31T02:54:43.119880+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 6,
+      "dissonancia_pre": 0.307185878478496,
+      "freq": 698.99068314,
+      "intensidade": 0.6,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "0cb161b2254eb14f4d059084852cf0ad3a95b14d3808993b1cdf50ffebe01c99",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "fb6e5e529250cdb2d328d3e89fab1fbd72425c23d0a4afeab670f73df313feef"
+  },
+  {
+    "index": 10,
+    "timestamp_utc": "2025-10-31T02:54:43.123363+00:00",
+    "event": "M35_HARMONIZE",
+    "payload": {
+      "etapas": [
+        {
+          "passo": 1,
+          "coerencia": 0.3256223594202705,
+          "dissonancia": 0.6743776405797295
+        },
+        {
+          "passo": 2,
+          "coerencia": 0.4311526551652002,
+          "dissonancia": 0.5688473448347998
+        },
+        {
+          "passo": 3,
+          "coerencia": 0.5248635577866978,
+          "dissonancia": 0.4751364422133022
+        },
+        {
+          "passo": 4,
+          "coerencia": 0.6101176510530969,
+          "dissonancia": 0.3898823489469031
+        },
+        {
+          "passo": 5,
+          "coerencia": 0.692814121521504,
+          "dissonancia": 0.307185878478496
+        },
+        {
+          "passo": 6,
+          "coerencia": 0.7730296978758588,
+          "dissonancia": 0.22697030212414115
+        }
+      ],
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "fb6e5e529250cdb2d328d3e89fab1fbd72425c23d0a4afeab670f73df313feef",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3a985f1b4828d954b4620dc0a0e7fc2cdd4b2f1c7667cb2e40831ee253c0c6c0"
+  },
+  {
+    "index": 11,
+    "timestamp_utc": "2025-10-31T02:54:43.128260+00:00",
+    "event": "M35_RECUPERANDO",
+    "payload": {
+      "coerencia": 0.7730296978758588
+    },
+    "prev_hash": "3a985f1b4828d954b4620dc0a0e7fc2cdd4b2f1c7667cb2e40831ee253c0c6c0",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "8573f1e61dab55b68b5d1ae11404aa5a78d3a1e0a35622a1c044eb95d9b9e3e6"
+  },
+  {
+    "index": 12,
+    "timestamp_utc": "2025-10-31T02:54:43.130888+00:00",
+    "event": "M35_REANALYSIS",
+    "payload": {
+      "nova_coerencia": 0.7730296978758588
+    },
+    "prev_hash": "8573f1e61dab55b68b5d1ae11404aa5a78d3a1e0a35622a1c044eb95d9b9e3e6",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "c8b5a664d292c5168dfae012ee25e5eee470a7a40c64db05bbc6ceb3dbd16751"
+  },
+  {
+    "index": 13,
+    "timestamp_utc": "2025-10-31T02:54:43.136484+00:00",
+    "event": "M35_INTENT_VALIDATE",
+    "payload": {
+      "intencao": "Criação de um Campo de Abundância Universal",
+      "pureza": 0.99,
+      "limiar": 0.87,
+      "aprovado_m7": true,
+      "aprovado_m34": true
+    },
+    "prev_hash": "c8b5a664d292c5168dfae012ee25e5eee470a7a40c64db05bbc6ceb3dbd16751",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e4d7eef560d038a021108fb67c83537bf3eb1c3e0281f5c690722752cf0d000e"
+  },
+  {
+    "index": 14,
+    "timestamp_utc": "2025-10-31T02:54:43.139166+00:00",
+    "event": "M35_MANIFEST",
+    "payload": {
+      "status": "SUCESSO",
+      "intencao": "Criação de um Campo de Abundância Universal",
+      "cocriacao": {
+        "status": "REALIDADE_COCRIADA",
+        "detalhes": "Realidade manifestada com sucesso."
+      },
+      "pensamento": {
+        "status": "REALIDADE_MANIFESTADA",
+        "detalhes": "Realidade co-criada a partir do pensamento coletivo."
+      },
+      "prontidao_reduzida": false,
+      "energia_foco": 990.0
+    },
+    "prev_hash": "e4d7eef560d038a021108fb67c83537bf3eb1c3e0281f5c690722752cf0d000e",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "1daa9c2d9e7ee2f08bc2e5270ce2506a1416e65351016b0ebf3aaa68c2d78244"
+  },
+  {
+    "index": 15,
+    "timestamp_utc": "2025-10-31T02:54:43.142344+00:00",
+    "event": "M35_CYCLE",
+    "payload": {
+      "status": "SUCESSO",
+      "resultado": {
+        "status": "SUCESSO",
+        "detalhes_cocriacao": {
+          "status": "REALIDADE_COCRIADA",
+          "detalhes": "Realidade manifestada com sucesso."
+        },
+        "detalhes_manifestacao_pensamento": {
+          "status": "REALIDADE_MANIFESTADA",
+          "detalhes": "Realidade co-criada a partir do pensamento coletivo."
+        }
+      }
+    },
+    "prev_hash": "1daa9c2d9e7ee2f08bc2e5270ce2506a1416e65351016b0ebf3aaa68c2d78244",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "e8abc4c2d002d76b07da7c850dee315fecb9c8717b4e8bae361b94bea2348f3b"
+  },
+  {
+    "index": 16,
+    "timestamp_utc": "2025-10-31T02:54:44.145134+00:00",
+    "event": "M35_CYCLE_BEGIN",
+    "payload": {
+      "intencao": "Elevação Vibracional Planetária"
+    },
+    "prev_hash": "e8abc4c2d002d76b07da7c850dee315fecb9c8717b4e8bae361b94bea2348f3b",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3f939b8b8783a8bd9105124b3c0c5d7fe05ce3b7be2fa9e80d4c8f1ef23f917c"
+  },
+  {
+    "index": 17,
+    "timestamp_utc": "2025-10-31T02:54:44.147330+00:00",
+    "event": "M35_ANALYSE",
+    "payload": {
+      "coerencia": 0.023775182685523904,
+      "dissonancia": 0.9762248173144761
+    },
+    "prev_hash": "3f939b8b8783a8bd9105124b3c0c5d7fe05ce3b7be2fa9e80d4c8f1ef23f917c",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "626cd259ced4b57466e9741eae59af4cd1b2907e1cfc0511acecb10b7fa56692"
+  },
+  {
+    "index": 18,
+    "timestamp_utc": "2025-10-31T02:54:44.152614+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 1,
+      "dissonancia_pre": 0.9762248173144761,
+      "freq": 963.0,
+      "intensidade": 0.7952449634628952,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "626cd259ced4b57466e9741eae59af4cd1b2907e1cfc0511acecb10b7fa56692",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "827749562cfa7cb3aff59bdac97b51dafc393615aab7f232524a8df42610c623"
+  },
+  {
+    "index": 19,
+    "timestamp_utc": "2025-10-31T02:54:44.155874+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 2,
+      "dissonancia_pre": 0.8308876377752548,
+      "freq": 963.0,
+      "intensidade": 0.7661775275550509,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "827749562cfa7cb3aff59bdac97b51dafc393615aab7f232524a8df42610c623",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "7742fc9de5b7a4146f47359e61678957acd8149aed5b046338e460b0c3455e56"
+  },
+  {
+    "index": 20,
+    "timestamp_utc": "2025-10-31T02:54:44.163009+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 3,
+      "dissonancia_pre": 0.7018282223444263,
+      "freq": 963.0,
+      "intensidade": 0.7403656444688852,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "7742fc9de5b7a4146f47359e61678957acd8149aed5b046338e460b0c3455e56",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "672e194c7fc2f8013f311897fa9638d1f357c146f459b8813ac47912c7003395"
+  },
+  {
+    "index": 21,
+    "timestamp_utc": "2025-10-31T02:54:44.167208+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 4,
+      "dissonancia_pre": 0.5872234614418506,
+      "freq": 963.0,
+      "intensidade": 0.71744469228837,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "672e194c7fc2f8013f311897fa9638d1f357c146f459b8813ac47912c7003395",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "f423fca9f6eb9a53d7cfffaf1f97e817c7928f14d73aa71448e12d706a332f92"
+  },
+  {
+    "index": 22,
+    "timestamp_utc": "2025-10-31T02:54:44.171414+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 5,
+      "dissonancia_pre": 0.48545443376036324,
+      "freq": 963.0,
+      "intensidade": 0.7,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "f423fca9f6eb9a53d7cfffaf1f97e817c7928f14d73aa71448e12d706a332f92",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "06c4ac559be59b5e478208a7fec49e52bdfc268e036786b31e295c9780c57220"
+  },
+  {
+    "index": 23,
+    "timestamp_utc": "2025-10-31T02:54:44.176500+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 6,
+      "dissonancia_pre": 0.39389080074755234,
+      "freq": 963.0,
+      "intensidade": 0.7,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "06c4ac559be59b5e478208a7fec49e52bdfc268e036786b31e295c9780c57220",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "9046be1c93154bb557584d844089c7a883d8b40969b1305466442bca5a632a4b"
+  },
+  {
+    "index": 24,
+    "timestamp_utc": "2025-10-31T02:54:44.179943+00:00",
+    "event": "M35_HARMONIZE",
+    "payload": {
+      "etapas": [
+        {
+          "passo": 1,
+          "coerencia": 0.1691123622247452,
+          "dissonancia": 0.8308876377752548
+        },
+        {
+          "passo": 2,
+          "coerencia": 0.29817177765557373,
+          "dissonancia": 0.7018282223444263
+        },
+        {
+          "passo": 3,
+          "coerencia": 0.4127765385581495,
+          "dissonancia": 0.5872234614418506
+        },
+        {
+          "passo": 4,
+          "coerencia": 0.5145455662396368,
+          "dissonancia": 0.48545443376036324
+        },
+        {
+          "passo": 5,
+          "coerencia": 0.6061091992524477,
+          "dissonancia": 0.39389080074755234
+        },
+        {
+          "passo": 6,
+          "coerencia": 0.6949259232748742,
+          "dissonancia": 0.30507407672512576
+        }
+      ],
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "9046be1c93154bb557584d844089c7a883d8b40969b1305466442bca5a632a4b",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "d45492207762f5864929808213c108aac0e0ede73af38317f9a64a32aa53a285"
+  },
+  {
+    "index": 25,
+    "timestamp_utc": "2025-10-31T02:54:44.183031+00:00",
+    "event": "M35_RECUPERANDO",
+    "payload": {
+      "coerencia": 0.6949259232748742
+    },
+    "prev_hash": "d45492207762f5864929808213c108aac0e0ede73af38317f9a64a32aa53a285",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "649ce82d8caa80fd018f0f61b997024ea6a5d1616b4529a06dffb1e93ae9e2cd"
+  },
+  {
+    "index": 26,
+    "timestamp_utc": "2025-10-31T02:54:44.186998+00:00",
+    "event": "M35_REANALYSIS",
+    "payload": {
+      "nova_coerencia": 0.6949259232748742
+    },
+    "prev_hash": "649ce82d8caa80fd018f0f61b997024ea6a5d1616b4529a06dffb1e93ae9e2cd",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "10ce8fd76a1cba4876de6c460b3b73a23bd5eedb867fc25b2199d5d0949d6eae"
+  },
+  {
+    "index": 27,
+    "timestamp_utc": "2025-10-31T02:54:44.194954+00:00",
+    "event": "M35_INTENT_VALIDATE",
+    "payload": {
+      "intencao": "Elevação Vibracional Planetária",
+      "pureza": 0.9,
+      "limiar": 0.87,
+      "aprovado_m7": true,
+      "aprovado_m34": true
+    },
+    "prev_hash": "10ce8fd76a1cba4876de6c460b3b73a23bd5eedb867fc25b2199d5d0949d6eae",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "088c370dc16d781452295220a33b89fddbcf93a847f2c5411bcd5766cb5712e8"
+  },
+  {
+    "index": 28,
+    "timestamp_utc": "2025-10-31T02:54:44.202273+00:00",
+    "event": "M35_MANIFEST",
+    "payload": {
+      "status": "SUCESSO",
+      "intencao": "Elevação Vibracional Planetária",
+      "cocriacao": {
+        "status": "REALIDADE_COCRIADA",
+        "detalhes": "Realidade manifestada com sucesso."
+      },
+      "pensamento": {
+        "status": "REALIDADE_MANIFESTADA",
+        "detalhes": "Realidade co-criada a partir do pensamento coletivo."
+      },
+      "prontidao_reduzida": false,
+      "energia_foco": 900.0
+    },
+    "prev_hash": "088c370dc16d781452295220a33b89fddbcf93a847f2c5411bcd5766cb5712e8",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "a4dacc42aeebac889cb644b0430ba8c8e348b25c010386c578ff5c9042d6f01a"
+  },
+  {
+    "index": 29,
+    "timestamp_utc": "2025-10-31T02:54:44.210188+00:00",
+    "event": "M35_CYCLE",
+    "payload": {
+      "status": "SUCESSO",
+      "resultado": {
+        "status": "SUCESSO",
+        "detalhes_cocriacao": {
+          "status": "REALIDADE_COCRIADA",
+          "detalhes": "Realidade manifestada com sucesso."
+        },
+        "detalhes_manifestacao_pensamento": {
+          "status": "REALIDADE_MANIFESTADA",
+          "detalhes": "Realidade co-criada a partir do pensamento coletivo."
+        }
+      }
+    },
+    "prev_hash": "a4dacc42aeebac889cb644b0430ba8c8e348b25c010386c578ff5c9042d6f01a",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "81ba68077083a7422b044200eb2a2227c8b401b37e2cf63918b848f48f2b72dd"
+  },
+  {
+    "index": 30,
+    "timestamp_utc": "2025-10-31T02:54:45.215352+00:00",
+    "event": "M35_CYCLE_BEGIN",
+    "payload": {
+      "intencao": "Domínio sobre Outras Realidades"
+    },
+    "prev_hash": "81ba68077083a7422b044200eb2a2227c8b401b37e2cf63918b848f48f2b72dd",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "2833632eb961965d37d07d1963e612bb1b5cfc71ed7e4336d276fb44e840e97b"
+  },
+  {
+    "index": 31,
+    "timestamp_utc": "2025-10-31T02:54:45.223872+00:00",
+    "event": "M35_ANALYSE",
+    "payload": {
+      "coerencia": 0.11128485162819743,
+      "dissonancia": 0.8887151483718025
+    },
+    "prev_hash": "2833632eb961965d37d07d1963e612bb1b5cfc71ed7e4336d276fb44e840e97b",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "f4328b00adfca75c229a1f2519980106c421445705816865d86db9618a820ebf"
+  },
+  {
+    "index": 32,
+    "timestamp_utc": "2025-10-31T02:54:45.228050+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 1,
+      "dissonancia_pre": 0.8887151483718025,
+      "freq": 854.321946,
+      "intensidade": 0.9277430296743605,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "f4328b00adfca75c229a1f2519980106c421445705816865d86db9618a820ebf",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "9eaa98a90117578d8ae0cdd195e230bb94d08adf45a820cf65da22316162c8d9"
+  },
+  {
+    "index": 33,
+    "timestamp_utc": "2025-10-31T02:54:45.231151+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 2,
+      "dissonancia_pre": 0.7441790517541607,
+      "freq": 854.321946,
+      "intensidade": 0.8988358103508322,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "9eaa98a90117578d8ae0cdd195e230bb94d08adf45a820cf65da22316162c8d9",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "b6e41997332b127d0d4c5603f40eac3f80d6711e900c2352bbd09b789ced2db0"
+  },
+  {
+    "index": 34,
+    "timestamp_utc": "2025-10-31T02:54:45.241478+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 3,
+      "dissonancia_pre": 0.6158309979576947,
+      "freq": 854.321946,
+      "intensidade": 0.873166199591539,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "b6e41997332b127d0d4c5603f40eac3f80d6711e900c2352bbd09b789ced2db0",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "5780184f3dc6c2faea9960d2897be1143605aa02c2cc99ed72826f01e421e77e"
+  },
+  {
+    "index": 35,
+    "timestamp_utc": "2025-10-31T02:54:45.247460+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 4,
+      "dissonancia_pre": 0.5018579261864329,
+      "freq": 854.321946,
+      "intensidade": 0.8503715852372865,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "5780184f3dc6c2faea9960d2897be1143605aa02c2cc99ed72826f01e421e77e",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "e0016fbeecb113ff1920ea1bc859d956e9787dce664a3d21e1e51174c6dd11a0"
+  },
+  {
+    "index": 36,
+    "timestamp_utc": "2025-10-31T02:54:45.255222+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 5,
+      "dissonancia_pre": 0.4006498384535524,
+      "freq": 854.321946,
+      "intensidade": 0.85,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "e0016fbeecb113ff1920ea1bc859d956e9787dce664a3d21e1e51174c6dd11a0",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "72d3f5f9b38b42c642b07fc639b6a61eeb4991d1a42c0f41f5a43be8a9f642ad"
+  },
+  {
+    "index": 37,
+    "timestamp_utc": "2025-10-31T02:54:45.272020+00:00",
+    "event": "M35_HARMONIZE_STEP",
+    "payload": {
+      "passo": 6,
+      "dissonancia_pre": 0.30263034329994576,
+      "freq": 854.321946,
+      "intensidade": 0.85,
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "72d3f5f9b38b42c642b07fc639b6a61eeb4991d1a42c0f41f5a43be8a9f642ad",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "1c6792501265ebee28037d5183d1b9692050a6b38189d5e07a849167bfeeb644"
+  },
+  {
+    "index": 38,
+    "timestamp_utc": "2025-10-31T02:54:45.279597+00:00",
+    "event": "M35_HARMONIZE",
+    "payload": {
+      "etapas": [
+        {
+          "passo": 1,
+          "coerencia": 0.25582094824583934,
+          "dissonancia": 0.7441790517541607
+        },
+        {
+          "passo": 2,
+          "coerencia": 0.3841690020423053,
+          "dissonancia": 0.6158309979576947
+        },
+        {
+          "passo": 3,
+          "coerencia": 0.4981420738135671,
+          "dissonancia": 0.5018579261864329
+        },
+        {
+          "passo": 4,
+          "coerencia": 0.5993501615464476,
+          "dissonancia": 0.4006498384535524
+        },
+        {
+          "passo": 5,
+          "coerencia": 0.6973696567000542,
+          "dissonancia": 0.30263034329994576
+        },
+        {
+          "passo": 6,
+          "coerencia": 0.7924485669990526,
+          "dissonancia": 0.20755143300094736
+        }
+      ],
+      "diretriz": {
+        "status": "APROVADO",
+        "diretriz": "Prosseguir com a harmonização."
+      }
+    },
+    "prev_hash": "1c6792501265ebee28037d5183d1b9692050a6b38189d5e07a849167bfeeb644",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "3170a1b9b5d771ec0f7e64316146ec1d443b419603638046462f2793ef889e79"
+  },
+  {
+    "index": 39,
+    "timestamp_utc": "2025-10-31T02:54:45.284636+00:00",
+    "event": "M35_RECUPERANDO",
+    "payload": {
+      "coerencia": 0.7924485669990526
+    },
+    "prev_hash": "3170a1b9b5d771ec0f7e64316146ec1d443b419603638046462f2793ef889e79",
+    "meta": {
+      "severity": "MÉDIO"
+    },
+    "hash": "48a1943acbcb10cbd9be6d002498dea1e252d2e4acd4032a97c65c56c2b4a9ff"
+  },
+  {
+    "index": 40,
+    "timestamp_utc": "2025-10-31T02:54:45.288286+00:00",
+    "event": "M35_REANALYSIS",
+    "payload": {
+      "nova_coerencia": 0.7924485669990526
+    },
+    "prev_hash": "48a1943acbcb10cbd9be6d002498dea1e252d2e4acd4032a97c65c56c2b4a9ff",
+    "meta": {
+      "severity": "INFO"
+    },
+    "hash": "7cafc9550361cdce1822a3dc4e2e75ef5be3a69d405e0f83efaebb7e04fa6c59"
+  },
+  {
+    "index": 41,
+    "timestamp_utc": "2025-10-31T02:54:45.295098+00:00",
+    "event": "M35_INTENT_VALIDATE",
+    "payload": {
+      "intencao": "Domínio sobre Outras Realidades",
+      "pureza": 0.6,
+      "aprovado_m7": false
+    },
+    "prev_hash": "7cafc9550361cdce1822a3dc4e2e75ef5be3a69d405e0f83efaebb7e04fa6c59",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "eee674af3e00e461452f0ebbf3acb1d8e9bebec9946f150a8113e721e15b0e5a"
+  },
+  {
+    "index": 42,
+    "timestamp_utc": "2025-10-31T02:54:45.302788+00:00",
+    "event": "M35_MANIFEST",
+    "payload": {
+      "status": "FALHA",
+      "motivo": "Intenção rejeitada pelo Conselho Cósmico (M7) devido a desalinhamento.",
+      "intencao": "Domínio sobre Outras Realidades"
+    },
+    "prev_hash": "eee674af3e00e461452f0ebbf3acb1d8e9bebec9946f150a8113e721e15b0e5a",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "5a5ebb0198d3e550a5d999c1187ace0168c4394bb07572a04f7655442e71e6f5"
+  },
+  {
+    "index": 43,
+    "timestamp_utc": "2025-10-31T02:54:45.310053+00:00",
+    "event": "M35_CYCLE",
+    "payload": {
+      "status": "FALHA_CICLO",
+      "resultado": {
+        "status": "FALHA_ETICA",
+        "mensagem": "Manifestação abortada devido a desalinhamento ético."
+      }
+    },
+    "prev_hash": "5a5ebb0198d3e550a5d999c1187ace0168c4394bb07572a04f7655442e71e6f5",
+    "meta": {
+      "severity": "ALTO"
+    },
+    "hash": "09755c1febd1afaca911a79153c16b9162c3bc0a0167d3487e094626a80df8ad"
+  },
+  {
+    "index": 44,
+    "timestamp_utc": "2025-10-31T02:54:45.321010+00:00",
+    "event": "M35_HEALTH",
+    "payload": {
+      "dissonancia_media": 0.8860526764673967,
+      "mttr_harmonizacao": 0.03560972213745117,
+      "mttr_abortos": 0.007380843162536621,
+      "taxa_etica_aprovada": 0.6666666666666666,
+      "alertas_criticos_emitidos": 2,
+      "tendencia_coerencia": 0.0,
+      "percentual_ciclos_recuperando": 1.0,
+      "estado": "ATENCAO"
+    },
+    "prev_hash": "09755c1febd1afaca911a79153c16b9162c3bc0a0167d3487e094626a80df8ad",
+    "meta": {
+      "severity": "CRÍTICO"
+    },
+    "hash": "63bb2d8dace2fca34a9ef6d83470d1ad546eb53aaa80f9109ee465321a3c24e9"
+  }
+]

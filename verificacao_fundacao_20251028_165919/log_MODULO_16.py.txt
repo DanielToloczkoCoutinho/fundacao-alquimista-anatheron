@@ -1,0 +1,4 @@
+usage: MODULO_16.py [-h] [--constelacoes CONSTELACOES]
+                    [--frequencia-cura FREQUENCIA_CURA]
+                    [--max-constelacoes MAX_CONSTELACOES]
+MODULO_16.py: error: unrecognized arguments: --demo

@@ -1,0 +1,7 @@
+2025-10-28 16:59:27,719 - Modulo2_Nanomanifestador_Final - INFO - Nanomanifestador v4.6.9.HierarquiaIntegrada PRONTO.
+2025-10-28 16:59:27,720 - Modulo2_Nanomanifestador_Final - INFO - Iniciando manifestação com a intenção: 'A Plena Realização da Fundação'
+2025-10-28 16:59:27,720 - Modulo2_Nanomanifestador_Final - WARNING - RECALIBRANDO: Instabilidade detectada: [1, 1, 0, 0, 1].
+2025-10-28 16:59:27,720 - Modulo2_Nanomanifestador_Final - INFO - SUCESSO PARCIAL: [1, 0, 1, 1, 1]
+2025-10-28 16:59:27,720 - Modulo2_Nanomanifestador_Final - INFO - Resultado final: {'sucesso': True, 'status': 'SUCESSO_PARCIAL', 'resultados': [1, 0, 1, 1, 1], 'score_alinhamento': 0.3763381109807662}
+2025-10-28 16:59:27,721 - Modulo2_Nanomanifestador_Final - INFO - 
+*** SUCESSO! A REALIDADE FOI ALTERADA! STATUS: SUCESSO_PARCIAL ***

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-30T23:32:20.934325+00:00",
+  "intencao": "Elevação Vibracional Planetária",
+  "status": "FALHA",
+  "resultado": {
+    "status": "FALHA_ETICA",
+    "mensagem": "Rejeitado pelo Conselho (M07)."
+  }
+}

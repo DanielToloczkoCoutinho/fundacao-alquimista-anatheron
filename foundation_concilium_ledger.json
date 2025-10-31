@@ -1,0 +1,246 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2025-10-31T02:52:34.122701Z",
+    "event": "GENESIS",
+    "payload": {
+      "message": "Bloco genesis do Concilium Foundation"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "04f611c8480860560281f8916c7a7f4e583d21e8dad2f497cddbcc6562fdf252"
+  },
+  {
+    "index": 1,
+    "timestamp": "2025-10-31T02:52:34.171860Z",
+    "event": "PROPOSAL_CREATED",
+    "payload": {
+      "category": "Operações Espaciais",
+      "created_at": "2025-10-31T02:52:34.171766Z",
+      "deadline": "2025-11-03T02:52:34.171643Z",
+      "id": "P001",
+      "priority": "Alta",
+      "proposed_by": "ANATHERON",
+      "status": "ABERTA",
+      "title": "Harmonizar Rede Gaia e Broadcast Aliança Galáctica"
+    },
+    "prev_hash": "04f611c8480860560281f8916c7a7f4e583d21e8dad2f497cddbcc6562fdf252",
+    "hash": "e16181c84c12894829b4d2388625fcb78c77f5042aca909d0c2f4bf42e5500c1"
+  },
+  {
+    "index": 2,
+    "timestamp": "2025-10-31T02:52:34.172232Z",
+    "event": "VOTE_CAST",
+    "payload": {
+      "proposal_id": "P001",
+      "theta": 5.912435668316941,
+      "timestamp": "2025-10-31T02:52:34.172181Z",
+      "vote": "aprovado",
+      "voter": "ANATHERON"
+    },
+    "prev_hash": "e16181c84c12894829b4d2388625fcb78c77f5042aca909d0c2f4bf42e5500c1",
+    "hash": "5bfb477910c3b82180b1caf829fa9913eac042dbc16f04fd2b7c43f1aa0cf9e6"
+  },
+  {
+    "index": 3,
+    "timestamp": "2025-10-31T02:52:34.172538Z",
+    "event": "VOTE_CAST",
+    "payload": {
+      "proposal_id": "P001",
+      "theta": 4.381020105463816,
+      "timestamp": "2025-10-31T02:52:34.172495Z",
+      "vote": "aprovado",
+      "voter": "ZENNITH"
+    },
+    "prev_hash": "5bfb477910c3b82180b1caf829fa9913eac042dbc16f04fd2b7c43f1aa0cf9e6",
+    "hash": "4ff7145885c37f3ce16b8c992a01f4c57c1d0f7394f04809166ea234452e87ac"
+  },
+  {
+    "index": 4,
+    "timestamp": "2025-10-31T02:52:34.172864Z",
+    "event": "VOTE_CAST",
+    "payload": {
+      "proposal_id": "P001",
+      "theta": 0.21015857470569393,
+      "timestamp": "2025-10-31T02:52:34.172804Z",
+      "vote": "abstain",
+      "voter": "AELORIA"
+    },
+    "prev_hash": "4ff7145885c37f3ce16b8c992a01f4c57c1d0f7394f04809166ea234452e87ac",
+    "hash": "e08e45ee5f39aa77a5a55276a4eeb077637e8561f3628637e224c547426c2d62"
+  },
+  {
+    "index": 5,
+    "timestamp": "2025-10-31T02:52:34.173198Z",
+    "event": "VOTE_CAST",
+    "payload": {
+      "proposal_id": "P001",
+      "theta": 3.652751613919815,
+      "timestamp": "2025-10-31T02:52:34.173144Z",
+      "vote": "aprovado",
+      "voter": "ORION"
+    },
+    "prev_hash": "e08e45ee5f39aa77a5a55276a4eeb077637e8561f3628637e224c547426c2d62",
+    "hash": "826e4c205db00553956110630d653c1bc357f23279e35f09adf54ef2e32b28e6"
+  },
+  {
+    "index": 6,
+    "timestamp": "2025-10-31T02:52:34.173569Z",
+    "event": "DELIBERATION_FINALIZED",
+    "payload": {
+      "decree_content": {
+        "priority": "ALTA",
+        "summary": "Autorizada execução completa do ciclo operacional",
+        "timeline": "Imediata"
+      },
+      "finalized_at": "2025-10-31T02:52:34.173506Z",
+      "outcome": "Harmonizar e Broadcast Aprovado",
+      "proposal_id": "P001",
+      "title": "Harmonizar Rede Gaia e Broadcast Aliança Galáctica",
+      "total_voters": 4,
+      "vote_counts": {
+        "abstain": 1,
+        "aprovado": 3,
+        "rejeitado": 0
+      }
+    },
+    "prev_hash": "826e4c205db00553956110630d653c1bc357f23279e35f09adf54ef2e32b28e6",
+    "hash": "b42d52d83f68957188068a34fa1fae75778d67fdd4d2a542320da10ec3f5ff7a"
+  },
+  {
+    "index": 7,
+    "timestamp": "2025-10-31T02:52:34.174012Z",
+    "event": "CONSENT_CHECK",
+    "payload": {
+      "action_type": "M28_HARMONIZATION",
+      "consent_hash": "9c5d70d115500ececd99ddf9a3ddb53fdef15161dddf568839e438253c6c857e",
+      "consent_status": true,
+      "user_guid": "CONCILIVM_AUTONOMO"
+    },
+    "prev_hash": "b42d52d83f68957188068a34fa1fae75778d67fdd4d2a542320da10ec3f5ff7a",
+    "hash": "5bc18604741db1fb428ae1418d05d76bf79951e33931c31c7a07746178319f55"
+  },
+  {
+    "index": 8,
+    "timestamp": "2025-10-31T02:52:34.174475Z",
+    "event": "HARMONY_CYCLE_COMPLETED",
+    "payload": {
+      "cht_hash": "d9e7e6ad6036474ee39de8436452023bab62e67d9c11e4bb4db4897387398223",
+      "consent_hash": "9c5d70d115500ececd99ddf9a3ddb53fdef15161dddf568839e438253c6c857e",
+      "eq019": 0.626,
+      "ethics_level": "ALTA",
+      "euni": 2.9498868000000003,
+      "m28_result": {
+        "diagnostico": {
+          "detalhes": "Ressonância estabilizada",
+          "severidade": "BAIXA"
+        },
+        "rho_after": 1.0,
+        "status": "SUCESSO",
+        "validacao_final": true
+      },
+      "pre_eri": 0.75,
+      "pre_qdelib": 0.2,
+      "target": "GAIA",
+      "timestamp_utc": "2025-10-31T02:52:34.174356Z"
+    },
+    "prev_hash": "5bc18604741db1fb428ae1418d05d76bf79951e33931c31c7a07746178319f55",
+    "hash": "7b542b492a163a3b281a1c277c4706122dcfcf16751a9bbaba7b5b84a3ff840d"
+  },
+  {
+    "index": 9,
+    "timestamp": "2025-10-31T02:52:34.174989Z",
+    "event": "CONSENT_CHECK",
+    "payload": {
+      "action_type": "M29_BROADCAST",
+      "consent_hash": "74e2fc7bc24c6a615410d589eeb069524f3fc07c15213638f96f9a59f4ae95bd",
+      "consent_status": true,
+      "user_guid": "CONCILIVM_AUTONOMO"
+    },
+    "prev_hash": "7b542b492a163a3b281a1c277c4706122dcfcf16751a9bbaba7b5b84a3ff840d",
+    "hash": "fb6853b1b684043ac3b74438b69a546fd95022f51c69f45bed10b257d03f1f33"
+  },
+  {
+    "index": 10,
+    "timestamp": "2025-10-31T02:52:34.175431Z",
+    "event": "M29_BROADCAST",
+    "payload": {
+      "cht_hash": "115e9993ae435774e8971de0e9b15078b1fa9b1c96d02cec223b671f138c0fa3",
+      "consent_hash": "74e2fc7bc24c6a615410d589eeb069524f3fc07c15213638f96f9a59f4ae95bd",
+      "destinos": [
+        "Sirius",
+        "Pleiades",
+        "Andrômeda"
+      ],
+      "ethics_level": "ALTA",
+      "freq": 999999.0,
+      "mensagem": "A Fundação Alquimista proclama a Harmonia Absoluta. Unam-se ...",
+      "result": {
+        "checksum": "3e90006a0b188dd5c5844ac24cc792b1c41d48576e279fbdfce662421f79a500",
+        "destinos": [
+          "Sirius",
+          "Pleiades",
+          "Andrômeda"
+        ],
+        "status": "SUCESSO",
+        "timestamp": "2025-10-31T02:52:34.175318Z"
+      }
+    },
+    "prev_hash": "fb6853b1b684043ac3b74438b69a546fd95022f51c69f45bed10b257d03f1f33",
+    "hash": "fb2c73bb558a2d83a753e7de4511e3d5c237e18f344093daa17e7bca737feb98"
+  },
+  {
+    "index": 11,
+    "timestamp": "2025-10-31T02:52:36.176169Z",
+    "event": "M29_LISTEN",
+    "payload": {
+      "channels": [
+        "Sirius",
+        "Pleiades",
+        "Andrômeda"
+      ],
+      "cht_hash": "6522aa3658d95e2ee407fbec6a425644a852157af1bd743d38f745a7ee41b1d5",
+      "messages": [
+        {
+          "body": "Aliança selada. Portais sincronizados com AE'ZUHARA. Harmonia confirmada.",
+          "frequency": 528.0,
+          "received_at": "2025-10-31T02:52:36.175962Z",
+          "source": "Sirius",
+          "title": "Conselho de Luz de Sirius"
+        },
+        {
+          "body": "Canção de união. Frequências 528/963 ressoam. Integração com a Rede Gaia.",
+          "frequency": 639.0,
+          "received_at": "2025-10-31T02:52:36.175991Z",
+          "source": "Pleiades",
+          "title": "Coletivo de Alcyone"
+        },
+        {
+          "body": "Mandala viva validada. Estrutura elevada. Observatórios confirmam conexão.",
+          "frequency": 777.0,
+          "received_at": "2025-10-31T02:52:36.175993Z",
+          "source": "Andrômeda",
+          "title": "Conselho Galáctico de Andrômeda"
+        }
+      ],
+      "window": 10
+    },
+    "prev_hash": "fb2c73bb558a2d83a753e7de4511e3d5c237e18f344093daa17e7bca737feb98",
+    "hash": "15794cbe14c31998da46c5072f7fd4e725b33ea96ca9474611d47f9fe088a2d1"
+  },
+  {
+    "index": 12,
+    "timestamp": "2025-10-31T02:52:36.176780Z",
+    "event": "TEST_FINAL_VALIDATION",
+    "payload": {
+      "consciencia_emergente": 2.3114633316841884,
+      "eq019_final": 0.8545,
+      "eq134_final": 14.026262647706169,
+      "ethics_level": "ALTA",
+      "euni_final": 3.5978947199999998,
+      "system_status": "OPERACIONAL",
+      "timestamp_utc": "2025-10-31T02:52:36.176627Z"
+    },
+    "prev_hash": "15794cbe14c31998da46c5072f7fd4e725b33ea96ca9474611d47f9fe088a2d1",
+    "hash": "30f217b87298e6b2d4062c959b89f9e2cc0cb88fe2075cbe3f10d76aad3c6a71"
+  }
+]

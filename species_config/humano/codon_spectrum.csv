@@ -1,0 +1,8 @@
+codon,freq_hz,harmonic_offset
+ATG,963,0.05
+TAA,432,-0.10
+TGA,741,0.02
+TGC,528,0.08
+GGC,850,0.03
+CCA,920,0.15
+AGT,780,0.07

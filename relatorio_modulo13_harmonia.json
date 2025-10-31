@@ -1,0 +1,17 @@
+[
+    {
+        "evento": "escanear_campo_energetico",
+        "timestamp": "2025-10-31T02:38:38.790802",
+        "energia": 7.42,
+        "status": "Energia est\u00e1vel",
+        "mapa_energetico": "mapa_9b4197cf32ee20b3",
+        "hash": "703644a8ca"
+    },
+    {
+        "evento": "analisar_anomalias",
+        "timestamp": "2025-10-31T02:38:38.791178",
+        "energia": 7.42,
+        "status": "Nenhuma anomalia detectada",
+        "hash": "cd2de9415a"
+    }
+]

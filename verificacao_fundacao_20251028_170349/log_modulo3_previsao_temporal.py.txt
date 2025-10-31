@@ -1,0 +1,26 @@
+[2025-10-28 17:03:57.713] [M3] INICIANDO MÓDULO 3 – MODO OFFLINE SEGURO | HASH=68935fa1efb93ea5
+[2025-10-28 17:03:57.765] [M3] QKD + HSM ATIVADOS | chave_hash=691d69cbf39eac2d | HASH=7de6a31793ab6698
+[2025-10-28 17:03:57.766] [M3] IA TREINADA | pontos=100 | HASH=96824cc7a84303c0
+[2025-10-28 17:03:57.767] [M3] SATURNO MONITORADO | ressonancia=422.1 | estado=ESTÁVEL | acao=NENHUMA | HASH=7d9042b5d5b71377
+[2025-10-28 17:03:57.767] [M3] INICIANDO MÓDULO 3 – MODO OFFLINE SEGURO | HASH=c2f1d9e9defb12e3
+[2025-10-28 17:03:57.805] [M3] QKD + HSM ATIVADOS | chave_hash=43c753501385944a | HASH=695d3a8c57622569
+[2025-10-28 17:03:57.806] [M3] IA TREINADA | pontos=100 | HASH=a34d5a6f6822b6cb
+[2025-10-28 17:03:57.806] [M3] APLICANDO EQ: EQ001_F | freq=528.0 | params={'modo': 'ativacao'} | HASH=7fb1413643f97326
+[2025-10-28 17:03:57.807] [M3] EQUACAO EQ001_F EXECUTADA | score=0.9739 | sig=7078d02f8f0e48e3 | HASH=6a42154fe1e34582
+{
+  "status": "SUCESSO",
+  "equacao": "EQ001_F",
+  "entrada": 528.0,
+  "saida": -0.720155,
+  "previsoes_futuras": [
+    294.066,
+    294.522,
+    294.979,
+    295.435,
+    295.891
+  ],
+  "anomalia_detectada": true,
+  "score_sincronicidade": 0.9739,
+  "timestamp": "2025-10-28T17:03:57.806337",
+  "assinatura": "7078d02f8f0e48e3"
+}

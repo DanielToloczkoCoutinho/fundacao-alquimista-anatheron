@@ -2,36 +2,36 @@
     "modulo": "Módulo 16 - Preservação Planetária",
     "versao": "16.2.Ajustado",
     "status_protocolo": "SUCESSO",
-    "timestamp_selo": "2025-10-26T03:03:26.613876",
+    "timestamp_selo": "2025-10-26T15:40:10.673421",
     "detalhes_harmonizacao": [
         {
             "constelacao": "ORION",
             "status": "HARMONIZADO",
-            "f_alpha_novo_simulado": 143.17228177108305,
+            "f_alpha_novo_simulado": 92.01608980098234,
             "frequencia_aplicada": 528.0
         },
         {
             "constelacao": "THERON’KAI",
             "status": "HARMONIZADO",
-            "f_alpha_novo_simulado": 77.40163987315596,
+            "f_alpha_novo_simulado": 144.47697643178572,
             "frequencia_aplicada": 528.0
         },
         {
             "constelacao": "GAIA’THAR",
             "status": "HARMONIZADO",
-            "f_alpha_novo_simulado": 65.28329999118887,
+            "f_alpha_novo_simulado": 74.96964433902971,
             "frequencia_aplicada": 528.0
         },
         {
             "constelacao": "ZOR’IMET",
             "status": "HARMONIZADO",
-            "f_alpha_novo_simulado": 129.52382648432473,
+            "f_alpha_novo_simulado": 98.54528682968693,
             "frequencia_aplicada": 528.0
         },
         {
             "constelacao": "KAR’ZÉMETH",
             "status": "HARMONIZADO",
-            "f_alpha_novo_simulado": 118.65688676196672,
+            "f_alpha_novo_simulado": 137.29036538569977,
             "frequencia_aplicada": 528.0
         }
     ]

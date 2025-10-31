@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-30T23:54:00.072466+00:00",
+  "intencao": "Proteção Cósmica",
+  "status": "SUCESSO",
+  "resultado": {
+    "status": "SUCESSO",
+    "mensagem": "Matéria manifestada com sucesso.",
+    "material_id": "MAT_fdbc6b89",
+    "ressonancia": 0.7921486819445757,
+    "unificacao": 0.6320863965834839,
+    "modelo_integrado": 0.45437827861717917,
+    "selo_struct": "ce7674fe6aa64c08"
+  }
+}

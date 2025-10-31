@@ -1,0 +1,8 @@
+{
+  "default": ["Luz Coerente", "Som de Solfeggio", "Toque Cristalino"],
+  "iniciação": ["Cajado de Luz", "Harpa Arcana"],
+  "cessação": ["Diapás do Silêncio", "Vórtice de Antimatéria"],
+  "transmutação": ["Cristal de Obsidiana", "Gongo de Plasma"],
+  "reparacao": ["Cristal Vibracional", "Canto Harmônico"],
+  "ativacao": ["Reator de Phi", "Pêndulo Resonante"]
+}

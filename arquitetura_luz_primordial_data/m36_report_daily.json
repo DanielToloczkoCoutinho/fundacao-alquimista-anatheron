@@ -1,0 +1,12 @@
+{
+  "date": "2025-10-31",
+  "health": {
+    "dissonancia_media": 0.8584251972689605,
+    "taxa_sucesso": 0.475,
+    "mttr_reajuste": 0.08071599508586683,
+    "percentual_ciclos_recuperando": 0.475,
+    "percentual_ciclos_refino_etico": 0.425,
+    "ledger_valid": true
+  },
+  "blocks": 427
+}

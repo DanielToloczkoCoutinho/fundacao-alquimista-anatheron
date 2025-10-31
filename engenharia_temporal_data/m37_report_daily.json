@@ -1,0 +1,11 @@
+{
+  "date": "2025-10-31",
+  "health": {
+    "taxa_sucesso": 0.667,
+    "mttr_estabilizacao": 0.0409,
+    "percentual_linhas_instaveis_por_ciclo": 0.0,
+    "coerencia_media": 0.85,
+    "ledger_valid": true
+  },
+  "blocks": 23
+}

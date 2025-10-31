@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-30T23:54:05.697236+00:00",
+  "intencao": "Domínio sobre Outras Realidades",
+  "status": "SUCESSO",
+  "resultado": {
+    "status": "SUCESSO",
+    "mensagem": "Matéria manifestada com sucesso.",
+    "material_id": "MAT_2931f320",
+    "ressonancia": 0.8027354721736787,
+    "unificacao": 0.6505318483779473,
+    "modelo_integrado": 0.5393896400618121,
+    "selo_struct": "8a986e0bf66b553b"
+  }
+}

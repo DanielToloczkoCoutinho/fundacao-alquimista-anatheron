@@ -1,0 +1,151 @@
+{
+    "laboratorio": "QUANTICO_NATIVO_NIXOS_REFINADO",
+    "versao": "4.0.UNIFICADA",
+    "timestamp": "2025-10-28T17:41:33.490104",
+    "analises_dos_perfis": {
+        "QFT": {
+            "perfil": {
+                "desc": "Transformada Qu\u00e2ntica de Fourier",
+                "qubits": 3,
+                "energia_base": 0.9,
+                "profundidade": 6
+            },
+            "analise_quantica": {
+                "phi_c": "7.5193e-04",
+                "pureza": "8.9107e-01",
+                "complexidade": "9.8841e-01",
+                "energia_unificada": "1.4853e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "1.0240e-34",
+                "verdade_universal": "1.2328e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "SHOR": {
+            "perfil": {
+                "desc": "Fatoriza\u00e7\u00e3o de Inteiros",
+                "qubits": 5,
+                "energia_base": 0.7,
+                "profundidade": 20
+            },
+            "analise_quantica": {
+                "phi_c": "4.0287e-03",
+                "pureza": "8.9140e-01",
+                "complexidade": "1.8517e+00",
+                "energia_unificada": "1.1553e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "5.4845e-34",
+                "verdade_universal": "6.6078e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "GROVER": {
+            "perfil": {
+                "desc": "Busca Qu\u00e2ntica",
+                "qubits": 4,
+                "energia_base": 0.8,
+                "profundidade": 8
+            },
+            "analise_quantica": {
+                "phi_c": "2.3251e-03",
+                "pureza": "8.9123e-01",
+                "complexidade": "1.1110e+00",
+                "energia_unificada": "1.3203e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "3.1658e-34",
+                "verdade_universal": "3.8128e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "ENTRELACAMENTO": {
+            "perfil": {
+                "desc": "Estado Bell/GHZ",
+                "qubits": 2,
+                "energia_base": 0.95,
+                "profundidade": 2
+            },
+            "analise_quantica": {
+                "phi_c": "1.2581e-04",
+                "pureza": "8.9101e-01",
+                "complexidade": "7.4158e-01",
+                "energia_unificada": "1.5678e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "1.7135e-35",
+                "verdade_universal": "2.0627e+65",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "TELEPORTACAO": {
+            "perfil": {
+                "desc": "Teletransporte Qu\u00e2ntico",
+                "qubits": 3,
+                "energia_base": 0.85,
+                "profundidade": 5
+            },
+            "analise_quantica": {
+                "phi_c": "1.6109e-03",
+                "pureza": "8.9116e-01",
+                "complexidade": "9.2607e-01",
+                "energia_unificada": "1.4028e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "2.1935e-34",
+                "verdade_universal": "2.6414e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "QEC": {
+            "perfil": {
+                "desc": "Corre\u00e7\u00e3o de Erros Qu\u00e2nticos",
+                "qubits": 7,
+                "energia_base": 0.98,
+                "profundidade": 15
+            },
+            "analise_quantica": {
+                "phi_c": "1.2843e-05",
+                "pureza": "8.9100e-01",
+                "complexidade": "1.5451e+00",
+                "energia_unificada": "1.6174e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "1.7492e-36",
+                "verdade_universal": "2.1056e+64",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "QNN": {
+            "perfil": {
+                "desc": "Rede Neural Qu\u00e2ntica",
+                "qubits": 4,
+                "energia_base": 0.88,
+                "profundidade": 12
+            },
+            "analise_quantica": {
+                "phi_c": "6.2938e-04",
+                "pureza": "8.9106e-01",
+                "complexidade": "1.3593e+00",
+                "energia_unificada": "1.4523e+00",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "8.5713e-35",
+                "verdade_universal": "1.0319e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        },
+        "HIGGS": {
+            "perfil": {
+                "desc": "Simula\u00e7\u00e3o do B\u00f3son de Higgs",
+                "qubits": 8,
+                "energia_base": 0.6,
+                "profundidade": 30
+            },
+            "analise_quantica": {
+                "phi_c": "5.0381e-03",
+                "pureza": "8.9150e-01",
+                "complexidade": "2.0000e+00",
+                "energia_unificada": "9.9022e-01",
+                "verdade_dimensional": "5.4619e+15",
+                "unificacao_cosmica": "6.8579e-34",
+                "verdade_universal": "8.2644e+66",
+                "fundacao_quantica": "1.4460e-08"
+            }
+        }
+    }
+}

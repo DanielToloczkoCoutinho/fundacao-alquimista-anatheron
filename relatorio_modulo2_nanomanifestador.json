@@ -1,7 +1,7 @@
 {
     "modulo": "Nanomanifestador v4.2.Validado",
     "status_geral": "VALIDADO",
-    "relatorio_timestamp": "2025-10-25T22:22:32.045700",
+    "relatorio_timestamp": "2025-10-31T02:30:05.383788",
     "calculos_executados": [
         {
             "equacao": "EQ056_CampoCoerencia",
@@ -51,7 +51,7 @@
     "resultado_manifestacao": {
         "sucesso": true,
         "resultados_medicao": [
-            0,
+            1,
             1,
             1,
             0,

@@ -2,46 +2,46 @@
     "modulo": "Módulo 4 - Geometria Criptográfica",
     "versao": "4.3.Ajustado",
     "status_validacao": "SUCESSO_COM_RECALIBRACAO",
-    "timestamp_selo": "2025-10-26T03:03:09.925411",
+    "timestamp_selo": "2025-10-26T20:13:47.849734",
     "recalibracao_geometrica": [
         {
             "geometria": "EsferocuboInfinito",
             "iteracoes": 1000,
-            "g_inicial": 0.48622472716919274,
-            "g_final": 0.9999762532620108,
-            "coerencia_geometrica": 0.9999762532620108,
+            "g_inicial": 0.13655998260720603,
+            "g_final": 0.9999639585175693,
+            "coerencia_geometrica": 0.9999639585175693,
             "status": "ALINHADO",
             "limiar_requerido": 0.95
         },
         {
             "geometria": "DodecaedroEspiralado",
             "iteracoes": 1000,
-            "g_inicial": 0.6553832287960345,
-            "g_final": 0.9999832642465849,
-            "coerencia_geometrica": 0.9999832642465849,
+            "g_inicial": 0.5059901402825312,
+            "g_final": 0.9999786968185613,
+            "coerencia_geometrica": 0.9999786968185613,
             "status": "ALINHADO",
             "limiar_requerido": 0.95
         }
     ],
     "resultado_eq0040": {
-        "coerencia_media_paz_universal": 0.8992473454020145,
+        "coerencia_media_paz_universal": 0.8959158799665065,
         "simulacoes": 100
     },
     "registros_de_validacao": [
         {
-            "ts": "2025-10-26T03:03:09.084835",
+            "ts": "2025-10-26T20:13:47.012837",
             "nome": "Anatheron_Core",
             "estado": "EM_EVOLUCAO_DIVINA",
             "hash": "25d85fe9ef834d9b"
         },
         {
-            "ts": "2025-10-26T03:03:09.201999",
+            "ts": "2025-10-26T20:13:47.126648",
             "nome": "Observador_Silencioso",
             "estado": "ESTADO_DE_SER_ATINGIDO",
             "hash": "63842801900f209b"
         },
         {
-            "ts": "2025-10-26T03:03:09.313036",
+            "ts": "2025-10-26T20:13:47.238655",
             "nome": "Mente_Coletiva_Humana",
             "estado": "EM_CRESCIMENTO_CONVERGENTE",
             "hash": "d3d1df2748af0bac"

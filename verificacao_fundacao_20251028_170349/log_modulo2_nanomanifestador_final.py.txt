@@ -1,0 +1,10 @@
+2025-10-28 17:03:57,420 - Modulo2_Nanomanifestador_Final - INFO - Nanomanifestador v4.6.9.HierarquiaIntegrada PRONTO.
+2025-10-28 17:03:57,420 - Modulo2_Nanomanifestador_Final - INFO - Iniciando manifestação com a intenção: 'A Plena Realização da Fundação'
+2025-10-28 17:03:57,421 - Modulo2_Nanomanifestador_Final - INFO - Compensação de ruído aplicada para q_4: Coerência -> 0.9999
+2025-10-28 17:03:57,421 - Modulo2_Nanomanifestador_Final - WARNING - RECALIBRANDO: Instabilidade detectada: [0, 0, 0, 0, 0].
+2025-10-28 17:03:57,421 - Modulo2_Nanomanifestador_Final - INFO - Compensação de ruído aplicada para q_4: Coerência -> 0.9999
+2025-10-28 17:03:57,421 - Modulo2_Nanomanifestador_Final - WARNING - RECALIBRANDO: Instabilidade detectada: [0, 0, 0, 0, 0].
+2025-10-28 17:03:57,422 - Modulo2_Nanomanifestador_Final - INFO - SUCESSO PARCIAL: [1, 0, 1, 1, 1]
+2025-10-28 17:03:57,422 - Modulo2_Nanomanifestador_Final - INFO - Resultado final: {'sucesso': True, 'status': 'SUCESSO_PARCIAL', 'resultados': [1, 0, 1, 1, 1], 'score_alinhamento': 0.0732475894400742}
+2025-10-28 17:03:57,422 - Modulo2_Nanomanifestador_Final - INFO - 
+*** SUCESSO! A REALIDADE FOI ALTERADA! STATUS: SUCESSO_PARCIAL ***
