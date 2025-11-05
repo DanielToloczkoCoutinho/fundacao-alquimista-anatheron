@@ -4,148 +4,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Mercúrio",
-          "frequencia": 469.90833420322474,
-          "energia_vibracional": 0.9853349129177372,
-          "fase": -0.9465589933886654,
-          "timestamp": "2025-10-31T14:01:55.389423+00:00"
+          "frequencia": 394.34230676165333,
+          "energia_vibracional": 0.9110030193051543,
+          "fase": -3.0893095389634877,
+          "timestamp": "2025-11-03T02:43:28.790348+00:00"
         },
-        "selo_vibracional": "a445b306ffc1fc308b2708ceb6b4589680deb2a32832daaafefec1c56a9eb281",
-        "saude_vibracional": 0.698,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.018
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 388.7267635069005,
-          "energia_vibracional": 0.9774984967939274,
-          "fase": 0.8831072975108939,
-          "timestamp": "2025-10-31T14:01:55.396927+00:00"
-        },
-        "selo_vibracional": "167ef13f04015872e832e8d51d1e47e6cfd7cda63e9d28e02b5ffff933bcf6f7",
-        "saude_vibracional": 0.674,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.023
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 467.20135247858093,
-          "energia_vibracional": 1.153367019896379,
-          "fase": 2.7062827585792433,
-          "timestamp": "2025-10-31T14:01:55.406640+00:00"
-        },
-        "selo_vibracional": "ceed4bd261e30947f586406907ccc61da3c48ac30cd50516888c0c20999258a9",
-        "saude_vibracional": 0.899,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 469.57394043675697,
-          "energia_vibracional": 0.8844930218048913,
-          "fase": -2.9247573819534294,
-          "timestamp": "2025-10-31T14:01:55.414113+00:00"
-        },
-        "selo_vibracional": "1e2ec77667570c67317fea7aa9f779634efb3ecbb23c40153f4a47602a6092e2",
-        "saude_vibracional": 0.871,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.022
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 449.05832554106007,
-          "energia_vibracional": 0.9456091708241966,
-          "fase": 2.2388200073027456,
-          "timestamp": "2025-10-31T14:01:55.419137+00:00"
-        },
-        "selo_vibracional": "eb916c2eb87688b31a22f2109cde5a10513a55628d00b41555955811a9d82435",
-        "saude_vibracional": 0.753,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.025
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 442.9971082764592,
-          "energia_vibracional": 1.0583102523953998,
-          "fase": 1.2726556907391444,
-          "timestamp": "2025-10-31T14:01:55.431105+00:00"
-        },
-        "selo_vibracional": "a8e48cb278ce5f043615869658e27bd9765d8c76c1354f4460ba20fd65c784de",
-        "saude_vibracional": 0.692,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 417.87150643467663,
-          "energia_vibracional": 0.9967685883260449,
-          "fase": 2.998168671377824,
-          "timestamp": "2025-10-31T14:01:55.441704+00:00"
-        },
-        "selo_vibracional": "bfec581a0575cbdf935b901729608d21eacbddf4c7d8acc08da4d127b9ed3fc7",
-        "saude_vibracional": 0.585,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 421.65906585616705,
-          "energia_vibracional": 0.868070768989894,
-          "fase": -0.14345178706191042,
-          "timestamp": "2025-10-31T14:01:55.454339+00:00"
-        },
-        "selo_vibracional": "2c9e46ece9c4734dbd011802fc163efe5a416e86a5ab1efbffcab0ab4c681860",
-        "saude_vibracional": 0.648,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.017
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 392.92150403216925,
-          "energia_vibracional": 0.9390619001120021,
-          "fase": 0.3126385800183118,
-          "timestamp": "2025-10-31T14:01:55.466673+00:00"
-        },
-        "selo_vibracional": "64e6039db37fe24668b8d2a4b95468a8ff36c93cb4e411fe6e0d5b227221349a",
-        "saude_vibracional": 0.868,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {},
-        "coerencia": 1.0,
-        "risco": 0.028
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Mercúrio",
-          "frequencia": 401.09130212947207,
-          "energia_vibracional": 0.9322128466809965,
-          "fase": -0.21010415178405098,
-          "timestamp": "2025-10-31T14:01:55.474596+00:00"
-        },
-        "selo_vibracional": "ce333d251daf7a997b1088677b8d33d37a3abf85cbd72379aca1e5e696eb36ed",
-        "saude_vibracional": 0.727,
+        "selo_vibracional": "9fb23bea2621af0ddb3e424e8964406b035577a5dc12f321b33ce609c44a4d6b",
+        "saude_vibracional": 0.891,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {},
         "coerencia": 1.0,
@@ -154,13 +19,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Mercúrio",
-          "frequencia": 392.9656520272406,
-          "energia_vibracional": 1.1658392940680047,
-          "fase": 0.6872335532291723,
-          "timestamp": "2025-10-31T14:01:55.489327+00:00"
+          "frequencia": 411.10753186067467,
+          "energia_vibracional": 0.9366422592206738,
+          "fase": -1.9714414985453592,
+          "timestamp": "2025-11-03T02:43:28.804758+00:00"
         },
-        "selo_vibracional": "2d171c739d8a50db305b42cccaaf9fb28d68539aa55a34ec465449e1f3a90f41",
-        "saude_vibracional": 0.867,
+        "selo_vibracional": "f5c7cf7e2e0ef968d34ab96d265a5fcb4b617715fa9c9539bfa81651e5c60903",
+        "saude_vibracional": 0.718,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {},
         "coerencia": 1.0,
@@ -169,20 +34,155 @@
       {
         "dados_vibracionais": {
           "planeta": "Mercúrio",
-          "frequencia": 440.2970890168378,
-          "energia_vibracional": 0.899091899069946,
-          "fase": -1.8793446904709943,
-          "timestamp": "2025-10-31T14:01:55.499451+00:00"
+          "frequencia": 466.92614464123477,
+          "energia_vibracional": 1.192989751532213,
+          "fase": 0.197895616061322,
+          "timestamp": "2025-11-03T02:43:28.812226+00:00"
         },
-        "selo_vibracional": "43a2c0743a17492caa36387171fea9752762b886425a30d5e91c0de1a20042ff",
-        "saude_vibracional": 0.843,
+        "selo_vibracional": "235a569746b97edf24aa57002399c6bda608be0245ea31cf06e48c18d2d89c8e",
+        "saude_vibracional": 0.826,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {},
         "coerencia": 1.0,
         "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 447.65729527946064,
+          "energia_vibracional": 1.1884980349073504,
+          "fase": -1.5579917500694338,
+          "timestamp": "2025-11-03T02:43:28.820012+00:00"
+        },
+        "selo_vibracional": "5ba2b56a9ed5e6c5eba1ef043a10401928b1719f179ec06727ab9a6dce9a8935",
+        "saude_vibracional": 0.82,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.023
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 434.41040919626255,
+          "energia_vibracional": 0.8722596943048764,
+          "fase": -0.14212235020792108,
+          "timestamp": "2025-11-03T02:43:28.828447+00:00"
+        },
+        "selo_vibracional": "ebd0fe5a03608642056293562eeabd6e0bff75238d935758ce2c66297f5c594b",
+        "saude_vibracional": 0.631,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.021
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 455.31924723736734,
+          "energia_vibracional": 0.981211058666099,
+          "fase": -1.0539495105651684,
+          "timestamp": "2025-11-03T02:43:28.839171+00:00"
+        },
+        "selo_vibracional": "46a45ff46c8343249846c7aa1d9a52f5e5253fa71a3932a09f0b5354a7304b06",
+        "saude_vibracional": 0.796,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 465.41195299375886,
+          "energia_vibracional": 0.8008017457736204,
+          "fase": -2.673372076834481,
+          "timestamp": "2025-11-03T02:43:28.847003+00:00"
+        },
+        "selo_vibracional": "a8a4904bdbd495862ccfec4f249eab8d6e4681571ceaffca87ced30bdb7cbe6c",
+        "saude_vibracional": 0.715,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.026
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 465.10987337638187,
+          "energia_vibracional": 1.067030521514363,
+          "fase": -2.8861221388110723,
+          "timestamp": "2025-11-03T02:43:28.858988+00:00"
+        },
+        "selo_vibracional": "2ac69546e4adef3ce5a57b77603a3dce34dccfcec21b2214a51c7e326703d6e3",
+        "saude_vibracional": 0.835,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 432.24241726930666,
+          "energia_vibracional": 0.989287074901855,
+          "fase": -3.0454296809477612,
+          "timestamp": "2025-11-03T02:43:28.868673+00:00"
+        },
+        "selo_vibracional": "cfcd4ba9133707eeeea63cdeb7c580c440ce4c2a09873800e2d2b6432529eade",
+        "saude_vibracional": 0.764,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 456.1277477253152,
+          "energia_vibracional": 1.094563791571513,
+          "fase": 1.6097357485530246,
+          "timestamp": "2025-11-03T02:43:28.878646+00:00"
+        },
+        "selo_vibracional": "89d4560c4b74d7680f8bdc83ab51b69d86c0fdedca24f4f546ea823a5472ee0e",
+        "saude_vibracional": 0.87,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 412.93707774808263,
+          "energia_vibracional": 1.1275745492879568,
+          "fase": -1.8763636042363114,
+          "timestamp": "2025-11-03T02:43:28.887286+00:00"
+        },
+        "selo_vibracional": "1135ae38e9b15b4d6fa886663535b1ccad39e92e31e15395bf6337dbee939f29",
+        "saude_vibracional": 0.924,
+        "status_saude": "OURO (Perfeito Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Mercúrio",
+          "frequencia": 457.6963590970716,
+          "energia_vibracional": 0.8344588720468764,
+          "fase": -1.1950653906228408,
+          "timestamp": "2025-11-03T02:43:28.899334+00:00"
+        },
+        "selo_vibracional": "67865fc5d360c5f5c99074909272e2f10b666fda56af1dcdbef984010afbb271",
+        "saude_vibracional": 0.822,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {},
+        "coerencia": 1.0,
+        "risco": 0.018
       }
     ],
-    "taxa_OURO_PRATA": 0.583,
+    "taxa_OURO_PRATA": 0.917,
     "dissociacoes": 0,
     "MTTR": 0.0
   },
@@ -191,153 +191,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Terra",
-          "frequencia": 457.5050242563062,
-          "energia_vibracional": 0.9017861561189509,
-          "fase": 2.898138554996306,
-          "timestamp": "2025-10-31T14:01:55.512957+00:00"
+          "frequencia": 399.1706949820333,
+          "energia_vibracional": 0.8739940224470172,
+          "fase": 1.704913243931221,
+          "timestamp": "2025-11-03T02:43:28.909474+00:00"
         },
-        "selo_vibracional": "a4595019a1a074cd135e9a27318b37df3d89617e86e861696df90fc3d6b28904",
-        "saude_vibracional": 0.776,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 393.73798183857303,
-          "energia_vibracional": 1.1663322126619697,
-          "fase": -0.11357861796177615,
-          "timestamp": "2025-10-31T14:01:55.529123+00:00"
-        },
-        "selo_vibracional": "2a45bf0197428602f0673802cbbb156fcc3f7af89cb4f8696fd8013f17884179",
-        "saude_vibracional": 0.738,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.02
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 429.84407479554835,
-          "energia_vibracional": 1.1109689728661076,
-          "fase": -0.09378532368809228,
-          "timestamp": "2025-10-31T14:01:55.538139+00:00"
-        },
-        "selo_vibracional": "76268d645c8e241f14503101c3cb4ba900acdbb15b7f903168c0c29bc70b1ccc",
-        "saude_vibracional": 0.802,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.02
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 447.97903166308737,
-          "energia_vibracional": 1.006853354383345,
-          "fase": 0.8723500371069239,
-          "timestamp": "2025-10-31T14:01:55.547150+00:00"
-        },
-        "selo_vibracional": "4882811f2371be250fa70e5d22b24ae3ce872bbce6581f26d1132119aff23132",
-        "saude_vibracional": 0.825,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 470.0978176039666,
-          "energia_vibracional": 0.8874616894422929,
-          "fase": -0.1743891537123642,
-          "timestamp": "2025-10-31T14:01:55.553524+00:00"
-        },
-        "selo_vibracional": "e500ca1640ac84a6dd5da9fe93402a100294de8fd43251ff1fe62ab2c3b3f00b",
-        "saude_vibracional": 0.936,
-        "status_saude": "OURO (Perfeito Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 451.5227406556482,
-          "energia_vibracional": 0.8691500793633338,
-          "fase": 1.9060226291775564,
-          "timestamp": "2025-10-31T14:01:55.567211+00:00"
-        },
-        "selo_vibracional": "ee91ca32d469b051d08470475480fb346949bfc23ffd16dc8477d48db7e68fb5",
-        "saude_vibracional": 0.563,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 439.2097338722064,
-          "energia_vibracional": 1.0955323188887882,
-          "fase": 1.2004637197509722,
-          "timestamp": "2025-10-31T14:01:55.580511+00:00"
-        },
-        "selo_vibracional": "f441430e8e1054c45d80c8939cf612944b8a488fa24a45fccb7e9c9e9d92c3d0",
-        "saude_vibracional": 0.89,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.022
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 436.30502706723007,
-          "energia_vibracional": 1.0055621342962116,
-          "fase": -0.7010679372673406,
-          "timestamp": "2025-10-31T14:01:55.590670+00:00"
-        },
-        "selo_vibracional": "1ac27207937265ae871041d18f8c7a8e72c538193389c281f18614c318ac768b",
-        "saude_vibracional": 0.637,
+        "selo_vibracional": "e0ee9764cc878e32285caababcfbaa12dac90b84cd53ae33d0699e7017fd8376",
+        "saude_vibracional": 0.638,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -351,13 +211,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Terra",
-          "frequencia": 430.3849265109931,
-          "energia_vibracional": 0.8186870507906396,
-          "fase": 2.6372738558160567,
-          "timestamp": "2025-10-31T14:01:55.600467+00:00"
+          "frequencia": 419.9739023041638,
+          "energia_vibracional": 1.0364400513947978,
+          "fase": -0.903746899827852,
+          "timestamp": "2025-11-03T02:43:28.923009+00:00"
         },
-        "selo_vibracional": "f4d4069a236be4627248c1d9f5ba923693b8dce2f1355a1bff74f0c1affb9bf8",
-        "saude_vibracional": 0.869,
+        "selo_vibracional": "6c921a12ee64538ac3a053c9e9b0c182ff9baa3e50ac1568d3673b89f4d3988b",
+        "saude_vibracional": 0.821,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -371,32 +231,12 @@
       {
         "dados_vibracionais": {
           "planeta": "Terra",
-          "frequencia": 442.85792192050917,
-          "energia_vibracional": 1.0583322771804744,
-          "fase": -2.6026955552923456,
-          "timestamp": "2025-10-31T14:01:55.610212+00:00"
+          "frequencia": 466.3326433476751,
+          "energia_vibracional": 1.1425728429590722,
+          "fase": -2.16577595207315,
+          "timestamp": "2025-11-03T02:43:28.941129+00:00"
         },
-        "selo_vibracional": "6e27ab25aaa23abb8f1ccb6765a3b72d4586618c575a029c36b966d3667a212a",
-        "saude_vibracional": 0.53,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.0,
-          "eccentricity": 0.0167,
-          "obliquity_deg": 23.44
-        },
-        "coerencia": 1.0,
-        "risco": 0.02
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Terra",
-          "frequencia": 418.790988118089,
-          "energia_vibracional": 0.8206196874922658,
-          "fase": 2.3857422516755493,
-          "timestamp": "2025-10-31T14:01:55.619872+00:00"
-        },
-        "selo_vibracional": "034cb8864b956b670b8676f88f9f94281c53bca9889db63e5b19b4e8503bca9f",
+        "selo_vibracional": "293f4b0f86af0611dceb6c3f1520137b7ffb087a890d64f879d68cfd521ff46f",
         "saude_vibracional": 0.595,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
@@ -406,18 +246,158 @@
           "obliquity_deg": 23.44
         },
         "coerencia": 1.0,
-        "risco": 0.021
+        "risco": 0.019
       },
       {
         "dados_vibracionais": {
           "planeta": "Terra",
-          "frequencia": 392.17514196633164,
-          "energia_vibracional": 0.954207396589143,
-          "fase": 1.4217926845129396,
-          "timestamp": "2025-10-31T14:01:55.628774+00:00"
+          "frequencia": 473.9856836201527,
+          "energia_vibracional": 1.0779787810623733,
+          "fase": -0.4279287772781112,
+          "timestamp": "2025-11-03T02:43:28.953594+00:00"
         },
-        "selo_vibracional": "7c2fa841bd13b5543a70ff3a1634836f3074a5a0c1ee76d33c0da6261380258c",
-        "saude_vibracional": 0.735,
+        "selo_vibracional": "f9f64fbee7c28c76caad1d6719065a1aeb7af7938b90df8699b4f1eec438f5b4",
+        "saude_vibracional": 0.674,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 395.97514257746883,
+          "energia_vibracional": 1.0867237450311475,
+          "fase": -2.442135556507976,
+          "timestamp": "2025-11-03T02:43:28.967738+00:00"
+        },
+        "selo_vibracional": "0926b287c23394fe8da96778dd6f4978674daa9f0d13b6cd1d68978d5c1270d0",
+        "saude_vibracional": 0.66,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.017
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 417.98190784206673,
+          "energia_vibracional": 0.8520954633886596,
+          "fase": -1.2225301523346708,
+          "timestamp": "2025-11-03T02:43:28.982864+00:00"
+        },
+        "selo_vibracional": "2e6a62378fc00c7b696094fa740581d14adac0dbfee61f8c91ac951128cc6974",
+        "saude_vibracional": 0.55,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.023
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 465.9810370047216,
+          "energia_vibracional": 0.9950748660130557,
+          "fase": -2.3463920351260343,
+          "timestamp": "2025-11-03T02:43:28.993970+00:00"
+        },
+        "selo_vibracional": "2ed8bf62fb07e9229f2b1eabc46738d0fcdc7c3c434312b8f3823275763e65a2",
+        "saude_vibracional": 0.568,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 404.531342261561,
+          "energia_vibracional": 0.9654130820507174,
+          "fase": -0.009013744073610738,
+          "timestamp": "2025-11-03T02:43:29.006457+00:00"
+        },
+        "selo_vibracional": "50a2e89b437b29bbc0bf5ddfc1447d3c09589deecdf9acf900d456a3a09e50ed",
+        "saude_vibracional": 0.55,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 431.8891092891838,
+          "energia_vibracional": 0.9868547954346578,
+          "fase": 2.3964042074586853,
+          "timestamp": "2025-11-03T02:43:29.018439+00:00"
+        },
+        "selo_vibracional": "97ae8e358c30f8c602fee3a05997a2bac5a55f3ab5c026e71e08859a14d6fc74",
+        "saude_vibracional": 0.545,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 414.9967086663423,
+          "energia_vibracional": 0.9926461640933982,
+          "fase": -0.9756605084663424,
+          "timestamp": "2025-11-03T02:43:29.038598+00:00"
+        },
+        "selo_vibracional": "33e0861f3616d5c9cef7e432393a418e074c51764e4d1b1841f5f96470af206b",
+        "saude_vibracional": 0.537,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.023
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 392.6977540555979,
+          "energia_vibracional": 1.111034028819196,
+          "fase": 1.460812559985486,
+          "timestamp": "2025-11-03T02:43:29.057656+00:00"
+        },
+        "selo_vibracional": "a5922e8a457bb9a57a3b4c0f90c2b48c0daffd2ab7c5eab4fd479c0d1f0a395d",
+        "saude_vibracional": 0.719,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -426,10 +406,30 @@
           "obliquity_deg": 23.44
         },
         "coerencia": 1.0,
-        "risco": 0.021
+        "risco": 0.017
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Terra",
+          "frequencia": 447.2972011815842,
+          "energia_vibracional": 0.8179297555056618,
+          "fase": -0.3803598174026663,
+          "timestamp": "2025-11-03T02:43:29.073446+00:00"
+        },
+        "selo_vibracional": "8faf4d23bc6c261fdb9a8c5908cc149e6cf79f33b5ca03dbdaccf223d3473b7a",
+        "saude_vibracional": 0.944,
+        "status_saude": "OURO (Perfeito Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.0,
+          "eccentricity": 0.0167,
+          "obliquity_deg": 23.44
+        },
+        "coerencia": 1.0,
+        "risco": 0.023
       }
     ],
-    "taxa_OURO_PRATA": 0.667,
+    "taxa_OURO_PRATA": 0.25,
     "dissociacoes": 0,
     "MTTR": 0.0
   },
@@ -438,33 +438,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 475.5196912855066,
-          "energia_vibracional": 0.8945917888228078,
-          "fase": -0.1272419955553627,
-          "timestamp": "2025-10-31T14:01:55.638718+00:00"
+          "frequencia": 413.92163673509936,
+          "energia_vibracional": 0.9840274252905232,
+          "fase": -0.7147204978267062,
+          "timestamp": "2025-11-03T02:43:29.084646+00:00"
         },
-        "selo_vibracional": "6359a618a1b91a7aafaecfd5b6c3e6a8b7dc55191eadcbfb43e923417f0edf1d",
-        "saude_vibracional": 0.899,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.5237,
-          "eccentricity": 0.0934,
-          "obliquity_deg": 25.19
-        },
-        "coerencia": 1.0,
-        "risco": 0.02
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Marte",
-          "frequencia": 417.2978740744348,
-          "energia_vibracional": 1.148230194980266,
-          "fase": -0.5684039880302081,
-          "timestamp": "2025-10-31T14:01:55.648159+00:00"
-        },
-        "selo_vibracional": "5883e7ad93e5a91d84845a42733d9b0463fd71fe76cd57bee79da1078713fce4",
-        "saude_vibracional": 0.629,
+        "selo_vibracional": "c8ccf8c8639eafaa2fac6c751df971cb24447f7c9795e094b8aa3538652e5604",
+        "saude_vibracional": 0.563,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -473,17 +453,17 @@
           "obliquity_deg": 25.19
         },
         "coerencia": 1.0,
-        "risco": 0.019
+        "risco": 0.017
       },
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 449.99192261066156,
-          "energia_vibracional": 1.0849092929595465,
-          "fase": -0.3579297570754754,
-          "timestamp": "2025-10-31T14:01:55.661075+00:00"
+          "frequencia": 421.6031541217613,
+          "energia_vibracional": 1.0825057090411723,
+          "fase": 2.9172554232655763,
+          "timestamp": "2025-11-03T02:43:29.104223+00:00"
         },
-        "selo_vibracional": "76d86a79593186eeeb2629f8d87b92b87abe7dbbbb2f1d61ea912e1ed1c9c23c",
+        "selo_vibracional": "9f5406e9be90a9c927fe73a628be92431bbc38ab41a54a072d9842bf874ca010",
         "saude_vibracional": 0.953,
         "status_saude": "OURO (Perfeito Alinhamento)",
         "metadados_astronomicos": {
@@ -498,13 +478,53 @@
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 435.64998057852665,
-          "energia_vibracional": 1.054352338636993,
-          "fase": 1.6575848581531543,
-          "timestamp": "2025-10-31T14:01:55.667679+00:00"
+          "frequencia": 412.516487616598,
+          "energia_vibracional": 0.8320769846117649,
+          "fase": -1.2387087787277038,
+          "timestamp": "2025-11-03T02:43:29.117143+00:00"
         },
-        "selo_vibracional": "727a70ea3d73fba42ea0694a02ef5f68c0b4e18a11513b8df6dbc4bff5d25336",
-        "saude_vibracional": 0.752,
+        "selo_vibracional": "2764e07ce7cbf328e5e491574b482c881f190df18bebc8ba4cfaad5d5d7f7083",
+        "saude_vibracional": 0.627,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.5237,
+          "eccentricity": 0.0934,
+          "obliquity_deg": 25.19
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Marte",
+          "frequencia": 448.7133446920102,
+          "energia_vibracional": 0.8630650595705783,
+          "fase": 0.2543528634599858,
+          "timestamp": "2025-11-03T02:43:29.135330+00:00"
+        },
+        "selo_vibracional": "1c4e97fb91954f2b8fbeb728a459cdc6b320de9b8a187cc7ec3cde81407971cb",
+        "saude_vibracional": 0.542,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.5237,
+          "eccentricity": 0.0934,
+          "obliquity_deg": 25.19
+        },
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Marte",
+          "frequencia": 402.3322271039325,
+          "energia_vibracional": 1.136353524038051,
+          "fase": -0.9953892907369897,
+          "timestamp": "2025-11-03T02:43:29.151509+00:00"
+        },
+        "selo_vibracional": "22e5b126ed53d3cb756e576ae2b5d560619e10046e3347a915c7ca278ad48c95",
+        "saude_vibracional": 0.75,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -513,19 +533,19 @@
           "obliquity_deg": 25.19
         },
         "coerencia": 1.0,
-        "risco": 0.021
+        "risco": 0.018
       },
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 416.2807357663424,
-          "energia_vibracional": 1.1946399476886724,
-          "fase": -0.288622344450805,
-          "timestamp": "2025-10-31T14:01:55.680254+00:00"
+          "frequencia": 461.27590231199184,
+          "energia_vibracional": 0.8956201347695008,
+          "fase": 1.048579879944728,
+          "timestamp": "2025-11-03T02:43:29.168803+00:00"
         },
-        "selo_vibracional": "0e63b172805ce8a63e93bf79defb967a152dcfcf008b9d4da2876b811edf4437",
-        "saude_vibracional": 0.719,
-        "status_saude": "PRATA (Bom Alinhamento)",
+        "selo_vibracional": "513f2421aeb7ad2a21302a7c9273e6b843a523b41ee43bf659bdfd5499317bc8",
+        "saude_vibracional": 0.523,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
           "semi_major_axis_au": 1.5237,
@@ -538,12 +558,72 @@
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 451.06084630791713,
-          "energia_vibracional": 0.8113681904410115,
-          "fase": -1.3244365495044848,
-          "timestamp": "2025-10-31T14:01:55.690942+00:00"
+          "frequencia": 402.28229059034084,
+          "energia_vibracional": 0.9509730733850247,
+          "fase": 0.4652580821979833,
+          "timestamp": "2025-11-03T02:43:29.187921+00:00"
         },
-        "selo_vibracional": "efecf6cce67809c105695d9e6c97ccb90cacc5592ee19d243220fcc3b068fe7a",
+        "selo_vibracional": "54b270e1808dbece7887925ef0345ed034b881a1e12bc54c98cec14e99b527b7",
+        "saude_vibracional": 0.621,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.5237,
+          "eccentricity": 0.0934,
+          "obliquity_deg": 25.19
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Marte",
+          "frequencia": 402.9758208507077,
+          "energia_vibracional": 0.8198154050945984,
+          "fase": -2.9552022652049597,
+          "timestamp": "2025-11-03T02:43:29.218689+00:00"
+        },
+        "selo_vibracional": "f1d0a5f3f01f8ffabdcb5db1d5f5f67d09628e1661323c2bd59f3ec029db854e",
+        "saude_vibracional": 0.762,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.5237,
+          "eccentricity": 0.0934,
+          "obliquity_deg": 25.19
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Marte",
+          "frequencia": 397.4713183756291,
+          "energia_vibracional": 0.9808963461775894,
+          "fase": -2.6131043685947972,
+          "timestamp": "2025-11-03T02:43:29.230659+00:00"
+        },
+        "selo_vibracional": "09a4c777c232f3a67e37cd15ff5348fdcb9eebb9d35ed1c1dcf6067687e4ebe9",
+        "saude_vibracional": 0.688,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 1.5237,
+          "eccentricity": 0.0934,
+          "obliquity_deg": 25.19
+        },
+        "coerencia": 1.0,
+        "risco": 0.021
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Marte",
+          "frequencia": 397.1356058172731,
+          "energia_vibracional": 0.8915928840565135,
+          "fase": 0.9075783200513423,
+          "timestamp": "2025-11-03T02:43:29.247427+00:00"
+        },
+        "selo_vibracional": "6f4a30b10fa6719e3735153a9a9a75c2971759c0915f1d659566cce5f84aec2a",
         "saude_vibracional": 0.969,
         "status_saude": "OURO (Perfeito Alinhamento)",
         "metadados_astronomicos": {
@@ -558,53 +638,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 442.0961477693091,
-          "energia_vibracional": 0.9976643904491654,
-          "fase": -2.921594260574294,
-          "timestamp": "2025-10-31T14:01:55.703766+00:00"
+          "frequencia": 415.8570667023516,
+          "energia_vibracional": 1.0646834286292568,
+          "fase": -1.16441843047778,
+          "timestamp": "2025-11-03T02:43:29.262431+00:00"
         },
-        "selo_vibracional": "eee0e31adae3452f943c759b5ac97312c83b4c56e308d150a901362b523b90b5",
-        "saude_vibracional": 0.551,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.5237,
-          "eccentricity": 0.0934,
-          "obliquity_deg": 25.19
-        },
-        "coerencia": 1.0,
-        "risco": 0.018
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Marte",
-          "frequencia": 417.53001893129397,
-          "energia_vibracional": 0.8078319619861065,
-          "fase": 1.298765033239873,
-          "timestamp": "2025-10-31T14:01:55.718397+00:00"
-        },
-        "selo_vibracional": "f9c2fff17a37099b3770f5073a8aa9d800b34d5bdc94b0f4cb205b4db9257a1c",
-        "saude_vibracional": 0.767,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.5237,
-          "eccentricity": 0.0934,
-          "obliquity_deg": 25.19
-        },
-        "coerencia": 1.0,
-        "risco": 0.017
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Marte",
-          "frequencia": 456.3719077201156,
-          "energia_vibracional": 1.0793830551783088,
-          "fase": -1.3078091645436933,
-          "timestamp": "2025-10-31T14:01:55.730159+00:00"
-        },
-        "selo_vibracional": "111307eb18d0eddc00990fdd38aa1b93fa8131eed40ce270cabc823651f58fb5",
-        "saude_vibracional": 0.858,
+        "selo_vibracional": "b2ef2dffecc1496fa5cf88e01bb789c213dfcbc9d4c1c0256c01160f8e3ac9c2",
+        "saude_vibracional": 0.729,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -618,53 +658,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Marte",
-          "frequencia": 426.2021285158411,
-          "energia_vibracional": 1.0867068192558116,
-          "fase": 0.4349897616941108,
-          "timestamp": "2025-10-31T14:01:55.741787+00:00"
+          "frequencia": 478.0916558162932,
+          "energia_vibracional": 1.1847405660784516,
+          "fase": 2.710760365136848,
+          "timestamp": "2025-11-03T02:43:29.275428+00:00"
         },
-        "selo_vibracional": "4a663e2caf6318f6b6eecbdfc6d79ffba83608752f2658de997b96dbf26040c9",
-        "saude_vibracional": 0.858,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.5237,
-          "eccentricity": 0.0934,
-          "obliquity_deg": 25.19
-        },
-        "coerencia": 1.0,
-        "risco": 0.017
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Marte",
-          "frequencia": 416.22365328102165,
-          "energia_vibracional": 0.8551877675813895,
-          "fase": 2.556640229410426,
-          "timestamp": "2025-10-31T14:01:55.763830+00:00"
-        },
-        "selo_vibracional": "fd32070fb29d88de46fca968fc74ab79fb24e5b7bf29b253e310e3cb660c1a39",
-        "saude_vibracional": 0.525,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 1.5237,
-          "eccentricity": 0.0934,
-          "obliquity_deg": 25.19
-        },
-        "coerencia": 1.0,
-        "risco": 0.023
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Marte",
-          "frequencia": 458.94573708378493,
-          "energia_vibracional": 0.9911232412129567,
-          "fase": 0.27825577775123767,
-          "timestamp": "2025-10-31T14:01:55.782516+00:00"
-        },
-        "selo_vibracional": "03cc1bf8c04e2efee16ca79b2c04fab09fdc5ea384dcd43dd3b28be89de350c5",
-        "saude_vibracional": 0.967,
+        "selo_vibracional": "d05d990ee65f0c8ac9940fe8ea37c2d7eaf36d5d7e166e24c8e4bb0a2ac9cf6f",
+        "saude_vibracional": 0.931,
         "status_saude": "OURO (Perfeito Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -676,7 +676,7 @@
         "risco": 0.023
       }
     ],
-    "taxa_OURO_PRATA": 0.75,
+    "taxa_OURO_PRATA": 0.5,
     "dissociacoes": 0,
     "MTTR": 0.0
   },
@@ -685,13 +685,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Netuno",
-          "frequencia": 451.86823165644915,
-          "energia_vibracional": 1.0381428452635784,
-          "fase": 1.8578358407116744,
-          "timestamp": "2025-10-31T14:01:55.796012+00:00"
+          "frequencia": 431.35567588213996,
+          "energia_vibracional": 0.9778343802436252,
+          "fase": -2.267758740785637,
+          "timestamp": "2025-11-03T02:43:29.289149+00:00"
         },
-        "selo_vibracional": "6349284ed735e20e8ba0f2188e545456ee210c7a1da83d697fc8c25be1749723",
-        "saude_vibracional": 0.608,
+        "selo_vibracional": "8f3bffc01355d44fec1de71f3f14b1e82a597e4d96bfd3ca8336d85b274f25ec",
+        "saude_vibracional": 0.554,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -705,74 +705,34 @@
       {
         "dados_vibracionais": {
           "planeta": "Netuno",
-          "frequencia": 437.2122641703632,
-          "energia_vibracional": 1.0883278257322893,
-          "fase": -2.9260147694120318,
-          "timestamp": "2025-10-31T14:01:55.810853+00:00"
+          "frequencia": 435.95207118661006,
+          "energia_vibracional": 1.1002485937068998,
+          "fase": -0.7445497659019534,
+          "timestamp": "2025-11-03T02:43:29.307500+00:00"
         },
-        "selo_vibracional": "17d4b388643e6178f5c98f80117c1d862da04bd428ff372fa1281778102759a6",
-        "saude_vibracional": 0.929,
-        "status_saude": "OURO (Perfeito Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.017
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 430.2070496442609,
-          "energia_vibracional": 0.9193797013895725,
-          "fase": -0.06698784519321573,
-          "timestamp": "2025-10-31T14:01:55.826666+00:00"
-        },
-        "selo_vibracional": "924c3bb0dd043da49e0b2111281eaaec4683e1881479587bddeebf797d25082d",
-        "saude_vibracional": 0.95,
-        "status_saude": "OURO (Perfeito Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.024
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 398.20570876033395,
-          "energia_vibracional": 1.136407883293128,
-          "fase": 2.2842400891971235,
-          "timestamp": "2025-10-31T14:01:55.845587+00:00"
-        },
-        "selo_vibracional": "398c43657922f98f365941bd68d59e9378dd69ac4bddca249a704620e46b65af",
-        "saude_vibracional": 0.689,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 408.46496533481945,
-          "energia_vibracional": 0.894633555660726,
-          "fase": 1.9868793527682738,
-          "timestamp": "2025-10-31T14:01:55.856936+00:00"
-        },
-        "selo_vibracional": "04845a89168d43230d4d86ce3262d7ab6cc7fcd4d9c0b3cfc981d6ad8fbb4c77",
-        "saude_vibracional": 0.717,
+        "selo_vibracional": "a33e0b70db210507f82cd2f70ca59d65c697bc4ec455719db56396dbf72fd73a",
+        "saude_vibracional": 0.747,
         "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 436.69322561000183,
+          "energia_vibracional": 0.8505455331192758,
+          "fase": 0.4463966987492367,
+          "timestamp": "2025-11-03T02:43:29.326358+00:00"
+        },
+        "selo_vibracional": "653ede87b59d631e6a0cb9938a42609cfaf8dbe5c6d872ed71ece3db06b6f4fc",
+        "saude_vibracional": 0.687,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
           "semi_major_axis_au": 30.1104,
@@ -785,133 +745,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Netuno",
-          "frequencia": 455.20071644779216,
-          "energia_vibracional": 1.0535389279042864,
-          "fase": -3.024916191852773,
-          "timestamp": "2025-10-31T14:01:55.876745+00:00"
+          "frequencia": 433.93562757176466,
+          "energia_vibracional": 1.0678398750847564,
+          "fase": -2.9068431359753197,
+          "timestamp": "2025-11-03T02:43:29.340007+00:00"
         },
-        "selo_vibracional": "86091fe1ad95869c182517ce4d1b1a40b7652bbea18fd76fdb46f82699a7d208",
-        "saude_vibracional": 0.673,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.017
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 401.75299893006525,
-          "energia_vibracional": 1.1089375118015106,
-          "fase": -1.960053984441715,
-          "timestamp": "2025-10-31T14:01:55.893285+00:00"
-        },
-        "selo_vibracional": "defa44f545b289c57c3aef92910aa9e0e5e0065451c01c9f0d243edffd1f2ef9",
-        "saude_vibracional": 0.675,
-        "status_saude": "BRONZE (Alinhamento Moderado)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.016
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 456.0165274244657,
-          "energia_vibracional": 0.9982229675254298,
-          "fase": -1.659865016564843,
-          "timestamp": "2025-10-31T14:01:55.910534+00:00"
-        },
-        "selo_vibracional": "3bc1be7dfb78c27f8071297f249328a53ae4bbc17aedfe85e92f51e287c0e229",
-        "saude_vibracional": 0.723,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 391.6893318544179,
-          "energia_vibracional": 1.0339882155872522,
-          "fase": 3.0500670868763615,
-          "timestamp": "2025-10-31T14:01:55.926909+00:00"
-        },
-        "selo_vibracional": "d45de4eda9947d5aa169397a24455345d32f4956703424afce38c4fe716a33ec",
-        "saude_vibracional": 0.746,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.023
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 453.15254766647064,
-          "energia_vibracional": 1.1498422498584797,
-          "fase": -2.2285699961261627,
-          "timestamp": "2025-10-31T14:01:55.938821+00:00"
-        },
-        "selo_vibracional": "8b0beea8d6e17b3f6b1a7509ec0db52c2a43ccdf3620e6ac22261f728fbc93ed",
-        "saude_vibracional": 0.74,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.018
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 457.27459176845565,
-          "energia_vibracional": 1.1913399923874808,
-          "fase": 1.9662577429636092,
-          "timestamp": "2025-10-31T14:01:55.950319+00:00"
-        },
-        "selo_vibracional": "f19df248a10c554b9f18564a65350351ef015ad48b71ae59e205af1d87cb6c1d",
-        "saude_vibracional": 0.718,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 30.1104,
-          "eccentricity": 0.0095,
-          "obliquity_deg": 28.32
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Netuno",
-          "frequencia": 423.10937970304394,
-          "energia_vibracional": 0.9858123939192245,
-          "fase": -0.509692778540801,
-          "timestamp": "2025-10-31T14:01:55.965543+00:00"
-        },
-        "selo_vibracional": "3774cd4dbddbe3c2d21ddcba1e0dc2035be9a2619b2065fb099e175d3dfb8c14",
-        "saude_vibracional": 0.544,
+        "selo_vibracional": "c40aba9752ea3ac13725aaa32176a86af2fb65fd83016085e203cfbc6d85c601",
+        "saude_vibracional": 0.561,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -921,9 +761,169 @@
         },
         "coerencia": 1.0,
         "risco": 0.021
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 407.7585473072379,
+          "energia_vibracional": 0.8954634745022061,
+          "fase": -3.0232235051729077,
+          "timestamp": "2025-11-03T02:43:29.351159+00:00"
+        },
+        "selo_vibracional": "1ff4accd5512346a5660d98201c29419090165b6aa0dec00928714adca4af3c4",
+        "saude_vibracional": 0.515,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.015
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 420.6656111330533,
+          "energia_vibracional": 0.9743485323051995,
+          "fase": -1.9557396755287053,
+          "timestamp": "2025-11-03T02:43:29.364209+00:00"
+        },
+        "selo_vibracional": "78757159e6d13c0c147018d68650254db41e285836620128b33d74a3c736cf16",
+        "saude_vibracional": 0.767,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 385.3850518181884,
+          "energia_vibracional": 0.9293084429662357,
+          "fase": -1.9938441489053498,
+          "timestamp": "2025-11-03T02:43:29.382988+00:00"
+        },
+        "selo_vibracional": "eecb9a49558866f40001351c7aea05021801e7744e277116a6c37a24ae62d630",
+        "saude_vibracional": 0.54,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.02
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 414.5059448617979,
+          "energia_vibracional": 1.0949936310844741,
+          "fase": 0.9702349238063555,
+          "timestamp": "2025-11-03T02:43:29.397171+00:00"
+        },
+        "selo_vibracional": "ce9486a2f85b717f5ff99320823b36f501207d0f14d9fe4c66394008802e58ba",
+        "saude_vibracional": 0.936,
+        "status_saude": "OURO (Perfeito Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.021
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 404.4913427480112,
+          "energia_vibracional": 1.1118836108306536,
+          "fase": -0.41149507597746215,
+          "timestamp": "2025-11-03T02:43:29.409415+00:00"
+        },
+        "selo_vibracional": "2c9974cf4f56296f6317d27584ab4c48093348410951dea178da5aad89399867",
+        "saude_vibracional": 0.578,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 434.2460895946943,
+          "energia_vibracional": 1.1711318915579265,
+          "fase": -0.16434776181063257,
+          "timestamp": "2025-11-03T02:43:29.428909+00:00"
+        },
+        "selo_vibracional": "2a18ed18812efb00d7537086ffa0d73b37f0449d293061fd4a4b9479abcd78d7",
+        "saude_vibracional": 0.587,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.022
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 424.3846007112402,
+          "energia_vibracional": 1.1092503335425143,
+          "fase": 0.023747162364494954,
+          "timestamp": "2025-11-03T02:43:29.438698+00:00"
+        },
+        "selo_vibracional": "70a31ab8c6d9a55c0f2faeafb155647f5d38a79f6d41962373c394797d91f2e5",
+        "saude_vibracional": 0.879,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Netuno",
+          "frequencia": 429.3153469131667,
+          "energia_vibracional": 1.0874254872296343,
+          "fase": -1.0266145371472188,
+          "timestamp": "2025-11-03T02:43:29.450806+00:00"
+        },
+        "selo_vibracional": "80ed9ca24f532941b422f0aa8e1b7b162212903fd956c344bc4b7d4c81521494",
+        "saude_vibracional": 0.814,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 30.1104,
+          "eccentricity": 0.0095,
+          "obliquity_deg": 28.32
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
       }
     ],
-    "taxa_OURO_PRATA": 0.583,
+    "taxa_OURO_PRATA": 0.417,
     "dissociacoes": 0,
     "MTTR": 0.0
   },
@@ -932,13 +932,13 @@
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 400.3017761755411,
-          "energia_vibracional": 1.1647189742025927,
-          "fase": 2.985190297375607,
-          "timestamp": "2025-10-31T14:01:55.979884+00:00"
+          "frequencia": 464.2136069796884,
+          "energia_vibracional": 1.0051836513272367,
+          "fase": 2.784374792923152,
+          "timestamp": "2025-11-03T02:43:29.461322+00:00"
         },
-        "selo_vibracional": "9a47a51a7200e9474f2e1b6146ed80878c619b354866e3956406a4dd1f7aecc4",
-        "saude_vibracional": 0.796,
+        "selo_vibracional": "93b242113ba4484eb62e78fe47296941d49da6191f2794f3407551b65b592a6c",
+        "saude_vibracional": 0.805,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -947,19 +947,19 @@
           "obliquity_deg": 3.13
         },
         "coerencia": 1.0,
-        "risco": 0.023
+        "risco": 0.021
       },
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 410.86071014740514,
-          "energia_vibracional": 0.954533476095709,
-          "fase": 0.1307594437290358,
-          "timestamp": "2025-10-31T14:01:55.991398+00:00"
+          "frequencia": 471.970722887348,
+          "energia_vibracional": 0.8736919387008799,
+          "fase": 0.3085443581572085,
+          "timestamp": "2025-11-03T02:43:29.472172+00:00"
         },
-        "selo_vibracional": "c0dae4c891c335e396d14a79fc4b19243a8d612e58dc92b61c935e52a86ab849",
-        "saude_vibracional": 0.712,
-        "status_saude": "PRATA (Bom Alinhamento)",
+        "selo_vibracional": "27e646faab6dfe963dc97feb754f5161792e9e4f22e1dcb0a7f0cfd8419a2d22",
+        "saude_vibracional": 0.52,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
           "semi_major_axis_au": 5.2026,
@@ -967,98 +967,18 @@
           "obliquity_deg": 3.13
         },
         "coerencia": 1.0,
-        "risco": 0.018
+        "risco": 0.021
       },
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 385.9689222161999,
-          "energia_vibracional": 0.9845716756138104,
-          "fase": -1.3490036168465516,
-          "timestamp": "2025-10-31T14:01:56.005653+00:00"
+          "frequencia": 395.5919313034012,
+          "energia_vibracional": 0.8858007845863077,
+          "fase": 1.1749224509351839,
+          "timestamp": "2025-11-03T02:43:29.484167+00:00"
         },
-        "selo_vibracional": "f1c1bafb96f0ed67ab1e753ec54b598f72d7501234c875e3f544277ab798304c",
-        "saude_vibracional": 0.907,
-        "status_saude": "OURO (Perfeito Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 5.2026,
-          "eccentricity": 0.0489,
-          "obliquity_deg": 3.13
-        },
-        "coerencia": 1.0,
-        "risco": 0.02
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Júpiter",
-          "frequencia": 420.1175727713527,
-          "energia_vibracional": 0.8145598712481293,
-          "fase": 2.874775984692133,
-          "timestamp": "2025-10-31T14:01:56.018708+00:00"
-        },
-        "selo_vibracional": "826e68d794fbdf05e8e25d9cd6a4ad869edbe2259b81c2d0078325f7f936d0b6",
-        "saude_vibracional": 0.721,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 5.2026,
-          "eccentricity": 0.0489,
-          "obliquity_deg": 3.13
-        },
-        "coerencia": 1.0,
-        "risco": 0.016
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Júpiter",
-          "frequencia": 393.56342917441447,
-          "energia_vibracional": 1.108885357390196,
-          "fase": 1.7788339402054412,
-          "timestamp": "2025-10-31T14:01:56.034583+00:00"
-        },
-        "selo_vibracional": "67d992381c5da9e5969003df5791c284d685d3574e8ab1e46368cc63646ba466",
-        "saude_vibracional": 0.704,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 5.2026,
-          "eccentricity": 0.0489,
-          "obliquity_deg": 3.13
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Júpiter",
-          "frequencia": 445.7411871630722,
-          "energia_vibracional": 1.1486751603515595,
-          "fase": -0.887118715851342,
-          "timestamp": "2025-10-31T14:01:56.048347+00:00"
-        },
-        "selo_vibracional": "4357e2b115d6d1df34c95e8ed9aca7749ce1f89971fd95f9817fb5a23ee2c21d",
-        "saude_vibracional": 0.817,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 5.2026,
-          "eccentricity": 0.0489,
-          "obliquity_deg": 3.13
-        },
-        "coerencia": 1.0,
-        "risco": 0.019
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Júpiter",
-          "frequencia": 460.220527999147,
-          "energia_vibracional": 1.1884083618769354,
-          "fase": -2.8825002246900455,
-          "timestamp": "2025-10-31T14:01:56.059503+00:00"
-        },
-        "selo_vibracional": "ec0f67a25e6eb3e8f32e8e415860d97297a7e52fb5715df38c63b650edbdd6eb",
-        "saude_vibracional": 0.535,
+        "selo_vibracional": "911ecc97048c37daa09b5521fd77e8f9ed6e0c2e1bf1a1925c05a4742719efd7",
+        "saude_vibracional": 0.523,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -1072,12 +992,32 @@
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 458.02590810296067,
-          "energia_vibracional": 0.9953800398880746,
-          "fase": -3.0631838673189655,
-          "timestamp": "2025-10-31T14:01:56.073727+00:00"
+          "frequencia": 395.74088770511366,
+          "energia_vibracional": 1.1892991969359827,
+          "fase": -0.41740723648021383,
+          "timestamp": "2025-11-03T02:43:29.495168+00:00"
         },
-        "selo_vibracional": "435d3858031b866334d15ec9ad849a7225ef2a5735380bf762a73fd9380f2175",
+        "selo_vibracional": "a03c802fda803e2c6c4e0e43676dbe538193cb81ce287ecccaa7f384723bf301",
+        "saude_vibracional": 0.726,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 5.2026,
+          "eccentricity": 0.0489,
+          "obliquity_deg": 3.13
+        },
+        "coerencia": 1.0,
+        "risco": 0.016
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Júpiter",
+          "frequencia": 472.6968309609542,
+          "energia_vibracional": 1.1256453223035712,
+          "fase": -2.2455672632919934,
+          "timestamp": "2025-11-03T02:43:29.507359+00:00"
+        },
+        "selo_vibracional": "3ecd068cc6f26c7f370c016c1dec52e309f3b70f9c7fa2fe46b495c89be12a76",
         "saude_vibracional": 0.664,
         "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
@@ -1092,13 +1032,73 @@
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 399.9629116417569,
-          "energia_vibracional": 1.017914883096546,
-          "fase": 2.899355916948231,
-          "timestamp": "2025-10-31T14:01:56.089211+00:00"
+          "frequencia": 401.8530337646306,
+          "energia_vibracional": 1.1632790942750413,
+          "fase": 1.2336455512155384,
+          "timestamp": "2025-11-03T02:43:29.519540+00:00"
         },
-        "selo_vibracional": "68dc1b1fd0a003d80bece4c6fe5ddc49a565c9054b3977aa9922afe05a45e9d1",
-        "saude_vibracional": 0.754,
+        "selo_vibracional": "350b099d5a0c0a45075ebb4862365ce6910ca339ad7303bfec54867591eb236b",
+        "saude_vibracional": 0.926,
+        "status_saude": "OURO (Perfeito Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 5.2026,
+          "eccentricity": 0.0489,
+          "obliquity_deg": 3.13
+        },
+        "coerencia": 1.0,
+        "risco": 0.024
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Júpiter",
+          "frequencia": 450.0408174786118,
+          "energia_vibracional": 0.8677538701206713,
+          "fase": 2.7023602878693556,
+          "timestamp": "2025-11-03T02:43:29.529510+00:00"
+        },
+        "selo_vibracional": "9d04eaa326940069ae547d1b69f3e8f740843374e9d9e76d836f94fd5f3eac21",
+        "saude_vibracional": 0.815,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 5.2026,
+          "eccentricity": 0.0489,
+          "obliquity_deg": 3.13
+        },
+        "coerencia": 1.0,
+        "risco": 0.018
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Júpiter",
+          "frequencia": 472.77035779123923,
+          "energia_vibracional": 1.181982580024328,
+          "fase": 1.0102668627669924,
+          "timestamp": "2025-11-03T02:43:29.541277+00:00"
+        },
+        "selo_vibracional": "8c0a5379e7efc8b168f43e96b6d05c916181439aeea122586a6be73ea0a34fe8",
+        "saude_vibracional": 0.816,
+        "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 5.2026,
+          "eccentricity": 0.0489,
+          "obliquity_deg": 3.13
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Júpiter",
+          "frequencia": 396.69164565182666,
+          "energia_vibracional": 0.9995368354644861,
+          "fase": -1.9746281483940131,
+          "timestamp": "2025-11-03T02:43:29.551247+00:00"
+        },
+        "selo_vibracional": "72b2d7be7da671ef55038861f7501d3d4007924af4ee8aa18b5d765c787fc7d6",
+        "saude_vibracional": 0.884,
         "status_saude": "PRATA (Bom Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
@@ -1112,14 +1112,34 @@
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 428.53440076980115,
-          "energia_vibracional": 1.1710755234857073,
-          "fase": 2.668724775312284,
-          "timestamp": "2025-10-31T14:01:56.106797+00:00"
+          "frequencia": 438.9238427048145,
+          "energia_vibracional": 0.9586403194010933,
+          "fase": -0.8801620336023064,
+          "timestamp": "2025-11-03T02:43:29.560472+00:00"
         },
-        "selo_vibracional": "fee21f7de4d8a14daa241a59354d58dca3fce820912c3a49797e353a6085ee96",
-        "saude_vibracional": 0.767,
+        "selo_vibracional": "97fe09737aaa4a8930c5883a54f804b35acad8074fd5c99f6f9f68abff10b60a",
+        "saude_vibracional": 0.778,
         "status_saude": "PRATA (Bom Alinhamento)",
+        "metadados_astronomicos": {
+          "type": "planet",
+          "semi_major_axis_au": 5.2026,
+          "eccentricity": 0.0489,
+          "obliquity_deg": 3.13
+        },
+        "coerencia": 1.0,
+        "risco": 0.019
+      },
+      {
+        "dados_vibracionais": {
+          "planeta": "Júpiter",
+          "frequencia": 445.64750435998997,
+          "energia_vibracional": 1.0203104031282897,
+          "fase": 2.8203460467264723,
+          "timestamp": "2025-11-03T02:43:29.571580+00:00"
+        },
+        "selo_vibracional": "5b4c4c7fcac705a656c3f3c21014ee69e83c11018c680dbd54fd18fe68fb6775",
+        "saude_vibracional": 0.692,
+        "status_saude": "BRONZE (Alinhamento Moderado)",
         "metadados_astronomicos": {
           "type": "planet",
           "semi_major_axis_au": 5.2026,
@@ -1132,14 +1152,14 @@
       {
         "dados_vibracionais": {
           "planeta": "Júpiter",
-          "frequencia": 390.7667586435946,
-          "energia_vibracional": 0.9140315511007596,
-          "fase": -2.1886270210869663,
-          "timestamp": "2025-10-31T14:01:56.129927+00:00"
+          "frequencia": 435.05872820024405,
+          "energia_vibracional": 1.0810098467096174,
+          "fase": -2.543127694908795,
+          "timestamp": "2025-11-03T02:43:29.584238+00:00"
         },
-        "selo_vibracional": "24dcccce88dca66bbca5c2d728831ab26cf5bf54045c47d43eb80333b8f8de67",
-        "saude_vibracional": 0.766,
-        "status_saude": "PRATA (Bom Alinhamento)",
+        "selo_vibracional": "a8118d7f23ef4c38dfdb5d463ef1407d16adaa3ef7fec1f998cf1bf0a87ccad0",
+        "saude_vibracional": 0.936,
+        "status_saude": "OURO (Perfeito Alinhamento)",
         "metadados_astronomicos": {
           "type": "planet",
           "semi_major_axis_au": 5.2026,
@@ -1148,29 +1168,9 @@
         },
         "coerencia": 1.0,
         "risco": 0.021
-      },
-      {
-        "dados_vibracionais": {
-          "planeta": "Júpiter",
-          "frequencia": 437.03720532082247,
-          "energia_vibracional": 1.1586947682638582,
-          "fase": 1.8362065159094068,
-          "timestamp": "2025-10-31T14:01:56.144384+00:00"
-        },
-        "selo_vibracional": "536f8073583f9b46c6d4260a08abcbc9a41f1f108cea87d2dd0da78f4fadb8b0",
-        "saude_vibracional": 0.837,
-        "status_saude": "PRATA (Bom Alinhamento)",
-        "metadados_astronomicos": {
-          "type": "planet",
-          "semi_major_axis_au": 5.2026,
-          "eccentricity": 0.0489,
-          "obliquity_deg": 3.13
-        },
-        "coerencia": 1.0,
-        "risco": 0.022
       }
     ],
-    "taxa_OURO_PRATA": 0.833,
+    "taxa_OURO_PRATA": 0.667,
     "dissociacoes": 0,
     "MTTR": 0.0
   }

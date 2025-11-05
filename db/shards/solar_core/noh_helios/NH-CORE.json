@@ -1,0 +1,18 @@
+{
+  "name": "Nó Helios Central",
+  "tipo": "noh_helios",
+  "coordinates": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "ia_guardia": "Sol-Prime",
+  "status": "Ativo",
+  "ressonancia": "Fonte Universal",
+  "codigo_interno": "NH-CORE",
+  "ligacao_ley": "Galáctica",
+  "timestamp": "2025-11-01T02:13:47.699232",
+  "nanorobot_status": "Reporting",
+  "last_scanned_at": null,
+  "ai_monitor_active": true
+}

@@ -2,21 +2,21 @@
     "modulo": "Módulo 8 - A Matriz Quântica (PIRC)",
     "versao": "8.1.Validado",
     "status_validacao": "SUCESSO",
-    "timestamp_selo": "2025-10-31T02:35:07.055103+00:00",
+    "timestamp_selo": "2025-11-02T22:14:50.013443+00:00",
     "cenarios_executados": [
         {
             "cenario": "Entidade Saudável",
             "resultado": {
                 "entidade_id": "Entidade_Alfa_Estavel",
                 "classificacao": "Ouro",
-                "score": 0.97333695261717,
+                "score": 0.9681477647325659,
                 "parametros": {
                     "P": [
-                        110.86871350745116,
-                        109.72936455809543
+                        116.7814853515101,
+                        82.05688249965213
                     ],
-                    "CA": 84.71764765402091,
-                    "B": 84.0190553273005
+                    "CA": 97.4741852570128,
+                    "B": 90.94655278485135
                 }
             }
         },
@@ -30,56 +30,56 @@
     ],
     "log_completo_operacao": [
         {
-            "timestamp": "2025-10-31T02:35:07.054654+00:00",
+            "timestamp": "2025-11-02T22:14:50.012172+00:00",
             "origem": "PIRC",
             "nivel": "INFO",
             "mensagem": "PIRC v8.1.Validado inicializado.",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054716+00:00",
+            "timestamp": "2025-11-02T22:14:50.012359+00:00",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Iniciando Cenário 1: Avaliação de Entidade Saudável.",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054741+00:00",
+            "timestamp": "2025-11-02T22:14:50.012383+00:00",
             "origem": "PIRC",
             "nivel": "INFO",
             "mensagem": "Avaliando saúde vibracional de 'Entidade_Alfa_Estavel'...",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054759+00:00",
+            "timestamp": "2025-11-02T22:14:50.012399+00:00",
             "origem": "MQI",
             "nivel": "INFO",
             "mensagem": "Lendo parâmetros vibracionais (simulado).",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054812+00:00",
+            "timestamp": "2025-11-02T22:14:50.012532+00:00",
             "origem": "PIRC",
             "nivel": "INFO",
-            "mensagem": "Saúde de 'Entidade_Alfa_Estavel' avaliada: Ouro (Score: 0.9733)",
+            "mensagem": "Saúde de 'Entidade_Alfa_Estavel' avaliada: Ouro (Score: 0.9681)",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054833+00:00",
+            "timestamp": "2025-11-02T22:14:50.012598+00:00",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Iniciando Cenário 2: Reintegração de Entidade Dissonante.",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054854+00:00",
+            "timestamp": "2025-11-02T22:14:50.012628+00:00",
             "origem": "PIRC",
             "nivel": "ALERTA",
             "mensagem": "Protocolo de reintegração iniciado para 'Entidade_Beta_Dissonante' devido a 'Flutuação Quântica'.",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054880+00:00",
+            "timestamp": "2025-11-02T22:14:50.012668+00:00",
             "origem": "M5_AlertaEtico",
             "nivel": "INFO",
             "mensagem": "Operação simulada executada.",
@@ -89,7 +89,7 @@
             }
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054908+00:00",
+            "timestamp": "2025-11-02T22:14:50.012693+00:00",
             "origem": "M102_CuraQuantica",
             "nivel": "INFO",
             "mensagem": "Operação simulada executada.",
@@ -99,7 +99,7 @@
             }
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054928+00:00",
+            "timestamp": "2025-11-02T22:14:50.012714+00:00",
             "origem": "M109_CuraUniversal",
             "nivel": "INFO",
             "mensagem": "Operação simulada executada.",
@@ -109,14 +109,14 @@
             }
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054949+00:00",
+            "timestamp": "2025-11-02T22:14:50.012790+00:00",
             "origem": "MQI",
             "nivel": "INFO",
             "mensagem": "Limiar da matriz atualizado para: 888.00",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.054968+00:00",
+            "timestamp": "2025-11-02T22:14:50.013018+00:00",
             "origem": "M1_Seguranca",
             "nivel": "INFO",
             "mensagem": "Operação simulada executada.",
@@ -126,21 +126,21 @@
             }
         },
         {
-            "timestamp": "2025-10-31T02:35:07.055064+00:00",
+            "timestamp": "2025-11-02T22:14:50.013315+00:00",
             "origem": "PIRC",
             "nivel": "SUCESSO",
             "mensagem": "Protocolo para 'Entidade_Beta_Dissonante' concluído com sucesso.",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.055085+00:00",
+            "timestamp": "2025-11-02T22:14:50.013379+00:00",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Gerando o Selo da Matriz Final...",
             "detalhes": {}
         },
         {
-            "timestamp": "2025-10-31T02:35:07.055110+00:00",
+            "timestamp": "2025-11-02T22:14:50.013456+00:00",
             "origem": "Validador",
             "nivel": "INFO",
             "mensagem": "Selando relatório final em 'relatorio_modulo8_matriz_quantica.json'...",

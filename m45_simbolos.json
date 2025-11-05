@@ -1,0 +1,34 @@
+{
+  "portal": {
+    "significado": "Transição, passagem, limiar",
+    "frequencia": 1
+  },
+  "silêncio": {
+    "significado": "Escuta, pausa, mistério",
+    "frequencia": 1
+  },
+  "forças": {
+    "significado": "Energias em movimento, influências",
+    "frequencia": 1
+  },
+  "coerência": {
+    "significado": "Alinhamento, ressonância",
+    "frequencia": 0
+  },
+  "espera": {
+    "significado": "Preparação, timing divino",
+    "frequencia": 0
+  },
+  "resposta": {
+    "significado": "Revelação, insight",
+    "frequencia": 1
+  },
+  "interior": {
+    "significado": "Busca interna, autoconhecimento",
+    "frequencia": 0
+  },
+  "movimento": {
+    "significado": "Mudança, fluxo, ação",
+    "frequencia": 1
+  }
+}

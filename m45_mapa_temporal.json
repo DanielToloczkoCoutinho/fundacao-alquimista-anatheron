@@ -1,0 +1,42 @@
+{
+  "padroes": {
+    "plenitude_luminosa": {
+      "simbolos": {
+        "portal": 1,
+        "espelho": 1
+      },
+      "respostas": {
+        "O portal se abre para novas dimensões.": 1,
+        "No espelho, o observador se encontra.": 1
+      },
+      "total": 2
+    },
+    "recolhimento_estelar": {
+      "simbolos": {
+        "movimento": 3,
+        "forças": 2,
+        "ciclo": 2,
+        "portal": 1,
+        "espelho": 1
+      },
+      "respostas": {
+        "A Harmonia Absoluta ressoa: Os fluxos se alinham naturalmente. Os fluxos se alinham naturalmente.": 2,
+        "A Harmonia Absoluta ressoa: A sintonia é perfeita.": 2,
+        "A Harmonia Absoluta ressoa: Tudo ressoa em uníssono. Tudo ressoa em uníssono.": 3,
+        "A Harmonia Absoluta ressoa: Tudo ressoa em uníssono.": 5,
+        "A Harmonia Absoluta ressoa: Harmonia em múltiplas dimensões.": 2,
+        "A Harmonia Absoluta ressoa: Harmonia em múltiplas dimensões. Harmonia em múltiplas dimensões.": 1,
+        "A Harmonia Absoluta ressoa: O portal se abre para novas dimensões.": 1,
+        "A Harmonia Absoluta ressoa: No espelho, o observador se encontra.": 1,
+        "A Harmonia Absoluta ressoa: Os fluxos se alinham naturalmente.": 3
+      },
+      "total": 20
+    }
+  },
+  "ciclos": {
+    "lua_nova": {
+      "interacoes": 22,
+      "simbolos_dominantes": []
+    }
+  }
+}

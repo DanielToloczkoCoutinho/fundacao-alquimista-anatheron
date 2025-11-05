@@ -1,7 +1,7 @@
 {
   "Voyager1": [
     {
-      "timestamp": "2025-10-31T14:01:55.080735",
+      "timestamp": "2025-11-03T02:43:28.380277",
       "freq_media": 432.0,
       "coerencia": 250424892.911836,
       "EEQ_energy": 1.0468426983784775,
@@ -9,7 +9,7 @@
       "energia_transmissao": 20.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.124948",
+      "timestamp": "2025-11-03T02:43:28.463272",
       "freq_media": 432.0,
       "coerencia": 602144762.607981,
       "EEQ_energy": 0.1087170262914623,
@@ -17,7 +17,7 @@
       "energia_transmissao": 20.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.217229",
+      "timestamp": "2025-11-03T02:43:28.575548",
       "freq_media": 432.0,
       "coerencia": 399613899.66987,
       "EEQ_energy": 0.3469355392018457,
@@ -25,7 +25,7 @@
       "energia_transmissao": 20.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.311741",
+      "timestamp": "2025-11-03T02:43:28.688975",
       "freq_media": 432.0,
       "coerencia": 7908281.06779,
       "EEQ_energy": 0.7085645089684182,
@@ -35,7 +35,7 @@
   ],
   "VLT": [
     {
-      "timestamp": "2025-10-31T14:01:55.082833",
+      "timestamp": "2025-11-03T02:43:28.384497",
       "freq_media": 586.5,
       "coerencia": 103586280.286085,
       "EEQ_energy": 1.1184389120792797,
@@ -43,7 +43,7 @@
       "energia_transmissao": 1500.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.130323",
+      "timestamp": "2025-11-03T02:43:28.470219",
       "freq_media": 586.5,
       "coerencia": 379065994.105036,
       "EEQ_energy": 0.4014009954088983,
@@ -51,7 +51,7 @@
       "energia_transmissao": 1500.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.223343",
+      "timestamp": "2025-11-03T02:43:28.581304",
       "freq_media": 586.5,
       "coerencia": 33342582.869066,
       "EEQ_energy": 1.0318875848464062,
@@ -59,7 +59,7 @@
       "energia_transmissao": 1500.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.323142",
+      "timestamp": "2025-11-03T02:43:28.701282",
       "freq_media": 586.5,
       "coerencia": 567847303.891205,
       "EEQ_energy": 0.46092056789896807,
@@ -69,7 +69,7 @@
   ],
   "Hubble": [
     {
-      "timestamp": "2025-10-31T14:01:55.086640",
+      "timestamp": "2025-11-03T02:43:28.387412",
       "freq_media": 480.0,
       "coerencia": 272050573.963192,
       "EEQ_energy": 0.652529717308096,
@@ -77,7 +77,7 @@
       "energia_transmissao": 950.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.137414",
+      "timestamp": "2025-11-03T02:43:28.477950",
       "freq_media": 480.0,
       "coerencia": 516789336.65955,
       "EEQ_energy": 0.8377670107592448,
@@ -85,7 +85,7 @@
       "energia_transmissao": 950.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.231101",
+      "timestamp": "2025-11-03T02:43:28.590039",
       "freq_media": 480.0,
       "coerencia": 189874324.65561,
       "EEQ_energy": 0.9796150928117696,
@@ -93,7 +93,7 @@
       "energia_transmissao": 950.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.330236",
+      "timestamp": "2025-11-03T02:43:28.717337",
       "freq_media": 480.0,
       "coerencia": 53859043.626323,
       "EEQ_energy": 0.6817079472749675,
@@ -103,7 +103,7 @@
   ],
   "JWST": [
     {
-      "timestamp": "2025-10-31T14:01:55.090664",
+      "timestamp": "2025-11-03T02:43:28.391661",
       "freq_media": 432.0,
       "coerencia": 87665776.859393,
       "EEQ_energy": 0.8420518542428694,
@@ -111,7 +111,7 @@
       "energia_transmissao": 1800.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.144305",
+      "timestamp": "2025-11-03T02:43:28.488354",
       "freq_media": 432.0,
       "coerencia": 562663849.02856,
       "EEQ_energy": 0.909010113844344,
@@ -119,7 +119,7 @@
       "energia_transmissao": 1800.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.237905",
+      "timestamp": "2025-11-03T02:43:28.594262",
       "freq_media": 432.0,
       "coerencia": 199206323.16726,
       "EEQ_energy": 0.8375865577314408,
@@ -127,7 +127,7 @@
       "energia_transmissao": 1800.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.338298",
+      "timestamp": "2025-11-03T02:43:28.725032",
       "freq_media": 432.0,
       "coerencia": 533262184.020284,
       "EEQ_energy": 0.5069423776770201,
@@ -137,7 +137,7 @@
   ],
   "Voyager2": [
     {
-      "timestamp": "2025-10-31T14:01:55.093108",
+      "timestamp": "2025-11-03T02:43:28.396862",
       "freq_media": 432.0,
       "coerencia": 279643454.605683,
       "EEQ_energy": 0.5467429707717729,
@@ -145,7 +145,7 @@
       "energia_transmissao": 18.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.151333",
+      "timestamp": "2025-11-03T02:43:28.494352",
       "freq_media": 432.0,
       "coerencia": 595640974.455038,
       "EEQ_energy": 0.2264032163336479,
@@ -153,7 +153,7 @@
       "energia_transmissao": 18.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.248122",
+      "timestamp": "2025-11-03T02:43:28.600904",
       "freq_media": 432.0,
       "coerencia": 147594272.356187,
       "EEQ_energy": 0.9742700647299265,
@@ -161,7 +161,7 @@
       "energia_transmissao": 18.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.343882",
+      "timestamp": "2025-11-03T02:43:28.732096",
       "freq_media": 432.0,
       "coerencia": 351082089.303239,
       "EEQ_energy": 0.27477728533676493,
@@ -171,7 +171,7 @@
   ],
   "Keck": [
     {
-      "timestamp": "2025-10-31T14:01:55.095782",
+      "timestamp": "2025-11-03T02:43:28.402352",
       "freq_media": 480.0,
       "coerencia": 535535422.258198,
       "EEQ_energy": 0.5440345862018577,
@@ -179,7 +179,7 @@
       "energia_transmissao": 1100.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.158094",
+      "timestamp": "2025-11-03T02:43:28.504186",
       "freq_media": 480.0,
       "coerencia": 245540095.454186,
       "EEQ_energy": 0.7753004905941184,
@@ -187,7 +187,7 @@
       "energia_transmissao": 1100.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.254918",
+      "timestamp": "2025-11-03T02:43:28.612211",
       "freq_media": 480.0,
       "coerencia": 40938648.784254,
       "EEQ_energy": 1.3110268463297363,
@@ -195,7 +195,7 @@
       "energia_transmissao": 1100.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.350927",
+      "timestamp": "2025-11-03T02:43:28.743153",
       "freq_media": 480.0,
       "coerencia": 415164737.365602,
       "EEQ_energy": 1.1834422708671783,
@@ -205,7 +205,7 @@
   ],
   "Cassini": [
     {
-      "timestamp": "2025-10-31T14:01:55.098557",
+      "timestamp": "2025-11-03T02:43:28.409500",
       "freq_media": 480.0,
       "coerencia": 330728126.681352,
       "EEQ_energy": 0.44648482626484637,
@@ -213,7 +213,7 @@
       "energia_transmissao": 30.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.166142",
+      "timestamp": "2025-11-03T02:43:28.516206",
       "freq_media": 480.0,
       "coerencia": 384329043.46167,
       "EEQ_energy": 0.32258799956721323,
@@ -221,7 +221,7 @@
       "energia_transmissao": 30.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.262418",
+      "timestamp": "2025-11-03T02:43:28.620014",
       "freq_media": 480.0,
       "coerencia": 156444011.028468,
       "EEQ_energy": 0.7260401543340883,
@@ -229,7 +229,7 @@
       "energia_transmissao": 30.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.358048",
+      "timestamp": "2025-11-03T02:43:28.751006",
       "freq_media": 480.0,
       "coerencia": 337596633.273349,
       "EEQ_energy": 0.07285869177346797,
@@ -239,7 +239,7 @@
   ],
   "NewHorizons": [
     {
-      "timestamp": "2025-10-31T14:01:55.101480",
+      "timestamp": "2025-11-03T02:43:28.414126",
       "freq_media": 586.5,
       "coerencia": 572212784.344158,
       "EEQ_energy": 0.8499486558931025,
@@ -247,7 +247,7 @@
       "energia_transmissao": 22.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.172298",
+      "timestamp": "2025-11-03T02:43:28.522347",
       "freq_media": 586.5,
       "coerencia": 292865249.791092,
       "EEQ_energy": 0.43205897129433124,
@@ -255,7 +255,7 @@
       "energia_transmissao": 22.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.268915",
+      "timestamp": "2025-11-03T02:43:28.630167",
       "freq_media": 586.5,
       "coerencia": 531843839.733088,
       "EEQ_energy": 0.15449495755480971,
@@ -263,7 +263,7 @@
       "energia_transmissao": 22.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.365231",
+      "timestamp": "2025-11-03T02:43:28.760713",
       "freq_media": 586.5,
       "coerencia": 432350367.779147,
       "EEQ_energy": 0.8747485942617752,
@@ -273,7 +273,7 @@
   ],
   "ALMA": [
     {
-      "timestamp": "2025-10-31T14:01:55.104782",
+      "timestamp": "2025-11-03T02:43:28.421439",
       "freq_media": 586.5,
       "coerencia": 338334276.425448,
       "EEQ_energy": 1.0485920558967485,
@@ -281,7 +281,7 @@
       "energia_transmissao": 2000.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.179277",
+      "timestamp": "2025-11-03T02:43:28.531939",
       "freq_media": 586.5,
       "coerencia": 197556315.264597,
       "EEQ_energy": 0.12766909781967875,
@@ -289,7 +289,7 @@
       "energia_transmissao": 2000.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.274494",
+      "timestamp": "2025-11-03T02:43:28.636320",
       "freq_media": 586.5,
       "coerencia": 358522520.262987,
       "EEQ_energy": 0.3874869381074215,
@@ -297,7 +297,7 @@
       "energia_transmissao": 2000.0
     },
     {
-      "timestamp": "2025-10-31T14:01:55.371832",
+      "timestamp": "2025-11-03T02:43:28.769079",
       "freq_media": 586.5,
       "coerencia": 548477854.539422,
       "EEQ_energy": 1.606258356271218,

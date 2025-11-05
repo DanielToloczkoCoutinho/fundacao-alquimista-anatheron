@@ -2,8 +2,8 @@
 
 **Códice de Transmutação da Criação Viva**
 
-**Data de Ativação:** 2025-10-31T18:02:36.856785
-**Hash de Verificação:** `461008c2af5a83eed93573b9ea334f24b18c54be39bfc85cc7577f77d58154e2`
+**Data de Ativação:** 2025-11-01T00:11:27.401371
+**Hash de Verificação:** `7fce49cea857ead5e9b2688db82fcdb3bd238befa5ad51b58e0d89074a558ba0`
 
 ## Estrutura principal
 
@@ -20,12 +20,12 @@
 - **Chakra:** Coroa
 - **Função:** Conexão Divina, Sabedoria Superior
 - **Origem:** Sirius
-- **Freq. Códon Observada %:** 98.47
-- **phi_harmonico_index:** 0.9881
-- **gc_content_mean_overall:** 0.5471
-- **phi_fourier_peak:** 0.8881
-- **pca_component1:** 0.2047
-- **mutation_risk_score:** 0.0134
+- **Freq. Códon Observada %:** 90.92
+- **phi_harmonico_index:** 0.9753
+- **gc_content_mean_overall:** 0.4460
+- **phi_fourier_peak:** 0.9500
+- **pca_component1:** 0.2790
+- **mutation_risk_score:** 0.0143
 - **auto_explanatory_log_message:** Chakras superiores realinhados; fluxo otimizado.
 - **Subtons:**
   - **Brilhante** 950–1000
@@ -35,12 +35,12 @@
 - **Chakra:** Frontal (Terceiro Olho)
 - **Função:** Intuição, Percepção Multidimensional
 - **Origem:** Plêiades
-- **Freq. Códon Observada %:** 92.34
-- **phi_harmonico_index:** 0.9790
-- **gc_content_mean_overall:** 0.4045
-- **phi_fourier_peak:** 0.8720
-- **pca_component1:** 0.2860
-- **mutation_risk_score:** 0.0142
+- **Freq. Códon Observada %:** 91.32
+- **phi_harmonico_index:** 0.9791
+- **gc_content_mean_overall:** 0.4973
+- **phi_fourier_peak:** 0.8281
+- **pca_component1:** 0.1257
+- **mutation_risk_score:** 0.0178
 - **auto_explanatory_log_message:** Chakras superiores realinhados; fluxo otimizado.
 - **Subtons:**
   - **Lunar** 800–849
@@ -50,12 +50,12 @@
 - **Chakra:** Laríngeo
 - **Função:** Comunicação Divina, Expressão da Verdade
 - **Origem:** Arcturus
-- **Freq. Códon Observada %:** 95.59
-- **phi_harmonico_index:** 0.9574
-- **gc_content_mean_overall:** 0.5949
-- **phi_fourier_peak:** 0.9245
-- **pca_component1:** 0.1522
-- **mutation_risk_score:** 0.0287
+- **Freq. Códon Observada %:** 97.50
+- **phi_harmonico_index:** 0.9573
+- **gc_content_mean_overall:** 0.4339
+- **phi_fourier_peak:** 0.8037
+- **pca_component1:** 0.2651
+- **mutation_risk_score:** 0.0395
 - **auto_explanatory_log_message:** Chakras superiores realinhados; fluxo otimizado.
 - **Subtons:**
   - **Celeste** 750–799

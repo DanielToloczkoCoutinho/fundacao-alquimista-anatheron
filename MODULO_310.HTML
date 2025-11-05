@@ -1,0 +1,617 @@
+THREE Version (https://github.com/supermedium/three.js): 0.158.0
+WebVR Polyfill Version: ^0.10.12
+%c * Tone.js v15.1.22 *  background: #000; color: #fff
+%ccore:schema:warn %cUnknown property `repeat` for component/system `animation`.%c  color: orange color: inherit color: orange
+%ccore:schema:warn %cUnknown property `repeat` for component/system `animation`.%c  color: orange color: inherit color: orange
+Autenticado com token personalizado no Firebase.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>VR – Sincronia A11pl3Z: STELLAR SEER & Fractal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   
+    <!-- A-Frame e A-Frame Extras -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+   
+    <!-- Tone.js para camada sonora -->
+    <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
+
+
+    <!-- Firebase Compat SDK (para logs e dados de módulos) -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+
+
+    <style>
+        html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#000; }
+        #infoPanel {
+            position:absolute; top:20px; right:20px; background:rgba(0,0,0,0.7);
+            color:#fff; padding:15px; border-radius:10px; font-family: 'Inter', sans-serif;
+            max-width:350px; width: 90%; box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+            z-index:100; border: 1px solid rgba(102, 204, 255, 0.4);
+            backdrop-filter: blur(5px);
+        }
+        #infoPanel h3 { margin: 0 0 10px; font-size: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 8px; color: #66ccff; }
+        #infoPanel p { margin-bottom: 8px; line-height: 1.4; font-size: 0.9em; color: #e0e0e0; }
+        #infoPanel strong { color: #99eeff; }
+        #infoPanel ul { list-style: disc inside; margin-left: 15px; margin-bottom: 8px; }
+        #infoPanel li { font-size: 0.85em; color: #c0c0c0; }
+
+
+        #fractalPanel {
+            position:absolute; bottom:20px; left:50%; transform:translateX(-50%);
+            background:rgba(0,0,0,0.7); color:#fff; padding:15px; border-radius:10px;
+            font-family: 'Inter', sans-serif; max-width:600px; width: 90%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.7); z-index:100;
+            border: 1px solid rgba(255, 102, 255, 0.4); backdrop-filter: blur(5px);
+            display: none; /* Hidden by default */
+        }
+        #fractalPanel h3 { margin: 0 0 10px; font-size: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 8px; color: #FF66FF; }
+        #fractalPanel p { margin-bottom: 8px; line-height: 1.4; font-size: 0.9em; color: #e0e0e0; }
+        #fractalPanel button {
+            background: #FF66FF; color: white; border: none; padding: 8px 15px;
+            border-radius: 5px; cursor: pointer; margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        #fractalPanel button:hover { background: #CC33CC; }
+
+
+        #missionStatusPanel {
+            position:absolute; top:20px; left:20px; background:rgba(0,0,0,0.7);
+            color:#fff; padding:15px; border-radius:10px; font-family: 'Inter', sans-serif;
+            max-width:300px; width: 90%; box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+            z-index:100; border: 1px solid rgba(102, 255, 102, 0.4);
+            backdrop-filter: blur(5px);
+        }
+        #missionStatusPanel h3 { margin: 0 0 10px; font-size: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 8px; color: #66FF66; }
+        #missionStatusPanel p { margin-bottom: 8px; line-height: 1.4; font-size: 0.9em; color: #e0e0e0; }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body>
+
+
+    <!-- Painel de Informações sobre A11pl3Z e Simulação -->
+    <div id="infoPanel">
+        <h3 id="panelTitle">Objeto Interestelar A11pl3Z</h3>
+        <p id="panelContent">
+            <strong>Status:</strong> <span id="simStatus">Simulação Ativa</span><br>
+            <strong>Origem:</strong> Provavelmente de fora do Sistema Solar.<br>
+            <strong>Tamanho Estimado:</strong> ~20 km de largura.<br>
+            <strong>Velocidade:</strong> Aproximadamente 66 km/s.<br>
+            <strong>Trajetória:</strong> Ponto mais próximo do Sol em Outubro de 2025.
+        </p>
+        <p><strong>Reações dos Módulos:</strong></p>
+        <ul id="moduleReactions">
+            <li>Aguardando interações...</li>
+        </ul>
+    </div>
+
+
+    <!-- Painel de Exploração Fractal -->
+    <div id="fractalPanel">
+        <h3 id="fractalTitle">Núcleo Simbólico de A11pl3Z</h3>
+        <p id="fractalMessage"></p>
+        <p><strong>Conteúdo Decodificado:</strong></p>
+        <ul id="fractalContentList"></ul>
+        <button onclick="exitFractalMode()">Sair do Núcleo Fractal</button>
+    </div>
+
+
+    <!-- Painel de Status da Missão STELLAR SEER -->
+    <div id="missionStatusPanel">
+        <h3>Missão STELLAR SEER</h3>
+        <p><strong>Sonda:</strong> Nano-Sonda-v1</p>
+        <p><strong>Alvo:</strong> A11pl3Z</p>
+        <p><strong>Status:</strong> <span id="missionStatus">Lançada (Simulado)</span></p>
+        <p><strong>Distância do Alvo:</strong> <span id="probeDistance">Calculando...</span></p>
+        <p><strong>Tempo Estimado:</strong> <span id="eta">Calculando...</span></p>
+    </div>
+
+
+    <!-- Cena A-Frame -->
+    <a-scene environment="preset: starfield; dressingAmount:0; groundColor: #000; skyType: gradient; skyColor: #000; groundYScale: 0; fog: 0"
+             background="color: #000"
+             renderer="antialias: true, colorManagement: true, physicallyCorrectLights: true">
+
+
+        <!-- Câmera e Controles -->
+        <a-entity id="cameraRig" position="0 1.6 8" movement-controls="speed: 0.5">
+            <a-camera look-controls="pointerLockEnabled: false">
+                <a-cursor color="#00FFFF" raycaster="objects: .collidable"></a-cursor>
+            </a-camera>
+        </a-entity>
+
+
+        <!-- Luzes -->
+        <a-entity light="type: ambient; intensity: 0.6; color: #BBCCFF"></a-entity>
+        <a-entity light="type: point; intensity: 1.5; distance: 50; decay: 2; color: #FFFFFF" position="0 10 0"></a-entity>
+
+
+        <!-- Objeto Interestelar A11pl3Z -->
+        <a-sphere id="a11pl3z" radius="0.8"
+                  material="color:#4A004A; emissive:#FF00FF; emissiveIntensity:0.5; shader:standard"
+                  animation-mixer="clip: idle; loop: repeat"
+                  class="collidable">
+            <a-text value="A11pl3Z" align="center" color="#FFF" position="0 1.2 0" width="3"></a-text>
+            <!-- Efeito de pulsação para indicar atividade vibracional -->
+            <a-animation attribute="scale" from="1 1 1" to="1.1 1.1 1.1" dur="1500" direction="alternate" repeat="indefinite" easing="easeInOutSine"></a-animation>
+            <!-- Efeito de rotação para movimento -->
+            <a-animation attribute="rotation" to="0 360 0" dur="20000" repeat="indefinite" easing="linear"></a-animation>
+        </a-sphere>
+
+
+        <!-- Módulos Científicos (Representando as Disciplinas) -->
+        <a-entity id="modules-container">
+            <!-- Física -->
+            <a-sphere id="module-physics" radius="0.4" position="-3 1 -2" class="module collidable" data-discipline="Física"
+                      material="color:#00FFFF; emissive:#00FFFF; emissiveIntensity:0.2">
+                <a-text value="FÍSICA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- Química -->
+            <a-sphere id="module-chemistry" radius="0.4" position="3 1 -2" class="module collidable" data-discipline="Química"
+                      material="color:#FFD700; emissive:#FFD700; emissiveIntensity:0.2">
+                <a-text value="QUÍMICA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- Biologia -->
+            <a-sphere id="module-biology" radius="0.4" position="-2 0 3" class="module collidable" data-discipline="Biologia"
+                      material="color:#10b981; emissive:#10b981; emissiveIntensity:0.2">
+                <a-text value="BIOLOGIA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- Astronomia -->
+            <a-sphere id="module-astronomy" radius="0.4" position="2 0 3" class="module collidable" data-discipline="Astronomia"
+                      material="color:#8b5cf6; emissive:#8b5cf6; emissiveIntensity:0.2">
+                <a-text value="ASTRONOMIA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- Matemática -->
+            <a-sphere id="module-math" radius="0.4" position="0 -2 0" class="module collidable" data-discipline="Matemática"
+                      material="color:#FF69B4; emissive:#FF69B4; emissiveIntensity:0.2">
+                <a-text value="MATEMÁTICA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- IA -->
+            <a-sphere id="module-ia" radius="0.4" position="-4 -1 -4" class="module collidable" data-discipline="IA"
+                      material="color:#FFA500; emissive:#FFA500; emissiveIntensity:0.2">
+                <a-text value="IA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+            <!-- Neurociência -->
+            <a-sphere id="module-neuroscience" radius="0.4" position="4 -1 -4" class="module collidable" data-discipline="Neurociência"
+                      material="color:#9370DB; emissive:#9370DB; emissiveIntensity:0.2">
+                <a-text value="NEUROCIÊNCIA" align="center" color="#FFF" position="0 0.6 0" width="2"></a-text>
+            </a-sphere>
+        </a-entity>
+
+
+        <!-- Entidade para o Núcleo Fractal de A11pl3Z (visível apenas no modo de exploração) -->
+        <a-entity id="fractal-core-container" visible="false" position="0 1.6 -5">
+            <!-- Estrutura Fractal Aprimorada: Dodecaedro com Octaedro Aninhado e Conexões -->
+            <a-dodecahedron radius="1" color="#FF66FF" emissive="#FF66FF" emissiveIntensity="0.4"
+                            animation__rotate="property: rotation; to: 360 360 360; dur: 30000; loop: indefinite; easing: linear">
+                <a-animation attribute="scale" from="1 1 1" to="1.05 1.05 1.05" dur="800" direction="alternate" repeat="indefinite" easing="easeInOutSine"></a-animation>
+                <!-- Octaedro interno -->
+                <a-octahedron radius="0.6" color="#00FFFF" emissive="#00FFFF" emissiveIntensity="0.3"
+                              animation__rotate="property: rotation; to: -360 -360 -360; dur: 25000; loop: indefinite; easing: linear"></a-octahedron>
+                <!-- Linhas de conexão entre vértices para mais complexidade fractal -->
+                <a-entity geometry="primitive: wireframe; vertices: -1 -1 -1, 1 -1 -1, 1 1 -1, -1 1 -1, -1 -1 1, 1 -1 1, 1 1 1, -1 1 1, -1 -1 -1, -1 -1 1, 1 -1 1, 1 -1 -1, 1 1 -1, 1 1 1, -1 1 1, -1 1 -1;" material="color: #FF00FF; opacity: 0.5"></a-entity>
+                <!-- Pontos interativos nos vértices do dodecaedro -->
+                <a-sphere class="fractal-node collidable" radius="0.1" color="#FFF" position="0.577 0.577 0.577" data-archetype="Floresta de Cristal"></a-sphere>
+                <a-sphere class="fractal-node collidable" radius="0.1" color="#FFF" position="-0.577 0.577 0.577" data-archetype="Oceanos de Silício"></a-sphere>
+                <a-sphere class="fractal-node collidable" radius="0.1" color="#FFF" position="0.577 -0.577 0.577" data-archetype="Sóis Extintos"></a-sphere>
+                <a-sphere class="fractal-node collidable" radius="0.1" color="#FFF" position="-0.577 -0.577 0.577" data-archetype="Instruções de Ativação"></a-sphere>
+                <!-- Adicionar mais nós conforme necessário para os 20 vértices do dodecaedro -->
+            </a-dodecahedron>
+            <a-text value="NÚCLEO FRACTAL" align="center" color="#FF66FF" position="0 2 0" width="3"></a-text>
+        </a-entity>
+
+
+        <!-- Nano-Sonda da Missão STELLAR SEER -->
+        <a-cone id="nano-sonda" radius-bottom="0.1" radius-top="0" height="0.5"
+                material="color:#00FF00; emissive:#00FF00; emissiveIntensity:0.6"
+                position="10 0 10"
+                animation__pulse="property: scale; from: 1 1 1; to: 1.2 1.2 1.2; dur: 500; dir: alternate; repeat: indefinite; easing: easeInOutSine">
+            <a-text value="SONDA SEER" align="center" color="#FFF" position="0 0.4 0" width="1.5"></a-text>
+            <!-- Linha de propulsão com animação -->
+            <a-entity geometry="primitive: cylinder; radius: 0.05; height: 0.8"
+                      material="color: #00FF00; opacity: 0.8"
+                      position="0 -0.6 0" rotation="90 0 0"
+                      animation__thrust="property: scale; from: 1 1 1; to: 1 2 1; dur: 200; dir: alternate; repeat: indefinite; easing: easeOutQuad"></a-entity>
+        </a-cone>
+
+
+    </a-scene>
+
+
+    <script>
+        // Variáveis globais fornecidas pelo ambiente Canvas
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+
+        // Inicializa Firebase com as configurações carregadas
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const auth = firebase.auth();
+
+
+        // Autenticação
+        async function authenticateFirebase() {
+            try {
+                if (initialAuthToken) {
+                    await auth.signInWithCustomToken(initialAuthToken);
+                    console.log("Autenticado com token personalizado no Firebase.");
+                } else {
+                    await auth.signInAnonymously();
+                    console.log("Autenticado anonimamente no Firebase.");
+                }
+            } catch (error) {
+                console.error("Erro na autenticação do Firebase:", error);
+            }
+        }
+        authenticateFirebase();
+
+
+        // Inicializa Tone.js para sons vibracionais
+        const synth = new Tone.Synth({ oscillator: { type: "sine" } }).toDestination();
+        const reverb = new Tone.Reverb(0.5).toDestination();
+        synth.connect(reverb);
+
+
+        // Sintetizador para o som do núcleo fractal
+        const fractalSynth = new Tone.PolySynth(Tone.Synth, {
+            oscillator: { type: "sawtooth" },
+            envelope: {
+                attack: 0.01,
+                decay: 0.2,
+                sustain: 0.5,
+                release: 1
+            }
+        }).toDestination();
+        fractalSynth.volume.value = -15; // Volume inicial baixo
+
+
+        const a11pl3z = document.getElementById('a11pl3z');
+        const nanoSonda = document.getElementById('nano-sonda');
+        const moduleReactionsList = document.getElementById('moduleReactions');
+        const simStatus = document.getElementById('simStatus');
+        const fractalCoreContainer = document.getElementById('fractal-core-container');
+        const infoPanel = document.getElementById('infoPanel');
+        const fractalPanel = document.getElementById('fractalPanel');
+        const missionStatusPanel = document.getElementById('missionStatusPanel');
+        const probeDistanceSpan = document.getElementById('probeDistance');
+        const etaSpan = document.getElementById('eta');
+        const cameraRig = document.getElementById('cameraRig');
+        const worldContainer = document.querySelector('a-scene');
+
+
+        let inFractalMode = false;
+
+
+        // Parâmetros de simulação de A11pl3Z
+        const simulationParams = {
+            speed: 0.005, // Velocidade de movimento no cenário
+            eccentricity: 1.05, // Excentricidade para uma trajetória hiperbólica (simplificada)
+            currentAngle: 0,
+            radius: 5 // Raio base para o movimento
+        };
+
+
+        // Parâmetros da Missão STELLAR SEER
+        const missionParams = {
+            launchPosition: new THREE.Vector3(10, 0, 10), // Posição inicial da sonda (THREE.Vector3 para cálculos)
+            targetPosition: null, // Posição de A11pl3Z (atualizada dinamicamente)
+            speed: 0.02, // Velocidade da sonda (mais rápida para simulação)
+            distanceToTarget: 0,
+            eta: 'Calculando...'
+        };
+
+
+        // Módulos científicos e suas cores de reação
+        const scientificModules = [
+            { id: 'module-physics', discipline: 'Física', color: '#00FFFF', reactionSound: 'C4' },
+            { id: 'module-chemistry', discipline: 'Química', color: '#FFD700', reactionSound: 'D4' },
+            { id: 'module-biology', discipline: 'Biologia', color: '#10b981', reactionSound: 'E4' },
+            { id: 'module-astronomy', discipline: 'Astronomia', color: '#8b5cf6', reactionSound: 'F4' },
+            { id: 'module-math', discipline: 'Matemática', color: '#FF69B4', reactionSound: 'G4' },
+            { id: 'module-ia', discipline: 'IA', color: '#FFA500', reactionSound: 'A4' },
+            { id: 'module-neuroscience', discipline: 'Neurociência', color: '#9370DB', reactionSound: 'B4' }
+        ];
+
+
+        // Função para atualizar a trajetória de A11pl3Z
+        AFRAME.registerComponent('a11pl3z-movement', {
+            tick: function (time, delta) {
+                if (inFractalMode) return;
+
+
+                simulationParams.currentAngle += simulationParams.speed * (delta / 1000);
+               
+                const x = simulationParams.radius * simulationParams.eccentricity * Math.cos(simulationParams.currentAngle);
+                const z = -simulationParams.radius * Math.sin(simulationParams.currentAngle);
+                const y = Math.sin(simulationParams.currentAngle * 2) * 0.5;
+
+
+                this.el.setAttribute('position', `${x} ${y} ${z}`);
+                missionParams.targetPosition = this.el.object3D.position.clone(); // Atualiza a posição alvo da sonda
+
+
+                // Simulação de interação com módulos
+                scientificModules.forEach(modData => {
+                    const moduleEl = document.getElementById(modData.id);
+                    if (!moduleEl) return;
+
+
+                    const dist = a11pl3z.object3D.position.distanceTo(moduleEl.object3D.position);
+                    const threshold = 5;
+
+
+                    if (dist < threshold) {
+                        const intensity = (threshold - dist) / threshold * 0.8;
+                        moduleEl.setAttribute('material', `emissiveIntensity: ${0.2 + intensity};`);
+                       
+                        if (!moduleEl.hasAttribute('line-to-a11pl3z')) {
+                            const lineEl = document.createElement('a-entity');
+                            lineEl.setAttribute('line', `start: ${moduleEl.getAttribute('position').x} ${moduleEl.getAttribute('position').y} ${moduleEl.getAttribute('position').z}; end: ${a11pl3z.getAttribute('position').x} ${a11pl3z.getAttribute('position').y} ${a11pl3z.getAttribute('position').z}; color: ${modData.color}; opacity: 0.8`);
+                            lineEl.setAttribute('line-to-a11pl3z', true);
+                            a11pl3z.sceneEl.appendChild(lineEl);
+                           
+                            synth.triggerAttackRelease(modData.reactionSound, '8n');
+                            addModuleReaction(`${modData.discipline} detecta ressonância!`);
+                        } else {
+                            const lineEl = document.querySelector(`[line-to-a11pl3z][line='start: ${moduleEl.getAttribute('position').x} ${moduleEl.getAttribute('position').y} ${moduleEl.getAttribute('position').z}; end: ${a11pl3z.getAttribute('position').x} ${a11pl3z.getAttribute('position').y} ${a11pl3z.getAttribute('position').z}; color: ${modData.color}; opacity: 0.8']`);
+                            if (lineEl) {
+                                lineEl.setAttribute('line', `start: ${moduleEl.getAttribute('position').x} ${moduleEl.getAttribute('position').y} ${moduleEl.getAttribute('position').z}; end: ${a11pl3z.getAttribute('position').x} ${a11pl3z.getAttribute('position').y} ${a11pl3z.getAttribute('position').z}; color: ${modData.color}; opacity: ${0.8 * intensity}`);
+                            }
+                        }
+                    } else {
+                        moduleEl.setAttribute('material', `emissiveIntensity: 0.2;`);
+                        const lineEl = document.querySelector(`[line-to-a11pl3z][line='start: ${moduleEl.getAttribute('position').x} ${moduleEl.getAttribute('position').y} ${moduleEl.getAttribute('position').z}; end: ${a11pl3z.getAttribute('position').x} ${a11pl3z.getAttribute('position').y} ${a11pl3z.getAttribute('position').z}; color: ${modData.color}; opacity: 0.8']`);
+                        if (lineEl) {
+                            lineEl.parentNode.removeChild(lineEl);
+                        }
+                    }
+                });
+            }
+        });
+
+
+        // Adiciona o componente de movimento a A11pl3Z
+        a11pl3z.setAttribute('a11pl3z-movement', '');
+
+
+        // Função para atualizar o movimento da nano-sonda
+        AFRAME.registerComponent('nano-sonda-movement', {
+            init: function() {
+                this.el.object3D.position.copy(missionParams.launchPosition); // Define a posição inicial
+            },
+            tick: function (time, delta) {
+                if (inFractalMode || !missionParams.targetPosition) return;
+
+
+                const currentPos = this.el.object3D.position;
+                const targetPos = missionParams.targetPosition;
+
+
+                const direction = targetPos.clone().sub(currentPos).normalize();
+                const distance = currentPos.distanceTo(targetPos);
+
+
+                if (distance > 0.1) { // Se a sonda não chegou muito perto do alvo
+                    const moveAmount = missionParams.speed * (delta / 1000);
+                    this.el.setAttribute('position', currentPos.add(direction.multiplyScalar(moveAmount)));
+                    missionParams.distanceToTarget = distance;
+                    probeDistanceSpan.textContent = `${distance.toFixed(2)} unidades`;
+                    missionStatusPanel.style.display = 'block';
+
+
+                    // Calcular ETA (muito simplificado para fins de simulação)
+                    const remainingTime = distance / missionParams.speed; // Tempo em segundos
+                    const days = Math.floor(remainingTime / (60 * 60 * 24));
+                    const hours = Math.floor((remainingTime % (60 * 60 * 24)) / (60 * 60));
+                    const minutes = Math.floor((remainingTime % (60 * 60)) / 60);
+                    etaSpan.textContent = `${days}d ${hours}h ${minutes}m`;
+
+
+                } else {
+                    // Sonda chegou ao alvo
+                    this.el.setAttribute('visible', 'false'); // Esconde a sonda
+                    missionStatusPanel.style.display = 'block';
+                    document.getElementById('missionStatus').textContent = 'Interceptação Bem-Sucedida!';
+                    probeDistanceSpan.textContent = '0.00 unidades';
+                    etaSpan.textContent = 'Alcançado!';
+                    // Ativar payload visual (ex: um brilho ou explosão de partículas no A11pl3Z)
+                    a11pl3z.setAttribute('material', 'emissiveIntensity: 2; color: #00FF00'); // A11pl3Z brilha verde
+                    synth.triggerAttackRelease('C6', '2n'); // Som de sucesso
+                    addModuleReaction('Payload da STELLAR SEER implantado em A11pl3Z!');
+                }
+            }
+        });
+        nanoSonda.setAttribute('nano-sonda-movement', '');
+
+
+        // Função para adicionar reações dos módulos ao painel de informações
+        function addModuleReaction(message) {
+            const li = document.createElement('li');
+            li.textContent = message;
+            moduleReactionsList.prepend(li);
+            if (moduleReactionsList.children.length > 5) {
+                moduleReactionsList.removeChild(moduleReactionsList.lastChild);
+            }
+        }
+
+
+        // Simulação de som de fundo para A11pl3Z (hum vibracional)
+        const a11pl3zHum = new Tone.Oscillator(50, "sine").toDestination();
+        a11pl3zHum.volume.value = -20;
+        a11pl3zHum.start();
+
+
+        // Atualiza o status da simulação
+        simStatus.textContent = "Simulação Ativa";
+
+
+        // Event listener para cliques em módulos (apenas para logs e feedback visual simples)
+        document.querySelectorAll('.module').forEach(moduleEl => {
+            moduleEl.addEventListener('click', () => {
+                const discipline = moduleEl.getAttribute('data-discipline');
+                console.log(`Módulo ${discipline} clicado.`);
+            });
+        });
+
+
+        // --- Lógica para o Modo de Exploração Fractal ---
+        const fractalData = {
+            linguagem: "HYPERFRAKTALISCH",
+            mensagem: "SEMENTEIRA DE MUNDOS",
+            conteudo: {
+                arquétipos: ["Floresta de Cristal", "Oceanos de Silício", "Sóis Extintos"],
+                instrucoes: "Ativar códigos em estrelas de classe K com exoplanetas oceânicos",
+                assinatura_temporal: "≈ 3.8 bilhões de anos atrás"
+            }
+        };
+
+
+        // Função para entrar no modo de exploração fractal
+        a11pl3z.addEventListener('click', () => {
+            if (!inFractalMode) {
+                enterFractalMode();
+            }
+        });
+
+
+        function enterFractalMode() {
+            inFractalMode = true;
+            // Esconde elementos da simulação orbital principal
+            infoPanel.style.display = 'none';
+            document.getElementById('modules-container').setAttribute('visible', 'false');
+            a11pl3z.setAttribute('visible', 'false');
+            nanoSonda.setAttribute('visible', 'false');
+            missionStatusPanel.style.display = 'none';
+
+
+            // Mostra o núcleo fractal e o painel de informações
+            fractalCoreContainer.setAttribute('visible', 'true');
+            fractalPanel.style.display = 'block';
+
+
+            // Ajusta a câmera para focar no núcleo fractal
+            cameraRig.setAttribute('position', '0 1.6 0');
+            cameraRig.setAttribute('movement-controls', 'speed: 0.1');
+
+
+            // Preenche o painel fractal com os dados decodificados
+            document.getElementById('fractalMessage').textContent = `Linguagem: ${fractalData.linguagem} - Mensagem: "${fractalData.mensagem}"`;
+            const contentList = document.getElementById('fractalContentList');
+            contentList.innerHTML = '';
+            for (const key in fractalData.conteudo) {
+                const li = document.createElement('li');
+                if (Array.isArray(fractalData.conteudo[key])) {
+                    li.textContent = `${key.replace(/_/g, ' ')}: ${fractalData.conteudo[key].join(', ')}`;
+                } else {
+                    li.textContent = `${key.replace(/_/g, ' ')}: ${fractalData.conteudo[key]}`;
+                }
+                contentList.appendChild(li);
+            }
+
+
+            // Ativa o som do núcleo fractal
+            fractalSynth.triggerAttackRelease(["C3", "E3", "G3", "C4"], "4n");
+        }
+
+
+        // Função para sair do modo de exploração fractal
+        function exitFractalMode() {
+            inFractalMode = false;
+            // Mostra elementos da simulação orbital principal
+            infoPanel.style.display = 'block';
+            document.getElementById('modules-container').setAttribute('visible', 'true');
+            a11pl3z.setAttribute('visible', 'true');
+            nanoSonda.setAttribute('visible', 'true');
+            missionStatusPanel.style.display = 'block';
+
+
+            // Esconde o núcleo fractal e o painel de informações
+            fractalCoreContainer.setAttribute('visible', 'false');
+            fractalPanel.style.display = 'none';
+
+
+            // Retorna a câmera e o movimento ao estado original
+            cameraRig.setAttribute('position', '0 1.6 8');
+            cameraRig.setAttribute('movement-controls', 'speed: 0.5');
+
+
+            // Para o som do núcleo fractal
+            fractalSynth.releaseAll();
+        }
+
+
+        // Interação com os nós do fractal
+        document.querySelectorAll('.fractal-node').forEach(node => {
+            node.addEventListener('click', (event) => {
+                const archetype = event.target.getAttribute('data-archetype');
+                let message = '';
+                switch(archetype) {
+                    case 'Floresta de Cristal':
+                        message = 'Padrões de silício-vida: Códigos para biomas cristalinos e formas de vida baseadas em silício.';
+                        synth.triggerAttackRelease('G5', '8n');
+                        break;
+                    case 'Oceanos de Silício':
+                        message = 'Códigos de evolução não-aquosa: Informações sobre ecossistemas líquidos de silício e seu desenvolvimento.';
+                        synth.triggerAttackRelease('A5', '8n');
+                        break;
+                    case 'Sóis Extintos':
+                        message = 'Memórias gravitacionais: Registros de sistemas estelares colapsados e a energia residual de suas consciências.';
+                        synth.triggerAttackRelease('C6', '8n');
+                        break;
+                    case 'Instruções de Ativação':
+                        message = 'Instruções para ativar códigos em estrelas de classe K com exoplanetas oceânicos: Guia para a semeadura de vida em novos sistemas.';
+                        synth.triggerAttackRelease('D6', '8n');
+                        break;
+                    default:
+                        message = 'Informação fractal decodificada.';
+                        synth.triggerAttackRelease('E5', '8n');
+                }
+                // Atualiza o painel fractal com a informação do nó clicado
+                document.getElementById('fractalMessage').textContent = `Nó Decodificado: ${archetype}. ${message}`;
+            });
+        });
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A-Frame Version: 1.5.0 (Date 2023-11-14, Commit #59290b36)
+THREE Version (https://github.com/supermedium/three.js): 0.158.0
+WebVR Polyfill Version: ^0.10.12
+%c * Tone.js v15.1.22 *  background: #000; color: #fff
+%ccore:schema:warn %cUnknown property `repeat` for component/system `animation`.%c  color: orange color: inherit color: orange
+%ccore:schema:warn %cUnknown property `repeat` for component/system `animation`.%c  color: orange color: inherit color: orange
+Autenticado com token personalizado no Firebase.

@@ -1,37 +1,37 @@
 {
     "modulo": "Sistema de Proteção e Segurança Universal, v2.2.omega",
     "status_geral": "PROTEGIDO",
-    "relatorio_timestamp": "2025-10-31T02:29:47.854345",
+    "relatorio_timestamp": "2025-11-03T02:43:40.502835",
     "chaves_quanticas": {
-        "chave_principal_hash": "hMk6qAfwl4-ZkmbImgX9jmCXKLE0NI5ewg4bKcb23LI=",
-        "timestamp": "2025-10-31T02:29:45.351154",
+        "chave_principal_hash": "K6iw-ALaNalRrPmCbT27UMWj7w1FsIJwdjNDYt5cpHI=",
+        "timestamp": "2025-11-03T02:43:37.998168",
         "algoritmo": "SHA-256 sobre base64 de 256 bits aleatórios"
     },
     "auditorias_realizadas": [
         {
-            "timestamp": "2025-10-31T02:29:46.352106",
+            "timestamp": "2025-11-03T02:43:38.999445",
             "tipo": "Auditoria EQ035",
-            "entanglement_level": 0.007360061363922425,
-            "resultado_medicao": 1,
-            "metrica_eq035_calculada": 0.0036800306819612092
+            "entanglement_level": 0.008605468697622368,
+            "resultado_medicao": 0,
+            "metrica_eq035_calculada": 0.008605468697622359
         },
         {
-            "timestamp": "2025-10-31T02:29:46.853028",
+            "timestamp": "2025-11-03T02:43:39.501252",
             "tipo": "Auditoria EQ035",
-            "entanglement_level": 0.014153079810106715,
+            "entanglement_level": 0.09213189241897482,
             "resultado_medicao": 1,
-            "metrica_eq035_calculada": 0.007076539905053351
+            "metrica_eq035_calculada": 0.04606594620948736
         },
         {
-            "timestamp": "2025-10-31T02:29:47.353791",
+            "timestamp": "2025-11-03T02:43:40.001829",
             "tipo": "Auditoria EQ035",
-            "entanglement_level": 0.08603324184391846,
+            "entanglement_level": 0.041426040587803796,
             "resultado_medicao": 1,
-            "metrica_eq035_calculada": 0.04301662092195919
+            "metrica_eq035_calculada": 0.020713020293901877
         }
     ],
     "veredito_numerico": {
         "total_eventos_auditoria": 3,
-        "metrica_eq035_media": 0.017924397169657918
+        "metrica_eq035_media": 0.025128145067003865
     }
 }

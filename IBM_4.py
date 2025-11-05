@@ -22,50 +22,6 @@ PI = math.pi
 SQRT2 = math.sqrt(2)
 INV_SQRT2 = 1.0 / SQRT2
 
-# ===================================================================
-# BLOCO 1: 12 EQUAÇÕES CANÔNICAS ORIGINAIS
-# ===================================================================
-
-def EQ001_F_Coerencia_Quantica(x: float) -> float:
-    return math.sin(144000 * x) * 0.97
-
-def EQ002_F_Energia_Universal_Unificada(t: float) -> float:
-    return 2.6 + 0.2 * math.sin(t * 0.1)
-
-def EQ003_F_Estabilidade_Campo(fress: float, noise: float) -> float:
-    return math.sin(2 * math.pi * fress) + random.uniform(0, noise)
-
-def EQ004_F_Probabilidade_Anomalias(t: float) -> float:
-    return 0.8 * math.exp(-0.1 * t) + 0.05
-
-def EQ005_F_Modulacao_Gravitacional(t: float, fress: float) -> float:
-    return 9.8 * (1 - 0.01 * math.cos(2 * math.pi * fress * t) * math.exp(-0.05 * t))
-
-def EQ006_F_Complexidade_Quantica(state_probs: list = [0.25, 0.25, 0.25, 0.25]) -> float:
-    s = 0.0
-    for p in state_probs:
-        if p > 1e-9:
-            s -= p * math.log2(p)
-    return s
-
-def EQ007_F_Sincronizacao_Temporal(x: float) -> float:
-    return 0.0001 * x
-
-def EQ008_F_Defesa_Proativa(x: float) -> float:
-    return 1.0 if x > 741000 else 0.0
-
-def EQ009_F_Consciencia_Nanobotica(x: float) -> float:
-    return 852000 * x
-
-def EQ010_F_Imunidade_Paradoxal(x: float) -> float:
-    return 0.999 - (x % 0.001)
-
-def EQ011_F_Ressonancia_Cristalina(x: float) -> float:
-    return math.sin(330000 * x)
-
-def EQ012_F_Unificacao_Total(resultados: dict) -> float:
-    valores = [v for k, v in resultados.items() if k != 'EQ012_F' and isinstance(v, (int, float))]
-    return sum(valores) / len(valores) if valores else 0.0
 
 # ===================================================================
 # BLOCO 2: RELATÓRIO IBM QUANTUM (ORIGINAL)

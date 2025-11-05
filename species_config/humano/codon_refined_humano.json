@@ -20,7 +20,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciaçãouniversal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
         }
       },
       "neon": {
@@ -29,7 +29,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciaçãouniversal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
         }
       },
       "opalescente": {
@@ -38,7 +38,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciaçãouniversal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
         }
       },
       "cristalino": {
@@ -47,7 +47,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{ATG} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{ATG^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciaçãouniversal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{ATG} / \\Phi_{iniciacaouniversal}"
         }
       }
     },
@@ -89,7 +89,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
         }
       },
       "neon": {
@@ -98,7 +98,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
         }
       },
       "opalescente": {
@@ -107,7 +107,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
         }
       },
       "cristalino": {
@@ -116,7 +116,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TAA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TAA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TAA} / \\Phi_{cessacaoharmônica}"
         }
       }
     },
@@ -158,7 +158,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutaçãoessencial}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
         }
       },
       "neon": {
@@ -167,7 +167,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutaçãoessencial}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
         }
       },
       "opalescente": {
@@ -176,7 +176,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutaçãoessencial}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
         }
       },
       "cristalino": {
@@ -185,7 +185,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutaçãoessencial}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGA} / \\Phi_{transmutacaoessencial}"
         }
       }
     },
@@ -227,7 +227,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{síntesevibracional}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
         }
       },
       "neon": {
@@ -236,7 +236,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{síntesevibracional}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
         }
       },
       "opalescente": {
@@ -245,7 +245,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{síntesevibracional}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
         }
       },
       "cristalino": {
@@ -254,7 +254,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{TGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{TGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{síntesevibracional}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{TGC} / \\Phi_{sintesevibracional}"
         }
       }
     },
@@ -296,7 +296,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptação}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
         }
       },
       "neon": {
@@ -305,7 +305,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptação}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
         }
       },
       "opalescente": {
@@ -314,7 +314,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptação}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
         }
       },
       "cristalino": {
@@ -323,7 +323,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{GGC} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{GGC^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptação}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{GGC} / \\Phi_{crescimentoadaptacao}"
         }
       }
     },
@@ -365,7 +365,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativaçãoportal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
         }
       },
       "neon": {
@@ -374,7 +374,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativaçãoportal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
         }
       },
       "opalescente": {
@@ -383,7 +383,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativaçãoportal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
         }
       },
       "cristalino": {
@@ -392,7 +392,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{CCA} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{CCA^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativaçãoportal}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{CCA} / \\Phi_{ativacaoportal}"
         }
       }
     },
@@ -434,7 +434,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
         }
       },
       "neon": {
@@ -443,7 +443,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
         }
       },
       "opalescente": {
@@ -452,7 +452,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
         }
       },
       "cristalino": {
@@ -461,7 +461,7 @@
         "equacoes": {
           "mutacao": "\\Delta\\psi{\\text{mut}} = (\\lambda_{AGT} \\cdot \\gamma^2) / \\Omega{\\text{t}}",
           "reparacao": "\\Delta\\psi{\\text{rep}} = \\sqrt{AGT^{\\alpha} \\cdot \\tau} - \\eta",
-          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparaçãoharmônica}"
+          "ativacao": "\\Delta\\psi{\\text{act}} = e^{AGT} / \\Phi_{reparacaoharmônica}"
         }
       }
     },

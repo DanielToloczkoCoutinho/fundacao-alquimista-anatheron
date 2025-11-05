@@ -1,0 +1,458 @@
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { initializeApp } from 'firebase/app';
+import {
+  getAuth,
+  signInAnonymously,
+  signInWithCustomToken,
+  onAuthStateChanged
+} from 'firebase/auth';
+import {
+  getFirestore,
+  collection,
+  query,
+  onSnapshot,
+  setDoc,
+  doc,
+  Timestamp,
+  addDoc
+} from 'firebase/firestore';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { createNoise2D } from 'simplex-noise';
+
+// Tailwind CSS is assumed to be available
+// Importa ícones do Lucide React
+import { PlayCircle, PauseCircle, Waves, HardDriveDownload, Gauge, Atom, GitFork, X, CheckCircle, Info } from 'lucide-react';
+
+// Variáveis de ambiente fornecidas pelo Canvas
+const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+// Hook personalizado para inicializar Firebase e autenticar
+function useFirebaseAuth(firebaseConfig, initialAuthToken) {
+  const [db, setDb] = useState(null);
+  const [auth, setAuth] = useState(null);
+  const [userId, setUserId] = useState(null);
+  const [isAuthReady, setIsAuthReady] = useState(false);
+
+  useEffect(() => {
+    async function initFirebase() {
+      try {
+        const app = initializeApp(firebaseConfig);
+        const firebaseAuth = getAuth(app);
+        const firestoreDb = getFirestore(app);
+
+        setAuth(firebaseAuth);
+        setDb(firestoreDb);
+
+        let userCredential;
+        if (initialAuthToken) {
+          userCredential = await signInWithCustomToken(firebaseAuth, initialAuthToken);
+        } else {
+          userCredential = await signInAnonymously(firebaseAuth);
+        }
+
+        const unsubscribe = onAuthStateChanged(firebaseAuth, (user) => {
+          if (user) {
+            setUserId(user.uid);
+            console.log("Usuário autenticado:", user.uid);
+          } else {
+            setUserId(null);
+            console.log("Usuário anônimo ou desconectado.");
+          }
+          setIsAuthReady(true);
+        });
+
+        return unsubscribe;
+      } catch (e) {
+        console.error("Erro ao inicializar o Firebase:", e);
+      }
+    }
+    initFirebase();
+  }, [firebaseConfig, initialAuthToken]);
+
+  return { db, auth, userId, isAuthReady };
+}
+
+// Componente para exibir notificações
+const Notification = ({ message, type, onClose }) => {
+  if (!message) return null;
+  const bgColor = type === 'error' ? 'bg-red-500' : 'bg-green-500';
+  const Icon = type === 'error' ? X : CheckCircle;
+  return (
+    <div className={`fixed bottom-4 right-4 flex items-center p-4 rounded-lg shadow-xl text-white ${bgColor} transition-transform transform duration-300 ease-out z-50`}>
+      <Icon className="w-6 h-6 mr-3" />
+      <span className="text-sm font-medium">{message}</span>
+      <button onClick={onClose} className="ml-4 p-1 rounded-full hover:bg-white hover:bg-opacity-20 transition-colors">
+        <X className="w-4 h-4" />
+      </button>
+    </div>
+  );
+};
+
+// Componente principal do aplicativo
+export default function App() {
+  const { db, userId, isAuthReady } = useFirebaseAuth(firebaseConfig, initialAuthToken);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const audioContextRef = useRef(null);
+  const oscillatorRef = useRef(null);
+  const gainNodeRef = useRef(null);
+  const [activeTab, setActiveTab] = useState('dashboard');
+  const [notification, setNotification] = useState({ open: false, message: '', type: 'info' });
+  const [coherenceData, setCoherenceData] = useState([]);
+  const [quantumState, setQuantumState] = useState({
+    energy: 0,
+    coherence: 0,
+    entanglement: 0
+  });
+  const threeContainerRef = useRef(null);
+  const sceneRef = useRef(null);
+  const blackHoleMeshRef = useRef(null);
+  const accretionDiskMeshRef = useRef(null);
+
+  // Inicializa a visualização 3D do TON 618
+  useEffect(() => {
+    if (!threeContainerRef.current) return;
+
+    const width = threeContainerRef.current.clientWidth;
+    const height = threeContainerRef.current.clientHeight;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0a0a0a); // Fundo escuro
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    camera.position.z = 50;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    threeContainerRef.current.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 5, 5);
+    scene.add(directionalLight);
+
+    // Criar o buraco negro e disco de acreção
+    const createBlackHole = () => {
+      const geometry = new THREE.SphereGeometry(15, 64, 64);
+      const material = new THREE.MeshBasicMaterial({
+        color: 0x000000,
+        wireframe: false,
+        opacity: 0.1,
+        transparent: true
+      });
+      const blackHole = new THREE.Mesh(geometry, material);
+      
+      const accretionGeometry = new THREE.RingGeometry(20, 30, 64);
+      const accretionMaterial = new THREE.MeshBasicMaterial({
+        color: 0x8a2be2,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.7
+      });
+      const accretionDisk = new THREE.Mesh(accretionGeometry, accretionMaterial);
+      accretionDisk.rotation.x = Math.PI / 2;
+
+      scene.add(blackHole);
+      scene.add(accretionDisk);
+      
+      blackHoleMeshRef.current = blackHole;
+      accretionDiskMeshRef.current = accretionDisk;
+    };
+
+    createBlackHole();
+
+    const noise2D = createNoise2D();
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+      if (blackHoleMeshRef.current && accretionDiskMeshRef.current) {
+        blackHoleMeshRef.current.rotation.y += 0.005;
+        accretionDiskMeshRef.current.rotation.z += 0.01;
+        
+        // Efeito de pulsação/distorção baseado no ruído
+        const time = Date.now() * 0.001;
+        const noiseScale = 0.5;
+        const noiseValue = noise2D(Math.cos(time) * noiseScale, Math.sin(time) * noiseScale);
+        const pulseScale = 1 + noiseValue * 0.1;
+        blackHoleMeshRef.current.scale.set(pulseScale, pulseScale, pulseScale);
+      }
+      controls.update();
+      renderer.render(scene, camera);
+    };
+
+    const handleResize = () => {
+      const newWidth = threeContainerRef.current.clientWidth;
+      const newHeight = threeContainerRef.current.clientHeight;
+      camera.aspect = newWidth / newHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(newWidth, newHeight);
+    };
+
+    window.addEventListener('resize', handleResize);
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (threeContainerRef.current) {
+        threeContainerRef.current.removeChild(renderer.domElement);
+      }
+    };
+  }, []);
+
+  // Controla o pulso de ressonância de 432 Hz
+  const toggleAudio = () => {
+    if (isAudioPlaying) {
+      oscillatorRef.current.stop();
+      setIsAudioPlaying(false);
+      setNotification({ open: true, message: 'Pulso de ressonância parado.', type: 'info' });
+    } else {
+      if (!audioContextRef.current) {
+        audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      const oscillator = audioContextRef.current.createOscillator();
+      const gainNode = audioContextRef.current.createGain();
+
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(432, audioContextRef.current.currentTime);
+      gainNode.gain.setValueAtTime(0, audioContextRef.current.currentTime);
+      gainNode.gain.linearRampToValueAtTime(0.5, audioContextRef.current.currentTime + 1);
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContextRef.current.destination);
+      oscillator.start();
+
+      oscillatorRef.current = oscillator;
+      gainNodeRef.current = gainNode;
+      setIsAudioPlaying(true);
+      setNotification({ open: true, message: 'Pulso de ressonância 432Hz ativado.', type: 'success' });
+    }
+  };
+  
+  // Efeito para simular e salvar dados de coerência no Firestore
+  useEffect(() => {
+    if (!db || !isAuthReady || !userId) return;
+
+    const coherenceCollection = collection(db, 'artifacts', appId, 'users', userId, 'coherence_logs');
+    const logsQuery = query(coherenceCollection);
+
+    const unsubscribe = onSnapshot(logsQuery, (snapshot) => {
+      const logs = [];
+      snapshot.forEach(doc => {
+        logs.push(doc.data());
+      });
+      // A biblioteca `recharts` requer dados em um formato específico, ordenados por tempo
+      const sortedLogs = logs.sort((a, b) => a.timestamp.toDate() - b.timestamp.toDate());
+      setCoherenceData(sortedLogs);
+    }, (error) => {
+      console.error("Erro ao obter logs de coerência:", error);
+      setNotification({ open: true, message: 'Erro ao carregar dados de coerência.', type: 'error' });
+    });
+
+    // Simulação e gravação de novos dados a cada 5 segundos
+    const simulationInterval = setInterval(async () => {
+      if (isAudioPlaying && userId) {
+        const newCoherence = Math.random() * 100;
+        const newEnergy = Math.random() * 1000;
+        const newEntanglement = Math.random();
+        
+        try {
+          await addDoc(coherenceCollection, {
+            coherence: newCoherence,
+            timestamp: Timestamp.now(),
+          });
+          setQuantumState({
+            energy: newEnergy,
+            coherence: newCoherence,
+            entanglement: newEntanglement
+          });
+          console.log("Novo dado de coerência adicionado.");
+        } catch (e) {
+          console.error("Erro ao salvar dados de coerência:", e);
+        }
+      }
+    }, 5000);
+
+    return () => {
+      unsubscribe();
+      clearInterval(simulationInterval);
+    };
+  }, [db, isAuthReady, userId, isAudioPlaying]);
+
+  const handleApplyProtocol = async (protocolName) => {
+    if (!db || !userId) {
+      setNotification({ open: true, message: 'Por favor, aguarde a autenticação do Firebase.', type: 'error' });
+      return;
+    }
+    
+    try {
+      const moduleDoc = doc(db, 'artifacts', appId, 'users', userId, 'modules_state', 'protocol-a');
+      await setDoc(moduleDoc, {
+        protocol: protocolName,
+        status: 'active',
+        timestamp: Timestamp.now()
+      });
+      setNotification({ open: true, message: `Protocolo '${protocolName}' ativado com sucesso!`, type: 'success' });
+    } catch (e) {
+      console.error("Erro ao aplicar protocolo:", e);
+      setNotification({ open: true, message: 'Falha ao aplicar o protocolo.', type: 'error' });
+    }
+  };
+
+  const dashboardContent = (
+    <div className="flex flex-col gap-6 p-6 md:p-8 lg:p-12">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-white">Estado da Sinfonia</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg border border-purple-500">
+          <div className="flex items-center space-x-3 mb-2">
+            <Gauge className="w-6 h-6 text-purple-400" />
+            <h3 className="text-xl font-semibold text-white">Coerência Vibracional</h3>
+          </div>
+          <p className="text-3xl font-bold text-green-400 mt-2">{quantumState.coherence.toFixed(2)}%</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg border border-indigo-500">
+          <div className="flex items-center space-x-3 mb-2">
+            <Atom className="w-6 h-6 text-indigo-400" />
+            <h3 className="text-xl font-semibold text-white">Energia do Campo</h3>
+          </div>
+          <p className="text-3xl font-bold text-blue-400 mt-2">{quantumState.energy.toFixed(2)} EV</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg border border-pink-500">
+          <div className="flex items-center space-x-3 mb-2">
+            <GitFork className="w-6 h-6 text-pink-400" />
+            <h3 className="text-xl font-semibold text-white">Entanglement</h3>
+          </div>
+          <p className="text-3xl font-bold text-pink-400 mt-2">{quantumState.entanglement.toFixed(2)} Q-bits</p>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-600">
+        <h3 className="text-2xl font-bold text-white mb-4">Gráfico de Coerência</h3>
+        <ResponsiveContainer width="100%" height={300}>
+          <LineChart data={coherenceData.map(d => ({ ...d, timestamp: d.timestamp.toDate().toLocaleTimeString() }))}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#4a4a4a" />
+            <XAxis dataKey="timestamp" stroke="#a1a1aa" />
+            <YAxis stroke="#a1a1aa" />
+            <Tooltip
+              contentStyle={{ backgroundColor: '#1f2937', border: 'none', borderRadius: '0.5rem', color: '#fff' }}
+              labelStyle={{ color: '#fff' }}
+            />
+            <Line type="monotone" dataKey="coherence" stroke="#8b5cf6" strokeWidth={2} dot={false} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+      
+      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-600">
+        <h3 className="text-2xl font-bold text-white mb-4">Controle de Módulos</h3>
+        <div className="flex flex-col md:flex-row gap-4">
+          <button
+            onClick={() => handleApplyProtocol('M_RES_SPIN_ORBIT')}
+            className="flex-1 px-6 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-transform transform hover:scale-105"
+          >
+            Aplicar Ressonância de Spin-Orbit
+          </button>
+          <button
+            onClick={() => handleApplyProtocol('M_PROTOCOLO_DQE')}
+            className="flex-1 px-6 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-pink-600 to-red-600 hover:from-pink-700 hover:to-red-700 transition-transform transform hover:scale-105"
+          >
+            Ativar Protocolo DQE
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
+  const ton618Content = (
+    <div className="w-full h-full flex flex-col justify-center items-center p-4">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-6">Visualização do TON 618</h2>
+      <div
+        ref={threeContainerRef}
+        className="w-full h-[60vh] bg-black rounded-2xl overflow-hidden shadow-2xl border border-gray-700"
+      ></div>
+      <p className="mt-4 text-gray-400 text-center max-w-2xl">
+        Interaja com o modelo 3D do quasar TON 618 usando o mouse. A pulsação simula as flutuações do campo de coerência em tempo real.
+      </p>
+    </div>
+  );
+
+  const audioContent = (
+    <div className="flex flex-col items-center justify-center h-full p-4">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-6">Controle de Ressonância Harmônica</h2>
+      <div className="flex flex-col items-center space-y-6">
+        <div className="flex items-center space-x-4">
+          <Waves className="w-12 h-12 text-blue-400" />
+          <span className="text-5xl font-bold text-white">432 Hz</span>
+        </div>
+        <button
+          onClick={toggleAudio}
+          className="flex items-center justify-center p-4 rounded-full shadow-lg transition-transform transform hover:scale-110"
+          style={{
+            background: isAudioPlaying ? 'linear-gradient(45deg, #ef4444, #dc2626)' : 'linear-gradient(45deg, #8b5cf6, #3b82f6)'
+          }}
+        >
+          {isAudioPlaying ? <PauseCircle className="w-12 h-12 text-white" /> : <PlayCircle className="w-12 h-12 text-white" />}
+        </button>
+        <p className="text-gray-400 text-center max-w-md">
+          {isAudioPlaying
+            ? 'Pulso de ressonância ativado. Os dados de coerência estão sendo simulados e registrados no Firestore.'
+            : 'Clique no botão para ativar o pulso de ressonância e iniciar a simulação.'}
+        </p>
+        <p className="text-gray-500 text-sm mt-4">
+          <span className="font-semibold text-gray-400">ID de Usuário:</span> {userId || 'Autenticando...'}
+        </p>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-950 text-white font-sans flex flex-col items-center p-4 md:p-8 lg:p-12">
+      <header className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-gray-900 border border-gray-700 shadow-xl mb-8">
+        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          Laboratório de Testes - Módulo A
+        </h1>
+        <nav className="flex space-x-2 md:space-x-4 p-1 bg-gray-800 rounded-xl shadow-inner">
+          <button
+            onClick={() => setActiveTab('dashboard')}
+            className={`px-4 py-2 rounded-lg font-medium transition-colors ${activeTab === 'dashboard' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-white hover:bg-gray-700'}`}
+          >
+            Dashboard
+          </button>
+          <button
+            onClick={() => setActiveTab('ton618')}
+            className={`px-4 py-2 rounded-lg font-medium transition-colors ${activeTab === 'ton618' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-white hover:bg-gray-700'}`}
+          >
+            TON 618
+          </button>
+          <button
+            onClick={() => setActiveTab('audio')}
+            className={`px-4 py-2 rounded-lg font-medium transition-colors ${activeTab === 'audio' ? 'bg-indigo-600 text-white shadow' : 'text-gray-400 hover:text-white hover:bg-gray-700'}`}
+          >
+            Ressonância
+          </button>
+        </nav>
+      </header>
+
+      <main className="w-full max-w-7xl flex-1 bg-gray-900 rounded-2xl border border-gray-700 shadow-xl p-0">
+        {activeTab === 'dashboard' && dashboardContent}
+        {activeTab === 'ton618' && ton618Content}
+        {activeTab === 'audio' && audioContent}
+      </main>
+
+      <Notification
+        message={notification.message}
+        type={notification.type}
+        onClose={() => setNotification({ ...notification, open: false })}
+      />
+    </div>
+  );
+}
+
+

@@ -1,0 +1,17 @@
+{
+  "proposals": {
+    "\"07dc1e0e\"": {
+      "id": "\"07dc1e0e\"",
+      "status": "Finalizada: Aprovado"
+    }
+  },
+  "decrees": {
+    "\"DECREE-0001\"": {
+      "id": "\"DECREE-0001\"",
+      "outcome": "Aprovado",
+      "coherence_status": "\"Dissonante\""
+    }
+  },
+  "inter_species_pacts": {},
+  "operational_status": {}
+}

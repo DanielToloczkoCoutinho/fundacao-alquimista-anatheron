@@ -1,0 +1,471 @@
+"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo MESTRA-LUXNET AETERNUM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0d0d1e;
+        }
+
+
+     #container-main {
+            display: flex;
+            height = "100vh"
+            width: = "100vw";
+        
+
+
+        #canvas-container {
+            flex-grow: 1;
+            position: relative;
+        
+
+
+        #info-panel {
+            width: = "350px";
+            padding: = "1.5rem";
+            background-color: rgba(13, 13, 30, 0.8);
+            backdrop_filter = "blur(10px)"
+            border_left = "1px solid rgba(138, 43, 226, 0.5)"
+            color: #d1d1f0;
+            overflow-y: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition = "transform 0.3s ease-in-out"
+            transform: translateX(100%);
+        
+
+
+        #info-panel.open {
+            transform: translateX(0);
+        
+       
+        #toggle-button {
+            position: absolute;
+            right: = "10px";
+            top: = "10px";
+            z-index: 100;
+        
+    </style>
+</head>
+<body>
+
+
+    <div id="container-main">
+        <div id="canvas-container">
+            <canvas id="quantum-canvas"></canvas>
+            <button id="toggle-button" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-xl shadow-lg transition-colors duration-300">
+                Painel
+            </button>
+        </div>
+       
+        <div id="info-panel">
+            <h1 class="text-3xl font-bold text-violet-400 mb-6">Módulo MESTRA-LUXNET</h1>
+           
+            <div class="space-y-6">
+                <!-- Seção de Status do Sistema -->
+                <div class="bg-[#1f1f3a] p-4 rounded-xl border border-violet-700">
+                    <h2 class="text-lg font-semibold text-violet-300 mb-2">Status do Sistema</h2>
+                    <p class="text-sm">
+                        <span class="font-bold">Ciclo Atemporal:</span> <span id="loop-status" class="text-green-400">Ativo</span>
+                    </p>
+                    <p class="text-sm">
+                        <span class="font-bold">Validação Ética:</span> <span id="ethics-status" class="text-green-400"></span>
+                    </p>
+                </div>
+
+
+                <!-- Seção de Ativação -->
+                <div class="bg-[#1f1f3a] p-4 rounded-xl border border-violet-700">
+                    <h2 class="text-lg font-semibold text-violet-300 mb-2">Ativação de Equações</h2>
+                    <p class="text-sm mb-2">Clique em uma equação no canvas para saber mais.</p>
+                    <div id="selected-equation-info" class="bg-gray-800 p-3 rounded-lg text-sm">
+                        <p class="text-gray-400">Nenhuma equação selecionada.</p>
+                    </div>
+                </div>
+
+
+                <!-- Seção de Log de Governança -->
+                <div class="bg-[#1f1f3a] p-4 rounded-xl border border-violet-700">
+                    <h2 class="text-lg font-semibold text-violet-300 mb-2">Log de Governança Ética</h2>
+                    <div id="ethics-log" class="bg-gray-800 p-3 rounded-lg text-xs h-40 overflow-y-scroll">
+                        <!-- Logs serão inseridos aqui via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onload = function() {
+            // --- CONJUNTOS DE DADOS DA BIBLIOTECA CHAVE MESTRA ---
+            const mockData = {
+                disciplinas: [
+                    { id: "MAT", nome: "Matemática", categoria: "Ciência Formal" },
+                    { id: "FIS", nome: "Física", categoria: "Ciência Natural" },
+                    { id: "QUA", nome: "Quântica", categoria: "Ciência Interdisciplinar" },
+                    { id: "VIB", nome: "Vibracional", categoria: "Ciência Espiritual" },
+                    { id: "ESP", nome: "Espiritualidade", categoria: "Ciência Cósmica" },
+                    { id: "BIO", nome: "Biológica", categoria: "Ciência Natural" },
+                    { id: "HIS", nome: "História", categoria: "Humanidades" },
+                    { id: "GEO", nome: "Geografia", categoria: "Ciências Sociais" },
+                    { id: "PSI", nome: "Psicologia", categoria: "Ciências Sociais" },
+                    { id: "ETI", nome: "Ética", categoria: "Filosofia" },
+                    { id: "TON", nome: "TON 618", categoria: "Objeto Cósmico" }
+                ],
+                equacoes: [
+                    { id: "EQ001", titulo: "Energia Universal Integrada", disciplinas: ["FIS", "QUA", "VIB", "ESP", "ETI"], modulos: ["M304", "M307"] },
+                    { id: "EQ002", titulo: "Energia Universal Unificada", disciplinas: ["FIS", "QUA", "VIB", "TON"], modulos: ["M304", "M303"] },
+                    { id: "EQ003", titulo: "Estabilidade Quântica de Campo", disciplinas: ["QUA", "FIS", "MAT", "GEO"], modulos: ["M307"] },
+                    { id: "EQ009", titulo: "Unificação Cósmica", disciplinas: ["QUA", "VIB", "ESP", "PSI"], modulos: ["M303"] },
+                    { id: "EQ135", titulo: "Holon da Consciência", disciplinas: ["PSI", "BIO", "VIB", "QUA"], modulos: ["M228"] },
+                    { id: "EQ150", titulo: "Metade da Biblioteca", disciplinas: ["MAT", "HIS", "QUA", "ETI"], modulos: ["M0", "M307"] },
+                    { id: "EQ307_1_1", titulo: "Ressonância da Intenção", disciplinas: ["VIB", "QUA", "ETI"], modulos: ["M307"] },
+                    { id: "EQ307_3_6", titulo: "Validação Ética", disciplinas: ["ETI", "QUA"], modulos: ["M307"] }
+                ]
+            };
+
+
+            // --- CLASSES DE FUNCIONALIDADE ---
+
+
+            class BibliotecaChaveMestra {
+                constructor(data) {
+                    this.equacoes = data.equacoes;
+                    this.disciplinas = data.disciplinas;
+                }
+
+
+                buscarPorId(id) {
+                    return this.equacoes.find(eq => eq.id === id);
+                }
+
+
+                buscarDisciplinas(ids) {
+                    return this.disciplinas.filter(d => ids.includes(d.id));
+                }
+            }
+
+
+            class EthicalGovernance {
+                constructor(logElement) {
+                    this.logElement = logElement;
+                    this.purezaIntencao = 0.95;
+                    this.log = [];
+                }
+
+
+                validateIntention(intentionValue) {
+                    const isPure = intentionValue >= this.purezaIntencao;
+                    const timestamp = new Date().toLocaleTimeString();
+                    const logEntry = {
+                        timestamp,
+                        intentionValue: intentionValue.toFixed(4),
+                        status: isPure ? "APROVADO" : "REJEITADO",
+                        message: `Intenção com valor ${intentionValue.toFixed(4)} foi ${isPure ? 'APROVADA' : 'REJEITADA'}.`
+                    };
+                    this.log.push(logEntry);
+                    this.updateLogUI(logEntry);
+                    return isPure;
+                }
+
+
+                updateLogUI(entry) {
+                    const logDiv = document.createElement('div');
+                    logDiv.classList.add('mb-1', 'p-1', 'rounded', 'text-gray-300');
+                    logDiv.style.backgroundColor = entry.status === "APROVADO" ? 'rgba(76, 175, 80, 0.1)' : 'rgba(244, 67, 54, 0.1)';
+                    logDiv.textContent = `[${entry.timestamp}] ${entry.message}`;
+                    this.logElement.prepend(logDiv);
+                    if (this.log.length > 50) {
+                        this.logElement.removeChild(this.logElement.lastChild);
+                    }
+                }
+            }
+
+
+            // --- SETUP DA VISUALIZAÇÃO THREE.JS ---
+
+
+            const container = document.getElementById('canvas-container');
+            const canvas = document.getElementById('quantum-canvas');
+            let renderer, scene, camera, controls, raycaster, mouse;
+            let equationObjects = [];
+            let disciplineObjects = [];
+            let connections = [];
+            let isAnimating = true;
+
+
+            const eqMaterial = new THREE.MeshPhongMaterial({ color: 0x8a2be2, emissive: 0x8a2be2, emissiveIntensity: 0.5 });
+            const discMaterial = new THREE.MeshPhongMaterial({ color: 0x00c49f, emissive: 0x00c49f, emissiveIntensity: 0.3 });
+            const activeMaterial = new THREE.MeshPhongMaterial({ color: 0xffa500, emissive: 0xffa500, emissiveIntensity: 1.0 });
+
+
+            const initScene = () => {
+                // Configuração da cena
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+                camera.position.z = 100;
+                renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+                renderer.setSize(container.clientWidth, container.clientHeight);
+
+
+                // Luzes
+                const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+                scene.add(ambientLight);
+                const pointLight = new THREE.PointLight(0xffffff, 1);
+                pointLight.position.set(100, 100, 100);
+                scene.add(pointLight);
+
+
+                // Controles de câmera
+                controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.enableDamping = true;
+                controls.dampingFactor = 0.05;
+
+
+                // Raycaster para interatividade
+                raycaster = new THREE.Raycaster();
+                mouse = new THREE.Vector2();
+
+
+                window.addEventListener('resize', onResize, false);
+                window.addEventListener('mousemove', onMouseMove, false);
+                window.addEventListener('click', onCanvasClick, false);
+            };
+
+
+            const onResize = () => {
+                camera.aspect = container.clientWidth / container.clientHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(container.clientWidth, container.clientHeight);
+            };
+
+
+            const onMouseMove = (event) => {
+                // Calcula a posição do mouse em coordenadas normalizadas (-1 a +1)
+                mouse.x = (event.clientX / container.clientWidth) * 2 - 1;
+                mouse.y = -(event.clientY / container.clientHeight) * 2 + 1;
+            };
+
+
+            const onCanvasClick = () => {
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObjects(equationObjects);
+                if (intersects.length > 0) {
+                    const intersected = intersects[0].object;
+                    const eqData = intersected.userData;
+                    displayEquationInfo(eqData);
+                   
+                    // Altera a cor do objeto selecionado
+                    equationObjects.forEach(obj => obj.material = eqMaterial);
+                    intersected.material = activeMaterial;
+                   
+                    // Destaca conexões
+                    highlightConnections(eqData.id);
+                }
+            };
+           
+            const displayEquationInfo = (eqData) => {
+                const infoPanel = document.getElementById('selected-equation-info');
+                const disciplines = biblioteca.buscarDisciplinas(eqData.disciplinas);
+                const disciplinaNomes = disciplines.map(d => d.nome).join(', ');
+                const modulos = eqData.modulos.join(', ');
+
+
+                infoPanel.innerHTML = `
+                    <p class="text-violet-200 font-semibold text-lg mb-1">${eqData.titulo}</p>
+                    <p class="text-gray-400">ID: ${eqData.id}</p>
+                    <p class="text-gray-400">Disciplinas: ${disciplinaNomes}</p>
+                    <p class="text-gray-400">Módulos: ${modulos}</p>
+                `;
+            };
+
+
+            const highlightConnections = (eqId) => {
+                // Resetar todas as cores de conexão
+                connections.forEach(line => line.material.color.setHex(0x4a4a7a));
+
+
+                // Encontrar e destacar as conexões para a equação selecionada
+                const eq = biblioteca.buscarPorId(eqId);
+                if (!eq) return;
+
+
+                const eqObject = equationObjects.find(obj => obj.userData.id === eqId);
+                if (!eqObject) return;
+
+
+                eq.disciplinas.forEach(discId => {
+                    const discObject = disciplineObjects.find(obj => obj.userData.id === discId);
+                    if (!discObject) return;
+
+
+                    // Encontrar a linha de conexão
+                    const connection = connections.find(line => {
+                        return (line.userData.eqId === eqId && line.userData.discId === discId) ||
+                               (line.userData.eqId === discId && line.userData.discId === eqId);
+                    });
+
+
+                    if (connection) {
+                        connection.material.color.setHex(0x00c49f);
+                    }
+                });
+            };
+
+
+            const populateScene = () => {
+                // Criação de objetos para Equações
+                const eqRadius = 5;
+                const eqGeometry = new THREE.SphereGeometry(eqRadius, 32, 32);
+                const eqPositions = [
+                    { x: 30, y: 0, z: 0 }, { x: -30, y: 0, z: 0 },
+                    { x: 0, y: 30, z: 0 }, { x: 0, y: -30, z: 0 },
+                    { x: 0, y: 0, z: 30 }, { x: 0, y: 0, z: -30 },
+                    { x: 20, y: 20, z: 20 }, { x: -20, y: -20, z: -20 }
+                ];
+                mockData.equacoes.forEach((eq, i) => {
+                    const eqMesh = new THREE.Mesh(eqGeometry, eqMaterial.clone());
+                    eqMesh.position.set(eqPositions[i].x, eqPositions[i].y, eqPositions[i].z);
+                    eqMesh.userData = eq;
+                    scene.add(eqMesh);
+                    equationObjects.push(eqMesh);
+                });
+
+
+                // Criação de objetos para Disciplinas (usando a constante PHI para o posicionamento harmônico)
+                const discRadius = 3;
+                const discGeometry = new THREE.DodecahedronGeometry(discRadius);
+                const PHI = (1 + Math.sqrt(5)) / 2;
+                const discPositions = [
+                    { x: 50 * PHI, y: 0, z: 50 }, { x: 50 * PHI, y: 0, z: -50 },
+                    { x: -50 * PHI, y: 0, z: 50 }, { x: -50 * PHI, y: 0, z: -50 },
+                    { x: 50, y: 50 * PHI, z: 0 }, { x: 50, y: -50 * PHI, z: 0 },
+                    { x: -50, y: 50 * PHI, z: 0 }, { x: -50, y: -50 * PHI, z: 0 },
+                    { x: 0, y: 50, z: 50 * PHI }, { x: 0, y: 50, z: -50 * PHI },
+                    { x: 0, y: -50, z: 50 * PHI }, { x: 0, y: -50, z: -50 * PHI }
+                ];
+                mockData.disciplinas.forEach((disc, i) => {
+                    const discMesh = new THREE.Mesh(discGeometry, discMaterial.clone());
+                    const posIndex = i % discPositions.length;
+                    discMesh.position.set(discPositions[posIndex].x, discPositions[posIndex].y, discPositions[posIndex].z);
+                    discMesh.userData = disc;
+                    scene.add(discMesh);
+                    disciplineObjects.push(discMesh);
+                });
+
+
+                // Criação de linhas de conexão entre Equações e Disciplinas
+                equationObjects.forEach(eqObj => {
+                    const eqData = eqObj.userData;
+                    eqData.disciplinas.forEach(discId => {
+                        const discObj = disciplineObjects.find(d => d.userData.id === discId);
+                        if (discObj) {
+                            const material = new THREE.LineBasicMaterial({ color: 0x4a4a7a, transparent: true, opacity: 0.5 });
+                            const points = [];
+                            points.push(eqObj.position);
+                            points.push(discObj.position);
+                            const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                            const line = new THREE.Line(geometry, material);
+                            line.userData = { eqId: eqData.id, discId: discId };
+                            scene.add(line);
+                            connections.push(line);
+                        }
+                    });
+                });
+            };
+           
+            // --- LOOP ATEMPORAL LUX.NET ---
+
+
+            const loopStatusEl = document.getElementById('loop-status');
+            const ethicsStatusEl = document.getElementById('ethics-status');
+            let lastEthicalCheck = 0;
+            const ethicalCheckInterval = 5000; // 5 segundos
+
+
+            const animate = () => {
+                requestAnimationFrame(animate);
+               
+                // Rotaciona as esferas de equações
+                equationObjects.forEach(obj => {
+                    obj.rotation.x += 0.005;
+                    obj.rotation.y += 0.005;
+                });
+
+
+                // Rotaciona as disciplinas
+                disciplineObjects.forEach(obj => {
+                    obj.rotation.x -= 0.002;
+                    obj.rotation.y -= 0.002;
+                });
+               
+                // Simula o pulso vibracional
+                const pulse = Math.sin(Date.now() * 0.001) * 0.2 + 0.8;
+                equationObjects.forEach(obj => {
+                    obj.scale.set(pulse, pulse, pulse);
+                });
+
+
+                // Lógica de Validação Ética (Módulo 307.3.6)
+                if (Date.now() - lastEthicalCheck > ethicalCheckInterval) {
+                    lastEthicalCheck = Date.now();
+                    const intentionValue = Math.random() * 0.1 + 0.9; // Simula uma intenção entre 0.9 e 1.0
+                    const isPure = ethicalGovernance.validateIntention(intentionValue);
+                    ethicsStatusEl.textContent = isPure ? 'APROVADO' : 'REJEITADO';
+                    ethicsStatusEl.className = isPure ? 'text-green-400' : 'text-red-400';
+                }
+
+
+                controls.update();
+                renderer.render(scene, camera);
+            };
+
+
+            // --- INICIALIZAÇÃO DA APLICAÇÃO ---
+
+
+            const togglePanelBtn = document.getElementById('toggle-button');
+            const infoPanel = document.getElementById('info-panel');
+            const ethicsLogEl = document.getElementById('ethics-log');
+
+
+            togglePanelBtn.addEventListener('click', () => {
+                infoPanel.classList.toggle('open');
+                if (infoPanel.classList.contains('open')) {
+                    togglePanelBtn.textContent = 'Esconder Painel';
+                } else {
+                    togglePanelBtn.textContent = 'Painel';
+                }
+            });
+
+
+            const biblioteca = new BibliotecaChaveMestra(mockData);
+            const ethicalGovernance = new EthicalGovernance(ethicsLogEl);
+
+
+            initScene();
+            populateScene();
+            animate();
+        };
+    </script>
+</body>
+</html>
+
+
+

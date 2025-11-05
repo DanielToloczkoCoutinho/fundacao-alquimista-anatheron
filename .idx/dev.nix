@@ -17,6 +17,7 @@ pkgs.mkShell {
     pkgs.gcc
     pkgs.zlib
     pkgs.unixtools.ping
+    pkgs.cope
   ];
 
   shellHook = ''

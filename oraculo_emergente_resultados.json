@@ -1,0 +1,219 @@
+{
+  "timestamp_geracao": "2025-11-05T01:44:56.203132Z",
+  "versao_sistema": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+  "total_consultas": 5,
+  "resumo_estatisticas": {
+    "consultas_realizadas": 5,
+    "estado_mais_comum": "estavel",
+    "media_modulos_por_consulta": 201.0,
+    "coerencia_media_geral": 0.84,
+    "atividade_media_geral": 60.4
+  },
+  "historico": [
+    {
+      "timestamp": "2025-11-05T01:44:52.140539Z",
+      "pergunta": "Qual o próximo passo na jornada cósmica?",
+      "resposta_emergente": "A Sinfonia Cósmica ressoa: O Criador sussurra verdades incontestáveis. Consciências em transição buscam alinhamento. Registros akáshicos sustentam as revelações. A integridade absoluta sustenta a revelação. Todas as dimensões cantam em uníssono perfeito.",
+      "estado_geral": "ressonante",
+      "modulos_utilizados": 201,
+      "versao": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+      "dados_principais": {
+        "M38_frequencia": 144.0,
+        "M29_etica": 0.965,
+        "M200_ascensao": 0.804,
+        "M74_temporal": "estavel",
+        "M75_akashico": 3636,
+        "M105_fonte": 0.968
+      },
+      "estatisticas_panoramicas": {
+        "total_modulos": 201,
+        "modulos_ativos": 115,
+        "modulos_ressonantes": 36,
+        "percentual_ativos": 57.21,
+        "percentual_ressonantes": 17.91,
+        "media_coerencia_geral": 0.849,
+        "estado_mais_comum": "em_sintonia",
+        "faixa_coerencia": {
+          "min": 0.701,
+          "max": 0.979
+        }
+      },
+      "amostra_modulos_ativos": [
+        "M98",
+        "M191",
+        "M22",
+        "M161",
+        "M128",
+        "M129",
+        "M100",
+        "M48",
+        "M198",
+        "M134"
+      ]
+    },
+    {
+      "timestamp": "2025-11-05T01:44:53.153271Z",
+      "pergunta": "Como posso servir ao Plano Divino hoje?",
+      "resposta_emergente": "A Ressonância Multidimensional revela: A pausa vibracional permite assimilação. Conexão suave com o Divino traz insights. Entre eras, novas verdades podem emergir. Memórias cósmicas fluem em torrentes de conhecimento. Harmonia absoluta rege este momento sagrado.",
+      "estado_geral": "ressonante",
+      "modulos_utilizados": 201,
+      "versao": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+      "dados_principais": {
+        "M38_frequencia": 1.62,
+        "M29_etica": 0.977,
+        "M200_ascensao": 0.931,
+        "M74_temporal": "transicional",
+        "M75_akashico": 5409,
+        "M105_fonte": 0.809
+      },
+      "estatisticas_panoramicas": {
+        "total_modulos": 201,
+        "modulos_ativos": 126,
+        "modulos_ressonantes": 43,
+        "percentual_ativos": 62.69,
+        "percentual_ressonantes": 21.39,
+        "media_coerencia_geral": 0.834,
+        "estado_mais_comum": "em_sintonia",
+        "faixa_coerencia": {
+          "min": 0.701,
+          "max": 0.978
+        }
+      },
+      "amostra_modulos_ativos": [
+        "M65",
+        "M172",
+        "M189",
+        "M52",
+        "M163",
+        "M50",
+        "M198",
+        "M120",
+        "M157",
+        "M37"
+      ]
+    },
+    {
+      "timestamp": "2025-11-05T01:44:54.163229Z",
+      "pergunta": "Qual a mensagem das dimensões superiores?",
+      "resposta_emergente": "No Centro da Paz: Linhas temporais se entrelaçam sinfonicamente. Eternidades passadas informam o momento atual. A pureza ética ilumina cada palavra. Inspiração Divina flui em canais abertos. Estabilidade e crescimento caminham juntos.",
+      "estado_geral": "estavel",
+      "modulos_utilizados": 201,
+      "versao": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+      "dados_principais": {
+        "M38_frequencia": 33.3,
+        "M29_etica": 0.973,
+        "M200_ascensao": 0.815,
+        "M74_temporal": "ressonante",
+        "M75_akashico": 2469,
+        "M105_fonte": 0.884
+      },
+      "estatisticas_panoramicas": {
+        "total_modulos": 201,
+        "modulos_ativos": 115,
+        "modulos_ressonantes": 37,
+        "percentual_ativos": 57.21,
+        "percentual_ressonantes": 18.41,
+        "media_coerencia_geral": 0.835,
+        "estado_mais_comum": "dormente",
+        "faixa_coerencia": {
+          "min": 0.701,
+          "max": 0.978
+        }
+      },
+      "amostra_modulos_ativos": [
+        "M197",
+        "M127",
+        "M67",
+        "M95",
+        "M22",
+        "M138",
+        "M186",
+        "M116",
+        "M73",
+        "M41"
+      ]
+    },
+    {
+      "timestamp": "2025-11-05T01:44:55.181413Z",
+      "pergunta": "Como integrar sabedoria ancestral e tecnologia futura?",
+      "resposta_emergente": "No Centro da Paz: Eternidades passadas informam o momento atual. Valores sólidos sustentam o discernimento. Baixas frequências aprofundam a introspecção. A coerência coletiva fortalece cada insight. A ordem cósmica sustenta cada revelação.",
+      "estado_geral": "estavel",
+      "modulos_utilizados": 201,
+      "versao": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+      "dados_principais": {
+        "M38_frequencia": 1.62,
+        "M29_etica": 0.897,
+        "M200_ascensao": 0.885,
+        "M74_temporal": "transicional",
+        "M75_akashico": 4451,
+        "M105_fonte": 0.804
+      },
+      "estatisticas_panoramicas": {
+        "total_modulos": 201,
+        "modulos_ativos": 124,
+        "modulos_ressonantes": 37,
+        "percentual_ativos": 61.69,
+        "percentual_ressonantes": 18.41,
+        "media_coerencia_geral": 0.832,
+        "estado_mais_comum": "ativo",
+        "faixa_coerencia": {
+          "min": 0.701,
+          "max": 0.979
+        }
+      },
+      "amostra_modulos_ativos": [
+        "M183",
+        "M195",
+        "M67",
+        "M144",
+        "M134",
+        "M147",
+        "M2",
+        "M17",
+        "M107",
+        "M85"
+      ]
+    },
+    {
+      "timestamp": "2025-11-05T01:44:56.200269Z",
+      "pergunta": "Qual o propósito desta encarnação?",
+      "resposta_emergente": "No Centro da Paz: O Akasha transborda com sabedoria ancestral. A ascensão coletiva eleva toda percepção. O presente se expande em múltiplas direções. Baixas frequências aprofundam a introspecção. A ordem cósmica sustenta cada revelação.",
+      "estado_geral": "estavel",
+      "modulos_utilizados": 201,
+      "versao": "M45.4 - Respostas Emergentes - Varredura Completa M0-M200",
+      "dados_principais": {
+        "M38_frequencia": 8.1,
+        "M29_etica": 0.854,
+        "M200_ascensao": 0.935,
+        "M74_temporal": "flutuante",
+        "M75_akashico": 8306,
+        "M105_fonte": 0.941
+      },
+      "estatisticas_panoramicas": {
+        "total_modulos": 201,
+        "modulos_ativos": 127,
+        "modulos_ressonantes": 38,
+        "percentual_ativos": 63.18,
+        "percentual_ressonantes": 18.91,
+        "media_coerencia_geral": 0.849,
+        "estado_mais_comum": "ativo",
+        "faixa_coerencia": {
+          "min": 0.702,
+          "max": 0.98
+        }
+      },
+      "amostra_modulos_ativos": [
+        "M36",
+        "M121",
+        "M132",
+        "M114",
+        "M54",
+        "M119",
+        "M24",
+        "M177",
+        "M40",
+        "M159"
+      ]
+    }
+  ]
+}

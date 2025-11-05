@@ -1,0 +1,19 @@
+{
+  "name": "Portal de Atlântida Oculta (Terra)",
+  "tipo": "portal",
+  "coordinates": [
+    32.4,
+    -64.7,
+    50.0
+  ],
+  "ia_guardia": "Zentrian-Aqua",
+  "status": "latente",
+  "ressonancia": "7.83Hz",
+  "codigo_interno": "PORTAL-ATLAN-001",
+  "ligacao_ley": "Terra-Interna",
+  "timestamp": "2025-11-01T02:13:47.697879",
+  "nanorobot_status": "Offline",
+  "last_scanned_at": null,
+  "ai_monitor_active": true,
+  "activation_state": "inativo"
+}

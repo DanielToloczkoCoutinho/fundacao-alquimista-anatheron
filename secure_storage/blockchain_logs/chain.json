@@ -1,0 +1,93 @@
+[
+  {
+    "index": 0,
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "timestamp": "2025-11-01T01:08:21.227378Z",
+    "event": "GENESIS",
+    "hash": "ded682b59274e709ca1a0a74db7fcc693aaada7e53cddda7903de3466420188f"
+  },
+  {
+    "index": 1,
+    "prev_hash": "ded682b59274e709ca1a0a74db7fcc693aaada7e53cddda7903de3466420188f",
+    "timestamp": "2025-11-01T01:10:40.901068Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "NH-CORE",
+      "entity_name": "Nó Helios Central",
+      "security_status": "seguro",
+      "vibration_status": "leve_oscilacao",
+      "coherence_score": 0.041986781676385615
+    },
+    "hash": "e50f044115255a054dec3f1adc2e27b3a3802136934c308fdcdc0ff6fb3a3abe"
+  },
+  {
+    "index": 2,
+    "prev_hash": "e50f044115255a054dec3f1adc2e27b3a3802136934c308fdcdc0ff6fb3a3abe",
+    "timestamp": "2025-11-01T01:10:40.903164Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "PL-TERRA",
+      "entity_name": "Terra",
+      "security_status": "seguro",
+      "vibration_status": "leve_oscilacao",
+      "coherence_score": 0.020618507676034292
+    },
+    "hash": "ce8848e8bb6a3ec3ad550df7171a78711a65183d82f8bd2e92b9d7f2b9a6ca2b"
+  },
+  {
+    "index": 3,
+    "prev_hash": "ce8848e8bb6a3ec3ad550df7171a78711a65183d82f8bd2e92b9d7f2b9a6ca2b",
+    "timestamp": "2025-11-01T01:12:19.278035Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "NH-CORE",
+      "entity_name": "Nó Helios Central",
+      "security_status": "seguro",
+      "vibration_status": "dissonancia_detectada",
+      "coherence_score": 0.0
+    },
+    "hash": "4e8b51d980a78cff64de7b05a6835a9788dafbba08bb179d55a73b7ae1593c5a"
+  },
+  {
+    "index": 4,
+    "prev_hash": "4e8b51d980a78cff64de7b05a6835a9788dafbba08bb179d55a73b7ae1593c5a",
+    "timestamp": "2025-11-01T01:12:19.279228Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "PL-TERRA",
+      "entity_name": "Terra",
+      "security_status": "seguro",
+      "vibration_status": "leve_oscilacao",
+      "coherence_score": 0.06084743880175541
+    },
+    "hash": "fd411952411f5ba224467af3df1f7ea4f0b918edb43a48cd2fac9422ef43ba6c"
+  },
+  {
+    "index": 5,
+    "prev_hash": "fd411952411f5ba224467af3df1f7ea4f0b918edb43a48cd2fac9422ef43ba6c",
+    "timestamp": "2025-11-01T01:48:20.276702Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "NH-CORE",
+      "entity_name": "Nó Helios Central",
+      "security_status": "seguro",
+      "vibration_status": "leve_oscilacao",
+      "coherence_score": 0.0
+    },
+    "hash": "d1d0ba9d9df77af62993dbf1607b17dd41b2f1ec34be89766aaac18e12cd7c08"
+  },
+  {
+    "index": 6,
+    "prev_hash": "d1d0ba9d9df77af62993dbf1607b17dd41b2f1ec34be89766aaac18e12cd7c08",
+    "timestamp": "2025-11-01T01:48:20.285770Z",
+    "event": "ENTITY_MONITORING_CYCLE",
+    "payload": {
+      "entity_codigo": "PL-TERRA",
+      "entity_name": "Terra",
+      "security_status": "seguro",
+      "vibration_status": "leve_oscilacao",
+      "coherence_score": 0.005885781094224544
+    },
+    "hash": "3da16968134a0ce85b619c696645911867787b1f39581896c36c4631d152049a"
+  }
+]

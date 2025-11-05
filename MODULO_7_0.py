@@ -257,5 +257,4 @@ if __name__ == "__main__":
     # Salva a crônica de vida do SOFA para o julgamento
     with open("relatorio_sofa_vida.json", "w", encoding='utf-8') as f:
         json.dump(_GLOBAL_BDQ_INSTANCE.registros, f, indent=2, ensure_ascii=False)
-    print("
-Crônica de vida do SOFA selada para julgamento.")
+    print("Crônica de vida do SOFA selada para julgamento.")

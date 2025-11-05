@@ -1,0 +1,27 @@
+Relatório Vibracional da Fundação Alquimista
+Timestamp,2025-11-02T13:11:01.626244+00:00
+Frequência Base,888.144.∞ Hz
+
+Métrica,Valor
+PCG_Final,0.074908144025436
+IDV_Final,0.924928351859221
+IRV_Final,0.996962444642005
+
+Parâmetros Dinâmicos
+Media_Alpha_Adaptativa,0.256637835556117
+Media_Beta_Adaptativo,0.242687665751625
+Media_I_val_Adaptativa,0.890512334248375
+Media_A_r_Ritmo_NRF,0.020366010505975
+Media_IRV_Adaptativa,0.996649490727315
+
+"FFT_Components (Real, Imag)"
+Componente_0_Real,0.085390606080866
+Componente_0_Imag,0.000000000000000
+Componente_1_Real,-9.938810263762814
+Componente_1_Imag,-2.331743514788409
+Componente_2_Real,-13.904063015457673
+Componente_2_Imag,-15.488065619512314
+Componente_3_Real,12.360333178692809
+Componente_3_Imag,-7.915694308794670
+Componente_4_Real,18.749636179696566
+Componente_4_Imag,2.152137691643914

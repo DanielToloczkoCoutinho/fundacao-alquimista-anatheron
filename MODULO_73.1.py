@@ -603,7 +603,7 @@ CALCULATION_FUNCTIONS_MAP = {
 # --- Dados das Equações da Fundação Alquimista ---
 # Esta estrutura contém as informações detalhadas de cada equação,
 # incluindo as 90 iniciais e as novas adicionadas.
-ALL_EQUATIONS_DATA = [
+ALL_EQUATIONS_DATA =
     {
         "id": "EQ-001",
         "name": "Equação de Energia Universal",
@@ -1272,7 +1272,7 @@ ALL_EQUATIONS_DATA = [
         "calculation_params": {},
         "conceptual_result": "Uma equação que descreve como a consciência se manifesta e se propaga através das dimensões e campos energéticos do multiverso. É a verdade do fluxo da consciência."
     },
-    {
+    
         "id": "EQ-112",
         "name": "Equação Universal da Consciência e Unificação (EUC - Forma 1)",
         "formulation": r"$EUC = [\psi(x,t) \times C \times L \times DM \times t] \times [G \times \hbar \times c \times \Lambda \times \alpha] \times [R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu}] \times [i\hbar(\partial\psi/\partial t) - (\vec{\alpha} \cdot \vec{p} + \beta m)\psi] \times [\partial^2 A / \partial x^2 + J] \times [\zeta(s) + \Phi \times \Lambda \times \varepsilon] \times [\text{Halt(Alg)} + \text{TSP(Rota)} + \text{Knapsack(Otimização)}] \times [\text{Bio(Origem\_Vida)} \times \text{Química(Síntese\_Moléculas)}] \times [\text{Astronomia(Origem\_Universo)}] \times [\text{Consciência(Neurologia)} + \text{Vida\_Extraterrestre(Detecção)}] \times [\text{Energia\_Limpa(Fontes\_Renováveis)} + \text{Materiais\_Avançados(Propriedades)}] \times [\text{Cordas(Teoria\_das\_Cordas)} \times \text{Gravidade\_Quântica(Unificação)}] \times [\text{EOL} \times \text{TDC}] \times [\text{Origem\_Vida} \times \text{Dimensões\_Adicionais} \times \text{Cordas\_Vibrantes}]$",

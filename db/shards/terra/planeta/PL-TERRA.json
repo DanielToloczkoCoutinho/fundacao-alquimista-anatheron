@@ -1,0 +1,18 @@
+{
+  "name": "Terra",
+  "tipo": "planeta",
+  "coordinates": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "ia_guardia": "Gaia-Prime",
+  "status": "Ativo",
+  "ressonancia": "Vida",
+  "codigo_interno": "PL-TERRA",
+  "ligacao_ley": "Solar-Habitavel",
+  "timestamp": "2025-11-01T01:10:40.893187",
+  "nanorobot_status": "Scanning",
+  "last_scanned_at": null,
+  "ai_monitor_active": true
+}

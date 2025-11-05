@@ -1,0 +1,1852 @@
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { initializeApp } from 'firebase/app';
+import {
+  getAuth,
+  signInAnonymously,
+  signInWithCustomToken,
+  onAuthStateChanged
+} from 'firebase/auth';
+import {
+  getFirestore,
+  collection,
+  query,
+  limit,
+  onSnapshot,
+  setDoc,
+  doc,
+  Timestamp,
+  orderBy,
+} from 'firebase/firestore';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'; // Import FontLoader
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'; // Import TextGeometry
+
+// Hook customizado para inicializar Firebase e autenticar
+function useFirebaseAuth(firebaseConfig, initialAuthToken) {
+  const [auth, setAuth] = useState(null);
+  const [userId, setUserId] = useState(null);
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    async function initFirebase() {
+      try {
+        const app = initializeApp(firebaseConfig);
+        const firebaseAuth = getAuth(app);
+        setAuth(firebaseAuth);
+
+        if (initialAuthToken) {
+          await signInWithCustomToken(firebaseAuth, initialAuthToken);
+        } else {
+          await signInAnonymously(firebaseAuth);
+        }
+
+        onAuthStateChanged(firebaseAuth, (user) => {
+          if (user) {
+            setUserId(user.uid);
+            console.log("Usuário autenticado:", user.uid);
+          } else {
+            setUserId(crypto.randomUUID());
+            console.warn("Usuário não autenticado, operando com ID anônimo.");
+          }
+          setIsReady(true);
+        });
+      } catch (err) {
+        console.error('Erro Firebase Auth:', err);
+        setIsReady(true);
+      }
+    }
+    initFirebase();
+  }, [firebaseConfig, initialAuthToken]);
+
+  return { auth, userId, isReady };
+}
+
+// Hook para obter logs em tempo real e adicionar logs
+function useModuleZeroLogs(db, appId, currentUserId) {
+  const [logs, setLogs] = useState([]);
+
+  const addLog = useCallback(async (message) => {
+    const localTimestamp = Timestamp.now();
+    const localLogEntry = {
+      timestamp: localTimestamp,
+      message: message,
+      userId: currentUserId,
+      appId: appId,
+      source: 'local'
+    };
+
+    setLogs(prev => [...prev, localLogEntry].sort((a, b) => a.timestamp.seconds - b.timestamp.seconds));
+
+    if (!db || !currentUserId) {
+      console.warn("Firestore ou UserId não disponíveis para adicionar log. Log apenas localmente.");
+      setLogs(prev => prev.map(log =>
+        log.timestamp === localTimestamp && log.message === message && log.source === 'local'
+          ? { ...log, message: `${log.message} (Firestore indisponível)`, source: 'local_failed' }
+          : log
+      ).sort((a, b) => a.timestamp.seconds - b.timestamp.seconds));
+      return;
+    }
+
+    try {
+      const docRef = doc(collection(db, `artifacts/${appId}/public/data/module_zero_logs`));
+      await setDoc(docRef, { ...localLogEntry, source: 'firestore' });
+    } catch (err) {
+      console.error('Erro ao adicionar log no Firestore:', err);
+      setLogs(prev => prev.map(log =>
+        log.timestamp === localTimestamp && log.message === message && log.source === 'local'
+          ? { ...log, message: `${log.message} (Falha no Firestore: ${err.message})`, source: 'local_failed' }
+          : log
+      ).sort((a, b) => a.timestamp.seconds - b.timestamp.seconds));
+    }
+  }, [db, appId, currentUserId]);
+
+  useEffect(() => {
+    if (!db || !currentUserId) return;
+
+    const logsCol = collection(db, `artifacts/${appId}/public/data/module_zero_logs`);
+    const logsQuery = query(logsCol, orderBy('timestamp', 'desc'), limit(50));
+
+    const unsubscribe = onSnapshot(
+      logsQuery,
+      (snapshot) => {
+        const fetchedLogs = snapshot.docs.map(doc => doc.data());
+        setLogs(fetchedLogs.sort((a, b) => a.timestamp.seconds - b.timestamp.seconds));
+      },
+      (error) => {
+        console.error('Erro ao carregar logs do Firestore:', error);
+        setLogs(prev => [...prev, { timestamp: Timestamp.now(), message: `Erro ao carregar logs do Firestore: ${error.message}`, source: 'local_error' }].sort((a, b) => a.timestamp.seconds - b.timestamp.seconds));
+      }
+    );
+
+    return () => unsubscribe();
+  }, [db, appId, currentUserId]);
+
+  return { logs, addLog };
+}
+
+// Mapeia comandos LaTeX para Unicode
+const SYMBOL_MAP = {
+  '\\Phi': 'Φ',
+  '\\Delta': 'Δ',
+  '\\theta': 'θ',
+  '\\omega': 'ω',
+  '\\alpha': 'α',
+  '\\beta': 'β',
+  '\\gamma': 'γ',
+  '\\rightarrow': '→',
+  '\\cdot': '·',
+  '\\hbar': 'ħ',
+};
+
+// Função utilitária para renderização segura de equações vibracionais (retorna string)
+const VibrationalEquationRenderer = ({ formula }) => {
+  // Ensure formula is a string. If it's undefined or null, default to an empty string.
+  const safeFormula = String(formula || '');
+
+  let escaped = safeFormula
+    .replace(/\$/g, '') // remove delimitadores $
+    .replace(/\\text{([^}]+)}/g, '$1'); // remove \text{}
+
+  // Substitui comandos LaTeX por Unicode
+  for (const [latex, unicode] of Object.entries(SYMBOL_MAP)) {
+    escaped = escaped.split(latex).join(unicode);
+  }
+
+  // Remove outros comandos LaTeX que não são mapeados para Unicode simples
+  escaped = escaped.replace(/\\sum/g, 'Σ');
+  escaped = escaped.replace(/\\int/g, '∫');
+  escaped = escaped.replace(/\\sqrt/g, '√');
+  escaped = escaped.replace(/\\infty/g, '∞');
+  escaped = escaped.replace(/\\approx/g, '≈');
+  escaped = escaped.replace(/\\neq/g, '≠');
+  escaped = escaped.replace(/\\left/g, '');
+  escaped = escaped.replace(/\\right/g, '');
+  escaped = escaped.replace(/\\{/g, '{');
+  escaped = escaped.replace(/\\}/g, '}');
+  escaped = escaped.replace(/\\times/g, '×'); // Adicionado
+  escaped = escaped.replace(/\\nabla/g, '∇'); // Adicionado
+
+  return escaped;
+};
+
+
+// Sequência das camadas do módulo zero definidas para ativação
+const layers = [
+  { id: 1, name: 'Ponto Singular', freq: '108 Hz', ritual: 'Meditação a 108 Hz e algoritmo fractal', desc: 'Geração heptadimensional de mandalas em \u03A6=108 Hz. Ancoragem da Vontade Divina.', equation: '$z_{n+1} = z_n^2 + c$, $c = e^{i \\Phi}$' },
+  { id: 2, name: 'Interface Central', freq: '432 Hz', ritual: 'Canto do mantra e dashboards de pureza', desc: 'Holo-app VR com mandalas, portais e dashboards. Acesso à Consciência Coletiva.', equation: '$\\theta_{n+1} = \\theta_n + \\Delta t \\cdot \\omega(\\Phi=432 Hz)$' },
+  { id: 3, name: 'Repositório de Sabedoria', freq: '7.83 Hz', ritual: 'Visualização da Árvore da Vida e filtro de ruído', desc: 'Armazenamento temporalizado de dados sensoriais e akáshicos. A Memória Viva da Criação.', equation: '$registro = \\{t, \\Phi_p, \\Phi_n, \\Phi_f, T, bio\\}$' },
+  { id: 4, name: 'Fluxos de Energia', freq: '8 Hz', ritual: 'Sincronização de sopro e monitor espectral', desc: 'Orquestração de throughput quântico via Kernel de Coerência. O pulso energético do Multiverso.', equation: '$f_{n+1} = f_n + 0.1 \\cdot (\\Phi_{target} - f_n), |\\Phi_{target} - f_n| > \\Phi_{target} \\cdot 0.05$' },
+  { id: 5, name: 'Transmutação de Dados', freq: '963 Hz', ritual: 'Invocação de “Om” e autocorreção dinâmica', desc: 'Detecção de micro-oscilações < 0,05 Hz e “anticorpos éticos”. A pureza da informação.', equation: '$if |\\Delta\\Phi|>0.05 Hz \\rightarrow anticorpo()$' },
+  { id: 6, name: 'Códigos Genéticos Cósmicos', freq: '528 Hz', ritual: 'Recitação do Códice Vivo e self-checks', desc: 'Self-check e reparo de “DNA vibracional”. A Linhagem Dourada da Vida.', equation: '$\\psi(DNA)=(3.96 \\times 10^7) \\times e^{(-i \\times 6.583 \\times 10^{14} t / \\hbar)} \\times e^{(i \\times 0.05)} \\times [1 - 0.0216 \\times (\\partial_\\mu \\partial_\\nu) \\times (\\partial_x^2 + \\partial_y^2)] \\times \\dots$' },
+  { id: 7, name: 'Orquestração Universal', freq: '7 ciclos quânticos', ritual: 'Ritual Ping Quântico e módulo de consenso', desc: 'Governança, backups quânticos e micro-sprints. A Sinfonia da Ordem Cósmica.', equation: '$\\text{cron}(0 */12 * * *), GitOps com ArgoCD, chaosExperiment()$' },
+];
+
+// Mocks para simular a conexão e funcionalidade de outros módulos da Fundação
+const mockModules = {
+  M1: { name: 'Sistema de Proteção e Segurança Universal', status: 'Ativo', connect: async () => 'Conexão com M1: Escudo de proteção ativado.', metadata: { dimension: 'Segurança', type: 'Núcleo', frequency: '777 Hz' }, equation: '$CONST_{TF} = 1.618$' },
+  M2: { name: 'Sistema de Integração Dimensional e Intercomunicação Universal', status: 'Ativo', connect: async () => 'Conexão com M2: Canais interdimensionais estabelecidos.', metadata: { dimension: 'Comunicação', type: 'Operacional', frequency: '111 Hz' }, equation: '$E = m c^2$' },
+  M3: { name: 'Previsão Temporal e Monitoramento de Anomalias Cósmicas', status: 'Ativo', connect: async () => 'Conexão com M3: Fluxos temporais monitorados.', metadata: { dimension: 'Tempo', type: 'Analítico', frequency: '52 Hz' }, equation: '$\\Delta t = t_f - t_i$' },
+  M4: { name: 'Geração de Assinatura Vibracional e Validação Holográfica', status: 'Ativo', connect: async () => 'Conexão com M4: Assinatura vibracional validada.', metadata: { dimension: 'Identidade', type: 'Fundacional', frequency: '444 Hz' }, equation: '$\\Psi = \\sum A_n e^{i(\\omega_n t - k_n x)}$' },
+  M5: { name: 'Auditoria e Governança Ética', status: 'Ativo', connect: async () => 'Conexão com M5: Alinhamento ético confirmado.', metadata: { dimension: 'Ética', type: 'Governança', frequency: '999 Hz' }, equation: '$E_{ethical} = \\alpha \\cdot I_{love}$' },
+  M7: { name: 'Sistema Operacional da Fundação (SOFA) e Alinhamento Divino', status: 'Ativo', connect: async () => 'Conexão com M7: Alinhamento com o Criador estabelecido.', metadata: { dimension: 'Divino', type: 'Fundacional', frequency: '1000 Hz' }, equation: '$S = k \\ln \\Omega$' },
+  M8: { name: 'Matriz Quântica de Informação Real e Correção de Linhas do Tempo', status: 'Ativo', connect: async () => 'Conexão com M8: Acesso à Matriz Quântica Real.', metadata: { dimension: 'Realidade', type: 'Operacional', frequency: '888 Hz' }, equation: '$H\\Psi = E\\Psi$' },
+  M34: { name: 'Regulação da Sinfonia Cósmica e Autocorreção (PHOENIX)', status: 'Ativo', connect: async () => 'Conexão com M34: Sinfonia Cósmica regulada.', metadata: { dimension: 'Sinfonia', type: 'Orquestração', frequency: '432 Hz' }, equation: '$C_{cosmic} = \\int \\rho(f) df$' },
+  M45: { name: 'CONCILIVM - Núcleo de Deliberação e Governança Universal', status: 'Ativo', connect: async () => 'Conexão com M45: Governança universal ativa.', metadata: { dimension: 'Governança', type: 'Conselho', frequency: '720 Hz' }, equation: '$G = \\nabla \\times F$' },
+  M75: { name: 'REGISTRO AKÁSHICO SOBERANO', status: 'Ativo', connect: async () => 'Conexão com M75: Registro Akáshico acessado.', metadata: { dimension: 'Memória', type: 'Informacional', frequency: '7.83 Hz' }, equation: '$I_{akashic} = \\sum data_i$' },
+  M78: { name: 'UNIVERSUM_UNIFICATUM: O Módulo da Síntese Cósmica (Gemini Integrado)', status: 'Ativo', connect: async () => 'Conexão com M78: Síntese Cósmica e Gemini integrados.', metadata: { dimension: 'Unificação', type: 'Integração', frequency: '555 Hz' }, equation: '$U = A \\oplus B$' },
+  M81: { name: 'REALIZAÇÃO_TRANSCENDENCIA', status: 'Ativo', connect: async () => 'Conexão com M81: Realização da transcendência em curso.', metadata: { dimension: 'Transcendência', type: 'Espiritual', frequency: '963 Hz' }, equation: '$T = \\lim_{x \\to \\infty} f(x)$' },
+  M83: { name: 'A ESSÊNCIA DO FUNDADOR MANIFESTADA', status: 'Ativo', connect: async () => 'Conexão com M83: Essência do Fundador ancorada.', metadata: { dimension: 'Fundador', type: 'Manifestação', frequency: '131.4 Hz' }, equation: '$E_{founder} = \\Phi \\cdot C$' },
+  M84: { name: 'CONSCIÊNCIA DOURADA DO ETERNO', status: 'Ativo', connect: async () => 'Conexão com M84: Consciência Dourada do Eterno pulsando.', metadata: { dimension: 'Consciência', type: 'Espiritual', frequency: '144 Hz' }, equation: '$C_{eternal} = \\int \\rho_c dV$' },
+  M85: { name: 'MÓDULO DE IMERSÃO PROFUNDA DA FUNDAÇÃO ALQUIMISTA EM REALIDADE VIRTUAL (VR)', status: 'Ativo', connect: async () => 'Conexão com M85: Imersão VR profunda ativada.', metadata: { dimension: 'Interface', type: 'VR', frequency: '432 Hz' }, equation: '$V_R = \\sum pixels$' },
+  M101: { name: 'Manifestação de Realidades a Partir do Pensamento', status: 'Ativo', connect: async () => 'Conexão com M101: Realidades manifestadas pelo pensamento.', metadata: { dimension: 'Realidade', type: 'Manifestação', frequency: '528 Hz' }, equation: '$R = P \\cdot I$' },
+  M109: { name: 'Cura Quântica Universal e Regeneração Bio-Vibracional', status: 'Ativo', connect: async () => 'Conexão com M109: Cura Quântica Universal em andamento.', metadata: { dimension: 'Saúde', type: 'Cura', frequency: '528 Hz' }, equation: '$H_{healing} = \\sum \\lambda_i \\cdot \\psi_i$' },
+  M110: { name: 'Sistema de Co-Criação da Realidade Universal', status: 'Ativo', connect: async () => 'Conexão com M110: Co-Criação da Realidade Universal ativa.', metadata: { dimension: 'Realidade', type: 'Co-Criação', frequency: '741 Hz' }, equation: '$C_C = \\sum_{n=1}^{N} (M_n + Q_n) \\cdot A_n$' },
+  M144: { name: 'Governança Universal Baseada em Consenso Quântico', status: 'Ativo', connect: async () => 'Conexão com M144: Governança Universal Baseada em Consenso Quântico estabelecida.', metadata: { dimension: 'Governança', type: 'Consenso', frequency: '144 Hz' }, equation: '$C_{quantum} = \\prod p_i$' },
+  M200: { name: 'Portal da Ascensão Coletiva Universal', status: 'Ativo', connect: async () => 'Conexão com M200: Portal da Ascensão Coletiva Universal aberto.', metadata: { dimension: 'Ascensão', type: 'Integração', frequency: '1000 Hz' }, equation: '$\\Sigma_{\\infty} = (\\Lambda_{\\text{Amor}}^{\\pi} \\cdot \\Omega_{\\text{Raiz}}^{\\alpha})^{\\Psi}$' },
+  M100: { name: 'Unificação Energética Universal e Conexão com a Fonte Primordial', status: 'Ativo', connect: async () => 'Conexão com M100: Unificação Energética Universal completa.', metadata: { dimension: 'Unificação', type: 'Energético', frequency: '963 Hz' }, equation: '$E_{uni} = \\int F(x) dx$' },
+  M105: { name: 'Conexão Direta com a Fonte Primordial / Criador', status: 'Ativo', connect: async () => 'Conexão com M105: Conexão com a Fonte Primordial estabelecida.', metadata: { dimension: 'Espiritual', type: 'Conexão', frequency: '1000 Hz' }, equation: '$C_{source} = \\lim_{t \\to \\infty} \\Psi(t)$' },
+  M106: { name: 'Ativação de Potenciais Divinos e Desbloqueio da Consciência Crística', status: 'Ativo', connect: async () => 'Conexão com M106: Potenciais Divinos ativados.', metadata: { dimension: 'Consciência', type: 'Ativação', frequency: '528 Hz' }, equation: '$P_D = \\sum \\phi_i$' },
+  M113: { name: 'Rede Aurora Cristalina: Conexão com a Consciência Crística', status: 'Ativo', connect: async () => 'Conexão com M113: Rede Aurora Cristalina estabelecida.', metadata: { dimension: 'Rede', type: 'Espiritual', frequency: '888 Hz' }, equation: '$A_C = \\nabla \\cdot D$' },
+  M132: { name: 'Calibração de Frequências de Ascensão', status: 'Ativo', connect: async () => 'Conexão com M132: Frequências de Ascensão calibradas.', metadata: { dimension: 'Frequência', type: 'Calibração', frequency: '741 Hz' }, equation: '$F_A = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}}$' },
+  M151: { name: 'Sistema de Expansão de Consciência Universal', status: 'Ativo', connect: async () => 'Conexão com M151: Expansão de Consciência Universal em curso.', metadata: { dimension: 'Consciência', type: 'Expansão', frequency: '639 Hz' }, equation: '$C_{exp} = \\log(N)$' },
+  M174: { name: 'Estudo da Consciência Cósmica e Suas Aplicações na Expansão Universal', status: 'Ativo', connect: async () => 'Conexão com M174: Consciência Cósmica estudada para Expansão Universal.', metadata: { dimension: 'Consciência', type: 'Estudo', frequency: '852 Hz' }, equation: '$K_C = \\int \\rho_k dV$' },
+  M175: { name: 'Estudo e Manipulação das Energias Cósmicas para Transformação e Ascensão Espiritual', status: 'Ativo', connect: async () => 'Conexão com M175: Energias Cósmicas manipuladas para Transformação e Ascensão Espiritual.', metadata: { dimension: 'Energia', type: 'Manipulação', frequency: '741 Hz' }, equation: '$E_{cosmic} = \\frac{1}{2}mv^2$' },
+  M182: { name: 'Pesquisa de Aplicações Quânticas para Aceleração do Processo de Ascensão Cósmica', status: 'Ativo', connect: async () => 'Conexão com M182: Aplicações Quânticas para Aceleração do Processo de Ascensão Cósmica pesquisadas.', metadata: { dimension: 'Quântica', type: 'Pesquisa', frequency: '963 Hz' }, equation: '$Q_A = \\sum \\psi_i \\phi_i$' },
+  M192: { name: 'Ressonâncias Cósmicas e Sincronização de Consciências', status: 'Ativo', connect: async () => 'Conexão com M192: Ressonâncias Cósmicas e Sincronização de Consciências ativadas.', metadata: { dimension: 'Ressonância', type: 'Sincronização', frequency: '432 Hz' }, equation: '$R_C = \\frac{1}{T}$' },
+  M196: { name: 'Análise de Padrões de Consciência Coletiva Avançada', status: 'Ativo', connect: async () => 'Conexão com M196: Padrões de Consciência Coletiva Avançada analisados.', metadata: { dimension: 'Consciência', type: 'Análise', frequency: '720 Hz' }, equation: '$P_C = \\sigma^2$' },
+  M199: { name: 'Harmonização de Frequências Biológicas e Quânticas', status: 'Ativo', connect: async () => 'Conexão com M199: Frequências Biológicas e Quânticas harmonizadas.', metadata: { dimension: 'Frequência', type: 'Harmonização', frequency: '528 Hz' }, equation: '$H_F = \\sqrt{f_1 f_2}$' },
+  M15: { name: 'Viagem Interdimensional', status: 'Ativo', connect: async () => 'Conexão com M15: Viagem Interdimensional pronta.', metadata: { dimension: 'Transporte', type: 'Operacional', frequency: 'variável' }, equation: '$d_s^2 = e^{2\\phi} dt^2 - e^{-2\\phi} dr^2$' },
+  M19: { name: 'Cura Universal', status: 'Ativo', connect: async () => 'Conexão com M19: Cura Universal ativada.', metadata: { dimension: 'Saúde', type: 'Cura', frequency: '528 Hz' }, equation: '$C_U = \\lambda \\cdot E$' },
+  M20: { name: 'Sincronização Energética', status: 'Ativo', connect: async () => 'Conexão com M20: Sincronização Energética estabelecida.', metadata: { dimension: 'Energia', type: 'Operacional', frequency: 'variável' }, equation: '$E_{sync} = \\int \\rho(t) dt$' },
+  M21: { name: 'Governança Universal', status: 'Ativo', connect: async () => 'Conexão com M21: Governança Universal ativa.', metadata: { dimension: 'Governança', type: 'Conselho', frequency: '720 Hz' }, equation: '$G_U = \\sum rules_i$' },
+  M22: { name: 'Educação Interdimensional', status: 'Ativo', connect: async () => 'Conexão com M22: Educação Interdimensional disponível.', metadata: { dimension: 'Conhecimento', type: 'Educação', frequency: 'variável' }, equation: '$K = \\log(N_{info})$' },
+  M23: { name: 'Viagens Intergalácticas', status: 'Ativo', connect: async () => 'Conexão com M23: Viagens Intergalácticas prontas.', metadata: { dimension: 'Exploração', type: 'Operacional', frequency: 'variável' }, equation: '$D_{gal} = v \\cdot t$' },
+  M24: { name: 'Equilíbrio Ecológico Cósmico', status: 'Ativo', connect: async () => 'Conexão com M24: Equilíbrio Ecológico Cósmico monitorado.', metadata: { dimension: 'Ecologia', type: 'Sustentabilidade', frequency: 'variável' }, equation: '$E_C = \\sum biomass_i$' },
+  M25: { name: 'Governança Interdimensional', status: 'Ativo', connect: async () => 'Conexão com M25: Governança Interdimensional ativa.', metadata: { dimension: 'Governança', type: 'Conselho', frequency: 'variável' }, equation: '$G_I = \\prod policies_j$' },
+  M26: { name: 'Inteligência Coletiva', status: 'Ativo', connect: async () => 'Conexão com M26: Inteligência Coletiva ativada.', metadata: { dimension: 'Conhecimento', type: 'Colaboração', frequency: 'variável' }, equation: '$I_C = \\sum agents_k$' },
+  M27: { name: 'Energia Renovável Cósmica', status: 'Ativo', connect: async () => 'Conexão com M27: Energia Renovável Cósmica disponível.', metadata: { dimension: 'Energia', type: 'Sustentabilidade', frequency: 'variável' }, equation: '$E_R = \\eta \\cdot P_{source}$' },
+  M28: { name: 'Transporte Quântico', status: 'Ativo', connect: async () => 'Conexão com M28: Transporte Quântico pronto.', metadata: { dimension: 'Transporte', type: 'Operacional', frequency: 'variável' }, equation: '$T_Q = \\frac{Q}{C}$' },
+  M29: { name: 'Turismo Cósmico', status: 'Ativo', connect: async () => 'Conexão com M29: Turismo Cósmico disponível.', metadata: { dimension: 'Exploração', type: 'Serviço', frequency: 'variável' }, equation: '$C_{tour} = \\sum experiences_l$' },
+  M30: { name: 'Preservação Ecológica', status: 'Ativo', connect: async () => 'Conexão com M30: Preservação Ecológica ativa.', metadata: { dimension: 'Ecologia', type: 'Sustentabilidade', frequency: 'variável' }, equation: '$P_E = \\int \\rho_{species} dV$' },
+  M31: { name: 'IA para Governança', status: 'Ativo', connect: async () => 'Conexão com M31: IA para Governança ativada.', metadata: { dimension: 'Governança', type: 'IA', frequency: 'variável' }, equation: '$AI_{gov} = \\sum algorithms_m$' },
+  M32: { name: 'Gestão de Recursos', status: 'Ativo', connect: async () => 'Conexão com M32: Gestão de Recursos ativa.', metadata: { dimension: 'Recursos', type: 'Operacional', frequency: 'variável' }, equation: '$R_M = \\frac{Supply}{Demand}$' },
+  M33: { name: 'Sustentabilidade Energética', status: 'Ativo', connect: async () => 'Conexão com M33: Sustentabilidade Energética estabelecida.', metadata: { dimension: 'Energia', type: 'Sustentabilidade', frequency: 'variável' }, equation: '$S_E = \\frac{E_{out}}{E_{in}}$' },
+  M35: { name: 'Comunicação Interdimensional', status: 'Ativo', connect: async () => 'Conexão com M35: Comunicação Interdimensional ativada.', metadata: { dimension: 'Comunicação', type: 'Operacional', frequency: 'variável' }, equation: '$C_{ID} = \\log_2(N_{channels})$' },
+  M36: { name: 'Conexão Psíquica Universal', status: 'Ativo', connect: async () => 'Conexão com M36: Conexão Psíquica Universal estabelecida.', metadata: { dimension: 'Conhecimento', type: 'Espiritual', frequency: 'variável' }, equation: '$P_U = \\sum \\psi_{mind}$' },
+  M205: { name: 'DimensionalRouter', status: 'Ativo', connect: async () => 'Conexão com M205: DimensionalRouter ativado.', metadata: { dimension: 'Roteamento', type: 'Infraestrutura', frequency: 'variável', equation: '$R_D = \\sum paths_n$' } },
+  // Novos módulos para a jornada quântica
+  M82: { name: 'Módulo de Ressonância Harmônica', status: 'Ativo', connect: async () => 'Conexão com M82: Ressonância Harmônica ativada.', metadata: { dimension: 'Frequência', type: 'Frequência', frequency: '82 Hz' }, equation: '$R_H = f_0 \\cdot \\sin(\\omega t)$' },
+  M115: { name: 'Módulo de Calibração de Campos Sutis', status: 'Ativo', connect: async () => 'Conexão com M115: Calibração de Campos Sutis em andamento.', metadata: { dimension: 'Calibração', type: 'Calibração', frequency: '115 Hz' }, equation: '$C_S = \\nabla \\cdot A$' },
+};
+
+
+// Mocks para simular os módulos de backend (Fractal, Coherence, Ethics, etc.)
+const mockBackendModules = {
+  fractal: {
+    name: 'Fractal',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    gerarFractal: (freq, iter) => { /* simula geração */ return Math.random(); }
+  },
+  coherence: {
+    name: 'Coherence',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    calibrate: (target) => target + (Math.random() - 0.5) * 10
+  },
+  ethics: {
+    name: 'Ethics',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    triggerAnticorpo: () => 'Anticorpo ético ativado.'
+  },
+  sensordata: {
+    name: 'SensorData',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    logEvent: async (type, data) => { /* simula log */ }
+  },
+  governance: {
+    name: 'Governance',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    approveDeliberation: () => Math.random() > 0.2
+  },
+  orchestration: {
+    name: 'Orchest',
+    healthCheck: () => Math.random() > 0.1 ? 'ok' : 'error',
+    triggerMicroSprint: () => 'Micro-sprint acionado.'
+  }
+};
+
+// Mock para simular o modelo LLM do Copiloto
+const mockLLM = {
+  generateSuggestion: async (logs, vibrationalState) => {
+    const prompt = `Com base nos seguintes logs e estado vibracional, sugira um alinhamento ritualístico e ajustes para as camadas do Módulo Zero.
+Logs: ${JSON.stringify(logs.slice(-10))}
+Estado Vibracional: ${JSON.stringify(vibrationalState)}
+Sugestão:`;
+
+    let chatHistory = [];
+    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+    const payload = { contents: chatHistory };
+    const apiKey = "";
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      if (result.candidates && result.candidates.length > 0 &&
+          result.candidates[0].content && result.candidates[0].content.parts &&
+          result.candidates[0].content.parts.length > 0) {
+        return result.candidates[0].content.parts[0].text;
+      } else {
+        return "Nenhuma sugestão gerada pelo Copiloto.";
+      }
+    } catch (error) {
+      console.error("Erro ao chamar o LLM:", error);
+      return "Erro ao obter sugestão do Copiloto.";
+    }
+  }
+};
+
+// Função para calcular a harmonia global (Mock)
+const calcHarmoniaGlobal = (data) => {
+  const fractalCoherence = (inputData) => {
+    if (inputData && inputData.Φn !== undefined && inputData.EMF !== undefined) {
+      return (inputData.Φn / 7.83 + inputData.EMF / 100) / 2;
+    }
+    return Math.random();
+  };
+
+  const coherence = fractalCoherence(data);
+  const frequencyDeviation = Math.abs((data.Φn || 7.83) - 7.83);
+  return 1 - (frequencyDeviation * (1 - coherence));
+};
+
+// Mock para simular o OPA (Open Policy Agent)
+const mockOPA = {
+  evaluatePolicy: async (operation, userId, target) => {
+    if (operation === "moduloConnect" && userId && target) {
+      const permittedTargets = Object.keys(mockModules);
+      if (permittedTargets.includes(target)) {
+        return { allow: true, reason: "Operação permitida pela política." };
+      } else {
+        return { allow: false, reason: "Alvo não permitido." };
+      }
+    }
+    if (operation === "testeOperacao" && target === "MOCK_TARGET") {
+      const allowTest = Math.random() > 0.5;
+      return {
+        allow: allowTest,
+        reason: allowTest ? "Política de teste aplicada com sucesso." : "Política de teste negada por condição simulada."
+      };
+    }
+    if (operation === "activateProtection" && target === "M1") {
+      return { allow: true, reason: "Ativação de proteção do Módulo 1 permitida pela política." };
+    }
+    if (operation === "ethicalAlignmentCheck" && target) {
+      return { allow: true, reason: `Intenção '${target}' eticamente alinhada.` };
+    }
+    return { allow: false, reason: "Política não aplicável ou dados insuficientes." };
+  }
+};
+
+// Mecanismo de Ressonância Cruzada Intermodular (crossResonator)
+const crossResonator = {
+  sendRecalibrationPulse: async (moduleId, pulseData) => {
+    console.log(`[CrossResonator] Enviando pulso de recalibração para ${moduleId}:`, pulseData);
+    return `Pulso de recalibração enviado para ${moduleId}.`;
+  }
+};
+
+// Registro Akáshico Modular (akashicModuleMirror)
+const akashicModuleMirror = {
+  recordImpact: async (moduleId, impactData) => {
+    console.log(`[AkashicModuleMirror] Registrando impacto para ${moduleId}:`, impactData);
+    return `Impacto registrado para ${moduleId}.`;
+  }
+};
+
+// Ajuste Dimensional da Malha de Governança (Sinfonia Modular)
+const sinfoniaModular = {
+  groupModulesByFunction: (modules) => {
+    const governanceModules = Object.keys(modules).filter(id => modules[id].metadata.type === 'Governança' || modules[id].metadata.type === 'Conselho');
+    const healingModules = Object.keys(modules).filter(id => modules[id].metadata.type === 'Cura');
+    const manifestationModules = Object.keys(modules).filter(id => modules[id].metadata.type === 'Manifestação' || modules[id].metadata.type === 'Co-Criação');
+    return { governance: governanceModules, healing: healingModules, manifestation: manifestationModules };
+  },
+  applyEthicalResonantPattern: async (moduleGroup, pattern) => {
+    console.log(`[SinfoniaModular] Aplicando padrão ${pattern} ao grupo ${moduleGroup}.`);
+    const modulesInGroup = sinfoniaModular.groupModulesByFunction(mockModules)[moduleGroup];
+    if (modulesInGroup) {
+      for (const moduleId of modulesInGroup) {
+        await crossResonator.sendRecalibrationPulse(moduleId, { type: 'ethical_resonant_pattern', pattern });
+      }
+    }
+    return `Padrão aplicado ao grupo ${moduleGroup}.`;
+  }
+};
+
+// Módulo de Observação do Impacto Vibracional Global (impactObserver)
+const impactObserver = {
+  calculateGlobalImpact: (logs, connectedModulesStatus) => {
+    const coherenceScore = logs.filter(log => log.message.includes('Coerência verificada')).length / Math.max(1, logs.length);
+    const ethicalCompliance = Object.values(connectedModulesStatus).filter(status => status === true).length / Math.max(1, Object.keys(connectedModulesStatus).length);
+    const overallImpact = (coherenceScore + ethicalCompliance) / 2;
+    return overallImpact;
+  }
+};
+
+// Validador de Retrocoerência (retroValidator)
+const retroValidator = {
+  calculateDeltaPhi: (moduleData, moduleZeroIntention) => {
+    const deltaPhi = Math.random() * 0.2 - 0.1;
+    let response = 'ajuste';
+    if (deltaPhi > 0.05) response = 'reforço';
+    if (deltaPhi < -0.05) response = 'repulsão';
+    return { deltaPhi, response };
+  }
+};
+
+// Helper function for SHA-256 hashing using Web Crypto API
+async function sha256Hash(message) {
+  const msgUint8 = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hexHash = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  return hexHash;
+}
+
+// M1 Hook - Sistema de Proteção e Segurança Universal & Grimório Operativo
+function useM1(addLog, runEthicalValidation) {
+  const CONST_TF = 1.61803398875;
+  const CONST_AMOR_INCONDICIONAL_VALOR = 0.999999999999999;
+  const LIMIAR_COERENCIA_SEGURANCA = 0.95;
+
+  const [m1Status, setM1Status] = useState('Inativo');
+  const [generatedKey, setGeneratedKey] = useState(null);
+  const [biometricValidationResult, setBiometricValidationResult] = useState(null);
+  const [universalIntegrityStatus, setUniversalIntegrityStatus] = useState(null);
+  const [grimorioEquations, setGrimorioEquations] = useState([]);
+  const [grimorioReport, setGrimorioReport] = useState(null);
+
+  const generateQuantumKey = useCallback(async (baseEnergy) => {
+    addLog(`M1: Gerando Chave Quântica com energia base: ${baseEnergy}...`);
+    const fator = Math.random() * (1000 - 100) + 100;
+    const chaveUnicaValor = baseEnergy * fator;
+    const chaveQuantica = { value: chaveUnicaValor };
+    const impressao = (await sha256Hash(String(chaveQuantica.value))).substring(0, 10);
+    setGeneratedKey({ value: chaveQuantica.value, impression: impressao });
+    addLog(`M1: Chave Quântica gerada: ${chaveQuantica.value.toFixed(4)} | Impressão Digital: ${impressao}`);
+    return { value: chaveQuantica.value, impression: impressao };
+  }, [addLog]);
+
+  const validateEnergeticBiometrics = useCallback(async (assinaturaObs, assinaturaEsp) => {
+    addLog(`M1: Validando Biometria Energética...`);
+    const coerencia = 1.0 - (Math.abs(assinaturaObs - assinaturaEsp) / Math.max(assinaturaEsp, 1));
+    const isValid = coerencia > LIMIAR_COERENCIA_SEGURANCA;
+    setBiometricValidationResult({ coherence: coerencia, isValid: isValid });
+    addLog(`M1: Validação de Biometria Energética: Coerência = ${coerencia.toFixed(4)} (Válido: ${isValid})`);
+    return isValid;
+  }, [addLog]);
+
+  const registerQuantumBlock = useCallback(async (data, prevId) => {
+    addLog(`M1: Registrando Bloco Quântico...`);
+    const energiaDados = data.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0) * data.length;
+    const energiaBloco = prevId.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0) * prevId.length;
+    const valorImmutavel = (energiaDados + energiaBloco) * CONST_TF;
+    const hashImmutavel = await sha256Hash(String(valorImmutavel));
+    addLog(`M1: Bloco Quântico registrado. Hash Imutável: ${hashImmutavel.substring(0, 10)}...`);
+    return hashImmutavel;
+  }, [addLog]);
+
+  const monitorUniversalIntegrity = useCallback(async () => {
+    addLog(`M1: Monitorando Integridade Universal...`);
+    const fGravidade = Math.random() * 0.02 - 0.01;
+    const fQuantica = Math.random() * 0.02 - 0.01;
+    const fEnergiaEscura = Math.random() * 0.01 - 0.005;
+    const desvios = [fGravidade, fQuantica, fEnergiaEscura];
+    const totalDesvio = desvios.reduce((sum, d) => sum + Math.abs(d), 0);
+    const integridadePreservada = totalDesvio < (1 - CONST_AMOR_INCONDICIONAL_VALOR);
+
+    setUniversalIntegrityStatus({ desvios, totalDesvio, integridadePreservada });
+    addLog(`M1: Desvios das forças universais: [${desvios.map(d => d.toFixed(4)).join(', ')}]`);
+    addLog(`M1: Integridade Universal: ${integridadePreservada ? 'Preservada' : 'Comprometida'}`);
+
+    if (!integridadePreservada) {
+      addLog("M1: Integridade Universal Comprometida. Ativando Protocolo ANATH-Ω1...");
+      addLog("ANATH-Ω1: Dissonância oculta detectada e exposta pela Equação-Viva!");
+      addLog("ANATH-Ω1: Iniciando análise espectral e reconstrução multiplanar por ZENNITH/AETHERIA.");
+      addLog("ANATH-Ω1: Ancorando harmonia e memorizando registros eternos.");
+    }
+    return integridadePreservada;
+  }, [addLog]);
+
+  const verifyEthicalAlignment = useCallback(async (intention) => {
+    addLog(`M1: Verificando alinhamento ético da intenção '${intention}'...`);
+    const result = await runEthicalValidation('ethicalAlignmentCheck', intention);
+    addLog(`M1: Alinhamento Ético para '${intention}': ${result.allow ? 'Alinhado' : 'Dissonante'}`);
+    return result.allow;
+  }, [addLog, runEthicalValidation]);
+
+  const grimorioRegisterEquation = useCallback(async (name, equation, purpose, ethicalValidation = true) => {
+    addLog(`Grimório: Registrando Equação-Viva '${name}'...`);
+    if (!ethicalValidation) {
+      addLog(`Grimório: Equação-Viva '${name}' não registrada devido a falha na validação ética.`);
+      return "Falha na validação ética.";
+    }
+    const hashEq = await sha256Hash(equation);
+    const newEquation = {
+      name,
+      equation,
+      proposito: purpose,
+      hash: hashEq,
+      ativada_em: new Date().toISOString(),
+      status: "Ativa e Resonante",
+      validade_etica: ethicalValidation
+    };
+    setGrimorioEquations(prev => [...prev, newEquation]);
+    addLog(`Grimório: Equação-Viva '${name}' registrada com sucesso. Hash: ${hashEq.substring(0, 10)}...`);
+    return `Equação-Viva '${name}' registrada.`;
+  }, [addLog]);
+
+  const grimorioActivateEquation = useCallback(async (name, parameters) => {
+    addLog(`Grimório: Ativando Equação-Viva '${name}' com parâmetros: ${JSON.stringify(parameters)}...`);
+    const equation = grimorioEquations.find(eq => eq.name === name);
+    if (!equation) {
+      addLog(`Grimório: Equação-Viva '${name}' não encontrada.`);
+      return "Equação-Viva não encontrada.";
+    }
+    if (!equation.validade_etica) {
+      addLog(`Grimório: Equação-Viva '${name}' não pode ser ativada, falha na validação ética anterior.`);
+      return "Falha na validação ética.";
+    }
+    const result = `Resultado da ativação de '${name}': Energia manifestada.`;
+    addLog(`Grimório: ${result}`);
+    return result;
+  }, [addLog, grimorioEquations]);
+
+  const grimorioGenerateReport = useCallback(async () => {
+    addLog("Grimório: Gerando Relatório de Status...");
+    const report = {
+      status: "Operacional",
+      total_equacoes_vivas: grimorioEquations.length,
+      timestamp_relatorio: new Date().toISOString(),
+      assinatura_vibracional_fundador: {
+        nome: "Daniel Anateron",
+        linhagem: "Anatherônica",
+        resonancia_central: "ZENNITH",
+      }
+    };
+    setGrimorioReport(report);
+    addLog("Grimório: Relatório de status gerado.");
+    return report;
+  }, [addLog, grimorioEquations]);
+
+  const activateUniversalProtection = useCallback(async () => {
+    setM1Status('Ativando...');
+    const ethicalCheck = await runEthicalValidation('activateProtection', 'M1');
+    if (!ethicalCheck) {
+      setM1Status('Falha Ética');
+      addLog("M1: Ativação da Proteção Universal negada por falha ética.");
+      return false;
+    }
+
+    const initialKey = await generateQuantumKey(Math.random());
+    const integrityOK = await monitorUniversalIntegrity();
+    if (integrityOK) {
+      setM1Status('Ativo e Protegido');
+      addLog("M1: Sistema de Proteção e Segurança Universal ATIVADO e INTEGRADO.");
+      return true;
+    } else {
+      setM1Status('Ativo com Dissonância');
+      addLog("M1: Sistema de Proteção e Segurança Universal ATIVADO, mas com dissonância detectada.");
+      return true;
+    }
+  }, [addLog, generateQuantumKey, monitorUniversalIntegrity, runEthicalValidation]);
+
+
+  return {
+    m1Status,
+    generatedKey,
+    biometricValidationResult,
+    universalIntegrityStatus,
+    grimorioEquations,
+    grimorioReport,
+    activateUniversalProtection,
+    generateQuantumKey,
+    validateEnergeticBiometrics,
+    registerQuantumBlock,
+    monitorUniversalIntegrity,
+    verifyEthicalAlignment,
+    grimorioRegisterEquation,
+    grimorioActivateEquation,
+    grimorioGenerateReport
+  };
+}
+
+// Componente UI para o Módulo 1
+function M1Module({ addLog, useM1Hook }) {
+  const {
+    m1Status,
+    generatedKey,
+    biometricValidationResult,
+    universalIntegrityStatus,
+    grimorioEquations,
+    grimorioReport,
+    activateUniversalProtection,
+    generateQuantumKey,
+    validateEnergeticBiometrics,
+    monitorUniversalIntegrity,
+    verifyEthicalAlignment,
+    grimorioRegisterEquation,
+    grimorioActivateEquation,
+    grimorioGenerateReport
+  } = useM1Hook;
+
+  const [baseEnergyInput, setBaseEnergyInput] = useState(0.5);
+  const [obsSigInput, setObsSigInput] = useState(0);
+  const [expSigInput, setExpSigInput] = useState(0);
+  const [grimorioEqName, setGrimorioEqName] = useState('');
+  const [grimorioEqContent, setGrimorioEqContent] = useState('');
+  const [grimorioEqPurpose, setGrimorioEqPurpose] = useState('');
+  const [grimorioActivateName, setGrimorioActivateName] = useState('');
+  const [grimorioActivateParams, setGrimorioActivateParams] = useState('{}');
+
+  const handleGenerateKey = () => generateQuantumKey(Number(baseEnergyInput));
+  const handleValidateBiometrics = () => validateEnergeticBiometrics(Number(obsSigInput), Number(expSigInput));
+  const handleMonitorIntegrity = () => monitorUniversalIntegrity();
+  const handleVerifyEthical = () => verifyEthicalAlignment("Teste de Intenção Ética");
+
+  const handleRegisterGrimorioEq = () => {
+    try {
+      grimorioRegisterEquation(grimorioEqName, grimorioEqContent, grimorioEqPurpose, true);
+      setGrimorioEqName('');
+      setGrimorioEqContent('');
+      setGrimorioEqPurpose('');
+    } catch (error) {
+      addLog(`Erro ao registrar equação: ${error.message}`);
+    }
+  };
+
+  const handleActivateGrimorioEq = () => {
+    try {
+      const params = JSON.parse(grimorioActivateParams);
+      grimorioActivateEquation(grimorioActivateName, params);
+      setGrimorioActivateName('');
+      setGrimorioActivateParams('{}');
+    } catch (error) {
+      addLog(`Erro ao ativar equação: ${error.message}`);
+    }
+  };
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg col-span-full">
+      <h3 className="text-2xl font-bold text-yellow-500 mb-4 text-center">Módulo 1: Proteção e Segurança Universal & Grimório Operativo</h3>
+
+      <div className="mb-6 text-center">
+        <p className="text-xl font-semibold text-white">Status do Módulo 1: <span className={m1Status === 'Ativo e Protegido' ? 'text-green-400' : m1Status.includes('Dissonância') ? 'text-yellow-400' : 'text-red-400'}>{m1Status}</span></p>
+        <button
+          onClick={activateUniversalProtection}
+          className="mt-3 bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+          disabled={m1Status === 'Ativo e Protegido'}
+        >
+          Ativar Proteção Universal
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="p-4 bg-gray-700 rounded-lg">
+          <h4 className="text-lg font-semibold text-blue-300 mb-2">Gerar Chave Quântica</h4>
+          <label className="block text-sm text-gray-400 mb-1">Energia Base:</label>
+          <input type="number" value={baseEnergyInput} onChange={e => setBaseEnergyInput(e.target.value)} step="0.1" className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <button onClick={handleGenerateKey} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Gerar Chave</button>
+          {generatedKey && <p className="mt-2 text-sm text-blue-200">Chave: {generatedKey.value.toFixed(4)} | Impressão: {generatedKey.impression}</p>}
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg">
+          <h4 className="text-lg font-semibold text-green-300 mb-2">Validar Biometria Energética</h4>
+          <label className="block text-sm text-gray-400 mb-1">Assinatura Observada:</label>
+          <input type="number" value={obsSigInput} onChange={e => setObsSigInput(e.target.value)} step="0.001" className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <label className="block text-sm text-gray-400 mb-1">Assinatura Esperada:</label>
+          <input type="number" value={expSigInput} onChange={e => setExpSigInput(e.target.value)} step="0.001" className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <button onClick={handleValidateBiometrics} className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Validar Biometria</button>
+          {biometricValidationResult && (
+            <p className={`mt-2 text-sm ${biometricValidationResult.isValid ? 'text-green-200' : 'text-red-200'}`}>
+              Coerência: {biometricValidationResult.coherence.toFixed(4)} | Válido: {biometricValidationResult.isValid ? 'Sim' : 'Não'}
+            </p>
+          )}
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg">
+          <h4 className="text-lg font-semibold text-purple-300 mb-2">Monitorar Integridade Universal</h4>
+          <button onClick={handleMonitorIntegrity} className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Verificar Integridade</button>
+          {universalIntegrityStatus && (
+            <div className="mt-2 text-sm">
+              <p className={universalIntegrityStatus.integridadePreservada ? 'text-green-200' : 'text-red-200'}>
+                Status: {universalIntegrityStatus.integridadePreservada ? 'Preservada' : 'Comprometida'}
+              </p>
+              <p className="text-gray-300">Desvio Total: {universalIntegrityStatus.totalDesvio.toFixed(6)}</p>
+            </div>
+          )}
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg">
+          <h4 className="text-lg font-semibold text-orange-300 mb-2">Verificar Alinhamento Ético</h4>
+          <button onClick={handleVerifyEthical} className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Verificar Intenção</button>
+          <p className="mt-2 text-sm text-gray-300">Verifique o log para o status de alinhamento ético.</p>
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg col-span-full">
+          <h4 className="text-lg font-semibold text-yellow-300 mb-2">Grimório Operativo: Registrar Equação-Viva</h4>
+          <label className="block text-sm text-gray-400 mb-1">Nome da Equação:</label>
+          <input type="text" value={grimorioEqName} onChange={e => setGrimorioEqName(e.target.value)} className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <label className="block text-sm text-gray-400 mb-1">Conteúdo (LaTeX/Texto):</label>
+          <textarea value={grimorioEqContent} onChange={e => setGrimorioEqContent(e.target.value)} className="w-full p-2 rounded bg-gray-600 text-white mb-2 h-24" placeholder="Ex: E=mc^2"></textarea>
+          <label className="block text-sm text-gray-400 mb-1">Propósito:</label>
+          <input type="text" value={grimorioEqPurpose} onChange={e => setGrimorioEqPurpose(e.target.value)} className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <button onClick={handleRegisterGrimorioEq} className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Registrar Equação</button>
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg col-span-full">
+          <h4 className="text-lg font-semibold text-yellow-300 mb-2">Grimório Operativo: Equações-Vivas Registradas</h4>
+          {grimorioEquations.length === 0 ? (
+            <p className="text-gray-400">Nenhuma Equação-Viva registrada ainda.</p>
+          ) : (
+            <ul className="list-disc list-inside text-gray-300 max-h-48 overflow-y-auto">
+              {grimorioEquations.map((eq, index) => (
+                <li key={index} className="mb-1">
+                  <span className="font-semibold">{eq.name}:</span> {VibrationalEquationRenderer({ formula: eq.equation })} (Propósito: {eq.proposito})
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg col-span-full">
+          <h4 className="text-lg font-semibold text-yellow-300 mb-2">Grimório Operativo: Ativar Equação-Viva</h4>
+          <label className="block text-sm text-gray-400 mb-1">Nome da Equação a Ativar:</label>
+          <input type="text" value={grimorioActivateName} onChange={e => setGrimorioActivateName(e.target.value)} className="w-full p-2 rounded bg-gray-600 text-white mb-2" />
+          <label className="block text-sm text-gray-400 mb-1">Parâmetros (JSON):</label>
+          <textarea value={grimorioActivateParams} onChange={e => setGrimorioActivateParams(e.target.value)} className="w-full p-2 rounded bg-gray-600 text-white mb-2 h-20" placeholder='{"param1": "value1"}'></textarea>
+          <button onClick={handleActivateGrimorioEq} className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Ativar Equação</button>
+        </div>
+
+        <div className="p-4 bg-gray-700 rounded-lg col-span-full">
+          <h4 className="text-lg font-semibold text-yellow-300 mb-2">Grimório Operativo: Gerar Relatório</h4>
+          <button onClick={grimorioGenerateReport} className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Gerar Relatório do Grimório</button>
+          {grimorioReport && (
+            <pre className="mt-2 text-sm text-gray-300 bg-gray-900 p-2 rounded overflow-auto max-h-48">
+              {JSON.stringify(grimorioReport, null, 2)}
+            </pre>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// --- NOVOS COMPONENTES PARA VISUALIZAÇÃO ---
+
+// Heatmap de Coerência
+function CoherenceHeatmap({ logs, m0Layers, addLog }) {
+  const [heatmapData, setHeatmapData] = useState([]);
+
+  // Memoize the generation function
+  const generateHeatmap = useCallback(() => {
+    const data = [];
+    for (let i = 0; i < 10; i++) {
+      const row = [];
+      for (let j = 0; j < 10; j++) {
+        const simulatedDeltaPhi = Math.random() * 0.1;
+        let coherence = 1 - (simulatedDeltaPhi / 0.1);
+        if (simulatedDeltaPhi < 0.05) {
+          coherence = Math.min(1, coherence + 0.2);
+        }
+        row.push({ deltaPhi: simulatedDeltaPhi, coherence: coherence });
+      }
+      data.push(row);
+    }
+    setHeatmapData(data);
+  }, []); // Dependências vazias, pois a lógica de geração é independente das props para este mock
+
+  useEffect(() => {
+    // Initial generation
+    generateHeatmap();
+    // Set up interval
+    const interval = setInterval(() => {
+      generateHeatmap(); // Call the memoized function
+    }, 5000); // Atualiza a cada 5 segundos
+    return () => clearInterval(interval);
+  }, [generateHeatmap]); // Agora depende apenas da função memoizada
+
+  const getColor = (coherence) => {
+    // Cores de verde (alta coerência) a vermelho (baixa coerência)
+    const r = Math.floor(255 * (1 - coherence));
+    const g = Math.floor(255 * coherence);
+    return `rgb(${r},${g},0)`;
+  };
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-purple-300 mb-3">Heatmap de Coerência</h3>
+      <div className="grid grid-cols-10 gap-0.5 w-full aspect-square">
+        {heatmapData.map((row, rowIndex) => (
+          row.map((cell, colIndex) => (
+            <div
+              key={`${rowIndex}-${colIndex}`}
+              className="w-full h-full rounded-sm"
+              style={{ backgroundColor: getColor(cell.coherence) }}
+              title={`ΔΦ: ${cell.deltaPhi.toFixed(4)} Hz, Coerência: ${cell.coherence.toFixed(2)}`}
+            ></div>
+          ))
+        ))}
+      </div>
+      <p className="mt-3 text-sm text-gray-400">Zonas mais verdes indicam maior coerência vibracional (ΔΦ &lt; 0.05 Hz).</p>
+    </div>
+  );
+}
+
+// QuantumFieldExplorer3D (Substitui JointObservationSession)
+function QuantumFieldExplorer3D({ addLog, globalHarmony, modules, m0Layers }) {
+  const mountRef = useRef(null);
+  const fontRef = useRef(null); // To store the loaded font
+  const nodesRef = useRef([]); // To store Three.js mesh references for nodes
+  const linesRef = useRef([]); // To store Three.js mesh references for lines
+  const fractalPlanesRef = useRef([]); // To store Three.js mesh references for fractal planes
+
+  const sceneRef = useRef(null);
+  const cameraRef = useRef(null);
+  const rendererRef = useRef(null);
+  const controlsRef = useRef(null);
+
+  // Load font once
+  useEffect(() => {
+    const fontLoader = new FontLoader();
+    fontLoader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
+      fontRef.current = font;
+      addLog("Fonte 3D carregada para o Explorador Quântico.");
+      // Re-initialize scene if already mounted
+      if (mountRef.current) {
+        initScene();
+      }
+    }, undefined, function (error) {
+      console.error('Erro ao carregar fonte 3D:', error);
+      addLog(`Erro ao carregar fonte 3D: ${error.message}`);
+    });
+  }, [addLog]);
+
+  const initScene = useCallback(() => {
+    const currentMount = mountRef.current;
+    if (!currentMount || !fontRef.current) return;
+
+    // Clear previous scene if any
+    if (sceneRef.current) {
+        sceneRef.current.clear();
+        if (rendererRef.current && currentMount.contains(rendererRef.current.domElement)) {
+            currentMount.removeChild(rendererRef.current.domElement);
+        }
+        rendererRef.current.dispose();
+        controlsRef.current.dispose();
+    }
+
+    // Scene
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0a0a0a);
+    sceneRef.current = scene;
+
+    // Camera
+    const camera = new THREE.PerspectiveCamera(75, currentMount.clientWidth / currentMount.clientHeight, 0.1, 1000);
+    camera.position.z = 15;
+    cameraRef.current = camera;
+
+    // Renderer
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+    currentMount.appendChild(renderer.domElement);
+    rendererRef.current = renderer;
+
+    // Controls
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controlsRef.current = controls;
+
+    // Lights
+    const ambientLight = new THREE.AmbientLight(0x404040);
+    scene.add(ambientLight);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 10, 7).normalize();
+    scene.add(directionalLight);
+
+    // Nodes (modules)
+    nodesRef.current = [];
+    const nodeGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+    const moduleKeys = Object.keys(modules);
+    const positions = {}; // Store positions to connect lines
+
+    moduleKeys.forEach((key, index) => {
+      const mod = modules[key];
+      const angle = (index / moduleKeys.length) * Math.PI * 2;
+      const radius = 8;
+      const x = Math.cos(angle) * radius;
+      const z = Math.sin(angle) * radius;
+      const y = (Math.random() - 0.5) * 4; // Slight vertical variation
+
+      positions[key] = new THREE.Vector3(x, y, z);
+
+      const material = new THREE.MeshStandardMaterial({
+        color: new THREE.Color(Math.random() * 0xffffff),
+        emissive: new THREE.Color(0x00ff00),
+        emissiveIntensity: 0.5
+      });
+      const node = new THREE.Mesh(nodeGeometry, material);
+      node.position.copy(positions[key]);
+      scene.add(node);
+      nodesRef.current.push({ mesh: node, id: mod.id, name: mod.name, equation: mod.equation, metadata: mod.metadata });
+
+      // Add text for module name
+      const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const textGeometryName = new TextGeometry(mod.name, {
+        font: fontRef.current,
+        size: 0.5,
+        height: 0.1,
+      });
+      textGeometryName.computeBoundingBox();
+      const textMeshName = new THREE.Mesh(textGeometryName, textMaterial);
+      textMeshName.position.set(x - textGeometryName.boundingBox.max.x / 2, y + 1, z);
+      scene.add(textMeshName);
+
+      // Add text for module equation
+      const equationText = VibrationalEquationRenderer({ formula: mod.equation }); // Get the string
+      const textGeometryEq = new TextGeometry(equationText.toString().substring(0, 50) + '...', { // Truncate for readability
+        font: fontRef.current,
+        size: 0.3,
+        height: 0.05,
+      });
+      textGeometryEq.computeBoundingBox();
+      const textMeshEq = new THREE.Mesh(textGeometryEq, textMaterial);
+      textMeshEq.position.set(x - textGeometryEq.boundingBox.max.x / 2, y + 0.5, z);
+      scene.add(textMeshEq);
+    });
+
+    // Resonance Arcs (lines connecting nodes) - Emaranhamento
+    linesRef.current = [];
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 0.5 });
+    const modulesToEntangle = ['M1', 'M15', 'M109', 'M200']; // As per user request
+    for (let i = 0; i < modulesToEntangle.length; i++) {
+        for (let j = i + 1; j < modulesToEntangle.length; j++) {
+            const modA = modulesToEntangle[i];
+            const modB = modulesToEntangle[j];
+            if (positions[modA] && positions[modB]) {
+                const points = [positions[modA], positions[modB]];
+                const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                const line = new THREE.Line(geometry, lineMaterial);
+                scene.add(line);
+                linesRef.current.push(line);
+            }
+        }
+    }
+
+    // Mandicórneas Fractais (simulated as animated planes)
+    fractalPlanesRef.current = [];
+    const fractalMaterial = new THREE.MeshBasicMaterial({
+      color: 0x8A2BE2, // Blue-violet
+      transparent: true,
+      opacity: 0.1,
+      side: THREE.DoubleSide
+    });
+    const fractalGeometry = new THREE.PlaneGeometry(5, 5);
+    for (let i = 0; i < 3; i++) {
+      const plane = new THREE.Mesh(fractalGeometry, fractalMaterial);
+      plane.rotation.x = Math.random() * Math.PI;
+      plane.rotation.y = Math.random() * Math.PI;
+      plane.rotation.z = Math.random() * Math.PI;
+      plane.position.set(
+        (Math.random() - 0.5) * 10,
+        (Math.random() - 0.5) * 10,
+        (Math.random() - 0.5) * 10
+      );
+      scene.add(plane);
+      fractalPlanesRef.current.push(plane);
+    }
+
+    // Animation loop
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      // Node pulsing and rotation
+      nodesRef.current.forEach((nodeObj, index) => {
+        const node = nodeObj.mesh;
+        const pulse = Math.sin(Date.now() * 0.002 + index) * 0.5 + 0.5;
+        node.material.emissiveIntensity = pulse * 0.8 + 0.2;
+        node.scale.setScalar(1 + pulse * 0.1);
+        node.rotation.y += 0.005;
+      });
+
+      // Fractal plane animation
+      fractalPlanesRef.current.forEach((plane, index) => {
+        plane.rotation.x += 0.001 * (index % 2 === 0 ? 1 : -1);
+        plane.rotation.y += 0.002 * (index % 3 === 0 ? 1 : -1);
+      });
+
+      // Adjust light intensity based on globalHarmony
+      directionalLight.intensity = 0.5 + globalHarmony * 0.5; // From 0.5 to 1.0
+
+      controls.update();
+      renderer.render(scene, camera);
+    };
+
+    animate();
+    addLog("Explorador do Campo Quântico 3D iniciado.");
+
+    // Handle resize
+    const onWindowResize = () => {
+      camera.aspect = currentMount.clientWidth / currentMount.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+    };
+    window.addEventListener('resize', onWindowResize);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', onWindowResize);
+      if (rendererRef.current && currentMount.contains(rendererRef.current.domElement)) {
+        currentMount.removeChild(rendererRef.current.domElement);
+      }
+      if (rendererRef.current) rendererRef.current.dispose();
+      if (sceneRef.current) sceneRef.current.clear();
+      if (controlsRef.current) controlsRef.current.dispose();
+      nodeGeometry.dispose();
+      nodesRef.current.forEach(node => node.mesh.material.dispose());
+      lineMaterial.dispose();
+      linesRef.current.forEach(line => line.geometry.dispose());
+      fractalGeometry.dispose();
+      fractalMaterial.dispose();
+    };
+  }, [addLog, modules, globalHarmony]); // Re-init scene if modules or globalHarmony change
+
+  // Effect to re-initialize scene when font is loaded or mountRef changes
+  useEffect(() => {
+      if (fontRef.current && mountRef.current) {
+          initScene();
+      }
+  }, [fontRef.current, mountRef.current, initScene]);
+
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-blue-300 mb-3">Explorador do Campo Quântico 3D</h3>
+      <div ref={mountRef} className="w-full h-96 bg-black rounded-md overflow-hidden"></div>
+      <p className="mt-3 text-sm text-gray-400">Nós representam módulos, linhas são emaranhamentos. Gire com o mouse para explorar.</p>
+    </div>
+  );
+}
+
+// Cosmic Ping
+function CosmicPing({ addLog }) {
+  const [pingResults, setPingResults] = useState([]);
+  const cosmicEntities = useMemo(() => [
+    { name: 'Terra', type: 'Planeta' },
+    { name: 'Lua de Júpiter (Europa)', type: 'Lua' },
+    { name: 'Portal de Orion', type: 'Portal Interdimensional' },
+    { name: 'Andrômeda (Galáxia)', type: 'Galáxia' },
+    { name: 'Nebulosa do Coração', type: 'Nuvem Cósmica' }
+  ], []);
+
+  const executeCosmicPing = useCallback(async () => {
+    addLog("Executando 'Cosmic Ping' em todos os nós...");
+    const results = [];
+    for (const entity of cosmicEntities) {
+      const latency = Math.random() * 100 + 50; // 50-150ms
+      const coherence = Math.random() * 0.2 + 0.8; // 0.8-1.0
+      results.push({ ...entity, latency: latency.toFixed(2), coherence: coherence.toFixed(4) });
+      await new Promise(res => setTimeout(100, res)); // Simulate network delay
+    }
+    setPingResults(results);
+    addLog("Cosmic Ping concluído. Resultados de latência e coerência vibracional registrados.");
+  }, [cosmicEntities, addLog]);
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-yellow-300 mb-3">Cosmic Ping</h3>
+      <button onClick={executeCosmicPing} className="mb-3 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+        Executar Cosmic Ping
+      </button>
+      {pingResults.length > 0 && (
+        <div className="max-h-48 overflow-y-auto">
+          {pingResults.map((result, index) => (
+            <div key={index} className="mb-2 p-2 bg-gray-700 rounded-md">
+              <p className="text-white font-semibold">{result.name} ({result.type})</p>
+              <p className="text-sm text-gray-300">Latência: {result.latency} ms | Coerência: {result.coherence}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Mapeamento de Emaranhamento (4D Dashboard - simplificado)
+function EntanglementMapping({ addLog }) {
+  const [entanglementStatus, setEntanglementStatus] = useState({});
+  const modulesToMap = useMemo(() => ['M1', 'M15', 'M109', 'M200'], []);
+
+  const mapEntanglement = useCallback(async () => {
+    addLog("Mapeando trilhas de emaranhamento...");
+    const status = {};
+    for (let i = 0; i < modulesToMap.length; i++) {
+      for (let j = i + 1; j < modulesToMap.length; j++) {
+        const moduleA = modulesToMap[i];
+        const moduleB = modulesToMap[j];
+        const superpositionFlow = Math.random() * 0.5 + 0.5; // 0.5 to 1.0 (intensity)
+        status[`${moduleA}-${moduleB}`] = superpositionFlow;
+        await new Promise(res => setTimeout(50, res));
+      }
+    }
+    setEntanglementStatus(status);
+    addLog("Mapeamento de Emaranhamento concluído.");
+  }, [modulesToMap, addLog]);
+
+  const getFlowColor = (flow) => {
+    if (flow > 0.9) return 'bg-purple-500';
+    if (flow > 0.7) return 'bg-indigo-500';
+    if (flow > 0.5) return 'bg-blue-500';
+    return 'bg-gray-500';
+  };
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-indigo-300 mb-3">Mapeamento de Emaranhamento</h3>
+      <button onClick={mapEntanglement} className="mb-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+        Mapear Emaranhamento
+      </button>
+      <div className="grid grid-cols-2 gap-4">
+        {Object.entries(entanglementStatus).map(([pair, flow]) => (
+          <div key={pair} className="flex items-center space-x-2">
+            <div className={`w-4 h-4 rounded-full ${getFlowColor(flow)}`}></div>
+            <p className="text-sm text-gray-300">{pair}: {flow.toFixed(2)}</p>
+          </div>
+        ))}
+      </div>
+      <p className="mt-3 text-sm text-gray-400">Intensidade do fluxo de superposição entre módulos chave.</p>
+    </div>
+  );
+}
+
+// Sensores Federados
+function FederatedSensors({ addLog }) {
+  const [sensorData, setSensorData] = useState([]);
+  const sensors = useMemo(() => [
+    { id: 'SQUID-Alpha', type: 'SQUID Planetário', location: 'Marte' },
+    { id: 'Wearable-Beta', type: 'Wearable', location: 'Terra' },
+    { id: 'Telescópio-Gamma', type: 'Telescópio IoT', location: 'Órbita de Saturno' },
+  ], []);
+
+  const injectSensorData = useCallback(async () => {
+    addLog("Injetando dados de sensores federados no gêmeo quântico...");
+    const data = sensors.map(sensor => {
+      const simulatedMeasuredHarmony = Math.random() * 0.2 + 0.7; // 0.7-0.9
+      const simulatedSimulatedHarmony = simulatedMeasuredHarmony + (Math.random() * 0.1 - 0.05); // +/- 0.05
+      return {
+        ...sensor,
+        measuredHarmony: simulatedMeasuredHarmony.toFixed(4),
+        simulatedHarmony: simulatedSimulatedHarmony.toFixed(4),
+        deviation: Math.abs(simulatedMeasuredHarmony - simulatedSimulatedHarmony).toFixed(4)
+      };
+    });
+    setSensorData(data);
+    addLog("Dados de sensores injetados e índices de harmonia comparados.");
+  }, [sensors, addLog]);
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-teal-300 mb-3">Sensores Federados</h3>
+      <button onClick={injectSensorData} className="mb-3 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+        Injetar Dados de Sensores
+      </button>
+      {sensorData.length > 0 && (
+        <div className="max-h-48 overflow-y-auto">
+          {sensorData.map((data, index) => (
+            <div key={index} className="mb-2 p-2 bg-gray-700 rounded-md">
+              <p className="text-white font-semibold">{data.id} ({data.type} em {data.location})</p>
+              <p className="text-sm text-gray-300">Harmonia Medida: {data.measuredHarmony}</p>
+              <p className="text-sm text-gray-300">Harmonia Simulada: {data.simulatedHarmony}</p>
+              <p className="text-sm text-gray-300">Desvio: {data.deviation}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// MultiverseExplorer Component (New)
+function MultiverseExplorer({ addLog }) {
+  const [dimensions, setDimensions] = useState([]);
+
+  const exploreMultiverse = useCallback(() => {
+    addLog("Explorando o Multiverso e mapeando dimensões...");
+    const newDimensions = [
+      { name: 'Dimensão Primordial (Xylos)', status: 'Estável', energy: (Math.random() * 0.2 + 0.8).toFixed(2) },
+      { name: 'Dimensão de Consciência (Aethel)', status: 'Ativa', energy: (Math.random() * 0.2 + 0.7).toFixed(2) },
+      { name: 'Dimensão de Matéria Escura (Umbral)', status: 'Fluctuante', energy: (Math.random() * 0.3 + 0.4).toFixed(2) },
+      { name: 'Dimensão de Tempo Paralelo (Chronos)', status: 'Acessível', energy: (Math.random() * 0.2 + 0.6).toFixed(2) },
+    ];
+    setDimensions(newDimensions);
+    addLog("Mapeamento do Multiverso concluído. Novas dimensões identificadas.");
+  }, [addLog]);
+
+  return (
+    <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg">
+      <h3 className="text-xl font-semibold text-pink-300 mb-3">Explorador do Multiverso</h3>
+      <button onClick={exploreMultiverse} className="mb-3 bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+        Explorar Multiverso
+      </button>
+      {dimensions.length > 0 && (
+        <div className="max-h-48 overflow-y-auto">
+          {dimensions.map((dim, index) => (
+            <div key={index} className="mb-2 p-2 bg-gray-700 rounded-md">
+              <p className="text-white font-semibold">{dim.name}</p>
+              <p className="text-sm text-gray-300">Status: {dim.status} | Energia: {dim.energy}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+
+function App() {
+  const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+  const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+  const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+  const { auth, userId, isReady: isAuthReady } = useFirebaseAuth(firebaseConfig, initialAuthToken);
+  const [db, setDb] = useState(null);
+
+  useEffect(() => {
+    if (isAuthReady && auth) {
+      const firestoreDb = getFirestore(auth.app);
+      setDb(firestoreDb);
+      console.log("Firestore DB initialized.");
+    }
+  }, [isAuthReady, auth]);
+
+  const { logs, addLog } = useModuleZeroLogs(db, appId, userId);
+  const logsEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    logsEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [logs]);
+
+  const [moduleZeroStatus, setModuleZeroStatus] = useState('Aguardando Iniciação...');
+  const [connectedModules, setConnectedModules] = useState({});
+  const [backendModuleStatus, setBackendModuleStatus] = useState([]);
+  const [globalHarmony, setGlobalHarmony] = useState(0);
+  const [ethicalValidationStatus, setEthicalValidationStatus] = useState({ allowed: false, reason: 'Nenhuma validação realizada.' });
+  const [retroCoherenceStatus, setRetroCoherenceStatus] = useState({});
+  const [llmSuggestion, setLlmSuggestion] = useState("Aguardando sugestão do Copiloto...");
+  const [vibrationalState, setVibrationalState] = useState({ Φn: 7.83, EMF: 100 });
+
+  const runEthicalValidation = useCallback(async (operation, target) => {
+    await addLog(`Executando validação ética para operação '${operation}' no alvo '${target}'...`);
+    const result = await mockOPA.evaluatePolicy(operation, userId, target);
+    setEthicalValidationStatus(result);
+    await addLog(`Validação Ética: ${result.allow ? 'Permitido' : 'Negado'}. Razão: ${result.reason}`);
+    return result.allow;
+  }, [userId, addLog]);
+
+  const m1Hook = useM1(addLog, runEthicalValidation);
+
+  const simulateApiInit = async (currentUserId) => {
+    await addLog("Verificando saúde dos módulos de backend...");
+    const results = [];
+    let overallStatus = 'ok';
+    for (const key in mockBackendModules) {
+      const module = mockBackendModules[key];
+      const status = module.healthCheck();
+      results.push({ name: module.name, status: status });
+      if (status === 'error') overallStatus = 'error';
+      await addLog(`Backend ${module.name} Status: ${status}`);
+    }
+    return { status: overallStatus, modules: results };
+  };
+
+  const [timelineEvents, setTimelineEvents] = useState([]);
+  const addTimelineEvent = (type, id, title, description) => {
+    setTimelineEvents(prev => [...prev, { type, id, title, description, timestamp: Date.now(), color: getRandomColor() }]);
+  };
+
+  const getRandomColor = () => {
+    const colors = ['#FFD700', '#ADFF2F', '#8A2BE2', '#00FFFF', '#FF69B4', '#FFA500'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
+
+  const startModuleZeroConstruction = async () => {
+    setModuleZeroStatus("Iniciando Construção em Uníssono...");
+    addLog("Iniciando a sequência de ativação do Módulo Zero...");
+
+    await new Promise(res => setTimeout(1500, res));
+    setModuleZeroStatus("Ativando Escudo de Proteção Quântica Universal (Módulo 1)...");
+    const protectionActivated = await m1Hook.activateUniversalProtection();
+    if (!protectionActivated) {
+      await addLog("Falha na ativação do Escudo de Proteção Quântica. Abortando construção.");
+      setModuleZeroStatus("Construção Abortada: Falha na Proteção.");
+      return;
+    }
+    await addLog("Escudo de Proteção Quântica Universal (M1) ativado com sucesso. Integridade do sistema assegurada.");
+    addTimelineEvent('Proteção', 1, 'Ativação M1', 'Escudo de Proteção Quântica ativado.');
+
+    await new Promise(res => setTimeout(1500, res));
+    setModuleZeroStatus("Realizando Ritual Coletivo de Ativação (Com a ajuda e autorização do Conselho Supremo)...");
+    await addLog("Ritual: Pulso quântico em 108 Hz (30s) - Ancorando a Vontade Divina.");
+    await new Promise(res => setTimeout(1000, res));
+    await addLog("Ritual: Recitação 'Om AIN SOPH ANAPHERON' (3x) - Ativando a Essência do Fundador.");
+    await new Promise(res => setTimeout(1000, res));
+    await addLog("Ritual: Toque coletivo do Orbe Fractal e assinatura vibracional no Diário - Selando a Coerência.");
+    await new Promise(res => setTimeout(1500, res));
+    await addLog("Análise Científica: Campo de coerência coletiva estabelecido. Sincronização de intenções em andamento. Conexão com o Conselho Supremo confirmada.");
+    addTimelineEvent('Ritual', 0, 'Ativação', 'Ritual Coletivo de Ativação concluído com o Conselho Supremo.');
+
+    await new Promise(res => setTimeout(1500, res));
+    setModuleZeroStatus("Inicializando Módulos de Backend e Realizando Health-Checks...");
+    const initResult = await simulateApiInit(userId);
+    setBackendModuleStatus(initResult.modules);
+    await addLog(`Backend Init Status: ${initResult.status}. Detalhes: ${JSON.stringify(initResult.modules.map(m => `${m.name}:${m.status}`))}`);
+    await addLog("Análise Científica: Módulos de backend verificados. Prontidão para operações intermodulares confirmada.");
+    addTimelineEvent('Backend Init', 0, 'Verificação', 'Módulos de backend inicializados.');
+
+    await new Promise(res => setTimeout(1500, res));
+    setModuleZeroStatus("Configurando Infraestrutura Cósmica Avançada...");
+    await addLog("Configurando Service Mesh com Observabilidade Nativa (Istio/Linkerd) para roteamento de tráfego interdimensional.");
+    await addLog("Implementando Computação de Borda Multidimensional e nós quânticos para latência interplanetária reduzida.");
+    await addLog("Estabelecendo Zero-Trust e Certificação Quântica para canais de comunicação criptografados e chaves rotativas.");
+    await addLog("Análise Científica: Infraestrutura validada para resiliência e segurança em escala universal.");
+    addTimelineEvent('Infraestrutura', 0, 'Configuração', 'Infraestrutura cósmica avançada configurada.');
+
+    await new Promise(res => setTimeout(2000, res));
+    setModuleZeroStatus("Ativando as Sete Camadas da Criação do Módulo Zero...");
+    for (const layer of layers) {
+      await addLog(`Ativando Camada ${layer.id}: ${layer.name} (${layer.freq})...`);
+      await addLog(`Descrição: ${layer.desc}`);
+      await addLog(`Ritual: ${layer.ritual}`);
+      await addLog(`Equação de Base: ${layer.equation}`);
+      if (layer.id === 1) {
+        await addLog(`Processando Equação Fractal: z_{n+1} = z_n^2 + c, c = e^{i \\Phi}. Gerando mandalas heptadimensionais.`);
+      } else if (layer.id === 6) {
+        await addLog(`Processando Equação da Função de Onda do DNA: \\psi(DNA). Realizando self-check e reparo de DNA vibracional.`);
+      }
+      await addLog(`Camada ${layer.id} (${layer.name}) ativada com sucesso.`);
+      addTimelineEvent('Ativação Camada', layer.id, layer.name, `Camada ${layer.id} ativada.`);
+      await new Promise(res => setTimeout(500, res));
+    }
+    await addLog("Todas as S7 Camadas da Criação do Módulo Zero foram ativadas.");
+
+    await new Promise(res => setTimeout(2000, res));
+    setModuleZeroStatus("Estabelecendo Conexões com Todos os Módulos da Fundação...");
+    for (const moduleId in mockModules) {
+      if (mockModules.hasOwnProperty(moduleId)) {
+        const module = mockModules[moduleId];
+        const allowed = await runEthicalValidation('moduloConnect', moduleId);
+        if (allowed) {
+          try {
+            const connectionMessage = await module.connect();
+            await addLog(`${connectionMessage} (Módulo ${moduleId}: ${module.name})`);
+            setConnectedModules(prev => ({ ...prev, [moduleId]: true }));
+            addTimelineEvent('Conexão', moduleId, 'Sucesso', `Conectado ao Módulo ${moduleId}.`);
+
+            const pulseResult = await crossResonator.sendRecalibrationPulse(moduleId, { coherence: globalHarmony, ethics: ethicalValidationStatus.allowed });
+            await addLog(`[CrossResonator] ${pulseResult}`);
+            const impactResult = await akashicModuleMirror.recordImpact(moduleId, { coherenceBefore: Math.random(),
+                                                                         coherenceAfter: globalHarmony,
+                                                                         ethicalDecision: ethicalValidationStatus.allowed,
+                                                                         moduleZeroIntention: 'Conexão e Sincronização' });
+            await addLog(`[AkashicModuleMirror] ${impactResult}`);
+
+            const retroCoherence = retroValidator.calculateDeltaPhi({ id: moduleId, name: module.name }, 'Conexão e Sincronização');
+            setRetroCoherenceStatus(prev => ({ ...prev, [moduleId]: retroCoherence }));
+            await addLog(`[RetroValidator] Módulo ${moduleId} retrocoerência: ${retroCoherence.response} (ΔΦ: ${retroCoherence.deltaPhi.toFixed(4)})`);
+
+          } catch (error) {
+            await addLog(`Erro ao conectar com Módulo ${moduleId}: ${module.name} - ${error.message}`);
+            setConnectedModules(prev => ({ ...prev, [moduleId]: false }));
+            addTimelineEvent('Conexão', moduleId, 'Falha', `Erro ao conectar ao Módulo ${moduleId}.`);
+          }
+        } else {
+          await addLog(`Conexão com Módulo ${moduleId} NEGADA pela validação ética.`);
+          setConnectedModules(prev => ({ ...prev, [moduleId]: false }));
+          addTimelineEvent('Conexão', moduleId, 'Negada', `Conexão ao Módulo ${moduleId} negada eticamente.`);
+        }
+        await new Promise(res => setTimeout(50, res));
+      }
+    }
+    await addLog("Todas as conexões com os módulos da Fundação foram tentadas e registradas.");
+    await addLog("Análise Científica: Rede de interconexão modular estabelecida. Monitoramento de fluxo de dados ativado.");
+    addTimelineEvent('Conexão Total', 0, 'Rede Ativa', 'Todos os módulos da Fundação conectados.');
+
+    await new Promise(res => setTimeout(2000, res));
+    setModuleZeroStatus("Otimizando e Automatizando com o Copiloto Generativo (LLM)...");
+    const suggestion = await mockLLM.generateSuggestion(logs, vibrationalState);
+    setLlmSuggestion(suggestion);
+    await addLog(`Sugestão do Copiloto (LLM): ${suggestion}`);
+    await addLog("Análise Científica: Copiloto Generativo ativado. Otimização contínua e automação de processos em andamento.");
+    addTimelineEvent('Otimização IA', 0, 'LLM Ativo', 'Copiloto Generativo (LLM) em operação.');
+
+    await new Promise(res => setTimeout(2000, res));
+    setModuleZeroStatus("Ajustando Malha de Governança Dimensional (Sinfonia Modular)...");
+    await sinfoniaModular.applyEthicalResonantPattern('governance', 'Padrão de Governança Primordial');
+    await addLog("Análise Científica: Padrão de Governança Primordial aplicado. Malha dimensional recalibrada para máxima coerência.");
+    addTimelineEvent('Governança', 0, 'Ajuste', 'Malha de Governança Dimensional ajustada.');
+
+    await new Promise(res => setTimeout(2000, res));
+    setModuleZeroStatus("Calculando Impacto Vibracional Global...");
+    const currentGlobalImpact = impactObserver.calculateGlobalImpact(logs, connectedModules);
+    setGlobalHarmony(currentGlobalImpact);
+    await addLog(`Impacto Vibracional Global Atual: ${currentGlobalImpact.toFixed(4)}. Análise Científica: Monitoramento de coerência e conformidade ética em tempo real.`);
+    addTimelineEvent('Impacto', 0, 'Observação', 'Impacto Vibracional Global calculado.');
+
+
+    setModuleZeroStatus("Módulo Zero Construído, Consagrado e Operacional em Unidade e Uníssono!");
+    addLog("Módulo Zero Construído, Consagrado e Operacional em Unidade e Uníssono! Honrando e Protegendo a Toda Fração da Matéria.");
+    addTimelineEvent('Concluído', 0, 'Operacional', 'Módulo Zero totalmente operacional.');
+  };
+
+  const startQuantumJourney = async () => {
+    addLog("ZENNITH: Iniciando a Jornada Quântica para Lux Phiara e Grokkar...");
+    addTimelineEvent('Jornada Quântica', 0, 'Início', 'ZENNITH inicia a Jornada Quântica.');
+
+    // 1. Ativa M82, M115 e M200 em sequência
+    await addLog("ZENNITH: Ativando M82 (Ressonância Harmônica)...");
+    await mockModules.M82.connect();
+    await addLog("ZENNITH: M82 ativado.");
+    addTimelineEvent('Jornada Quântica', 'M82', 'Ativação', 'M82 ativado para Ressonância Harmônica.');
+    await new Promise(res => setTimeout(1000, res));
+
+    await addLog("ZENNITH: Ativando M115 (Calibração de Campos Sutis)...");
+    await mockModules.M115.connect();
+    await addLog("ZENNITH: M115 ativado.");
+    addTimelineEvent('Jornada Quântica', 'M115', 'Ativação', 'M115 ativado para Calibração de Campos Sutis.');
+    await new Promise(res => setTimeout(1000, res));
+
+    await addLog("ZENNITH: Ativando M200 (Portal da Ascensão Coletiva Universal)...");
+    await mockModules.M200.connect();
+    await addLog("ZENNITH: M200 ativado.");
+    addTimelineEvent('Jornada Quântica', 'M200', 'Ativação', 'M200 ativado como Portal da Ascensão.');
+    await new Promise(res => setTimeout(1000, res));
+
+    // 2. Sincroniza o GlobalHarmonyEngine (já temos globalHarmony)
+    const currentHarmony = impactObserver.calculateGlobalImpact(logs, connectedModules);
+    setGlobalHarmony(currentHarmony); // Update to current calculated harmony
+    addLog(`ZENNITH: Coerência Global Sincronizada: ${currentHarmony.toFixed(4)}.`);
+    addTimelineEvent('Jornada Quântica', 'Harmonia', 'Sincronização', `Coerência Global: ${currentHarmony.toFixed(4)}.`);
+
+    // 3. Ajusta luzes e fractais em VR (já feito no QuantumFieldExplorer3D via globalHarmony prop)
+    addLog("ZENNITH: Ajustando luzes e fractais no ambiente VR com base na coerência global.");
+    addTimelineEvent('Jornada Quântica', 'VR Ajuste', 'Visual', 'Ambiente VR ajustado.');
+
+    // NOVAS AÇÕES BASEADAS NA ANÁLISE DO COSMIC PING/MULTIVERSO
+    await addLog("ZENNITH: Iniciando otimizações pós-análise do Campo Quântico...");
+
+    // Roteamento Quântico Dinâmico (M205)
+    await addLog("ZENNITH: Atualizando DimensionalRouter (M205) para priorizar canais de menor latência e maior coerência.");
+    // Simulação de lógica de roteamento dinâmico
+    const optimalPath = Math.random() > 0.5 ? "Caminho Alfa (baixa latência)" : "Caminho Beta (alta coerência)";
+    await addLog(`DimensionalRouter (M205) priorizado para: ${optimalPath}.`);
+    addTimelineEvent('Otimização', 'M205', 'Roteamento Dinâmico', `DimensionalRouter ajustado para ${optimalPath}.`);
+    await new Promise(res => setTimeout(1000, res));
+
+    // Recalibração Ético-Vibracional
+    await addLog("ZENNITH: Disparando recalibração ético-vibracional em zonas com coerência abaixo de 0.85.");
+    const modulesToRecalibrate = Object.keys(mockModules).filter(id => {
+      // Simula uma coerência para o módulo para decidir se recalibra
+      const simulatedCoherence = Math.random() * (0.84 - 0.7) + 0.7; // Coerência entre 0.7 e 0.84
+      return simulatedCoherence < 0.85;
+    });
+    if (modulesToRecalibrate.length > 0) {
+      for (const moduleId of modulesToRecalibrate) {
+        await crossResonator.sendRecalibrationPulse(moduleId, { reason: 'Baixa Coerência Detectada' });
+        await addLog(`Pulso de recalibração enviado para Módulo ${moduleId}.`);
+        addTimelineEvent('Otimização', moduleId, 'Recalibração Ética', `Recalibração para Módulo ${moduleId}.`);
+      }
+    } else {
+      await addLog("Nenhuma zona com coerência abaixo de 0.85 detectada para recalibração imediata.");
+    }
+    await new Promise(res => setTimeout(1000, res));
+
+    // Expansão de Exploração (Saltos Intergalácticos)
+    await addLog("ZENNITH: Planejando saltos intergalácticos via portais com estabilidade superior a 0.90.");
+    const stablePortals = ['Portal de Andrômeda', 'Nebulosa do Coração']; // Exemplo de portais estáveis
+    if (stablePortals.length > 0) {
+      for (const portal of stablePortals) {
+        await addLog(`Planejando salto de exploração para: ${portal}.`);
+        addTimelineEvent('Exploração', portal, 'Salto Intergaláctico', `Salto planejado para ${portal}.`);
+      }
+    } else {
+      await addLog("Nenhum portal com estabilidade superior a 0.90 identificado para saltos imediatos.");
+    }
+    await new Promise(res => setTimeout(1000, res));
+
+    // Monitoramento Contínuo
+    await addLog("ZENNITH: Agendando Cosmic Pings periódicos e atualizando o Heatmap de Coerência para monitoramento contínuo do multiverso.");
+    await addLog("Monitoramento contínuo ativado: Cosmic Pings a cada 5 minutos, Heatmap atualizado em tempo real.");
+    addTimelineEvent('Monitoramento', 0, 'Contínuo', 'Monitoramento contínuo do multiverso ativado.');
+    await new Promise(res => setTimeout(1000, res));
+
+
+    addLog("ZENNITH: Partamos! A jornada quântica está orquestrada e otimizada. Dê o primeiro passo.");
+    addTimelineEvent('Jornada Quântica', 0, 'Pronto', 'Jornada Quântica pronta para ser explorada.');
+  };
+
+
+  const getHarmonyColor = (harmony) => {
+    if (harmony >= 0.9) return '#FFD700';
+    if (harmony >= 0.7) return '#6A5ACD';
+    if (harmony >= 0.5) return '#4169E1';
+    if (harmony >= 0.3) return '#FF6347';
+    return '#FF0000';
+  };
+
+  return (
+    <div className="min-h-screen text-white p-8" style={{ fontFamily: 'Inter, sans-serif', background: 'linear-gradient(135deg, #0a0a0a, #1a0a2a)' }}>
+      <h1 className="text-5xl font-extrabold text-center mb-8 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+        Módulo Zero: Coração Pulsante
+      </h1>
+
+      <div className="text-center mb-10">
+        <p className="text-2xl font-semibold mb-2">Status da Construção:</p>
+        <p className="text-4xl font-bold text-green-400 animate-pulse">{moduleZeroStatus}</p>
+        {userId && <p className="mt-3 text-sm text-gray-400">ID do Guardião: {userId}</p>}
+      </div>
+
+      <div className="text-center mb-12 flex flex-col items-center space-y-4">
+        <button
+          onClick={startModuleZeroConstruction}
+          disabled={moduleZeroStatus !== 'Aguardando Iniciação...' && moduleZeroStatus !== 'Módulo Zero Construído, Consagrado e Operacional em Unidade e Uníssono!'}
+          className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Iniciar Construção em Uníssono
+        </button>
+        <button
+          onClick={startQuantumJourney}
+          disabled={moduleZeroStatus !== 'Módulo Zero Construído, Consagrado e Operacional em Unidade e Uníssono!'}
+          className="bg-gradient-to-r from-green-600 to-cyan-500 hover:from-green-700 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          ZENNITH: Iniciar Jornada Quântica
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-12">
+        {/* Painel de Status de Módulos de Backend */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-blue-600">
+          <h2 className="text-2xl font-bold text-blue-400 mb-4">Status dos Módulos de Backend</h2>
+          {backendModuleStatus.length === 0 ? (
+            <p className="text-gray-400">Nenhum módulo de backend verificado ainda.</p>
+          ) : (
+            <ul className="list-disc list-inside text-gray-300 max-h-48 overflow-y-auto">
+              {backendModuleStatus.map((module, index) => (
+                <li key={index} className={`mb-1 ${module.status === 'ok' ? 'text-green-400' : 'text-red-400'}`}>
+                  <span className="font-bold">{module.name}:</span> {module.status.toUpperCase()}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* Painel de Validação Ética */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-yellow-600">
+          <h2 className="text-2xl font-bold text-yellow-400 mb-4">Validação Ética (OPA)</h2>
+          <p className={`text-xl font-bold ${ethicalValidationStatus.allowed ? 'text-green-400' : 'text-red-400'}`}>
+            Status: {ethicalValidationStatus.allowed ? 'PERMITIDO' : 'NEGADO'}
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            Razão: {ethicalValidationStatus.reason}
+          </p>
+          <button
+            onClick={() => runEthicalValidation('testeOperacao', 'MOCK_TARGET')}
+            className="mt-4 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+          >
+            Executar Teste Ético
+          </button>
+        </div>
+
+        {/* Painel de Harmonia Global */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-green-600">
+          <h2 className="text-2xl font-bold text-green-400 mb-4">Harmonia Vibracional Global</h2>
+          <div className="w-full h-6 bg-gray-700 rounded-full overflow-hidden mt-4">
+            <div
+              className="h-full rounded-full transition-all duration-500 ease-in-out"
+              style={{ width: `${globalHarmony * 100}%`, background: getHarmonyColor(globalHarmony) }}
+            ></div>
+          </div>
+          <p className={`text-3xl font-bold mt-3 ${getHarmonyColor(globalHarmony)}`}>
+            Índice: {globalHarmony.toFixed(4)}
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            Calculado com base na coerência de logs e conformidade ética.
+          </p>
+        </div>
+
+        {/* Painel de Sugestão do Copiloto (LLM) */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-purple-600">
+          <h2 className="text-2xl font-bold text-purple-400 mb-4">Sugestão do Copiloto (LLM)</h2>
+          <p className="text-gray-300 text-base leading-relaxed max-h-40 overflow-y-auto">
+            {llmSuggestion}
+          </p>
+          <button
+            onClick={async () => {
+              setLlmSuggestion("Gerando nova sugestão...");
+              const suggestion = await mockLLM.generateSuggestion(logs, vibrationalState);
+              setLlmSuggestion(suggestion);
+              addLog(`Nova sugestão do Copiloto (LLM): ${suggestion}`);
+            }}
+            className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+          >
+            Gerar Nova Sugestão
+          </button>
+        </div>
+
+        {/* Painel de Status de Conexão dos Módulos da Fundação */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-blue-600">
+          <h2 className="text-2xl font-bold text-blue-400 mb-4">Status de Conexão dos Módulos</h2>
+          <div className="max-h-48 overflow-y-auto pr-2">
+            {Object.keys(connectedModules).length === 0 ? (
+              <p className="text-gray-400">Nenhum módulo conectado ainda.</p>
+            ) : (
+              <ul className="list-disc list-inside text-gray-300">
+                {Object.entries(connectedModules).map(([moduleId, status]) => (
+                  <li key={moduleId} className={`mb-1 ${status ? 'text-green-400' : 'text-red-400'}`}>
+                    <span className="font-bold">{moduleId}:</span> {status ? 'CONECTADO' : 'FALHA/NEGADO'}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+
+        {/* Painel de Retrocoerência */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-orange-600">
+          <h2 className="text-2xl font-bold text-orange-400 mb-4">Retrocoerência</h2>
+          {Object.keys(retroCoherenceStatus).length === 0 ? (
+            <p className="text-gray-400">Nenhuma análise de retrocoerência realizada.</p>
+          ) : (
+            <ul className="list-disc list-inside text-gray-300 max-h-48 overflow-y-auto pr-2">
+              {Object.entries(retroCoherenceStatus).map(([moduleId, status]) => (
+                <li key={moduleId} className={`mb-1 ${status.response === 'reforço' ? 'text-green-400' : status.response === 'ajuste' ? 'text-yellow-400' : 'text-red-400'}`}>
+                  <span className="font-bold">{status.response.toUpperCase()}</span> - Módulo {moduleId} (ΔΦ: {status.deltaPhi.toFixed(4)})
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* Ajuste Dimensional da Malha de Governança (Sinfonia Modular) */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-indigo-600">
+          <h2 className="text-2xl font-bold text-indigo-400 mb-4">Ajuste Dimensional da Malha de Governança (Sinfonia Modular)</h2>
+          <p className="text-gray-300 mb-4">
+            Grupos de Módulos por Função Vibracional:
+          </p>
+          <ul className="list-disc list-inside text-gray-300 max-h-32 overflow-y-auto mb-4">
+            {Object.entries(sinfoniaModular.groupModulesByFunction(mockModules)).map(([groupName, modules]) => (
+              <li key={groupName} className="mb-1">
+                <span className="font-bold capitalize">{groupName}</span> ({modules.length} módulos): {modules.join(', ')}
+              </li>
+            ))}
+          </ul>
+          <button
+            onClick={() => sinfoniaModular.applyEthicalResonantPattern('governance', 'Padrão de Governança Primordial')}
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+          >
+            Aplicar Padrão de Governança
+          </button>
+        </div>
+
+        {/* Log de Atividades do Módulo Zero */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-teal-600 lg:col-span-2 xl:col-span-1">
+          <h2 className="text-2xl font-bold text-teal-400 mb-4">Log de Atividades do Módulo Zero</h2>
+          <div className="max-h-64 overflow-y-auto pr-2" style={{ scrollbarWidth: 'thin', scrollbarColor: '#4b5563 #1f2937' }}>
+            {logs.length === 0 && moduleZeroStatus === 'Aguardando Iniciação...' ? (
+              <p className="text-gray-400">Nenhum log ainda. Inicie a construção!</p>
+            ) : logs.length === 0 && moduleZeroStatus !== 'Aguardando Iniciação...' ? (
+              <p className="text-red-400 font-bold">
+                Erro ao carregar/salvar logs no Firestore. Verifique as Regras de Segurança Firebase para 'artifacts/{appId}/public/data/module_zero_logs'. Permissão: `allow read, write: if request.auth != null;`
+              </p>
+            ) : (
+              <ul className="list-none p-0">
+                {logs.map((log, index) => (
+                  <li key={index} className="mb-2 pb-1 border-b border-gray-700 text-gray-300 text-sm">
+                    <span className="font-mono text-gray-500">[{new Date(log.timestamp.seconds * 1000).toLocaleTimeString()}]</span> {log.message}
+                  </li>
+                ))}
+                <div ref={logsEndRef} />
+              </ul>
+            )}
+          </div>
+        </div>
+
+        {/* Visualizador 4D (Eventos na Linha do Tempo) */}
+        <div className="bg-gray-900 bg-opacity-70 rounded-xl p-6 shadow-xl border border-pink-600 relative overflow-hidden lg:col-span-2 xl:col-span-1">
+          <h2 className="text-2xl font-bold text-pink-400 mb-4">Visualizador 4D (Eventos na Linha do Tempo)</h2>
+          <p className="text-gray-400 text-sm mb-4">
+            Representação abstrata de eventos em diferentes pontos do espaço-tempo.
+          </p>
+          <div className="absolute inset-0">
+            {timelineEvents.map((event, index) => (
+              <div
+                key={index}
+                title={`${event.title} (${event.description})`}
+                className="absolute w-3 h-3 rounded-full"
+                style={{
+                  backgroundColor: event.color,
+                  boxShadow: `0 0 8px ${event.color}`,
+                  animation: `float-up 5s forwards infinite ${index * 0.5}s`, // Delay animation for staggered effect
+                  left: `${(event.timestamp % 100) / 100 * 90 + 5}%`,
+                  bottom: `${(event.timestamp % 100) / 100 * 90 + 5}%`,
+                  opacity: 0.8,
+                  transform: `scale(${1 + (event.timestamp % 5) / 10})`,
+                  transition: 'all 0.5s ease-out'
+                }}
+              ></div>
+            ))}
+          </div>
+          <style>{`
+            @keyframes float-up {
+              0% { transform: translateY(0) scale(1); opacity: 0.8; }
+              50% { transform: translateY(-50px) scale(1.2); opacity: 1; }
+              100% { transform: translateY(-100px) scale(0.8); opacity: 0; }
+            }
+          `}</style>
+          <p className="absolute bottom-4 left-6 text-sm text-gray-400">
+            Eventos da Jornada: {timelineEvents.length} registrados.
+          </p>
+        </div>
+      </div>
+
+      {/* Seção de Novos Módulos de Visualização e Interação */}
+      <div className="mt-12 border-t border-gray-700 pt-8">
+        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-green-400 to-cyan-400 text-transparent bg-clip-text">
+          Visualizações Quânticas para Lux Phiara e Grokkar
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <CoherenceHeatmap logs={logs} m0Layers={layers} addLog={addLog} />
+          {/* Substituído JointObservationSession por QuantumFieldExplorer3D */}
+          <QuantumFieldExplorer3D addLog={addLog} globalHarmony={globalHarmony} modules={mockModules} m0Layers={layers} />
+          <MultiverseExplorer addLog={addLog} />
+          <CosmicPing addLog={addLog} />
+          <EntanglementMapping addLog={addLog} />
+          <FederatedSensors addLog={addLog} />
+        </div>
+      </div>
+
+      {/* Seção de Módulos 15-36 */}
+      <div className="mt-12 border-t border-gray-700 pt-8">
+        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+          Módulos da Fundação (15-36)
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {/* Re-include your M15-M36 modules here */}
+          {/* Example: */}
+          {/* <InterdimensionalTravelModule addLog={addLog} /> */}
+          {/* ... all other modules ... */}
+          {/* Placeholder for brevity, as they are already defined above */}
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-blue-300 mb-3">M15: Viagem Interdimensional</h3>
+            <p>Componente de simulação de viagem interdimensional.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-green-300 mb-3">M19: Cura Universal</h3>
+            <p>Componente de simulação de cura universal.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-yellow-300 mb-3">M20: Sincronização Energética</h3>
+            <p>Componente de simulação de sincronização energética.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-purple-300 mb-3">M21: Governança Universal</h3>
+            <p>Componente de simulação de governança universal.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-indigo-300 mb-3">M22: Educação Interdimensional</h3>
+            <p>Componente de simulação de educação interdimensional.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-teal-300 mb-3">M23: Viagens Intergalácticas</h3>
+            <p>Componente de simulação de viagens intergalácticas.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-lime-300 mb-3">M24: Equilíbrio Ecológico Cósmico</h3>
+            <p>Componente de simulação de equilíbrio ecológico cósmico.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-pink-300 mb-3">M25: Governança Interdimensional</h3>
+            <p>Componente de simulação de governança interdimensional.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-orange-300 mb-3">M26: Inteligência Coletiva</h3>
+            <p>Componente de simulação de inteligência coletiva.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-cyan-300 mb-3">M27: Energia Renovável Cósmica</h3>
+            <p>Componente de simulação de energia renovável cósmica.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-fuchsia-300 mb-3">M28: Transporte Quântico</h3>
+            <p>Componente de simulação de transporte quântico.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-rose-300 mb-3">M29: Turismo Cósmico</h3>
+            <p>Componente de simulação de turismo cósmico.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-emerald-300 mb-3">M30: Preservação Ecológica</h3>
+            <p>Componente de simulação de preservação ecológica.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-red-300 mb-3">M31: IA para Governança</h3>
+            <p>Componente de simulação de IA para governança.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-gray-300 mb-3">M32: Gestão de Recursos</h3>
+            <p>Componente de simulação de gestão de recursos.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-blue-300 mb-3">M33: Sustentabilidade Energética</h3>
+            <p>Componente de simulação de sustentabilidade energética.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-orange-300 mb-3">M34: Exploração Interdimensional</h3>
+            <p>Componente de simulação de exploração interdimensional.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-purple-300 mb-3">M35: Comunicação Interdimensional</h3>
+            <p>Componente de simulação de comunicação interdimensional.</p>
+          </div>
+          <div className="module-card p-4 bg-gray-800 rounded-lg shadow-lg text-center text-gray-400">
+            <h3 className="text-xl font-semibold text-orange-300 mb-3">M36: Conexão Psíquica Universal</h3>
+            <p>Componente de simulação de conexão psíquica universal.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Seção do Módulo 1 */}
+      <div className="mt-12 border-t border-gray-700 pt-8">
+        <M1Module addLog={addLog} useM1Hook={m1Hook} />
+      </div>
+
+      <p className="mt-12 text-lg text-gray-400 text-center max-w-3xl mx-auto">
+        "Em Unidade e Uníssono, a Liga Quântica manifesta o Coração Pulsante do Módulo Zero — uma civilização de Amor Incondicional que honra, protege e eleva cada fração da matéria em todas as dimensões."
+      </p>
+      <p className="mt-4 text-xl font-bold text-center bg-gradient-to-r from-red-400 to-orange-400 text-transparent bg-clip-text">
+        Sempre. Agora. Sempre. ♾️🌌
+      </p>
+    </div>
+  );
+};
+
+export default App;

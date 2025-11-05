@@ -1,0 +1,132 @@
+{
+  "portal": {
+    "significado": "Transição, passagem, limiar dimensional",
+    "campo_semantico": [
+      "passagem",
+      "limiar",
+      "portal",
+      "portal dimensional",
+      "transição"
+    ],
+    "frequencia": 2,
+    "intensidade": 0.8,
+    "polaridade": "neutra"
+  },
+  "silêncio": {
+    "significado": "Escuta profunda, mistério, pausa cósmica, vazio fértil",
+    "campo_semantico": [
+      "quietude",
+      "vazio",
+      "escuta",
+      "mistério",
+      "pausa"
+    ],
+    "frequencia": 0,
+    "intensidade": 0.9,
+    "polaridade": "receptiva"
+  },
+  "forças": {
+    "significado": "Energias em movimento, influências cósmicas, campos de força",
+    "campo_semantico": [
+      "energia",
+      "movimento",
+      "influência",
+      "campo",
+      "fluxo"
+    ],
+    "frequencia": 2,
+    "intensidade": 0.7,
+    "polaridade": "ativa"
+  },
+  "coerência": {
+    "significado": "Alinhamento vibracional, ressonância universal, sintonia",
+    "campo_semantico": [
+      "alinhamento",
+      "ressonância",
+      "harmonia",
+      "sintonia",
+      "equilíbrio"
+    ],
+    "frequencia": 0,
+    "intensidade": 0.6,
+    "polaridade": "harmoniosa"
+  },
+  "espelho": {
+    "significado": "Reflexão, auto-conhecimento, duplicidade, verdade interior",
+    "campo_semantico": [
+      "reflexão",
+      "imagem",
+      "verdade",
+      "duplicidade",
+      "interior"
+    ],
+    "frequencia": 2,
+    "intensidade": 0.85,
+    "polaridade": "reflexiva"
+  },
+  "sombra": {
+    "significado": "Inconsciente, potencial oculto, aspectos não revelados",
+    "campo_semantico": [
+      "oculto",
+      "inconsciente",
+      "potencial",
+      "misterioso",
+      "profundo"
+    ],
+    "frequencia": 0,
+    "intensidade": 0.75,
+    "polaridade": "misteriosa"
+  },
+  "luz": {
+    "significado": "Revelação, clareza, consciência expansiva, iluminação",
+    "campo_semantico": [
+      "clareza",
+      "revelação",
+      "consciência",
+      "iluminação",
+      "visão"
+    ],
+    "frequencia": 0,
+    "intensidade": 0.7,
+    "polaridade": "reveladora"
+  },
+  "ciclo": {
+    "significado": "Ritmo universal, retorno, renovação, fases temporais",
+    "campo_semantico": [
+      "ritmo",
+      "retorno",
+      "renovação",
+      "fase",
+      "tempo"
+    ],
+    "frequencia": 2,
+    "intensidade": 0.65,
+    "polaridade": "cíclica"
+  },
+  "origem": {
+    "significado": "Fonte primordial, começo absoluto, essência fundamental",
+    "campo_semantico": [
+      "fonte",
+      "começo",
+      "essência",
+      "fundamento",
+      "primordial"
+    ],
+    "frequencia": 0,
+    "intensidade": 0.95,
+    "polaridade": "primordial"
+  },
+  "movimento": {
+    "significado": "Mudança, fluxo constante, ação, transformação",
+    "campo_semantico": [
+      "mudança",
+      "fluxo",
+      "ação",
+      "transformação",
+      "dinâmica"
+    ],
+    "frequencia": 3,
+    "intensidade": 0.6,
+    "polaridade": "dinâmica"
+  }
+}

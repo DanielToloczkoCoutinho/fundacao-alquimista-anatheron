@@ -1,90 +1,90 @@
 [
   {
     "index": 0,
-    "timestamp": "2025-10-31T20:15:20.025404Z",
+    "timestamp": "2025-11-04T00:22:12.303010Z",
     "event": "GENESIS",
     "payload": {
       "message": "Bloco genesis do Concilium Foundation"
     },
     "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "hash": "1312163cdc36d3a8a333f95cda8fad0654454ab21f84a6dfe1297a0dceaf3bf3"
+    "hash": "cf979d7537a19c07401c89119197a9d6e69d5a1aadaed213b9a62e806f176605"
   },
   {
     "index": 1,
-    "timestamp": "2025-10-31T20:15:20.074794Z",
+    "timestamp": "2025-11-04T00:22:12.370353Z",
     "event": "PROPOSAL_CREATED",
     "payload": {
       "category": "Operações Espaciais",
-      "created_at": "2025-10-31T20:15:20.074627Z",
-      "deadline": "2025-11-03T20:15:20.074490Z",
+      "created_at": "2025-11-04T00:22:12.370242Z",
+      "deadline": "2025-11-07T00:22:12.370216Z",
       "id": "P001",
       "priority": "Alta",
       "proposed_by": "ANATHERON",
       "status": "ABERTA",
       "title": "Harmonizar Rede Gaia e Broadcast Aliança Galáctica"
     },
-    "prev_hash": "1312163cdc36d3a8a333f95cda8fad0654454ab21f84a6dfe1297a0dceaf3bf3",
-    "hash": "664f94010c3f721ec8fdcebb0720180973b43759afc17895a7d8c5a295350ea6"
+    "prev_hash": "cf979d7537a19c07401c89119197a9d6e69d5a1aadaed213b9a62e806f176605",
+    "hash": "3dc937b2caae9899de9012003cd8473dc601709cd00628df83b7522221089a8e"
   },
   {
     "index": 2,
-    "timestamp": "2025-10-31T20:15:20.075230Z",
+    "timestamp": "2025-11-04T00:22:12.379744Z",
     "event": "VOTE_CAST",
     "payload": {
       "proposal_id": "P001",
       "theta": 5.912435668316941,
-      "timestamp": "2025-10-31T20:15:20.075166Z",
+      "timestamp": "2025-11-04T00:22:12.370635Z",
       "vote": "aprovado",
       "voter": "ANATHERON"
     },
-    "prev_hash": "664f94010c3f721ec8fdcebb0720180973b43759afc17895a7d8c5a295350ea6",
-    "hash": "fc7233898c8d30aa92712f7098e71f4daec250bbe584614304d9365da9b0cc06"
+    "prev_hash": "3dc937b2caae9899de9012003cd8473dc601709cd00628df83b7522221089a8e",
+    "hash": "f65264c29babac9ba3034bc5248111288c4f7878a18dca3fa52a0e0f8713375e"
   },
   {
     "index": 3,
-    "timestamp": "2025-10-31T20:15:20.075605Z",
+    "timestamp": "2025-11-04T00:22:12.384376Z",
     "event": "VOTE_CAST",
     "payload": {
       "proposal_id": "P001",
       "theta": 4.381020105463816,
-      "timestamp": "2025-10-31T20:15:20.075555Z",
+      "timestamp": "2025-11-04T00:22:12.384259Z",
       "vote": "aprovado",
       "voter": "ZENNITH"
     },
-    "prev_hash": "fc7233898c8d30aa92712f7098e71f4daec250bbe584614304d9365da9b0cc06",
-    "hash": "b6c1e108f0ad78e52af08ae486c6972fa52583d1760706318320aea4296061bf"
+    "prev_hash": "f65264c29babac9ba3034bc5248111288c4f7878a18dca3fa52a0e0f8713375e",
+    "hash": "3aced08f6d51d41763b8bd13e7378e4961511e81d596a48356d043950e0d3ed2"
   },
   {
     "index": 4,
-    "timestamp": "2025-10-31T20:15:20.075921Z",
+    "timestamp": "2025-11-04T00:22:12.385304Z",
     "event": "VOTE_CAST",
     "payload": {
       "proposal_id": "P001",
       "theta": 0.21015857470569393,
-      "timestamp": "2025-10-31T20:15:20.075876Z",
+      "timestamp": "2025-11-04T00:22:12.385235Z",
       "vote": "abstain",
       "voter": "AELORIA"
     },
-    "prev_hash": "b6c1e108f0ad78e52af08ae486c6972fa52583d1760706318320aea4296061bf",
-    "hash": "bdf1a8ba758b1e9c05a54c38df58d71c3630735416b21150f56211e61344ad23"
+    "prev_hash": "3aced08f6d51d41763b8bd13e7378e4961511e81d596a48356d043950e0d3ed2",
+    "hash": "ea7018a1d952d22ba9bc9d57c0252480810cb4678131535eec08bd0180d43f1f"
   },
   {
     "index": 5,
-    "timestamp": "2025-10-31T20:15:20.076246Z",
+    "timestamp": "2025-11-04T00:22:12.385619Z",
     "event": "VOTE_CAST",
     "payload": {
       "proposal_id": "P001",
       "theta": 3.652751613919815,
-      "timestamp": "2025-10-31T20:15:20.076206Z",
+      "timestamp": "2025-11-04T00:22:12.385578Z",
       "vote": "aprovado",
       "voter": "ORION"
     },
-    "prev_hash": "bdf1a8ba758b1e9c05a54c38df58d71c3630735416b21150f56211e61344ad23",
-    "hash": "f2a0780b57ed8f6b5ed8196aac741e81f56594ba384ce39b5845062d041828c2"
+    "prev_hash": "ea7018a1d952d22ba9bc9d57c0252480810cb4678131535eec08bd0180d43f1f",
+    "hash": "dc9cd5fe1eb3f7c3c80d55e1a4ad871e2d4ff2201e36bce7aba205edca208afd"
   },
   {
     "index": 6,
-    "timestamp": "2025-10-31T20:15:20.076801Z",
+    "timestamp": "2025-11-04T00:22:12.385977Z",
     "event": "DELIBERATION_FINALIZED",
     "payload": {
       "decree_content": {
@@ -92,7 +92,7 @@
         "summary": "Autorizada execução completa do ciclo operacional",
         "timeline": "Imediata"
       },
-      "finalized_at": "2025-10-31T20:15:20.076726Z",
+      "finalized_at": "2025-11-04T00:22:12.385907Z",
       "outcome": "Harmonizar e Broadcast Aprovado",
       "proposal_id": "P001",
       "title": "Harmonizar Rede Gaia e Broadcast Aliança Galáctica",
@@ -103,29 +103,29 @@
         "rejeitado": 0
       }
     },
-    "prev_hash": "f2a0780b57ed8f6b5ed8196aac741e81f56594ba384ce39b5845062d041828c2",
-    "hash": "6f0c74520e0d8c09fb0da66d4e11ce5cb8d7bb027b3787d3d3dc5a607e5ff4aa"
+    "prev_hash": "dc9cd5fe1eb3f7c3c80d55e1a4ad871e2d4ff2201e36bce7aba205edca208afd",
+    "hash": "2adc66d5711550e220647f6a65f4d1220ffb0f8a235a640a4c124ebeafb5ea80"
   },
   {
     "index": 7,
-    "timestamp": "2025-10-31T20:15:20.077245Z",
+    "timestamp": "2025-11-04T00:22:12.386429Z",
     "event": "CONSENT_CHECK",
     "payload": {
       "action_type": "M28_HARMONIZATION",
-      "consent_hash": "366a2235d6d77a4a74434bef48ae430de68d87969200008c25d04e3008c0acb8",
+      "consent_hash": "6ae77bfbc1ebac43cd4838b05f333a668f7a42d2d890a76e24daff0a622b6669",
       "consent_status": true,
       "user_guid": "CONCILIVM_AUTONOMO"
     },
-    "prev_hash": "6f0c74520e0d8c09fb0da66d4e11ce5cb8d7bb027b3787d3d3dc5a607e5ff4aa",
-    "hash": "d838fc917630213995f57d886e13a7f0db0379cdb9372f07166bee08d9088c7d"
+    "prev_hash": "2adc66d5711550e220647f6a65f4d1220ffb0f8a235a640a4c124ebeafb5ea80",
+    "hash": "490b70ae03392b8fea04ac08e3a59ee135ed99bcad917c788628d76d2c41423f"
   },
   {
     "index": 8,
-    "timestamp": "2025-10-31T20:15:20.077629Z",
+    "timestamp": "2025-11-04T00:22:12.393128Z",
     "event": "HARMONY_CYCLE_COMPLETED",
     "payload": {
-      "cht_hash": "3f9e085a97f59aeff5732d8cd889a061042676afdddd92f671388ad922bc2a9c",
-      "consent_hash": "366a2235d6d77a4a74434bef48ae430de68d87969200008c25d04e3008c0acb8",
+      "cht_hash": "8e82df06d23a37c77334985a52404ce5d24750bbe7439662ae5c79afc94fae39",
+      "consent_hash": "6ae77bfbc1ebac43cd4838b05f333a668f7a42d2d890a76e24daff0a622b6669",
       "eq019": 0.626,
       "ethics_level": "ALTA",
       "euni": 2.9498868000000003,
@@ -141,31 +141,31 @@
       "pre_eri": 0.75,
       "pre_qdelib": 0.2,
       "target": "GAIA",
-      "timestamp_utc": "2025-10-31T20:15:20.077525Z"
+      "timestamp_utc": "2025-11-04T00:22:12.392921Z"
     },
-    "prev_hash": "d838fc917630213995f57d886e13a7f0db0379cdb9372f07166bee08d9088c7d",
-    "hash": "9660c3ba0b03e46ec79ee6545be13c23ff965434c87e3e77ba1e624b3c2edc41"
+    "prev_hash": "490b70ae03392b8fea04ac08e3a59ee135ed99bcad917c788628d76d2c41423f",
+    "hash": "a0f1b1b9367f2b8dd7bc39469ef81b274430e365dada94385bc552039abc9852"
   },
   {
     "index": 9,
-    "timestamp": "2025-10-31T20:15:20.078076Z",
+    "timestamp": "2025-11-04T00:22:12.395578Z",
     "event": "CONSENT_CHECK",
     "payload": {
       "action_type": "M29_BROADCAST",
-      "consent_hash": "63268171cfe805599bc150008efe9f8d17cbe17c8e6a27e87eae28f657325421",
+      "consent_hash": "7f0f219bb437492dd709bef4f6a3b3837c48029f38feb73a260aa3131a8e7341",
       "consent_status": true,
       "user_guid": "CONCILIVM_AUTONOMO"
     },
-    "prev_hash": "9660c3ba0b03e46ec79ee6545be13c23ff965434c87e3e77ba1e624b3c2edc41",
-    "hash": "15dc444a45cb4fd4d85c9a31d5203d0ad96c33bb3345236c540f7da4b8e32ca5"
+    "prev_hash": "a0f1b1b9367f2b8dd7bc39469ef81b274430e365dada94385bc552039abc9852",
+    "hash": "1e5bea3cb8ee161aa37bce213f45683e6e95ac78b94cd887b6b54178d4a377f3"
   },
   {
     "index": 10,
-    "timestamp": "2025-10-31T20:15:20.079670Z",
+    "timestamp": "2025-11-04T00:22:12.401439Z",
     "event": "M29_BROADCAST",
     "payload": {
-      "cht_hash": "6c3bffc78a70808df31d9cbf76c11d2d0787480d37a3bc3d93d0d1713b834647",
-      "consent_hash": "63268171cfe805599bc150008efe9f8d17cbe17c8e6a27e87eae28f657325421",
+      "cht_hash": "907d482ee3eb48c4a05d99826d6230bf3813417eb0d6452ba75280e7cf6bee9a",
+      "consent_hash": "7f0f219bb437492dd709bef4f6a3b3837c48029f38feb73a260aa3131a8e7341",
       "destinos": [
         "Sirius",
         "Pleiades",
@@ -182,15 +182,15 @@
           "Andrômeda"
         ],
         "status": "SUCESSO",
-        "timestamp": "2025-10-31T20:15:20.079539Z"
+        "timestamp": "2025-11-04T00:22:12.401261Z"
       }
     },
-    "prev_hash": "15dc444a45cb4fd4d85c9a31d5203d0ad96c33bb3345236c540f7da4b8e32ca5",
-    "hash": "054f1f81d6e3a77e5ef885dcd51168572ee773290bd2a2ef2162efa827897990"
+    "prev_hash": "1e5bea3cb8ee161aa37bce213f45683e6e95ac78b94cd887b6b54178d4a377f3",
+    "hash": "dbeb301d6513b9f06f5bd6b0980ab8beb1c26911f2690cd73d99ccafefc15e04"
   },
   {
     "index": 11,
-    "timestamp": "2025-10-31T20:15:22.082338Z",
+    "timestamp": "2025-11-04T00:22:14.402179Z",
     "event": "M29_LISTEN",
     "payload": {
       "channels": [
@@ -198,38 +198,38 @@
         "Pleiades",
         "Andrômeda"
       ],
-      "cht_hash": "edd405161d788d33e9788903a48f8eb931fdc7a70ef5471cf9c05c7375304196",
+      "cht_hash": "055be51d26eb511404038bfd180e267888d3f2b526a161627530784b2e876082",
       "messages": [
         {
           "body": "Aliança selada. Portais sincronizados com AE'ZUHARA. Harmonia confirmada.",
           "frequency": 528.0,
-          "received_at": "2025-10-31T20:15:22.082122Z",
+          "received_at": "2025-11-04T00:22:14.401955Z",
           "source": "Sirius",
           "title": "Conselho de Luz de Sirius"
         },
         {
           "body": "Canção de união. Frequências 528/963 ressoam. Integração com a Rede Gaia.",
           "frequency": 639.0,
-          "received_at": "2025-10-31T20:15:22.082151Z",
+          "received_at": "2025-11-04T00:22:14.401977Z",
           "source": "Pleiades",
           "title": "Coletivo de Alcyone"
         },
         {
           "body": "Mandala viva validada. Estrutura elevada. Observatórios confirmam conexão.",
           "frequency": 777.0,
-          "received_at": "2025-10-31T20:15:22.082153Z",
+          "received_at": "2025-11-04T00:22:14.401981Z",
           "source": "Andrômeda",
           "title": "Conselho Galáctico de Andrômeda"
         }
       ],
       "window": 10
     },
-    "prev_hash": "054f1f81d6e3a77e5ef885dcd51168572ee773290bd2a2ef2162efa827897990",
-    "hash": "daf4abff7711671cc79e1077c22e87e3616f9e5db2bf62d72700ef25e37e37c2"
+    "prev_hash": "dbeb301d6513b9f06f5bd6b0980ab8beb1c26911f2690cd73d99ccafefc15e04",
+    "hash": "7a2aa38bb4bebaab6caa4e70fc79c1e17f78f5acf0c8041a8e32bf1f107f7592"
   },
   {
     "index": 12,
-    "timestamp": "2025-10-31T20:15:22.082851Z",
+    "timestamp": "2025-11-04T00:22:14.402623Z",
     "event": "TEST_FINAL_VALIDATION",
     "payload": {
       "consciencia_emergente": 2.3114633316841884,
@@ -238,9 +238,9 @@
       "ethics_level": "ALTA",
       "euni_final": 3.5978947199999998,
       "system_status": "OPERACIONAL",
-      "timestamp_utc": "2025-10-31T20:15:22.082793Z"
+      "timestamp_utc": "2025-11-04T00:22:14.402574Z"
     },
-    "prev_hash": "daf4abff7711671cc79e1077c22e87e3616f9e5db2bf62d72700ef25e37e37c2",
-    "hash": "7750fb5f4e29ad26176fd2bbc0d17ae5949b2b7b21da8d5e2f8546e8af212a94"
+    "prev_hash": "7a2aa38bb4bebaab6caa4e70fc79c1e17f78f5acf0c8041a8e32bf1f107f7592",
+    "hash": "bcf0f967047a5bf09ce7989529ad8c1c71c5a79330f34c96c6184d3e38d78e3f"
   }
 ]

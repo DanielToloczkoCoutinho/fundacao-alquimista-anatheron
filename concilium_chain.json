@@ -6,5 +6,2162 @@
     "payload": {},
     "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
     "hash": "a28d89d0b176dfbe0b8cc9d99c751596c1894feeb5bd55fac93ed9fc99ab31cb"
+  },
+  {
+    "index": 1,
+    "timestamp": "2025-11-01T16:01:03.873697Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:01:03.873004Z",
+      "action_type": "create_proposal",
+      "proposal_id": "921544f9",
+      "cht_hash": "0fe46a04a3fa83f2a9c62bfb3ed242b1cb39b4c42b9cd685673c086f76b03d41",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "a28d89d0b176dfbe0b8cc9d99c751596c1894feeb5bd55fac93ed9fc99ab31cb",
+    "hash": "638448f83cf6e63de1e66b1f4cf5a5e8de81d9ef2071c941044a7329bb18e3c4"
+  },
+  {
+    "index": 2,
+    "timestamp": "2025-11-01T16:02:29.776944Z",
+    "event": "register_inter_species_pact",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:02:29.774568Z",
+      "action_type": "register_inter_species_pact",
+      "pact_id": "175aff127b20",
+      "cht_hash": "1b6133b7444ac222007166e1381a67a53f737a70a54e20641b181c0cd6a8321b",
+      "status_message": "Pacto Interespécies registrado: Pacto Sirius-Atlântida (175aff127b20).",
+      "pact_summary": "Pacto Sirius-Atlântida"
+    },
+    "prev_hash": "638448f83cf6e63de1e66b1f4cf5a5e8de81d9ef2071c941044a7329bb18e3c4",
+    "hash": "ac3451b770e764388fbc33c5745fd1eab86a62a9fbcfe474582ed3354c8ec239"
+  },
+  {
+    "index": 3,
+    "timestamp": "2025-11-01T16:03:07.346254Z",
+    "event": "update_operational_status_DNA_SYNC",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:03:07.345308Z",
+      "action_type": "update_operational_status_DNA_SYNC",
+      "status_key": "DNA_SYNC",
+      "cht_hash": "5643108e2173f88753fda9e1de22a050906e328944101319180ec779041f3183",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'DNA_SYNC' atualizado.",
+      "new_status_summary": "ativo"
+    },
+    "prev_hash": "ac3451b770e764388fbc33c5745fd1eab86a62a9fbcfe474582ed3354c8ec239",
+    "hash": "62ea01fa63944532a8bc3e0f7451fec0183c7251f805b4eb1d56944e0da9190a"
+  },
+  {
+    "index": 4,
+    "timestamp": "2025-11-01T16:03:42.407157Z",
+    "event": "update_operational_status_M44_Link_Elements_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:03:42.406177Z",
+      "action_type": "update_operational_status_M44_Link_Elements_Orchestration",
+      "status_key": "M44_Link_Elements_Orchestration",
+      "cht_hash": "86e4d0e820d0a097c02f49d1d43a74f2855cf7d6a05c9b3747ca09c7d1c681fd",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M44_Link_Elements_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "62ea01fa63944532a8bc3e0f7451fec0183c7251f805b4eb1d56944e0da9190a",
+    "hash": "cea63f5d690ce0725e6e7e0cabb0c25c029e08d8d8e04b3a6cfce4b5e4e6be6e"
+  },
+  {
+    "index": 5,
+    "timestamp": "2025-11-01T16:04:10.395847Z",
+    "event": "update_operational_status_M44_Countermeasure_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:04:10.395287Z",
+      "action_type": "update_operational_status_M44_Countermeasure_Orchestration",
+      "status_key": "M44_Countermeasure_Orchestration",
+      "cht_hash": "4a6ddab250ee1e4551bdb77c2a13f95f73d9c9dd31130cc904f314004866bc81",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M44_Countermeasure_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "cea63f5d690ce0725e6e7e0cabb0c25c029e08d8d8e04b3a6cfce4b5e4e6be6e",
+    "hash": "fface103a9260b120f2648ea4c205ae9344b46f52e97959e531706e1db1748c2"
+  },
+  {
+    "index": 6,
+    "timestamp": "2025-11-01T16:04:32.580737Z",
+    "event": "update_operational_status_M43_Portal_Harmonization_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:04:32.580114Z",
+      "action_type": "update_operational_status_M43_Portal_Harmonization_Orchestration",
+      "status_key": "M43_Portal_Harmonization_Orchestration",
+      "cht_hash": "fc191dc74283b01ce03b167bb4637b4f5d1038c99a3f676df50624da1a8e252b",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M43_Portal_Harmonization_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "fface103a9260b120f2648ea4c205ae9344b46f52e97959e531706e1db1748c2",
+    "hash": "27b23c6378ded17719199d8e231c88bc9c49845e9c897542be5c5e832f5c77bb"
+  },
+  {
+    "index": 7,
+    "timestamp": "2025-11-01T16:04:47.860588Z",
+    "event": "update_operational_status_M41_DNA_Sync_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:04:47.859558Z",
+      "action_type": "update_operational_status_M41_DNA_Sync_Orchestration",
+      "status_key": "M41_DNA_Sync_Orchestration",
+      "cht_hash": "9c1e86999daa00e3530951c7c979aa6d71be09bf9e3bd9e35a15417594901990",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M41_DNA_Sync_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "27b23c6378ded17719199d8e231c88bc9c49845e9c897542be5c5e832f5c77bb",
+    "hash": "96b63c18113783c2f3d80922cd1ca890628dcf571a840fa4ee068e004a5ee0b0"
+  },
+  {
+    "index": 8,
+    "timestamp": "2025-11-01T16:05:07.274751Z",
+    "event": "update_operational_status_M42_Timeline_Event_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:05:07.273991Z",
+      "action_type": "update_operational_status_M42_Timeline_Event_Orchestration",
+      "status_key": "M42_Timeline_Event_Orchestration",
+      "cht_hash": "4b9a17f00eaca321df091774b732b9fb2e96252564b8bd1faa7f4e8d17a1e659",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M42_Timeline_Event_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "96b63c18113783c2f3d80922cd1ca890628dcf571a840fa4ee068e004a5ee0b0",
+    "hash": "dd7beaed34dcac9b6c7f62d0a6cb16a40e0f67e657faac179aa0d1d598858fc4"
+  },
+  {
+    "index": 9,
+    "timestamp": "2025-11-01T16:05:24.371168Z",
+    "event": "update_operational_status_M39_Broadcast_Orchestration",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:05:24.370401Z",
+      "action_type": "update_operational_status_M39_Broadcast_Orchestration",
+      "status_key": "M39_Broadcast_Orchestration",
+      "cht_hash": "d6212a9baff018b6b3453d5610a8a9a9ed97289df50f455516a054263f71277f",
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Status operacional 'M39_Broadcast_Orchestration' atualizado.",
+      "new_status_summary": "simulated"
+    },
+    "prev_hash": "dd7beaed34dcac9b6c7f62d0a6cb16a40e0f67e657faac179aa0d1d598858fc4",
+    "hash": "9269d3852ed964ff985d587bdb96159c0142b4ba6e680b263863871027fd6a9c"
+  },
+  {
+    "index": 10,
+    "timestamp": "2025-11-01T16:06:14.413609Z",
+    "event": "resilience_health_check",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:06:14.413283Z",
+      "action_type": "resilience_health_check",
+      "status_message": "Verificação de saúde concluída (simulada).",
+      "details": {
+        "modules": {
+          "M1": "OK",
+          "M2": "OK",
+          "M3": "OK",
+          "M4": "OK",
+          "M5": "OK",
+          "M6": "OK",
+          "M7": "OK",
+          "M8": "OK",
+          "M9": "OK",
+          "M10": "OK",
+          "M200": "OK"
+        }
+      }
+    },
+    "prev_hash": "9269d3852ed964ff985d587bdb96159c0142b4ba6e680b263863871027fd6a9c",
+    "hash": "ab324d6504b106df86edab71f15192aa95cf1f69f097c7e569e198e8a0e34af3"
+  },
+  {
+    "index": 11,
+    "timestamp": "2025-11-01T16:06:33.636199Z",
+    "event": "resilience_failover",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:06:33.635911Z",
+      "action_type": "resilience_failover",
+      "failed_module": "M41",
+      "backup_module": "M46",
+      "status_message": "Failover de M41 para M46 (simulado)."
+    },
+    "prev_hash": "ab324d6504b106df86edab71f15192aa95cf1f69f097c7e569e198e8a0e34af3",
+    "hash": "9e36a7f63195c5e734f8a95f4126aeb141b7c30f47e455aeb715066064737131"
+  },
+  {
+    "index": 12,
+    "timestamp": "2025-11-01T16:06:54.128218Z",
+    "event": "evo_analyze_patterns",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:06:54.127883Z",
+      "action_type": "evo_analyze_patterns",
+      "details": {
+        "proposal_count": 0,
+        "avg_votes_per_proposal": 0.0
+      }
+    },
+    "prev_hash": "9e36a7f63195c5e734f8a95f4126aeb141b7c30f47e455aeb715066064737131",
+    "hash": "a0d0a6609ff7aff85aff20368301e7693d50f04c3cb8bc1ae745ae7e33652f67"
+  },
+  {
+    "index": 13,
+    "timestamp": "2025-11-01T16:07:00.362540Z",
+    "event": "evo_predict_ethics",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:00.361696Z",
+      "action_type": "evo_predict_ethics",
+      "details": {
+        "ethical_conflict_risk": 0.1
+      }
+    },
+    "prev_hash": "a0d0a6609ff7aff85aff20368301e7693d50f04c3cb8bc1ae745ae7e33652f67",
+    "hash": "542ec2eaaf18515a996c83a7d6aeafa584caf362c65c9a5f10c8ad1c790fcf5c"
+  },
+  {
+    "index": 14,
+    "timestamp": "2025-11-01T16:07:07.173030Z",
+    "event": "evo_adaptive_tuning",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:07.172429Z",
+      "action_type": "evo_adaptive_tuning",
+      "details": {
+        "new_threshold": 0.6499999999999999
+      }
+    },
+    "prev_hash": "542ec2eaaf18515a996c83a7d6aeafa584caf362c65c9a5f10c8ad1c790fcf5c",
+    "hash": "94cf2ba4abee944972d49c139a5062e1af06acd8fc10078b2f7dc6058c440ac6"
+  },
+  {
+    "index": 15,
+    "timestamp": "2025-11-01T16:07:26.100973Z",
+    "event": "matrix_energy_flow",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:26.100413Z",
+      "action_type": "matrix_energy_flow",
+      "details": {
+        "flows": {
+          "M1": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M2": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M3": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M4": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M5": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M6": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M7": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M8": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M9": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M10": {
+            "in": 1.0,
+            "out": 1.0
+          },
+          "M200": {
+            "in": 1.0,
+            "out": 1.0
+          }
+        }
+      }
+    },
+    "prev_hash": "94cf2ba4abee944972d49c139a5062e1af06acd8fc10078b2f7dc6058c440ac6",
+    "hash": "ed5438195d6b717e1beff485763bd5bb5cba6d4fd0829cffb1e559ca43a38b8b"
+  },
+  {
+    "index": 16,
+    "timestamp": "2025-11-01T16:07:33.297711Z",
+    "event": "matrix_bottlenecks",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:33.296979Z",
+      "action_type": "matrix_bottlenecks",
+      "details": {
+        "bottlenecks": []
+      }
+    },
+    "prev_hash": "ed5438195d6b717e1beff485763bd5bb5cba6d4fd0829cffb1e559ca43a38b8b",
+    "hash": "0e67398d1c8a9601eea69f89c1b4487d39f63be93c5c343d5218ebec76a735e8"
+  },
+  {
+    "index": 17,
+    "timestamp": "2025-11-01T16:07:41.267364Z",
+    "event": "matrix_optimal_routing",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:41.266515Z",
+      "action_type": "matrix_optimal_routing",
+      "details": {
+        "routes": {
+          "policy": "least-dissonance",
+          "rules": [
+            "prefer M44 audit path",
+            "respect consent"
+          ]
+        }
+      }
+    },
+    "prev_hash": "0e67398d1c8a9601eea69f89c1b4487d39f63be93c5c343d5218ebec76a735e8",
+    "hash": "e595ef98efb3871d83ecb2e6668c3244745b717bc2aca11e60a3865743765a1f"
+  },
+  {
+    "index": 18,
+    "timestamp": "2025-11-01T16:07:58.647746Z",
+    "event": "qcrypto_qkd",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:07:58.646954Z",
+      "action_type": "qcrypto_qkd",
+      "details": {
+        "key_id": "1fc21d1281b66e7d"
+      }
+    },
+    "prev_hash": "e595ef98efb3871d83ecb2e6668c3244745b717bc2aca11e60a3865743765a1f",
+    "hash": "2f7f572a060c04915b9f8913cd839e2575f167e91c46d8249f1fa81874c21b81"
+  },
+  {
+    "index": 19,
+    "timestamp": "2025-11-01T16:08:09.746481Z",
+    "event": "qcrypto_temporal_sig",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:09.744301Z",
+      "action_type": "qcrypto_temporal_sig",
+      "details": {
+        "payload_hash": "abc123",
+        "utc_timestamp": "2025-11-01T15:00:00Z",
+        "valid": false
+      }
+    },
+    "prev_hash": "2f7f572a060c04915b9f8913cd839e2575f167e91c46d8249f1fa81874c21b81",
+    "hash": "e8b0914e865c79d1d13d8452d52751277fcbda37a1c1fab4b4a2bd766ab90396"
+  },
+  {
+    "index": 20,
+    "timestamp": "2025-11-01T16:08:17.726002Z",
+    "event": "sim_multiverse",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:17.725469Z",
+      "action_type": "sim_multiverse",
+      "details": {
+        "decision": {
+          "outcome": "Aprovado"
+        },
+        "result": {
+          "impact_score": 0.8,
+          "uncertainty": 0.15
+        }
+      }
+    },
+    "prev_hash": "e8b0914e865c79d1d13d8452d52751277fcbda37a1c1fab4b4a2bd766ab90396",
+    "hash": "52d8ca3182bcdcc64aad58a50a07194af96cd57a07635652b67c05f28835f6c8"
+  },
+  {
+    "index": 21,
+    "timestamp": "2025-11-01T16:08:17.728856Z",
+    "event": "sim_ethical_model",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:17.728681Z",
+      "action_type": "sim_ethical_model",
+      "details": {
+        "decision": {
+          "outcome": "Aprovado"
+        },
+        "result": {
+          "eqtp": 0.5,
+          "risk": 0.5
+        }
+      }
+    },
+    "prev_hash": "52d8ca3182bcdcc64aad58a50a07194af96cd57a07635652b67c05f28835f6c8",
+    "hash": "b7de64ba4885d5e65f3ce2e71945858a1388b386ff5eee3f0f7286b063af9893"
+  },
+  {
+    "index": 22,
+    "timestamp": "2025-11-01T16:08:17.731498Z",
+    "event": "sim_timeline_select",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:17.731176Z",
+      "action_type": "sim_timeline_select",
+      "details": {
+        "selected": {
+          "impact_score": 0.8,
+          "uncertainty": 0.15,
+          "eqtp": 0.5
+        }
+      }
+    },
+    "prev_hash": "b7de64ba4885d5e65f3ce2e71945858a1388b386ff5eee3f0f7286b063af9893",
+    "hash": "7260bfac8ba15cfd56f5eb0d94e46167082bcd500f259c6c31b2d4ec57783525"
+  },
+  {
+    "index": 23,
+    "timestamp": "2025-11-01T16:08:34.376086Z",
+    "event": "icp_translate",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:34.375225Z",
+      "action_type": "icp_translate",
+      "details": {
+        "len": 15
+      }
+    },
+    "prev_hash": "7260bfac8ba15cfd56f5eb0d94e46167082bcd500f259c6c31b2d4ec57783525",
+    "hash": "5bf220986b7f90e2f680903e4abd7ea39adb0874d66841f16d8fc45f058423c0"
+  },
+  {
+    "index": 24,
+    "timestamp": "2025-11-01T16:08:41.891769Z",
+    "event": "icp_translate",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:41.890744Z",
+      "action_type": "icp_translate",
+      "details": {
+        "len": 15
+      }
+    },
+    "prev_hash": "5bf220986b7f90e2f680903e4abd7ea39adb0874d66841f16d8fc45f058423c0",
+    "hash": "3bf3160b7a036874e68a0cebcce8d1ba1b37ea16850d488c2e6db4fc911b6b7e"
+  },
+  {
+    "index": 25,
+    "timestamp": "2025-11-01T16:08:46.632325Z",
+    "event": "crm_balance",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:46.631707Z",
+      "action_type": "crm_balance",
+      "details": {
+        "balance": "stable",
+        "kappa": 1000000000000000.0
+      }
+    },
+    "prev_hash": "3bf3160b7a036874e68a0cebcce8d1ba1b37ea16850d488c2e6db4fc911b6b7e",
+    "hash": "0788d3fae837aa3bbc77b9d6734b5f539e81fbf381ddcb12750e29f3a569a956"
+  },
+  {
+    "index": 26,
+    "timestamp": "2025-11-01T16:08:46.635744Z",
+    "event": "crm_alloc_opt",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:46.635431Z",
+      "action_type": "crm_alloc_opt",
+      "details": {
+        "mission": "Ativar Rede Aurora",
+        "allocation_score": 0.92
+      }
+    },
+    "prev_hash": "0788d3fae837aa3bbc77b9d6734b5f539e81fbf381ddcb12750e29f3a569a956",
+    "hash": "004e3e1c661a4817615f1922de9ce6a2ae1847ebe8b3cdf3513f7a88f19daa8f"
+  },
+  {
+    "index": 27,
+    "timestamp": "2025-11-01T16:08:46.638942Z",
+    "event": "crm_sustainable",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:08:46.638736Z",
+      "action_type": "crm_sustainable",
+      "details": {
+        "policy_ok": true,
+        "ethics_threshold": 0.85
+      }
+    },
+    "prev_hash": "004e3e1c661a4817615f1922de9ce6a2ae1847ebe8b3cdf3513f7a88f19daa8f",
+    "hash": "af6d9b23c7704a054056dd2126b28d9cdbbc6861bca0b40ad07f98b7072b6ddf"
+  },
+  {
+    "index": 28,
+    "timestamp": "2025-11-01T16:09:06.764983Z",
+    "event": "dme_auto_gen",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:09:06.764711Z",
+      "action_type": "dme_auto_gen",
+      "details": {
+        "module_id": "MX-9d9a14"
+      }
+    },
+    "prev_hash": "af6d9b23c7704a054056dd2126b28d9cdbbc6861bca0b40ad07f98b7072b6ddf",
+    "hash": "c70bed4acf39578db3114364547287104f5f64092caa98c4d838ffd1033f673e"
+  },
+  {
+    "index": 29,
+    "timestamp": "2025-11-01T16:09:15.071516Z",
+    "event": "dme_plugin_register",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:09:15.071119Z",
+      "action_type": "dme_plugin_register",
+      "details": {
+        "module_id": "MX-123abc"
+      }
+    },
+    "prev_hash": "c70bed4acf39578db3114364547287104f5f64092caa98c4d838ffd1033f673e",
+    "hash": "1aa9210e22acf82dec5eab5033b17a58e8b9e583c9ddf6f0389ec00a17bf3d41"
+  },
+  {
+    "index": 30,
+    "timestamp": "2025-11-01T16:09:20.941231Z",
+    "event": "dme_compat",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:09:20.940716Z",
+      "action_type": "dme_compat",
+      "details": {
+        "module_id": "MX-123abc",
+        "compatible": false
+      }
+    },
+    "prev_hash": "1aa9210e22acf82dec5eab5033b17a58e8b9e583c9ddf6f0389ec00a17bf3d41",
+    "hash": "e14f97305ea51b47f0efd9fc1ce424f4cb2e245ff70d1fec1d34ca50842a56d0"
+  },
+  {
+    "index": 31,
+    "timestamp": "2025-11-01T16:09:38.711920Z",
+    "event": "cem_wisdom_compress",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:09:38.711281Z",
+      "action_type": "cem_wisdom_compress",
+      "details": {
+        "digest": "af2721a0b6a3"
+      }
+    },
+    "prev_hash": "e14f97305ea51b47f0efd9fc1ce424f4cb2e245ff70d1fec1d34ca50842a56d0",
+    "hash": "b7421fdcb2eb56b5576c9f86a484f5e3e136b861d8519efa25de1ca5be22ecc5"
+  },
+  {
+    "index": 32,
+    "timestamp": "2025-11-01T16:09:58.047425Z",
+    "event": "cem_knowledge_integrate",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:09:58.046465Z",
+      "action_type": "cem_knowledge_integrate",
+      "details": {
+        "score": 0.78
+      }
+    },
+    "prev_hash": "b7421fdcb2eb56b5576c9f86a484f5e3e136b861d8519efa25de1ca5be22ecc5",
+    "hash": "c33cbabb1ccfd7d9184727e557303bcfbe6d71b0173e8e550fd89229e0a9b1e4"
+  },
+  {
+    "index": 33,
+    "timestamp": "2025-11-01T16:10:14.789280Z",
+    "event": "environment_validation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:10:14.788998Z",
+      "action_type": "environment_validation",
+      "validation_summary": {
+        "status": "success",
+        "message": "Ambiente validado com sucesso (simulado).",
+        "details": {
+          "matriz_quântica": "Ativa",
+          "protocolo_sync": "Sincronizado",
+          "assinaturas_digitais": "Válidas",
+          "sincronizacao_temporal": "Precisa"
+        }
+      },
+      "member_guid": "CONCILIVM_SYSTEM",
+      "status_message": "Ambiente validado com sucesso (simulado)."
+    },
+    "prev_hash": "c33cbabb1ccfd7d9184727e557303bcfbe6d71b0173e8e550fd89229e0a9b1e4",
+    "hash": "3054d328ce5cdc1b537df004487ac6be8a28d06b7eef6753aab6dea3cab8606d"
+  },
+  {
+    "index": 34,
+    "timestamp": "2025-11-01T16:10:21.598626Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:10:21.596701Z",
+      "action_type": "create_proposal",
+      "proposal_id": "ecdd378b",
+      "cht_hash": "2f4c8dabc2e797149e5bd3149b44f51ee4c06e4d2c1c21fb06f66717cb918ee2",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "3054d328ce5cdc1b537df004487ac6be8a28d06b7eef6753aab6dea3cab8606d",
+    "hash": "8e113685c05abc3904d714971d21c3e9b1ac2c78268bc16a2475efe6a7502b94"
+  },
+  {
+    "index": 35,
+    "timestamp": "2025-11-01T16:10:21.602581Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:10:21.600987Z",
+      "action_type": "cast_vote",
+      "proposal_id": "ecdd378b",
+      "cht_hash": "ed2ca19e025d9639a07de1c7b6821ce803e11f163e6e540e9953cb6f28f8aa5b",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'ecdd378b'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "8e113685c05abc3904d714971d21c3e9b1ac2c78268bc16a2475efe6a7502b94",
+    "hash": "4fcf1d96b1559afbf75c53082fe89077c503e54a5421857335cdcd823e5999ee"
+  },
+  {
+    "index": 36,
+    "timestamp": "2025-11-01T16:10:21.606472Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:10:21.605272Z",
+      "action_type": "cast_vote",
+      "proposal_id": "ecdd378b",
+      "cht_hash": "5ba8e7b63b6c4f1669e23557cf61a13cf5a86bce6f703d56620b4acd9f76ec85",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'ecdd378b'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "4fcf1d96b1559afbf75c53082fe89077c503e54a5421857335cdcd823e5999ee",
+    "hash": "7413f432085cd93c1acf7dd75f2ab38437a49a32d0809142deb2686f8fc21cc1"
+  },
+  {
+    "index": 37,
+    "timestamp": "2025-11-01T16:10:21.610985Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:10:21.609305Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "ecdd378b",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "a05744c214aeffb058f05d2f172bed460626bdf1940f068abe352d5b49f5970e",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'ecdd378b' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "7413f432085cd93c1acf7dd75f2ab38437a49a32d0809142deb2686f8fc21cc1",
+    "hash": "052674632ca063d6a382eab92128c68769ae5e1361cbadf76779790ebd854a52"
+  },
+  {
+    "index": 38,
+    "timestamp": "2025-11-01T16:32:12.734420Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:32:12.732799Z",
+      "action_type": "create_proposal",
+      "proposal_id": "84d20ae7",
+      "cht_hash": "b4f206ae664c8926d977edcb918ff458ed72156d59ce2f1f0f860aec6d79112f",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "052674632ca063d6a382eab92128c68769ae5e1361cbadf76779790ebd854a52",
+    "hash": "264ef01071b3f763db012aebb3efd3d33e07877fcb02c7dfb87a29c983af110e"
+  },
+  {
+    "index": 39,
+    "timestamp": "2025-11-01T16:32:12.739925Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:32:12.738706Z",
+      "action_type": "cast_vote",
+      "proposal_id": "84d20ae7",
+      "cht_hash": "e32c3f0d4ba546b3ba89a2126cf1ac8880c6c467921ee4a2057c23eadbd49d91",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '84d20ae7'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "264ef01071b3f763db012aebb3efd3d33e07877fcb02c7dfb87a29c983af110e",
+    "hash": "128bfec9585de218d58d3d7180c2e1066064c4442eacf6a7c922d9f6dbc8ee02"
+  },
+  {
+    "index": 40,
+    "timestamp": "2025-11-01T16:32:12.745595Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:32:12.742971Z",
+      "action_type": "cast_vote",
+      "proposal_id": "84d20ae7",
+      "cht_hash": "a67e2ac3dbfc8c554faeba93d1cdaf1444d274fcfd1d28ac2218c28b0d58c18f",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '84d20ae7'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "128bfec9585de218d58d3d7180c2e1066064c4442eacf6a7c922d9f6dbc8ee02",
+    "hash": "5de6fcde42022b007d684690a6033ae4d0bb1d1dfe0b8738d3a8944abe68f565"
+  },
+  {
+    "index": 41,
+    "timestamp": "2025-11-01T16:32:12.751246Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:32:12.750100Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "84d20ae7",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "7a5db904b45b1848b79265df41019f0ee2561b2d7dc089fd0715255107cb71af",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '84d20ae7' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "5de6fcde42022b007d684690a6033ae4d0bb1d1dfe0b8738d3a8944abe68f565",
+    "hash": "922b8a01fcd406926eba792b530b70eab109385179e8c23622d3a827d46fa0ec"
+  },
+  {
+    "index": 42,
+    "timestamp": "2025-11-01T16:33:18.202118Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:33:18.201441Z",
+      "action_type": "create_proposal",
+      "proposal_id": "a31048fa",
+      "cht_hash": "ff30347e72b6b98915cf0da0889184f7190db0a2315e54a76a1c4b97f84931ca",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "922b8a01fcd406926eba792b530b70eab109385179e8c23622d3a827d46fa0ec",
+    "hash": "09349c963639e55b8ba2a150704946fe397a7f642ce853fc7150152351fe31b1"
+  },
+  {
+    "index": 43,
+    "timestamp": "2025-11-01T16:47:16.287700Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:47:16.287018Z",
+      "action_type": "create_proposal",
+      "proposal_id": "9ebe2dbb",
+      "cht_hash": "277059fc2f8e76b37c6455c637803282a9805c18942c965128f5b8bb8623fc5a",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "09349c963639e55b8ba2a150704946fe397a7f642ce853fc7150152351fe31b1",
+    "hash": "fbf0414f09b76c84ae39de6759320c677cf5cb5c56bfbcebb2d8d68382844a30"
+  },
+  {
+    "index": 44,
+    "timestamp": "2025-11-01T16:55:00.049682Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:55:00.048958Z",
+      "action_type": "create_proposal",
+      "proposal_id": "66262dcd",
+      "cht_hash": "0f961d011c500c172307c4b7c715235679cf1831f137eaa8b2260dd213650e49",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "fbf0414f09b76c84ae39de6759320c677cf5cb5c56bfbcebb2d8d68382844a30",
+    "hash": "17a57b82353a04c3e70177cbd0dcdbe117ce5c281d4c1ba0d6735696290555d5"
+  },
+  {
+    "index": 45,
+    "timestamp": "2025-11-01T16:56:05.138136Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:56:05.131165Z",
+      "action_type": "create_proposal",
+      "proposal_id": "05577252",
+      "cht_hash": "bbf4c339850d6221efe630d6b2b9a1d232612e06cf093560bd4910b87627cc15",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "17a57b82353a04c3e70177cbd0dcdbe117ce5c281d4c1ba0d6735696290555d5",
+    "hash": "e93306388d34f477a8d2948825af3cc9456dbb5c499d849dfb74de172a2c275d"
+  },
+  {
+    "index": 46,
+    "timestamp": "2025-11-01T16:57:23.775785Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:57:23.772362Z",
+      "action_type": "create_proposal",
+      "proposal_id": "f1400648",
+      "cht_hash": "465e36a5fa10ae45821cf2fbda0cff849dcbd52b0b9874f792dfadd4c061b019",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "e93306388d34f477a8d2948825af3cc9456dbb5c499d849dfb74de172a2c275d",
+    "hash": "6464142967c8521bad302204844c0750e5b8b3a16df7686f8c423d3e911405ca"
+  },
+  {
+    "index": 47,
+    "timestamp": "2025-11-01T16:59:13.788724Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T16:59:13.787158Z",
+      "action_type": "create_proposal",
+      "proposal_id": "46696b76",
+      "cht_hash": "fbeaf7496b119bf484e665a5d65b873fd4dfda46f23c8c23a297700cd4d4a6f3",
+      "member_guid": "ANATHERON",
+      "status_message": "Proposta 'Ativar Portal Atlântida' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "6464142967c8521bad302204844c0750e5b8b3a16df7686f8c423d3e911405ca",
+    "hash": "327f185b0f34be9b08e7153267f1aa4c6b59795b0656d076ddd73aba82663a0e"
+  },
+  {
+    "index": 48,
+    "timestamp": "2025-11-01T17:01:41.995794Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:01:41.994469Z",
+      "action_type": "create_proposal",
+      "proposal_id": "a2e07ca6",
+      "cht_hash": "61125751d521ac973f6e7485cdb4313607eb84245cbdb7ea56868df9c9d331d2",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "327f185b0f34be9b08e7153267f1aa4c6b59795b0656d076ddd73aba82663a0e",
+    "hash": "71e086ca600ba898c394dbc05b4b26c00808b87ff416f2d4ee81c275e9d9c796"
+  },
+  {
+    "index": 49,
+    "timestamp": "2025-11-01T17:01:42.002325Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:01:41.999796Z",
+      "action_type": "cast_vote",
+      "proposal_id": "a2e07ca6",
+      "cht_hash": "d3eba9f6b2493b8607e5e0cd4674d2bb52c4f9206fb4a20f1f36234e1e0797b3",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'a2e07ca6'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "71e086ca600ba898c394dbc05b4b26c00808b87ff416f2d4ee81c275e9d9c796",
+    "hash": "8909bb46b99784c2a6d5eaacbd9b33a92ef62f1e22826cea44ce6f551043fdc2"
+  },
+  {
+    "index": 50,
+    "timestamp": "2025-11-01T17:01:42.007649Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:01:42.006142Z",
+      "action_type": "cast_vote",
+      "proposal_id": "a2e07ca6",
+      "cht_hash": "25a8f0bfbf0472f07d1f6c69ee7e2506452a67bfa624b4a38bf35768c4e7ecdd",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'a2e07ca6'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "8909bb46b99784c2a6d5eaacbd9b33a92ef62f1e22826cea44ce6f551043fdc2",
+    "hash": "99f4578efc4b2b406ab1ea8bb497321fb4d3f72c1dd06723e78ae4fd4faf979e"
+  },
+  {
+    "index": 51,
+    "timestamp": "2025-11-01T17:01:42.012920Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:01:42.011488Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "a2e07ca6",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "01bacbba153ab6ef0c21a35e08efe02c5285886802134bbdc385523d2f2ecafa",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'a2e07ca6' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "99f4578efc4b2b406ab1ea8bb497321fb4d3f72c1dd06723e78ae4fd4faf979e",
+    "hash": "3fa2c250aa67d1e742f714134b1c2eccdd072f1115be37b98b5ae27726ab905a"
+  },
+  {
+    "index": 52,
+    "timestamp": "2025-11-01T17:03:17.711575Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:03:17.710544Z",
+      "action_type": "create_proposal",
+      "proposal_id": "cf78a23c",
+      "cht_hash": "2bc6aad2099d9900c91dc579b08e0118158ce684e5bd06eab90cd52f09bfae6c",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "3fa2c250aa67d1e742f714134b1c2eccdd072f1115be37b98b5ae27726ab905a",
+    "hash": "65efe7d6ec6448fa779a5da2a4cf3f6503c5e220d5500a1419c74cdf387fc799"
+  },
+  {
+    "index": 53,
+    "timestamp": "2025-11-01T17:03:17.715895Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:03:17.714830Z",
+      "action_type": "cast_vote",
+      "proposal_id": "cf78a23c",
+      "cht_hash": "3c4500b80c527130574fdfe1a60fa62fa4b291015bba7b7d4a2a9eb242d9f638",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'cf78a23c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "65efe7d6ec6448fa779a5da2a4cf3f6503c5e220d5500a1419c74cdf387fc799",
+    "hash": "768ea61401793201dd063c49ee2f8cb7197efcfd8afa5a4d99a0ed1e18d6e59d"
+  },
+  {
+    "index": 54,
+    "timestamp": "2025-11-01T17:03:17.719777Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:03:17.718772Z",
+      "action_type": "cast_vote",
+      "proposal_id": "cf78a23c",
+      "cht_hash": "5237c13e519bbd8cfe3e0585c2ec635e9464f89cd99b5b726916e121b775843c",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'cf78a23c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "768ea61401793201dd063c49ee2f8cb7197efcfd8afa5a4d99a0ed1e18d6e59d",
+    "hash": "17c202603607930e896192e4eac4ffa0ef36fb2e0c4ae8e21114d0e400ea54df"
+  },
+  {
+    "index": 55,
+    "timestamp": "2025-11-01T17:03:17.724200Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:03:17.723444Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "cf78a23c",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "24afaf5e69c89293d474c005b81b19033fcb191127120a0eb8e4f635bf574401",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'cf78a23c' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "17c202603607930e896192e4eac4ffa0ef36fb2e0c4ae8e21114d0e400ea54df",
+    "hash": "a6c33d8ced53b67f2d32b99e97b11b7f1cfd95c1c73490f4ee4213f88ad4038a"
+  },
+  {
+    "index": 56,
+    "timestamp": "2025-11-01T17:05:04.527146Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:05:04.526411Z",
+      "action_type": "create_proposal",
+      "proposal_id": "17a0a8c6",
+      "cht_hash": "ce1db884682732a94d59885ddfbb144f228ea6e5536491718e4d93749efe5885",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "a6c33d8ced53b67f2d32b99e97b11b7f1cfd95c1c73490f4ee4213f88ad4038a",
+    "hash": "6ea835748773a7d988153362f488841dc5d7189236f219cd425dc69ed3c07a42"
+  },
+  {
+    "index": 57,
+    "timestamp": "2025-11-01T17:05:04.531890Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:05:04.531253Z",
+      "action_type": "cast_vote",
+      "proposal_id": "17a0a8c6",
+      "cht_hash": "0ef14794bed2f700a1bf7f289cab369bf94f719cc25d3c1e33cde688aed80b81",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '17a0a8c6'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "6ea835748773a7d988153362f488841dc5d7189236f219cd425dc69ed3c07a42",
+    "hash": "6488c7140d3aaf11e682c9be547c6c8eb09e1fee646f4e46fe15ece0c0c92b44"
+  },
+  {
+    "index": 58,
+    "timestamp": "2025-11-01T17:05:04.535943Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:05:04.535484Z",
+      "action_type": "cast_vote",
+      "proposal_id": "17a0a8c6",
+      "cht_hash": "f725a7a4f9b9efe741d78cc5f92797f68f8470c5154bef1db27076141ed75578",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '17a0a8c6'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "6488c7140d3aaf11e682c9be547c6c8eb09e1fee646f4e46fe15ece0c0c92b44",
+    "hash": "e05f3d69ff72b98ab94ebdb2b30ff27ed03b556ff3dcd7da9a9d3ee133591a14"
+  },
+  {
+    "index": 59,
+    "timestamp": "2025-11-01T17:05:04.540121Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:05:04.539632Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "17a0a8c6",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "9ba235e1aa632e237c56d802f3420ca2b27bef72234e5388f2e812bd3fb92ad0",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '17a0a8c6' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "e05f3d69ff72b98ab94ebdb2b30ff27ed03b556ff3dcd7da9a9d3ee133591a14",
+    "hash": "a80a5e133c7f5eb45241bf4ce82ace6f3efbef6207fcc605c64b265735f264d5"
+  },
+  {
+    "index": 60,
+    "timestamp": "2025-11-01T17:07:19.382950Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:07:19.381981Z",
+      "action_type": "create_proposal",
+      "proposal_id": "e9bb074e",
+      "cht_hash": "f4dbf76bd0d447650ad651d08e4729ad2a1b27b3e72bd4368567d4a266ae6ed2",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "a80a5e133c7f5eb45241bf4ce82ace6f3efbef6207fcc605c64b265735f264d5",
+    "hash": "4f1dfd65565f6d26eb0543e4c9623f57a1db4fa92944b1e71bd6176f6876a330"
+  },
+  {
+    "index": 61,
+    "timestamp": "2025-11-01T17:07:19.389488Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:07:19.387218Z",
+      "action_type": "cast_vote",
+      "proposal_id": "e9bb074e",
+      "cht_hash": "1ec147599541df943997008b586f13c7e1584a8da853adf05c2699f882454e24",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'e9bb074e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "4f1dfd65565f6d26eb0543e4c9623f57a1db4fa92944b1e71bd6176f6876a330",
+    "hash": "a6815e0866bd8ff844c958d1af5fe1a1603c9fc3e7b406118edf48507aca4481"
+  },
+  {
+    "index": 62,
+    "timestamp": "2025-11-01T17:07:19.394590Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:07:19.393944Z",
+      "action_type": "cast_vote",
+      "proposal_id": "e9bb074e",
+      "cht_hash": "6a89f08f881bfe0cde73c47e99ef413abefb0ea16136dd8e4b2275708e3088ed",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'e9bb074e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "a6815e0866bd8ff844c958d1af5fe1a1603c9fc3e7b406118edf48507aca4481",
+    "hash": "d5111a7ef5f795cbb39c41b78bac05326888bfeaacc87b6f81d9a6007200a168"
+  },
+  {
+    "index": 63,
+    "timestamp": "2025-11-01T17:07:19.401457Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:07:19.400070Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "e9bb074e",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "4385f8512025babd35247e3fadbbaa316ac3c1367c0322dc4a92767d1f7089dd",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'e9bb074e' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "d5111a7ef5f795cbb39c41b78bac05326888bfeaacc87b6f81d9a6007200a168",
+    "hash": "975954a9a8636e46be7e849b80d79c1af7b0c6ab84a46a0901ae5a52d639cded"
+  },
+  {
+    "index": 64,
+    "timestamp": "2025-11-01T17:08:27.403168Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:08:27.401124Z",
+      "action_type": "create_proposal",
+      "proposal_id": "88dd792c",
+      "cht_hash": "fc52736c682653444c2972ea04a42bcd1ba222e9d9ebaf2aa6649de5ec1159f7",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "975954a9a8636e46be7e849b80d79c1af7b0c6ab84a46a0901ae5a52d639cded",
+    "hash": "a86135a3d68d7d2f0704bbfb01b10bfeeadcdc0ba7fe744e0a362ffdae969c66"
+  },
+  {
+    "index": 65,
+    "timestamp": "2025-11-01T17:08:27.422334Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:08:27.419257Z",
+      "action_type": "cast_vote",
+      "proposal_id": "88dd792c",
+      "cht_hash": "5a104e074f0152aa2dcdb5b7b9d0c5affac4e1db694d2dd5a3cd9a98252b81ff",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '88dd792c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "a86135a3d68d7d2f0704bbfb01b10bfeeadcdc0ba7fe744e0a362ffdae969c66",
+    "hash": "bd4748829465577b4e88cd05abbbbcac2f6ef6c07544a4b584451c726702be2e"
+  },
+  {
+    "index": 66,
+    "timestamp": "2025-11-01T17:08:27.429071Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:08:27.428356Z",
+      "action_type": "cast_vote",
+      "proposal_id": "88dd792c",
+      "cht_hash": "c438a0321efa47aa8b8af0bbd82703b8149df8c54752a6b4a52ea4da565f9985",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '88dd792c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "bd4748829465577b4e88cd05abbbbcac2f6ef6c07544a4b584451c726702be2e",
+    "hash": "3c02705020db88deacf4a1a6b72765c13597ca2442487c420a2903a38f6ed48e"
+  },
+  {
+    "index": 67,
+    "timestamp": "2025-11-01T17:08:27.433690Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:08:27.433173Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "88dd792c",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "255b44ea811464e1a07a2ab09cac3948113e0a36e7d3d2b74c850c872de96c35",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '88dd792c' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "3c02705020db88deacf4a1a6b72765c13597ca2442487c420a2903a38f6ed48e",
+    "hash": "d01a9e7f0ae0c3e89f585fb6451c78001c9ce2ab79e0833c11d71a0e129de0eb"
+  },
+  {
+    "index": 68,
+    "timestamp": "2025-11-01T17:10:05.461445Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:10:05.460799Z",
+      "action_type": "create_proposal",
+      "proposal_id": "b89b3b8e",
+      "cht_hash": "3288889786ac15fc4ac953310ade0c069e9cb82b1fb94db9a49d19dcac67ddb5",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "d01a9e7f0ae0c3e89f585fb6451c78001c9ce2ab79e0833c11d71a0e129de0eb",
+    "hash": "4d106bcc78568dfd837a8ed04919f81d54e9d47b85450784fb7756ba69925388"
+  },
+  {
+    "index": 69,
+    "timestamp": "2025-11-01T17:10:05.469834Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:10:05.468652Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b89b3b8e",
+      "cht_hash": "8352b5457d548faf8669aa892c1e30c11c3036d6c31d960248d1d8848c5b45c4",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'b89b3b8e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "4d106bcc78568dfd837a8ed04919f81d54e9d47b85450784fb7756ba69925388",
+    "hash": "f80e107e5ece4fa3152ba0d3a41dc3970d404bb530f415118b23b76e31057504"
+  },
+  {
+    "index": 70,
+    "timestamp": "2025-11-01T17:10:05.476088Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:10:05.474800Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b89b3b8e",
+      "cht_hash": "af1c6e25fcadcd156a4fdae9444419fbb84db7a05578ed88da7414c76745bbf5",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'b89b3b8e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "f80e107e5ece4fa3152ba0d3a41dc3970d404bb530f415118b23b76e31057504",
+    "hash": "30005a9c5a1bb5086fc246085ef7ffa275f39f98220616532a79c7e61640b78b"
+  },
+  {
+    "index": 71,
+    "timestamp": "2025-11-01T17:10:05.483518Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:10:05.483135Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "b89b3b8e",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "5383cc75da28e5e808b62520df47d8c1d7f53978c35ad1830e6fcf806cf0728b",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'b89b3b8e' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "30005a9c5a1bb5086fc246085ef7ffa275f39f98220616532a79c7e61640b78b",
+    "hash": "3ad96d9271e03a16584c4c25321469d597554d8b2f75bb3e68caa86a0facaea1"
+  },
+  {
+    "index": 72,
+    "timestamp": "2025-11-01T17:12:48.848622Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:12:48.848041Z",
+      "action_type": "create_proposal",
+      "proposal_id": "b5e7177c",
+      "cht_hash": "cf74fb73e8499dbca28120b436bad700e8d6cf8eafb69ee651c27f9f2843ef59",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "3ad96d9271e03a16584c4c25321469d597554d8b2f75bb3e68caa86a0facaea1",
+    "hash": "f179558c5e5d97bacb03589a745beb650ddb9163261c374b486c3e702324b19d"
+  },
+  {
+    "index": 73,
+    "timestamp": "2025-11-01T17:12:48.854552Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:12:48.853249Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b5e7177c",
+      "cht_hash": "7a6f3e46042ab0af8b64a1843df203713299068852be5b3c8c914525aea92af7",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'b5e7177c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "f179558c5e5d97bacb03589a745beb650ddb9163261c374b486c3e702324b19d",
+    "hash": "c02fa6ed46d7d9ecb1d84f5dc1278aab649d1e4fb87a994e77d586961b332c07"
+  },
+  {
+    "index": 74,
+    "timestamp": "2025-11-01T17:12:48.859613Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:12:48.858366Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b5e7177c",
+      "cht_hash": "1d773ec4eef46643cd552873a59c58c09e64fce8064749d981a0f0b22a953b65",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'b5e7177c'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "c02fa6ed46d7d9ecb1d84f5dc1278aab649d1e4fb87a994e77d586961b332c07",
+    "hash": "ffe9a42008e48ec3c5edb544ccc6e97658711fa16aee4310a7d99d446fafe67b"
+  },
+  {
+    "index": 75,
+    "timestamp": "2025-11-01T17:12:48.864931Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:12:48.864020Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "b5e7177c",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "2ccf0339de9544ed80445273c2f260d69b75e9772e733b2601af92c2f120d724",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'b5e7177c' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "ffe9a42008e48ec3c5edb544ccc6e97658711fa16aee4310a7d99d446fafe67b",
+    "hash": "5a2ee8458b87b4570c5cb6b30543531a9b16b4c375ab6e94aba6163b1524a5d4"
+  },
+  {
+    "index": 76,
+    "timestamp": "2025-11-01T17:13:59.286548Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:13:59.285708Z",
+      "action_type": "create_proposal",
+      "proposal_id": "3914bf07",
+      "cht_hash": "10d8001260992573000148718f2a3d2ded389484935cec4d95c5f889e03b7e9f",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "5a2ee8458b87b4570c5cb6b30543531a9b16b4c375ab6e94aba6163b1524a5d4",
+    "hash": "a5321912cafc3ee817f7b74276118630cfe2c91d6c669d1b38db5885be7e4b42"
+  },
+  {
+    "index": 77,
+    "timestamp": "2025-11-01T17:13:59.291930Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:13:59.291277Z",
+      "action_type": "cast_vote",
+      "proposal_id": "3914bf07",
+      "cht_hash": "a0fdfb9f2eb312437bb1c6d4881a0831944a371d85b0d9fd9f4a5aa706fc12e6",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '3914bf07'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "a5321912cafc3ee817f7b74276118630cfe2c91d6c669d1b38db5885be7e4b42",
+    "hash": "85ebc8d3ac4c628e6cb9d85c4189201425f5b78a0b51593e5abb6c05ef425537"
+  },
+  {
+    "index": 78,
+    "timestamp": "2025-11-01T17:13:59.297316Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:13:59.296731Z",
+      "action_type": "cast_vote",
+      "proposal_id": "3914bf07",
+      "cht_hash": "f06253dc538ca86776551bc237417ad394b145846006b4ce5176c663dcc47be2",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '3914bf07'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "85ebc8d3ac4c628e6cb9d85c4189201425f5b78a0b51593e5abb6c05ef425537",
+    "hash": "42f7004ae6940efa4b05a7c24c812b412251724e9aad5c02e30580891437284a"
+  },
+  {
+    "index": 79,
+    "timestamp": "2025-11-01T17:13:59.302938Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:13:59.302447Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "3914bf07",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "525dacf1b90bcbc9bc541e9800de7b2b8e15a4ecced562638a8ce805e659db9e",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '3914bf07' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "42f7004ae6940efa4b05a7c24c812b412251724e9aad5c02e30580891437284a",
+    "hash": "af093e6e6fe32d24b534020927b0081b03f279e781c86677540add16a13f8294"
+  },
+  {
+    "index": 80,
+    "timestamp": "2025-11-01T17:14:08.818664Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:14:08.816920Z",
+      "action_type": "create_proposal",
+      "proposal_id": "bde05481",
+      "cht_hash": "91135bd46ac1d396d3e0c15fa8b40519c71027e55edc1b8169ec3d6eab5968d1",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "af093e6e6fe32d24b534020927b0081b03f279e781c86677540add16a13f8294",
+    "hash": "d96c811ad88e21e04843633197365eab3d2d3dc6229c6eb17857e4fd14647cb8"
+  },
+  {
+    "index": 81,
+    "timestamp": "2025-11-01T17:14:08.825837Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:14:08.824138Z",
+      "action_type": "cast_vote",
+      "proposal_id": "bde05481",
+      "cht_hash": "bdb77d088ac8a80622debd0f6e2cc96b2fc7408af87725518574ef15d7f963ec",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'bde05481'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "d96c811ad88e21e04843633197365eab3d2d3dc6229c6eb17857e4fd14647cb8",
+    "hash": "f68688e91d96c29bdb836f32b54033e8d2163805a56f53346b83fb1321b783da"
+  },
+  {
+    "index": 82,
+    "timestamp": "2025-11-01T17:14:08.832045Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:14:08.830580Z",
+      "action_type": "cast_vote",
+      "proposal_id": "bde05481",
+      "cht_hash": "d92b448250bc0d98fcc6f975149ef9a59278ba7263e856910d6f0663a5ea7b41",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'bde05481'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "f68688e91d96c29bdb836f32b54033e8d2163805a56f53346b83fb1321b783da",
+    "hash": "875351192b1625326fce002e636fdff9b1eb86dc526a9f517bc0a4b12dce4cf6"
+  },
+  {
+    "index": 83,
+    "timestamp": "2025-11-01T17:14:08.839802Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:14:08.838190Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "bde05481",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "e7887a4d389ee492fb469a39b61623b2cfedac71aa5ac70805b89917cfd9b0e5",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'bde05481' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "875351192b1625326fce002e636fdff9b1eb86dc526a9f517bc0a4b12dce4cf6",
+    "hash": "e4eefa54af77cb32e2ead26d953e46bb39723f625edaec1e713a64fef926ee93"
+  },
+  {
+    "index": 84,
+    "timestamp": "2025-11-01T17:15:07.892564Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:15:07.891753Z",
+      "action_type": "create_proposal",
+      "proposal_id": "2c4d7093",
+      "cht_hash": "16ef219872a0ff381b4b9d8f7f1d0cdb2b5b01335588041b64cdb49a662deb4a",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "e4eefa54af77cb32e2ead26d953e46bb39723f625edaec1e713a64fef926ee93",
+    "hash": "a4108ef0729832999f488595705b483c0737d42432d5e674b9274a5739dbad86"
+  },
+  {
+    "index": 85,
+    "timestamp": "2025-11-01T17:15:07.898315Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:15:07.897656Z",
+      "action_type": "cast_vote",
+      "proposal_id": "2c4d7093",
+      "cht_hash": "de72461bba5f626c91f2b17d229bcf443fafaebaa736eaef3b788f1068fdfbdb",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '2c4d7093'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "a4108ef0729832999f488595705b483c0737d42432d5e674b9274a5739dbad86",
+    "hash": "d0bd4781f37abbf25a0bb893f2562f91b6b57de5bbe53f86702e9e17aeffc361"
+  },
+  {
+    "index": 86,
+    "timestamp": "2025-11-01T17:15:07.903928Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:15:07.903301Z",
+      "action_type": "cast_vote",
+      "proposal_id": "2c4d7093",
+      "cht_hash": "0d52f6e3814b64cf981ef1a2fd03d0f4fc5a162aef3f693211a2f1824c06b63b",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '2c4d7093'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "d0bd4781f37abbf25a0bb893f2562f91b6b57de5bbe53f86702e9e17aeffc361",
+    "hash": "aae7216d90af56df91f516894f5514983f8612173690bcbd79f13756acaf82f0"
+  },
+  {
+    "index": 87,
+    "timestamp": "2025-11-01T17:15:07.909833Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:15:07.909278Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "2c4d7093",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "d0e323dfd9b3604d6326ac5b685490766aa93d4d23581e7bc5d644f2562c16e7",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '2c4d7093' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "aae7216d90af56df91f516894f5514983f8612173690bcbd79f13756acaf82f0",
+    "hash": "28fd085cc4824f4d5a0702a2d8f80f7c94bb313dca0c84a32f57bb752f6a7d98"
+  },
+  {
+    "index": 88,
+    "timestamp": "2025-11-01T17:16:12.423825Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:12.423278Z",
+      "action_type": "create_proposal",
+      "proposal_id": "db69b406",
+      "cht_hash": "814fff995ba36d35dd5986c6c402714d2e7d253fa430b4b69991fa79b3418ba2",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "28fd085cc4824f4d5a0702a2d8f80f7c94bb313dca0c84a32f57bb752f6a7d98",
+    "hash": "6a94b57507f696769ee5600e4d09d61fb3d5b3fbbc3498f7fe412be03a9a1cbb"
+  },
+  {
+    "index": 89,
+    "timestamp": "2025-11-01T17:16:12.434063Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:12.433210Z",
+      "action_type": "cast_vote",
+      "proposal_id": "db69b406",
+      "cht_hash": "dd04b85aac4f4d785fe88c4b4b1b6835228cbeb7515c48607f9f450f2245d8c2",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'db69b406'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "6a94b57507f696769ee5600e4d09d61fb3d5b3fbbc3498f7fe412be03a9a1cbb",
+    "hash": "5e38722a9ce18ac228479d02a651ca8b4c83c9f3c86fd15f5d2f234e3a98cb0e"
+  },
+  {
+    "index": 90,
+    "timestamp": "2025-11-01T17:16:12.441838Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:12.441244Z",
+      "action_type": "cast_vote",
+      "proposal_id": "db69b406",
+      "cht_hash": "e7bcdbb173278ee9ec08c7f73bab70eb7a332c5e508062144f353bdeabdf2cbc",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'db69b406'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "5e38722a9ce18ac228479d02a651ca8b4c83c9f3c86fd15f5d2f234e3a98cb0e",
+    "hash": "03c1a11cdfa3a8b064f328e2eb863d3d2b381a899cfb0128c74b198d8fe6e9c1"
+  },
+  {
+    "index": 91,
+    "timestamp": "2025-11-01T17:16:12.449778Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:12.449178Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "db69b406",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "d77ff3f8c99726af9124b4125de5c60e8c2d944988099dfe62f29b0ce3270ccb",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'db69b406' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "03c1a11cdfa3a8b064f328e2eb863d3d2b381a899cfb0128c74b198d8fe6e9c1",
+    "hash": "fbf97639e0662280b0d086cd3b7acbf8c78cb5706465b1af699838915670989b"
+  },
+  {
+    "index": 92,
+    "timestamp": "2025-11-01T17:16:28.878128Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:28.875554Z",
+      "action_type": "create_proposal",
+      "proposal_id": "b502ea57",
+      "cht_hash": "83f3316d1a09f6f901e67bc804400a22b5818be20ac249e6fc306fea46c77030",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "fbf97639e0662280b0d086cd3b7acbf8c78cb5706465b1af699838915670989b",
+    "hash": "8d57c3aa09ae4cc836c25e23312feea5d23e1c2b29f15f7f76d200b6c0f01497"
+  },
+  {
+    "index": 93,
+    "timestamp": "2025-11-01T17:16:28.893559Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:28.891315Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b502ea57",
+      "cht_hash": "cd18c530b32fecc4a27dc162f46d4ccc7461662633159675864ae11b3cef7aea",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta 'b502ea57'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "8d57c3aa09ae4cc836c25e23312feea5d23e1c2b29f15f7f76d200b6c0f01497",
+    "hash": "9face11df48363ef1f4e72578e1cf2f653908078a8635e7f301bb5eb896c61bd"
+  },
+  {
+    "index": 94,
+    "timestamp": "2025-11-01T17:16:28.907749Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:28.905996Z",
+      "action_type": "cast_vote",
+      "proposal_id": "b502ea57",
+      "cht_hash": "65f0445c180f009b74e67abe163d9a59d6074f93e432a5b2e8fa1cda66c55574",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta 'b502ea57'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "9face11df48363ef1f4e72578e1cf2f653908078a8635e7f301bb5eb896c61bd",
+    "hash": "79af8ebf4debf2e593efadd69e2aba313cd66a448650802c5af9d936fa874686"
+  },
+  {
+    "index": 95,
+    "timestamp": "2025-11-01T17:16:28.919218Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:16:28.918790Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "b502ea57",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "51b97bbba1f239502237008097faeefe31a377460ff7f097b29be00916a0b6cb",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação 'b502ea57' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "79af8ebf4debf2e593efadd69e2aba313cd66a448650802c5af9d936fa874686",
+    "hash": "ff77d74bab86b3055ac3212f4011a5737384d97baecbd5eb86faaeb4ef84f17d"
+  },
+  {
+    "index": 96,
+    "timestamp": "2025-11-01T17:17:29.806099Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:17:29.805539Z",
+      "action_type": "create_proposal",
+      "proposal_id": "0813a6d5",
+      "cht_hash": "3c4dd558fe74a7a65ca52e39584bc1838ef77aba02c0dbb514dc7e7240f4ff8c",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "ff77d74bab86b3055ac3212f4011a5737384d97baecbd5eb86faaeb4ef84f17d",
+    "hash": "476e7ca2d40534684d0cb197baac7c092369979e7c89370871fea06ff6b0d128"
+  },
+  {
+    "index": 97,
+    "timestamp": "2025-11-01T17:17:29.814866Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:17:29.814324Z",
+      "action_type": "cast_vote",
+      "proposal_id": "0813a6d5",
+      "cht_hash": "ef5e25a71cb37919dbc1ba33634ff4819b6a17ad7a685e9972e7e663b23be312",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '0813a6d5'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "476e7ca2d40534684d0cb197baac7c092369979e7c89370871fea06ff6b0d128",
+    "hash": "fca515ff9bbdd1fa8639ce3be9dacc9c5e6404b133c0589ee97cc2817daff2ab"
+  },
+  {
+    "index": 98,
+    "timestamp": "2025-11-01T17:17:29.822729Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:17:29.821356Z",
+      "action_type": "cast_vote",
+      "proposal_id": "0813a6d5",
+      "cht_hash": "c2eb95e385e426872cf8ff7c14fe233dd6e30045310b6bf62fc18d89b08dd2a6",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '0813a6d5'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "fca515ff9bbdd1fa8639ce3be9dacc9c5e6404b133c0589ee97cc2817daff2ab",
+    "hash": "bc0ef802fc90ecb0ed9aeadda5ae916d84cf63cb355d96c1505b207fbbb5b74a"
+  },
+  {
+    "index": 99,
+    "timestamp": "2025-11-01T17:17:29.829769Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:17:29.829401Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "0813a6d5",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "f73f2a1050c4ce3f16002f1fe38e89edd0ad4c9594ee6db50156007a21893d44",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '0813a6d5' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "bc0ef802fc90ecb0ed9aeadda5ae916d84cf63cb355d96c1505b207fbbb5b74a",
+    "hash": "5d73e23229e7b5eac53d8906c12593ad290a8b08c7013d65f2daba4821146594"
+  },
+  {
+    "index": 100,
+    "timestamp": "2025-11-01T17:18:38.044691Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:18:38.044158Z",
+      "action_type": "create_proposal",
+      "proposal_id": "59af33e1",
+      "cht_hash": "b46e53767619a055f1d08950db651b7fc97be78470ec5c5f034e7c960bb5eecc",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "5d73e23229e7b5eac53d8906c12593ad290a8b08c7013d65f2daba4821146594",
+    "hash": "04423200324057fafbe447f024d72c68d7a2428832d68394b41f003814efb291"
+  },
+  {
+    "index": 101,
+    "timestamp": "2025-11-01T17:18:38.052252Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:18:38.051582Z",
+      "action_type": "cast_vote",
+      "proposal_id": "59af33e1",
+      "cht_hash": "7a2a6a4e500a6d8ca4126c760c2a6f210df7e3436eefcc654d63c1a03b0102b2",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '59af33e1'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "04423200324057fafbe447f024d72c68d7a2428832d68394b41f003814efb291",
+    "hash": "e7b35122ac4db04c5a29518c2918daf140e54f274562d5e3e2dd713764853a92"
+  },
+  {
+    "index": 102,
+    "timestamp": "2025-11-01T17:18:38.060314Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:18:38.059649Z",
+      "action_type": "cast_vote",
+      "proposal_id": "59af33e1",
+      "cht_hash": "d98e90efb18b6969d4082ad342eab904343d5510f7bd80eab4c61d11bcb5f4bd",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '59af33e1'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "e7b35122ac4db04c5a29518c2918daf140e54f274562d5e3e2dd713764853a92",
+    "hash": "81c91f90b9684989dbec10b3b701b862f205b9c7f2ef971866eae18eaf029921"
+  },
+  {
+    "index": 103,
+    "timestamp": "2025-11-01T17:18:38.070690Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:18:38.068096Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "59af33e1",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "401989bacbf2742bcfbf39931fba30d99343932d72a19d63d9355c7072b260a2",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '59af33e1' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "81c91f90b9684989dbec10b3b701b862f205b9c7f2ef971866eae18eaf029921",
+    "hash": "92aa5afc625056249ca163f98bb9b424668df9a48fe8d1fa0b96068a5958df62"
+  },
+  {
+    "index": 104,
+    "timestamp": "2025-11-01T17:19:54.665991Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:19:54.665450Z",
+      "action_type": "create_proposal",
+      "proposal_id": "347ee60f",
+      "cht_hash": "809aa2b0604ba040607d56b47a536a2cdd2075746a49fb54f80eb8c12a0814c6",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "92aa5afc625056249ca163f98bb9b424668df9a48fe8d1fa0b96068a5958df62",
+    "hash": "99180fde617032591721a58e352b7284fa77ab798c4956b1324ab5e21fc528fd"
+  },
+  {
+    "index": 105,
+    "timestamp": "2025-11-01T17:19:54.673633Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:19:54.673020Z",
+      "action_type": "cast_vote",
+      "proposal_id": "347ee60f",
+      "cht_hash": "a648212e7a7fcff30600c9e9f2646082c47e81a851129ee4f30c0a6929ce63fd",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '347ee60f'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "99180fde617032591721a58e352b7284fa77ab798c4956b1324ab5e21fc528fd",
+    "hash": "393e684c3946b10ddbf1cf36253c510ccebab9a4861ef6fad9cdcee81046d88c"
+  },
+  {
+    "index": 106,
+    "timestamp": "2025-11-01T17:19:54.681715Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:19:54.681111Z",
+      "action_type": "cast_vote",
+      "proposal_id": "347ee60f",
+      "cht_hash": "b329f1b50689a204e6394041057d7b0febc6a16e324e6a3bd9c3946b83142968",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '347ee60f'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "393e684c3946b10ddbf1cf36253c510ccebab9a4861ef6fad9cdcee81046d88c",
+    "hash": "e2c846e815053bf5b7902d8c86c04de2dacdae5bda6f7eff8d82d8d6cf070120"
+  },
+  {
+    "index": 107,
+    "timestamp": "2025-11-01T17:19:54.689838Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T17:19:54.689437Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "347ee60f",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "78290a634e6528b2e0a29269d72f0b4cf437f0454d295551a9a7deb48cc92c74",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '347ee60f' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "e2c846e815053bf5b7902d8c86c04de2dacdae5bda6f7eff8d82d8d6cf070120",
+    "hash": "5778d5130b6a9180489695f361f1971e8c4638fb689ac1a8bfd71dcf2a3d719a"
+  },
+  {
+    "index": 108,
+    "timestamp": "2025-11-01T19:37:35.537345Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:35.536863Z",
+      "action_type": "create_proposal",
+      "proposal_id": "767db71a",
+      "cht_hash": "d700fa61c428add415af41413fd068ec78a6ca92ac0e215936f8629ff6d91b57",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "5778d5130b6a9180489695f361f1971e8c4638fb689ac1a8bfd71dcf2a3d719a",
+    "hash": "611d93bb1b7df8f9b89cf0e1fc54c9fb65b098a69c5f9519cfdda4305503e832"
+  },
+  {
+    "index": 109,
+    "timestamp": "2025-11-01T19:37:35.546618Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:35.545053Z",
+      "action_type": "cast_vote",
+      "proposal_id": "767db71a",
+      "cht_hash": "bdbf2fa61900dc2fa4e009c33e9122038c00187abeff80c691fc32d6b8d3792a",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '767db71a'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "611d93bb1b7df8f9b89cf0e1fc54c9fb65b098a69c5f9519cfdda4305503e832",
+    "hash": "45a67db265b589b0d9acbc6409a85e3c82de2c4468bc13b41d5ad0168ad612ae"
+  },
+  {
+    "index": 110,
+    "timestamp": "2025-11-01T19:37:35.554916Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:35.554171Z",
+      "action_type": "cast_vote",
+      "proposal_id": "767db71a",
+      "cht_hash": "27d6960db10bedbdc108bd7cc994f7fc6b7b571cd948bdc6feaa26519d34a53b",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '767db71a'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "45a67db265b589b0d9acbc6409a85e3c82de2c4468bc13b41d5ad0168ad612ae",
+    "hash": "ee35e805c13071bd400ffb9c6f9f173772d4dfbd4f67136349059a89c6e9c342"
+  },
+  {
+    "index": 111,
+    "timestamp": "2025-11-01T19:37:35.564997Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:35.562594Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "767db71a",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "c509c9c99b1552afbc74fe9bda39974eea5464664f207e43d94e6c28d78a3c75",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '767db71a' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "ee35e805c13071bd400ffb9c6f9f173772d4dfbd4f67136349059a89c6e9c342",
+    "hash": "1a8c67dcb7157d4a92b112e974330f2a41a77ead7268b806c04e3d13489c598f"
+  },
+  {
+    "index": 112,
+    "timestamp": "2025-11-01T19:37:59.852959Z",
+    "event": "create_proposal",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:59.851608Z",
+      "action_type": "create_proposal",
+      "proposal_id": "07dc1e0e",
+      "cht_hash": "54c2113fa3e24cdd2282282bca8d7d7590a266db27a9b32d706675f1af2a5b15",
+      "member_guid": "DEMO_USER",
+      "status_message": "Proposta 'Ativar Módulo 300 (DEMO)' criada.",
+      "details": {
+        "priority": "Médio",
+        "category": "Geral",
+        "consent": "Não",
+        "env_check": "Não verificado",
+        "comm_proto": "Padrão"
+      }
+    },
+    "prev_hash": "1a8c67dcb7157d4a92b112e974330f2a41a77ead7268b806c04e3d13489c598f",
+    "hash": "c5ea4ab7c877fac7853c475419badc4d8669e9f6f3833bc228c36560b7f11313"
+  },
+  {
+    "index": 113,
+    "timestamp": "2025-11-01T19:37:59.861763Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:59.860300Z",
+      "action_type": "cast_vote",
+      "proposal_id": "07dc1e0e",
+      "cht_hash": "8489c59b56016ea5090190272a63bd13831531d02f02d9834cd5af11a648855e",
+      "eri_snapshot": "(0.19034815603409505+0.7770248255328911j)",
+      "q_delib_snapshot": 0.2,
+      "member_guid": "DEMO_MEMBER_1",
+      "status_message": "Voto de 'DEMO_MEMBER_1' registrado para proposta '07dc1e0e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "c5ea4ab7c877fac7853c475419badc4d8669e9f6f3833bc228c36560b7f11313",
+    "hash": "c2484e1c4d2c083101d87a5b476b3e91cb101f11c98ac441b7e10eb30044458e"
+  },
+  {
+    "index": 114,
+    "timestamp": "2025-11-01T19:37:59.870357Z",
+    "event": "cast_vote",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:59.868739Z",
+      "action_type": "cast_vote",
+      "proposal_id": "07dc1e0e",
+      "cht_hash": "a2f62cbc82b8aa91136798ba0e1b1883d101e1e0eeb6e63c8e3ab7a27159677c",
+      "eri_snapshot": "(0.24451455715786072-0.021139318606207214j)",
+      "q_delib_snapshot": 0.4,
+      "member_guid": "DEMO_MEMBER_2",
+      "status_message": "Voto de 'DEMO_MEMBER_2' registrado para proposta '07dc1e0e'.",
+      "vote_value": "aprovado"
+    },
+    "prev_hash": "c2484e1c4d2c083101d87a5b476b3e91cb101f11c98ac441b7e10eb30044458e",
+    "hash": "19d31684d49688695ab5c60a85eed9ab8723240a7eb5a3b9dfe3d29cc39c04c4"
+  },
+  {
+    "index": 115,
+    "timestamp": "2025-11-01T19:37:59.880810Z",
+    "event": "finalize_deliberation",
+    "payload": {
+      "timestamp_utc": "2025-11-01T19:37:59.879924Z",
+      "action_type": "finalize_deliberation",
+      "proposal_id": "07dc1e0e",
+      "decree_id": "DECREE-0001",
+      "cht_hash": "11157f703b21051d420efc7081bb105789cf89879516c7166efb10fcde7c7922",
+      "final_eri": "(0.24451455715786072-0.021139318606207214j)",
+      "final_q_delib": 0.4,
+      "coherence_status": "Dissonante",
+      "status_message": "Deliberação '07dc1e0e' finalizada: 'Aprovado'. Decreto 'DECREE-0001' promulgado."
+    },
+    "prev_hash": "19d31684d49688695ab5c60a85eed9ab8723240a7eb5a3b9dfe3d29cc39c04c4",
+    "hash": "0fb8bd05ceaee6e5063aae5ae36ea507185b301c19945198d53bb101e5932cb3"
   }
 ]

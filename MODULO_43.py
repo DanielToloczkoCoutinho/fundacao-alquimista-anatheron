@@ -2099,26 +2099,4 @@ if __name__ == '__main__':
         BC.add("CRITICAL_ERROR", {"error": str(e), "traceback": traceback.format_exc(), "log_level": "critical"})
     finally:
         logging.info("=== Fim da Execução do Módulo 43 - Harmonia dos Portais ===")
-
-
-WARNING:root:Biblioteca 'PyYAML' não encontrada. A geração de arquivos de semente YAML será ignorada.
-WARNING:root:Biblioteca 'websockets' não encontrada. O servidor WebSocket será desativado.
-WARNING:root:Bibliotecas 'FastAPI', 'Uvicorn' ou 'Pydantic' não encontradas. A API RESTful será desativada.
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/INNER_PLANETS/inner_planets_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/MARS/mars_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/OUTER_PLANETS_DWARF/outer_planets_dwarf_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/GAS_GIANTS/gas_giants_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/LUNA/luna_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/LAGRANGE/lagrange_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/SOLAR/solar_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/EARTH/earth_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/INNER_PLANETS/inner_planets_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/MARS/mars_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/OUTER_PLANETS_DWARF/outer_planets_dwarf_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/GAS_GIANTS/gas_giants_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/LUNA/luna_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/LAGRANGE/lagrange_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/SOLAR/solar_entities.yaml
-WARNING:root:PyYAML não disponível. Ignorando a geração do arquivo de semente padrão: seeds/solar_system/EARTH/earth_entities.yaml
-
-=== Execução do código concluída ===
+[]

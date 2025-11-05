@@ -1,7 +1,7 @@
 {
     "modulo": "Nanomanifestador v4.2.Validado",
     "status_geral": "VALIDADO",
-    "relatorio_timestamp": "2025-10-31T02:30:05.383788",
+    "relatorio_timestamp": "2025-11-02T21:02:04.950359",
     "calculos_executados": [
         {
             "equacao": "EQ056_CampoCoerencia",
@@ -51,11 +51,11 @@
     "resultado_manifestacao": {
         "sucesso": true,
         "resultados_medicao": [
-            1,
+            0,
             1,
             1,
             0,
-            1
+            0
         ],
         "intencao_manifestada": "Validar a Verdade dos Números no Módulo 2"
     }

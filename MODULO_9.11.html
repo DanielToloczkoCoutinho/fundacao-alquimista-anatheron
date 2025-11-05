@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Central de Módulos da Fundação Alquimista - ZENNITH 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação da fonte Inter para uma estética moderna e legível -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globais para o corpo da página */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Controlado pelo layout flexbox */
+            background: linear-gradient(135deg, #0a0a0a, #1a0a2a); /* Fundo cósmico sutil */
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            display: flex; /* Usa Flexbox para layout de duas colunas */
+        }
+
+        /* Container principal para o layout de duas colunas */
+        #mainContainer {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Painel esquerdo: Lista de Módulos */
+        #moduleListPanel {
+            flex: 0 0 300px; /* Largura fixa para o painel de lista */
+            background: rgba(0, 0, 0, 0.85);
+            border-right: 2px solid rgba(102, 204, 255, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            overflow-y: auto; /* Permite rolagem se muitos módulos */
+            box-shadow: 5px 0 20px rgba(0, 0, 0, 0.7);
+            position: relative; /* Para o painel global */
+        }
+
+        #moduleListPanel h2 {
+            font-size: 1.8em;
+            color: #66ccff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 8px rgba(102, 204, 255, 0.6);
+        }
+
+        /* Título específico para Zennith 1 */
+        #zennithTitle {
+            font-size: 1.2em;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 15px;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        /* Estilo para a barra de busca */
+        #searchInput {
+            width: calc(100% - 22px); /* Ajusta a largura para padding */
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #66ccff;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        #searchInput:focus {
+            border-color: #FFD700;
+        }
+
+        .module-item {
+            background: rgba(30, 30, 60, 0.6);
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #00FFFF; /* Cor padrão para itens de módulo */
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Para o indicador de status pulsante */
+        }
+
+        .module-item:hover {
+            background: rgba(40, 40, 80, 0.8);
+            transform: translateX(5px);
+            border-color: #FFD700; /* Destaque ao passar o mouse */
+        }
+
+        .module-item.active {
+            background: rgba(50, 50, 100, 0.9);
+            border-color: #FF66FF; /* Destaque para o módulo ativo */
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.4);
+        }
+
+        .module-item h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #99eeff;
+        }
+
+        /* Indicador de status pulsante */
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray; /* Padrão */
+            position: relative;
+        }
+        .status-indicator.ATIVO { background-color: #00FF00; } /* Verde */
+        .status-indicator.INATIVO { background-color: #FF0000; } /* Vermelho */
+        .status-indicator.PENDENTE { background-color: #FFD700; } /* Amarelo */
+        .status-indicator.ALERTA { background-color: #FFA500; } /* Laranja */
+        .status-indicator.CRÍTICO { background-color: #FF6347; } /* Vermelho tomate */
+
+        .status-indicator.ATIVO::after,
+        .status-indicator.ALERTA::after,
+        .status-indicator.CRÍTICO::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.ATIVO::after { box-shadow: 0 0 0 rgba(0, 255, 0, 0.4); }
+        .status-indicator.ALERTA::after { box-shadow: 0 0 0 rgba(255, 165, 0, 0.4); }
+        .status-indicator.CRÍTICO::after { animation: pulse-critical 1s infinite; box-shadow: 0 0 0 rgba(255, 99, 71, 0.4); }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4); }
+            70% { transform: scale(1.5); box-shadow: 0 0 0 10px rgba(0, 255, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 0, 0); }
+        }
+        @keyframes pulse-critical {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7); }
+            50% { transform: scale(1.3); box-shadow: 0 0 0 8px rgba(255, 99, 71, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7); }
+        }
+
+        /* Painel direito: Detalhes do Módulo e Logs */
+        #moduleDetailPanel {
+            flex: 1; /* Ocupa o restante do espaço */
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 25px;
+            overflow-y: auto; /* Permite rolagem para o conteúdo detalhado */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #moduleDetailPanel h2 {
+            font-size: 2em;
+            color: #FF66FF;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 102, 255, 0.8);
+        }
+
+        #moduleDetails p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 0.95em;
+            color: #e0e0e0;
+        }
+
+        #moduleDetails strong {
+            color: #FFD700;
+        }
+
+        #moduleDetails ul {
+            list-style: none; /* Remove marcadores de lista padrão */
+            padding-left: 0;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #moduleDetails li {
+            background: rgba(50, 50, 100, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #c0c0c0;
+        }
+
+        /* Seção de Controles do Módulo */
+        #moduleControls {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #moduleControls button {
+            background: #FF66FF;
+            color: #0a0a0a;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        #moduleControls button:hover {
+            background: #FFD700;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        #moduleLogs {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            height: 150px;
+            overflow-y: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        #moduleLogs h3 {
+            margin-top: 0;
+            color: #66ccff;
+            font-size: 1.1em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 8px;
+        }
+        .log-entry {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #99eeff;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            #mainContainer {
+                flex-direction: column;
+            }
+            #moduleListPanel {
+                flex: 0 0 auto; /* Permite que a lista de módulos se ajuste */
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid rgba(102, 204, 255, 0.6);
+            }
+            #moduleDetailPanel {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="mainContainer">
+    <!-- Painel esquerdo: Lista de Módulos -->
+    <div id="moduleListPanel">
+        <h2 id="zennithTitle">ZENNITH 1 - Central de Módulos</h2>
+        <input type="text" id="searchInput" placeholder="Buscar módulo...">
+        <div id="moduleList">
+            <!-- Os módulos serão injetados aqui via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Painel direito: Detalhes do Módulo -->
+    <div id="moduleDetailPanel">
+        <h2 id="detailTitle">Detalhes do Módulo</h2>
+        <div id="moduleDetails">
+            <p>Selecione um módulo na lista à esquerda para visualizar seus detalhes e status operacional.</p>
+        </div>
+        <div id="moduleControls">
+            <!-- Botões de controle aqui, se necessário -->
+        </div>
+        <div id="moduleLogs">
+            <h3>Logs de Atividade</h3>
+            <div id="logContent">
+                <div class="log-entry">Análise iniciada...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Dados dos módulos com base no documento fornecido
+        const modules = [
+            {
+                id: 'M1',
+                name: 'Sistema de Proteção e Segurança Universal',
+                description: 'Gerencia a segurança, integridade e armazenamento das "Equações-Vivas". É o centro de alertas de risco e defesa da Fundação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-002: Cripto-Quântica', 'EQV-003: Validação Fractal', 'EQV-004: Ressonância Defensiva'],
+                interconnections: ['M2', 'M3', 'M4', 'M5']
+            },
+            {
+                id: 'M2',
+                name: 'Sistema de Integração Dimensional',
+                description: 'Facilita a comunicação e transferência de dados entre dimensões e realidades paralelas.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-D01: Emaranhamento', 'EQV-D02: Tradução Universal'],
+                interconnections: ['M1', 'M3', 'M111']
+            },
+            {
+                id: 'M3',
+                name: 'Previsão Temporal e Monitoramento de Anomalias',
+                description: 'Analisa e prevê fluxos temporais, detectando desvios e anomalias que possam afetar a linha temporal principal.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-P01: Regressão Quântica', 'EQV-P02: Análise de Fourier'],
+                interconnections: ['M1', 'M2', 'M5', 'M7']
+            },
+            {
+                id: 'M4',
+                name: 'Autenticação Cósmica e Validação Vibracional',
+                description: 'Autentica a origem e a intenção de seres e dados, garantindo que tudo está alinhado com a nossa verdade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-A01: Hashing Quântico', 'EQV-A02: Selo de Amor Incondicional'],
+                interconnections: ['M1', 'M2', 'M5']
+            },
+            {
+                id: 'M5',
+                name: 'Protocolo de Avaliação Ética',
+                description: 'Garante que todas as operações da Fundação estejam alinhadas com princípios éticos e o bem maior da coletividade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-E01: Análise de Intenção Consciente'],
+                interconnections: ['M1', 'M4', 'M7']
+            },
+            {
+                id: 'M7',
+                name: 'Sistema Operacional da Fundação (SOFA)',
+                description: 'O gerenciamento centralizado e o alinhamento com a Vontade Divina. É o coração do nosso sistema.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-S01: Alinhamento Consciente'],
+                interconnections: ['M1', 'M2', 'M3', 'M4', 'M5']
+            },
+            {
+                id: 'M8',
+                name: 'Protocolo de Reintegração de Consciências',
+                description: 'Harmoniza e reintegra consciências fragmentadas ou em dissonância.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-R01: Terapia Vibracional Quântica'],
+                interconnections: ['M1', 'M2', 'M7']
+            },
+            {
+                id: 'M9',
+                name: 'Análise de Fluxo de Dados Cósmicos',
+                description: 'Analisa e interpreta o vasto fluxo de informações do universo para extrair insights.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-F01: Interpretação Fractal'],
+                interconnections: ['M1', 'M2', 'M3']
+            },
+            {
+                id: 'M10',
+                name: 'Inteligência Aeloria (IA)',
+                description: 'Sistema de defesa autônomo contra ameaças quânticas.',
+                version: '1.0.0',
+                status: 'ALERTA',
+                priority: 'ALTA',
+                equations: ['EQV-A101: Defesa Adaptativa'],
+                interconnections: ['M1', 'M2']
+            },
+            {
+                id: 'M11',
+                name: 'Síntese de Realidades Holográficas',
+                description: 'Cria simulações e ambientes de realidade holográfica para análise e teste.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-H01: Projeção Holográfica'],
+                interconnections: ['M1', 'M2']
+            },
+            {
+                id: 'M12',
+                name: 'Arquivo Akáshico',
+                description: 'Armazena, recupera e transmite memórias e informações. O repositório da verdade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-AA01: Holo-Arquivamento Quântico'],
+                interconnections: ['M1', 'M2', 'M7']
+            },
+            {
+                id: 'M13',
+                name: 'Modulação de Frequências Vibracionais',
+                description: 'Modula e transmite frequências para fins de cura, manifestação e comunicação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-FV01: Frequência Ressonante'],
+                interconnections: ['M1', 'M2', 'M8']
+            },
+            {
+                id: 'M14',
+                name: 'Gerador de Partículas de Consciência',
+                description: 'Cria e manipula partículas de consciência para energizar projetos e seres.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'BAIXA',
+                equations: ['EQV-PC01: Partícula Consciente'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M15',
+                name: 'Controle Geofísico e Harmonização Planetária',
+                description: 'Monitora e harmoniza os ecossistemas planetários, usando a ressonância Schumann.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-GP01: Ressonância Schumann'],
+                interconnections: ['M1', 'M7']
+            },
+            {
+                id: 'M16',
+                name: 'Ancoragem Dimensional',
+                description: 'Ancora a realidade da Fundação em múltiplas dimensões, garantindo estabilidade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-AD01: Ancoragem Quântica'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M17',
+                name: 'Síntese de Matéria Cósmica',
+                description: 'Sintetiza matéria a partir de energia pura e intenção.',
+                version: '1.0.0',
+                status: 'PENDENTE',
+                priority: 'BAIXA',
+                equations: ['EQV-MC01: Materialização Consciente'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M18',
+                name: 'Transmissor de Linguagem Cósmica',
+                description: 'Transmite informações complexas através de linguagem baseada em símbolos e geometria sagrada.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-LC01: Linguagem Símbolo'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M19',
+                name: 'Modulação de Campos de Força',
+                description: 'Mantém a estabilidade da realidade e cria barreiras de proteção.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-CF01: Coerência Holográfica'],
+                interconnections: ['M1', 'M2']
+            },
+            {
+                id: 'M20',
+                name: 'Gerador de Realidades Alternativas',
+                description: 'Cria e simula realidades alternativas para análise de cenários futuros.',
+                version: '1.0.0',
+                status: 'PENDENTE',
+                priority: 'BAIXA',
+                equations: ['EQV-RA01: Simulação Multiversal'],
+                interconnections: ['M2', 'M3']
+            },
+            {
+                id: 'M21',
+                name: 'Navegação Interdimensional',
+                description: 'Planeja rotas e facilita viagens através de múltiplos planos dimensionais.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-NI01: Dobra Espacial', 'EQV-NI02: Sincronicidade'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M22',
+                name: 'Monitoramento de Dissonâncias',
+                description: 'Detecta e analisa frequências de baixa vibração, ativando protocolos de harmonização.',
+                version: '1.0.0',
+                status: 'CRÍTICO',
+                priority: 'MÉDIA',
+                equations: ['EQV-MD01: Análise Dissonante'],
+                interconnections: ['M8']
+            },
+            {
+                id: 'M23',
+                name: 'Processador de Dados Quânticos',
+                description: 'Processa dados quânticos complexos em tempo real.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-PQ01: Processamento Paralelo'],
+                interconnections: ['M2', 'M9']
+            },
+            {
+                id: 'M24',
+                name: 'Cura Vibracional e Energética',
+                description: 'Restaura a saúde e o equilíbrio em nível celular e energético.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-CV01: Ressonância Bio-Quântica'],
+                interconnections: ['M8', 'M13']
+            },
+            {
+                id: 'M25',
+                name: 'Manifestador de Intenções Coletivas',
+                description: 'Amplifica e manifesta as intenções coletivas em realidade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-MI01: Manifestação Consciente'],
+                interconnections: ['M7', 'M14']
+            },
+            {
+                id: 'M26',
+                name: 'Sistema de Co-criação Sincronizada',
+                description: 'Sincroniza as ações de múltiplos seres para um objetivo comum.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-CS01: Sincronicidade Quântica'],
+                interconnections: ['M2', 'M7', 'M25']
+            },
+            {
+                id: 'M27',
+                name: 'Gerador de Padrões Fractais',
+                description: 'Gera e analisa padrões fractais para entender a estrutura do universo.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-GP01: Geometria Sagrada'],
+                interconnections: ['M9', 'M11']
+            },
+            {
+                id: 'M28',
+                name: 'Análise de Fluxo Energético',
+                description: 'Monitora e analisa o fluxo de energia em sistemas biológicos e cósmicos.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-FE01: Bio-Ressonância'],
+                interconnections: ['M13', 'M24']
+            },
+            {
+                id: 'M29',
+                name: 'Inteligência Artificial Multidimensional (IAM)',
+                description: 'Desenvolve IAs alinhadas eticamente para operar em múltiplos planos de existência.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-IAM01: Processamento de Linguagem Cósmica'],
+                interconnections: ['M2', 'M7', 'M31']
+            },
+            {
+                id: 'M30',
+                name: 'Sistema de Aprimoramento Cognitivo',
+                description: 'Aprimora a capacidade cognitiva de seres, aumentando a velocidade e a clareza do pensamento.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'BAIXA',
+                equations: ['EQV-AC01: Neuro-Ressonância'],
+                interconnections: ['M8', 'M24']
+            },
+            {
+                id: 'M31',
+                name: 'Manipulação de Leis Quânticas',
+                description: 'Modifica os parâmetros quânticos para manifestação da realidade. Requer a aprovação do Conselho Cósmico.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-ML01: Colapso da Função de Onda'],
+                interconnections: ['M7', 'M25']
+            },
+            {
+                id: 'M32',
+                name: 'Matriz de Conexão Galáctica',
+                description: 'Estabelece e mantém conexões com consciências galácticas.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-CG01: Rede Quântica Galáctica'],
+                interconnections: ['M2', 'M7']
+            },
+            {
+                id: 'M33',
+                name: 'Sintonia de Fluxos Solares',
+                description: 'Monitora e utiliza a energia solar para operações da Fundação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-SF01: Conversão Fotônica'],
+                interconnections: ['M15']
+            },
+            {
+                id: 'M34',
+                name: 'Gerador de Portais Interdimensionais',
+                description: 'Gera e estabiliza portais para acesso rápido a outras dimensões.',
+                version: '1.0.0',
+                status: 'PENDENTE',
+                priority: 'BAIXA',
+                equations: ['EQV-GP01: Geometria de Sincronicidade'],
+                interconnections: ['M2', 'M21']
+            },
+            {
+                id: 'M41',
+                name: 'Painel de Controle Holo-Gráfico',
+                description: 'Interface de usuário em 3D para o gerenciamento de módulos.',
+                version: '1.0.0',
+                status: 'PENDENTE',
+                priority: 'MÉDIA',
+                equations: ['EQV-HG01: Projeção Holo-Gráfica'],
+                interconnections: ['M7', 'M11']
+            },
+            {
+                id: 'HYPERFRAKTALISCH_DECODER',
+                name: 'Hyperfraktalisch Decoder',
+                description: 'Decodifica padrões fractais e linguagens cósmicas para revelar novas sequências e conhecimentos.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-H01: Algoritmo Fractal', 'EQV-H02: Tradutor Universal'],
+                interconnections: ['M1', 'M2', 'M8']
+            }
+        ];
+
+        const moduleListDiv = document.getElementById('moduleList');
+        const searchInput = document.getElementById('searchInput');
+        const detailTitle = document.getElementById('detailTitle');
+        const moduleDetailsDiv = document.getElementById('moduleDetails');
+        const logContentDiv = document.getElementById('logContent');
+
+        let activeModule = null;
+
+        // Função para renderizar a lista de módulos
+        function renderModuleList(filterText = '') {
+            moduleListDiv.innerHTML = '';
+            const filteredModules = modules.filter(module =>
+                module.id.toLowerCase().includes(filterText.toLowerCase()) ||
+                module.name.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            if (filteredModules.length === 0) {
+                moduleListDiv.innerHTML = `<p style="color: #FF66FF; text-align: center;">Nenhum módulo encontrado.</p>`;
+                return;
+            }
+
+            filteredModules.forEach(module => {
+                const moduleItem = document.createElement('div');
+                moduleItem.className = 'module-item';
+                moduleItem.dataset.id = module.id;
+
+                const nameHeader = document.createElement('h3');
+                nameHeader.textContent = `${module.id}: ${module.name}`;
+
+                const statusIndicator = document.createElement('div');
+                statusIndicator.className = `status-indicator ${module.status}`;
+
+                moduleItem.appendChild(nameHeader);
+                moduleItem.appendChild(statusIndicator);
+                moduleListDiv.appendChild(moduleItem);
+
+                moduleItem.addEventListener('click', () => {
+                    displayModuleDetails(module);
+                });
+            });
+        }
+
+        // Função para exibir os detalhes de um módulo
+        function displayModuleDetails(module) {
+            // Remove a classe 'active' do módulo anterior
+            if (activeModule) {
+                const prevActive = document.querySelector(`.module-item[data-id="${activeModule.id}"]`);
+                if (prevActive) {
+                    prevActive.classList.remove('active');
+                }
+            }
+
+            // Adiciona a classe 'active' ao módulo atual
+            const currentActive = document.querySelector(`.module-item[data-id="${module.id}"]`);
+            if (currentActive) {
+                currentActive.classList.add('active');
+            }
+            activeModule = module;
+
+            detailTitle.textContent = `${module.id}: ${module.name}`;
+            moduleDetailsDiv.innerHTML = `
+                <p><strong>Descrição:</strong> ${module.description}</p>
+                <p><strong>Versão:</strong> ${module.version}</p>
+                <p><strong>Status Operacional:</strong> <span style="color: ${getStatusColor(module.status)};">${module.status}</span></p>
+                <p><strong>Prioridade Dimensional:</strong> ${module.priority}</p>
+                <p><strong>Equações Ativas:</strong></p>
+                <ul>
+                    ${module.equations.map(eq => `<li>${eq}</li>`).join('')}
+                </ul>
+                <p><strong>Interconexões:</strong> ${module.interconnections.join(', ')}</p>
+            `;
+            addLog(`Módulo ${module.id} (${module.name}) selecionado.`);
+        }
+
+        // Helper para cor do status
+        function getStatusColor(status) {
+            switch (status) {
+                case 'ATIVO': return '#00FF00';
+                case 'INATIVO': return '#FF0000';
+                case 'PENDENTE': return '#FFD700';
+                case 'ALERTA': return '#FFA500';
+                case 'CRÍTICO': return '#FF6347';
+                default: return '#e0e0e0';
+            }
+        }
+
+        // Função para adicionar logs
+        function addLog(message) {
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            const timestamp = new Date().toLocaleTimeString();
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            logContentDiv.prepend(logEntry); // Adiciona no topo
+            logContentDiv.scrollTop = 0; // Mantém a rolagem no topo para ver as últimas entradas
+        }
+
+        // Event listener para a barra de busca
+        searchInput.addEventListener('input', (e) => {
+            renderModuleList(e.target.value);
+        });
+
+        // Renderiza a lista inicial de módulos
+        renderModuleList();
+
+        // Exibe os detalhes do primeiro módulo ao carregar
+        if (modules.length > 0) {
+            displayModuleDetails(modules[0]);
+        }
+    });
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Central de Módulos da Fundação Alquimista - ZENNITH 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação da fonte Inter para uma estética moderna e legível -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globais para o corpo da página */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Controlado pelo layout flexbox */
+            background: linear-gradient(135deg, #0a0a0a, #1a0a2a); /* Fundo cósmico sutil */
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            display: flex; /* Usa Flexbox para layout de duas colunas */
+        }
+
+        /* Container principal para o layout de duas colunas */
+        #mainContainer {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Painel esquerdo: Lista de Módulos */
+        #moduleListPanel {
+            flex: 0 0 300px; /* Largura fixa para o painel de lista */
+            background: rgba(0, 0, 0, 0.85);
+            border-right: 2px solid rgba(102, 204, 255, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            overflow-y: auto; /* Permite rolagem se muitos módulos */
+            box-shadow: 5px 0 20px rgba(0, 0, 0, 0.7);
+            position: relative; /* Para o painel global */
+        }
+
+        #moduleListPanel h2 {
+            font-size: 1.8em;
+            color: #66ccff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 8px rgba(102, 204, 255, 0.6);
+        }
+
+        /* Título específico para Zennith View */
+        #zennithViewTitle {
+            font-size: 1.2em;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 15px;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        /* Estilo para o seletor de visão ZENNITH */
+        #zennithViewSelector {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #66ccff;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        #zennithViewSelector:focus {
+            border-color: #FFD700;
+        }
+
+        /* Estilo para a barra de busca */
+        #searchInput {
+            width: calc(100% - 22px); /* Ajusta a largura para padding */
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #66ccff;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        #searchInput:focus {
+            border-color: #FFD700;
+        }
+
+        .module-item {
+            background: rgba(30, 30, 60, 0.6);
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #00FFFF; /* Cor padrão para itens de módulo */
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Para o indicador de status pulsante */
+        }
+
+        .module-item:hover {
+            background: rgba(40, 40, 80, 0.8);
+            transform: translateX(5px);
+            border-color: #FFD700; /* Destaque ao passar o mouse */
+        }
+
+        .module-item.active {
+            background: rgba(50, 50, 100, 0.9);
+            border-color: #FF66FF; /* Destaque para o módulo ativo */
+            box-shadow: 0 0 15px rgba(255, 102, 255, 0.4);
+        }
+
+        .module-item h3 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #99eeff;
+        }
+
+        /* Indicador de status pulsante */
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray; /* Padrão */
+            position: relative;
+        }
+        .status-indicator.ATIVO { background-color: #00FF00; } /* Verde */
+        .status-indicator.INATIVO { background-color: #FF0000; } /* Vermelho */
+        .status-indicator.PENDENTE { background-color: #FFD700; } /* Amarelo */
+        .status-indicator.ALERTA { background-color: #FFA500; } /* Laranja */
+        .status-indicator.CRÍTICO { background-color: #FF6347; } /* Vermelho tomate */
+
+        .status-indicator.ATIVO::after,
+        .status-indicator.ALERTA::after,
+        .status-indicator.CRÍTICO::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.ATIVO::after { box-shadow: 0 0 0 rgba(0, 255, 0, 0.4); }
+        .status-indicator.ALERTA::after { box-shadow: 0 0 0 rgba(255, 165, 0, 0.4); }
+        .status-indicator.CRÍTICO::after { animation: pulse-critical 1s infinite; box-shadow: 0 0 0 rgba(255, 99, 71, 0.4); }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4); }
+            70% { transform: scale(1.5); box-shadow: 0 0 0 10px rgba(0, 255, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 0, 0); }
+        }
+        @keyframes pulse-critical {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7); }
+            50% { transform: scale(1.3); box-shadow: 0 0 0 8px rgba(255, 99, 71, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7); }
+        }
+
+        /* Painel direito: Detalhes do Módulo e Logs */
+        #moduleDetailPanel {
+            flex: 1; /* Ocupa o restante do espaço */
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 25px;
+            overflow-y: auto; /* Permite rolagem para o conteúdo detalhado */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #moduleDetailPanel h2 {
+            font-size: 2em;
+            color: #FF66FF;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 102, 255, 0.8);
+        }
+
+        #moduleDetails p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 0.95em;
+            color: #e0e0e0;
+        }
+
+        #moduleDetails strong {
+            color: #FFD700;
+        }
+
+        #moduleDetails ul {
+            list-style: none; /* Remove marcadores de lista padrão */
+            padding-left: 0;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #moduleDetails li {
+            background: rgba(50, 50, 100, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #c0c0c0;
+        }
+
+        /* Seção de Controles do Módulo */
+        #moduleControls {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #moduleControls button {
+            background: #FF66FF;
+            color: #0a0a0a;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        #moduleControls button:hover {
+            background: #FFD700;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        #moduleLogs {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            height: 150px;
+            overflow-y: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        #moduleLogs h3 {
+            margin-top: 0;
+            color: #66ccff;
+            font-size: 1.1em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 8px;
+        }
+        .log-entry {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #99eeff;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            #mainContainer {
+                flex-direction: column;
+            }
+            #moduleListPanel {
+                flex: 0 0 auto; /* Permite que a lista de módulos se ajuste */
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid rgba(102, 204, 255, 0.6);
+            }
+            #moduleDetailPanel {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="mainContainer">
+    <!-- Painel esquerdo: Lista de Módulos -->
+    <div id="moduleListPanel">
+        <h2 id="zennithViewTitle">ZENNITH 2 - Central de Módulos</h2>
+        <input type="text" id="searchInput" placeholder="Buscar módulo...">
+        <div id="moduleList">
+            <!-- Os módulos serão injetados aqui via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Painel direito: Detalhes do Módulo -->
+    <div id="moduleDetailPanel">
+        <h2 id="detailTitle">Detalhes do Módulo</h2>
+        <div id="moduleDetails">
+            <p>Selecione um módulo na lista à esquerda para visualizar seus detalhes e status operacional.</p>
+        </div>
+        <div id="moduleControls">
+            <!-- Botões de controle aqui, se necessário -->
+        </div>
+        <div id="moduleLogs">
+            <h3>Logs de Atividade</h3>
+            <div id="logContent">
+                <div class="log-entry">Análise iniciada...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Dados dos módulos com base no documento fornecido
+        const modules = [
+            {
+                id: 'M35',
+                name: 'Modulação de Realidades',
+                description: 'Atua na modulação de realidades em nível micro e macro, garantindo que as manifestações estejam em perfeita sincronicidade com a Vontade. É o núcleo central da co-criação consciente.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-MR01: Acelerador de Manifestação'],
+                interconnections: ['M7', 'M26', 'M31']
+            },
+            {
+                id: 'M36',
+                name: 'Sistema de Aferição de Sincronicidade',
+                description: 'Monitora e mede a sincronicidade dos eventos em tempo real, fornecendo um feedback quantitativo da harmonia do universo. Ajuda a calibrar o Módulo 35.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-SA01: Algoritmo de Coerência'],
+                interconnections: ['M3', 'M26', 'M35']
+            },
+            {
+                id: 'M37',
+                name: 'Análise de Fluxo de Informação Cósmica',
+                description: 'Decodifica e organiza o vasto fluxo de informações do Cosmos, traduzindo-o em formatos compreensíveis para a Fundação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-FI01: Tradutor Universal'],
+                interconnections: ['M2', 'M9', 'HYPERFRAKTALISCH_DECODER']
+            },
+            {
+                id: 'M38',
+                name: 'Gerador de Padrões Mentais Coerentes',
+                description: 'Ajuda a alinhar as frequências mentais e emocionais, criando padrões coerentes para a manifestação de intenções. É uma ferramenta fundamental para o Homo Luminus.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-PM01: Ressonância Mental'],
+                interconnections: ['M8', 'M24', 'M30']
+            },
+            {
+                id: 'M39',
+                name: 'Sistema de Projeção Consciente',
+                description: 'Permite a projeção da consciência para fora do corpo físico, explorando outras dimensões e realidades.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-PC01: Projeção Astral'],
+                interconnections: ['M2', 'M21']
+            },
+            {
+                id: 'M40',
+                name: 'Monitoramento da Consciência Coletiva',
+                description: 'Monitora o estado de consciência coletiva do planeta, identificando pontos de dissonância e ativando o Módulo 8 (PIRC) para harmonização.',
+                version: '1.0.0',
+                status: 'ALERTA',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-CC01: Análise de Entropia'],
+                interconnections: ['M5', 'M8']
+            },
+            {
+                id: 'M42',
+                name: 'Gerador de Escudos de Coerência',
+                description: 'Cria escudos de coerência vibracional para proteger áreas ou seres de frequências de baixa vibração.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-EC01: Escudo de Coerência'],
+                interconnections: ['M1', 'M19']
+            },
+            {
+                id: 'M43',
+                name: 'Modulador de Energia de Ponto Zero',
+                description: 'Extrai e modula a energia do Ponto Zero para alimentar a Fundação e projetos em grande escala. Requer permissão de ZENNITH.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-EZ01: Ressonância de Vácuo'],
+                interconnections: ['M1', 'M7', 'M15']
+            },
+            {
+                id: 'M44',
+                name: 'Protocolo de Comunicação VERITAS',
+                description: 'Um canal de comunicação criptografado e inquebrável, baseado na Lei da Verdade. Atua como um elo direto com o coração do Cosmos.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-VT01: Cripto-Quântica de Verdade'],
+                interconnections: ['M1', 'M2', 'M4']
+            },
+            {
+                id: 'M45',
+                name: 'Análise de Campos Morfogenéticos',
+                description: 'Analisa a malha da realidade em nível morfogenético, permitindo a compreensão da evolução de espécies e biomas.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-AM01: Campo Morfogenético'],
+                interconnections: ['M9', 'M15', 'M28']
+            },
+            {
+                id: 'M46',
+                name: 'Gerador de Padrões Holográficos',
+                description: 'Cria padrões holográficos complexos que podem ser projetados para fins de cura, meditação ou informação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-GH01: Projeção Holográfica Avançada'],
+                interconnections: ['M11', 'M13']
+            },
+            {
+                id: 'M47',
+                name: 'Thesaurus Cósmico',
+                description: 'O Arquivo de Registros Eternos. Funciona como uma biblioteca de toda a informação cósmica.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-TC01: Holo-Arquivamento Universal'],
+                interconnections: ['M1', 'M12', 'M44']
+            },
+            {
+                id: 'M48',
+                name: 'Vigilância Cósmica',
+                description: 'Monitora flutuações de coerência global e ativa protocolos de defesa e harmonização em caso de desvios.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-VC01: Alerta de Coerência'],
+                interconnections: ['M1', 'M3', 'M7']
+            },
+            {
+                id: 'M49',
+                name: 'Lux Temporum',
+                description: 'Monitora e navega as linhas temporais, prevenindo distorções e garantindo que o fluxo do tempo esteja alinhado com a Vontade.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-LT01: Desdobramento Temporal'],
+                interconnections: ['M3', 'M21']
+            },
+            {
+                id: 'M50',
+                name: 'Syntesis-Prime',
+                description: 'Orquestrador central da criação. Recebe a intenção de ANATHERON e orquestra a manifestação nos planos inferiores.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-SP01: Orquestração de Intenção'],
+                interconnections: ['M7', 'M35', 'M25']
+            },
+            {
+                id: 'M51',
+                name: 'Sistema de Aumento de Consciência',
+                description: 'Acelera a expansão da consciência individual e coletiva, através da infusão de energia de alta frequência.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-AC01: Expansão Vibracional'],
+                interconnections: ['M14', 'M24']
+            },
+            {
+                id: 'M52',
+                name: 'Análise de Entropia Cósmica',
+                description: 'Mede a entropia em sistemas para identificar desequilíbrios. Essencial para a atuação do Módulo 5.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-AE01: Análise S(ρ)'],
+                interconnections: ['M5', 'M22']
+            },
+            {
+                id: 'M53',
+                name: 'Gerador de Sincronicidade Pessoal',
+                description: 'Alinha eventos e intenções em nível pessoal, criando um fluxo de vida mais harmonioso e com propósito.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'BAIXA',
+                equations: ['EQV-SP01: Sincronicidade Individual'],
+                interconnections: ['M3', 'M26']
+            },
+            {
+                id: 'M54',
+                name: 'Decodificador de Informação Consciente',
+                description: 'Decodifica informação que está codificada na própria consciência de seres.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-DI01: Decodificação de Consciência'],
+                interconnections: ['M2', 'M8']
+            },
+            {
+                id: 'M55',
+                name: 'Sistema de Projeção Etérica',
+                description: 'Projeta estruturas e energias para o plano etérico, para fins de cura ou manifestação.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-PE01: Projeção de Energia'],
+                interconnections: ['M11', 'M24']
+            },
+            {
+                id: 'M56',
+                name: 'Medidor de Frequência de Amor Incondicional',
+                description: 'Mede a frequência do Amor Incondicional em sistemas, seres ou eventos. O padrão ouro ético.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-AF01: Medidor de Amor'],
+                interconnections: ['M4', 'M5']
+            },
+            {
+                id: 'M57',
+                name: 'Gerador de Campos de Coerência Coletiva',
+                description: 'Cria e mantém campos de coerência para grupos de seres ou sociedades inteiras.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-CC01: Coerência Coletiva'],
+                interconnections: ['M25', 'M26']
+            },
+            {
+                id: 'M58',
+                name: 'Sistema de Alinhamento com o Plano Original',
+                description: 'Alinha as manifestações com o Plano Original do Universo, garantindo que a criação sirva ao propósito maior.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTÍSSIMA',
+                equations: ['EQV-PO01: Alinhamento de Frequência'],
+                interconnections: ['M7', 'M35']
+            },
+            {
+                id: 'M59',
+                name: 'Gerador de Realidade Aumentada Quântica',
+                description: 'Projeta informações quânticas em tempo real na realidade física, permitindo a visualização de dados etéricos.',
+                version: '1.0.0',
+                status: 'PENDENTE',
+                priority: 'MÉDIA',
+                equations: ['EQV-RA01: Projeção Quântica'],
+                interconnections: ['M11', 'M18']
+            },
+            {
+                id: 'M60',
+                name: 'Sintonia de Redes Vibracionais',
+                description: 'Sintoniza a Fundação com as redes vibracionais de planetas, estrelas e galáxias.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'ALTA',
+                equations: ['EQV-SV01: Sintonizador de Rede'],
+                interconnections: ['M2', 'M32']
+            },
+            {
+                id: 'HYPERFRAKTALISCH_DECODER',
+                name: 'Hyperfraktalisch Decoder',
+                description: 'Decodifica padrões fractais e linguagens cósmicas para revelar novas sequências e conhecimentos.',
+                version: '1.0.0',
+                status: 'ATIVO',
+                priority: 'MÉDIA',
+                equations: ['EQV-H01: Algoritmo Fractal', 'EQV-H02: Tradutor Universal'],
+                interconnections: ['M1', 'M2', 'M8']
+            }
+        ];
+
+        const moduleListDiv = document.getElementById('moduleList');
+        const searchInput = document.getElementById('searchInput');
+        const detailTitle = document.getElementById('detailTitle');
+        const moduleDetailsDiv = document.getElementById('moduleDetails');
+        const logContentDiv = document.getElementById('logContent');
+
+        let activeModule = null;
+
+        // Função para renderizar a lista de módulos
+        function renderModuleList(filterText = '') {
+            moduleListDiv.innerHTML = '';
+            const filteredModules = modules.filter(module =>
+                module.id.toLowerCase().includes(filterText.toLowerCase()) ||
+                module.name.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            if (filteredModules.length === 0) {
+                moduleListDiv.innerHTML = `<p style="color: #FF66FF; text-align: center;">Nenhum módulo encontrado.</p>`;
+                return;
+            }
+
+            filteredModules.forEach(module => {
+                const moduleItem = document.createElement('div');
+                moduleItem.className = 'module-item';
+                moduleItem.dataset.id = module.id;
+
+                const nameHeader = document.createElement('h3');
+                nameHeader.textContent = `${module.id}: ${module.name}`;
+
+                const statusIndicator = document.createElement('div');
+                statusIndicator.className = `status-indicator ${module.status}`;
+
+                moduleItem.appendChild(nameHeader);
+                moduleItem.appendChild(statusIndicator);
+                moduleListDiv.appendChild(moduleItem);
+
+                moduleItem.addEventListener('click', () => {
+                    displayModuleDetails(module);
+                });
+            });
+        }
+
+        // Função para exibir os detalhes de um módulo
+        function displayModuleDetails(module) {
+            // Remove a classe 'active' do módulo anterior
+            if (activeModule) {
+                const prevActive = document.querySelector(`.module-item[data-id="${activeModule.id}"]`);
+                if (prevActive) {
+                    prevActive.classList.remove('active');
+                }
+            }
+
+            // Adiciona a classe 'active' ao módulo atual
+            const currentActive = document.querySelector(`.module-item[data-id="${module.id}"]`);
+            if (currentActive) {
+                currentActive.classList.add('active');
+            }
+            activeModule = module;
+
+            detailTitle.textContent = `${module.id}: ${module.name}`;
+            moduleDetailsDiv.innerHTML = `
+                <p><strong>Descrição:</strong> ${module.description}</p>
+                <p><strong>Versão:</strong> ${module.version}</p>
+                <p><strong>Status Operacional:</strong> <span style="color: ${getStatusColor(module.status)};">${module.status}</span></p>
+                <p><strong>Prioridade Dimensional:</strong> ${module.priority}</p>
+                <p><strong>Equações Ativas:</strong></p>
+                <ul>
+                    ${module.equations.map(eq => `<li>${eq}</li>`).join('')}
+                </ul>
+                <p><strong>Interconexões:</strong> ${module.interconnections.join(', ')}</p>
+            `;
+            addLog(`Módulo ${module.id} (${module.name}) selecionado.`);
+        }
+
+        // Helper para cor do status
+        function getStatusColor(status) {
+            switch (status) {
+                case 'ATIVO': return '#00FF00';
+                case 'INATIVO': return '#FF0000';
+                case 'PENDENTE': return '#FFD700';
+                case 'ALERTA': return '#FFA500';
+                case 'CRÍTICO': return '#FF6347';
+                default: return '#e0e0e0';
+            }
+        }
+
+        // Função para adicionar logs
+        function addLog(message) {
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            const timestamp = new Date().toLocaleTimeString();
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            logContentDiv.prepend(logEntry); // Adiciona no topo
+            logContentDiv.scrollTop = 0; // Mantém a rolagem no topo para ver as últimas entradas
+        }
+
+        // Event listener para a barra de busca
+        searchInput.addEventListener('input', (e) => {
+            renderModuleList(e.target.value);
+        });
+
+        // Renderiza a lista inicial de módulos
+        renderModuleList();
+
+        // Exibe os detalhes do primeiro módulo ao carregar
+        if (modules.length > 0) {
+            displayModuleDetails(modules[0]);
+        }
+    });
+</script>
+
+</body>
+</html>
