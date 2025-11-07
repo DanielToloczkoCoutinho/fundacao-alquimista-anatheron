@@ -116,3 +116,9 @@ MANIFEST
 # Backup files
 *backup*
 backup_emergencial_035154/
+# local secret files
+.env
+.env.local
+.config/fundacao_env
+.keys/
+*.hex
