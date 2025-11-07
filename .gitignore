@@ -126,3 +126,10 @@ backup_emergencial_035154/
 .config/fundacao_env
 .keys/
 *.hex
+# local secret files and keys
+.config/fundacao_env
+.keys/
+*.hex
+.env
+.env.local
+snapshots/backups/
