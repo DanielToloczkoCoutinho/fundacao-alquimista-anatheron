@@ -1,0 +1,65 @@
+{
+  "attachments": [],
+  "conversation_summary": "Iniciando preservação da memória. Recebido.",
+  "id": "3e69c178-aa03-4568-831b-512ca629c554",
+  "messages": [
+    {
+      "content": "Iniciando preservação da memória. Confirmar estado do Phi26.",
+      "content_hash": "07dbdc3f60b512121faba979c581ecbe63daf39f1ed21d9d8c6eb3914dcf08a4",
+      "msg_id": "m1",
+      "role": "human",
+      "sender": "Daniel",
+      "timestamp": "2025-11-06T23:00:00Z"
+    },
+    {
+      "content": "Recebido. Estado Phi26: PHI_01..PHI_26 presentes. Preparando snapshot.",
+      "content_hash": "71a37266845d8e80bd58b32478eb8c7ef6f91ea6c3acab0b44c62f5dd9856f00",
+      "msg_id": "m2",
+      "role": "assistant",
+      "sender": "Copilot",
+      "timestamp": "2025-11-06T23:01:15Z"
+    }
+  ],
+  "participants": [
+    "Daniel",
+    "Copilot"
+  ],
+  "provenance": {
+    "commit_hash_if_any": null,
+    "created_by": "snapshot_collector.py",
+    "created_by_user": "Daniel",
+    "source_endpoints": [
+      "run_snapshot_pipeline.sh"
+    ]
+  },
+  "sha256": "52bbc3d8fdea8b7dc67f9b2cd15fee3160054579fec7d3ed1f3a6bef42fc37d0",
+  "signature": {
+    "algorithm": "Ed25519",
+    "signature": "3d639b108b52724085d6eb3e1a9e398ab90f10d87e2b91023ea522b14468051ea615a8b647c6fad2f6fda674a0e159f06a3db09321e036d15c6742d6b6adf502",
+    "signer": "foundation-memory-key"
+  },
+  "state_meta": {
+    "active_branch": null,
+    "last_actions": [],
+    "open_tasks": [],
+    "phi_snapshot_ref": null,
+    "system_status": "unknown"
+  },
+  "status": "draft",
+  "tests_snapshot": {
+    "coherence_metric": null,
+    "phi26_present": true,
+    "rng_seed_present": false,
+    "schema_validation": {
+      "errors": [],
+      "ok": true
+    },
+    "sensitivity_run": {
+      "executed": false,
+      "summary": null
+    }
+  },
+  "timestamp_end": "2025-11-06T23:01:15Z",
+  "timestamp_start": "2025-11-06T23:00:00Z",
+  "version_semantic": "mem_v1.0.0"
+}
